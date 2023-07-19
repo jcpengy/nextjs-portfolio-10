@@ -54,7 +54,7 @@ export default async function CartoonPage() {
                 />
             </div>
             <p className="cartoons-p">
-                CEO Jess is an unstoppable tech/boss girlie navigating the daily struggles of work, dating, and beyond.
+                CEO Jess is an unstoppable boss girlie navigating the daily struggles of work, dating, and beyond.
                 Tenacious and optimistic, she's a feisty potato with a heart of gold.<br/><br/>
                 Follow @officialceojess on Insta for more!
             </p>
