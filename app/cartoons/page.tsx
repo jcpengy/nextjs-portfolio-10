@@ -45,22 +45,17 @@ export default async function CartoonPage() {
 
     return (
         <section>
-            <img
-                key={'ceojess1'}
-                src={'https://i.ibb.co/kMyPmbV/IMG-5478.jpg'}
-                alt={'ceojess1'}
-            />
+            <div className="image-cropper">
+                <img
+                    id="profile-pic"
+                    key={'ceojess2'}
+                    src={'https://i.ibb.co/C70VVFn/ceojess.png'}
+                    alt={'ceojess2'}
+                />
+            </div>
             <p className="cartoons-p">
                 CEO Jess is an unstoppable tech/boss girlie navigating the daily struggles of work, dating, and beyond.
                 Tenacious and optimistic, she's a feisty potato with a lot of heart.<br/><br/>
-                <div className="image-cropper">
-                    <img
-                        id="profile-pic"
-                        key={'ceojess2'}
-                        src={'https://i.ibb.co/YLWQH5T/IMG-8954-2.jpg'}
-                        alt={'ceojess2'}
-                    />
-                </div>
                 Follow @officialceojess on Insta for more!
             </p>
             {
