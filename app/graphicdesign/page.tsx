@@ -2,6 +2,7 @@
 import 'lightbox.js-react/dist/index.css'
 import {SlideshowLightbox, initLightboxJS} from 'lightbox.js-react'
 import {useEffect} from "react";
+import Footer from "../components/footer";
 
 const graphicdesignimages = [
     {
@@ -100,6 +101,7 @@ export default async function GuestbookPage() {
                     />
                 ))}
             </SlideshowLightbox>
+            <Footer/>
         </section>
     );
 }

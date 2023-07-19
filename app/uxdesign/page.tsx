@@ -2,6 +2,7 @@
 import 'lightbox.js-react/dist/index.css'
 import {SlideshowLightbox, initLightboxJS} from 'lightbox.js-react'
 import {useEffect} from "react";
+import Footer from "../components/footer";
 
 const v1images = [
     {
@@ -218,6 +219,7 @@ export default function UXDesignPage() {
                 Overall, we've received positive feedback on the usefulness of this tool to
                 facilitate and streamline sandbox management in AEP.
             </p>
+            <Footer/>
         </section>
     );
 }

@@ -13,6 +13,20 @@ html {
   color: purple;
 }
 
+.footer {
+  font-size: 0.75em;
+}
+
+#element1 {
+  display:inline-block;
+  margin-right:20px;
+}
+
+#element2, #element3 {
+  display:inline-block;
+  margin-right:10px;
+}
+
 .prose .anchor {
   @apply absolute invisible no-underline;
 
@@ -399,3 +413,5 @@ h4.home-subtitle {
   position: fixed;
   bottom: 10px;
 }
+
+

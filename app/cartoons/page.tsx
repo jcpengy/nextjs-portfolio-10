@@ -2,6 +2,7 @@
 import 'lightbox.js-react/dist/index.css'
 import {SlideshowLightbox, initLightboxJS} from 'lightbox.js-react'
 import {useEffect} from "react";
+import Footer from "../components/footer";
 
 const cartoonimages = [
     {
@@ -28,6 +29,7 @@ export default async function CartoonPage() {
                 src={cartoonimages[0].src}
                 alt={cartoonimages[0].alt}
             />
+            <Footer/>
         </section>
     );
 }
