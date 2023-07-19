@@ -9,6 +9,8 @@
 
 html {
   min-width: 360px;
+  background-color: white;
+  color: purple;
 }
 
 .prose .anchor {
@@ -131,4 +133,269 @@ table {
 }
 [data-rehype-pretty-code-title] + pre {
   @apply mt-0 rounded-t-none border-t-0;
+}
+
+/*home page*/
+h1.home {
+  line-height: 85%;
+  color: purple;
+  font-size: 8em;
+  /*margin-top: -20vw;*/
+}
+
+h1 span span {
+  position: relative;
+  opacity: 0;
+  animation: move-text 1s forwards;
+}
+@keyframes move-text {
+  0% {
+    bottom: 1em;
+    opacity: 1;
+  }
+  50% {
+    bottom: -0.5em;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+h4.home-subtitle {
+  font-size: 2em;
+  animation: show-text 2s forwards;
+}
+
+@keyframes show-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#cursor {
+  bottom: 35%;
+  position: absolute;
+  opacity: 0;
+  animation: run 2s;
+  animation-iteration-count: 3;
+  animation-delay: 2s;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 2s;
+}
+@keyframes run {
+  0% {
+    left: 30%;
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    left: 60%;
+    opacity: 0;
+    transform: rotate(50deg);
+  }
+}
+
+.liljess {
+  position: absolute;
+  margin-left: -70px;
+  width: 310px;
+  bottom: 10%;
+  left: 0;
+}
+.img-body {
+  width: 310px;
+  /*height: auto;*/
+}
+.body {
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  top: -120px;
+  left: -12%;
+}
+.body .eyebrows {
+  height: 100%;
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  transition: left 0.6s;
+  left: 15%;
+}
+.body .eyebrows.right {
+  left: 18%;
+}
+.body .eyebrow {
+  z-index: 1;
+  position: absolute;
+  background-color: black;
+  height: 20px;
+  width: 35px;
+  top: -155px;
+}
+.body .eyebrow.one {
+  left: 20%;
+}
+.body .eyebrow.two {
+  left: 35%;
+}
+.body .pupils {
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  transition: left 0.6s;
+  left: 7%;
+}
+.body .pupils.right {
+  left: 16%;
+}
+.body .pupil {
+  background: black;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 5px;
+  position: absolute;
+  width: 5px;
+  top: -125px;
+}
+.body .pupil.one {
+  left: 30%;
+}
+.body .pupil.two {
+  left: 45%;
+}
+.body .eyes {
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  transition: left 0.6s;
+  left: 10%;
+  top: 65px;
+}
+.body .eyes.right {
+  left: 13%;
+}
+.body .eye {
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  background: white;
+  height: 37px;
+  width: 37px;
+}
+.body .eye.one {
+  left: 25%;
+}
+.body .eye.two {
+  left: 40%;
+}
+.mouth {
+  position: relative;
+  z-index: 1;
+  top: 35px;
+  left: 35%;
+}
+.img-mouth {
+  width: 20px;
+}
+.ball-left {
+  background-color: #ff63f0;
+  border-radius: 50%;
+  height: 45px;
+  overflow: hidden;
+  position: relative;
+  width: 45px;
+  left: 30px;
+  margin-top: 30px;
+}
+.ball-right {
+  background-color: #ff63f0;
+  border-radius: 50%;
+  height: 45px;
+  overflow: hidden;
+  position: relative;
+  width: 45px;
+  left: 150px;
+  margin-top: -45px;
+}
+.ring {
+  background: #ff96f5;
+  border-radius: 50%;
+  height: 40px;
+  position: absolute;
+  width: 40px;
+}
+.ring:after {
+  background-color: ghostwhite;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 33%;
+  margin-top: -36%;
+  margin-left: -36%;
+  position: absolute;
+  width: 33%;
+  top: 50%;
+  left: 50%;
+}
+.ring.one {
+  margin-left: -40px;
+  height: 35px;
+  width: 35px;
+  top: 30%;
+  left: 110%;
+}
+.scooter {
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  background: #ff4aed;
+}
+.scooter.base {
+  position: absolute;
+  height: 25px;
+  width: 120px;
+  left: 0px;
+  z-index: -2;
+}
+.scooter.top {
+  position: absolute;
+  height: 60px;
+  width: 25px;
+  top: -35px;
+  left: 110px;
+}
+.scooter.handle {
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+  left: 110px;
+  top: -65px;
+  z-index: 5;
+}
+.shadow {
+  background: #3A271C;
+  box-shadow: 5px 0 50px #3A271C;
+  border-radius: 50%;
+  height: 23.3333333333px;
+  opacity: 0.25;
+  position: absolute;
+  width: 190px;
+  z-index: -1;
+  left: 10px;
+  bottom: -8px;
+}
+.instructions p {
+  position: fixed;
+  bottom: 10px;
 }
