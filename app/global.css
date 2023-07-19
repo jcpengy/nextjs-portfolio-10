@@ -27,6 +27,21 @@ html {
   margin-right:10px;
 }
 
+.image-cropper {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+#profile-pic {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
 .prose .anchor {
   @apply absolute invisible no-underline;
 
