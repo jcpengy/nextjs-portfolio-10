@@ -11,21 +11,13 @@ export default async function BlogPage() {
   return (
     <section>
       <h1 className="font-bold text-2xl mb-8 tracking-tighter">hi, i'm jess 👋</h1>
-      <div className="image-cropper">
-        <img
-            id="profile-pic"
-            key={'profile'}
-            src={'https://i.ibb.co/bzdbsjt/IMG-8945-2.jpg'}
-            alt={'profile'}
-        />
-      </div>
       <p className="my-5">
         I'm an SF-based <b>Front-End Engineer at Adobe</b>. I build internal tools
         on the Digital Experience Customer Engineering team.
       </p>
         <hr/><br/>
         <p>
-          I'm love creative challenges and learning new things. From
+          I love creative challenges and learning new things. From
           doodling cartoons and dream houses as a toddler to building hamster cages as a middle schooler,
           I developed an interest in art and engineering that continued throughout my college and professional experiences.<br/><br/>
 

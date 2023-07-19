@@ -18,9 +18,9 @@ const navItems = {
   '/graphicdesign': {
     name: 'graphic design',
   },
-  '/fineart': {
-    name: 'fine art',
-  },
+  // '/fineart': {
+  //   name: 'fine art',
+  // },
   '/cartoons': {
     name: 'cartoons',
   },

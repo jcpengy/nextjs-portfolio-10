@@ -6,8 +6,32 @@ import Footer from "../components/footer";
 
 const cartoonimages = [
     {
+        src: 'https://i.ibb.co/89HpZ2Q/IMG-8944.jpg',
+        alt: 'Dating in SF',
+    },
+    {
         src: 'https://i.ibb.co/5vJtf5K/IMG-8416.png',
         alt: 'SF Hills',
+    },
+    {
+        src: 'https://i.ibb.co/5kkqYW6/IMG-8949.jpg',
+        alt: 'Congress1',
+    },
+    {
+        src: 'https://i.ibb.co/nsnCwCD/IMG-8950.jpg',
+        alt: 'Congress2',
+    },
+    {
+        src: 'https://i.ibb.co/bsqm4Rq/IMG-8952.jpg',
+        alt: 'Bugs Life',
+    },
+    {
+        src: 'https://i.ibb.co/z7n38WQ/IMG-8951.jpg',
+        alt: 'Lady Clingford',
+    },
+    {
+        src: 'https://i.ibb.co/Dg5V95z/IMG-8948.jpg',
+        alt: 'No Work',
     },
 ]
 
@@ -21,14 +45,36 @@ export default async function CartoonPage() {
 
     return (
         <section>
-            <p className="my-5">
-            </p>
             <img
-                key={cartoonimages[0].alt}
-                className='w-full rounded'
-                src={cartoonimages[0].src}
-                alt={cartoonimages[0].alt}
+                key={'ceojess1'}
+                src={'https://i.ibb.co/kMyPmbV/IMG-5478.jpg'}
+                alt={'ceojess1'}
             />
+            <p className="cartoons-p">
+                CEO Jess is an unstoppable tech/boss girlie navigating the daily struggles of work, dating, and beyond.
+                Tenacious and optimistic, she's a feisty potato with a lot of heart.<br/><br/>
+                <div className="image-cropper">
+                    <img
+                        id="profile-pic"
+                        key={'ceojess2'}
+                        src={'https://i.ibb.co/YLWQH5T/IMG-8954-2.jpg'}
+                        alt={'ceojess2'}
+                    />
+                </div>
+                Follow @officialceojess on Insta for more!
+            </p>
+            {
+                cartoonimages.map(img => (
+                    <>
+                        <img
+                            key={img.alt}
+                            className='w-full rounded'
+                            src={img.src}
+                            alt={img.alt}
+                        /><br/>
+                    </>
+                ))
+            }
             <Footer/>
         </section>
     );
