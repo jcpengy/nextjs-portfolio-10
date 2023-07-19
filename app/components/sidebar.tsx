@@ -9,19 +9,28 @@ const navItems = {
   '/': {
     name: 'home',
   },
-  '/blog': {
-    name: 'blog',
+  '/about': {
+    name: 'about',
   },
-  '/guestbook': {
-    name: 'guestbook',
+  '/uxdesign': {
+    name: 'ux design',
+  },
+  '/graphicdesign': {
+    name: 'graphic design',
+  },
+  '/fineart': {
+    name: 'fine art',
+  },
+  '/cartoons': {
+    name: 'cartoons',
   },
 };
 
 export default function Navbar() {
   let pathname = usePathname() || '/';
-  if (pathname.includes('/blog/')) {
-    pathname = '/blog';
-  }
+  // if (pathname.includes('/blog/')) {
+  //   pathname = '/blog';
+  // }
 
   return (
     <aside className="-ml-[8px] mb-16 tracking-tight">
