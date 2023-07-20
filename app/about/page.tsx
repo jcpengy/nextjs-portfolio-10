@@ -32,16 +32,16 @@ export default async function BlogPage() {
               alt={'3dmodel'}
           />
           3D model I created of my college apartment<br/><br/>
-          At Adobe, I've been able to apply and learn creative problem solving skills through a variety of projects.
-          As a Front-End Developer, I assume the role of both designer and developer to create internal web
-          applications that simplify customer data processes in Adobe Experience Platform. I love seeing my ideas come to
-          life through development, but I'm excited to focus on and grow my design skills on upcoming projects.<br/><br/>
+          As both a designer and developer at Adobe (and previously a consultant), I've gained experience in all areas
+           of the product lifecycle and currently strive to build web applications that are simple,
+          intuitive, and accessible. Although I enjoy seeing
+          my ideas come to life through development, I'm excited to focus on and grow my design skills on upcoming projects.<br/><br/>
           <h3 className="font-bold text-2xl mb-8 tracking-tighter">fun facts!</h3>
           <ul>
             <li>I draw cartoons on <u><a href="https://www.instagram.com/officialceojess/">CEO Jess</a></u>.</li>
             <li>I ran a best-selling, five-star graphic design shop on Etsy.</li>
             <li>My favorite movie is Shrek 2.</li>
-            <li>My favorite class in college was Costume Design.</li>
+            <li>I YouTubed my hamster cage building experiences. My most popular video has 300k+ views.</li>
           </ul><br/>
           If you want to connect or collaborate on a project, send me an email at pengjess2@gmail.com!:)
         </p>
