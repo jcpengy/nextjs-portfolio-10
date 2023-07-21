@@ -125,16 +125,16 @@ class Page extends React.Component<any, any>  {
                         {/*<div className="scooter handle" style={{WebkitTransform: `translateX(${(mouseX - droidX) / 10}px) rotateZ(${(mouseX - droidX) / 15}deg)`}}></div>*/}
                     </div>
                     <div className="ball-left" style={{WebkitTransform: `rotateZ(${droidX}deg)`}}>
-                        <div className="ring one"></div>
+                        {/*<div className="ring one"></div>*/}
                     </div>
                     <div className="ball-right" style={{WebkitTransform: `rotateZ(${droidX}deg)`}}>
-                        <div className="ring one"></div>
+                        {/*<div className="ring one"></div>*/}
                     </div>
                     <div className="shadow"></div>
                 </div>
-                {/*<div className="instructions">*/}
-                {/*    <p>move your mouse.</p>*/}
-                {/*</div>*/}
+                <div className="instructions">
+                    <p>tap anywhere.</p>
+                </div>
             </div>
         )
     }

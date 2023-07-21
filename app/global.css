@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --liljesswidth: 25vw;
+}
+
 ::selection {
   background-color: #47a3f3;
   color: #fefefe;
@@ -175,8 +179,8 @@ table {
 h1.home {
   line-height: 85%;
   color: purple;
-  font-size: 8em;
-  /*margin-top: -20vw;*/
+  font-size: 18vh;
+  margin-top: 1vh;
 }
 
 h1 span span {
@@ -184,6 +188,7 @@ h1 span span {
   opacity: 0;
   animation: move-text 1s forwards;
 }
+
 @keyframes move-text {
   0% {
     bottom: 1em;
@@ -199,7 +204,7 @@ h1 span span {
 }
 
 h4.home-subtitle {
-  font-size: 2em;
+  font-size: 5vh;
   animation: show-text 2s forwards;
 }
 
@@ -213,7 +218,7 @@ h4.home-subtitle {
 }
 
 #cursor {
-  bottom: 35%;
+  bottom: 20vh;
   position: absolute;
   opacity: 0;
   animation: run 2s;
@@ -241,19 +246,19 @@ h4.home-subtitle {
 .liljess {
   position: absolute;
   margin-left: -70px;
-  width: 310px;
-  bottom: 10%;
+  width: var(--liljesswidth);
+  bottom: 5vh;
   left: 0;
 }
 .img-body {
-  width: 310px;
+  width: var(--liljesswidth);
   /*height: auto;*/
 }
 .body {
   overflow: hidden;
   position: absolute;
   z-index: -1;
-  top: -120px;
+  top: calc(-.38 * var(--liljesswidth));
   left: -12%;
 }
 .body .eyebrows {
@@ -271,9 +276,9 @@ h4.home-subtitle {
   z-index: 1;
   position: absolute;
   background-color: black;
-  height: 20px;
-  width: 35px;
-  top: -155px;
+  height: calc(0.0645 * var(--liljesswidth));
+  width: calc(0.1129 * var(--liljesswidth));
+  top: calc(-0.5 * var(--liljesswidth));
 }
 .body .eyebrow.one {
   left: 20%;
@@ -297,10 +302,10 @@ h4.home-subtitle {
   border-radius: 50%;
   content: "";
   display: block;
-  height: 5px;
+  height: calc(0.016 * var(--liljesswidth));
   position: absolute;
-  width: 5px;
-  top: -125px;
+  width: calc(0.016 * var(--liljesswidth));
+  top: calc(-0.403 * var(--liljesswidth));
 }
 .body .pupil.one {
   left: 30%;
@@ -315,7 +320,7 @@ h4.home-subtitle {
   width: 100%;
   transition: left 0.6s;
   left: 10%;
-  top: 65px;
+  top: calc(0.210 * var(--liljesswidth));
 }
 .body .eyes.right {
   left: 13%;
@@ -325,8 +330,8 @@ h4.home-subtitle {
   display: block;
   position: absolute;
   background: white;
-  height: 37px;
-  width: 37px;
+  height: calc(0.119 * var(--liljesswidth));
+  width: calc(0.119 * var(--liljesswidth));
 }
 .body .eye.one {
   left: 25%;
@@ -337,59 +342,60 @@ h4.home-subtitle {
 .mouth {
   position: relative;
   z-index: 1;
-  top: 35px;
+  top: calc(0.113 * var(--liljesswidth));
   left: 35%;
 }
 .img-mouth {
-  width: 20px;
+  width: calc(0.065 * var(--liljesswidth));
 }
+
 .ball-left {
   background-color: #ff63f0;
   border-radius: 50%;
-  height: 45px;
+  height: calc(0.145 * var(--liljesswidth));
   overflow: hidden;
   position: relative;
-  width: 45px;
-  left: 30px;
-  margin-top: 30px;
+  width: calc(0.145 * var(--liljesswidth));
+  left: calc(0.097 * var(--liljesswidth));
+  margin-top: calc(0.097 * var(--liljesswidth));
 }
 .ball-right {
   background-color: #ff63f0;
   border-radius: 50%;
-  height: 45px;
+  height: calc(0.145 * var(--liljesswidth));;
   overflow: hidden;
   position: relative;
-  width: 45px;
-  left: 150px;
-  margin-top: -45px;
+  width: calc(0.145 * var(--liljesswidth));
+  left: calc(0.484 * var(--liljesswidth));
+  margin-top: calc(-0.145 * var(--liljesswidth));
 }
-.ring {
-  background: #ff96f5;
-  border-radius: 50%;
-  height: 40px;
-  position: absolute;
-  width: 40px;
-}
-.ring:after {
-  background-color: ghostwhite;
-  border-radius: 50%;
-  content: "";
-  display: block;
-  height: 33%;
-  margin-top: -36%;
-  margin-left: -36%;
-  position: absolute;
-  width: 33%;
-  top: 50%;
-  left: 50%;
-}
-.ring.one {
-  margin-left: -40px;
-  height: 35px;
-  width: 35px;
-  top: 30%;
-  left: 110%;
-}
+/*.ring {*/
+/*  background: #ff96f5;*/
+/*  border-radius: 50%;*/
+/*  height: calc(0.129 * var(--liljesswidth));*/
+/*  position: absolute;*/
+/*  width: calc(0.129 * var(--liljesswidth));*/
+/*}*/
+/*.ring:after {*/
+/*  background-color: ghostwhite;*/
+/*  border-radius: 50%;*/
+/*  content: "";*/
+/*  display: block;*/
+/*  height: 33%;*/
+/*  margin-top: -36%;*/
+/*  margin-left: -36%;*/
+/*  position: absolute;*/
+/*  width: 33%;*/
+/*  top: 50%;*/
+/*  left: 50%;*/
+/*}*/
+/*.ring.one {*/
+/*  margin-left: -40px;*/
+/*  height: calc(0.1129 * var(--liljesswidth));*/
+/*  width: calc(0.1129 * var(--liljesswidth));*/
+/*  top: 30%;*/
+/*  left: 110%;*/
+/*}*/
 .scooter {
   position: absolute;
   top: 60%;
@@ -398,42 +404,57 @@ h4.home-subtitle {
 }
 .scooter.base {
   position: absolute;
-  height: 25px;
-  width: 120px;
+  height: calc(0.081 * var(--liljesswidth));
+  width: calc(0.387 * var(--liljesswidth));
   left: 0px;
   z-index: -2;
 }
-.scooter.top {
-  position: absolute;
-  height: 60px;
-  width: 25px;
-  top: -35px;
-  left: 110px;
-}
-.scooter.handle {
-  border-radius: 50%;
-  height: 30px;
-  position: absolute;
-  width: 30px;
-  left: 110px;
-  top: -65px;
-  z-index: 5;
-}
+/*.scooter.top {*/
+/*  position: absolute;*/
+/*  height: 60px;*/
+/*  width: 25px;*/
+/*  top: -35px;*/
+/*  left: 110px;*/
+/*}*/
+/*.scooter.handle {*/
+/*  border-radius: 50%;*/
+/*  height: calc(0.097 * var(--liljesswidth))px;*/
+/*  position: absolute;*/
+/*  width: 30px;*/
+/*  left: 110px;*/
+/*  top: -65px;*/
+/*  z-index: 5;*/
+/*}*/
 .shadow {
   background: #3A271C;
-  box-shadow: 5px 0 50px #3A271C;
+  box-shadow: calc(0.016 * var(--liljesswidth)) 0 calc(0.16 * var(--liljesswidth)) #3A271C;
   border-radius: 50%;
-  height: 23.3333333333px;
+  height: calc(0.075 * var(--liljesswidth));
   opacity: 0.25;
   position: absolute;
-  width: 190px;
+  width: calc(0.61 * var(--liljesswidth));
   z-index: -1;
-  left: 10px;
-  bottom: -8px;
+  left: calc(0.0323 * var(--liljesswidth));
+  bottom: calc(-0.0258 * var(--liljesswidth));
 }
+
 .instructions p {
+  display: none;
   position: fixed;
-  bottom: 10px;
+  bottom: 20px;
+}
+
+/*mobile*/
+@media only screen and (max-width: 900px) {
+  :root {
+    --liljesswidth: 40vw;
+  }
+  .instructions p {
+    display: block;
+  }
+  #cursor {
+    display: none;
+  }
 }
 
 

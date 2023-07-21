@@ -86,6 +86,11 @@ export default function UXDesignPage() {
     return (
         <section>
             <h1 className="font-bold text-2xl mb-8 tracking-tighter">AEP Artifact Copy App</h1>
+            <img
+                key={uxdesignimages[1].alt}
+                src={uxdesignimages[1].src}
+                alt={uxdesignimages[1].alt}
+            />
             <hr/>
             <br/>
             <h3 className="font-bold text-2xl mb-8 tracking-tighter">Problem</h3>
@@ -108,9 +113,13 @@ export default function UXDesignPage() {
                 • Revert artifacts (once) after syncing<br/>
                 • Log actions for documentation and troubleshooting
             </p>
+            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Role</h3>
+            <p className="my-5">
+                I led design and front-end development on a five person team.
+            </p>
             <h3 className="font-bold text-2xl mb-8 tracking-tighter">Research</h3>
             <p className="my-5">
-                All five members of my team participated in the research process. We gathered requirements from internal
+                All team members participated in the research process. We gathered requirements from internal
                 consultants and solution architects whose customers needed to efficiently manage multi-sandbox
                 environments.<br/><br/>
                 We identified the following pain points across all customers:<br/>
