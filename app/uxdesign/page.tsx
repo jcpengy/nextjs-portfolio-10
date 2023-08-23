@@ -77,11 +77,11 @@ const uxdesignimages = [
 
 const campaignion = [
     {
-        src: 'https://i.ibb.co/fqwPJJb/image004.png',
+        src: 'https://i.ibb.co/2jvmk6c/Screen-Shot-2023-08-23-at-4-38-49-PM.png',
         alt: 'Title image'
     },
     {
-        src: '',
+        src: 'https://i.ibb.co/bBvybNr/Screen-Shot-2023-08-23-at-4-40-05-PM.png',
         alt: 'Version 2 Image 1'
     },
     {
@@ -303,15 +303,15 @@ export default function UXDesignPage() {
 
             <h1 className="font-bold text-2xl mb-8 tracking-tighter">Campaignion</h1>
             <img
-                key={campaignion_final[4].alt}
-                src={campaignion_final[4].src}
-                alt={campaignion_final[4].alt}
+                key={campaignion[0].alt}
+                src={campaignion[0].src}
+                alt={campaignion[0].alt}
             />
             <hr/>
             <br/>
             <h3 className="font-bold text-2xl mb-8 tracking-tighter">Problem</h3>
             <p className="my-5">
-                Documentation of workflows in Adobe Campaign Standard (ACS) is manual, cumbersome, and unstructured.
+                Documentation of workflows in Adobe Campaign Standard (ACS) is manual and unstructured.
             </p>
             <h3 className="font-bold text-2xl mb-8 tracking-tighter">Objective</h3>
             <p className="my-5">
@@ -329,13 +329,12 @@ export default function UXDesignPage() {
             <h3 className="font-bold text-2xl mb-8 tracking-tighter">Research</h3>
             <p className="my-5">
                 I reviewed existing documentation spread across customer SharePoint sites and Wiki pages. I also
-                researched image detection methods to automatically read and label workflow snapshots, although I discovered that
-                the HTML used to draw workflows could be easily accessed from the Developer Console.
-                I did not find any internal tools that assisted in documentation and from
+                researched image detection methods to label workflow images, but discovered I could access the workflow
+                HTML from the Developer Console. I did not find any internal tools that assisted in documentation and from
                 conversations across the team, I identified the following pain points:<br/>
                 • There is no template or established structure for existing documentation (e.g. some documentation is
                 all text, others are a mix of pictures and text)<br/>
-                • Documentation is a manual and tedious process and can take hours to complete for large workflows.
+                • Documentation is a manual and tedious process and can take hours to complete for large workflows.<br/>
                 • This often leads to poor documentation (not updated, missing comprehensive explanations, etc.), which leads
                 to slower hand-off and difficulty troubleshooting future issues.<br/><br/>
                 Throughout the development process, I led internal demos and testing sessions to improve
@@ -374,8 +373,8 @@ export default function UXDesignPage() {
                 <img
                     key={"campaignion_problem1"}
                     className='w-full rounded'
-                    src={campaignion_final[4].src}
-                    alt={campaignion_final[4].alt}
+                    src={campaignion[1].src}
+                    alt={campaignion[1].alt}
                 /><br/>
                 <u>Problem #2</u>: The current documentation does not explain the activities in a logical way.<br/>
                 <u>Solution</u>: Use the breadth-first search algorithm to sequence activities.<br/>
@@ -431,7 +430,7 @@ export default function UXDesignPage() {
             <h3 className="font-bold text-2xl mb-8 tracking-tighter">Feedback</h3>
             <p className="my-5">
                 Problems to explore:<br/>
-                • Using an API to grab workflow data given the page url
+                • Using an API to grab workflow data given the page url<br/>
                 • QA testing - ensure a workflow aligns with requirements<br/><br/>
                 This tool semi-automates and significantly reduces workflow documentation time in ACS. With this prototype,
                  I was able to document a 56-activity workflow in just 15 minutes instead of 45
