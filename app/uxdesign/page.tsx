@@ -157,6 +157,25 @@ export default function UXDesignPage() {
 
     return (
         <section>
+            <div className="span4 collapse-group">
+                <>
+                    <p>displayed text</p>
+                    <p>
+                        <a className="read-more" data-bs-toggle="collapse"
+                           href={"#collapse-" + "sandbox_app"}
+                           role="button"
+                           aria-expanded="false" aria-controls={"collapse-" + "sandbox_app"}>
+                            Expand &raquo;
+                        </a>
+                    </p>
+                    <div className="collapse" id={"collapse-" + "sandbox_app"}>
+                        <div className="card card-body">
+                            hidden text
+                        </div>
+                    </div>
+                </>
+            </div>
+
             <h1 className="font-bold text-2xl mb-8 tracking-tighter">AEP Artifact Copy App</h1>
             <img
                 key={uxdesignimages[1].alt}
