@@ -3,6 +3,7 @@ import 'lightbox.js-react/dist/index.css'
 import {SlideshowLightbox, initLightboxJS} from 'lightbox.js-react'
 import {useEffect} from "react";
 import Footer from "../components/footer";
+import demo from "../assets/Campaignion-demo.mp4";
 
 const v1images = [
     {
@@ -75,6 +76,78 @@ const uxdesignimages = [
     },
 ]
 
+const campaignion = [
+    {
+        src: 'https://i.ibb.co/fqwPJJb/image004.png',
+        alt: 'Title image'
+    },
+    {
+        src: '',
+        alt: 'Version 2 Image 1'
+    },
+    {
+        src: 'https://i.ibb.co/wppK9PQ/Screen-Shot-2023-08-23-at-4-19-52-PM.png',
+        alt: 'Version 2 Image 2'
+    },
+    {
+        src: '',
+        alt: 'Version 2 Image 3'
+    },
+    {
+        src: 'https://i.ibb.co/kQhW8Vf/camp7.png',
+        alt: 'Version 2 Image 3'
+    },
+]
+
+const campaignion_v1 = [
+    {
+        src: 'https://i.ibb.co/qNKrRrm/image001.png',
+        alt: '1'
+    },
+    {
+        src: 'https://i.ibb.co/G0WnX2R/image002.png',
+        alt: '2'
+    },
+    {
+        src: 'https://i.ibb.co/4WGD3wK/image003.png',
+        alt: '3'
+    },
+    {
+        src: 'https://i.ibb.co/fqwPJJb/image004.png',
+        alt: '4'
+    },
+    {
+        src: 'https://i.ibb.co/pP3yvDW/image005.png',
+        alt: '5'
+    },
+]
+
+const campaignion_final = [
+    {
+        src: 'https://i.ibb.co/RvnfbWY/camp1.png',
+        alt: '1'
+    },
+    {
+        src: 'https://i.ibb.co/4ZQdFC8/camp2.png',
+        alt: '2'
+    },
+    {
+        src: 'https://i.ibb.co/93jys0n/camp3.png',
+        alt: '3'
+    },
+    {
+        src: 'https://i.ibb.co/3W7KhcL/camp4.png',
+        alt: '4'
+    },
+    {
+        src: 'https://i.ibb.co/1KBFHqs/camp5.png',
+        alt: '5'
+    },
+    {
+        src: 'https://i.ibb.co/dbbbyrF/camp6.png',
+        alt: '6'
+    },
+]
 export const revalidate = 60;
 
 export default function UXDesignPage() {
@@ -227,6 +300,147 @@ export default function UXDesignPage() {
                 using our app. We've also added an additional capability to copy artifacts across IMS orgs.
                 Overall, we've received positive feedback on the usefulness of this tool to
                 facilitate and streamline sandbox management in AEP.
+            </p>
+
+            <h1 className="font-bold text-2xl mb-8 tracking-tighter">Campaignion</h1>
+            <img
+                key={campaignion_final[4].alt}
+                src={campaignion_final[4].src}
+                alt={campaignion_final[4].alt}
+            />
+            <hr/>
+            <br/>
+            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Problem</h3>
+            <p className="my-5">
+                Documentation of workflows in Adobe Campaign Standard (ACS) is manual, cumbersome, and unstructured.
+            </p>
+            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Objective</h3>
+            <p className="my-5">
+                Reduce documentation time and therefore time to value for Campaign Standard implementations.
+            </p>
+            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Solution</h3>
+            <p className="my-5">
+                Create a tool that ingests workflow data and automates Campaign documentation. Users should be able to
+                access and export the documentation via a Unified Shell UI.
+            </p>
+            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Role</h3>
+            <p className="my-5">
+                I independently conceptualized, designed, and coded this project.
+            </p>
+            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Research</h3>
+            <p className="my-5">
+                I reviewed existing documentation spread across customer SharePoint sites and Wiki pages. I also
+                researched image detection methods to automatically read and label workflow snapshots, although I discovered that
+                the HTML used to draw workflows could be easily accessed from the Developer Console.
+                I did not find any internal tools that assisted in documentation and from
+                conversations across the team, I identified the following pain points:<br/>
+                • There is no template or established structure for existing documentation (e.g. some documentation is
+                all text, others are a mix of pictures and text)<br/>
+                • Documentation is a manual and tedious process and can take hours to complete for large workflows.
+                • This often leads to poor documentation (not updated, missing comprehensive explanations, etc.), which leads
+                to slower hand-off and difficulty troubleshooting future issues.<br/><br/>
+                Throughout the development process, I led internal demos and testing sessions to improve
+                the app's usability on a variety of workflows.
+            </p>
+            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Version One</h3>
+            <p className="my-5">
+                <video src={demo} width="750" height="500" controls>
+                </video>
+                <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
+                    {campaignion_v1.map((image) => (
+                        <img
+                            key={image.src}
+                            className='w-full rounded'
+                            src={image.src}
+                            alt={image.alt}
+                        />
+                    ))}
+                </SlideshowLightbox><br/>
+                In this single page UI, the user copies the workflow HTML from the Developer Console and pastes it in the
+                input field. Once the user hits Process, the tool outputs a re-drawn workflow with numbered activities
+                and a description table.<br/>
+                The main accomplishment of the first version was that it could accurately parse and re-draw workflows, however,
+                the activity sequencing and documentation structure needed to be scaled for larger workflows containing
+                more than 10 activities, for example.
+            </p>
+            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Version Two</h3>
+            <p className="my-5">
+                <u>Problem #1</u>: The current documentation is too dense and hard to follow for large workflows.<br/>
+                <u>Solution</u>: Enable the user to split the workflow into groups of x activities and provide a
+                table under each group.<br/>
+                <u>Thought Process</u>: Originally I had a zoom in/out feature on the re-drawn
+                workflow, however, larger workflows would be inconvenient to navigate in the UI.
+                I decided to split the workflow into activity groups. The number of activities in each group would not be
+                hard-coded since this could result in an awkward documentation of one or two remaining activities. I decided to add a number dropdown
+                for the user to specify how many activities they wanted to see at a time. This way they could have the option
+                to view all activities at once in a large table or split the documentation into digestible bits.<br/><br/>
+                <img
+                    key={"campaignion_problem1"}
+                    className='w-full rounded'
+                    src={campaignion_final[4].src}
+                    alt={campaignion_final[4].alt}
+                /><br/>
+                <u>Problem #2</u>: The current documentation does not explain the activities in a logical way.<br/>
+                <u>Solution</u>: Use the breadth-first search algorithm to sequence activities.<br/>
+                <u>Thought Process</u>: I originally used the depth-first search algorithm to sequence activities. This
+                meant the tool would document one complete branch of the workflow before moving to another
+                branch, which did not comprehensively describe the workflow. For example, the workflow below targets an
+                audience to receive an email campaign, then segments that audience to receive different versions of it.
+                By using breadth-first search, the tool can document starting from the root and explore all activities
+                at the present depth prior to moving on to the activities at the next depth level.<br/><br/>
+                <img
+                    key={"improv2"}
+                    className='w-full rounded'
+                    src={campaignion[2].src}
+                    alt={campaignion[2].alt}
+                /><br/>
+                <u>Problem #3</u>: Users cannot share the documentation.<br/>
+                <u>Solution</u>: Enable the output to be exported to Word.<br/>
+                <u>Thought Process</u>: The major feedback I got from testing sessions was to add a way to export or share
+                 the outputted documentation. The user could drag their mouse to copy and paste the output, but the images
+                could not be imported to another location like a Word document. Thus, I added a button to parse the output
+                and successfully download it into a Word document. <br/><br/>
+                <img
+                    key={"improv3"}
+                    className='w-full rounded'
+                    src={campaignion_final[5].src}
+                    alt={campaignion_final[5].alt}
+                /><br/>
+                <u>Problem #4</u>: Users still need to fill out the purpose and notes columns in the table.<br/>
+                <u>Solution</u>: Partially auto-fill the table with placeholder language.<br/>
+                <u>Thought Process</u>: Unfortunately, I was unable to find an API that, given the page url, would provide
+                all data in the workflow, including richer data in the activities such as deduplication criteria,
+                segmentation conditions, and target audience queries. There were also concerns with exposing sensitive
+                customer data. Thus, I decided to establish a standard, placeholder language for each activity type. This
+                way the table would be partially auto-filled and the user would simply need to fill in the blanks.<br/><br/>
+                <img
+                    key={"improv3"}
+                    className='w-full rounded'
+                    src={campaignion[4].src}
+                    alt={campaignion[4].alt}
+                /><br/>
+                <h3 className="font-bold text-2xl mb-8 tracking-tighter">Final Design</h3>
+                <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
+                    {campaignion_final.map((image) => (
+                        <img
+                            key={image.src}
+                            className='w-full rounded'
+                            src={image.src}
+                            alt={image.alt}
+                        />
+                    ))}
+                </SlideshowLightbox>
+            </p>
+            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Feedback</h3>
+            <p className="my-5">
+                Problems to explore:<br/>
+                • Using an API to grab workflow data given the page url
+                • QA testing - ensure a workflow aligns with requirements<br/><br/>
+                This tool semi-automates and significantly reduces workflow documentation time in ACS. With this prototype,
+                 I was able to document a 56-activity workflow in just 15 minutes instead of 45
+                 minutes. Overall, I received positive feedback on this tool, which has been published
+                in Adobe's Shared Center of Excellence, an internal site for consulting assets, and the Campaign
+                Design Club.
             </p>
             <Footer/>
         </section>

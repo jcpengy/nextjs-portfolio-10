@@ -21,27 +21,26 @@ export default async function BlogPage() {
           doodling cartoons and dream houses as a toddler to building hamster cages as a middle schooler,
           I developed an interest in art and engineering that continued throughout my college and professional experiences.<br/><br/>
 
-          At the University of Pennsylvania, I majored in <u><a href="https://www.instagram.com/officialceojess/">Digital
+          At the University of Pennsylvania, I majored in <u><a href="http://cg.cis.upenn.edu/dmd.html">Digital
           Media Design</a></u> and minored in Fine Arts with a
           focus in 3D modeling. I also interned at the
-          New York Times where I researched VR technology and contributed graphics on the Immersive Storytelling Team.<br/><br/>
+          New York Times where I researched VR/AR technology on the Immersive Storytelling Team.<br/><br/>
           <img
               key={'3dmodel'}
               className='w-full rounded'
               src={'https://i.ibb.co/nmXmXp3/IMG-2655-Original.jpg'}
               alt={'3dmodel'}
           />
-          3D model I created of my college apartment<br/><br/>
+          3D model of my college apartment<br/><br/>
           As both a designer and developer at Adobe (and previously a consultant), I've gained experience in all areas
-           of the product lifecycle and currently strive to build web applications that are simple,
+           of the product lifecycle and currently strive to build internal web tools that are simple,
           intuitive, and accessible. Although I enjoy seeing
           my ideas come to life through development, I'm excited to focus on and grow my design skills on upcoming projects.<br/><br/>
           <h3 className="font-bold text-2xl mb-8 tracking-tighter">fun facts!</h3>
           <ul>
-            <li>I draw cartoons on <u><a href="https://www.instagram.com/officialceojess/">CEO Jess</a></u>.</li>
-            <li>I ran a best-selling, five-star graphic design shop on Etsy.</li>
+            <li>I draw cartoons.</li>
             <li>My favorite movie is Shrek 2.</li>
-            <li>I YouTubed my hamster cage building experiences. My most popular video has 300k+ views.</li>
+            <li>My favorite color is lavender.</li>
           </ul><br/>
           If you want to connect or collaborate on a project, send me an email at pengjess2@gmail.com!:)
         </p>

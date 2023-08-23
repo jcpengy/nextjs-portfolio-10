@@ -54,9 +54,8 @@ export default async function CartoonPage() {
                 />
             </div>
             <p className="cartoons-p">
-                CEO Jess is an unstoppable boss girlie navigating the daily struggles of work, dating, and beyond.
-                Tenacious and optimistic, she's a feisty potato with a heart of gold.<br/><br/>
-                Follow @officialceojess on Insta for more!
+                CEO Jess is an anxious yet optimistic potato with a heart of gold. Follow her adventures navigating the
+                daily struggles of work, dating, and beyond on @officialceojess!
             </p>
             {
                 cartoonimages.map(img => (
