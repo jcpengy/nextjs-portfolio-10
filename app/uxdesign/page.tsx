@@ -344,8 +344,6 @@ export default function UXDesignPage() {
             </p>
             <h3 className="font-bold text-2xl mb-8 tracking-tighter">Version One</h3>
             <p className="my-5">
-                <video src={demo} width="750" height="500" controls>
-                </video>
                 <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                     {campaignion_v1.map((image) => (
                         <img
