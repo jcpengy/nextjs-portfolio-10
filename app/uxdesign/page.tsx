@@ -3,7 +3,6 @@ import 'lightbox.js-react/dist/index.css'
 import {SlideshowLightbox, initLightboxJS} from 'lightbox.js-react'
 import {useEffect} from "react";
 import Footer from "../components/footer";
-import demo from "../assets/Campaignion-demo.mp4";
 
 const v1images = [
     {
