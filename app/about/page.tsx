@@ -14,7 +14,12 @@ export default async function BlogPage() {
       <p className="my-5">
         I'm an SF-based <b>Front-End Engineer at Adobe</b>. I build internal tools
         on the Digital Experience Customer Engineering team.
-      </p>
+      </p><br/>
+      <img
+          key='profile-picture'
+          src='https://i.ibb.co/VVY54RV/IMG-9462.jpg'
+          alt='Profile picture'
+      />
         <hr/><br/>
         <p>
           I love creative challenges and learning new things. From

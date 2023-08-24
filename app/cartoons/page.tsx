@@ -35,8 +35,6 @@ const cartoonimages = [
     },
 ]
 
-export const revalidate = 60;
-
 export default async function CartoonPage() {
 
     useEffect(() => {
@@ -57,18 +55,16 @@ export default async function CartoonPage() {
                 CEO Jess is an anxious yet optimistic potato with a heart of gold. Follow her adventures navigating the
                 daily struggles of work, dating, and beyond on @officialceojess!
             </p>
-            {
-                cartoonimages.map(img => (
-                    <>
-                        <img
-                            key={img.alt}
-                            className='w-full rounded'
-                            src={img.src}
-                            alt={img.alt}
-                        /><br/>
-                    </>
-                ))
-            }
+            <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
+                {cartoonimages.map((image) => (
+                    <img
+                        key={image.src}
+                        className='w-full rounded'
+                        src={image.src}
+                        alt={image.alt}
+                    />
+                ))}
+            </SlideshowLightbox>
             <Footer/>
         </section>
     );
