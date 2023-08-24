@@ -147,13 +147,13 @@ const campaignion_final = [
         alt: '6'
     },
 ]
-const [open1, setOpen1] = useState(false);
-const [open2, setOpen2] = useState(false);
-const toggle1 = () => {
-    setOpen1(!open1);
-};
 
 export default function UXDesignPage() {
+    const [open1, setOpen1] = useState(false);
+    const [open2, setOpen2] = useState(false);
+    const toggle1 = () => {
+        setOpen1(!open1);
+    };
 
     useEffect(() => {
         initLightboxJS("9F1C-4A63-970C-2B0D", "individual");
