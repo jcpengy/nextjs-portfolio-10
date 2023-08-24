@@ -17,10 +17,9 @@ export default async function BlogPage() {
       </p>
       <img
           key='profile-picture'
-          src='https://i.ibb.co/Fgz8bJr/IMG-9462.jpg'
+          src='https://i.ibb.co/8XV7trP/IMG-9462-2.jpg'
           alt='Profile picture'
       /><br/>
-        <hr/><br/>
         <p>
           I love creative challenges and learning new things. From
           doodling cartoons and dream houses as a toddler to building hamster cages as a middle schooler,
