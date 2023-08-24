@@ -171,13 +171,13 @@ export default function UXDesignPage() {
                     src={uxdesignimages[1].src}
                     alt={uxdesignimages[1].alt}
                 /><br/>
-                <h4>Technologies: React Spectrum, Javascript, Unified Shell, Figma</h4><br/>
+                <h4>Technologies: React Spectrum, Javascript, Unified Shell, Figma</h4>
                 <button onClick={toggle1}>Read more &raquo;</button>
                 {open1 && (
                     <div className="toggle1">
                         <hr/>
                         <br/>
-                        <h3>Problem</h3>
+                        <h3 className="font-bold text-1xl">Problem</h3>
                         <p className="my-5">
                             Transferring artifacts between sandboxes in Adobe Experience Platform is time-consuming and
                             error
@@ -350,7 +350,7 @@ export default function UXDesignPage() {
                     src={campaignion[0].src}
                     alt={campaignion[0].alt}
                 /><br/>
-                <h4>Technologies: React Spectrum, Javascript, Unified Shell</h4><br/>
+                <h4>Technologies: React Spectrum, Javascript, Unified Shell</h4>
                 <button onClick={toggle2}>Read more &raquo;</button>
                 {open2 && (
                     <div className="toggle2">

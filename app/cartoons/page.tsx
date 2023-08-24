@@ -29,10 +29,6 @@ const cartoonimages = [
         src: 'https://i.ibb.co/z7n38WQ/IMG-8951.jpg',
         alt: 'Lady Clingford',
     },
-    {
-        src: 'https://i.ibb.co/Dg5V95z/IMG-8948.jpg',
-        alt: 'No Work',
-    },
 ]
 
 export default async function CartoonPage() {
@@ -54,7 +50,7 @@ export default async function CartoonPage() {
             <p className="cartoons-p">
                 CEO Jess is an anxious yet optimistic potato with a heart of gold. Follow her adventures navigating the
                 daily struggles of work, dating, and beyond on @officialceojess!
-            </p>
+            </p><br/>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {cartoonimages.map((image) => (
                     <img
