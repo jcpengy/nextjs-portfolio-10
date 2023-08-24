@@ -14,12 +14,12 @@ export default async function BlogPage() {
       <p className="my-5">
         I'm an SF-based <b>Front-End Engineer at Adobe</b>. I build internal tools
         on the Digital Experience Customer Engineering team.
-      </p><br/>
+      </p>
       <img
           key='profile-picture'
-          src='https://i.ibb.co/VVY54RV/IMG-9462.jpg'
+          src='https://i.ibb.co/Fgz8bJr/IMG-9462.jpg'
           alt='Profile picture'
-      />
+      /><br/>
         <hr/><br/>
         <p>
           I love creative challenges and learning new things. From
@@ -36,7 +36,7 @@ export default async function BlogPage() {
               src={'https://i.ibb.co/nmXmXp3/IMG-2655-Original.jpg'}
               alt={'3dmodel'}
           />
-          3D model of my college apartment<br/><br/>
+          <i>3D model of my college apartment</i><br/><br/>
           As both a designer and developer at Adobe (and previously a consultant), I've gained experience in all areas
            of the product lifecycle and currently strive to build internal web tools that are simple,
           intuitive, and accessible. Although I enjoy seeing
