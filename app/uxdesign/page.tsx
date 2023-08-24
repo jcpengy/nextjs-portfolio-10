@@ -1,7 +1,7 @@
 "use client"
 import 'lightbox.js-react/dist/index.css'
 import {SlideshowLightbox, initLightboxJS} from 'lightbox.js-react'
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import Footer from "../components/footer";
 
 const v1images = [
@@ -147,7 +147,11 @@ const campaignion_final = [
         alt: '6'
     },
 ]
-export const revalidate = 60;
+const [open1, setOpen1] = useState(false);
+const [open2, setOpen2] = useState(false);
+const toggle1 = () => {
+    setOpen1(!open1);
+};
 
 export default function UXDesignPage() {
 
@@ -157,21 +161,14 @@ export default function UXDesignPage() {
 
     return (
         <section>
-            <CollapseGroup>
-                <Collapse title='Question A'>
-                    <Text>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </Text>
-                </Collapse>
-                <Collapse title='Question B'>
-                    <Text>
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur.
-                    </Text>
-                </Collapse>
-            </CollapseGroup>
+            <div>
+                <button onClick={toggle1}>toggle1</button>
+                {open1 && (
+                    <div className="toggle1">
+                        <h4>hidden text</h4>
+                    </div>
+                )}
+            </div>
 
             <h1 className="font-bold text-2xl mb-8 tracking-tighter">AEP Artifact Copy App</h1>
             <img
