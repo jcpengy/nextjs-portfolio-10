@@ -154,6 +154,9 @@ export default function UXDesignPage() {
     const toggle1 = () => {
         setOpen1(!open1);
     };
+    const toggle2 = () => {
+        setOpen2(!open2);
+    };
 
     useEffect(() => {
         initLightboxJS("9F1C-4A63-970C-2B0D", "individual");
@@ -162,295 +165,360 @@ export default function UXDesignPage() {
     return (
         <section>
             <div>
-                <button onClick={toggle1}>toggle1</button>
+                <h1 className="font-bold text-2xl mb-8 tracking-tighter">AEP Artifact Copy App</h1>
+                <img
+                    key={uxdesignimages[1].alt}
+                    src={uxdesignimages[1].src}
+                    alt={uxdesignimages[1].alt}
+                />
+                <button onClick={toggle1}>Read more &raquo;</button>
                 {open1 && (
                     <div className="toggle1">
-                        <h4>hidden text</h4>
+                        <hr/>
+                        <br/>
+                        <h3 className="font-bold text-2xl mb-8 tracking-tighter">Problem</h3>
+                        <p className="my-5">
+                            Transferring artifacts between sandboxes in Adobe Experience Platform is time-consuming and
+                            error
+                            prone.
+                        </p>
+                        <h3 className="font-bold text-2xl mb-8 tracking-tighter">Objective</h3>
+                        <p className="my-5">
+                            Build a tool that simplifies and streamlines sandbox management.
+                        </p>
+                        <h3 className="font-bold text-2xl mb-8 tracking-tighter">Solution</h3>
+                        <p className="my-5">
+                            Create an internal Unified Shell application that uses Adobe Experience Platform's API to
+                            handle all
+                            facets of sandbox management. With our app, the user can:<br/><br/>
+                            • Copy all foundation artifacts (schemas, datasets, segments, sources, destinations) and
+                            first level dependencies from one sandbox to another sandbox<br/>
+                            • Review dependencies before copying<br/>
+                            • Sync artifacts between the source and destination sandboxes<br/>
+                            • Revert artifacts (once) after syncing<br/>
+                            • Log actions for documentation and troubleshooting
+                        </p>
+                        <h3 className="font-bold text-2xl mb-8 tracking-tighter">Role</h3>
+                        <p className="my-5">
+                            I led design and front-end development on a five person team.
+                        </p>
+                        <h3 className="font-bold text-2xl mb-8 tracking-tighter">Research</h3>
+                        <p className="my-5">
+                            All team members participated in the research process. We gathered requirements from
+                            internal
+                            consultants and solution architects whose customers needed to efficiently manage
+                            multi-sandbox
+                            environments.<br/><br/>
+                            We identified the following pain points across all customers:<br/>
+                            • Painful and time-consuming to copy complex artifacts from Production to Development
+                            sandboxes<br/>
+                            • Need to easily kickstart new business implementations from Development to QA or Production<br/>
+                            • Deploy market or regional sandboxes with a baseline configuration, support customers that
+                            wish to benefit from faster sandbox deployments that include tested AEP configurations<br/>
+                            • Development work migrated to higher sandboxes from the UI without
+                            having separate set of APIs for AEP versus AJO<br/><br/>
+                            A competitive analysis of other sandbox management apps:<br/><br/>
+                            <img
+                                key={"competitive analysis"}
+                                className='w-full rounded'
+                                src={'https://i.ibb.co/0Jm8Pkx/Screen-Shot-2023-07-09-at-4-20-10-PM.png'}
+                                alt={"competitive analysis"}
+                            /><br/>
+                            Throughout our design and implementation process, I led internal demos and testing sessions
+                            to debug the
+                            app, improve its usability, and fine-tune requirements.
+                        </p>
+                        <h3 className="font-bold text-2xl mb-8 tracking-tighter">Version One</h3>
+                        <p className="my-5">
+                            <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
+                                {v1images.map((image) => (
+                                    <img
+                                        key={image.src}
+                                        className='w-full rounded'
+                                        src={image.src}
+                                        alt={image.alt}
+                                    />
+                                ))}
+                            </SlideshowLightbox><br/>
+                            From the testing sessions, we concluded our initial design lacked scalability and helpful
+                            reporting.
+                            Users did not have a consolidated view of all dependencies for
+                            large copy operations. The audit log did not provide an organized documentation of calls
+                            occurring on
+                            the backend. Finally, having all copy workflows on a single page made it difficult to
+                            organize the code
+                            and add additional features like sync and revert.
+                        </p>
+                        <h3 className="font-bold text-2xl mb-8 tracking-tighter">Version Two</h3>
+                        <p className="my-5">
+                            Based on existing design patterns in AEP, I drafted a re-design in
+                            <u><a href="https://www.figma.com/proto/TIHIYPfyhvmQiSWxfzz5i1/Untitled?node-id=1-400&scaling=
+                            min-zoom&page-id=0%3A1&starting-point-node-id=1%3A137">Figma</a></u>.<br/><br/>
+                            <u>Problem #1</u>: Users cannot view dependencies of all artifacts in one place.<br/>
+                            <u>Solution</u>: Create a separate dialog window and use a list to show all selected
+                            artifacts and their
+                            dependencies.<br/>
+                            <u>Thought Process</u>: There were two issues to this problem. The first was how to display
+                            the dependency
+                            itself and the second was how to display multiple dependencies. The tree diagram we had
+                            previously
+                            lagged
+                            sometimes on artifact selection and was generally buggy. During the testing sessions, we
+                            agreed that a
+                            separate window was crucial for viewing all dependencies in one place. As for displaying the
+                            dependency
+                            itself, I decided to look toward AJO Copy for inspiration instead of reinventing the wheel.
+                            In this
+                            design, all selected artifacts and their dependencies are organized in a simple list. This
+                            way, the user
+                            can review all information before starting the copy process.<br/><br/>
+                            <img
+                                key={"improv1"}
+                                className='w-full rounded'
+                                src={images[1].src}
+                                alt={images[1].alt}
+                            /><br/>
+                            <u>Problem #2</u>: A single page UI makes it hard to incorporate more complex features.<br/>
+                            <u>Solution</u>: Put each artifact type on its own tab.<br/>
+                            <u>Thought Process</u>: We needed to add two more features to our app: 1) the ability to
+                            sync artifacts between
+                            source and destination sandboxes and 2) the ability to revert the artifact to its original
+                            state (once)
+                            after syncing. The UI for each of these features would require a button and a status
+                            message. Adding
+                            these two features to the previous design would've crowded it. Since we wanted to implement
+                            sync and revert for schemas only and we already faced issues running calls for all artifact
+                            types at
+                            once,
+                            we decided to move each artifact type to its own tab. Each tab would follow the same copy
+                            workflow, but it'd be much easier now to incorporate new features per artifact
+                            type.<br/><br/>
+                            <img
+                                key={"improv2"}
+                                className='w-full rounded'
+                                src={images[2].src}
+                                alt={images[2].alt}
+                            /><br/>
+                            <u>Problem #3</u>: The audit log is too confusing to read and doesn't help with
+                            troubleshooting.<br/>
+                            <u>Solution</u>: Turn the audit log into a table and put it on another tab.<br/>
+                            <u>Thought Process</u>: Previously, the audit log outputted all calls that were executed on
+                            the backend in no
+                            particular order. This made troubleshooting extremely difficult and time-consuming. Since we
+                            already
+                            created tabs for each artifact type, we decided to extend this to the audit log and put it
+                            on a separate
+                            tab as well. In addition, we only needed to show key information of main actions taken in
+                            the app. We decided
+                            to organize the log into a table with columns showing the artifact type, status, action,
+                            etc. for
+                            copy, sync, and revert.<br/><br/>
+                            <img
+                                key={"improv3"}
+                                className='w-full rounded'
+                                src={images[6].src}
+                                alt={images[6].alt}
+                            /><br/>
+                            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Final Design</h3>
+                            <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
+                                {uxdesignimages.map((image) => (
+                                    <img
+                                        key={image.src}
+                                        className='w-full rounded'
+                                        src={image.src}
+                                        alt={image.alt}
+                                    />
+                                ))}
+                            </SlideshowLightbox>
+                        </p>
+                        <h3 className="font-bold text-2xl mb-8 tracking-tighter">Feedback</h3>
+                        <p className="my-5">
+                            From the audit log, we've tracked over 100 internal consultants and solution architects
+                            using our app. We've also added an additional capability to copy artifacts across IMS orgs.
+                            Overall, we've received positive feedback on the usefulness of this tool to
+                            facilitate and streamline sandbox management in AEP.
+                        </p>
                     </div>
                 )}
             </div>
 
-            <h1 className="font-bold text-2xl mb-8 tracking-tighter">AEP Artifact Copy App</h1>
-            <img
-                key={uxdesignimages[1].alt}
-                src={uxdesignimages[1].src}
-                alt={uxdesignimages[1].alt}
-            />
-            <hr/>
-            <br/>
-            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Problem</h3>
-            <p className="my-5">
-                Transferring artifacts between sandboxes in Adobe Experience Platform is time-consuming and error
-                prone.
-            </p>
-            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Objective</h3>
-            <p className="my-5">
-                Build a tool that simplifies and streamlines sandbox management.
-            </p>
-            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Solution</h3>
-            <p className="my-5">
-                Create an internal Unified Shell application that uses Adobe Experience Platform's API to handle all
-                facets of sandbox management. With our app, the user can:<br/><br/>
-                • Copy all foundation artifacts (schemas, datasets, segments, sources, destinations) and
-                first level dependencies from one sandbox to another sandbox<br/>
-                • Review dependencies before copying<br/>
-                • Sync artifacts between the source and destination sandboxes<br/>
-                • Revert artifacts (once) after syncing<br/>
-                • Log actions for documentation and troubleshooting
-            </p>
-            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Role</h3>
-            <p className="my-5">
-                I led design and front-end development on a five person team.
-            </p>
-            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Research</h3>
-            <p className="my-5">
-                All team members participated in the research process. We gathered requirements from internal
-                consultants and solution architects whose customers needed to efficiently manage multi-sandbox
-                environments.<br/><br/>
-                We identified the following pain points across all customers:<br/>
-                • Painful and time-consuming to copy complex artifacts from Production to Development sandboxes<br/>
-                • Need to easily kickstart new business implementations from Development to QA or Production<br/>
-                • Deploy market or regional sandboxes with a baseline configuration, support customers that
-                wish to benefit from faster sandbox deployments that include tested AEP configurations<br/>
-                • Development work migrated to higher sandboxes from the UI without
-                having separate set of APIs for AEP versus AJO<br/><br/>
-                A competitive analysis of other sandbox management apps:<br/><br/>
+            <div>
+                <h1 className="font-bold text-2xl mb-8 tracking-tighter">Campaignion</h1>
                 <img
-                    key={"competitive analysis"}
-                    className='w-full rounded'
-                    src={'https://i.ibb.co/0Jm8Pkx/Screen-Shot-2023-07-09-at-4-20-10-PM.png'}
-                    alt={"competitive analysis"}
-                /><br/>
-                Throughout our design and implementation process, I led internal demos and testing sessions to debug the
-                app, improve its usability, and fine-tune requirements.
-            </p>
-            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Version One</h3>
-            <p className="my-5">
-                <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
-                    {v1images.map((image) => (
-                        <img
-                            key={image.src}
-                            className='w-full rounded'
-                            src={image.src}
-                            alt={image.alt}
-                        />
-                    ))}
-                </SlideshowLightbox><br/>
-                From the testing sessions, we concluded our initial design lacked scalability and helpful reporting.
-                Users did not have a consolidated view of all dependencies for
-                large copy operations. The audit log did not provide an organized documentation of calls occurring on
-                the backend. Finally, having all copy workflows on a single page made it difficult to organize the code
-                and add additional features like sync and revert.
-            </p>
-            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Version Two</h3>
-            <p className="my-5">
-                Based on existing design patterns in AEP, I drafted a re-design in
-                <u><a href="https://www.figma.com/proto/TIHIYPfyhvmQiSWxfzz5i1/Untitled?node-id=1-400&scaling=
-                            min-zoom&page-id=0%3A1&starting-point-node-id=1%3A137">Figma</a></u>.<br/><br/>
-                <u>Problem #1</u>: Users cannot view dependencies of all artifacts in one place.<br/>
-                <u>Solution</u>: Create a separate dialog window and use a list to show all selected artifacts and their
-                dependencies.<br/>
-                <u>Thought Process</u>: There were two issues to this problem. The first was how to display the dependency
-                itself and the second was how to display multiple dependencies. The tree diagram we had previously
-                lagged
-                sometimes on artifact selection and was generally buggy. During the testing sessions, we agreed that a
-                separate window was crucial for viewing all dependencies in one place. As for displaying the dependency
-                itself, I decided to look toward AJO Copy for inspiration instead of reinventing the wheel. In this
-                design, all selected artifacts and their dependencies are organized in a simple list. This way, the user
-                can review all information before starting the copy process.<br/><br/>
-                <img
-                    key={"improv1"}
-                    className='w-full rounded'
-                    src={images[1].src}
-                    alt={images[1].alt}
-                /><br/>
-                <u>Problem #2</u>: A single page UI makes it hard to incorporate more complex features.<br/>
-                <u>Solution</u>: Put each artifact type on its own tab.<br/>
-                <u>Thought Process</u>: We needed to add two more features to our app: 1) the ability to sync artifacts between
-                source and destination sandboxes and 2) the ability to revert the artifact to its original state (once)
-                after syncing. The UI for each of these features would require a button and a status message. Adding
-                these two features to the previous design would've crowded it. Since we wanted to implement
-                sync and revert for schemas only and we already faced issues running calls for all artifact types at
-                once,
-                we decided to move each artifact type to its own tab. Each tab would follow the same copy
-                workflow, but it'd be much easier now to incorporate new features per artifact type.<br/><br/>
-                <img
-                    key={"improv2"}
-                    className='w-full rounded'
-                    src={images[2].src}
-                    alt={images[2].alt}
-                /><br/>
-                <u>Problem #3</u>: The audit log is too confusing to read and doesn't help with troubleshooting.<br/>
-                <u>Solution</u>: Turn the audit log into a table and put it on another tab.<br/>
-                <u>Thought Process</u>: Previously, the audit log outputted all calls that were executed on the backend in no
-                particular order. This made troubleshooting extremely difficult and time-consuming. Since we already
-                created tabs for each artifact type, we decided to extend this to the audit log and put it on a separate
-                tab as well. In addition, we only needed to show key information of main actions taken in the app. We decided
-                to organize the log into a table with columns showing the artifact type, status, action, etc. for
-                copy, sync, and revert.<br/><br/>
-                <img
-                    key={"improv3"}
-                    className='w-full rounded'
-                    src={images[6].src}
-                    alt={images[6].alt}
-                /><br/>
-                <h3 className="font-bold text-2xl mb-8 tracking-tighter">Final Design</h3>
-                <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
-                    {uxdesignimages.map((image) => (
-                        <img
-                            key={image.src}
-                            className='w-full rounded'
-                            src={image.src}
-                            alt={image.alt}
-                        />
-                    ))}
-                </SlideshowLightbox>
-            </p>
-            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Feedback</h3>
-            <p className="my-5">
-                From the audit log, we've tracked over 100 internal consultants and solution architects
-                using our app. We've also added an additional capability to copy artifacts across IMS orgs.
-                Overall, we've received positive feedback on the usefulness of this tool to
-                facilitate and streamline sandbox management in AEP.
-            </p>
-
-            <h1 className="font-bold text-2xl mb-8 tracking-tighter">Campaignion</h1>
-            <img
-                key={campaignion[0].alt}
-                src={campaignion[0].src}
-                alt={campaignion[0].alt}
-            />
-            <hr/>
-            <br/>
-            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Problem</h3>
-            <p className="my-5">
-                Documentation of workflows in Adobe Campaign Standard (ACS) is manual and unstructured.
-            </p>
-            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Objective</h3>
-            <p className="my-5">
-                Reduce documentation time and therefore time to value for Campaign Standard implementations.
-            </p>
-            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Solution</h3>
-            <p className="my-5">
-                Create a tool that ingests workflow data and automates Campaign documentation. Users should be able to
-                access and export the documentation via a Unified Shell UI.
-            </p>
-            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Role</h3>
-            <p className="my-5">
-                I independently conceptualized, designed, and coded this project.
-            </p>
-            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Research</h3>
-            <p className="my-5">
-                I reviewed existing documentation spread across customer SharePoint sites and Wiki pages. I also
-                researched image detection methods to label workflow images, but discovered I could access the workflow
-                HTML from the Developer Console. I did not find any internal tools that assisted in documentation and from
-                conversations across the team, I identified the following pain points:<br/>
-                • There is no template or established structure for existing documentation (e.g. some documentation is
-                all text, others are a mix of pictures and text)<br/>
-                • Documentation is a manual and tedious process and can take hours to complete for large workflows.<br/>
-                • This often leads to poor documentation (not updated, missing comprehensive explanations, etc.), which leads
-                to slower hand-off and difficulty troubleshooting future issues.<br/><br/>
-                Throughout the development process, I led internal demos and testing sessions to improve
-                the app's usability on a variety of workflows.
-            </p>
-            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Version One</h3>
-            <p className="my-5">
-                <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
-                    {campaignion_v1.map((image) => (
-                        <img
-                            key={image.src}
-                            className='w-full rounded'
-                            src={image.src}
-                            alt={image.alt}
-                        />
-                    ))}
-                </SlideshowLightbox><br/>
-                In this single page UI, the user copies the workflow HTML from the Developer Console and pastes it in the
-                input field. Once the user hits Process, the tool outputs a re-drawn workflow with numbered activities
-                and a description table.<br/>
-                The main accomplishment of the first version was that it could accurately parse and re-draw workflows, however,
-                the activity sequencing and documentation structure needed to be scaled for larger workflows containing
-                more than 10 activities, for example.
-            </p>
-            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Version Two</h3>
-            <p className="my-5">
-                <u>Problem #1</u>: The current documentation is too dense and hard to follow for large workflows.<br/>
-                <u>Solution</u>: Enable the user to split the workflow into groups of x activities and provide a
-                table under each group.<br/>
-                <u>Thought Process</u>: Originally I had a zoom in/out feature on the re-drawn
-                workflow, however, larger workflows would be inconvenient to navigate in the UI.
-                I decided to split the workflow into activity groups. The number of activities in each group would not be
-                hard-coded since this could result in an awkward documentation of one or two remaining activities. I decided to add a number dropdown
-                for the user to specify how many activities they wanted to see at a time. This way they could have the option
-                to view all activities at once in a large table or split the documentation into digestible bits.<br/><br/>
-                <img
-                    key={"campaignion_problem1"}
-                    className='w-full rounded'
-                    src={campaignion[1].src}
-                    alt={campaignion[1].alt}
-                /><br/>
-                <u>Problem #2</u>: The current documentation does not explain the activities in a logical way.<br/>
-                <u>Solution</u>: Use the breadth-first search algorithm to sequence activities.<br/>
-                <u>Thought Process</u>: I originally used the depth-first search algorithm to sequence activities. This
-                meant the tool would document one complete branch of the workflow before moving to another
-                branch, which did not comprehensively describe the workflow. For example, the workflow below targets an
-                audience to receive an email campaign, then segments that audience to receive different versions of it.
-                By using breadth-first search, the tool can document starting from the root and explore all activities
-                at the present depth prior to moving on to the activities at the next depth level.<br/><br/>
-                <img
-                    key={"improv2"}
-                    className='w-full rounded'
-                    src={campaignion[2].src}
-                    alt={campaignion[2].alt}
-                /><br/>
-                <u>Problem #3</u>: Users cannot share the documentation.<br/>
-                <u>Solution</u>: Enable the output to be exported to Word.<br/>
-                <u>Thought Process</u>: The major feedback I got from testing sessions was to add a way to export or share
-                 the outputted documentation. The user could drag their mouse to copy and paste the output, but the images
-                could not be imported to another location like a Word document. Thus, I added a button to parse the output
-                and successfully download it into a Word document. <br/><br/>
-                <img
-                    key={"improv3"}
-                    className='w-full rounded'
-                    src={campaignion_final[5].src}
-                    alt={campaignion_final[5].alt}
-                /><br/>
-                <u>Problem #4</u>: Users still need to fill out the purpose and notes columns in the table.<br/>
-                <u>Solution</u>: Partially auto-fill the table with placeholder language.<br/>
-                <u>Thought Process</u>: Unfortunately, I was unable to find an API that, given the page url, would provide
-                all data in the workflow, including richer data in the activities such as deduplication criteria,
-                segmentation conditions, and target audience queries. There were also concerns with exposing sensitive
-                customer data. Thus, I decided to establish a standard, placeholder language for each activity type. This
-                way the table would be partially auto-filled and the user would simply need to fill in the blanks.<br/><br/>
-                <img
-                    key={"improv3"}
-                    className='w-full rounded'
-                    src={campaignion[4].src}
-                    alt={campaignion[4].alt}
-                /><br/>
-                <h3 className="font-bold text-2xl mb-8 tracking-tighter">Final Design</h3>
-                <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
-                    {campaignion_final.map((image) => (
-                        <img
-                            key={image.src}
-                            className='w-full rounded'
-                            src={image.src}
-                            alt={image.alt}
-                        />
-                    ))}
-                </SlideshowLightbox>
-            </p>
-            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Feedback</h3>
-            <p className="my-5">
-                Problems to explore:<br/>
-                • Using an API to grab workflow data given the page url<br/>
-                • QA testing - ensure a workflow aligns with requirements<br/><br/>
-                This tool semi-automates and significantly reduces workflow documentation time in ACS. With this prototype,
-                 I was able to document a 56-activity workflow in just 15 minutes instead of 45
-                 minutes. Overall, I received positive feedback on this tool, which has been published
-                in Adobe's Shared Center of Excellence, an internal site for consulting assets, and the Campaign
-                Design Club.
-            </p>
+                    key={campaignion[0].alt}
+                    src={campaignion[0].src}
+                    alt={campaignion[0].alt}
+                />
+                <button onClick={toggle2}>Read more &raquo;</button>
+                {open2 && (
+                    <div className="toggle2">
+                        <hr/>
+                        <br/>
+                        <h3 className="font-bold text-2xl mb-8 tracking-tighter">Problem</h3>
+                        <p className="my-5">
+                            Documentation of workflows in Adobe Campaign Standard (ACS) is manual and unstructured.
+                        </p>
+                        <h3 className="font-bold text-2xl mb-8 tracking-tighter">Objective</h3>
+                        <p className="my-5">
+                            Reduce documentation time and therefore time to value for Campaign Standard implementations.
+                        </p>
+                        <h3 className="font-bold text-2xl mb-8 tracking-tighter">Solution</h3>
+                        <p className="my-5">
+                            Create a tool that ingests workflow data and automates Campaign documentation. Users should
+                            be able to
+                            access and export the documentation via a Unified Shell UI.
+                        </p>
+                        <h3 className="font-bold text-2xl mb-8 tracking-tighter">Role</h3>
+                        <p className="my-5">
+                            I independently conceptualized, designed, and coded this project.
+                        </p>
+                        <h3 className="font-bold text-2xl mb-8 tracking-tighter">Research</h3>
+                        <p className="my-5">
+                            I reviewed existing documentation spread across customer SharePoint sites and Wiki pages. I
+                            also
+                            researched image detection methods to label workflow images, but discovered I could access
+                            the workflow
+                            HTML from the Developer Console. I did not find any internal tools that assisted in
+                            documentation and from
+                            conversations across the team, I identified the following pain points:<br/>
+                            • There is no template or established structure for existing documentation (e.g. some
+                            documentation is
+                            all text, others are a mix of pictures and text)<br/>
+                            • Documentation is a manual and tedious process and can take hours to complete for large
+                            workflows.<br/>
+                            • This often leads to poor documentation (not updated, missing comprehensive explanations,
+                            etc.), which leads
+                            to slower hand-off and difficulty troubleshooting future issues.<br/><br/>
+                            Throughout the development process, I led internal demos and testing sessions to improve
+                            the app's usability on a variety of workflows.
+                        </p>
+                        <h3 className="font-bold text-2xl mb-8 tracking-tighter">Version One</h3>
+                        <p className="my-5">
+                            <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
+                                {campaignion_v1.map((image) => (
+                                    <img
+                                        key={image.src}
+                                        className='w-full rounded'
+                                        src={image.src}
+                                        alt={image.alt}
+                                    />
+                                ))}
+                            </SlideshowLightbox><br/>
+                            In this single page UI, the user copies the workflow HTML from the Developer Console and
+                            pastes it in the
+                            input field. Once the user hits Process, the tool outputs a re-drawn workflow with numbered
+                            activities
+                            and a description table.<br/>
+                            The main accomplishment of the first version was that it could accurately parse and re-draw
+                            workflows, however,
+                            the activity sequencing and documentation structure needed to be scaled for larger workflows
+                            containing
+                            more than 10 activities, for example.
+                        </p>
+                        <h3 className="font-bold text-2xl mb-8 tracking-tighter">Version Two</h3>
+                        <p className="my-5">
+                            <u>Problem #1</u>: The current documentation is too dense and hard to follow for large
+                            workflows.<br/>
+                            <u>Solution</u>: Enable the user to split the workflow into groups of x activities and
+                            provide a
+                            table under each group.<br/>
+                            <u>Thought Process</u>: Originally I had a zoom in/out feature on the re-drawn
+                            workflow, however, larger workflows would be inconvenient to navigate in the UI.
+                            I decided to split the workflow into activity groups. The number of activities in each group
+                            would not be
+                            hard-coded since this could result in an awkward documentation of one or two remaining
+                            activities. I decided to add a number dropdown
+                            for the user to specify how many activities they wanted to see at a time. This way they
+                            could have the option
+                            to view all activities at once in a large table or split the documentation into digestible
+                            bits.<br/><br/>
+                            <img
+                                key={"campaignion_problem1"}
+                                className='w-full rounded'
+                                src={campaignion[1].src}
+                                alt={campaignion[1].alt}
+                            /><br/>
+                            <u>Problem #2</u>: The current documentation does not explain the activities in a logical
+                            way.<br/>
+                            <u>Solution</u>: Use the breadth-first search algorithm to sequence activities.<br/>
+                            <u>Thought Process</u>: I originally used the depth-first search algorithm to sequence
+                            activities. This
+                            meant the tool would document one complete branch of the workflow before moving to another
+                            branch, which did not comprehensively describe the workflow. For example, the workflow below
+                            targets an
+                            audience to receive an email campaign, then segments that audience to receive different
+                            versions of it.
+                            By using breadth-first search, the tool can document starting from the root and explore all
+                            activities
+                            at the present depth prior to moving on to the activities at the next depth level.<br/><br/>
+                            <img
+                                key={"improv2"}
+                                className='w-full rounded'
+                                src={campaignion[2].src}
+                                alt={campaignion[2].alt}
+                            /><br/>
+                            <u>Problem #3</u>: Users cannot share the documentation.<br/>
+                            <u>Solution</u>: Enable the output to be exported to Word.<br/>
+                            <u>Thought Process</u>: The major feedback I got from testing sessions was to add a way to
+                            export or share
+                            the outputted documentation. The user could drag their mouse to copy and paste the output,
+                            but the images
+                            could not be imported to another location like a Word document. Thus, I added a button to
+                            parse the output
+                            and successfully download it into a Word document. <br/><br/>
+                            <img
+                                key={"improv3"}
+                                className='w-full rounded'
+                                src={campaignion_final[5].src}
+                                alt={campaignion_final[5].alt}
+                            /><br/>
+                            <u>Problem #4</u>: Users still need to fill out the purpose and notes columns in the
+                            table.<br/>
+                            <u>Solution</u>: Partially auto-fill the table with placeholder language.<br/>
+                            <u>Thought Process</u>: Unfortunately, I was unable to find an API that, given the page url,
+                            would provide
+                            all data in the workflow, including richer data in the activities such as deduplication
+                            criteria,
+                            segmentation conditions, and target audience queries. There were also concerns with exposing
+                            sensitive
+                            customer data. Thus, I decided to establish a standard, placeholder language for each
+                            activity type. This
+                            way the table would be partially auto-filled and the user would simply need to fill in the
+                            blanks.<br/><br/>
+                            <img
+                                key={"improv3"}
+                                className='w-full rounded'
+                                src={campaignion[4].src}
+                                alt={campaignion[4].alt}
+                            /><br/>
+                            <h3 className="font-bold text-2xl mb-8 tracking-tighter">Final Design</h3>
+                            <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
+                                {campaignion_final.map((image) => (
+                                    <img
+                                        key={image.src}
+                                        className='w-full rounded'
+                                        src={image.src}
+                                        alt={image.alt}
+                                    />
+                                ))}
+                            </SlideshowLightbox>
+                        </p>
+                        <h3 className="font-bold text-2xl mb-8 tracking-tighter">Feedback</h3>
+                        <p className="my-5">
+                            Problems to explore:<br/>
+                            • Using an API to grab workflow data given the page url<br/>
+                            • QA testing - ensure a workflow aligns with requirements<br/><br/>
+                            This tool semi-automates and significantly reduces workflow documentation time in ACS. With
+                            this prototype,
+                            I was able to document a 56-activity workflow in just 15 minutes instead of 45
+                            minutes. Overall, I received positive feedback on this tool, which has been published
+                            in Adobe's Shared Center of Excellence, an internal site for consulting assets, and the
+                            Campaign
+                            Design Club.
+                        </p>
+                    </div>
+                )}
+            </div>
             <Footer/>
         </section>
     );
