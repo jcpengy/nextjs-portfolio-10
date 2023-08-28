@@ -177,17 +177,17 @@ export default function UXDesignPage() {
                     <div className="toggle1">
                         <hr/>
                         <br/>
-                        <h3 className="font-bold text-1xl">Problem</h3>
+                        <h3 className="font-bold text-2xl">Problem</h3>
                         <p className="my-5">
                             Transferring artifacts between sandboxes in Adobe Experience Platform is time-consuming and
                             error
                             prone.
                         </p>
-                        <h3>Objective</h3>
+                        <h3 className="font-bold text-2xl">Objective</h3>
                         <p className="my-5">
                             Build a tool that simplifies and streamlines sandbox management.
                         </p>
-                        <h3>Solution</h3>
+                        <h3 className="font-bold text-2xl">Solution</h3>
                         <p className="my-5">
                             Create an internal Unified Shell application that uses Adobe Experience Platform's API to
                             handle all
@@ -199,11 +199,11 @@ export default function UXDesignPage() {
                             • Revert artifacts (once) after syncing<br/>
                             • Log actions for documentation and troubleshooting
                         </p>
-                        <h3>Role</h3>
+                        <h3 className="font-bold text-2xl">Role</h3>
                         <p className="my-5">
                             I led design and front-end development on a five person team.
                         </p>
-                        <h3>Research</h3>
+                        <h3 className="font-bold text-2xl">Research</h3>
                         <p className="my-5">
                             All team members participated in the research process. We gathered requirements from
                             internal
@@ -229,7 +229,7 @@ export default function UXDesignPage() {
                             to debug the
                             app, improve its usability, and fine-tune requirements.
                         </p>
-                        <h3>Version One</h3>
+                        <h3 className="font-bold text-2xl">Version One</h3>
                         <p className="my-5">
                             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                                 {v1images.map((image) => (
@@ -250,7 +250,7 @@ export default function UXDesignPage() {
                             organize the code
                             and add additional features like sync and revert.
                         </p>
-                        <h3>Version Two</h3>
+                        <h3 className="font-bold text-2xl">Version Two</h3>
                         <p className="my-5">
                             Based on existing design patterns in AEP, I drafted a re-design in
                             <u><a href="https://www.figma.com/proto/TIHIYPfyhvmQiSWxfzz5i1/Untitled?node-id=1-400&scaling=
@@ -320,7 +320,7 @@ export default function UXDesignPage() {
                                 src={images[6].src}
                                 alt={images[6].alt}
                             /><br/>
-                            <h3>Final Design</h3>
+                            <h3 className="font-bold text-2xl">Final Design</h3v>
                             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                                 {uxdesignimages.map((image) => (
                                     <img
@@ -332,7 +332,7 @@ export default function UXDesignPage() {
                                 ))}
                             </SlideshowLightbox>
                         </p>
-                        <h3>Feedback</h3>
+                        <h3 className="font-bold text-2xl">Feedback</h3>
                         <p className="my-5">
                             From the audit log, we've tracked over 100 internal consultants and solution architects
                             using our app. We've also added an additional capability to copy artifacts across IMS orgs.
@@ -356,25 +356,25 @@ export default function UXDesignPage() {
                     <div className="toggle2">
                         <hr/>
                         <br/>
-                        <h3>Problem</h3>
+                        <h3 className="font-bold text-2xl">Problem</h3>
                         <p className="my-5">
                             Documentation of workflows in Adobe Campaign Standard (ACS) is manual and unstructured.
                         </p>
-                        <h3>Objective</h3>
+                        <h3 className="font-bold text-2xl">Objective</h3>
                         <p className="my-5">
                             Reduce documentation time and therefore time to value for Campaign Standard implementations.
                         </p>
-                        <h3>Solution</h3>
+                        <h3 className="font-bold text-2xl">Solution</h3>
                         <p className="my-5">
                             Create a tool that ingests workflow data and automates Campaign documentation. Users should
                             be able to
                             access and export the documentation via a Unified Shell UI.
                         </p>
-                        <h3>Role</h3>
+                        <h3 className="font-bold text-2xl">Role</h3>
                         <p className="my-5">
                             I independently conceptualized, designed, and coded this project.
                         </p>
-                        <h3>Research</h3>
+                        <h3 className="font-bold text-2xl">Research</h3>
                         <p className="my-5">
                             I reviewed existing documentation spread across customer SharePoint sites and Wiki pages. I
                             also
@@ -394,7 +394,7 @@ export default function UXDesignPage() {
                             Throughout the development process, I led internal demos and testing sessions to improve
                             the app's usability on a variety of workflows.
                         </p>
-                        <h3>Version One</h3>
+                        <h3 className="font-bold text-2xl">Version One</h3>
                         <p className="my-5">
                             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                                 {campaignion_v1.map((image) => (
@@ -417,7 +417,7 @@ export default function UXDesignPage() {
                             containing
                             more than 10 activities, for example.
                         </p>
-                        <h3>Version Two</h3>
+                        <h3 className="font-bold text-2xl">Version Two</h3>
                         <p className="my-5">
                             <u>Problem #1</u>: The current documentation is too dense and hard to follow for large
                             workflows.<br/>
@@ -493,7 +493,7 @@ export default function UXDesignPage() {
                                 src={campaignion[4].src}
                                 alt={campaignion[4].alt}
                             /><br/>
-                            <h3>Final Design</h3>
+                            <h3 className="font-bold text-2xl">Final Design</h3>
                             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                                 {campaignion_final.map((image) => (
                                     <img
@@ -505,18 +505,16 @@ export default function UXDesignPage() {
                                 ))}
                             </SlideshowLightbox>
                         </p>
-                        <h3>Feedback</h3>
+                        <h3 className="font-bold text-2xl">Feedback</h3>
                         <p className="my-5">
                             Problems to explore:<br/>
                             • Using an API to grab workflow data given the page url<br/>
                             • QA testing - ensure a workflow aligns with requirements<br/><br/>
                             This tool semi-automates and significantly reduces workflow documentation time in ACS. With
-                            this prototype,
-                            I was able to document a 56-activity workflow in just 15 minutes instead of 45
+                            this prototype, I was able to document a 56-activity workflow in just 15 minutes instead of 45
                             minutes. Overall, I received positive feedback on this tool, which has been published
                             in Adobe's Shared Center of Excellence, an internal site for consulting assets, and the
-                            Campaign
-                            Design Club.
+                            Campaign Design Club.
                         </p>
                     </div>
                 )}

@@ -4,6 +4,33 @@ import {SlideshowLightbox, initLightboxJS} from 'lightbox.js-react'
 import {useEffect} from "react";
 import Footer from "../components/footer";
 
+const kessler = [
+    {
+        src: 'https://i.ibb.co/LPWmKmV/Screen-Shot-2023-08-28-at-2-15-59-PM.png',
+        alt: '1',
+    },
+    {
+        src: 'https://i.ibb.co/QNwVsDb/Screen-Shot-2023-08-28-at-2-16-43-PM.png',
+        alt: '2',
+    },
+    {
+        src: 'https://i.ibb.co/F0z7xSx/Screen-Shot-2023-08-28-at-2-17-18-PM.png',
+        alt: '3',
+    },
+    {
+        src: 'https://i.ibb.co/zFxyN5S/Screen-Shot-2023-08-28-at-2-17-54-PM.png',
+        alt: '4',
+    },
+    {
+        src: 'https://i.ibb.co/JKtZYhf/Screen-Shot-2023-08-28-at-2-18-10-PM.png',
+        alt: '5',
+    },
+    {
+        src: 'https://i.ibb.co/WW0XVLG/Screen-Shot-2023-08-28-at-2-18-26-PM.png',
+        alt: '6',
+    },
+]
+
 const graphicdesignimages = [
     {
         src: 'https://i.ibb.co/KLwpyzq/108765144219523-628847521916f.png',
@@ -89,6 +116,20 @@ export default async function GuestbookPage() {
 
     return (
         <section>
+            <h3 className="font-bold text-2xl">Kessler Project</h3>
+            <p>3D models, graphic design assets, and digital drawings I created for our finalist presentation and submission to the 2018 Walt
+                Disney Imaginations Design Contest.</p>
+            <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
+                {kessler.map((image) => (
+                    <img
+                        key={image.src}
+                        className='w-full rounded'
+                        src={image.src}
+                        alt={image.alt}
+                    />
+                ))}
+            </SlideshowLightbox>
+            <h3 className="font-bold text-2xl">Etsy projects</h3>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {graphicdesignimages.map((image) => (
                     <img
@@ -96,8 +137,6 @@ export default async function GuestbookPage() {
                         className='w-full rounded'
                         src={image.src}
                         alt={image.alt}
-                        // data-lightboxjs="lightbox1"
-                        // quality={80}
                     />
                 ))}
             </SlideshowLightbox>
