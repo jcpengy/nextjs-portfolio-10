@@ -367,7 +367,7 @@ h4.home-subtitle {
   overflow: hidden;
   position: relative;
   width: calc(0.145 * var(--liljesswidth));
-  left: calc(0.484 * var(--liljesswidth));
+  left: calc(0.5 * var(--liljesswidth));
   margin-top: calc(-0.145 * var(--liljesswidth));
 }
 /*.ring {*/
@@ -399,14 +399,14 @@ h4.home-subtitle {
 /*}*/
 .scooter {
   position: absolute;
-  top: 60%;
+  top: 63%;
   left: 20%;
   background: #ff4aed;
 }
 .scooter.base {
   position: absolute;
   height: calc(0.081 * var(--liljesswidth));
-  width: calc(0.76 * var(--liljesswidth));
+  width: calc(0.56 * var(--liljesswidth));
   left: 0px;
   z-index: -2;
 }

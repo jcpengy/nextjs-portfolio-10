@@ -11,15 +11,18 @@ export default async function BlogPage() {
   return (
     <section>
       <h1 className="font-bold text-2xl mb-8 tracking-tighter">hi, i'm jess 👋</h1>
-      <p className="my-5">
-        I'm an SF-based <b>Front-End Engineer at Adobe</b>. I build internal tools
-        on the Digital Experience Customer Engineering team.
-      </p>
-      <img
-          key='profile-picture'
-          src='https://i.ibb.co/8XV7trP/IMG-9462-2.jpg'
-          alt='Profile picture'
-      /><br/>
+      <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
+        <p className="my-5">
+          I'm an SF-based <b>Front-End Engineer at Adobe</b>. I build internal tools
+          on the Digital Experience Customer Engineering team.<br/><br/>
+          In my free time, I also draw cartoons on Instagram about the character you see on the home page. 
+        </p>
+        <img
+            key='profile-picture'
+            src='https://i.ibb.co/KFXjJRs/Untitled-36.png'
+            alt='Profile picture'
+        />
+      </div>
         <p>
           I love creative challenges and learning new things. From
           doodling cartoons and dream houses as a toddler to building hamster cages as a middle schooler,
