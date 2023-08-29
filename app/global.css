@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --liljesswidth: 12vw;
+  --liljesswidth: 15vw;
 }
 
 ::selection {
@@ -49,7 +49,7 @@ html {
 #profile-pic {
   display: inline;
   margin: 0 auto;
-  height: 100%;
+  height: 80%;
   width: auto;
 }
 
@@ -367,7 +367,7 @@ h4.home-subtitle {
   overflow: hidden;
   position: relative;
   width: calc(0.145 * var(--liljesswidth));
-  left: calc(0.5 * var(--liljesswidth));
+  left: calc(0.8 * var(--liljesswidth));
   margin-top: calc(-0.145 * var(--liljesswidth));
 }
 /*.ring {*/
@@ -405,8 +405,8 @@ h4.home-subtitle {
 }
 .scooter.base {
   position: absolute;
-  height: calc(0.081 * var(--liljesswidth));
-  width: calc(0.56 * var(--liljesswidth));
+  height: calc(0.1 * var(--liljesswidth));
+  width: calc(0.45 * var(--liljesswidth));
   left: 0px;
   z-index: -2;
 }

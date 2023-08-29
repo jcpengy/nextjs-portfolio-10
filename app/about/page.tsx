@@ -10,13 +10,17 @@ export default async function BlogPage() {
 
   return (
     <section>
-      <h1 className="font-bold text-2xl mb-8 tracking-tighter">hi, i'm jess 👋</h1>
       <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
-        <p className="my-5">
-          I'm an SF-based <b>Front-End Engineer at Adobe</b>. I build internal tools
-          on the Digital Experience Customer Engineering team.<br/><br/>
-          In my free time, I also draw cartoons on Instagram about the character you see on the home page. 
-        </p>
+        <div>
+          <h1 className="font-bold text-2xl mb-8 tracking-tighter">hi, i'm jess 👋</h1>
+          <p className="my-5">
+            I'm an SF-based <b>Front-End Engineer at Adobe</b>. I build internal tools
+            on the Digital Experience Customer Engineering team.<br/><br/>
+            I also draw cartoons on Instagram about the character you see on the home page. Her name is CEO Jess.<br/><br/>
+            <a href="mailto:pengjess2@gmail.com">Email</a> / <a href="https://www.linkedin.com/in/jess-peng/">LinkedIn</a> / <a href="https://www.instagram.com/officialceojess/">Instagram</a><br/><br/>
+            .........
+          </p>
+        </div>
         <img
             key='profile-picture'
             src='https://i.ibb.co/KFXjJRs/Untitled-36.png'
@@ -45,14 +49,11 @@ export default async function BlogPage() {
           my ideas come to life through development, I'm excited to focus on and grow my design skills on upcoming projects.<br/><br/>
           <h3 className="font-bold text-2xl mb-8 tracking-tighter">fun facts!</h3>
           <ul>
-            <li>I draw cartoons.</li>
             <li>My favorite movie is Shrek 2.</li>
             <li>My favorite color (and flower) is lavender.</li>
-            <li>I've never eaten Taco Bell.</li>
-          </ul><br/>
-          If you want to connect or collaborate on a project, send me an email at pengjess2@gmail.com!:)
+            <li>I've never had Taco Bell.</li>
+          </ul>
         </p>
-      <Footer/>
     </section>
   );
 }
