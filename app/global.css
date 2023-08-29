@@ -252,6 +252,7 @@ h4.home-subtitle {
 }
 .img-body {
   width: var(--liljesswidth);
+  border: none!important;
   /*height: auto;*/
 }
 .body {
@@ -260,6 +261,7 @@ h4.home-subtitle {
   z-index: -1;
   top: calc(-.38 * var(--liljesswidth));
   left: -12%;
+  border: none!important;
 }
 .body .eyebrows {
   height: 100%;
