@@ -7,14 +7,34 @@
 }
 
 ::selection {
-  background-color: #47a3f3;
-  color: #fefefe;
+  background-color: white;
+  color: purple;
+}
+
+a {
+  text-decoration: underline;
+}
+
+a:link {
+  color: darkviolet;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: blue;
+}
+
+a:active {
+  color: blue;
 }
 
 html {
   min-width: 360px;
   background-color: white;
-  color: #942988;
+  color: darkviolet;
 }
 
 .footer {
@@ -258,7 +278,7 @@ h4.home-subtitle {
   overflow: hidden;
   position: absolute;
   z-index: -1;
-  top: calc(-.5 * var(--liljesswidth));
+  top: calc(-.55 * var(--liljesswidth));
   left: -12%;
 }
 
@@ -367,7 +387,7 @@ h4.home-subtitle {
   overflow: hidden;
   position: relative;
   width: calc(0.145 * var(--liljesswidth));
-  left: calc(0.8 * var(--liljesswidth));
+  left: calc(0.5 * var(--liljesswidth));
   margin-top: calc(-0.145 * var(--liljesswidth));
 }
 /*.ring {*/
@@ -456,6 +476,25 @@ h4.home-subtitle {
   #cursor {
     display: none;
   }
+}
+
+#button {
+  border: 1px solid blue;
+  color: blue;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+  background-color: darkblue;
+}
+
+#button:hover {
+  color: white;
+  background-color: blue;
 }
 
 

@@ -21,9 +21,9 @@ const navItems = {
   // '/fineart': {
   //   name: 'fine art',
   // },
-  '/cartoons': {
-    name: 'cartoons',
-  },
+  // '/cartoons': {
+  //   name: 'cartoons',
+  // },
 };
 
 export default function Navbar() {

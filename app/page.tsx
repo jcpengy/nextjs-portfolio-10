@@ -47,7 +47,7 @@ class Page extends React.Component<any, any>  {
         if (Math.abs(Math.round(droidX) - mouseX) !== 1) {
 
             let distance = mouseX - droidX;
-            let acceleration = Math.abs(distance * accelMod) / 100;
+            let acceleration = Math.abs(distance * accelMod) / 150;
 
             // Move to the right
             if (droidX < mouseX) {
