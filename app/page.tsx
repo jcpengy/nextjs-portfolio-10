@@ -101,7 +101,7 @@ class Page extends React.Component<any, any>  {
                 <div className="liljess" style={{WebkitTransform: `translateX(${droidX}px)`}}>
                     <div className="body"
                          style={{WebkitTransform: `translateX(${(mouseX - droidX) / 15}px) rotateZ(${(mouseX - droidX) / 20}deg)`}}>
-                        <img className="img-body" src="https://i.ibb.co/BNBhx8N/body.png" alt="body"/>
+                        <img id="img-body" src="https://i.ibb.co/BNBhx8N/body.png" alt="body"/>
                         <div className={'eyes ' + (toTheRight ? 'right' : '')}>
                             <div className="eye one"></div>
                             <div className="eye two"></div>
@@ -134,9 +134,6 @@ class Page extends React.Component<any, any>  {
                 </div>
                 <div className="instructions">
                     <p>tap anywhere.</p>
-                </div>
-                <div id="background-image">
-                    <img src="https://i.ibb.co/2Ydvg4b/background.png" alt="background" width="120%" height="auto"/>
                 </div>
             </div>
         )

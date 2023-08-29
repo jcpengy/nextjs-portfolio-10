@@ -17,10 +17,9 @@ html {
   color: #942988;
 }
 
-#background-image {
-  position: fixed;
-  bottom: 0px;
-  z-index: -2000;
+#img-body {
+  border: none !important;
+  width: var(--liljesswidth);
 }
 
 .footer {
@@ -256,10 +255,7 @@ h4.home-subtitle {
   bottom: 5vh;
   left: 0;
 }
-.img-body {
-  width: var(--liljesswidth);
-  /*height: auto;*/
-}
+
 .body {
   overflow: hidden;
   position: absolute;
