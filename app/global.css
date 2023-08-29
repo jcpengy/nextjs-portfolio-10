@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --liljesswidth: 25vw;
+  --liljesswidth: 20vw;
 }
 
 ::selection {
