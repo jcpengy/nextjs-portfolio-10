@@ -258,7 +258,7 @@ h4.home-subtitle {
   overflow: hidden;
   position: absolute;
   z-index: -1;
-  top: calc(-.28 * var(--liljesswidth));
+  top: calc(-.48 * var(--liljesswidth));
   left: -12%;
 }
 
