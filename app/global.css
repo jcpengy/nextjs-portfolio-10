@@ -406,7 +406,7 @@ h4.home-subtitle {
 .scooter.base {
   position: absolute;
   height: calc(0.081 * var(--liljesswidth));
-  width: calc(0.45 * var(--liljesswidth));
+  width: calc(0.46 * var(--liljesswidth));
   left: 0px;
   z-index: -2;
 }
