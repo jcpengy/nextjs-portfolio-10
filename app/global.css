@@ -17,10 +17,6 @@ html {
   color: #942988;
 }
 
-#img-body {
-  border: none !important;
-  width: var(--liljesswidth);
-}
 .footer {
   font-size: 0.75em;
 }
@@ -254,7 +250,10 @@ h4.home-subtitle {
   bottom: 5vh;
   left: 0;
 }
-
+.img-body {
+  width: var(--liljesswidth);
+  /*height: auto;*/
+}
 .body {
   overflow: hidden;
   position: absolute;
