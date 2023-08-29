@@ -320,7 +320,7 @@ export default function UXDesignPage() {
                                 src={images[6].src}
                                 alt={images[6].alt}
                             /><br/>
-                            <h3 className="font-bold text-2xl">Final Design</h3v>
+                            <h3 className="font-bold text-2xl">Final Design</h3>
                             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                                 {uxdesignimages.map((image) => (
                                     <img
