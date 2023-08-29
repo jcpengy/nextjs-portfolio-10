@@ -12,11 +12,11 @@ const navItems = {
   '/about': {
     name: 'about',
   },
-  '/uxdesign': {
-    name: 'ux design',
+  '/ux': {
+    name: 'ux',
   },
   '/graphicdesign': {
-    name: '3D/graphic design',
+    name: 'graphic design',
   },
   // '/fineart': {
   //   name: 'fine art',
