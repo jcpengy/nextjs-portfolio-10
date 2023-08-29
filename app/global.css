@@ -258,7 +258,7 @@ h4.home-subtitle {
   overflow: hidden;
   position: absolute;
   z-index: -1;
-  top: calc(-.48 * var(--liljesswidth));
+  top: calc(-.5 * var(--liljesswidth));
   left: -12%;
 }
 
@@ -406,7 +406,7 @@ h4.home-subtitle {
 .scooter.base {
   position: absolute;
   height: calc(0.081 * var(--liljesswidth));
-  width: calc(0.46 * var(--liljesswidth));
+  width: calc(0.76 * var(--liljesswidth));
   left: 0px;
   z-index: -2;
 }
