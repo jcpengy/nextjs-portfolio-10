@@ -135,6 +135,9 @@ class Page extends React.Component<any, any>  {
                 <div className="instructions">
                     <p>tap anywhere.</p>
                 </div>
+                <div id="background-image">
+                    <img src="https://i.ibb.co/2Ydvg4b/background.png" alt="background" width="120%" height="auto"/>
+                </div>
             </div>
         )
     }
