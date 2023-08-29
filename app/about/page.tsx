@@ -44,7 +44,8 @@ export default async function BlogPage() {
           <ul>
             <li>I draw cartoons.</li>
             <li>My favorite movie is Shrek 2.</li>
-            <li>My favorite color is lavender.</li>
+            <li>My favorite color (and flower) is lavender.</li>
+            <li>I've never eaten Taco Bell.</li>
           </ul><br/>
           If you want to connect or collaborate on a project, send me an email at pengjess2@gmail.com!:)
         </p>

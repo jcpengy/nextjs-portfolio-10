@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+#homepage {margin: 0; height: 100%; overflow: hidden}
+
 :root {
   --liljesswidth: 25vw;
 }
@@ -13,8 +15,8 @@
 
 html {
   min-width: 360px;
-  background-color: white;
-  color: purple;
+  background-color: #942988;
+  color: white;
 }
 
 .footer {
