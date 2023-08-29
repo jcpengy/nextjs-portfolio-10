@@ -1,6 +1,7 @@
 import type {Metadata} from 'next';
 import Footer from "../components/footer";
-import {SlideshowLightbox} from "lightbox.js-react";
+import {initLightboxJS, SlideshowLightbox} from "lightbox.js-react";
+import {useEffect} from "react";
 
 export const metadata: Metadata = {
     title: 'About',
@@ -35,7 +36,9 @@ const ceojess = [
 ]
 
 export default async function BlogPage() {
-
+    useEffect(() => {
+        initLightboxJS("9F1C-4A63-970C-2B0D", "individual");
+    });
     return (
         <section>
             <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
