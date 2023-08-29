@@ -279,7 +279,7 @@ h4.home-subtitle {
   background-color: black;
   height: calc(0.0645 * var(--liljesswidth));
   width: calc(0.1129 * var(--liljesswidth));
-  top: calc(-0.5 * var(--liljesswidth));
+  top: calc(-0.6 * var(--liljesswidth));
 }
 .body .eyebrow.one {
   left: 20%;
@@ -306,7 +306,7 @@ h4.home-subtitle {
   height: calc(0.016 * var(--liljesswidth));
   position: absolute;
   width: calc(0.016 * var(--liljesswidth));
-  top: calc(-0.403 * var(--liljesswidth));
+  top: calc(-0.5 * var(--liljesswidth));
 }
 .body .pupil.one {
   left: 30%;
