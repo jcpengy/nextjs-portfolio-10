@@ -1,13 +1,7 @@
 'use client';
-import type {Metadata} from 'next';
 import Footer from "../components/footer";
 import {initLightboxJS, SlideshowLightbox} from "lightbox.js-react";
 import {useEffect} from "react";
-
-export const metadata: Metadata = {
-    title: 'About',
-    description: 'About',
-};
 
 const ceojess = [
     {
