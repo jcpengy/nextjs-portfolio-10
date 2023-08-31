@@ -1,3 +1,4 @@
+'use client';
 import type {Metadata} from 'next';
 import Footer from "../components/footer";
 import {initLightboxJS, SlideshowLightbox} from "lightbox.js-react";
@@ -47,8 +48,8 @@ export default async function BlogPage() {
                     <p className="my-5">
                         I'm an SF-based <b>Front-End Engineer at Adobe</b>. I build internal tools
                         on the Digital Experience Customer Engineering team.<br/><br/>
-                        I also draw cartoons on Instagram about the character you see on the home page. Her name is CEO
-                        Jess.<br/><br/>
+                        I also draw cartoons featuring the character you see on the home page. Her name is CEO
+                        Jess. She's a potato.<br/><br/>
                         <a href="mailto:pengjess2@gmail.com">Email</a> / <a
                         href="https://www.linkedin.com/in/jess-peng/">LinkedIn</a> / <a
                         href="https://www.instagram.com/officialceojess/">Github</a><br/><br/>
