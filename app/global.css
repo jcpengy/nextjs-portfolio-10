@@ -382,7 +382,7 @@ h4.home-subtitle {
   position: relative;
   width: calc(0.145 * var(--liljesswidth));
   left: calc(0.097 * var(--liljesswidth));
-  margin-top: calc(0.097 * var(--liljesswidth));
+  margin-top: calc(0.1 * var(--liljesswidth));
 }
 .ball-right {
   background-color: #ff63f0;
@@ -391,8 +391,8 @@ h4.home-subtitle {
   overflow: hidden;
   position: relative;
   width: calc(0.145 * var(--liljesswidth));
-  left: calc(0.5 * var(--liljesswidth));
-  margin-top: calc(-0.145 * var(--liljesswidth));
+  left: calc(0.6 * var(--liljesswidth));
+  margin-top: calc(-0.2 * var(--liljesswidth));
 }
 /*.ring {*/
 /*  background: #ff96f5;*/
