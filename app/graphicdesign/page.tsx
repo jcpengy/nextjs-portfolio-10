@@ -131,6 +131,7 @@ export default async function GraphicDesign() {
                 ))}
             </SlideshowLightbox><br/>
             <b>Etsy</b><br/>
+            <p>Designs I created for various customers through my Etsy shop.</p><br/>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {graphicdesignimages.map((image) => (
                     <img

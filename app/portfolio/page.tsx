@@ -9,8 +9,9 @@ export default async function PortfolioPage() {
             <UXDesign/>
             <br/>
             .........
-            <br/><br/>
+            <br/><br/><br/>
             <GraphicDesign/>
+            <br/>
             <Footer/>
         </section>
     );

@@ -38,7 +38,7 @@ export default async function AboutPage() {
         <section>
             <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
                 <div>
-                    <h1 className="font-bold text-2xl mb-8 tracking-tighter">hi, i'm jess 👋</h1>
+                    <h1 className="font-bold text-2xl mb-8 tracking-tighter">Hi, I'm Jess 👋</h1>
                     <p className="my-5">
                         I'm an SF-based <b>Front-End Engineer at Adobe</b>. I build internal tools
                         on the Digital Experience Customer Engineering team.<br/><br/>
@@ -49,7 +49,7 @@ export default async function AboutPage() {
                         .........
                     </p>
                 </div>
-                <img id="img-cropper"
+                <img id="circular--square"
                      key='profile-picture'
                      src='https://i.ibb.co/BqKD56M/IMG-9588.jpg'
                      alt='Profile picture'
@@ -65,14 +65,14 @@ export default async function AboutPage() {
                     />
                 ))}
             </SlideshowLightbox>
-            <button id="button"><a href="https://www.instagram.com/officialceojess/">More on my Instagram →
+            <button id="button"><a id="button-text" href="https://www.instagram.com/officialceojess/">More on my Instagram →
             </a></button>
+            <br/>
             <p>
                 {/*I love creative challenges and learning new things. From*/}
                 {/*doodling cartoons and dream houses as a toddler to building hamster cages as a middle schooler,*/}
                 {/*I developed an interest in art and engineering that continued throughout my college and professional*/}
                 {/*experiences.<br/><br/>*/}
-
                 At the University of Pennsylvania, I majored in <u><a href="http://cg.cis.upenn.edu/dmd.html">Digital
                 Media Design</a></u> and minored in Fine Arts with a
                 focus in 3D modeling. I also interned at the
@@ -94,23 +94,26 @@ export default async function AboutPage() {
                     time.</p><br/><br/>
                 <h3 className="font-bold text-2xl mb-8 tracking-tighter">fun facts</h3>
                 <div className="md:grid md:grid-cols-3 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
-                    <img id="img-cropper-small"
+                    <img id="circular--square"
                          key='shrek'
                          src='https://i.ibb.co/FJmPjTY/Screen-Shot-2023-09-07-at-3-01-19-PM.png'
                          alt='Shrek'
                     />
-                    <img id="img-cropper-small"
+                    <img id="circular--square"
                          key='lavender'
                          src='https://i.ibb.co/mhtksd5/Screen-Shot-2023-09-07-at-3-02-52-PM.png'
                          alt='Lavender'
                     />
-                    <img id="img-cropper-small"
+                    <img id="circular--square"
                          key='taco-bell'
                          src='https://i.ibb.co/5r708st/Screen-Shot-2023-09-07-at-3-04-13-PM.png'
                          alt='Taco Bell'
                     />
                 </div>
-                <p>Thanks for stopping by!</p>
+                <p>Thanks for stopping by!</p><br/><br/>
+                .........
+                <br/>
+                © Jessica Peng 2023
             </p>
         </section>
     );

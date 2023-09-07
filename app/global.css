@@ -6,22 +6,12 @@
   --liljesswidth: 15vw;
 }
 
-::selection {
-  background-color: white;
-  color: yellow;
-}
-
 a:visited {
-  color: purple;
+  color: blue;
 }
 
 a:hover {
-  color: red;
-}
-
-a:active {
-  text-decoration: underline;
-  text-decoration-color: blue;
+  color: blue;
 }
 
 html {
@@ -48,26 +38,8 @@ html {
   text-align: center;
 }
 
-#image-cropper {
-  width: 200px;
-  height: 200px;
-  position: relative;
-  overflow: hidden;
+#circular--square {
   border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#image-cropper-small {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #profile-pic {
@@ -483,7 +455,6 @@ h4.home-subtitle {
 }
 
 #button {
-  color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -492,6 +463,10 @@ h4.home-subtitle {
   margin: 4px 2px;
   cursor: pointer;
   background-color: purple;
+}
+
+#button-text {
+  color: white;
 }
 
 #button:hover {
