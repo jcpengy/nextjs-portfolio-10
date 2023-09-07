@@ -165,12 +165,13 @@ export default function UXDesign() {
     return (
         <section>
             <div>
-                <h1 className="font-bold text-2xl mb-8 tracking-tighter">Adobe Experience Platform Artifact Copy App</h1><br/>
+                <h1 className="font-bold text-2xl mb-8 tracking-tighter">UX Design</h1><br/>
                 <img
                     key={uxdesignimages[1].alt}
                     src={uxdesignimages[1].src}
                     alt={uxdesignimages[1].alt}
                 /><br/>
+                <h1 className="font-bold text-2xl mb-8 tracking-tighter">Adobe Experience Platform Artifact Copy App</h1><br/>
                 <h4>Technologies: React Spectrum, Javascript, Unified Shell, Figma</h4>
                 <button onClick={toggle1}>Read more &raquo;</button>
                 {open1 && (
@@ -342,14 +343,14 @@ export default function UXDesign() {
                     </div>
                 )}
             </div>
-            <br/><hr/><br/>
+            <br/><br/>
             <div>
-                <h1 className="font-bold text-2xl mb-8 tracking-tighter">Campaignion</h1><br/>
                 <img
                     key={campaignion[0].alt}
                     src={campaignion[0].src}
                     alt={campaignion[0].alt}
                 /><br/>
+                <h1 className="font-bold text-2xl mb-8 tracking-tighter">Campaignion</h1><br/>
                 <h4>Technologies: React Spectrum, Javascript, Unified Shell</h4>
                 <button onClick={toggle2}>Read more &raquo;</button>
                 {open2 && (

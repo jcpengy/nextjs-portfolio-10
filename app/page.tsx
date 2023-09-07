@@ -91,8 +91,8 @@ class Page extends React.Component<any, any>  {
         return (
             <div id="homepage">
                 {/*title*/}
-                <h1 className="h1 home"><SplitText copy="jess peng" role="heading"/></h1><br/>
-                <h4 className="h4 home-subtitle">software engineer & cartoonist</h4>
+                <h1 className="h1 home"><SplitText copy="Jess Peng" role="heading"/></h1><br/>
+                <h4 className="h4 home-subtitle">Software Engineer & Cartoonist</h4>
                 {/*cursor animation*/}
                 <div id="cursor">
                     <img src="https://i.ibb.co/bgjpvXF/cursor.png" alt="cursor" width="50px" height="auto"/>

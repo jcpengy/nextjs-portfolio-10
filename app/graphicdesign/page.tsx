@@ -116,9 +116,10 @@ export default async function GraphicDesign() {
 
     return (
         <section>
-            <h3 className="font-bold text-2xl">Kessler Project</h3>
+            <h1 className="font-bold text-2xl mb-8 tracking-tighter">Graphic Design</h1><br/>
+            <b>Kessler Project</b><br/>
             <p>3D models, graphic design assets, and digital drawings I created for our finalist presentation and submission to the 2018 Walt
-                Disney Imaginations Design Contest.</p>
+                Disney Imaginations Design Contest.</p><br/>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {kessler.map((image) => (
                     <img
@@ -128,8 +129,8 @@ export default async function GraphicDesign() {
                         alt={image.alt}
                     />
                 ))}
-            </SlideshowLightbox>
-            <h3 className="font-bold text-2xl">Etsy projects</h3>
+            </SlideshowLightbox><br/>
+            <b>Etsy</b><br/>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {graphicdesignimages.map((image) => (
                     <img

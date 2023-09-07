@@ -42,20 +42,18 @@ export default async function AboutPage() {
                     <p className="my-5">
                         I'm an SF-based <b>Front-End Engineer at Adobe</b>. I build internal tools
                         on the Digital Experience Customer Engineering team.<br/><br/>
-                        I'm also a cartoonist. I regularly post on @officialceojess.<br/><br/>
+                        I'm also a cartoonist. I post regularly on @officialceojess.<br/><br/>
                         <a href="mailto:pengjess2@gmail.com">Email</a> / <a
                         href="https://www.linkedin.com/in/jess-peng/">LinkedIn</a> / <a
                         href="https://www.instagram.com/officialceojess/">Github</a><br/><br/>
                         .........
                     </p>
                 </div>
-                <div className="img-cropper">
-                    <img
-                        key='profile-picture'
-                        src='https://i.ibb.co/BqKD56M/IMG-9588.jpg'
-                        alt='Profile picture'
-                    />
-                </div>
+                <img id="img-cropper"
+                     key='profile-picture'
+                     src='https://i.ibb.co/BqKD56M/IMG-9588.jpg'
+                     alt='Profile picture'
+                />
             </div>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {ceojess.map((image) => (
@@ -92,36 +90,27 @@ export default async function AboutPage() {
                 my ideas come to life through development, I'm excited to focus on and grow my design skills on upcoming
                 projects.<br/><br/>
                 <h1 className="font-bold text-2xl mb-8 tracking-tighter">my hobbies</h1>
-                <p>I'm a serial hobbyist who loves working on side projects. Here's what I'm currently doing in my free time.</p>
+                <p>I'm a serial hobbyist who loves working on side projects. Here's what I'm currently doing in my free
+                    time.</p><br/><br/>
                 <h3 className="font-bold text-2xl mb-8 tracking-tighter">fun facts</h3>
                 <div className="md:grid md:grid-cols-3 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
-                    <div className="img-cropper-small">
-                        <img
-                            key='shrek'
-                            src='https://i.ibb.co/FJmPjTY/Screen-Shot-2023-09-07-at-3-01-19-PM.png'
-                            alt='Shrek'
-                        />
-                    </div>
-                    <div className="img-cropper">
-                        <img
-                            key='lavender'
-                            src='https://i.ibb.co/mhtksd5/Screen-Shot-2023-09-07-at-3-02-52-PM.png'
-                            alt='Lavender'
-                        />
-                    </div>
-                    <div className="img-cropper">
-                        <img
-                            key='taco-bell'
-                            src='https://i.ibb.co/5r708st/Screen-Shot-2023-09-07-at-3-04-13-PM.png'
-                            alt='Taco Bell'
-                        />
-                    </div>
+                    <img id="img-cropper-small"
+                         key='shrek'
+                         src='https://i.ibb.co/FJmPjTY/Screen-Shot-2023-09-07-at-3-01-19-PM.png'
+                         alt='Shrek'
+                    />
+                    <img id="img-cropper-small"
+                         key='lavender'
+                         src='https://i.ibb.co/mhtksd5/Screen-Shot-2023-09-07-at-3-02-52-PM.png'
+                         alt='Lavender'
+                    />
+                    <img id="img-cropper-small"
+                         key='taco-bell'
+                         src='https://i.ibb.co/5r708st/Screen-Shot-2023-09-07-at-3-04-13-PM.png'
+                         alt='Taco Bell'
+                    />
                 </div>
-                {/*<ul>*/}
-                {/*    <li>My favorite movie is Shrek 2.</li>*/}
-                {/*    <li>My favorite color (and flower) is lavender.</li>*/}
-                {/*    <li>I've never had Taco Bell.</li>*/}
-                {/*</ul>*/}
+                <p>Thanks for stopping by!</p>
             </p>
         </section>
     );

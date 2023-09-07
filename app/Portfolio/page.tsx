@@ -7,6 +7,9 @@ export default async function PortfolioPage() {
     return (
         <section>
             <UXDesign/>
+            <br/>
+            .........
+            <br/><br/>
             <GraphicDesign/>
             <Footer/>
         </section>

@@ -8,29 +8,26 @@
 
 ::selection {
   background-color: white;
-  color: rebeccapurple;
-}
-
-a:link {
-  color: rebeccapurple;
+  color: yellow;
 }
 
 a:visited {
-  color: mediumpurple;
+  color: purple;
 }
 
 a:hover {
-  color: mediumpurple;
+  color: red;
 }
 
 a:active {
   text-decoration: underline;
+  text-decoration-color: blue;
 }
 
 html {
   min-width: 360px;
   background-color: white;
-  color: rebeccapurple;
+  color: purple;
 }
 
 .footer {
@@ -51,7 +48,7 @@ html {
   text-align: center;
 }
 
-.image-cropper {
+#image-cropper {
   width: 200px;
   height: 200px;
   position: relative;
@@ -62,7 +59,7 @@ html {
   margin-right: auto;
 }
 
-.image-cropper-small {
+#image-cropper-small {
   width: 100px;
   height: 100px;
   position: relative;
@@ -486,7 +483,7 @@ h4.home-subtitle {
 }
 
 #button {
-  color: rebeccapurple;
+  color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -494,13 +491,11 @@ h4.home-subtitle {
   font-size: 12px;
   margin: 4px 2px;
   cursor: pointer;
-  background-color: white;
-  border: 1px solid rebeccapurple;
+  background-color: purple;
 }
 
 #button:hover {
-  color: white;
-  background-color: rebeccapurple;
+  background-color: blue;
 }
 
 
