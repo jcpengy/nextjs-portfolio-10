@@ -67,8 +67,8 @@ export default async function AboutPage() {
             </SlideshowLightbox>
             <button id="button"><a id="button-text" href="https://www.instagram.com/officialceojess/">More on my Instagram →
             </a></button>
-            <br/>
             <p>
+                <br/>
                 {/*I love creative challenges and learning new things. From*/}
                 {/*doodling cartoons and dream houses as a toddler to building hamster cages as a middle schooler,*/}
                 {/*I developed an interest in art and engineering that continued throughout my college and professional*/}
@@ -113,7 +113,7 @@ export default async function AboutPage() {
                 <p>Thanks for stopping by!</p><br/><br/>
                 .........
                 <br/>
-                © Jessica Peng 2023
+                <i>© Jessica Peng 2023</i>
             </p>
         </section>
     );

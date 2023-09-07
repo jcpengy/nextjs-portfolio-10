@@ -6,6 +6,10 @@
   --liljesswidth: 15vw;
 }
 
+a:link {
+  color: purple;
+}
+
 a:visited {
   color: blue;
 }
@@ -39,6 +43,8 @@ html {
 }
 
 #circular--square {
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
 }
 
@@ -459,7 +465,7 @@ h4.home-subtitle {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 12px;
+  font-size: 14px;
   margin: 4px 2px;
   cursor: pointer;
   background-color: purple;
