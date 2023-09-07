@@ -30,7 +30,7 @@ const ceojess = [
     },
 ]
 
-export default async function BlogPage() {
+export default async function AboutPage() {
     useEffect(() => {
         initLightboxJS("9F1C-4A63-970C-2B0D", "individual");
     });
@@ -42,19 +42,20 @@ export default async function BlogPage() {
                     <p className="my-5">
                         I'm an SF-based <b>Front-End Engineer at Adobe</b>. I build internal tools
                         on the Digital Experience Customer Engineering team.<br/><br/>
-                        I also draw cartoons featuring the character you see on the home page. Her name is CEO
-                        Jess. She's a potato.<br/><br/>
+                        I'm also a cartoonist. I regularly post on @officialceojess.<br/><br/>
                         <a href="mailto:pengjess2@gmail.com">Email</a> / <a
                         href="https://www.linkedin.com/in/jess-peng/">LinkedIn</a> / <a
                         href="https://www.instagram.com/officialceojess/">Github</a><br/><br/>
                         .........
                     </p>
                 </div>
-                <img
-                    key='profile-picture'
-                    src='https://i.ibb.co/KFXjJRs/Untitled-36.png'
-                    alt='Profile picture'
-                />
+                <div className="img-cropper">
+                    <img
+                        key='profile-picture'
+                        src='https://i.ibb.co/BqKD56M/IMG-9588.jpg'
+                        alt='Profile picture'
+                    />
+                </div>
             </div>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {ceojess.map((image) => (
@@ -92,12 +93,35 @@ export default async function BlogPage() {
                 projects.<br/><br/>
                 <h1 className="font-bold text-2xl mb-8 tracking-tighter">my hobbies</h1>
                 <p>I'm a serial hobbyist who loves working on side projects. Here's what I'm currently doing in my free time.</p>
-                <h3 className="font-bold text-2xl mb-8 tracking-tighter">fun facts!</h3>
-                <ul>
-                    <li>My favorite movie is Shrek 2.</li>
-                    <li>My favorite color (and flower) is lavender.</li>
-                    <li>I've never had Taco Bell.</li>
-                </ul>
+                <h3 className="font-bold text-2xl mb-8 tracking-tighter">fun facts</h3>
+                <div className="md:grid md:grid-cols-3 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
+                    <div className="img-cropper-small">
+                        <img
+                            key='shrek'
+                            src='https://i.ibb.co/FJmPjTY/Screen-Shot-2023-09-07-at-3-01-19-PM.png'
+                            alt='Shrek'
+                        />
+                    </div>
+                    <div className="img-cropper">
+                        <img
+                            key='lavender'
+                            src='https://i.ibb.co/mhtksd5/Screen-Shot-2023-09-07-at-3-02-52-PM.png'
+                            alt='Lavender'
+                        />
+                    </div>
+                    <div className="img-cropper">
+                        <img
+                            key='taco-bell'
+                            src='https://i.ibb.co/5r708st/Screen-Shot-2023-09-07-at-3-04-13-PM.png'
+                            alt='Taco Bell'
+                        />
+                    </div>
+                </div>
+                {/*<ul>*/}
+                {/*    <li>My favorite movie is Shrek 2.</li>*/}
+                {/*    <li>My favorite color (and flower) is lavender.</li>*/}
+                {/*    <li>I've never had Taco Bell.</li>*/}
+                {/*</ul>*/}
             </p>
         </section>
     );

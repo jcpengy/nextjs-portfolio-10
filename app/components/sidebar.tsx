@@ -12,25 +12,13 @@ const navItems = {
   '/about': {
     name: 'about',
   },
-  '/ux': {
-    name: 'ux',
+  '/portfolio': {
+    name: 'portfolio',
   },
-  '/graphicdesign': {
-    name: 'graphic design',
-  },
-  // '/fineart': {
-  //   name: 'fine art',
-  // },
-  // '/cartoons': {
-  //   name: 'cartoons',
-  // },
 };
 
 export default function Navbar() {
   let pathname = usePathname() || '/';
-  // if (pathname.includes('/blog/')) {
-  //   pathname = '/blog';
-  // }
 
   return (
     <aside className="-ml-[8px] mb-16 tracking-tight">

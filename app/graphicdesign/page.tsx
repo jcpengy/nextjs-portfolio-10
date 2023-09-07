@@ -108,7 +108,7 @@ const graphicdesignimages = [
 
 export const revalidate = 60;
 
-export default async function GuestbookPage() {
+export default async function GraphicDesign() {
 
     useEffect(() => {
         initLightboxJS("9F1C-4A63-970C-2B0D", "individual");
@@ -140,7 +140,6 @@ export default async function GuestbookPage() {
                     />
                 ))}
             </SlideshowLightbox>
-            <Footer/>
         </section>
     );
 }

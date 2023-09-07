@@ -148,7 +148,7 @@ const campaignion_final = [
     },
 ]
 
-export default function UXDesignPage() {
+export default function UXDesign() {
     const [open1, setOpen1] = useState(false);
     const [open2, setOpen2] = useState(false);
     const toggle1 = () => {
@@ -519,7 +519,6 @@ export default function UXDesignPage() {
                     </div>
                 )}
             </div>
-            <Footer/>
         </section>
     );
 }
