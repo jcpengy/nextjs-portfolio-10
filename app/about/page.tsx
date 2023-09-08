@@ -42,7 +42,7 @@ export default async function AboutPage() {
                     <p className="my-5">
                         I'm an SF-based <b>Front-End Engineer at Adobe</b>. I build internal tools
                         on the Digital Experience Customer Engineering team.<br/><br/>
-                        I'm also a cartoonist. I post regularly on @officialceojess.<br/><br/>
+                        I'm also an amateur cartoonist. I post regularly on @officialceojess.<br/><br/>
                         <a href="mailto:pengjess2@gmail.com">Email</a> / <a
                         href="https://www.linkedin.com/in/jess-peng/">LinkedIn</a> / <a
                         href="https://www.instagram.com/officialceojess/">Github</a><br/><br/>
@@ -96,21 +96,30 @@ export default async function AboutPage() {
                 <p>Aside from cartooning, here's what I'm also doing in my free time.</p><br/>
                 {/*<h3 className="font-bold text-2xl mb-8 tracking-tighter">fun facts</h3>*/}
                 <div className="md:grid md:grid-cols-3 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
-                    <img id=""
-                         key='drawing'
-                         src='https://i.ibb.co/GPT4B3j/drawing.png'
-                         alt='drawing'
-                    />
-                    <img id=""
-                         key='tennis'
-                         src='https://i.ibb.co/GHQqLV3/tennis.png'
-                         alt='tennis'
-                    />
-                    <img id=""
-                         key='dog'
-                         src='https://i.ibb.co/HdscHRF/dog.png'
-                         alt='dog'
-                    />
+                    <div className="md:grid md:grid-cols-2">
+                        <img id=""
+                             key='drawing'
+                             src='https://i.ibb.co/GPT4B3j/drawing.png'
+                             alt='drawing'
+                        />
+                        <p>Drawing portraits</p>
+                    </div>
+                    <div className="md:grid md:grid-cols-2">
+                        <img id=""
+                             key='tennis'
+                             src='https://i.ibb.co/GHQqLV3/tennis.png'
+                             alt='tennis'
+                        />
+                        <p>Playing tennis</p>
+                    </div>
+                    <div className="md:grid md:grid-cols-2">
+                        <img id=""
+                             key='dog'
+                             src='https://i.ibb.co/HdscHRF/dog.png'
+                             alt='dog'
+                        />
+                        <p>Watching dogs</p>
+                    </div>
                 </div>
                 <p>Thanks for stopping by!</p><br/><br/>
                 .........

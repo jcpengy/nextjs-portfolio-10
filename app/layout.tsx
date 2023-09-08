@@ -9,12 +9,12 @@ import Footer from "./components/footer";
 const graphik = localFont({
   src: [
     {
-      path: '../public/fonts/Graphik-Regular.ttf',
+      path: '../public/fonts/AdobeClean-Regular.otf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../public/fonts/Graphik-Medium.ttf',
+      path: '../public/fonts/AdobeClean-Bold.otf',
       weight: '600',
       style: 'bold',
     },
