@@ -36,7 +36,7 @@ export default async function AboutPage() {
     });
     return (
         <section>
-            <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
+            <div className="md:grid md:grid-cols-2 mb-20 md:mb-28">
                 <div>
                     <h1 className="font-bold text-2xl mb-8 tracking-tighter">Hi, I'm Jess 👋</h1>
                     <p className="my-5">
@@ -51,7 +51,7 @@ export default async function AboutPage() {
                 </div>
                 <img id="circular--square"
                      key='profile-picture'
-                     src='https://i.ibb.co/BqKD56M/IMG-9588.jpg'
+                     src='https://i.ibb.co/Wn22bdy/IMG-4538.jpg'
                      alt='Profile picture'
                 />
             </div>
