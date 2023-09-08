@@ -36,7 +36,7 @@ export default async function AboutPage() {
     });
     return (
         <section>
-            <div className="md:grid md:grid-cols-2 mb-20 md:mb-28">
+            <div className="md:grid md:grid-cols-2">
                 <div>
                     <h1 className="font-bold text-2xl mb-8 tracking-tighter">Hi, I'm Jess 👋</h1>
                     <p className="my-5">
@@ -49,12 +49,15 @@ export default async function AboutPage() {
                         .........
                     </p>
                 </div>
-                <img id="circular--square"
-                     key='profile-picture'
-                     src='https://i.ibb.co/Wn22bdy/IMG-4538.jpg'
-                     alt='Profile picture'
-                />
+                <div id="profile-image">
+                    <img id="circular--square"
+                         key='profile-picture'
+                         src='https://i.ibb.co/wzT5vZV/IMG-8872.jpg'
+                         alt='Profile picture'
+                    />
+                </div>
             </div>
+            <br/>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {ceojess.map((image) => (
                     <img
@@ -89,25 +92,24 @@ export default async function AboutPage() {
                 intuitive, and accessible. Although I enjoy seeing
                 my ideas come to life through development, I'm excited to focus on and grow my design skills on upcoming
                 projects.<br/><br/>
-                <h1 className="font-bold text-2xl mb-8 tracking-tighter">my hobbies</h1>
-                <p>I'm a serial hobbyist who loves working on side projects. Here's what I'm currently doing in my free
-                    time.</p><br/><br/>
-                <h3 className="font-bold text-2xl mb-8 tracking-tighter">fun facts</h3>
+                <h1 className="font-bold text-2xl mb-8 tracking-tighter">My Hobbies</h1>
+                <p>Aside from cartooning, here's what I'm also doing in my free time.</p><br/>
+                {/*<h3 className="font-bold text-2xl mb-8 tracking-tighter">fun facts</h3>*/}
                 <div className="md:grid md:grid-cols-3 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
-                    <img id="circular--square"
-                         key='shrek'
-                         src='https://i.ibb.co/FJmPjTY/Screen-Shot-2023-09-07-at-3-01-19-PM.png'
-                         alt='Shrek'
+                    <img id=""
+                         key='drawing'
+                         src='https://i.ibb.co/GPT4B3j/drawing.png'
+                         alt='drawing'
                     />
-                    <img id="circular--square"
-                         key='lavender'
-                         src='https://i.ibb.co/mhtksd5/Screen-Shot-2023-09-07-at-3-02-52-PM.png'
-                         alt='Lavender'
+                    <img id=""
+                         key='tennis'
+                         src='https://i.ibb.co/GHQqLV3/tennis.png'
+                         alt='tennis'
                     />
-                    <img id="circular--square"
-                         key='taco-bell'
-                         src='https://i.ibb.co/5r708st/Screen-Shot-2023-09-07-at-3-04-13-PM.png'
-                         alt='Taco Bell'
+                    <img id=""
+                         key='dog'
+                         src='https://i.ibb.co/HdscHRF/dog.png'
+                         alt='dog'
                     />
                 </div>
                 <p>Thanks for stopping by!</p><br/><br/>

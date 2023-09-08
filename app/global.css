@@ -11,7 +11,7 @@ a:link {
 }
 
 a:visited {
-  color: purple;
+  color: blue;
 }
 
 a:hover {
@@ -42,10 +42,15 @@ html {
   text-align: center;
 }
 
+#profile-image {
+  align-items: center;
+  justify-items: center;
+}
 #circular--square {
-  height: 200px;
-  width: 200px;
+  height: 225px;
+  width: 225px;
   border-radius: 50%;
+  margin: auto;
 }
 
 #profile-pic {
