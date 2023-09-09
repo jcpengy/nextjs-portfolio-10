@@ -9,8 +9,8 @@ import Footer from "./components/footer";
 const graphik = localFont({
   src: [
     {
-      path: '../public/fonts/Lora-Regular.ttf',
-      weight: '400',
+      path: '../public/fonts/Lora-Medium.ttf',
+      weight: '500',
       style: 'normal',
     },
     {
