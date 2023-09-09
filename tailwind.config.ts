@@ -9,9 +9,9 @@ export default {
   ],
   theme: {
     extend: {
-      // fontFamily: {
-      //   sans: ['var(--font-graphik)'],
-      // },
+      fontFamily: {
+        sans: ['var(--font-graphik)'],
+      },
       typography: {
         quoteless: {
           css: {
