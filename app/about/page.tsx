@@ -39,7 +39,7 @@ export default async function AboutPage() {
             <div className="md:grid md:grid-cols-2">
                 <div>
                     <h2>Hi, I'm Jess 👋</h2>
-                    <p className="my-5">
+                    <p>
                         I'm an SF-based <b>Front-End Engineer at Adobe</b>. I build internal tools
                         on the Digital Experience Customer Engineering team.<br/><br/>
                         I'm also an amateur cartoonist. I post regularly on @officialceojess.<br/><br/>
@@ -68,6 +68,7 @@ export default async function AboutPage() {
                     />
                 ))}
             </SlideshowLightbox>
+            <br/>
             <button id="button"><a id="button-text" href="https://www.instagram.com/officialceojess/">More on my
                 Instagram →
             </a></button>
@@ -98,28 +99,28 @@ export default async function AboutPage() {
                 {/*<h3 className="font-bold text-2xl mb-8 tracking-tighter">fun facts</h3>*/}
                 <div className="md:grid md:grid-cols-3 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
                     <div className="hobby">
-                        <img id=""
+                        <img className="hobby-pic"
                              key='drawing'
                              src='https://i.ibb.co/GPT4B3j/drawing.png'
                              alt='drawing'
                         />
-                        <p>Drawing portraits</p>
+                        <i>Drawing portraits</i>
                     </div>
                     <div className="hobby">
-                        <img id=""
+                        <img className="hobby-pic"
                              key='tennis'
                              src='https://i.ibb.co/GHQqLV3/tennis.png'
                              alt='tennis'
                         />
-                        <p>Playing tennis</p>
+                        <i>Playing tennis</i>
                     </div>
                     <div className="hobby">
-                        <img id=""
+                        <img className="hobby-pic"
                              key='dog'
                              src='https://i.ibb.co/HdscHRF/dog.png'
                              alt='dog'
                         />
-                        <p>Watching dogs</p>
+                        <i>Watching dogs</i>
                     </div>
                 </div>
                 <p>Thanks for stopping by!</p><br/><br/>

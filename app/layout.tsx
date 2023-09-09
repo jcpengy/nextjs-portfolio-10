@@ -10,12 +10,10 @@ const graphik = localFont({
   src: [
     {
       path: '../public/fonts/Lora-Regular.ttf',
-      weight: '500',
       style: 'normal',
     },
     {
       path: '../public/fonts/Lora-Bold.ttf',
-      weight: '700',
       style: 'bold',
     },
   ],

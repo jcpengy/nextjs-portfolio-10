@@ -5,7 +5,8 @@
 :root {
   --liljesswidth: 15vw;
   --blue: #0078BF;
-  --purple: #9336B4;
+  /*--purple: #9336B4;*/
+  --purple: #DD58D6;
   --pink: #DD58D6;
 }
 
@@ -34,7 +35,6 @@ h2 {
   -webkit-font-smoothing: antialiased;
   font-weight: 700;
   color: var(--purple);
-  padding-top: 40px;
 }
 
 .hobby {
@@ -495,10 +495,20 @@ h4.home-subtitle {
 
 /*mobile*/
 @media screen and (max-width: 640px) {
+  #profile-image {
+    padding: 24px;
+  }
+
   h1 {
     font-size: 42px;
     line-height: 54px;
     margin-bottom: -10px;
+  }
+
+  .hobby-pic {
+    height: 50%;
+    width: auto;
+    margin-top: 48px;
   }
 }
 
