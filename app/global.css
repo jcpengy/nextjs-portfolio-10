@@ -13,6 +13,7 @@
 html {
   min-width: 360px;
   background-color: white;
+  color: var(--blue);
 }
 
 p {
