@@ -17,7 +17,7 @@ a {
 p {
   font-size: 16px;
   line-height: 24px;
-  font-weight: 500;
+  font-weight: 400;
   padding: 20px 0 0 0;
 }
 
@@ -509,6 +509,7 @@ h4.home-subtitle {
     height: 60vw;
     width: auto;
     margin: auto;
+    margin-top: 24px;
   }
 
   #dots {
