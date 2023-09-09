@@ -97,29 +97,29 @@ export default async function AboutPage() {
                 <p>Aside from cartooning, here's what I'm also doing in my free time.</p><br/>
                 {/*<h3 className="font-bold text-2xl mb-8 tracking-tighter">fun facts</h3>*/}
                 <div className="md:grid md:grid-cols-3 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
-                    <div>
+                    <div className="hobby">
                         <img id=""
                              key='drawing'
                              src='https://i.ibb.co/GPT4B3j/drawing.png'
                              alt='drawing'
                         />
-                        <p id="hobbies-label">Drawing portraits</p>
+                        <p>Drawing portraits</p>
                     </div>
-                    <div>
+                    <div className="hobby">
                         <img id=""
                              key='tennis'
                              src='https://i.ibb.co/GHQqLV3/tennis.png'
                              alt='tennis'
                         />
-                        <p id="hobbies-label">Playing tennis</p>
+                        <p>Playing tennis</p>
                     </div>
-                    <div>
+                    <div className="hobby">
                         <img id=""
                              key='dog'
                              src='https://i.ibb.co/HdscHRF/dog.png'
                              alt='dog'
                         />
-                        <p id="hobbies-label">Watching dogs</p>
+                        <p>Watching dogs</p>
                     </div>
                 </div>
                 <p>Thanks for stopping by!</p><br/><br/>

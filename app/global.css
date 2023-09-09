@@ -10,25 +10,24 @@
 }
 
 a {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 p {
   font-size: 16px;
   line-height: 24px;
+  font-weight: 600;
 }
 
 h1 {
-  font-family: 'Lora', Arial, sans-serif;
   font-size: 72px;
   line-height: 80px;
   -webkit-font-smoothing: antialiased;
-  font-weight: 700;
+  font-weight: 900;
   color: var(--purple);
 }
 
 h2 {
-  font-family: 'Lora', Arial, sans-serif;
   font-size: 42px;
   line-height: 56px;
   -webkit-font-smoothing: antialiased;
@@ -37,8 +36,8 @@ h2 {
   padding-top: 40px;
 }
 
-#hobbies-label {
-  margin: auto;
+#hobby {
+  text-align: center;
 }
 
 a:link {
@@ -218,7 +217,7 @@ table {
 }
 
 /*home page*/
-h1.home {
+.home {
   line-height: 85%;
   color: var(--purple);
   font-size: 16vh;

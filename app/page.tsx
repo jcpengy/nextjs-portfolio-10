@@ -91,7 +91,7 @@ class Page extends React.Component<any, any>  {
         return (
             <div id="homepage">
                 {/*title*/}
-                <h1 className="h1 home"><SplitText copy="Jess Peng" role="heading"/></h1><br/>
+                <h1 className="home"><SplitText copy="Jess Peng" role="heading"/></h1><br/>
                 <h4 className="h4 home-subtitle">Software Engineer & Cartoonist</h4>
                 {/*cursor animation*/}
                 <div id="cursor">
