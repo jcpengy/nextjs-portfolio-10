@@ -40,7 +40,7 @@ export default async function AboutPage() {
                 <div>
                     <h2>Hi, I'm Jess 👋</h2>
                     <p>
-                        I'm an SF-based <b>Front-End Engineer at Adobe</b>. I build internal tools
+                        I'm an SF-based Front-End Engineer at Adobe. I build internal tools
                         on the Digital Experience Customer Engineering team.<br/><br/>
                         I'm also an amateur cartoonist. I post regularly on @officialceojess.<br/><br/>
                         <a className="link" href="mailto:pengjess2@gmail.com">Email</a> / <a
