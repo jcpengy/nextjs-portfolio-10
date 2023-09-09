@@ -15,6 +15,7 @@ a {
 
 p {
   font-size: 16px;
+  line-height: 24px;
 }
 
 a:link {
@@ -197,8 +198,12 @@ table {
 h1.home {
   line-height: 85%;
   color: var(--purple);
-  font-size: 18vh;
+  font-size: 16vh;
   margin-top: 1vh;
+}
+
+#title {
+  color: var(--purple);
 }
 
 h1 span span {
@@ -484,7 +489,9 @@ h4.home-subtitle {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  background-color: var(--purple);
+  color: var(--purple);
+  background-color: white;
+  border: 2px solid var(--purple)
 }
 
 #button-text {
@@ -492,7 +499,9 @@ h4.home-subtitle {
 }
 
 #button:hover {
-  background-color: #DD58D6;
+  background-color: var(--purple);
+  color: white;
+
 }
 
 

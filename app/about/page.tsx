@@ -38,7 +38,7 @@ export default async function AboutPage() {
         <section>
             <div className="md:grid md:grid-cols-2">
                 <div>
-                    <h1 className="font-bold text-2xl mb-8 tracking-tighter">Hi, I'm Jess 👋</h1>
+                    <h1 id="title" className="font-bold text-2xl mb-8 tracking-tighter">Hi, I'm Jess 👋</h1>
                     <p className="my-5">
                         I'm an SF-based <b>Front-End Engineer at Adobe</b>. I build internal tools
                         on the Digital Experience Customer Engineering team.<br/><br/>
@@ -93,7 +93,7 @@ export default async function AboutPage() {
                 intuitive, and accessible. Although I enjoy seeing
                 my ideas come to life through development, I'm excited to focus on and grow my design skills on upcoming
                 projects.<br/><br/>
-                <h1 className="font-bold text-2xl mb-8 tracking-tighter">My Hobbies</h1>
+                <h1 id="title" className="font-bold text-2xl mb-8 tracking-tighter">My Hobbies</h1>
                 <p>Aside from cartooning, here's what I'm also doing in my free time.</p><br/>
                 {/*<h3 className="font-bold text-2xl mb-8 tracking-tighter">fun facts</h3>*/}
                 <div className="md:grid md:grid-cols-3 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
