@@ -46,7 +46,7 @@ export default async function AboutPage() {
                         <a href="mailto:pengjess2@gmail.com">Email</a> / <a
                         href="https://www.linkedin.com/in/jess-peng/">LinkedIn</a> / <a
                         href="https://www.instagram.com/officialceojess/">Github</a><br/><br/>
-                        .........
+                        <span id="dots">.........</span>
                     </p>
                 </div>
                 <div id="profile-image">
@@ -95,7 +95,7 @@ export default async function AboutPage() {
                 my ideas come to life through development, I'm excited to focus on and grow my design skills on upcoming
                 projects.<br/><br/>
                 <h2>My Hobbies</h2>
-                <p>Aside from cartooning, here's what I'm also doing in my free time.</p><br/>
+                <p>Aside from cartooning, here's what I'm also doing in my free time.</p>
                 {/*<h3 className="font-bold text-2xl mb-8 tracking-tighter">fun facts</h3>*/}
                 <div className="md:grid md:grid-cols-3 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
                     <div className="hobby">

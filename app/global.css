@@ -506,9 +506,14 @@ h4.home-subtitle {
   }
 
   .hobby-pic {
-    height: 50%;
+    height: 60vw;
     width: auto;
-    margin-top: 48px;
+    margin: auto;
+    margin-top: 24px;
+  }
+
+  #dots {
+    display: none;
   }
 }
 
@@ -547,6 +552,7 @@ h4.home-subtitle {
 
 #button:hover {
   background-color: var(--purple);
+  color: white;
 }
 
 
