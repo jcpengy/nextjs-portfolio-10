@@ -43,9 +43,9 @@ export default async function AboutPage() {
                         I'm an SF-based Front-End Engineer at Adobe. I build internal tools
                         on the Digital Experience Customer Engineering team.<br/><br/>
                         I'm also an amateur cartoonist. I post regularly on @officialceojess.<br/><br/>
-                        <a className="link" href="mailto:pengjess2@gmail.com">Email</a> / <a
-                        className="link" href="https://www.linkedin.com/in/jess-peng/">LinkedIn</a> / <a
-                        className="link" href="https://www.instagram.com/officialceojess/">Github</a><br/><br/>
+                        <a className="link" href="mailto:pengjess2@gmail.com"><u>Email</u></a> / <a
+                        className="link" href="https://www.linkedin.com/in/jess-peng/"><u>LinkedIn</u></a> / <a
+                        className="link" href="https://www.instagram.com/officialceojess/"><u>Github</u></a><br/><br/>
                         <span id="dots">.........</span>
                     </p>
                 </div>
@@ -78,8 +78,8 @@ export default async function AboutPage() {
                 {/*doodling cartoons and dream houses as a toddler to building hamster cages as a middle schooler,*/}
                 {/*I developed an interest in art and engineering that continued throughout my college and professional*/}
                 {/*experiences.<br/><br/>*/}
-                At the University of Pennsylvania, I majored in <a className="link" href="http://cg.cis.upenn.edu/dmd.html">Digital
-                Media Design</a> and minored in Fine Arts with a
+                At the University of Pennsylvania, I majored in <a className="link" href="http://cg.cis.upenn.edu/dmd.html"><u>Digital
+                Media Design</u></a> and minored in Fine Arts with a
                 focus in 3D modeling. I also interned at the
                 New York Times where I researched VR/AR technology on the Immersive Storytelling Team.<br/><br/>
                 <img

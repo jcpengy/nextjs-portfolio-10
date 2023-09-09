@@ -530,6 +530,7 @@ h4.home-subtitle {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  font-weight: 700;
   margin: 4px 2px;
   cursor: pointer;
   color: var(--purple);
@@ -540,6 +541,7 @@ h4.home-subtitle {
 #button:hover {
   background-color: var(--purple);
   color: white;
+  text-decoration: underline;
 }
 
 
