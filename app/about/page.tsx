@@ -68,7 +68,8 @@ export default async function AboutPage() {
                     />
                 ))}
             </SlideshowLightbox>
-            <button id="button"><a id="button-text" href="https://www.instagram.com/officialceojess/">More on my Instagram →
+            <button id="button"><a id="button-text" href="https://www.instagram.com/officialceojess/">More on my
+                Instagram →
             </a></button>
             <p>
                 <br/>
@@ -76,8 +77,8 @@ export default async function AboutPage() {
                 {/*doodling cartoons and dream houses as a toddler to building hamster cages as a middle schooler,*/}
                 {/*I developed an interest in art and engineering that continued throughout my college and professional*/}
                 {/*experiences.<br/><br/>*/}
-                At the University of Pennsylvania, I majored in <u><a href="http://cg.cis.upenn.edu/dmd.html">Digital
-                Media Design</a></u> and minored in Fine Arts with a
+                At the University of Pennsylvania, I majored in <a href="http://cg.cis.upenn.edu/dmd.html">Digital
+                Media Design</a> and minored in Fine Arts with a
                 focus in 3D modeling. I also interned at the
                 New York Times where I researched VR/AR technology on the Immersive Storytelling Team.<br/><br/>
                 <img
@@ -96,7 +97,7 @@ export default async function AboutPage() {
                 <p>Aside from cartooning, here's what I'm also doing in my free time.</p><br/>
                 {/*<h3 className="font-bold text-2xl mb-8 tracking-tighter">fun facts</h3>*/}
                 <div className="md:grid md:grid-cols-3 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
-                    <div className="md:grid md:grid-cols-2">
+                    <div>
                         <img id=""
                              key='drawing'
                              src='https://i.ibb.co/GPT4B3j/drawing.png'
@@ -104,7 +105,7 @@ export default async function AboutPage() {
                         />
                         <p>Drawing portraits</p>
                     </div>
-                    <div className="md:grid md:grid-cols-2">
+                    <div>
                         <img id=""
                              key='tennis'
                              src='https://i.ibb.co/GHQqLV3/tennis.png'
@@ -112,7 +113,7 @@ export default async function AboutPage() {
                         />
                         <p>Playing tennis</p>
                     </div>
-                    <div className="md:grid md:grid-cols-2">
+                    <div>
                         <img id=""
                              key='dog'
                              src='https://i.ibb.co/HdscHRF/dog.png'

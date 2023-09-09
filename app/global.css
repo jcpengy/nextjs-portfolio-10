@@ -4,28 +4,39 @@
 
 :root {
   --liljesswidth: 15vw;
+  --blue: #0078BF;
+  --purple: #9336B4;
+  --pink: #DD58D6;
+}
+
+a {
+  text-decoration: underline;
+}
+
+p {
+  font-size: 16px;
 }
 
 a:link {
-  color: darkviolet;
+  color: var(--purple);
 }
 
 a:visited {
-  color: darkviolet;
+  color: var(--purple);
 }
 
 a:hover {
-  color: dodgerblue;
+  color: var(--blue);
 }
 
 html {
   min-width: 360px;
   background-color: white;
-  color: darkviolet;
+  color: var(--blue);
 }
 
 .footer {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 #element1 {
@@ -70,13 +81,13 @@ html {
   cursor: pointer;
 }
 
-.anchor:hover {
-  @apply visible;
-}
+/*.anchor:hover {*/
+/*  @apply visible;*/
+/*}*/
 
-.prose a {
-  @apply transition-all decoration-neutral-400 dark:decoration-neutral-600 underline-offset-2 decoration-[0.1em];
-}
+/*.prose a {*/
+/*  @apply transition-all decoration-neutral-400 dark:decoration-neutral-600 underline-offset-2 decoration-[0.1em];*/
+/*}*/
 
 .prose .anchor:after {
   @apply text-neutral-300 dark:text-neutral-700;
@@ -164,7 +175,7 @@ table {
   width: 1rem;
   margin-right: 1rem;
   text-align: right;
-  color: gray;
+  color: #DD58D6;
 }
 [data-rehype-pretty-code-fragment] .line--highlighted {
   @apply bg-slate-500 bg-opacity-10;
@@ -185,7 +196,7 @@ table {
 /*home page*/
 h1.home {
   line-height: 85%;
-  color: purple;
+  color: var(--purple);
   font-size: 18vh;
   margin-top: 1vh;
 }
@@ -470,10 +481,10 @@ h4.home-subtitle {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 14px;
+  font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  background-color: darkviolet;
+  background-color: var(--purple);
 }
 
 #button-text {
@@ -481,7 +492,7 @@ h4.home-subtitle {
 }
 
 #button:hover {
-  background-color: dodgerblue;
+  background-color: #DD58D6;
 }
 
 
