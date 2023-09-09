@@ -5,9 +5,9 @@ export default function Footer() {
             <br/><br/>
             .........
             <br/><br/>
-            <a href="mailto:pengjess2@gmail.com">Email</a> / <a
-            href="https://www.linkedin.com/in/jess-peng/">LinkedIn</a> / <a
-            href="https://www.instagram.com/officialceojess/">Github</a>
+            <a className="link" href="mailto:pengjess2@gmail.com">Email</a> / <a
+            className="link" href="https://www.linkedin.com/in/jess-peng/">LinkedIn</a> / <a
+            className="link" href="https://www.instagram.com/officialceojess/">Github</a>
         </span>
     );
 }
