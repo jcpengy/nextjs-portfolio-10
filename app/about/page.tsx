@@ -38,7 +38,7 @@ export default async function AboutPage() {
         <section>
             <div className="md:grid md:grid-cols-2">
                 <div>
-                    <h1>Hi, I'm Jess 👋</h1>
+                    <h2>Hi, I'm Jess 👋</h2>
                     <p className="my-5">
                         I'm an SF-based <b>Front-End Engineer at Adobe</b>. I build internal tools
                         on the Digital Experience Customer Engineering team.<br/><br/>
