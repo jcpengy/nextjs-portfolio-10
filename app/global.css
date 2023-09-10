@@ -45,7 +45,7 @@ h3 {
   -webkit-font-smoothing: antialiased;
   color: var(--purple);
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: -10px;
 }
 
 h4 {
