@@ -6,9 +6,10 @@ export default async function PortfolioPage() {
 
     return (
         <section>
-            <a rel="noopener" target="_blank" href="#ux_design_section">UX Design</a> /
-            <a rel="noopener" target="_blank" href="#graphic_design_section">Graphic Design</a>
-
+            <div id="sticky-header">
+                <a className="link" href="#ux_design_section"><u>UX Design</u></a> /
+                <a className="link" href="#graphic_design_section"><u>Graphic Design</u></a>
+            </div>
             <a id="ux_design_section"></a>
             <UXDesign/>
             <br/>
