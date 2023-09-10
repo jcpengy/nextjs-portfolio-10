@@ -167,6 +167,7 @@ export default function UXDesign() {
             <h2>UX Design</h2>
             <div>
                 <h3>Adobe Experience Platform Artifact Copy App</h3>
+                <br/>
                 <img
                     key={uxdesignimages[1].alt}
                     src={uxdesignimages[1].src}
@@ -346,6 +347,7 @@ export default function UXDesign() {
             <br/><br/>
             <div>
                 <h3>Campaignion</h3>
+                <br/>
                 <img
                     key={campaignion[0].alt}
                     src={campaignion[0].src}

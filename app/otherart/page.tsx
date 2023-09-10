@@ -41,6 +41,7 @@ export default async function OtherArt() {
     return (
         <section>
             <h2>Other Art</h2>
+            <br/>
             <SlideshowLightbox className='container grid grid-cols-2 gap-2'>
                 {artimages.map((image) => (
                     <img
