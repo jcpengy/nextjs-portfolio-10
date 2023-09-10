@@ -45,7 +45,7 @@ h3 {
   -webkit-font-smoothing: antialiased;
   color: var(--purple);
   margin-top: 20px;
-  margin-bottom: -10px;
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -265,10 +265,11 @@ h1 span span {
   }
 }
 
-h4.home-subtitle {
+#home-subtitle {
   font-size: 5vh;
   font-weight: 900;
   animation: show-text 2s forwards;
+  color: var(--blue);
 }
 
 @keyframes show-text {

@@ -57,8 +57,8 @@ const graphicdesignimages = [
         alt: 'Dog',
     },
     {
-        src: 'https://i.ibb.co/r2Hj3zQ/c008a3144325137-628acc1f35c5d.jpg',
-        alt: 'Marg Bar',
+        src: 'https://i.ibb.co/fCg5Xmq/Screen-Shot-2023-09-10-at-12-37-37-PM.png',
+        alt: 'Blended',
     },
     {
         src: 'https://i.ibb.co/2cQrGVY/616cf7116952781-606c8f93a3041.png',
