@@ -179,17 +179,17 @@ export default function UXDesign() {
                         <hr/>
                         <br/>
                         <h4>Problem</h4>
-                        <p className="my-5">
+                        <p>
                             Transferring artifacts between sandboxes in Adobe Experience Platform is time-consuming and
                             error
                             prone.
                         </p>
                         <h4>Objective</h4>
-                        <p className="my-5">
+                        <p>
                             Build a tool that simplifies and streamlines sandbox management.
                         </p>
                         <h4>Solution</h4>
-                        <p className="my-5">
+                        <p>
                             Create an internal Unified Shell application that uses Adobe Experience Platform's API to
                             handle all
                             facets of sandbox management. With our app, the user can:<br/><br/>
@@ -201,11 +201,11 @@ export default function UXDesign() {
                             • Log actions for documentation and troubleshooting
                         </p>
                         <h4>Role</h4>
-                        <p className="my-5">
+                        <p>
                             I led design and front-end development on a five person team.
                         </p>
                         <h4>Research</h4>
-                        <p className="my-5">
+                        <p>
                             All team members participated in the research process. We gathered requirements from
                             internal
                             consultants and solution architects whose customers needed to efficiently manage
@@ -231,7 +231,7 @@ export default function UXDesign() {
                             app, improve its usability, and fine-tune requirements.
                         </p>
                         <h4>Version One</h4>
-                        <p className="my-5">
+                        <p>
                             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                                 {v1images.map((image) => (
                                     <img
@@ -252,7 +252,7 @@ export default function UXDesign() {
                             and add additional features like sync and revert.
                         </p>
                         <h4>Version Two</h4>
-                        <p className="my-5">
+                        <p>
                             Based on existing design patterns in AEP, I drafted a re-design in
                             <u><a href="https://www.figma.com/proto/TIHIYPfyhvmQiSWxfzz5i1/Untitled?node-id=1-400&scaling=
                             min-zoom&page-id=0%3A1&starting-point-node-id=1%3A137">Figma</a></u>.<br/><br/>
@@ -334,7 +334,7 @@ export default function UXDesign() {
                             </SlideshowLightbox>
                         </p>
                         <h4>Feedback</h4>
-                        <p className="my-5">
+                        <p>
                             From the audit log, we've tracked over 100 internal consultants and solution architects
                             using our app. We've also added an additional capability to copy artifacts across IMS orgs.
                             Overall, we've received positive feedback on the usefulness of this tool to
@@ -358,25 +358,25 @@ export default function UXDesign() {
                         <hr/>
                         <br/>
                         <h4>Problem</h4>
-                        <p className="my-5">
+                        <p>
                             Documentation of workflows in Adobe Campaign Standard (ACS) is manual and unstructured.
                         </p>
                         <h4>Objective</h4>
-                        <p className="my-5">
+                        <p>
                             Reduce documentation time and therefore time to value for Campaign Standard implementations.
                         </p>
                         <h4>Solution</h4>
-                        <p className="my-5">
+                        <p>
                             Create a tool that ingests workflow data and automates Campaign documentation. Users should
                             be able to
                             access and export the documentation via a Unified Shell UI.
                         </p>
                         <h4>Role</h4>
-                        <p className="my-5">
+                        <p>
                             I independently conceptualized, designed, and coded this project.
                         </p>
                         <h4>Research</h4>
-                        <p className="my-5">
+                        <p>
                             I reviewed existing documentation spread across customer SharePoint sites and Wiki pages. I
                             also
                             researched image detection methods to label workflow images, but discovered I could access
@@ -396,7 +396,7 @@ export default function UXDesign() {
                             the app's usability on a variety of workflows.
                         </p>
                         <h4>Version One</h4>
-                        <p className="my-5">
+                        <p>
                             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                                 {campaignion_v1.map((image) => (
                                     <img
@@ -419,7 +419,7 @@ export default function UXDesign() {
                             more than 10 activities, for example.
                         </p>
                         <h4>Version Two</h4>
-                        <p className="my-5">
+                        <p>
                             <u>Problem #1</u>: The current documentation is too dense and hard to follow for large
                             workflows.<br/>
                             <u>Solution</u>: Enable the user to split the workflow into groups of x activities and
@@ -507,7 +507,7 @@ export default function UXDesign() {
                             </SlideshowLightbox>
                         </p>
                         <h4>Feedback</h4>
-                        <p className="my-5">
+                        <p>
                             Problems to explore:<br/>
                             • Using an API to grab workflow data given the page url<br/>
                             • QA testing - ensure a workflow aligns with requirements<br/><br/>

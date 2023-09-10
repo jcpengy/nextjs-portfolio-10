@@ -80,8 +80,8 @@ export default async function GraphicDesign() {
 
     return (
         <section>
-            <h2>Graphic Design</h2><br/>
-            <h3>Kessler Project</h3><br/>
+            <h2>Graphic Design</h2>
+            <h3>Kessler Project</h3>
             <p>3D models, graphic design assets, and digital drawings I created for our finalist presentation and submission to the 2018 Walt
                 Disney Imaginations Design Contest.</p><br/>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>

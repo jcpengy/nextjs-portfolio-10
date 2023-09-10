@@ -579,8 +579,9 @@ h4.home-subtitle {
 }
 
 #sticky-header {
+  background-color: white;
   position: sticky; top: 0;
-  padding: 24px;
+  padding: 24px 0px 24px 0px;
 }
 
 
