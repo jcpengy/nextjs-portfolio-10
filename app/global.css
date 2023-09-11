@@ -426,21 +426,21 @@ h1 span span {
 .ball-left {
   background-color: var(--blue);
   border-radius: 50%;
-  height: calc(0.145 * var(--liljesswidth));
+  height: calc(0.2 * var(--liljesswidth));
   overflow: hidden;
   position: relative;
-  width: calc(0.145 * var(--liljesswidth));
-  left: calc(0.097 * var(--liljesswidth));
-  margin-top: calc(0.1 * var(--liljesswidth));
+  width: calc(0.2 * var(--liljesswidth));
+  /*left: calc(0.05 * var(--liljesswidth));*/
+  margin-top: calc(-0.28 * var(--liljesswidth));
 }
 .ball-right {
   background-color: var(--blue);
   border-radius: 50%;
-  height: calc(0.145 * var(--liljesswidth));;
+  height: calc(0.2 * var(--liljesswidth));;
   overflow: hidden;
   position: relative;
-  width: calc(0.145 * var(--liljesswidth));
-  left: calc(0.6 * var(--liljesswidth));
+  width: calc(0.2 * var(--liljesswidth));
+  left: calc(0.57 * var(--liljesswidth));
   margin-top: calc(-0.2 * var(--liljesswidth));
 }
 /*.ring {*/
