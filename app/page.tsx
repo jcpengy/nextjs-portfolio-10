@@ -119,6 +119,9 @@ class Page extends React.Component<any, any>  {
                             <div className="eyebrow two"></div>
                         </div>
                     </div>
+                    <div className="legs">
+                        <img className="img-legs" src="https://i.ibb.co/jwVYkHP/legs.png" alt="legs"/>
+                    </div>
                     <div className="scooter">
                         <div className="scooter base"></div>
                         {/*<div className="scooter top" style={{WebkitTransform: `translateX(${(mouseX - droidX) / 15}px) rotateZ(${(mouseX - droidX) / 25}deg)`}}></div>*/}

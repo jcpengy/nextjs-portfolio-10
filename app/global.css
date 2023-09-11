@@ -310,13 +310,21 @@ h1 span span {
   position: absolute;
   margin-left: -70px;
   width: var(--liljesswidth);
-  bottom: 5vh;
+  bottom: 8vh;
   left: 0;
 }
 .img-body {
   width: var(--liljesswidth);
+  /*height: auto;*/
 }
-
+.img-legs {
+  width: var(--liljesswidth);
+}
+.legs {
+  position: absolute;
+  top: calc(-.75 * var(--liljesswidth));
+  left: -12%;
+}
 .body {
   overflow: hidden;
   position: absolute;
@@ -333,11 +341,9 @@ h1 span span {
   transition: left 0.6s;
   left: 15%;
 }
-
 .body .eyebrows.right {
   left: 18%;
 }
-
 .body .eyebrow {
   z-index: 1;
   position: absolute;
@@ -346,15 +352,12 @@ h1 span span {
   width: calc(0.1129 * var(--liljesswidth));
   top: calc(-0.6 * var(--liljesswidth));
 }
-
 .body .eyebrow.one {
   left: 20%;
 }
-
 .body .eyebrow.two {
   left: 35%;
 }
-
 .body .pupils {
   display: block;
   height: 100%;
@@ -363,11 +366,9 @@ h1 span span {
   transition: left 0.6s;
   left: 7%;
 }
-
 .body .pupils.right {
   left: 16%;
 }
-
 .body .pupil {
   background: black;
   border-radius: 50%;
@@ -378,15 +379,12 @@ h1 span span {
   width: calc(0.016 * var(--liljesswidth));
   top: calc(-0.5 * var(--liljesswidth));
 }
-
 .body .pupil.one {
   left: 30%;
 }
-
 .body .pupil.two {
   left: 45%;
 }
-
 .body .eyes {
   display: block;
   height: 100%;
