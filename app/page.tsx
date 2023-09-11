@@ -120,7 +120,7 @@ class Page extends React.Component<any, any>  {
                     {/*    </div>*/}
                     {/*</div>*/}
                     <div className="scooter">
-                        <img className="img-scooter" src="https://i.ibb.co/Vj3RFW5/scooter.png" alt="scooter"/>
+                        <img className="img-scooter" src="https://i.ibb.co/9GHh4vy/scooter.png" alt="scooter"/>
                     </div>
                     {/*<div className="scooter">*/}
                     {/*    <div className="scooter base"></div>*/}

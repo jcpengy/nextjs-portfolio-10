@@ -324,7 +324,7 @@ h1 span span {
   overflow: hidden;
   position: absolute;
   z-index: 2;
-  top: calc(-.55 * var(--liljesswidth));
+  top: calc(-1.0 * var(--liljesswidth));
   left: -12%;
 }
 .body {
@@ -431,7 +431,7 @@ h1 span span {
   position: relative;
   width: calc(0.2 * var(--liljesswidth));
   /*left: calc(0.05 * var(--liljesswidth));*/
-  margin-top: calc(-0.28 * var(--liljesswidth));
+  margin-top: calc(-0.32 * var(--liljesswidth));
 }
 .ball-right {
   background-color: var(--blue);
