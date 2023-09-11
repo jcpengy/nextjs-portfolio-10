@@ -99,8 +99,8 @@ class Page extends React.Component<any, any>  {
                 </div>
                 {/*lil jess*/}
                 <div className="liljess" style={{WebkitTransform: `translateX(${droidX}px)`}}>
-                    {/*<div className="body"*/}
-                    {/*     style={{WebkitTransform: `translateX(${(mouseX - droidX) / 15}px) rotateZ(${(mouseX - droidX) / 20}deg)`}}>*/}
+                    <div className="body"
+                         style={{WebkitTransform: `translateX(${(mouseX - droidX) / 15}px) rotateZ(${(mouseX - droidX) / 20}deg)`}}>
                         <div className={'eyes ' + (toTheRight ? 'right' : '')}>
                             <div className="eye one"></div>
                             <div className="eye two"></div>
@@ -117,7 +117,7 @@ class Page extends React.Component<any, any>  {
                             <div className="eyebrow one"></div>
                             <div className="eyebrow two"></div>
                         </div>
-                    {/*</div>*/}
+                    </div>
                     <div className="scooter">
                         <img className="img-scooter" src="https://i.ibb.co/9GHh4vy/scooter.png" alt="scooter"/>
                     </div>

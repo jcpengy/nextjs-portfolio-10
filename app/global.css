@@ -330,7 +330,7 @@ h1 span span {
 .body {
   overflow: hidden;
   position: absolute;
-  z-index: -1;
+  z-index: 5000;
   top: calc(-.55 * var(--liljesswidth));
   left: -12%;
 }
@@ -416,7 +416,7 @@ h1 span span {
 .mouth {
   position: relative;
   z-index: 1;
-  top: calc(0.113 * var(--liljesswidth));
+  top: calc(-0.56 * var(--liljesswidth));
   left: 35%;
 }
 .img-mouth {
