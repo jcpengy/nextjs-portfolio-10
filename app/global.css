@@ -307,7 +307,7 @@ h1 span span {
 }
 
 .liljess {
-  position: relative;
+  position: absolute;
   margin-left: -70px;
   width: var(--liljesswidth);
   bottom: 5vh;
