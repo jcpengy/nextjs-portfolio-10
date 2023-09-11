@@ -82,8 +82,8 @@ export default async function GraphicDesign() {
         <section>
             <h2>Graphic Design</h2>
             <h3>Kessler Project</h3>
-            <p>3D models, graphic design assets, and digital drawings I created for our finalist presentation and submission to the 2018 Walt
-                Disney Imaginations Design Contest.</p><br/>
+            <p>3D models, graphic design assets, and digital drawings I created for my team's finalist presentation and
+                submission to the 2018 Walt Disney Imaginations Design Contest.</p><br/>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {kessler.map((image) => (
                     <img
@@ -95,7 +95,8 @@ export default async function GraphicDesign() {
                 ))}
             </SlideshowLightbox><br/>
             <h3>Etsy</h3>
-            <p>Designs I created for my Etsy customers.</p><br/>
+            <p>I do graphic design on Etsy in my free time. I've created designs for weddings, bachelorette parties,
+            family vacations, and various companies.</p><br/>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {graphicdesignimages.map((image) => (
                     <img

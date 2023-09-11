@@ -12,7 +12,7 @@ export default async function PortfolioPage() {
                 <span> / </span>
                 <a className="link" href="#graphic_design_section"><u>Graphic Design</u></a>
                 <span> / </span>
-                <a className="link" href="#graphic_design_section"><u>Other Art</u></a>
+                <a className="link" href="#other_art_section"><u>Other Art</u></a>
             </div>
             <a id="ux_design_section"></a>
             <UXDesign/>

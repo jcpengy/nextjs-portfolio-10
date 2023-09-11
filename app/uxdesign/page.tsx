@@ -212,14 +212,24 @@ export default function UXDesign() {
                             consultants and solution architects whose customers needed to efficiently manage
                             multi-sandbox
                             environments.<br/><br/>
-                            We identified the following pain points across all customers:<br/>
-                            • Painful and time-consuming to copy complex artifacts from Production to Development
-                            sandboxes<br/>
-                            • Need to easily kickstart new business implementations from Development to QA or Production<br/>
-                            • Deploy market or regional sandboxes with a baseline configuration, support customers that
-                            wish to benefit from faster sandbox deployments that include tested AEP configurations<br/>
-                            • Development work migrated to higher sandboxes from the UI without
-                            having separate set of APIs for AEP versus AJO<br/><br/>
+                            We identified the following pain points across all customers:
+                            <ul>
+                                <li>
+                                    Painful and time-consuming to copy complex artifacts from Production to Development
+                                    sandboxes
+                                </li>
+                                <li>
+                                    Need to easily kickstart new business implementations from Development to QA or Production
+                                </li>
+                                <li>
+                                    Deploy market or regional sandboxes with a baseline configuration, support customers that
+                                    wish to benefit from faster sandbox deployments that include tested AEP configurations
+                                </li>
+                                <li>
+                                    Development work migrated to higher sandboxes from the UI without
+                                    having separate set of APIs for AEP versus AJO
+                                </li>
+                            </ul>
                             A competitive analysis of other sandbox management apps:<br/><br/>
                             <img
                                 key={"competitive analysis"}
