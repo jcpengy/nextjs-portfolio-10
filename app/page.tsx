@@ -122,10 +122,10 @@ class Page extends React.Component<any, any>  {
                         <img className="img-scooter" src="https://i.ibb.co/9GHh4vy/scooter.png" alt="scooter"/>
                     </div>
                     <div className="ball-left" style={{WebkitTransform: `rotateZ(${droidX}deg)`}}>
-                        {/*<div className="ring one"></div>*/}
+                        <div className="ring one"></div>
                     </div>
                     <div className="ball-right" style={{WebkitTransform: `rotateZ(${droidX}deg)`}}>
-                        {/*<div className="ring one"></div>*/}
+                        <div className="ring one"></div>
                     </div>
                 </div>
                 <div className="instructions">
