@@ -120,19 +120,19 @@ class Page extends React.Component<any, any>  {
                     {/*    </div>*/}
                     {/*</div>*/}
                     <div className="scooter">
-                        <img className="img-scooter" src="https://i.ibb.co/m6D0dmY/scooter.png" alt="scooter"/>
+                        <img className="img-scooter" src="https://i.ibb.co/JkwwVsF/scooter.png" alt="scooter"/>
                     </div>
                     {/*<div className="scooter">*/}
                     {/*    <div className="scooter base"></div>*/}
                     {/*    /!*<div className="scooter top" style={{WebkitTransform: `translateX(${(mouseX - droidX) / 15}px) rotateZ(${(mouseX - droidX) / 25}deg)`}}></div>*!/*/}
                     {/*    /!*<div className="scooter handle" style={{WebkitTransform: `translateX(${(mouseX - droidX) / 10}px) rotateZ(${(mouseX - droidX) / 15}deg)`}}></div>*!/*/}
                     {/*</div>*/}
-                    {/*<div className="ball-left" style={{WebkitTransform: `rotateZ(${droidX}deg)`}}>*/}
-                    {/*    /!*<div className="ring one"></div>*!/*/}
-                    {/*</div>*/}
-                    {/*<div className="ball-right" style={{WebkitTransform: `rotateZ(${droidX}deg)`}}>*/}
-                    {/*    /!*<div className="ring one"></div>*!/*/}
-                    {/*</div>*/}
+                    <div className="ball-left" style={{WebkitTransform: `rotateZ(${droidX}deg)`}}>
+                        {/*<div className="ring one"></div>*/}
+                    </div>
+                    <div className="ball-right" style={{WebkitTransform: `rotateZ(${droidX}deg)`}}>
+                        {/*<div className="ring one"></div>*/}
+                    </div>
                     {/*<div className="shadow"></div>*/}
                 </div>
                 <div className="instructions">

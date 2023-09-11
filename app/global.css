@@ -310,7 +310,7 @@ h1 span span {
   position: absolute;
   margin-left: -70px;
   width: var(--liljesswidth);
-  bottom: 8vh;
+  bottom: 4vh;
   left: 0;
 }
 .img-body {
@@ -424,7 +424,7 @@ h1 span span {
 }
 
 .ball-left {
-  background-color: var(--pink);
+  background-color: var(--blue);
   border-radius: 50%;
   height: calc(0.145 * var(--liljesswidth));
   overflow: hidden;
@@ -434,7 +434,7 @@ h1 span span {
   margin-top: calc(0.1 * var(--liljesswidth));
 }
 .ball-right {
-  background-color: var(--pink);
+  background-color: var(--blue);
   border-radius: 50%;
   height: calc(0.145 * var(--liljesswidth));;
   overflow: hidden;
