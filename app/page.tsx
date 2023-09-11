@@ -100,7 +100,7 @@ class Page extends React.Component<any, any>  {
                 {/*lil jess*/}
                 <div className="liljess" style={{WebkitTransform: `translateX(${droidX}px)`}}>
                     <div className="body"
-                         style={{WebkitTransform: `translateX(${(mouseX - droidX) / 15}px)`}}>
+                         style={{WebkitTransform: `translateX(${(mouseX - droidX) / 15}px) rotateZ(${(mouseX - droidX) / 75}deg)`}}>
                         <div className={'eyes ' + (toTheRight ? 'right' : '')}>
                             <div className="eye one"></div>
                             <div className="eye two"></div>

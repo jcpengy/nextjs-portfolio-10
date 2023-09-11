@@ -427,8 +427,8 @@ h1 span span {
   overflow: hidden;
   position: absolute;
   width: calc(0.2 * var(--liljesswidth));
-  /*left: calc(0.05 * var(--liljesswidth));*/
   margin-top: calc(-0.45 * var(--liljesswidth));
+  z-index: 2;
 }
 .ball-right {
   background-color: var(--blue);
@@ -439,6 +439,7 @@ h1 span span {
   width: calc(0.2 * var(--liljesswidth));
   left: calc(0.57 * var(--liljesswidth));
   margin-top: calc(-0.45 * var(--liljesswidth));
+  z-index: 2;
 }
 .ring {
   background: var(--pink);
