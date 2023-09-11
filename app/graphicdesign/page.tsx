@@ -108,7 +108,6 @@ export default async function GraphicDesign() {
                 ))}
             </SlideshowLightbox>
             <br/>
-            <br/>
             <button id="button"><a target="_blank" href="https://behance.net/jesspdesign">More on my
                 Behance →
             </a></button>
