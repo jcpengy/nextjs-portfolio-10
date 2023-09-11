@@ -462,52 +462,11 @@ h1 span span {
 }
 .ring.one {
   margin-left: -40px;
-  height: calc(0.1129 * var(--liljesswidth));
-  width: calc(0.1129 * var(--liljesswidth));
+  height: calc(0.12 * var(--liljesswidth));
+  width: calc(0.12 * var(--liljesswidth));
   top: 30%;
   left: 110%;
 }
-/*.scooter {*/
-/*  position: absolute;*/
-/*  top: 63%;*/
-/*  left: 20%;*/
-/*  background: var(--pink);*/
-/*}*/
-/*.scooter.base {*/
-/*  position: absolute;*/
-/*  height: calc(0.1 * var(--liljesswidth));*/
-/*  width: calc(0.45 * var(--liljesswidth));*/
-/*  left: 0px;*/
-/*  z-index: -2;*/
-/*}*/
-/*.scooter.top {*/
-/*  position: absolute;*/
-/*  height: 60px;*/
-/*  width: 25px;*/
-/*  top: -35px;*/
-/*  left: 110px;*/
-/*}*/
-/*.scooter.handle {*/
-/*  border-radius: 50%;*/
-/*  height: calc(0.097 * var(--liljesswidth))px;*/
-/*  position: absolute;*/
-/*  width: 30px;*/
-/*  left: 110px;*/
-/*  top: -65px;*/
-/*  z-index: 5;*/
-/*}*/
-/*.shadow {*/
-/*  background: #3A271C;*/
-/*  box-shadow: calc(0.016 * var(--liljesswidth)) 0 calc(0.16 * var(--liljesswidth)) #3A271C;*/
-/*  border-radius: 50%;*/
-/*  height: calc(0.075 * var(--liljesswidth));*/
-/*  opacity: 0.25;*/
-/*  position: absolute;*/
-/*  width: calc(0.61 * var(--liljesswidth));*/
-/*  z-index: -1;*/
-/*  left: calc(0.0323 * var(--liljesswidth));*/
-/*  bottom: calc(-0.0258 * var(--liljesswidth));*/
-/*}*/
 
 .instructions p {
   display: none;
