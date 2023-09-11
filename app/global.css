@@ -3,10 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --liljesswidth: 15vw;
+  --liljesswidth: 20vw;
   --blue: #0078BF;
   /*--purple: #9336B4;*/
-  --purple: #DD58D6;
   --pink: #DD58D6;
 }
 
@@ -27,7 +26,7 @@ h1 {
   font-size: 72px;
   line-height: 80px;
   -webkit-font-smoothing: antialiased;
-  color: var(--purple);
+  color: var(--pink);
 }
 
 h2 {
@@ -35,7 +34,7 @@ h2 {
   font-size: 42px;
   line-height: 56px;
   -webkit-font-smoothing: antialiased;
-  color: var(--purple);
+  color: var(--pink);
 }
 
 h3 {
@@ -43,7 +42,7 @@ h3 {
   font-size: 21px;
   line-height: 36px;
   -webkit-font-smoothing: antialiased;
-  color: var(--purple);
+  color: var(--pink);
   margin-top: 20px;
   margin-bottom: -10px;
 }
@@ -53,7 +52,7 @@ h4 {
   font-size: 18px;
   line-height: 24px;
   -webkit-font-smoothing: antialiased;
-  color: var(--purple);
+  color: var(--pink);
   margin-top: 20px;
   margin-bottom: -10px;
 }
@@ -67,7 +66,7 @@ h4 {
 }
 
 .link {
-  color: var(--purple);
+  color: var(--pink);
 }
 
 .link:hover {
@@ -214,7 +213,7 @@ table {
   width: 1rem;
   margin-right: 1rem;
   text-align: right;
-  color: #DD58D6;
+  color: var(--pink);
 }
 [data-rehype-pretty-code-fragment] .line--highlighted {
   @apply bg-slate-500 bg-opacity-10;
@@ -235,14 +234,14 @@ table {
 /*home page*/
 .home {
   line-height: 85%;
-  color: var(--purple);
+  color: var(--pink);
   font-size: 16vh;
   font-weight: 900;
   margin-top: 1vh;
 }
 
 #title {
-  color: var(--purple);
+  color: var(--pink);
 }
 
 h1 span span {
@@ -308,7 +307,7 @@ h1 span span {
 }
 
 .liljess {
-  position: absolute;
+  position: relative;
   margin-left: -70px;
   width: var(--liljesswidth);
   bottom: 5vh;
@@ -316,8 +315,8 @@ h1 span span {
 }
 .img-body {
   width: var(--liljesswidth);
-  /*height: auto;*/
 }
+
 .body {
   overflow: hidden;
   position: absolute;
@@ -334,9 +333,11 @@ h1 span span {
   transition: left 0.6s;
   left: 15%;
 }
+
 .body .eyebrows.right {
   left: 18%;
 }
+
 .body .eyebrow {
   z-index: 1;
   position: absolute;
@@ -345,12 +346,15 @@ h1 span span {
   width: calc(0.1129 * var(--liljesswidth));
   top: calc(-0.6 * var(--liljesswidth));
 }
+
 .body .eyebrow.one {
   left: 20%;
 }
+
 .body .eyebrow.two {
   left: 35%;
 }
+
 .body .pupils {
   display: block;
   height: 100%;
@@ -359,9 +363,11 @@ h1 span span {
   transition: left 0.6s;
   left: 7%;
 }
+
 .body .pupils.right {
   left: 16%;
 }
+
 .body .pupil {
   background: black;
   border-radius: 50%;
@@ -372,12 +378,15 @@ h1 span span {
   width: calc(0.016 * var(--liljesswidth));
   top: calc(-0.5 * var(--liljesswidth));
 }
+
 .body .pupil.one {
   left: 30%;
 }
+
 .body .pupil.two {
   left: 45%;
 }
+
 .body .eyes {
   display: block;
   height: 100%;
@@ -415,7 +424,7 @@ h1 span span {
 }
 
 .ball-left {
-  background-color: #ff63f0;
+  background-color: var(--pink);
   border-radius: 50%;
   height: calc(0.145 * var(--liljesswidth));
   overflow: hidden;
@@ -425,7 +434,7 @@ h1 span span {
   margin-top: calc(0.1 * var(--liljesswidth));
 }
 .ball-right {
-  background-color: #ff63f0;
+  background-color: var(--pink);
   border-radius: 50%;
   height: calc(0.145 * var(--liljesswidth));;
   overflow: hidden;
@@ -465,7 +474,7 @@ h1 span span {
   position: absolute;
   top: 63%;
   left: 20%;
-  background: #ff4aed;
+  background: var(--pink);
 }
 .scooter.base {
   position: absolute;
@@ -568,13 +577,13 @@ h1 span span {
   font-weight: 700;
   margin: 4px 2px;
   cursor: pointer;
-  color: var(--purple);
+  color: var(--pink);
   background-color: white;
-  border: 2px solid var(--purple)
+  border: 2px solid var(--pink)
 }
 
 #button:hover {
-  background-color: var(--purple);
+  background-color: var(--pink);
   color: white;
   text-decoration: underline;
 }
