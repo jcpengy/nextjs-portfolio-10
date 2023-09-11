@@ -322,16 +322,16 @@ h1 span span {
 }
 .scooter {
   overflow: hidden;
-  position: absolute;
-  z-index: 2;
+  position: relative;
+  z-index: 1;
   top: calc(-1.0 * var(--liljesswidth));
   left: -12%;
 }
 .body {
   overflow: hidden;
-  position: absolute;
-  z-index: 5000;
-  top: calc(-.55 * var(--liljesswidth));
+  position: relative;
+  z-index: 2;
+  top: calc(-.2 * var(--liljesswidth));
   left: -12%;
 }
 
@@ -341,7 +341,7 @@ h1 span span {
   background-color: black;
   width: 100%;
   transition: left 0.6s;
-  left: 15%;
+  left: 20%;
 }
 .body .eyebrows.right {
   left: 18%;
@@ -352,7 +352,7 @@ h1 span span {
   background-color: black;
   height: calc(0.0645 * var(--liljesswidth));
   width: calc(0.1129 * var(--liljesswidth));
-  top: calc(-0.6 * var(--liljesswidth));
+  top: calc(-0.02 * var(--liljesswidth));
 }
 .body .eyebrow.one {
   left: 20%;
@@ -363,7 +363,7 @@ h1 span span {
 .body .pupils {
   display: block;
   height: 100%;
-  position: absolute;
+  position: relative;
   width: 100%;
   transition: left 0.6s;
   left: 7%;
@@ -379,7 +379,7 @@ h1 span span {
   height: calc(0.016 * var(--liljesswidth));
   position: absolute;
   width: calc(0.016 * var(--liljesswidth));
-  top: calc(-0.5 * var(--liljesswidth));
+  top: calc(0.12 * var(--liljesswidth));
 }
 .body .pupil.one {
   left: 30%;
@@ -394,7 +394,7 @@ h1 span span {
   width: 100%;
   transition: left 0.6s;
   left: 10%;
-  top: calc(0.210 * var(--liljesswidth));
+  top: calc(0.1 * var(--liljesswidth));
 }
 .body .eyes.right {
   left: 13%;
@@ -404,8 +404,8 @@ h1 span span {
   display: block;
   position: absolute;
   background: white;
-  height: calc(0.119 * var(--liljesswidth));
-  width: calc(0.119 * var(--liljesswidth));
+  height: calc(0.125 * var(--liljesswidth));
+  width: calc(0.125 * var(--liljesswidth));
 }
 .body .eye.one {
   left: 25%;
@@ -416,7 +416,7 @@ h1 span span {
 .mouth {
   position: relative;
   z-index: 1;
-  top: calc(-0.56 * var(--liljesswidth));
+  top: calc(0.14 * var(--liljesswidth));
   left: 35%;
 }
 .img-mouth {
@@ -428,20 +428,20 @@ h1 span span {
   border-radius: 50%;
   height: calc(0.2 * var(--liljesswidth));
   overflow: hidden;
-  position: relative;
+  position: absolute;
   width: calc(0.2 * var(--liljesswidth));
   /*left: calc(0.05 * var(--liljesswidth));*/
-  margin-top: calc(-0.32 * var(--liljesswidth));
+  margin-top: calc(-0.65 * var(--liljesswidth));
 }
 .ball-right {
   background-color: var(--blue);
   border-radius: 50%;
   height: calc(0.2 * var(--liljesswidth));;
   overflow: hidden;
-  position: relative;
+  position: absolute;
   width: calc(0.2 * var(--liljesswidth));
   left: calc(0.57 * var(--liljesswidth));
-  margin-top: calc(-0.2 * var(--liljesswidth));
+  margin-top: calc(-0.65 * var(--liljesswidth));
 }
 /*.ring {*/
 /*  background: #ff96f5;*/
