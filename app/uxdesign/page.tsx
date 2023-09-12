@@ -452,7 +452,7 @@ export default function UXDesign() {
                             pastes it in the
                             input field. Once the user hits Process, the tool outputs a re-drawn workflow with numbered
                             activities
-                            and a description table.<br/>
+                            and a description table.<br/><br/>
                             The main accomplishment of the first version was that it could accurately parse and re-draw
                             workflows, however,
                             the activity sequencing and documentation structure needed to be scaled for larger workflows
@@ -466,7 +466,13 @@ export default function UXDesign() {
                                     <b>Problem #1</b>: The current documentation is too dense and hard to follow for large
                                     workflows.<br/><br/>
                                     <b>Solution</b>: Enable the user to split the workflow into groups of x activities and
-                                    provide a table under each group.
+                                    provide a table under each group.<br/><br/>
+                                    <img
+                                        key={"campaignion_problem1"}
+                                        className='w-full rounded'
+                                        src={campaignion[1].src}
+                                        alt={campaignion[1].alt}
+                                    />
                                 </div>
                                 <div className="right-col">
                                     <b>Thought Process</b>: Originally I had a zoom in/out feature on the re-drawn
@@ -481,12 +487,6 @@ export default function UXDesign() {
                                     bits.
                                 </div>
                             </div><br/>
-                            <img
-                                key={"campaignion_problem1"}
-                                className='w-full rounded'
-                                src={campaignion[1].src}
-                                alt={campaignion[1].alt}
-                            /><br/>
                             <div className="md:grid md:grid-cols-2">
                                 <div className="left-col">
                                     <b>Problem #2</b>: The current documentation does not explain the activities in a logical
