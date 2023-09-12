@@ -179,18 +179,28 @@ export default function UXDesign() {
                     <div className="toggle1">
                         <hr/>
                         <br/>
-                        <h4>Problem</h4>
-                        <p>
-                            Transferring artifacts between sandboxes in Adobe Experience Platform is time-consuming and
-                            error
-                            prone.
-                        </p>
-                        <h4>Objective</h4>
-                        <p>
-                            Build a tool that simplifies and streamlines sandbox management.
-                        </p>
+                        <div className="md:grid md:grid-cols-2">
+                            <div>
+                                <h4>Problem</h4>
+                                <p>
+                                    Transferring artifacts between sandboxes in Adobe Experience Platform is time-consuming and
+                                    error
+                                    prone.
+                                </p>
+                            </div>
+                            <div>
+                                <h4>Objective</h4>
+                                <p>
+                                    Build a tool that simplifies and streamlines sandbox management.
+                                </p>
+                                <h4>Role</h4>
+                                <p>
+                                    I led design and front-end development on a five person team.
+                                </p>
+                            </div>
+                        </div>
                         <h4>Solution</h4>
-                        <p>
+                        <ul className="list">
                             Create an internal Unified Shell application that uses Adobe Experience Platform's API to
                             handle all
                             facets of sandbox management. With our app, the user can:<br/><br/>
@@ -200,11 +210,7 @@ export default function UXDesign() {
                             • Sync artifacts between the source and destination sandboxes<br/>
                             • Revert artifacts (once) after syncing<br/>
                             • Log actions for documentation and troubleshooting
-                        </p>
-                        <h4>Role</h4>
-                        <p>
-                            I led design and front-end development on a five person team.
-                        </p>
+                        </ul>
                         <h4>Research</h4>
                         <p>
                             All team members participated in the research process. We gathered requirements from
@@ -212,21 +218,21 @@ export default function UXDesign() {
                             consultants and solution architects whose customers needed to efficiently manage
                             multi-sandbox
                             environments.<br/><br/>
-                            We identified the following pain points across all customers:
-                            <ul>
+                            <ul className="list">
+                                We identified the following pain points across all customers:
                                 <li>
-                                    Painful and time-consuming to copy complex artifacts from Production to Development
+                                    • Painful and time-consuming to copy complex artifacts from Production to Development
                                     sandboxes
                                 </li>
                                 <li>
-                                    Need to easily kickstart new business implementations from Development to QA or Production
+                                    • Need to easily kickstart new business implementations from Development to QA or Production
                                 </li>
                                 <li>
-                                    Deploy market or regional sandboxes with a baseline configuration, support customers that
+                                    • Deploy market or regional sandboxes with a baseline configuration, support customers that
                                     wish to benefit from faster sandbox deployments that include tested AEP configurations
                                 </li>
                                 <li>
-                                    Development work migrated to higher sandboxes from the UI without
+                                    • Development work migrated to higher sandboxes from the UI without
                                     having separate set of APIs for AEP versus AJO
                                 </li>
                             </ul>
