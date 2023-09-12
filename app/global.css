@@ -72,6 +72,11 @@ h4 {
     margin: 12px;
 }
 
+#blurry-image {
+    width: 80%;
+    height: auto;
+}
+
 ul {
     list-style-position: outside;
 }

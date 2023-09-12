@@ -254,7 +254,7 @@ export default function UXDesign() {
                             to debug the
                             app, improve its usability, and fine-tune requirements.
                         </p>
-                        <h4>Version One</h4><br/><br/>
+                        <h4>Version One</h4><br/>
                         <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                             {v1images.map((image) => (
                                 <img
@@ -468,6 +468,7 @@ export default function UXDesign() {
                                     <b>Solution</b>: Enable the user to split the workflow into groups of x activities and
                                     provide a table under each group.<br/><br/>
                                     <img
+                                        id="blurry-image"
                                         key={"campaignion_problem1"}
                                         className='w-full rounded'
                                         src={campaignion[1].src}
@@ -558,7 +559,7 @@ export default function UXDesign() {
                                 src={campaignion[4].src}
                                 alt={campaignion[4].alt}
                             /><br/>
-                            <h4>Final Design</h4>
+                            <h4>Final Design</h4><br/>
                             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                                 {campaignion_final.map((image) => (
                                     <img
