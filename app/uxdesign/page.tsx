@@ -183,7 +183,8 @@ export default function UXDesign() {
                             <div className="left-col">
                                 <h4>Problem</h4>
                                 <p>
-                                    Transferring artifacts between sandboxes in Adobe Experience Platform is time-consuming and
+                                    Transferring artifacts between sandboxes in Adobe Experience Platform is
+                                    time-consuming and
                                     error
                                     prone.
                                 </p>
@@ -197,16 +198,17 @@ export default function UXDesign() {
                         </div>
                         <h4>Solution</h4>
                         <p>Create an internal Unified Shell application that uses Adobe Experience Platform's API to
-                        handle all facets of sandbox management.<br/><br/>
-                            With our app, the user can:</p><br/>
-                        <ul className="list">
-                            • Copy all foundation artifacts (schemas, datasets, segments, sources, destinations) and
-                            first level dependencies from one sandbox to another sandbox<br/>
-                            • Review dependencies before copying<br/>
-                            • Sync artifacts between the source and destination sandboxes<br/>
-                            • Revert artifacts (once) after syncing<br/>
-                            • Log actions for documentation and troubleshooting
-                        </ul>
+                            handle all facets of sandbox management.<br/><br/>
+                            With our app, the user can:<br/>
+                            <ul className="list">
+                                <li>  • Copy all foundation artifacts (schemas, datasets, segments, sources, destinations) and
+                                    first level dependencies from one sandbox to another sandbox</li>
+                                <li>• Review dependencies before copying</li>
+                                <li>• Sync artifacts between the source and destination sandboxes</li>
+                                <li>• Revert artifacts (once) after syncing</li>
+                                <li>• Log actions for documentation and troubleshooting</li>
+                            </ul>
+                        </p>
                         <h4>Role</h4>
                         <p>
                             I led design and front-end development on a five person team.
@@ -221,21 +223,26 @@ export default function UXDesign() {
                             We identified the following pain points across all customers:<br/>
                             <ul className="list">
                                 <li>
-                                    • Painful and time-consuming to copy complex artifacts from Production to Development
+                                    • Painful and time-consuming to copy complex artifacts from Production to
+                                    Development
                                     sandboxes
                                 </li>
                                 <li>
-                                    • Need to easily kickstart new business implementations from Development to QA or Production
+                                    • Need to easily kickstart new business implementations from Development to QA or
+                                    Production
                                 </li>
                                 <li>
-                                    • Deploy market or regional sandboxes with a baseline configuration, support customers that
-                                    wish to benefit from faster sandbox deployments that include tested AEP configurations
+                                    • Deploy market or regional sandboxes with a baseline configuration, support
+                                    customers that
+                                    wish to benefit from faster sandbox deployments that include tested AEP
+                                    configurations
                                 </li>
                                 <li>
                                     • Development work migrated to higher sandboxes from the UI without
                                     having separate set of APIs for AEP versus AJO
                                 </li>
-                            </ul><br/><br/>
+                            </ul>
+                            <br/>
                             A competitive analysis of other sandbox management apps:<br/><br/>
                             <img
                                 key={"competitive analysis"}
@@ -248,20 +255,21 @@ export default function UXDesign() {
                             app, improve its usability, and fine-tune requirements.
                         </p>
                         <h4>Version One</h4><br/><br/>
-                            <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
-                                {v1images.map((image) => (
-                                    <img
-                                        key={image.src}
-                                        className='w-full rounded'
-                                        src={image.src}
-                                        alt={image.alt}
-                                    />
-                                ))}
-                            </SlideshowLightbox><br/>
+                        <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
+                            {v1images.map((image) => (
+                                <img
+                                    key={image.src}
+                                    className='w-full rounded'
+                                    src={image.src}
+                                    alt={image.alt}
+                                />
+                            ))}
+                        </SlideshowLightbox><br/>
                         <p>
                             Our initial design lacked scalability and helpful reporting.
                             More specifically, it lacked a consolidated view of all dependencies for
-                            large copy operations, an organized audit log for troubleshooting, and a modularized/scalable
+                            large copy operations, an organized audit log for troubleshooting, and a
+                            modularized/scalable
                             UI to easily incorporate additional features.
                         </p>
                         <h4>Version Two</h4>
@@ -271,16 +279,21 @@ export default function UXDesign() {
                             min-zoom&page-id=0%3A1&starting-point-node-id=1%3A137">Figma</a></u>.<br/><br/>
                             <div className="md:grid md:grid-cols-2">
                                 <div className="left-col">
-                                    <b>Problem #1</b>: Users lack a holistic view of all artifact dependencies.<br/><br/>
+                                    <b>Problem #1</b>: Users lack a holistic view of all artifact
+                                    dependencies.<br/><br/>
                                     <b>Solution</b>: List artifacts and dependencies in a separate window.
                                 </div>
                                 <div className="right-col">
-                                    <b>Thought Process</b>: Previously, the user could only view one artifact's dependencies at a time
-                                    in a tree diagram, which was a useful but buggy feature. During the testing sessions, we
-                                    agreed that a separate window was necessary to have an organized view of all selected artifacts and their
+                                    <b>Thought Process</b>: Previously, the user could only view one artifact's
+                                    dependencies at a time
+                                    in a tree diagram, which was a useful but buggy feature. During the testing
+                                    sessions, we
+                                    agreed that a separate window was necessary to have an organized view of all
+                                    selected artifacts and their
                                     dependencies. I decided to follow the AJO Object Copy UI and display them in a list.
                                 </div>
-                            </div><br/>
+                            </div>
+                            <br/>
                             <img
                                 key={"improv1"}
                                 className='w-full rounded'
@@ -289,17 +302,24 @@ export default function UXDesign() {
                             /><br/>
                             <div className="md:grid md:grid-cols-2">
                                 <div className="left-col">
-                                    <b>Problem #2</b>: A single page UI and lack of modularization make it hard to incorporate more complex features.<br/><br/>
+                                    <b>Problem #2</b>: A single page UI and lack of modularization make it hard to
+                                    incorporate more complex features.<br/><br/>
                                     <b>Solution</b>: Separate the artifacts into their own tabs.
                                 </div>
                                 <div className="right-col">
-                                    <b>Thought Process</b>: We received two additional requests to sync and revert artifacts between sandboxes.
-                                    Incorporating these two features (each requiring multiple UI components) would've been
-                                    time-consuming and unreliable in our current UI, which lacked modularization. Given that our highest
-                                    priority was to implement these features for schemas and we already faced issues running asynchronous calls
-                                    across different artifact types, we decided to move each artifact type to its own tab.
+                                    <b>Thought Process</b>: We received two additional requests to sync and revert
+                                    artifacts between sandboxes.
+                                    Incorporating these two features (each requiring multiple UI components) would've
+                                    been
+                                    time-consuming and unreliable in our current UI, which lacked modularization. Given
+                                    that our highest
+                                    priority was to implement these features for schemas and we already faced issues
+                                    running asynchronous calls
+                                    across different artifact types, we decided to move each artifact type to its own
+                                    tab.
                                 </div>
-                            </div><br/>
+                            </div>
+                            <br/>
                             <img
                                 key={"improv2"}
                                 className='w-full rounded'
@@ -308,19 +328,23 @@ export default function UXDesign() {
                             /><br/>
                             <div className="md:grid md:grid-cols-2">
                                 <div className="left-col">
-                                    <b>Problem #3</b>: The audit log is too congested and disorganized for troubleshooting.<br/><br/>
+                                    <b>Problem #3</b>: The audit log is too congested and disorganized for
+                                    troubleshooting.<br/><br/>
                                     <b>Solution</b>: Turn the audit log into a table and put it on another tab.
                                 </div>
                                 <div className="right-col">
                                     <b>Thought Process</b>: The audit log outputted asynchronous calls across all copy
-                                    operations, which made it hard to trace what was actually happening for each copy workflow. Since we
+                                    operations, which made it hard to trace what was actually happening for each copy
+                                    workflow. Since we
                                     already
-                                    created tabs for each artifact type, we decided to extend this to the audit log and put it
+                                    created tabs for each artifact type, we decided to extend this to the audit log and
+                                    put it
                                     on a separate
                                     tab. We also narrowed down the information to main actions taken in the app
                                     and organized it into a table.
                                 </div>
-                            </div><br/>
+                            </div>
+                            <br/>
                             <img
                                 key={"improv3"}
                                 className='w-full rounded'
@@ -349,7 +373,9 @@ export default function UXDesign() {
                     </div>
                 )}
             </div>
-            <br/><hr/><br/>
+            <br/>
+            <hr/>
+            <br/>
             <div>
                 <h3>Campaignion</h3>
                 <br/>
@@ -358,20 +384,26 @@ export default function UXDesign() {
                     src={campaignion[0].src}
                     alt={campaignion[0].alt}
                 /><br/>
-                <p>Technologies: React Spectrum, Javascript, Unified Shell</p>
+                <p><b>Technologies:</b> React Spectrum, Javascript, Unified Shell</p>
                 <button onClick={toggle2}>Read more &raquo;</button>
                 {open2 && (
                     <div className="toggle2">
                         <hr/>
                         <br/>
-                        <h4>Problem</h4>
-                        <p>
-                            Documentation of workflows in Adobe Campaign Standard (ACS) is manual and unstructured.
-                        </p>
-                        <h4>Objective</h4>
-                        <p>
-                            Reduce documentation time and therefore time to value for Campaign Standard implementations.
-                        </p>
+                        <div className="md:grid md:grid-cols-2">
+                            <div className="left-col">
+                                <h4>Problem</h4>
+                                <p>
+                                    Documentation of workflows in Adobe Campaign Standard (ACS) is manual and unstructured.
+                                </p>
+                            </div>
+                            <div className="right-col">
+                                <h4>Objective</h4>
+                                <p>
+                                    Reduce documentation time and therefore time to value for Campaign Standard implementations.
+                                </p>
+                            </div>
+                        </div>
                         <h4>Solution</h4>
                         <p>
                             Create a tool that ingests workflow data and automates Campaign documentation. Users should
@@ -386,19 +418,21 @@ export default function UXDesign() {
                         <p>
                             I reviewed existing documentation spread across customer SharePoint sites and Wiki pages. I
                             also
-                            researched image detection methods to label workflow images, but discovered I could access
+                            researched image detection methods to label workflow images, but realized I could access
                             the workflow
-                            HTML from the Developer Console. I did not find any internal tools that assisted in
-                            documentation and from
-                            conversations across the team, I identified the following pain points:<br/>
-                            • There is no template or established structure for existing documentation (e.g. some
-                            documentation is
-                            all text, others are a mix of pictures and text)<br/>
-                            • Documentation is a manual and tedious process and can take hours to complete for large
-                            workflows.<br/>
-                            • This often leads to poor documentation (not updated, missing comprehensive explanations,
-                            etc.), which leads
-                            to slower hand-off and difficulty troubleshooting future issues.<br/><br/>
+                            HTML from the Developer Console. No internal tools existed in automating documentation.<br/><br/>
+                            From conversations across the team, I identified the following pain points:<br/>
+                            <ul className="list">
+                                <li>• There is no template or established structure for existing documentation (e.g. some
+                                    documentation is
+                                    all text, others are a mix of pictures and text)</li>
+                                <li>• Documentation is a manual and tedious process and can take hours to complete for large
+                                    workflows.</li>
+                                <li>• This often leads to poor documentation (not updated, missing comprehensive explanations,
+                                    etc.), which leads
+                                    to slower hand-off and difficulty troubleshooting future issues.</li>
+                            </ul>
+                            <br/>
                             Throughout the development process, I led internal demos and testing sessions to improve
                             the app's usability on a variety of workflows.
                         </p>
@@ -427,74 +461,97 @@ export default function UXDesign() {
                         </p>
                         <h4>Version Two</h4>
                         <p>
-                            <u>Problem #1</u>: The current documentation is too dense and hard to follow for large
-                            workflows.<br/>
-                            <u>Solution</u>: Enable the user to split the workflow into groups of x activities and
-                            provide a
-                            table under each group.<br/>
-                            <u>Thought Process</u>: Originally I had a zoom in/out feature on the re-drawn
-                            workflow, however, larger workflows would be inconvenient to navigate in the UI.
-                            I decided to split the workflow into activity groups. The number of activities in each group
-                            would not be
-                            hard-coded since this could result in an awkward documentation of one or two remaining
-                            activities. I decided to add a number dropdown
-                            for the user to specify how many activities they wanted to see at a time. This way they
-                            could have the option
-                            to view all activities at once in a large table or split the documentation into digestible
-                            bits.<br/><br/>
+                            <div className="md:grid md:grid-cols-2">
+                                <div className="left-col">
+                                    <b>Problem #1</b>: The current documentation is too dense and hard to follow for large
+                                    workflows.<br/><br/>
+                                    <b>Solution</b>: Enable the user to split the workflow into groups of x activities and
+                                    provide a table under each group.
+                                </div>
+                                <div className="right-col">
+                                    <b>Thought Process</b>: Originally I had a zoom in/out feature on the re-drawn
+                                    workflow, however, larger workflows would be inconvenient to navigate in the UI.
+                                    I decided to split the workflow into activity groups. The number of activities in each group
+                                    would not be
+                                    hard-coded since this could result in an awkward documentation of one or two remaining
+                                    activities. I decided to add a number dropdown
+                                    for the user to specify how many activities they wanted to see at a time. This way they
+                                    could have the option
+                                    to view all activities at once in a large table or split the documentation into digestible
+                                    bits.
+                                </div>
+                            </div><br/>
                             <img
                                 key={"campaignion_problem1"}
                                 className='w-full rounded'
                                 src={campaignion[1].src}
                                 alt={campaignion[1].alt}
                             /><br/>
-                            <u>Problem #2</u>: The current documentation does not explain the activities in a logical
-                            way.<br/>
-                            <u>Solution</u>: Use the breadth-first search algorithm to sequence activities.<br/>
-                            <u>Thought Process</u>: I originally used the depth-first search algorithm to sequence
-                            activities. This
-                            meant the tool would document one complete branch of the workflow before moving to another
-                            branch, which did not comprehensively describe the workflow. For example, the workflow below
-                            targets an
-                            audience to receive an email campaign, then segments that audience to receive different
-                            versions of it.
-                            By using breadth-first search, the tool can document starting from the root and explore all
-                            activities
-                            at the present depth prior to moving on to the activities at the next depth level.<br/><br/>
+                            <div className="md:grid md:grid-cols-2">
+                                <div className="left-col">
+                                    <b>Problem #2</b>: The current documentation does not explain the activities in a logical
+                                    way.<br/><br/>
+                                    <b>Solution</b>: Use the breadth-first search algorithm to sequence activities.
+                                </div>
+                                <div className="right-col">
+                                    <b>Thought Process</b>: I originally used the depth-first search algorithm to sequence
+                                    activities. This
+                                    meant the tool would document one complete branch of the workflow before moving to another
+                                    branch, which did not comprehensively describe the workflow. For example, the workflow below
+                                    targets an
+                                    audience to receive an email campaign, then segments that audience to receive different
+                                    versions of it.
+                                    By using breadth-first search, the tool can document starting from the root and explore all
+                                    activities
+                                    at the present depth prior to moving on to the activities at the next depth level.
+                                </div>
+                            </div><br/>
                             <img
                                 key={"improv2"}
                                 className='w-full rounded'
                                 src={campaignion[2].src}
                                 alt={campaignion[2].alt}
                             /><br/>
-                            <u>Problem #3</u>: Users cannot share the documentation.<br/>
-                            <u>Solution</u>: Enable the output to be exported to Word.<br/>
-                            <u>Thought Process</u>: The major feedback I got from testing sessions was to add a way to
-                            export or share
-                            the outputted documentation. The user could drag their mouse to copy and paste the output,
-                            but the images
-                            could not be imported to another location like a Word document. Thus, I added a button to
-                            parse the output
-                            and successfully download it into a Word document. <br/><br/>
+                            <div className="md:grid md:grid-cols-2">
+                                <div className="left-col">
+                                    <b>Problem #3</b>: Users cannot share the documentation.<br/><br/>
+                                    <b>Solution</b>: Enable the output to be exported to Word.
+                                </div>
+                                <div className="right-col">
+                                    <b>Thought Process</b>: The major feedback I got from testing sessions was to add a way to
+                                    export or share
+                                    the outputted documentation. The user could drag their mouse to copy and paste the output,
+                                    but the images
+                                    could not be imported to another location like a Word document. Thus, I added a button to
+                                    parse the output
+                                    and successfully download it into a Word document.
+                                </div>
+                            </div><br/>
                             <img
                                 key={"improv3"}
                                 className='w-full rounded'
                                 src={campaignion_final[5].src}
                                 alt={campaignion_final[5].alt}
                             /><br/>
-                            <u>Problem #4</u>: Users still need to fill out the purpose and notes columns in the
-                            table.<br/>
-                            <u>Solution</u>: Partially auto-fill the table with placeholder language.<br/>
-                            <u>Thought Process</u>: Unfortunately, I was unable to find an API that, given the page url,
-                            would provide
-                            all data in the workflow, including richer data in the activities such as deduplication
-                            criteria,
-                            segmentation conditions, and target audience queries. There were also concerns with exposing
-                            sensitive
-                            customer data. Thus, I decided to establish a standard, placeholder language for each
-                            activity type. This
-                            way the table would be partially auto-filled and the user would simply need to fill in the
-                            blanks.<br/><br/>
+                            <div className="md:grid md:grid-cols-2">
+                                <div className="left-col">
+                                    <b>Problem #4</b>: Users still need to fill out the purpose and notes columns in the
+                                    table.<br/><br/>
+                                    <b>Solution</b>: Partially auto-fill the table with placeholder language.
+                                </div>
+                                <div className="right-col">
+                                    <b>Thought Process</b>: Unfortunately, I was unable to find an API that, given the page url,
+                                    would provide
+                                    all data in the workflow, including richer data in the activities such as deduplication
+                                    criteria,
+                                    segmentation conditions, and target audience queries. There were also concerns with exposing
+                                    sensitive
+                                    customer data. Thus, I decided to establish a standard, placeholder language for each
+                                    activity type. This
+                                    way the table would be partially auto-filled and the user would simply need to fill in the
+                                    blanks.
+                                </div>
+                            </div><br/>
                             <img
                                 key={"improv3"}
                                 className='w-full rounded'
