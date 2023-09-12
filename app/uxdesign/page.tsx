@@ -190,10 +190,6 @@ export default function UXDesign() {
                                 <p>
                                     Build a tool that simplifies and streamlines sandbox management.
                                 </p>
-                                <h4>Role</h4>
-                                <p>
-                                    I led design and front-end development on a five person team.
-                                </p>
                             </div>
                             <div className="right-col">
                                 <h4>Technologies</h4>
@@ -203,13 +199,16 @@ export default function UXDesign() {
                                     • Unified Shell<br/>
                                     • Figma
                                 </p>
+                                <h4>Role</h4>
+                                <p>
+                                    I led design and front-end development on a five person team.
+                                </p>
                             </div>
                         </div>
+                        <h4>Solution</h4>
+                        <p>Create an internal Unified Shell application that uses Adobe Experience Platform's API to
+                        handle all facets of sandbox management. With our app, the user can:</p><br/><br/>
                         <ul className="list">
-                            <h4>Solution</h4>
-                            Create an internal Unified Shell application that uses Adobe Experience Platform's API to
-                            handle all
-                            facets of sandbox management. With our app, the user can:<br/><br/>
                             • Copy all foundation artifacts (schemas, datasets, segments, sources, destinations) and
                             first level dependencies from one sandbox to another sandbox<br/>
                             • Review dependencies before copying<br/>
@@ -224,8 +223,8 @@ export default function UXDesign() {
                             consultants and solution architects whose customers needed to efficiently manage
                             multi-sandbox
                             environments.<br/><br/>
+                            We identified the following pain points across all customers:<br/><br/>
                             <ul>
-                                We identified the following pain points across all customers:<br/>
                                 <li>
                                     • Painful and time-consuming to copy complex artifacts from Production to Development
                                     sandboxes
@@ -241,7 +240,7 @@ export default function UXDesign() {
                                     • Development work migrated to higher sandboxes from the UI without
                                     having separate set of APIs for AEP versus AJO
                                 </li>
-                            </ul>
+                            </ul><br/><br/>
                             A competitive analysis of other sandbox management apps:<br/><br/>
                             <img
                                 key={"competitive analysis"}
@@ -253,8 +252,7 @@ export default function UXDesign() {
                             to debug the
                             app, improve its usability, and fine-tune requirements.
                         </p>
-                        <h4>Version One</h4>
-                        <p>
+                        <h4>Version One</h4><br/>
                             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                                 {v1images.map((image) => (
                                     <img
@@ -265,6 +263,7 @@ export default function UXDesign() {
                                     />
                                 ))}
                             </SlideshowLightbox><br/>
+                        <p>
                             Our initial design lacked scalability and helpful reporting.
                             Users did not have a consolidated view of all dependencies for
                             large copy operations. Furthermore, the audit log did not provide an organized documentation of calls
@@ -275,92 +274,68 @@ export default function UXDesign() {
                         </p>
                         <h4>Version Two</h4>
                         <p>
-                            Based on existing design patterns in AEP, I drafted a re-design in
+                            Based on existing design patterns in AEP, I drafted a re-design in<span> </span>
                             <u><a href="https://www.figma.com/proto/TIHIYPfyhvmQiSWxfzz5i1/Untitled?node-id=1-400&scaling=
                             min-zoom&page-id=0%3A1&starting-point-node-id=1%3A137">Figma</a></u>.<br/><br/>
                             <div className="md:grid md:grid-cols-2">
                                 <div className="left-col">
-                                    <b>Problem #1</b>: Users cannot view dependencies of all artifacts in one place.<br/>
-                                    <b>Solution</b>: Create a separate dialog window and use a list to show all selected
-                                    artifacts and their dependencies.
+                                    <b>Problem #1</b>: Users lack a holistic view of all artifact dependencies.<br/><br/>
+                                    <b>Solution</b>: List artifacts and dependencies in a separate window.
                                 </div>
                                 <div className="right-col">
-                                    <b>Thought Process</b>: There were two issues to this problem. The first was how to display
-                                    the dependency
-                                    itself and the second was how to display multiple dependencies. The tree diagram we had
-                                    previously
-                                    lagged
-                                    sometimes on artifact selection and was generally buggy. During the testing sessions, we
-                                    agreed that a
-                                    separate window was crucial for viewing all dependencies in one place. As for displaying the
-                                    dependency
-                                    itself, I decided to look toward AJO Copy for inspiration instead of reinventing the wheel.
-                                    In this
-                                    design, all selected artifacts and their dependencies are organized in a simple list. This
-                                    way, the user
-                                    can review all information before starting the copy process.
+                                    <b>Thought Process</b>: Previously, the user could only view one artifact's dependencies at a time
+                                    in a tree diagram, which was a useful but buggy feature. During the testing sessions, we
+                                    agreed that a separate window was necessary to have an organized view of all selected artifacts and their
+                                    dependencies. I decided to follow the AJO Object Copy UI and display them in a list.
                                 </div>
-                            </div>
+                            </div><br/>
                             <img
                                 key={"improv1"}
                                 className='w-full rounded'
                                 src={images[1].src}
                                 alt={images[1].alt}
-                            />
+                            /><br/>
                             <div className="md:grid md:grid-cols-2">
                                 <div className="left-col">
-                                    <b>Problem #2</b>: A single page UI makes it hard to incorporate more complex features.<br/>
-                                    <b>Solution</b>: Put each artifact type on its own tab.
+                                    <b>Problem #2</b>: A single page UI and lack of modularization make it hard to incorporate more complex features.<br/>
+                                    <b>Solution</b>: Separate the artifacts into their own tabs.
                                 </div>
                                 <div className="right-col">
-                                    <b>Thought Process</b>: We needed to add two more features to our app: 1) the ability to
-                                    sync artifacts between
-                                    source and destination sandboxes and 2) the ability to revert the artifact to its original
-                                    state (once)
-                                    after syncing. The UI for each of these features would require a button and a status
-                                    message. Adding
-                                    these two features to the previous design would've crowded it. Since we wanted to implement
-                                    sync and revert for schemas only and we already faced issues running calls for all artifact
-                                    types at
-                                    once,
-                                    we decided to move each artifact type to its own tab. Each tab would follow the same copy
-                                    workflow, but it'd be much easier now to incorporate new features per artifact
-                                    type.
+                                    <b>Thought Process</b>: We received two additional requests to sync and revert artifacts between sandboxes.
+                                    Incorporating these two features (each requiring multiple UI components) would've been
+                                    time-consuming and unreliable in our current UI, which lacked modularization. Given that our highest
+                                    priority was to implement these features for schemas and we already faced issues running asynchronous calls
+                                    across different artifact types, we decided to move each artifact type to its own tab.
                                 </div>
-                            </div>
+                            </div><br/>
                             <img
                                 key={"improv2"}
                                 className='w-full rounded'
                                 src={images[2].src}
                                 alt={images[2].alt}
-                            />
+                            /><br/>
                             <div className="md:grid md:grid-cols-2">
                                 <div className="left-col">
-                                    <b>Problem #3</b>: The audit log is too confusing to read and doesn't help with
-                                    troubleshooting.<br/>
+                                    <b>Problem #3</b>: The audit log is too congested and disorganized for troubleshooting.<br/>
                                     <b>Solution</b>: Turn the audit log into a table and put it on another tab.
                                 </div>
                                 <div className="right-col">
-                                    <b>Thought Process</b>: Previously, the audit log outputted all calls that were executed on
-                                    the backend in no
-                                    particular order. This made troubleshooting extremely difficult and time-consuming. Since we
+                                    <b>Thought Process</b>: Previously, the audit log outputted asynchronous calls across all copy
+                                    operations, which complicated troubleshooting. Since we
                                     already
                                     created tabs for each artifact type, we decided to extend this to the audit log and put it
                                     on a separate
-                                    tab as well. In addition, we only needed to show key information of main actions taken in
-                                    the app. We decided
-                                    to organize the log into a table with columns showing the artifact type, status, action,
-                                    etc. for
-                                    copy, sync, and revert.
+                                    tab. We also narrowed down the information to main actions taken in the app such as copy, sync, and revert
+                                    and organized the log into a table.
                                 </div>
-                            </div>
+                            </div><br/>
                             <img
                                 key={"improv3"}
                                 className='w-full rounded'
                                 src={images[6].src}
                                 alt={images[6].alt}
                             /><br/>
-                            <h4>Final Design</h4>
+                            <h4>Final Design</h4><br/>
                             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                                 {uxdesignimages.map((image) => (
                                     <img
