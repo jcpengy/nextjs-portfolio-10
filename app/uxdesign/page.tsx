@@ -173,6 +173,7 @@ export default function UXDesign() {
                     src={uxdesignimages[1].src}
                     alt={uxdesignimages[1].alt}
                 /><br/>
+                <p><b>Technologies:</b> React Spectrum, Javascript, Unified Shell</p>
                 <button onClick={toggle1}>Read more &raquo;</button>
                 {open1 && (
                     <div className="toggle1">
@@ -186,28 +187,18 @@ export default function UXDesign() {
                                     error
                                     prone.
                                 </p>
+                            </div>
+                            <div className="right-col">
                                 <h4>Objective</h4>
                                 <p>
                                     Build a tool that simplifies and streamlines sandbox management.
                                 </p>
                             </div>
-                            <div className="right-col">
-                                <h4>Technologies</h4>
-                                <p>
-                                    • React Spectrum<br/>
-                                    • Javascript<br/>
-                                    • Unified Shell<br/>
-                                    • Figma
-                                </p>
-                                <h4>Role</h4>
-                                <p>
-                                    I led design and front-end development on a five person team.
-                                </p>
-                            </div>
                         </div>
                         <h4>Solution</h4>
                         <p>Create an internal Unified Shell application that uses Adobe Experience Platform's API to
-                        handle all facets of sandbox management. With our app, the user can:</p><br/><br/>
+                        handle all facets of sandbox management.<br/><br/>
+                            With our app, the user can:</p><br/>
                         <ul className="list">
                             • Copy all foundation artifacts (schemas, datasets, segments, sources, destinations) and
                             first level dependencies from one sandbox to another sandbox<br/>
@@ -216,6 +207,10 @@ export default function UXDesign() {
                             • Revert artifacts (once) after syncing<br/>
                             • Log actions for documentation and troubleshooting
                         </ul>
+                        <h4>Role</h4>
+                        <p>
+                            I led design and front-end development on a five person team.
+                        </p>
                         <h4>Research</h4>
                         <p>
                             All team members participated in the research process. We gathered requirements from
@@ -223,8 +218,8 @@ export default function UXDesign() {
                             consultants and solution architects whose customers needed to efficiently manage
                             multi-sandbox
                             environments.<br/><br/>
-                            We identified the following pain points across all customers:<br/><br/>
-                            <ul>
+                            We identified the following pain points across all customers:<br/>
+                            <ul className="list">
                                 <li>
                                     • Painful and time-consuming to copy complex artifacts from Production to Development
                                     sandboxes
@@ -252,7 +247,7 @@ export default function UXDesign() {
                             to debug the
                             app, improve its usability, and fine-tune requirements.
                         </p>
-                        <h4>Version One</h4><br/>
+                        <h4>Version One</h4><br/><br/>
                             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                                 {v1images.map((image) => (
                                     <img
@@ -265,12 +260,9 @@ export default function UXDesign() {
                             </SlideshowLightbox><br/>
                         <p>
                             Our initial design lacked scalability and helpful reporting.
-                            Users did not have a consolidated view of all dependencies for
-                            large copy operations. Furthermore, the audit log did not provide an organized documentation of calls
-                            occurring on
-                            the backend. Finally, having all copy workflows on a single page made it difficult to
-                            organize the code
-                            and add additional features like sync and revert.
+                            More specifically, it lacked a consolidated view of all dependencies for
+                            large copy operations, an organized audit log for troubleshooting, and a modularized/scalable
+                            UI to easily incorporate additional features.
                         </p>
                         <h4>Version Two</h4>
                         <p>
@@ -297,7 +289,7 @@ export default function UXDesign() {
                             /><br/>
                             <div className="md:grid md:grid-cols-2">
                                 <div className="left-col">
-                                    <b>Problem #2</b>: A single page UI and lack of modularization make it hard to incorporate more complex features.<br/>
+                                    <b>Problem #2</b>: A single page UI and lack of modularization make it hard to incorporate more complex features.<br/><br/>
                                     <b>Solution</b>: Separate the artifacts into their own tabs.
                                 </div>
                                 <div className="right-col">
@@ -316,17 +308,17 @@ export default function UXDesign() {
                             /><br/>
                             <div className="md:grid md:grid-cols-2">
                                 <div className="left-col">
-                                    <b>Problem #3</b>: The audit log is too congested and disorganized for troubleshooting.<br/>
+                                    <b>Problem #3</b>: The audit log is too congested and disorganized for troubleshooting.<br/><br/>
                                     <b>Solution</b>: Turn the audit log into a table and put it on another tab.
                                 </div>
                                 <div className="right-col">
-                                    <b>Thought Process</b>: Previously, the audit log outputted asynchronous calls across all copy
-                                    operations, which complicated troubleshooting. Since we
+                                    <b>Thought Process</b>: The audit log outputted asynchronous calls across all copy
+                                    operations, which made it hard to trace what was actually happening for each copy workflow. Since we
                                     already
                                     created tabs for each artifact type, we decided to extend this to the audit log and put it
                                     on a separate
-                                    tab. We also narrowed down the information to main actions taken in the app such as copy, sync, and revert
-                                    and organized the log into a table.
+                                    tab. We also narrowed down the information to main actions taken in the app
+                                    and organized it into a table.
                                 </div>
                             </div><br/>
                             <img
@@ -357,7 +349,7 @@ export default function UXDesign() {
                     </div>
                 )}
             </div>
-            <br/><br/>
+            <br/><hr/><br/>
             <div>
                 <h3>Campaignion</h3>
                 <br/>
