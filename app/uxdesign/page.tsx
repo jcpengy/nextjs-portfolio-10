@@ -223,23 +223,19 @@ export default function UXDesign() {
                             We identified the following pain points across all customers:<br/>
                             <ul className="list">
                                 <li>
-                                    • Painful and time-consuming to copy complex artifacts from Production to
-                                    Development
-                                    sandboxes
+                                    • Painful and time-consuming to copy complex artifacts between sandboxes
                                 </li>
                                 <li>
-                                    • Need to easily kickstart new business implementations from Development to QA or
-                                    Production
+                                    • Need to easily kickstart new business implementations between environments
                                 </li>
                                 <li>
-                                    • Deploy market or regional sandboxes with a baseline configuration, support
+                                    • Need to deploy sandboxes with a baseline configuration, support
                                     customers that
                                     wish to benefit from faster sandbox deployments that include tested AEP
                                     configurations
                                 </li>
                                 <li>
-                                    • Development work migrated to higher sandboxes from the UI without
-                                    having separate set of APIs for AEP versus AJO
+                                    • Need a separate set of APIs for AEP versus AJO for migrating development work to higher sandboxes
                                 </li>
                             </ul>
                             <br/>
@@ -279,9 +275,8 @@ export default function UXDesign() {
                             min-zoom&page-id=0%3A1&starting-point-node-id=1%3A137">Figma</a></u>.<br/><br/>
                             <div className="md:grid md:grid-cols-2">
                                 <div className="left-col">
-                                    <b>Problem #1</b>: Users lack a holistic view of all artifact
-                                    dependencies.<br/><br/>
-                                    <b>Solution</b>: List artifacts and dependencies in a separate window.
+                                    <b>Problem #1</b>: Users cannot view more than one artifact's dependencies at a time.<br/><br/>
+                                    <b>Solution</b>: List all artifacts and their dependencies in a separate window.
                                 </div>
                                 <div className="right-col">
                                     <b>Thought Process</b>: Previously, the user could only view one artifact's
@@ -302,16 +297,15 @@ export default function UXDesign() {
                             /><br/>
                             <div className="md:grid md:grid-cols-2">
                                 <div className="left-col">
-                                    <b>Problem #2</b>: A single page UI and lack of modularization make it hard to
-                                    incorporate more complex features.<br/><br/>
+                                    <b>Problem #2</b>: Lack of modularization makes it hard to incorporate new features.<br/><br/>
                                     <b>Solution</b>: Separate the artifacts into their own tabs.
                                 </div>
                                 <div className="right-col">
                                     <b>Thought Process</b>: We received two additional requests to sync and revert
                                     artifacts between sandboxes.
-                                    Incorporating these two features (each requiring multiple UI components) would've
+                                    Incorporating these features (each requiring multiple UI components) would've
                                     been
-                                    time-consuming and unreliable in our current UI, which lacked modularization. Given
+                                    time-consuming and unreliable in our single-page UI. Given
                                     that our highest
                                     priority was to implement these features for schemas and we already faced issues
                                     running asynchronous calls
@@ -328,8 +322,7 @@ export default function UXDesign() {
                             /><br/>
                             <div className="md:grid md:grid-cols-2">
                                 <div className="left-col">
-                                    <b>Problem #3</b>: The audit log is too congested and disorganized for
-                                    troubleshooting.<br/><br/>
+                                    <b>Problem #3</b>: The audit log is hard to follow and unhelpful for troubleshooting.<br/><br/>
                                     <b>Solution</b>: Turn the audit log into a table and put it on another tab.
                                 </div>
                                 <div className="right-col">
