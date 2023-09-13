@@ -52,7 +52,7 @@ export default async function AboutPage() {
                 <div id="profile-image">
                     <img id="circular--square"
                          key='profile-picture'
-                         src='https://i.ibb.co/wzT5vZV/IMG-8872.jpg'
+                         src='https://i.ibb.co/7pHw7wY/IMG-9588.jpg'
                          alt='Profile picture'
                     />
                 </div>
