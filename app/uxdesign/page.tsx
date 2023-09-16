@@ -180,7 +180,7 @@ export default function UXDesign() {
                         <hr/>
                         <br/>
                         <h4>Glossary</h4>
-                        <p><span className="glossary-term"><b>Artifact</b></span>: An object that holds customer data<br/>
+                        <p><span className="glossary-term"><b>Artifact</b></span>: An object that holds customer data in Experience Platform<br/>
                         <span className="glossary-term"><b>Sandbox</b></span>: Virtual partitions within a single instance of Experience
                         Platform that enable customers to manage and monitor artifacts<br/>
                         </p>

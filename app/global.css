@@ -502,9 +502,9 @@ h1 span span {
 .ring {
     background: var(--pink);
     border-radius: 50%;
-    height: calc(0.129 * var(--liljesswidth));
+    height: calc(0.15 * var(--liljesswidth));
     position: absolute;
-    width: calc(0.129 * var(--liljesswidth));
+    width: calc(0.15 * var(--liljesswidth));
 }
 
 .ring:after {
@@ -523,10 +523,10 @@ h1 span span {
 
 .ring.one {
     margin-left: -40px;
-    height: calc(0.12 * var(--liljesswidth));
-    width: calc(0.12 * var(--liljesswidth));
-    top: 30%;
-    left: 110%;
+    height: calc(.15 * var(--liljesswidth));
+    width: calc(.15 * var(--liljesswidth));
+    top: calc(.05 * var(--liljesswidth));
+    left: 100%;
 }
 
 .instructions p {
@@ -571,9 +571,13 @@ h1 span span {
     #dots {
         display: none;
     }
+
+    .ring.one {
+        left: 160%;
+    }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 912px) {
     :root {
         --liljesswidth: 40vw;
     }
@@ -584,6 +588,10 @@ h1 span span {
 
     #cursor {
         display: none;
+    }
+
+    .ring.one {
+        left: 90%;
     }
 }
 
