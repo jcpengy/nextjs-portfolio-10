@@ -179,6 +179,11 @@ export default function UXDesign() {
                     <div className="toggle1">
                         <hr/>
                         <br/>
+                        <h4>Glossary</h4>
+                        <p><span className="glossary-term"><b>Artifact</b></span>: An object that holds customer data<br/>
+                        <span className="glossary-term"><b>Sandbox</b></span>: Virtual partitions within a single instance of Experience
+                        Platform that enable customers to manage and monitor artifacts<br/>
+                        </p>
                         <div className="md:grid md:grid-cols-2">
                             <div className="left-col">
                                 <h4>Problem</h4>
@@ -276,7 +281,7 @@ export default function UXDesign() {
                             <div className="md:grid md:grid-cols-2">
                                 <div className="left-col">
                                     <b>Problem #1</b>: Users cannot view more than one artifact's dependencies at a time.<br/><br/>
-                                    <b>Solution</b>: List all artifacts and their dependencies in a separate window.
+                                    <b>Solution</b>: List all artifacts and their dependencies in a separate window.<br/><br/>
                                 </div>
                                 <div className="right-col">
                                     <b>Thought Process</b>: Previously, the user could only view one artifact's
@@ -298,7 +303,7 @@ export default function UXDesign() {
                             <div className="md:grid md:grid-cols-2">
                                 <div className="left-col">
                                     <b>Problem #2</b>: Lack of modularization makes it hard to incorporate new features.<br/><br/>
-                                    <b>Solution</b>: Separate the artifacts into their own tabs.
+                                    <b>Solution</b>: Separate the artifacts into their own tabs.<br/><br/>
                                 </div>
                                 <div className="right-col">
                                     <b>Thought Process</b>: We received two additional requests to sync and revert
@@ -323,7 +328,7 @@ export default function UXDesign() {
                             <div className="md:grid md:grid-cols-2">
                                 <div className="left-col">
                                     <b>Problem #3</b>: The audit log is hard to follow and unhelpful for troubleshooting.<br/><br/>
-                                    <b>Solution</b>: Turn the audit log into a table and put it on another tab.
+                                    <b>Solution</b>: Turn the audit log into a table and put it on another tab.<br/><br/>
                                 </div>
                                 <div className="right-col">
                                     <b>Thought Process</b>: The audit log outputted asynchronous calls across all copy
@@ -485,7 +490,7 @@ export default function UXDesign() {
                                 <div className="left-col">
                                     <b>Problem #2</b>: The current documentation does not explain the activities in a logical
                                     way.<br/><br/>
-                                    <b>Solution</b>: Use the breadth-first search algorithm to sequence activities.
+                                    <b>Solution</b>: Use the breadth-first search algorithm to sequence activities.<br/><br/>
                                 </div>
                                 <div className="right-col">
                                     <b>Thought Process</b>: I originally used the depth-first search algorithm to sequence
@@ -509,7 +514,7 @@ export default function UXDesign() {
                             <div className="md:grid md:grid-cols-2">
                                 <div className="left-col">
                                     <b>Problem #3</b>: Users cannot share the documentation.<br/><br/>
-                                    <b>Solution</b>: Enable the output to be exported to Word.
+                                    <b>Solution</b>: Enable the output to be exported to Word.<br/><br/>
                                 </div>
                                 <div className="right-col">
                                     <b>Thought Process</b>: The major feedback I got from testing sessions was to add a way to
@@ -531,7 +536,7 @@ export default function UXDesign() {
                                 <div className="left-col">
                                     <b>Problem #4</b>: Users still need to fill out the purpose and notes columns in the
                                     table.<br/><br/>
-                                    <b>Solution</b>: Partially auto-fill the table with placeholder language.
+                                    <b>Solution</b>: Partially auto-fill the table with placeholder language.<br/><br/>
                                 </div>
                                 <div className="right-col">
                                     <b>Thought Process</b>: Unfortunately, I was unable to find an API that, given the page url,
