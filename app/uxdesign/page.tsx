@@ -168,11 +168,13 @@ export default function UXDesign() {
             <div>
                 <h3>Adobe Experience Platform Artifact Copy App</h3>
                 <br/>
-                <img
-                    key={uxdesignimages[1].alt}
-                    src={uxdesignimages[1].src}
-                    alt={uxdesignimages[1].alt}
-                /><br/>
+                <button onClick={toggle1}>
+                    <img
+                        key={uxdesignimages[1].alt}
+                        src={uxdesignimages[1].src}
+                        alt={uxdesignimages[1].alt}
+                    />
+                </button>
                 <p><b>Technologies:</b> React Spectrum, Javascript, Unified Shell</p>
                 <button onClick={toggle1}>Read more &raquo;</button>
                 {open1 && (
@@ -377,11 +379,13 @@ export default function UXDesign() {
             <div>
                 <h3>Campaignion</h3>
                 <br/>
-                <img
-                    key={campaignion[0].alt}
-                    src={campaignion[0].src}
-                    alt={campaignion[0].alt}
-                /><br/>
+                <button onClick={toggle2}>
+                    <img
+                        key={campaignion[0].alt}
+                        src={campaignion[0].src}
+                        alt={campaignion[0].alt}
+                    />
+                </button>
                 <p><b>Technologies:</b> React Spectrum, Javascript, Unified Shell</p>
                 <button onClick={toggle2}>Read more &raquo;</button>
                 {open2 && (
