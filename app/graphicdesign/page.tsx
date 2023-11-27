@@ -31,6 +31,25 @@ const kessler = [
     },
 ]
 
+const nytimes = [
+    {
+        src: 'https://i.ibb.co/CMchfKW/Screen-Shot-2023-11-27-at-2-58-22-PM.png',
+        alt: 'Syria',
+    },
+    {
+        src: 'https://i.ibb.co/MP7ZGSs/Screen-Shot-2023-11-27-at-2-59-17-PM.png',
+        alt: 'Truck',
+    },
+    {
+        src: 'https://i.ibb.co/fdV5v5k/Screen-Shot-2023-11-27-at-3-01-12-PM.png',
+        alt: 'Thai Cave 1',
+    },
+    {
+        src: 'https://i.ibb.co/PwBkWts/Screen-Shot-2023-11-27-at-3-01-38-PM.png',
+        alt: 'Thai Cave 2',
+    },
+]
+
 const graphicdesignimages = [
     {
         src: 'https://i.ibb.co/MsDf4mG/409496143892177-6282eafba4c84.jpg',
@@ -81,9 +100,26 @@ export default async function GraphicDesign() {
     return (
         <section>
             <h2>Graphic Design</h2>
-            <h3>Kessler Project</h3>
-            <p>3D models, graphic design assets, and digital drawings I created for my team's finalist presentation and
-                submission to the 2018 Walt Disney Imaginations Design Contest.</p><br/>
+            <h3>The New York Times</h3>
+            <p>Cover illustration I created and additional graphics I worked on as an intern on the Immersive Storytelling Team (The 3D models were
+            acquired from Forensic Architecture).<br/><br/>
+            Credits:
+                <a className="link" target="_blank" href="https://www.nytimes.com/interactive/2018/07/21/world/asia/thai-cave-rescue-ar-ul.html"><u>Step Inside the Thai Cave in Augmented Reality</u></a><br/>
+                <a className="link" target="_blank" href="https://www.nytimes.com/interactive/2018/06/24/world/middleeast/douma-syria-chemical-attack-augmented-reality-ar-ul.html?mtrref=undefined&gwh=F58C966F1C905F9A7F76DD29F76E6E44&gwt=pay&assetType=PAYWALL"><u>How We Created a Virtual Crime Scene to Investigate Syria's Chemical Attack</u></a>
+            </p><br/>
+            <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
+                {nytimes.map((image) => (
+                    <img
+                        key={image.src}
+                        className='w-full rounded'
+                        src={image.src}
+                        alt={image.alt}
+                    />
+                ))}
+            </SlideshowLightbox><br/>
+            <h3>Disney Imagineering</h3>
+            <p>3D models, graphics, and digital illustrations I created for my team's submission and presentation as finalists
+                in the 2018 Walt Disney Imaginations Design Competition.</p><br/>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {kessler.map((image) => (
                     <img
