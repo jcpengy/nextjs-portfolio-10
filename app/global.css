@@ -12,8 +12,8 @@
 html {
     min-width: 360px;
     background-color: white;
-    background-image: url("https://i.ibb.co/rM3vL6y/cloud.png");
-    background-repeat: repeat;
+    /*background-image: url("https://i.ibb.co/rM3vL6y/cloud.png");*/
+    /*background-repeat: repeat;*/
     color: var(--blue);
 }
 
