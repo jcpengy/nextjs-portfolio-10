@@ -89,7 +89,7 @@ export default async function AboutPage() {
                     alt={'3dmodel'}
                 />
                 <i>3D model of my college apartment</i><br/><br/>
-                As both a designer and developer at Adobe (and previously a consultant), I've gained experience in all
+                As both a designer and developer at Adobe (and previously a consultant), I've gained exposure to several
                 areas of the product lifecycle and currently strive to build internal web tools that are simple,
                 intuitive, and accessible. Although I enjoy seeing
                 my ideas come to life through development, I'm excited to focus on and grow my design skills on upcoming

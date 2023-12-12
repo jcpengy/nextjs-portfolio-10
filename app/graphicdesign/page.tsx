@@ -31,7 +31,7 @@ const kessler = [
     },
 ]
 
-const nytimes1 = [
+const nytimes = [
     {
         src: 'https://i.ibb.co/CMchfKW/Screen-Shot-2023-11-27-at-2-58-22-PM.png',
         alt: 'Syria',
@@ -39,10 +39,7 @@ const nytimes1 = [
     {
         src: 'https://i.ibb.co/MP7ZGSs/Screen-Shot-2023-11-27-at-2-59-17-PM.png',
         alt: 'Truck',
-    }
-]
-
-const nytimes2 = [
+    },
     {
         src: 'https://i.ibb.co/fdV5v5k/Screen-Shot-2023-11-27-at-3-01-12-PM.png',
         alt: 'Thai Cave 1',
@@ -104,7 +101,7 @@ export default async function GraphicDesign() {
         <section>
             <h2>Graphic Design</h2>
             <h3>Etsy</h3>
-            <p>I do graphic design on Etsy in my free time. I've created designs for weddings, bachelorette parties,
+            <p>I'm a best-selling graphic designer on Etsy. I've created designs for weddings, bachelorette parties,
                 family vacations, and a variety of businesses.</p><br/>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {graphicdesignimages.map((image) => (
@@ -126,26 +123,26 @@ export default async function GraphicDesign() {
             Credits: <a className="link" target="_blank" href="https://www.nytimes.com/interactive/2018/07/21/world/asia/thai-cave-rescue-ar-ul.html"><u>Step Inside the Thai Cave in Augmented Reality</u></a><br/>
                 <a className="link" target="_blank" href="https://www.nytimes.com/interactive/2018/06/24/world/middleeast/douma-syria-chemical-attack-augmented-reality-ar-ul.html?mtrref=undefined&gwh=F58C966F1C905F9A7F76DD29F76E6E44&gwt=pay&assetType=PAYWALL"><u>How We Created a Virtual Crime Scene to Investigate Syria's Chemical Attack</u></a>
             </p><br/>
-            <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
-                {nytimes1.map((image) => (
-                    <img
-                        key={image.src}
-                        className='w-full rounded'
-                        src={image.src}
-                        alt={image.alt}
-                    />
-                ))}
-            </SlideshowLightbox><br/>
-            <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
-                {nytimes2.map((image) => (
-                    <img
-                        key={image.src}
-                        className='w-full rounded'
-                        src={image.src}
-                        alt={image.alt}
-                    />
-                ))}
-            </SlideshowLightbox><br/>
+            <img
+                key={'syria'}
+                className='w-full rounded'
+                src={nytimes[0].src}
+                alt={nytimes[0].alt}
+            />
+            <i>Cover graphic for "How We Created a Virtual Crime Scene to Investigate Syria's Chemical Attack"</i><br/><br/>
+            <img
+                key={'thai2'}
+                className='w-full rounded'
+                src={nytimes[3].src}
+                alt={nytimes[3].alt}
+            />
+            <img
+                key={'thai1'}
+                className='w-full rounded'
+                src={nytimes[2].src}
+                alt={nytimes[2].alt}
+            />
+            <i>Graphics I worked on for "Step Inside the Thai Cave in Augmented Reality"</i><br/><br/>
             <h3>Disney Imagineering</h3>
             <p>Slides and digital illustrations I created for my team's submission and presentation as one of six finalists in the 2018 Walt Disney Imaginations Design Competition. The prompt that year was to take an abandoned place and convert
             it into a theme park experience. My team came up with the Kessler Project, an all-day space adventure that allows guests to explore abandoned landmarks
