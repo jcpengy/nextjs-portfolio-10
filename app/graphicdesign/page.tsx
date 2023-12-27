@@ -142,7 +142,7 @@ export default async function GraphicDesign() {
             {/*    src={nytimes[2].src}*/}
             {/*    alt={nytimes[2].alt}*/}
             {/*/>*/}
-            <i>Graphic for "Step Inside the Thai Cave in Augmented Reality"</i><br/><br/>
+            <i>Graphic for "Step Inside the Thai Cave in Augmented Reality"</i><br/>
             <h3>Disney Imagineering</h3>
             <p>Slides and digital illustrations I created for my team's submission and presentation as one of six finalists in the 2018 Walt Disney Imaginations Design Competition. The prompt that year was to take an abandoned place and convert
             it into a theme park experience. My team came up with the Kessler Project, an all-day space adventure that allows guests to explore abandoned landmarks

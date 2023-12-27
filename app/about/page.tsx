@@ -73,7 +73,6 @@ export default async function AboutPage() {
                 Instagram →
             </a></button>
             <p>
-                <br/>
                 {/*I love creative challenges and learning new things. From*/}
                 {/*doodling cartoons and dream houses as a toddler to building hamster cages as a middle schooler,*/}
                 {/*I developed an interest in art and engineering that continued throughout my college and professional*/}
