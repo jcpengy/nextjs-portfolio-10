@@ -40,8 +40,8 @@ export default async function OtherArt() {
 
     return (
         <section>
-            <h2>Other Art</h2>
-            <p>I love to draw people and animals. My go-to medium is pencil/colored pencil, but sometimes I paint or draw on my iPad.</p><br/>
+            <h2>Fine Art</h2>
+            <p>I love to draw people and animals. My go-to medium is pencil, but sometimes I paint or draw on my iPad.</p><br/>
             <SlideshowLightbox className='container grid grid-cols-2 gap-2'>
                 {artimages.map((image) => (
                     <img

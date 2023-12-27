@@ -18,7 +18,7 @@ const kessler = [
         alt: '3',
     },
     {
-        src: 'https://i.ibb.co/zFxyN5S/Screen-Shot-2023-08-28-at-2-17-54-PM.png',
+        src: 'https://i.ibb.co/sgcJdKD/Screen-Shot-2023-12-26-at-10-09-55-PM.png',
         alt: '4',
     },
     {
@@ -118,8 +118,8 @@ export default async function GraphicDesign() {
                 Behance →
             </a></button>
             <h3>The New York Times</h3>
-            <p>As an Immersive Storytelling Intern at the New York Times, I created cover art and graphics for a couple high-profile breaking news pieces.
-                I also storyboarded and researched future projects and did R&D on emerging platforms.<br/><br/>
+            <p>As an Immersive Storytelling Intern at the New York Times, I created cover art and graphics for two high-profile breaking news pieces.
+                I also did R&D on emerging platforms and researched future projects.<br/><br/>
             Credits: <a className="link" target="_blank" href="https://www.nytimes.com/interactive/2018/07/21/world/asia/thai-cave-rescue-ar-ul.html"><u>Step Inside the Thai Cave in Augmented Reality</u></a><br/>
                 <a className="link" target="_blank" href="https://www.nytimes.com/interactive/2018/06/24/world/middleeast/douma-syria-chemical-attack-augmented-reality-ar-ul.html?mtrref=undefined&gwh=F58C966F1C905F9A7F76DD29F76E6E44&gwt=pay&assetType=PAYWALL"><u>How We Created a Virtual Crime Scene to Investigate Syria's Chemical Attack</u></a>
             </p><br/>
@@ -135,14 +135,14 @@ export default async function GraphicDesign() {
                 className='w-full rounded'
                 src={nytimes[3].src}
                 alt={nytimes[3].alt}
-            /><br/>
-            <img
-                key={'thai1'}
-                className='w-full rounded'
-                src={nytimes[2].src}
-                alt={nytimes[2].alt}
             />
-            <i>Graphics I worked on for "Step Inside the Thai Cave in Augmented Reality"</i><br/><br/>
+            {/*<img*/}
+            {/*    key={'thai1'}*/}
+            {/*    className='w-full rounded'*/}
+            {/*    src={nytimes[2].src}*/}
+            {/*    alt={nytimes[2].alt}*/}
+            {/*/>*/}
+            <i>Graphic for "Step Inside the Thai Cave in Augmented Reality"</i><br/><br/>
             <h3>Disney Imagineering</h3>
             <p>Slides and digital illustrations I created for my team's submission and presentation as one of six finalists in the 2018 Walt Disney Imaginations Design Competition. The prompt that year was to take an abandoned place and convert
             it into a theme park experience. My team came up with the Kessler Project, an all-day space adventure that allows guests to explore abandoned landmarks

@@ -8,17 +8,12 @@ export default async function PortfolioPage() {
     return (
         <section>
             <div id="sticky-header">
-                <a className="link" href="#ux_design_section"><u>UX Design</u></a>
-                <span> / </span>
                 <a className="link" href="#graphic_design_section"><u>Graphic Design</u></a>
                 <span> / </span>
-                <a className="link" href="#other_art_section"><u>Other Art</u></a>
+                <a className="link" href="#other_art_section"><u>Fine Art</u></a>
+                <span> / </span>
+                <a className="link" href="#ux_design_section"><u>UX Design</u></a>
             </div>
-            <a id="ux_design_section"></a>
-            <UXDesign/>
-            <br/>
-            .........
-            <br/><br/><br/>
             <a id="graphic_design_section"></a>
             <GraphicDesign/>
             <br/>
@@ -26,6 +21,11 @@ export default async function PortfolioPage() {
             <br/><br/><br/>
             <a id="other_art_section"></a>
             <OtherArt/>
+            <br/>
+            .........
+            <br/><br/><br/>
+            <a id="ux_design_section"></a>
+            <UXDesign/>
             <Footer/>
         </section>
     );

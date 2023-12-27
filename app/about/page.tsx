@@ -120,7 +120,7 @@ export default async function AboutPage() {
                              src='https://i.ibb.co/HdscHRF/dog.png'
                              alt='dog'
                         />
-                        <i>Watching dogs</i>
+                        <i>Dog sitting</i>
                     </div>
                 </div>
                 <p>Thanks for stopping by!</p><br/><br/>
