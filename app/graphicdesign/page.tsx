@@ -135,7 +135,7 @@ export default async function GraphicDesign() {
                 className='w-full rounded'
                 src={nytimes[3].src}
                 alt={nytimes[3].alt}
-            />
+            /><br/>
             <img
                 key={'thai1'}
                 className='w-full rounded'
