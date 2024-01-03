@@ -17,18 +17,6 @@ const kessler = [
         src: 'https://i.ibb.co/F0z7xSx/Screen-Shot-2023-08-28-at-2-17-18-PM.png',
         alt: '3',
     },
-    {
-        src: 'https://i.ibb.co/sgcJdKD/Screen-Shot-2023-12-26-at-10-09-55-PM.png',
-        alt: '4',
-    },
-    {
-        src: 'https://i.ibb.co/JKtZYhf/Screen-Shot-2023-08-28-at-2-18-10-PM.png',
-        alt: '5',
-    },
-    {
-        src: 'https://i.ibb.co/WW0XVLG/Screen-Shot-2023-08-28-at-2-18-26-PM.png',
-        alt: '6',
-    },
 ]
 
 const nytimes = [
@@ -156,7 +144,25 @@ export default async function GraphicDesign() {
                         alt={image.alt}
                     />
                 ))}
-            </SlideshowLightbox><br/>
+            </SlideshowLightbox>
+            <img
+                key='kessler 4'
+                className='w-full rounded'
+                src='https://i.ibb.co/sgcJdKD/Screen-Shot-2023-12-26-at-10-09-55-PM.png'
+                alt='kessler 4'
+            />
+            <img
+                key='kessler 5'
+                className='w-full rounded'
+                src='https://i.ibb.co/JKtZYhf/Screen-Shot-2023-08-28-at-2-18-10-PM.png'
+                alt='kessler 5'
+            />
+            <img
+                key='kessler 6'
+                className='w-full rounded'
+                src='https://i.ibb.co/WW0XVLG/Screen-Shot-2023-08-28-at-2-18-26-PM.png'
+                alt='kessler 6'
+            /><br/>
         </section>
     );
 }
