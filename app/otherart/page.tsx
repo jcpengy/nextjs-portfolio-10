@@ -5,6 +5,14 @@ import {useEffect} from "react";
 
 const artimages = [
     {
+        src: 'https://i.ibb.co/DGF0Gqv/BBD1-A40-F-A166-43-E5-8-C9-E-5-D0-DB278-B736.jpg',
+        alt: 'Dogs',
+    },
+    {
+        src: 'https://i.ibb.co/3ysxTKv/8-F0-B2-A9-C-669-E-44-A7-BDDB-5-AA89-D32733-E.jpg',
+        alt: 'Surf',
+    },
+    {
         src: 'https://i.ibb.co/tBYMXNv/IMG-9649.jpg',
         alt: 'Friends',
     },
@@ -19,14 +27,6 @@ const artimages = [
     {
         src: 'https://i.ibb.co/RSjBBSK/IMG-9653.jpg',
         alt: 'Nai Nai',
-    },
-    {
-        src: 'https://i.ibb.co/VmdbMft/Screen-Shot-2023-09-10-at-3-50-00-PM.png',
-        alt: 'Museum',
-    },
-    {
-        src: 'https://i.ibb.co/z8LTBwG/IMG-9656.jpg',
-        alt: 'Dog',
     }
 ]
 
