@@ -107,7 +107,7 @@ export default async function GraphicDesign() {
             </a></button>
             <h3>The New York Times</h3>
             <p>As an Immersive Storytelling Intern at the New York Times, I created cover art and graphics for two high-profile breaking news pieces.
-                I also did R&D on emerging platforms and prospective projects.<br/><br/>
+                I also did R&D on emerging platforms and prospective articles.<br/><br/>
             Credits: <a className="link" target="_blank" href="https://www.nytimes.com/interactive/2018/07/21/world/asia/thai-cave-rescue-ar-ul.html"><u>Step Inside the Thai Cave in Augmented Reality</u></a><br/>
                 <a className="link" target="_blank" href="https://www.nytimes.com/interactive/2018/06/24/world/middleeast/douma-syria-chemical-attack-augmented-reality-ar-ul.html?mtrref=undefined&gwh=F58C966F1C905F9A7F76DD29F76E6E44&gwt=pay&assetType=PAYWALL"><u>How We Created a Virtual Crime Scene to Investigate Syria's Chemical Attack</u></a>
             </p><br/>
@@ -133,7 +133,7 @@ export default async function GraphicDesign() {
             <i>Graphic for "Step Inside the Thai Cave in Augmented Reality"</i><br/>
             <h3>Disney Imagineering</h3>
             <p>Slides and digital illustrations I created for Kessler Project, a theme park concept and finalist in Disney Imagineering's 2018 Imaginations Competition. In this
-                all-day space excursion, guests could adventure through and explore abandoned landmarks potentially impacted by <a className="link" target="_blank" href="https://www.esa.int/Enabling_Support/Space_Engineering_Technology/The_Kessler_Effect_and_how_to_stop_it"><u>Kessler Syndrome</u></a>.</p><br/>
+                all-day space excursion, guests can adventure through and explore abandoned landmarks potentially impacted by <a className="link" target="_blank" href="https://www.esa.int/Enabling_Support/Space_Engineering_Technology/The_Kessler_Effect_and_how_to_stop_it"><u>Kessler Syndrome</u></a>.</p><br/>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {kessler.map((image) => (
                     <img
