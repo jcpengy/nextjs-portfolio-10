@@ -132,9 +132,8 @@ export default async function GraphicDesign() {
             {/*/>*/}
             <i>Graphic for "Step Inside the Thai Cave in Augmented Reality"</i><br/>
             <h3>Disney Imagineering</h3>
-            <p>Slides and digital illustrations I created for my team's submission and presentation as one of six finalists in the 2018 Walt Disney Imaginations Design Competition. The prompt that year was to take an abandoned place and convert
-            it into a theme park experience. My team came up with the Kessler Project, an all-day space adventure that allows guests to explore abandoned landmarks
-            potentially impacted by <a className="link" target="_blank" href="https://www.esa.int/Enabling_Support/Space_Engineering_Technology/The_Kessler_Effect_and_how_to_stop_it"><u>Kessler Syndrome</u></a>.</p><br/>
+            <p>Slides and digital illustrations I created for the 2018 Disney Imagineering Design Competition. My team's submission, Kessler Project,
+             is a theme park concept where guests can explore abandoned landmarks potentially impacted by <a className="link" target="_blank" href="https://www.esa.int/Enabling_Support/Space_Engineering_Technology/The_Kessler_Effect_and_how_to_stop_it"><u>Kessler Syndrome</u></a>.</p><br/>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {kessler.map((image) => (
                     <img
@@ -144,19 +143,19 @@ export default async function GraphicDesign() {
                         alt={image.alt}
                     />
                 ))}
-            </SlideshowLightbox>
+            </SlideshowLightbox><br/>
             <img
                 key='kessler 4'
                 className='w-full rounded'
                 src='https://i.ibb.co/sgcJdKD/Screen-Shot-2023-12-26-at-10-09-55-PM.png'
                 alt='kessler 4'
-            />
+            /><br/>
             <img
                 key='kessler 5'
                 className='w-full rounded'
                 src='https://i.ibb.co/JKtZYhf/Screen-Shot-2023-08-28-at-2-18-10-PM.png'
                 alt='kessler 5'
-            />
+            /><br/>
             <img
                 key='kessler 6'
                 className='w-full rounded'
