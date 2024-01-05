@@ -114,12 +114,6 @@ export default async function AboutPage() {
                         <i>Dog sitting</i>
                     </div>
                 </div>
-                <img className='w-full rounded'
-                     key='hamster'
-                     src='https://i.ibb.co/F4017wC/62-F4-F96-B-BA84-42-BE-AD23-70-D400-F5990-D.jpg'
-                     alt='hamster'
-                />
-                <i>Hammy:)</i><br/><br/>
                 <p>Thanks for stopping by!</p><br/><br/>
                 .........
                 <br/>
