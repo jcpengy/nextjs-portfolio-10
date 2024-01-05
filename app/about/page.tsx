@@ -42,6 +42,7 @@ export default async function AboutPage() {
                         I'm an SF-based Front-End Engineer at Adobe. I build internal tools
                         on the Digital Experience Customer Engineering team.<br/><br/>
                         I'm also an amateur cartoonist. I post regularly on @officialceojess.<br/><br/>
+                        <object data="../JessicaPengResume_.pdf" type="application/pdf" width="100%" height="500px"></object>
                         <a className="link" target="_blank" href="../JessicaPengResume_.pdf"><u>Resume</u></a> / <a
                         className="link" target="_blank" href="mailto:pengjess2@gmail.com"><u>Email</u></a> / <a
                         className="link" target="_blank" href="https://www.linkedin.com/in/jess-peng/"><u>LinkedIn</u></a> / <a
@@ -74,9 +75,7 @@ export default async function AboutPage() {
             </a></button>
             <p>
                 At the University of Pennsylvania, I majored in <a className="link" target="_blank" href="http://cg.cis.upenn.edu/dmd.html"><u>Digital
-                Media Design</u></a> and minored in Fine Arts with a focus in 3D modeling. I took a unique blend
-                of classes that included math, computer science, design, and fine arts. My favorite class to this day is
-                still costume design!<br/><br/>
+                Media Design</u></a> and minored in Fine Arts with a focus in 3D modeling.<br/><br/>
                 <img
                     key={'3dmodel'}
                     className='w-full rounded'
@@ -84,10 +83,7 @@ export default async function AboutPage() {
                     alt={'3dmodel'}
                 />
                 <i>3D model of my college apartment</i><br/><br/>
-                My interest in art and technology has driven me to explore a variety of careers. As a Graphics Intern at the
-                New York Times, I conducted research on immersive technology and gained valuable insights into the
-                evolving landscape of visual storytelling in the media.<br/><br/>
-                Currently as a Front-End Developer at Adobe, I specialize in designing and implementing internal tools
+                As a Front-End Developer at Adobe, I design and build internal tools
                 that bridge product gaps and ensure seamless workflows within Experience Cloud. While my
                 current focus is in development, I enjoy all aspects of the design process and
                 hope to expand my product/user research and visual skills on future projects.<br/><br/>
@@ -125,7 +121,7 @@ export default async function AboutPage() {
                      src='https://i.ibb.co/F4017wC/62-F4-F96-B-BA84-42-BE-AD23-70-D400-F5990-D.jpg'
                      alt='hamster'
                 />
-                <i>My Robo hamster named Hammy</i><br/><br/>
+                <i>Hammy:)</i><br/><br/>
                 <p>Thanks for stopping by!</p><br/><br/>
                 .........
                 <br/>
