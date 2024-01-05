@@ -613,12 +613,12 @@ h1 span span {
     cursor: pointer;
     background-color: var(--pink);
     color: white;
+    border: 2px solid var(--pink);
 }
 
 #button:hover {
     color: var(--pink);
     background-color: white;
-    border: 2px solid var(--pink);
     text-decoration: underline;
 }
 
