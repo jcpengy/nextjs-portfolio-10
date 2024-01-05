@@ -42,9 +42,7 @@ export default async function AboutPage() {
                         I'm an SF-based Front-End Engineer at Adobe. I build internal tools
                         on the Digital Experience Customer Engineering team.<br/><br/>
                         I'm also an amateur cartoonist. I post regularly on @officialceojess.<br/><br/>
-                        <object data="../JessicaPengResume_.pdf" type="application/pdf" width="100%" height="500px"></object>
-                        <a className="link" target="_blank" href="../JessicaPengResume_.pdf"><u>Resume</u></a> / <a
-                        className="link" target="_blank" href="mailto:pengjess2@gmail.com"><u>Email</u></a> / <a
+                        <a className="link" target="_blank" href="mailto:pengjess2@gmail.com"><u>Email</u></a> / <a
                         className="link" target="_blank" href="https://www.linkedin.com/in/jess-peng/"><u>LinkedIn</u></a> / <a
                         className="link" target="_blank" href="https://www.instagram.com/officialceojess/"><u>Github</u></a><br/><br/>
                         <span id="dots">.........</span>
