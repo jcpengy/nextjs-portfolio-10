@@ -133,7 +133,7 @@ export default async function GraphicDesign() {
             <i>Graphic for "Step Inside the Thai Cave in Augmented Reality"</i><br/>
             <h3>Disney Imagineering</h3>
             <p>Slides and digital illustrations I created for Kessler Project, a theme park concept and finalist in Disney Imagineering's 2018 Imaginations Competition. In this
-                all-day space excursion, guests can adventure through and explore abandoned landmarks potentially impacted by <a className="link" target="_blank" href="https://www.esa.int/Enabling_Support/Space_Engineering_Technology/The_Kessler_Effect_and_how_to_stop_it"><u>Kessler Syndrome</u></a>.</p><br/>
+                all-day space excursion, guests can explore abandoned landmarks potentially impacted by <a className="link" target="_blank" href="https://www.esa.int/Enabling_Support/Space_Engineering_Technology/The_Kessler_Effect_and_how_to_stop_it"><u>Kessler Syndrome</u></a>.</p><br/>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {kessler.map((image) => (
                     <img
