@@ -6,15 +6,15 @@ import Footer from "../components/footer";
 
 const kessler = [
     {
-        src: 'https://i.ibb.co/LPWmKmV/Screen-Shot-2023-08-28-at-2-15-59-PM.png',
+        src: 'https://i.ibb.co/W2NN0fh/kessler2.png',
         alt: '1',
     },
     {
-        src: 'https://i.ibb.co/QNwVsDb/Screen-Shot-2023-08-28-at-2-16-43-PM.png',
+        src: 'https://i.ibb.co/pytkTgR/kessler3.png',
         alt: '2',
     },
     {
-        src: 'https://i.ibb.co/F0z7xSx/Screen-Shot-2023-08-28-at-2-17-18-PM.png',
+        src: 'https://i.ibb.co/C1QBjZ7/kessler4.png',
         alt: '3',
     },
 ]
@@ -123,17 +123,29 @@ export default async function GraphicDesign() {
                 className='w-full rounded'
                 src={nytimes[3].src}
                 alt={nytimes[3].alt}
+            /><br/>
+            <img
+                key={'karthik'}
+                className='w-full rounded'
+                src={'https://i.ibb.co/SRg6ynW/karthik.jpg'}
+                alt={'karthik'}
+            /><br/>
+            <img
+                key={'cutout'}
+                className='w-full rounded'
+                src={'https://i.ibb.co/7bqMTzj/thaicave-cutout.png'}
+                alt={'cutout'}
             />
-            {/*<img*/}
-            {/*    key={'thai1'}*/}
-            {/*    className='w-full rounded'*/}
-            {/*    src={nytimes[2].src}*/}
-            {/*    alt={nytimes[2].alt}*/}
-            {/*/>*/}
-            <i>Graphic for "Step Inside the Thai Cave in Augmented Reality"</i><br/>
+            <i>Graphics for "Step Inside the Thai Cave in Augmented Reality"</i><br/>
             <h3>Disney Imagineering</h3>
             <p>Slides and digital illustrations I created for Kessler Project, a theme park concept and finalist in Disney Imagineering's 2018 Imaginations Competition. In this
                 all-day space excursion, guests can explore abandoned landmarks potentially impacted by <a className="link" target="_blank" href="https://www.esa.int/Enabling_Support/Space_Engineering_Technology/The_Kessler_Effect_and_how_to_stop_it"><u>Kessler Syndrome</u></a>.</p><br/>
+            <img
+                key='kessler 1'
+                className='w-full rounded'
+                src='https://i.ibb.co/f0zG8Xs/kessler1.png'
+                alt='kessler 1'
+            /><br/>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {kessler.map((image) => (
                     <img
