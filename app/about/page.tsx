@@ -1,5 +1,4 @@
 'use client';
-import Footer from "../components/footer";
 import {initLightboxJS, SlideshowLightbox} from "lightbox.js-react";
 import {useEffect} from "react";
 
@@ -43,7 +42,8 @@ export default async function AboutPage() {
                         I'm an SF-based Front-End Engineer at Adobe. I build internal tools
                         on the Digital Experience Customer Engineering team.<br/><br/>
                         I'm also an amateur cartoonist. I post regularly on @officialceojess.<br/><br/>
-                        <a className="link" target="_blank" href="mailto:pengjess2@gmail.com"><u>Email</u></a> / <a
+                        <a className="link" target="_blank" href="../JessicaPengResume_.pdf"><u>Resume</u></a> / <a
+                        className="link" target="_blank" href="mailto:pengjess2@gmail.com"><u>Email</u></a> / <a
                         className="link" target="_blank" href="https://www.linkedin.com/in/jess-peng/"><u>LinkedIn</u></a> / <a
                         className="link" target="_blank" href="https://www.instagram.com/officialceojess/"><u>Github</u></a><br/><br/>
                         <span id="dots">.........</span>
@@ -73,14 +73,11 @@ export default async function AboutPage() {
                 Instagram →
             </a></button>
             <p>
-                {/*I love creative challenges and learning new things. From*/}
-                {/*doodling cartoons and dream houses as a toddler to building hamster cages as a middle schooler,*/}
-                {/*I developed an interest in art and engineering that continued throughout my college and professional*/}
-                {/*experiences.<br/><br/>*/}
                 At the University of Pennsylvania, I majored in <a className="link" target="_blank" href="http://cg.cis.upenn.edu/dmd.html"><u>Digital
                 Media Design</u></a> and minored in Fine Arts with a
-                focus in 3D modeling. I also interned at the
-                New York Times where I researched VR/AR technology on the Immersive Storytelling Team.<br/><br/>
+                focus in 3D modeling. My interest in technology and art motivated me to explore a variety of careers,
+                including a graphics internship at the New York Times, where I conducted research on immersive technology
+                and gained valuable insights into the evolving landscape of visual storytelling and media innovation.<br/><br/>
                 <img
                     key={'3dmodel'}
                     className='w-full rounded'
@@ -88,11 +85,10 @@ export default async function AboutPage() {
                     alt={'3dmodel'}
                 />
                 <i>3D model of my college apartment</i><br/><br/>
-                As both a designer and developer at Adobe (and previously a consultant), I've gained exposure to several
-                areas of the product lifecycle and currently strive to build internal web tools that are simple,
-                intuitive, and accessible. Although I enjoy seeing
-                my ideas come to life through development, I'm excited to focus on and grow my design skills on upcoming
-                projects.<br/><br/>
+                As a Front-End Developer at Adobe, I specialize in designing and implementing internal tools that bridge
+                product gaps and ensure seamless workflows within Experience Cloud. While my
+                current focus is in development, I enjoy all aspects of the design process and
+                hope to expand my visual and research skills on future projects.<br/><br/>
                 <h2>My Hobbies</h2>
                 <p>Aside from cartooning, here's what I'm also doing in my free time.</p>
                 {/*<h3 className="font-bold text-2xl mb-8 tracking-tighter">fun facts</h3>*/}
