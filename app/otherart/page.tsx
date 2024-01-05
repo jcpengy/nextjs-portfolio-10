@@ -21,9 +21,13 @@ const artimages = [
         alt: 'Central Park',
     },
     {
-        src: 'https://i.ibb.co/mz0GNzd/IMG-9654.jpg',
-        alt: 'Ye Ye',
+        src: 'https://i.ibb.co/bvb33JH/E8-BA3324-3641-4-EB2-A1-FC-1-B7-DF4-ABB3-BB.jpg',
+        alt: 'Mountains',
     },
+    // {
+    //     src: 'https://i.ibb.co/mz0GNzd/IMG-9654.jpg',
+    //     alt: 'Ye Ye',
+    // },
     {
         src: 'https://i.ibb.co/RSjBBSK/IMG-9653.jpg',
         alt: 'Nai Nai',
