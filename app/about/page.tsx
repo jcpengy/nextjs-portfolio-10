@@ -74,10 +74,9 @@ export default async function AboutPage() {
             </a></button>
             <p>
                 At the University of Pennsylvania, I majored in <a className="link" target="_blank" href="http://cg.cis.upenn.edu/dmd.html"><u>Digital
-                Media Design</u></a> and minored in Fine Arts with a
-                focus in 3D modeling. My interest in technology and art motivated me to explore a variety of careers,
-                including a graphics internship at the New York Times, where I conducted research on immersive technology
-                and gained valuable insights into the evolving landscape of visual storytelling and media innovation.<br/><br/>
+                Media Design</u></a> and minored in Fine Arts with a focus in 3D modeling. I took a unique blend
+                of classes that included math, computer science, design, and fine arts. My favorite class to this day is
+                still costume design!<br/><br/>
                 <img
                     key={'3dmodel'}
                     className='w-full rounded'
@@ -85,10 +84,13 @@ export default async function AboutPage() {
                     alt={'3dmodel'}
                 />
                 <i>3D model of my college apartment</i><br/><br/>
-                As a Front-End Developer at Adobe, I specialize in designing and implementing internal tools that bridge
-                product gaps and ensure seamless workflows within Experience Cloud. While my
+                My interest in art and technology has driven me to explore a variety of careers. As a Graphics Intern at the
+                New York Times, I conducted research on immersive technology and gained valuable insights into the
+                evolving landscape of visual storytelling in the media.<br/><br/>
+                Currently as a Front-End Developer at Adobe, I specialize in designing and implementing internal tools
+                that bridge product gaps and ensure seamless workflows within Experience Cloud. While my
                 current focus is in development, I enjoy all aspects of the design process and
-                hope to expand my visual and research skills on future projects.<br/><br/>
+                hope to expand my product/user research and visual skills on future projects.<br/><br/>
                 <h2>My Hobbies</h2>
                 <p>Aside from cartooning, here's what I'm also doing in my free time.</p>
                 {/*<h3 className="font-bold text-2xl mb-8 tracking-tighter">fun facts</h3>*/}
@@ -118,6 +120,12 @@ export default async function AboutPage() {
                         <i>Dog sitting</i>
                     </div>
                 </div>
+                <img className='w-full rounded'
+                     key='hamster'
+                     src='https://i.ibb.co/F4017wC/62-F4-F96-B-BA84-42-BE-AD23-70-D400-F5990-D.jpg'
+                     alt='hamster'
+                />
+                <i>My Robo hamster named Hammy</i><br/><br/>
                 <p>Thanks for stopping by!</p><br/><br/>
                 .........
                 <br/>
