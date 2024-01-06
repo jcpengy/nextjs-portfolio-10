@@ -64,15 +64,15 @@ const graphicdesignimages = [
         alt: 'Dog',
     },
     {
-        src: 'https://i.ibb.co/LZrb0SY/tsharp-06.png',
+        src: 'https://i.ibb.co/vwWVnbt/rivers-01.png',
+        alt: 'River',
+    },
+    {
+        src: 'https://i.ibb.co/pzwsxPw/TSHARP.png',
         alt: 'Eid',
     },
     {
-        src: 'https://i.ibb.co/2cQrGVY/616cf7116952781-606c8f93a3041.png',
-        alt: 'Card',
-    },
-    {
-        src: 'https://i.ibb.co/86GvwC2/vintage.png',
+        src: 'https://i.ibb.co/t3Ym6Mp/vintage.png',
         alt: 'Vintage',
     },
 ]
