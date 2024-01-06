@@ -60,7 +60,7 @@ const graphicdesignimages = [
         alt: 'Happy Tappers',
     },
     {
-        src: 'https://i.ibb.co/CJdWysD/daisy.png',
+        src: 'https://i.ibb.co/TkVVSz4/daisy.png',
         alt: 'Dog',
     },
     {
