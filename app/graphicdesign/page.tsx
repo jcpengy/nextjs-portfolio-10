@@ -40,8 +40,8 @@ const nytimes = [
 
 const graphicdesignimages = [
     {
-        src: 'https://i.ibb.co/MsDf4mG/409496143892177-6282eafba4c84.jpg',
-        alt: 'Bridle Up Hope',
+        src: 'https://i.ibb.co/Hzkjw7H/mermaid.png',
+        alt: 'Mermaid',
     },
     {
         src: 'https://i.ibb.co/L8z0Cpz/3aec7a118346153-60877e247d35b.jpg',
@@ -72,8 +72,8 @@ const graphicdesignimages = [
         alt: 'Card',
     },
     {
-        src: 'https://i.ibb.co/42Gbq4T/35b5ae116830079-606a67d45998d.png',
-        alt: 'Wedding Residence',
+        src: 'https://i.ibb.co/86GvwC2/vintage.png',
+        alt: 'Vintage',
     },
 ]
 
@@ -158,8 +158,8 @@ export default async function GraphicDesign() {
             />
             <i>Graphics for "Step Inside the Thai Cave in Augmented Reality"</i><br/>
             <h3>Etsy</h3>
-            <p>I'm a best-selling graphic designer on Etsy. I've created designs for weddings, bachelorette parties,
-                family vacations, and a variety of businesses.</p><br/>
+            <p>I'm a best-selling graphic designer on Etsy. I've created custom designs for small businesses,
+                educational institutions, weddings, family events, and more.</p><br/>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {graphicdesignimages.map((image) => (
                     <img
