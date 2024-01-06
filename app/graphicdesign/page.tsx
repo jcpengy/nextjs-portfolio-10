@@ -60,12 +60,12 @@ const graphicdesignimages = [
         alt: 'Happy Tappers',
     },
     {
-        src: 'https://i.ibb.co/mzz24zn/dog.png',
+        src: 'https://i.ibb.co/CJdWysD/daisy.png',
         alt: 'Dog',
     },
     {
-        src: 'https://i.ibb.co/fCg5Xmq/Screen-Shot-2023-09-10-at-12-37-37-PM.png',
-        alt: 'Blended',
+        src: 'https://i.ibb.co/LZrb0SY/tsharp-06.png',
+        alt: 'Eid',
     },
     {
         src: 'https://i.ibb.co/2cQrGVY/616cf7116952781-606c8f93a3041.png',
