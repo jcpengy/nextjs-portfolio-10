@@ -40,7 +40,7 @@ const nytimes = [
 
 const graphicdesignimages = [
     {
-        src: 'https://i.ibb.co/Hzkjw7H/mermaid.png',
+        src: 'https://i.ibb.co/x8Jx8GF/mermaid.png',
         alt: 'Mermaid',
     },
     {
