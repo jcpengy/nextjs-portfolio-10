@@ -108,6 +108,12 @@ export default async function GraphicDesign() {
                 ))}
             </SlideshowLightbox><br/>
             <img
+                key='kessler ticket'
+                className='w-full rounded'
+                src='https://i.ibb.co/XWpQCqr/kessler-tickets.png'
+                alt='kessler ticket'
+            /><i>Re-imagined ticket design (2023)</i><br/>
+            <img
                 key='kessler 4'
                 className='w-full rounded'
                 src='https://i.ibb.co/sgcJdKD/Screen-Shot-2023-12-26-at-10-09-55-PM.png'
