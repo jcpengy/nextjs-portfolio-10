@@ -89,9 +89,8 @@ export default async function GraphicDesign() {
         <section>
             <h2>Graphic Design</h2>
             <h3>Disney Imagineering</h3>
-            <p>Kessler Project was a theme park concept and finalist in Disney Imagineering's 2018 Imaginations Competition. In this
-                all-day space excursion, guests can explore abandoned landmarks potentially impacted by <a className="link" target="_blank" href="https://www.esa.int/Enabling_Support/Space_Engineering_Technology/The_Kessler_Effect_and_how_to_stop_it"><u>Kessler Syndrome</u></a>.
-                I led art direction and creation of all 3D models on the below slides, slide designs, graphic design, and illustrations on my four-person team.</p><br/>
+            <p>Slides and digital illustrations I created for Kessler Project, a theme park concept and finalist in Disney Imagineering's 2018 Imaginations Competition. In this
+                all-day space excursion, guests can explore abandoned landmarks potentially impacted by <a className="link" target="_blank" href="https://www.esa.int/Enabling_Support/Space_Engineering_Technology/The_Kessler_Effect_and_how_to_stop_it"><u>Kessler Syndrome</u></a>.</p><br/>
             <img
                 key='kessler 1'
                 className='w-full rounded'
@@ -123,7 +122,7 @@ export default async function GraphicDesign() {
             <img
                 key='kessler 5'
                 className='w-full rounded'
-                src='https://i.ibb.co/JKtZYhf/Screen-Shot-2023-08-28-at-2-18-10-PM.png'
+                src='https://i.ibb.co/JjCRXrc/Screen-Shot-2024-01-08-at-9-02-29-PM.png'
                 alt='kessler 5'
             /><br/>
             <img
