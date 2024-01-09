@@ -89,8 +89,9 @@ export default async function GraphicDesign() {
         <section>
             <h2>Graphic Design</h2>
             <h3>Disney Imagineering</h3>
-            <p>Slides and digital illustrations I created for Kessler Project, a theme park concept and finalist in Disney Imagineering's 2018 Imaginations Competition. In this
-                all-day space excursion, guests can explore abandoned landmarks potentially impacted by <a className="link" target="_blank" href="https://www.esa.int/Enabling_Support/Space_Engineering_Technology/The_Kessler_Effect_and_how_to_stop_it"><u>Kessler Syndrome</u></a>.</p><br/>
+            <p>Kessler Project was a theme park concept and finalist in Disney Imagineering's 2018 Imaginations Competition. In this
+                all-day space excursion, guests can explore abandoned landmarks potentially impacted by <a className="link" target="_blank" href="https://www.esa.int/Enabling_Support/Space_Engineering_Technology/The_Kessler_Effect_and_how_to_stop_it"><u>Kessler Syndrome</u></a>.
+                I led art direction and creation of all 3D models on the below slides, slide designs, graphic design, and illustrations on my four-person team.</p><br/>
             <img
                 key='kessler 1'
                 className='w-full rounded'
@@ -112,11 +113,11 @@ export default async function GraphicDesign() {
                 className='w-full rounded'
                 src='https://i.ibb.co/XWpQCqr/kessler-tickets.png'
                 alt='kessler ticket'
-            /><p id="centered-caption"><i>Ticket design, 2023</i></p><br/><br/>
+            /><p id="centered-caption"><i>Re-imagined ticket design, 2023</i></p><br/><br/>
             <img
                 key='kessler 4'
                 className='w-full rounded'
-                src='https://i.ibb.co/sgcJdKD/Screen-Shot-2023-12-26-at-10-09-55-PM.png'
+                src='https://i.ibb.co/dGXFkn0/Screen-Shot-2024-01-08-at-8-26-36-PM.png'
                 alt='kessler 4'
             /><br/>
             <img
