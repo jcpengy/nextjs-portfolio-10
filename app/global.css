@@ -282,6 +282,11 @@ table {
     margin-top: 1vh;
 }
 
+#centered-caption {
+    text-align: center;
+    margin: 0 auto;
+}
+
 #title {
     color: var(--pink);
 }
