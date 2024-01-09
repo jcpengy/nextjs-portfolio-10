@@ -84,12 +84,11 @@ export default async function AboutPage() {
                 <i>3D model of my college apartment</i><br/><br/>
                 As a Front-End Developer at Adobe, I design and build internal tools
                 that bridge product gaps and ensure seamless workflows within Experience Cloud. While my
-                current focus is in development, I enjoy all aspects of the design process and
-                hope to expand my product/user research and visual skills on future projects.<br/><br/>
+                current focus is in development, I'm excited to expand my design skills on future projects.<br/><br/>
                 <h2>My Hobbies</h2>
                 <p>Aside from cartooning, here's what I'm also doing in my free time.</p>
                 {/*<h3 className="font-bold text-2xl mb-8 tracking-tighter">fun facts</h3>*/}
-                <div className="md:grid md:grid-cols-3 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
+                <div className="md:grid md:grid-cols-3 md:gap-x-16 lg:gap-x-8">
                     <div className="hobby">
                         <img className="hobby-pic"
                              key='drawing'
@@ -115,7 +114,14 @@ export default async function AboutPage() {
                         <i>Dog sitting</i>
                     </div>
                 </div>
-                <p>Thanks for stopping by!</p><br/><br/>
+                <h2>My Pets</h2>
+                <p>I have a Yorkie pup named Butters (inspired by the character from South Park) and a Roborovski hamster named Abrahammy Lincoln (Hammy or H for short:).</p>
+                <p>Thanks for stopping by!</p>
+                <img className='w-full rounded'
+                     key='pets'
+                     src='https://i.ibb.co/c3LxBHZ/pets.png'
+                     alt='pets'
+                /><br/><br/>
                 .........
                 <br/>
                 <i>© Jessica Peng 2023</i>
