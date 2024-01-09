@@ -90,7 +90,7 @@ export default async function GraphicDesign() {
             <h2>Graphic Design</h2>
             <h3>Disney Imagineering</h3>
             <p>Slides and digital illustrations I created for Kessler Project, a theme park concept and finalist in Disney Imagineering's 2018 Imaginations Competition. In this
-                all-day space excursion, guests can explore abandoned landmarks potentially impacted by <a className="link" target="_blank" href="https://www.esa.int/Enabling_Support/Space_Engineering_Technology/The_Kessler_Effect_and_how_to_stop_it"><u>Kessler Syndrome</u></a>.</p><br/>
+                all-day space excursion, guests can explore abandoned landmarks potentially impacted by <a className="link" target="_blank" href="https://www.esa.int/Enabling_Support/Space_Engineering_Technology/The_Kessler_Effect_and_how_to_stop_it"><u>Kessler Syndrome</u></a>. I led art direction and development on my four-person team.</p><br/>
             <img
                 key='kessler 1'
                 className='w-full rounded'
@@ -152,7 +152,7 @@ export default async function GraphicDesign() {
             />
             <i>Graphics for "Step Inside the Thai Cave in Augmented Reality"</i><br/>
             <h3>Etsy</h3>
-            <p>Shop my Etsy store! I've done custom designs for small businesses,
+            <p>I'm a best-selling graphic designer on Etsy. I've done custom designs for small businesses,
                 schools, and a variety of family events including weddings, vacations, and reunions.</p><br/>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {graphicdesignimages.map((image) => (
