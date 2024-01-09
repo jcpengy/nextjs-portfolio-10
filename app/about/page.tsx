@@ -115,10 +115,10 @@ export default async function AboutPage() {
                     </div>
                 </div><br/><br/>
                 <h2>My Pets</h2>
-                <p>I have a Yorkie pup named Butters (inspired by the South Park character) and a Roborovski hamster named Abrahammy Lincoln (Hammy for short).</p>
+                <p>I have a Yorkie pup named Butters (inspired by the South Park character) and a Roborovski hamster named Abrahammy Lincoln (Hammy for short).</p><br/>
                 <img className='w-full rounded'
                      key='pets'
-                     src='https://i.ibb.co/232qvsY/Untitled-1.png'
+                     src='https://i.ibb.co/3MKFWsr/Untitled-1.png'
                      alt='pets'
                 /><br/><br/>
                 <p>Thanks for stopping by!</p>

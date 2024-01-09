@@ -147,7 +147,7 @@ export default async function GraphicDesign() {
             <img
                 key={'thai'}
                 className='w-full rounded'
-                src='https://i.ibb.co/rGkbk2t/thai.png'
+                src='https://i.ibb.co/z4Sc5R5/thai.png'
                 alt='thai cave'
             />
             <i>Graphics for "Step Inside the Thai Cave in Augmented Reality"</i><br/>
