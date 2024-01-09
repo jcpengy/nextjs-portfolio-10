@@ -112,7 +112,7 @@ export default async function GraphicDesign() {
                 className='w-full rounded'
                 src='https://i.ibb.co/XWpQCqr/kessler-tickets.png'
                 alt='kessler ticket'
-            /><p id="centered-caption"><i>Re-imagined ticket design, 2023</i></p><br/><br/>
+            /><p id="centered-caption"><i>Ticket design, 2023</i></p><br/><br/>
             <img
                 key='kessler 4'
                 className='w-full rounded'
