@@ -145,22 +145,10 @@ export default async function GraphicDesign() {
             />
             <i>Cover graphic for "How We Created a Virtual Crime Scene to Investigate Syria's Chemical Attack"</i><br/><br/>
             <img
-                key={'thai2'}
+                key={'thai'}
                 className='w-full rounded'
-                src={nytimes[3].src}
-                alt={nytimes[3].alt}
-            /><br/>
-            <img
-                key={'karthik'}
-                className='w-full rounded'
-                src={'https://i.ibb.co/SRg6ynW/karthik.jpg'}
-                alt={'karthik'}
-            /><br/>
-            <img
-                key={'cutout'}
-                className='w-full rounded'
-                src={'https://i.ibb.co/7bqMTzj/thaicave-cutout.png'}
-                alt={'cutout'}
+                src='https://i.ibb.co/rGkbk2t/thai.png'
+                alt='thai cave'
             />
             <i>Graphics for "Step Inside the Thai Cave in Augmented Reality"</i><br/>
             <h3>Etsy</h3>

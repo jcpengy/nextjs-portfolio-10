@@ -95,7 +95,7 @@ export default async function AboutPage() {
                              src='https://i.ibb.co/GPT4B3j/drawing.png'
                              alt='drawing'
                         />
-                        <i>Drawing portraits</i>
+                        <i>Making art</i>
                     </div>
                     <div className="hobby">
                         <img className="hobby-pic"
@@ -113,15 +113,15 @@ export default async function AboutPage() {
                         />
                         <i>Dog sitting</i>
                     </div>
-                </div>
+                </div><br/><br/>
                 <h2>My Pets</h2>
-                <p>I have a Yorkie pup named Butters (inspired by the character from South Park) and a Roborovski hamster named Abrahammy Lincoln (Hammy or H for short:).</p>
-                <p>Thanks for stopping by!</p>
+                <p>I have a Yorkie pup named Butters (inspired by the South Park character) and a Roborovski hamster named Abrahammy Lincoln (Hammy for short).</p>
                 <img className='w-full rounded'
                      key='pets'
-                     src='https://i.ibb.co/c3LxBHZ/pets.png'
+                     src='https://i.ibb.co/232qvsY/Untitled-1.png'
                      alt='pets'
                 /><br/><br/>
+                <p>Thanks for stopping by!</p>
                 .........
                 <br/>
                 <i>© Jessica Peng 2023</i>
