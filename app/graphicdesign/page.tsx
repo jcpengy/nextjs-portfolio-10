@@ -152,8 +152,9 @@ export default async function GraphicDesign() {
             />
             <i>Graphics for "Step Inside the Thai Cave in Augmented Reality"</i><br/>
             <h3>Etsy</h3>
-            <p>I'm a best-selling graphic designer on Etsy. I've done custom designs for small businesses,
-                schools, and a variety of family events including weddings, vacations, and reunions.</p><br/>
+            <p>I'm a best-selling graphic designer on Etsy with over 2,980 sales. I've created marketing collateral, invitations,
+                 logos, vector graphics, and other custom designs for small businesses, schools, and a variety of family
+                events including weddings, vacations, and reunions.</p><br/>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {graphicdesignimages.map((image) => (
                     <img
