@@ -388,7 +388,7 @@ export default function UXDesign() {
             <hr/>
             <br/>
             <div>
-                <h3>Campaignion</h3>
+                <h3>Adobe Campaignion</h3>
                 <br/>
                 <button onClick={toggle2}>
                     <img

@@ -90,7 +90,7 @@ export default async function GraphicDesign() {
             <h2>Graphic Design</h2>
             <h3>Disney Imagineering</h3>
             <p>Slides and digital illustrations I created for Kessler Project, a theme park concept and finalist in Disney Imagineering's 2018 Imaginations Competition. In this
-                all-day space excursion, guests can explore abandoned landmarks potentially impacted by <a className="link" target="_blank" href="https://www.esa.int/Enabling_Support/Space_Engineering_Technology/The_Kessler_Effect_and_how_to_stop_it"><u>Kessler Syndrome</u></a>. I led art direction and development on my four-person team.</p><br/>
+                all-day space adventure, guests can explore abandoned landmarks impacted by <a className="link" target="_blank" href="https://www.esa.int/Enabling_Support/Space_Engineering_Technology/The_Kessler_Effect_and_how_to_stop_it"><u>Kessler Syndrome</u></a>. I led art direction and development on my four-person team.</p><br/>
             <img
                 key='kessler 1'
                 className='w-full rounded'
@@ -112,7 +112,7 @@ export default async function GraphicDesign() {
                 className='w-full rounded'
                 src='https://i.ibb.co/XWpQCqr/kessler-tickets.png'
                 alt='kessler ticket'
-            /><p id="centered-caption"><i>Re-imagined ticket design, 2023</i></p><br/><br/>
+            /><p id="centered-caption"><i>Reimagined ticket design, 2023</i></p><br/><br/>
             <img
                 key='kessler 4'
                 className='w-full rounded'
