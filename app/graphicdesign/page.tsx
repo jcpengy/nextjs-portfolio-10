@@ -17,6 +17,18 @@ const kessler = [
         src: 'https://i.ibb.co/C1QBjZ7/kessler4.png',
         alt: '3',
     },
+    {
+        src: 'https://i.ibb.co/jgQ20tR/kessler4.png',
+        alt: '4',
+    },
+    {
+        src: 'https://i.ibb.co/JjCRXrc/Screen-Shot-2024-01-08-at-9-02-29-PM.png',
+        alt: '5',
+    },
+    {
+        src: 'https://i.ibb.co/WW0XVLG/Screen-Shot-2023-08-28-at-2-18-26-PM.png',
+        alt: '6',
+    },
 ]
 
 const kesslerposter = [
@@ -133,25 +145,8 @@ export default async function GraphicDesign() {
                         alt={image.alt}
                     />
                 ))}
-            </SlideshowLightbox><br/>
-            <img
-                key='kessler 4'
-                className='w-full rounded'
-                src='https://i.ibb.co/dGXFkn0/Screen-Shot-2024-01-08-at-8-26-36-PM.png'
-                alt='kessler 4'
-            /><br/>
-            <img
-                key='kessler 5'
-                className='w-full rounded'
-                src='https://i.ibb.co/JjCRXrc/Screen-Shot-2024-01-08-at-9-02-29-PM.png'
-                alt='kessler 5'
-            /><br/>
-            <img
-                key='kessler 6'
-                className='w-full rounded'
-                src='https://i.ibb.co/WW0XVLG/Screen-Shot-2023-08-28-at-2-18-26-PM.png'
-                alt='kessler 6'
-            /><br/>
+            </SlideshowLightbox>
+            <p id="centered-caption"><i>Reimagined poster design, 2023</i></p><br/><br/>
             <h3>The New York Times</h3>
             <p>As an Immersive Storytelling Intern at the New York Times, I created cover art and graphics for two high-profile breaking news pieces.
                 I also conducted research on emerging platforms and prospective articles.<br/><br/>
