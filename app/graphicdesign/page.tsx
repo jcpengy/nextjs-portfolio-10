@@ -117,7 +117,7 @@ export default async function GraphicDesign() {
                 id="kessler-poster"
                 key='kessler poster'
                 className='w-full rounded'
-                src='https://i.ibb.co/RjWJm79/kessler-poster1.png'
+                src='https://i.ibb.co/WK7DbtF/kessler-poster1.png'
                 alt='kessler poster'
             /><p id="centered-caption"><i>Reimagined poster, 2023</i></p><br/><br/>
             <img
