@@ -116,14 +116,14 @@ export default async function GraphicDesign() {
             <img
                 key='kessler poster'
                 className='w-full rounded'
-                src='https://i.ibb.co/S5jdWRY/kessler-poster1.png'
+                src='https://i.ibb.co/RjWJm79/kessler-poster1.png'
                 alt='kessler poster'
             /><p id="centered-caption"><i>Reimagined poster, 2023</i></p><br/><br/>
             <img
                 id="kessler-poster"
                 key='kessler 4'
                 className='w-full rounded'
-                src='https://i.ibb.co/RjWJm79/kessler-poster1.png'
+                src='https://i.ibb.co/dGXFkn0/Screen-Shot-2024-01-08-at-8-26-36-PM.png'
                 alt='kessler 4'
             /><br/>
             <img
