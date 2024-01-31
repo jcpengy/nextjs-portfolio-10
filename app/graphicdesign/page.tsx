@@ -146,7 +146,7 @@ export default async function GraphicDesign() {
                     />
                 ))}
             </SlideshowLightbox>
-            <p id="centered-caption"><i>Reimagined poster design, 2023</i></p><br/><br/>
+            <p id="centered-caption"><i>Reimagined poster design, 2023</i></p><br/>
             <h3>The New York Times</h3>
             <p>As an Immersive Storytelling Intern at the New York Times, I created cover art and graphics for two high-profile breaking news pieces.
                 I also conducted research on emerging platforms and prospective articles.<br/><br/>
