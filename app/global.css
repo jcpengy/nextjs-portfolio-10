@@ -620,10 +620,6 @@ h1 span span {
     border: 2px solid var(--pink);
 }
 
-#kessler-poster {
-    padding: 0 25px 0 25px;
-}
-
 #button:hover {
     color: var(--pink);
     background-color: white;

@@ -114,7 +114,6 @@ export default async function GraphicDesign() {
                 alt='kessler ticket'
             /><p id="centered-caption"><i>Reimagined ticket design, 2023</i></p><br/><br/>
             <img
-                id="kessler-poster"
                 key='kessler poster'
                 className='w-full rounded'
                 src='https://i.ibb.co/WK7DbtF/kessler-poster1.png'
