@@ -124,7 +124,7 @@ export default async function GraphicDesign() {
                 src='https://i.ibb.co/XWpQCqr/kessler-tickets.png'
                 alt='kessler ticket'
             /><p id="centered-caption"><i>Reimagined ticket design, 2023</i></p><br/><br/>
-            <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
+            <SlideshowLightbox className='container grid grid-cols-2 gap-1'>
                 {kesslerposter.map((image) => (
                     <img
                         key={image.src}
