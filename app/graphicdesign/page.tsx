@@ -19,6 +19,18 @@ const kessler = [
     },
 ]
 
+const kesslerposter = [
+    {
+        src: 'https://i.ibb.co/T4NKYdv/kessler-poster-sketch.png',
+        alt: '1',
+    },
+    {
+        src: 'https://i.ibb.co/XSM6SKv/kessler-poster.png',
+        alt: '2',
+    },
+]
+
+
 const nytimes = [
     {
         src: 'https://i.ibb.co/CMchfKW/Screen-Shot-2023-11-27-at-2-58-22-PM.png',
@@ -89,8 +101,7 @@ export default async function GraphicDesign() {
         <section>
             <h2>Graphic Design</h2>
             <h3>Disney Imagineering</h3>
-            <p>Slides and digital illustrations I created for Kessler Project, a theme park concept and finalist in Disney Imagineering's 2018 Imaginations Competition. In this
-                all-day space adventure, guests can explore abandoned landmarks impacted by <a className="link" target="_blank" href="https://www.esa.int/Enabling_Support/Space_Engineering_Technology/The_Kessler_Effect_and_how_to_stop_it"><u>Kessler Syndrome</u></a>. I led art direction and development on my four-person team.</p><br/>
+            <p>Slides and illustrations I created for Kessler Project, a theme park concept and finalist in Disney Imagineering's 2018 Imaginations Competition. I led art direction and development on my four-person team.</p><br/>
             <img
                 key='kessler 1'
                 className='w-full rounded'
@@ -113,12 +124,16 @@ export default async function GraphicDesign() {
                 src='https://i.ibb.co/XWpQCqr/kessler-tickets.png'
                 alt='kessler ticket'
             /><p id="centered-caption"><i>Reimagined ticket design, 2023</i></p><br/><br/>
-            <img
-                key='kessler poster'
-                className='w-full rounded'
-                src='https://i.ibb.co/z49gVbb/kessler-poster1.png'
-                alt='kessler poster'
-            /><p id="centered-caption"><i>Reimagined poster, 2023</i></p><br/><br/>
+            <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
+                {kesslerposter.map((image) => (
+                    <img
+                        key={image.src}
+                        className='w-full rounded'
+                        src={image.src}
+                        alt={image.alt}
+                    />
+                ))}
+            </SlideshowLightbox><br/>
             <img
                 key='kessler 4'
                 className='w-full rounded'
