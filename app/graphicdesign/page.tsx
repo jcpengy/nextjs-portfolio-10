@@ -130,12 +130,13 @@ export default async function GraphicDesign() {
                     />
                 ))}
             </SlideshowLightbox><br/>
+            <p id="centered-caption"><i>Redesigns, 2023</i></p><br/>
             <img
                 key='kessler ticket'
                 className='w-full rounded'
                 src='https://i.ibb.co/XWpQCqr/kessler-tickets.png'
                 alt='kessler ticket'
-            /><p id="centered-caption"><i>Reimagined ticket design, 2023</i></p><br/><br/>
+            /><br/>
             <SlideshowLightbox className='container grid grid-cols-2 gap-1'>
                 {kesslerposter.map((image) => (
                     <img
@@ -146,10 +147,8 @@ export default async function GraphicDesign() {
                     />
                 ))}
             </SlideshowLightbox>
-            <p id="centered-caption"><i>Reimagined poster design, 2023</i></p><br/>
             <h3>The New York Times</h3>
-            <p>As an Immersive Storytelling Intern at the New York Times, I created cover art and graphics for two high-profile breaking news pieces.
-                I also conducted research on emerging platforms and prospective articles.<br/><br/>
+            <p>Cover art and graphics I created for two high-profile breaking news pieces as a Graphics Intern.<br/><br/>
             Credits: <a className="link" target="_blank" href="https://www.nytimes.com/interactive/2018/07/21/world/asia/thai-cave-rescue-ar-ul.html"><u>Step Inside the Thai Cave in Augmented Reality</u></a><br/>
                 <a className="link" target="_blank" href="https://www.nytimes.com/interactive/2018/06/24/world/middleeast/douma-syria-chemical-attack-augmented-reality-ar-ul.html?mtrref=undefined&gwh=F58C966F1C905F9A7F76DD29F76E6E44&gwt=pay&assetType=PAYWALL"><u>How We Created a Virtual Crime Scene to Investigate Syria's Chemical Attack</u></a>
             </p><br/>
@@ -158,18 +157,16 @@ export default async function GraphicDesign() {
                 className='w-full rounded'
                 src={nytimes[0].src}
                 alt={nytimes[0].alt}
-            />
-            <i>Cover graphic for "How We Created a Virtual Crime Scene to Investigate Syria's Chemical Attack"</i><br/><br/>
+            /><br/>
             <img
                 key={'thai'}
                 className='w-full rounded'
                 src='https://i.ibb.co/z4Sc5R5/thai.png'
                 alt='thai cave'
-            />
-            <i>Graphics for "Step Inside the Thai Cave in Augmented Reality"</i><br/>
+            /><br/>
             <h3>Etsy</h3>
-            <p>I'm a best-selling graphic designer on Etsy with over 2,980 sales. I've created marketing collateral, invitations,
-                 logos, vector graphics, and other custom designs for small businesses, schools, and a variety of family
+            <p>Graphic design work I've done through Etsy including Marketing collateral, invitations, logos,
+                vector graphics, and other custom designs for small businesses, schools, and family
                 events including weddings, vacations, and reunions.</p><br/>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {graphicdesignimages.map((image) => (
