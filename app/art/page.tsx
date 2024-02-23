@@ -6,6 +6,14 @@ import Footer from "../components/footer";
 
 const artimages = [
     {
+        src: 'https://i.ibb.co/Gt7HXzs/Cam-Scanner-02-21-2024-15-48-4.jpg',
+        alt: 'Chappy'
+    },
+    {
+        src: 'https://i.ibb.co/bHKKJLT/Cam-Scanner-02-21-2024-16-27-1.jpg',
+        alt: 'Beignet and Butters'
+    },
+    {
         src: 'https://i.ibb.co/DGF0Gqv/BBD1-A40-F-A166-43-E5-8-C9-E-5-D0-DB278-B736.jpg',
         alt: 'Dogs',
     },
@@ -43,9 +51,9 @@ export default async function Art() {
 
     return (
         <section id="portfolio-page">
-            <p>I'm a big believer in art therapy and especially love drawing pet portraits. My preferred medium is colored
-                pencil but sometimes I oil paint or draw on my iPad.</p><br/>
-            <SlideshowLightbox className='container grid grid-cols-2 gap-2'>
+            <p>I love drawing and am a big believer in art therapy. My preferred medium is colored
+                pencil and my preferred subjects are pets.</p><br/>
+            <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {artimages.map((image) => (
                     <img
                         key={image.src}
