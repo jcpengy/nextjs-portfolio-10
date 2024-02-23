@@ -1,7 +1,7 @@
 export default function Footer() {
 
     return (
-        <span className="footer">
+        <span id="portfolio-page" className="footer">
             <br/><br/>
             .........
             <br/><br/>
