@@ -616,10 +616,6 @@ h1 span span {
     margin: 5px;
 }
 
-#nav {
-    text-align: center;
-}
-
 #website-header {
     color: grey;
     font-size: 20px;
@@ -627,7 +623,11 @@ h1 span span {
 }
 
 #nav-links {
-    text-align: center;
+    justify-content: center;
+}
+
+hr {
+    color: lightgrey;
 }
 
 #rowContainer {
