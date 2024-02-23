@@ -3,7 +3,6 @@ import React, {Component, useEffect} from "react";
 import body from '../app/assets/body.png';
 import mouth from '../app/assets/mouth.png';
 import {initLightboxJS, SlideshowLightbox} from "lightbox.js-react";
-import {useEffect} from "react";
 
 const ceojess = [
     {
@@ -123,8 +122,8 @@ class Page extends React.Component<any, any>  {
             <>
             <div id="homepage">
                 {/*title*/}
-                <h1 className="home"><SplitText copy="Jess Peng" role="heading"/></h1><br/>
-                <div id="home-subtitle">Graphic Designer and Developer</div>
+                {/*<h1 className="home"><SplitText copy="Jess Peng" role="heading"/></h1><br/>*/}
+                {/*<div id="home-subtitle">Graphic Designer and Developer</div>*/}
                 {/*cursor animation*/}
                 <div id="cursor">
                     <img src="https://i.ibb.co/bgjpvXF/cursor.png" alt="cursor" width="50px" height="auto"/>
