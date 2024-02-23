@@ -92,7 +92,7 @@ class Page extends React.Component<any, any>  {
             <div id="homepage">
                 {/*title*/}
                 <h1 className="home"><SplitText copy="Jess Peng" role="heading"/></h1><br/>
-                <div id="home-subtitle">Designer and Developer</div>
+                <div id="home-subtitle">Graphic Designer and Developer</div>
                 {/*cursor animation*/}
                 <div id="cursor">
                     <img src="https://i.ibb.co/bgjpvXF/cursor.png" alt="cursor" width="50px" height="auto"/>
