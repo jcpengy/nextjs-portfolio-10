@@ -60,24 +60,24 @@ class Page extends React.Component<any, any>  {
                 <br/>
                 <div id="rowContainer">
                     <div id="review1">
-                        <a href="#"><img src={ceojess[0].src} alt="" width="150" height="150" /></a>
+                        <a href="#"><img src={ceojess[0].src} alt="" width="300" height="300" /></a>
                     </div>
                     <div id="review1">
-                        <a href="#"><img src={ceojess[1].src} alt="" width="150" height="150" /></a>
+                        <a href="#"><img src={ceojess[1].src} alt="" width="300" height="300" /></a>
                     </div>
                     <div id="review1">
-                        <a href="#"><img src={ceojess[2].src} alt="" width="150" height="150" /></a>
+                        <a href="#"><img src={ceojess[2].src} alt="" width="300" height="300" /></a>
                     </div>
                 </div>
                 <div id="rowContainer">
                     <div id="review1">
-                        <a href="#"><img src={ceojess[3].src} alt="" width="150" height="150" /></a>
+                        <a href="#"><img src={ceojess[3].src} alt="" width="300" height="300" /></a>
                     </div>
                     <div id="review1">
-                        <a href="#"><img src={ceojess[4].src} alt="" width="150" height="150" /></a>
+                        <a href="#"><img src={ceojess[4].src} alt="" width="300" height="300" /></a>
                     </div>
                     <div id="review1">
-                        <a href="#"><img src={ceojess[5].src} alt="" width="150" height="150" /></a>
+                        <a href="#"><img src={ceojess[5].src} alt="" width="300" height="300" /></a>
                     </div>
                 </div>
                 {/*<SlideshowLightbox className='container grid grid-cols-3 gap-2'>*/}

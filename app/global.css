@@ -613,7 +613,16 @@ h1 span span {
 
 #review1 {
     display: inline-block;
-    margin: 15px;
+    margin: 5px;
+}
+
+#nav {
+    text-align: center;
+}
+
+#website-header {
+    color: grey;
+    font-size: 20px;
 }
 
 #rowContainer {

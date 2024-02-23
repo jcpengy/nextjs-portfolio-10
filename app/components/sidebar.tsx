@@ -10,7 +10,7 @@ const navItems = {
   //   name: 'Home',
   // },
   '/': {
-    name: 'Home',
+    name: 'About',
   },
   '/design': {
     name: 'Design',
@@ -26,10 +26,10 @@ export default function Navbar() {
   return (
     <aside className="-ml-[8px] mb-8 tracking-tight">
       <div className="lg:sticky lg:top-20">
-        <LayoutGroup>
+        <LayoutGroup id="nav">
+          <div id="website-header">JESS PENG</div>
           <nav
             className="flex flex-row items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
-            id="nav"
           >
             <div className="flex flex-row space-x-0 pr-10">
               {Object.entries(navItems).map(([path, { name }]) => {
