@@ -120,7 +120,7 @@ class Page extends React.Component<any, any>  {
         });
         return (
             <>
-            <div id="homepage">
+            {/*<div id="homepage">*/}
                 {/*title*/}
                 {/*<h1 className="home"><SplitText copy="Jess Peng" role="heading"/></h1><br/>*/}
                 {/*<div id="home-subtitle">Graphic Designer and Developer</div>*/}
@@ -162,7 +162,7 @@ class Page extends React.Component<any, any>  {
                 <div className="instructions">
                     <p>tap anywhere.</p>
                 </div>
-            </div>
+            {/*</div>*/}
         <section>
             <div className="md:grid md:grid-cols-2">
                 <div>

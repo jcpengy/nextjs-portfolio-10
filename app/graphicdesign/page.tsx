@@ -110,8 +110,7 @@ export default async function GraphicDesign() {
     });
 
     return (
-        <section>
-            <h2>Graphic Design</h2>
+        <section id="portfolio-page">
             <h3>Disney Imagineering</h3>
             <p>Slides and illustrations I created for Kessler Project, a theme park concept and finalist in Disney Imagineering's 2018 Imaginations Competition. I led art direction and development on my four-person team.</p><br/>
             <img

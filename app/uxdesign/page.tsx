@@ -156,7 +156,6 @@ export default function UXDesign() {
 
     return (
         <section>
-            <h2>UX Design</h2>
             <div>
                 <h3>Adobe Experience Platform Artifact Copy App</h3>
                 <br/>

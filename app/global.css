@@ -228,6 +228,11 @@ table {
     white-space: nowrap;
 }
 
+#graphic-design-page {
+    margin: 0 auto;
+    text-align: center;
+}
+
 .prose .callout > p {
     margin: 0 !important;
 }

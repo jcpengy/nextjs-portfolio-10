@@ -9,12 +9,12 @@ import Footer from "./components/footer";
 const graphik = localFont({
   src: [
     {
-      path: '../public/fonts/Lora-Medium.ttf',
-      weight: '500',
+      path: '../public/fonts/Merriweather-Regular.ttf',
+      weight: '300',
       style: 'normal',
     },
     {
-      path: '../public/fonts/Lora-Bold.ttf',
+      path: '../public/fonts/Merriweather-Bold.ttf',
       weight: '700',
       style: 'bold',
     },
@@ -29,10 +29,10 @@ export const metadata: Metadata = {
     default: 'Jess Peng',
     template: '%s | Jess Peng',
   },
-  description: 'Software engineer & cartoonist',
+  description: 'Graphic designer & developer',
   openGraph: {
     title: 'Jess Peng',
-    description: 'Software engineer & cartoonist',
+    description: 'Graphic designer & developer',
     url: 'https://jcpengy.io',
     siteName: 'Jess Peng',
     locale: 'en-US',

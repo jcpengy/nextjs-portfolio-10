@@ -34,8 +34,6 @@ const artimages = [
     }
 ]
 
-export const revalidate = 60;
-
 export default async function Art() {
 
     useEffect(() => {
@@ -43,8 +41,8 @@ export default async function Art() {
     });
 
     return (
-        <section>
-            <p>I like making art of people, animals, and places that are special to me. My go-to medium is pencil, but sometimes I oil paint or draw on my iPad.</p><br/>
+        <section id="portfolio-page">
+            <p>I like making art of things that are special to me - especially pets! My go-to medium is pencil, but sometimes I oil paint or draw on my iPad.</p><br/>
             <SlideshowLightbox className='container grid grid-cols-2 gap-2'>
                 {artimages.map((image) => (
                     <img
