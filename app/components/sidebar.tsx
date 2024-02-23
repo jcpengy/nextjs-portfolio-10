@@ -28,7 +28,7 @@ export default function Navbar() {
       <div className="lg:sticky lg:top-20">
         <LayoutGroup id="nav">
           <div id="website-header">JESS PENG</div>
-          <nav
+          <nav id="nav-links"
             className="flex flex-row items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           >
             <div className="flex flex-row space-x-0 pr-10">
