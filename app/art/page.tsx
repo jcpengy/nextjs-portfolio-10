@@ -33,10 +33,10 @@ const artimages = [
         src: 'https://i.ibb.co/5jZt51Y/E8-BA3324-3641-4-EB2-A1-FC-1-B7-DF4-ABB3-BB-1-201-a.jpg',
         alt: 'Mountains',
     },
-    // {
-    //     src: 'https://i.ibb.co/mz0GNzd/IMG-9654.jpg',
-    //     alt: 'Ye Ye',
-    // },
+    {
+        src: 'https://i.ibb.co/mz0GNzd/IMG-9654.jpg',
+        alt: 'Ye Ye',
+    },
     {
         src: 'https://i.ibb.co/RSjBBSK/IMG-9653.jpg',
         alt: 'Nai Nai',

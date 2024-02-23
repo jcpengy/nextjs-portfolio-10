@@ -34,14 +34,25 @@ export default async function AboutPage() {
         initLightboxJS("9F1C-4A63-970C-2B0D", "individual");
     });
     return (
-        <section>
+        <section id="portfolio-page">
+            <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
+                {ceojess.map((image) => (
+                    <img
+                        key={image.src}
+                        className='w-full rounded'
+                        src={image.src}
+                        alt={image.alt}
+                    />
+                ))}
+            </SlideshowLightbox>
+            <br/>
             <div className="md:grid md:grid-cols-2">
                 <div>
                     <h2>Hi, I'm Jess 👋</h2>
                     <p>
                         I'm an SF-based Front-End Engineer at Adobe. I build internal tools
                         on the Digital Experience Customer Engineering team.<br/><br/>
-                        I'm also an amateur cartoonist. I post regularly on @officialceojess.<br/><br/>
+                        I'm also an amateur cartoonist. I post regularly on <a target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>.
                         <a className="link" target="_blank" href="https://i.ibb.co/WkBrpdF/Jessica-Peng-Resume.jpg"><u>Resume</u></a> / <a
                         className="link" target="_blank" href="mailto:pengjess2@gmail.com"><u>Email</u></a> / <a
                         className="link" target="_blank" href="https://www.linkedin.com/in/jess-peng/"><u>LinkedIn</u></a><br/><br/>
@@ -57,21 +68,7 @@ export default async function AboutPage() {
                 </div>
             </div>
             <br/>
-            <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
-                {ceojess.map((image) => (
-                    <img
-                        key={image.src}
-                        className='w-full rounded'
-                        src={image.src}
-                        alt={image.alt}
-                    />
-                ))}
-            </SlideshowLightbox>
-            <br/>
-            <button id="button"><a target="_blank" href="https://www.instagram.com/officialceojess/">More on my
-                Instagram →
-            </a></button>
-            <p id="portfolio-page">
+            <p>
                 At the University of Pennsylvania, I majored in <a className="link" target="_blank" href="http://cg.cis.upenn.edu/dmd.html"><u>Digital
                 Media Design</u></a> and minored in Fine Arts with a focus in 3D modeling.<br/><br/>
                 <img

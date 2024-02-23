@@ -35,14 +35,37 @@ class Page extends React.Component<any, any>  {
         //     initLightboxJS("9F1C-4A63-970C-2B0D", "individual");
         // });
         return (
-            <section>
+            <section id="portfolio-page">
+                <div id="rowContainer">
+                    <div id="review1">
+                        <img src={ceojess[0].src} alt="" width="300" height="300" />
+                    </div>
+                    <div id="review1">
+                        <img src={ceojess[1].src} alt="" width="300" height="300" />
+                    </div>
+                    <div id="review1">
+                        <img src={ceojess[2].src} alt="" width="300" height="300" />
+                    </div>
+                </div>
+                <div id="rowContainer">
+                    <div id="review1">
+                        <img src={ceojess[3].src} alt="" width="300" height="300" />
+                    </div>
+                    <div id="review1">
+                        <img src={ceojess[4].src} alt="" width="300" height="300" />
+                    </div>
+                    <div id="review1">
+                        <img src={ceojess[5].src} alt="" width="300" height="300" />
+                    </div>
+                </div>
+                <br/>
                 <div className="md:grid md:grid-cols-2">
                     <div>
                         <h2>Hi, I'm Jess.</h2>
                         <p>
                             I'm an SF-based Front-End Engineer at Adobe. I build internal tools
                             on the Digital Experience Customer Engineering team.<br/><br/>
-                            I'm also an amateur cartoonist. I post regularly on @officialceojess.<br/><br/>
+                            I'm also an amateur cartoonist. I post regularly on I post regularly on <a target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>.<br/><br/>
                             <a className="link" target="_blank" href="https://i.ibb.co/WkBrpdF/Jessica-Peng-Resume.jpg"><u>Resume</u></a> / <a
                             className="link" target="_blank" href="mailto:pengjess2@gmail.com"><u>Email</u></a> / <a
                             className="link" target="_blank" href="https://www.linkedin.com/in/jess-peng/"><u>LinkedIn</u></a><br/><br/>
@@ -58,28 +81,6 @@ class Page extends React.Component<any, any>  {
                     </div>
                 </div>
                 <br/>
-                <div id="rowContainer">
-                    <div id="review1">
-                        <a href="#"><img src={ceojess[0].src} alt="" width="300" height="300" /></a>
-                    </div>
-                    <div id="review1">
-                        <a href="#"><img src={ceojess[1].src} alt="" width="300" height="300" /></a>
-                    </div>
-                    <div id="review1">
-                        <a href="#"><img src={ceojess[2].src} alt="" width="300" height="300" /></a>
-                    </div>
-                </div>
-                <div id="rowContainer">
-                    <div id="review1">
-                        <a href="#"><img src={ceojess[3].src} alt="" width="300" height="300" /></a>
-                    </div>
-                    <div id="review1">
-                        <a href="#"><img src={ceojess[4].src} alt="" width="300" height="300" /></a>
-                    </div>
-                    <div id="review1">
-                        <a href="#"><img src={ceojess[5].src} alt="" width="300" height="300" /></a>
-                    </div>
-                </div>
                 {/*<SlideshowLightbox className='container grid grid-cols-3 gap-2'>*/}
                 {/*    {ceojess.map((image) => (*/}
                 {/*        <img*/}
@@ -90,10 +91,6 @@ class Page extends React.Component<any, any>  {
                 {/*        />*/}
                 {/*    ))}*/}
                 {/*</SlideshowLightbox>*/}
-                <br/>
-                <button id="button"><a target="_blank" href="https://www.instagram.com/officialceojess/">More on my
-                    Instagram →
-                </a></button>
                 <p>
                     At the University of Pennsylvania, I majored in <a className="link" target="_blank" href="http://cg.cis.upenn.edu/dmd.html"><u>Digital
                     Media Design</u></a> and minored in Fine Arts with a focus in 3D modeling.<br/><br/>

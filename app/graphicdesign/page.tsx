@@ -165,7 +165,7 @@ export default async function GraphicDesign() {
                 alt='thai cave'
             /><br/>
             <h3>Etsy</h3>
-            <p>Some freelance work I've done for small businesses, schools, and family
+            <p>Freelance work I've done for small businesses, schools, and family
                 events like weddings, vacations, and reunions.</p><br/>
             {/*<img*/}
             {/*    key={'mirabelle'}*/}
