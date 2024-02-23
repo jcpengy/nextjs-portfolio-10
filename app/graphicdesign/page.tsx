@@ -112,7 +112,7 @@ export default async function GraphicDesign() {
     return (
         <section id="portfolio-page">
             <h3>Kessler Project - Disney Imagineering</h3>
-            <p>3D models, designs, and slides I created for Kessler Project, a theme park concept and finalist in the 2018 Disney Imaginations contest. I led art direction and development on my four-person team.</p><br/>
+            <p>3D models, designs, and slides for a theme park concept and finalist in the 2018 Disney Imaginations contest. I led art direction and development on my four-person team.</p><br/>
             <img
                 key='kessler 1'
                 className='w-full rounded'
@@ -163,9 +163,9 @@ export default async function GraphicDesign() {
                 className='w-full rounded'
                 src='https://i.ibb.co/z4Sc5R5/thai.png'
                 alt='thai cave'
-            /><br/><br/>
+            /><br/>
             <h3>Etsy</h3>
-            <p>In my free time, I run a graphic design shop on Etsy. Most of my work is for small businesses, schools, and family
+            <p>Some freelance work I've done for small businesses, schools, and family
                 events like weddings, vacations, and reunions.</p><br/>
             {/*<img*/}
             {/*    key={'mirabelle'}*/}

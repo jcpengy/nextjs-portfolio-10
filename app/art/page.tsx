@@ -2,6 +2,7 @@
 import 'lightbox.js-react/dist/index.css'
 import {SlideshowLightbox, initLightboxJS} from 'lightbox.js-react'
 import {useEffect} from "react";
+import Footer from "../components/footer";
 
 const artimages = [
     {
@@ -42,7 +43,8 @@ export default async function Art() {
 
     return (
         <section id="portfolio-page">
-            <p>I like making art of things that are special to me - especially pets! My go-to medium is pencil, but sometimes I oil paint or draw on my iPad.</p><br/>
+            <p>I'm a big believer in art therapy and especially love drawing pet portraits. My preferred medium is colored
+                pencil but sometimes I oil paint or draw on my iPad.</p><br/>
             <SlideshowLightbox className='container grid grid-cols-2 gap-2'>
                 {artimages.map((image) => (
                     <img
@@ -53,6 +55,7 @@ export default async function Art() {
                     />
                 ))}
             </SlideshowLightbox>
+            <Footer/>
         </section>
     );
 }

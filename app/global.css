@@ -51,6 +51,7 @@ h3 {
     color: var(--pink);
     margin-top: 20px;
     margin-bottom: -10px;
+    text-align: center;
 }
 
 h4 {
@@ -635,6 +636,7 @@ h1 span span {
     position: sticky;
     top: 0;
     padding: 0px 0px 10px 0px;
+    text-align: center;
 }
 
 
