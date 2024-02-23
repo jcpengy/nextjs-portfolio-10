@@ -611,6 +611,17 @@ h1 span span {
     }
 }
 
+#review1 {
+    display: inline-block;
+    margin: 15px;
+}
+
+#rowContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #button {
     padding: 15px 32px;
     text-align: center;

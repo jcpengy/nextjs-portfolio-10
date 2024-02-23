@@ -31,9 +31,9 @@ const ceojess = [
 
 class Page extends React.Component<any, any>  {
     render() {
-        useEffect(() => {
-            initLightboxJS("9F1C-4A63-970C-2B0D", "individual");
-        });
+        // useEffect(() => {
+        //     initLightboxJS("9F1C-4A63-970C-2B0D", "individual");
+        // });
         return (
             <section>
                 <div className="md:grid md:grid-cols-2">
@@ -58,16 +58,38 @@ class Page extends React.Component<any, any>  {
                     </div>
                 </div>
                 <br/>
-                <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
-                    {ceojess.map((image) => (
-                        <img
-                            key={image.src}
-                            className='w-full rounded'
-                            src={image.src}
-                            alt={image.alt}
-                        />
-                    ))}
-                </SlideshowLightbox>
+                <div id="rowContainer">
+                    <div id="review1">
+                        <a href="#"><img src={ceojess[0].src} alt="" width="150" height="150" /></a>
+                    </div>
+                    <div id="review1">
+                        <a href="#"><img src={ceojess[1].src} alt="" width="150" height="150" /></a>
+                    </div>
+                    <div id="review1">
+                        <a href="#"><img src={ceojess[2].src} alt="" width="150" height="150" /></a>
+                    </div>
+                </div>
+                <div id="rowContainer">
+                    <div id="review1">
+                        <a href="#"><img src={ceojess[3].src} alt="" width="150" height="150" /></a>
+                    </div>
+                    <div id="review1">
+                        <a href="#"><img src={ceojess[4].src} alt="" width="150" height="150" /></a>
+                    </div>
+                    <div id="review1">
+                        <a href="#"><img src={ceojess[5].src} alt="" width="150" height="150" /></a>
+                    </div>
+                </div>
+                {/*<SlideshowLightbox className='container grid grid-cols-3 gap-2'>*/}
+                {/*    {ceojess.map((image) => (*/}
+                {/*        <img*/}
+                {/*            key={image.src}*/}
+                {/*            className='w-full rounded'*/}
+                {/*            src={image.src}*/}
+                {/*            alt={image.alt}*/}
+                {/*        />*/}
+                {/*    ))}*/}
+                {/*</SlideshowLightbox>*/}
                 <br/>
                 <button id="button"><a target="_blank" href="https://www.instagram.com/officialceojess/">More on my
                     Instagram →
