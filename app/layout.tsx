@@ -9,12 +9,12 @@ import Footer from "./components/footer";
 const graphik = localFont({
   src: [
     {
-      path: '../public/fonts/Merriweather-Regular.ttf',
+      path: '../public/fonts/Lora-Regular.ttf',
       weight: '300',
       style: 'normal',
     },
     {
-      path: '../public/fonts/Merriweather-Bold.ttf',
+      path: '../public/fonts/Lora-Bold.ttf',
       weight: '700',
       style: 'bold',
     },

@@ -9,7 +9,7 @@ const navItems = {
   // '/': {
   //   name: 'Home',
   // },
-  '/about': {
+  '/': {
     name: 'About',
   },
   '/design': {
@@ -21,7 +21,7 @@ const navItems = {
 };
 
 export default function Navbar() {
-  let pathname = usePathname() || '/about';
+  let pathname = usePathname() || '/';
 
   return (
     <aside className="-ml-[8px] mb-8 tracking-tight">
