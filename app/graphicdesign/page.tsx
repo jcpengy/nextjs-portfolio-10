@@ -111,8 +111,8 @@ export default async function GraphicDesign() {
 
     return (
         <section id="portfolio-page">
-            <h3>Disney Imagineering</h3>
-            <p>Slides and illustrations I created for Kessler Project, a theme park concept and finalist in Disney Imagineering's 2018 Imaginations Competition. I led art direction and development on my four-person team.</p><br/>
+            <h3>Kessler Project - Disney Imagineering</h3>
+            <p>3D models, designs, and slides I created for Kessler Project, a theme park concept and finalist in the 2018 Disney Imaginations contest. I led art direction and development on my four-person team.</p><br/>
             <img
                 key='kessler 1'
                 className='w-full rounded'
@@ -146,10 +146,11 @@ export default async function GraphicDesign() {
                     />
                 ))}
             </SlideshowLightbox>
+            <br/>
             <h3>The New York Times</h3>
             <p>Cover art and graphics I created for two high-profile breaking news pieces as a Graphics Intern.<br/><br/>
-            Credits: <a className="link" target="_blank" href="https://www.nytimes.com/interactive/2018/07/21/world/asia/thai-cave-rescue-ar-ul.html"><u>Step Inside the Thai Cave in Augmented Reality</u></a><br/>
-                <a className="link" target="_blank" href="https://www.nytimes.com/interactive/2018/06/24/world/middleeast/douma-syria-chemical-attack-augmented-reality-ar-ul.html?mtrref=undefined&gwh=F58C966F1C905F9A7F76DD29F76E6E44&gwt=pay&assetType=PAYWALL"><u>How We Created a Virtual Crime Scene to Investigate Syria's Chemical Attack</u></a>
+            Credits: <a className="link" target="_blank" href="https://www.nytimes.com/interactive/2018/07/21/world/asia/thai-cave-rescue-ar-ul.html"><u>"Step Inside the Thai Cave in Augmented Reality"</u></a><br/>
+                <a className="link" target="_blank" href="https://www.nytimes.com/interactive/2018/06/24/world/middleeast/douma-syria-chemical-attack-augmented-reality-ar-ul.html?mtrref=undefined&gwh=F58C966F1C905F9A7F76DD29F76E6E44&gwt=pay&assetType=PAYWALL"><u>"How We Created a Virtual Crime Scene to Investigate Syria's Chemical Attack"</u></a>
             </p><br/>
             <img
                 key={'syria'}
@@ -162,10 +163,10 @@ export default async function GraphicDesign() {
                 className='w-full rounded'
                 src='https://i.ibb.co/z4Sc5R5/thai.png'
                 alt='thai cave'
-            /><br/>
+            /><br/><br/>
             <h3>Etsy</h3>
-            <p>Graphic design work I've done through Etsy. Most of my requests are for small businesses, schools, and family
-                events including weddings, vacations, and reunions.</p><br/>
+            <p>In my free time, I run a graphic design shop on Etsy. Most of my work is for small businesses, schools, and family
+                events like weddings, vacations, and reunions.</p><br/>
             {/*<img*/}
             {/*    key={'mirabelle'}*/}
             {/*    className='w-full rounded'*/}

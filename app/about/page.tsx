@@ -71,7 +71,7 @@ export default async function AboutPage() {
             <button id="button"><a target="_blank" href="https://www.instagram.com/officialceojess/">More on my
                 Instagram →
             </a></button>
-            <p>
+            <p id="portfolio-page">
                 At the University of Pennsylvania, I majored in <a className="link" target="_blank" href="http://cg.cis.upenn.edu/dmd.html"><u>Digital
                 Media Design</u></a> and minored in Fine Arts with a focus in 3D modeling.<br/><br/>
                 <img
