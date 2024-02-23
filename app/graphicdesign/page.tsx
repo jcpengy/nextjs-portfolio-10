@@ -167,12 +167,12 @@ export default async function GraphicDesign() {
             <h3>Etsy</h3>
             <p>Graphic design work I've done through Etsy. Most of my requests are for small businesses, schools, and family
                 events including weddings, vacations, and reunions.</p><br/>
-            <img
-                key={'mirabelle'}
-                className='w-full rounded'
-                src='https://i.ibb.co/PCt66hf/mirabelle.jpg'
-                alt='mirabelle'
-            /><br/>
+            {/*<img*/}
+            {/*    key={'mirabelle'}*/}
+            {/*    className='w-full rounded'*/}
+            {/*    src='https://i.ibb.co/PCt66hf/mirabelle.jpg'*/}
+            {/*    alt='mirabelle'*/}
+            {/*/><br/>*/}
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {graphicdesignimages.map((image) => (
                     <img

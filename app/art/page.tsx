@@ -36,7 +36,7 @@ const artimages = [
 
 export const revalidate = 60;
 
-export default async function OtherArt() {
+export default async function Art() {
 
     useEffect(() => {
         initLightboxJS("9F1C-4A63-970C-2B0D", "individual");

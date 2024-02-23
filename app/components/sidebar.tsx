@@ -12,8 +12,11 @@ const navItems = {
   '/about': {
     name: 'About',
   },
-  '/portfolio': {
-    name: 'Portfolio',
+  '/design': {
+    name: 'Design',
+  },
+  '/art': {
+    name: 'Art',
   },
 };
 
