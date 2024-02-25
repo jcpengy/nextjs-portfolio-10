@@ -26,7 +26,7 @@ export default function Navbar() {
   return (
     <aside className="-ml-[8px] mb-8 tracking-tight">
       <div className="lg:sticky lg:top-20">
-        <LayoutGroup>
+        <LayoutGroup id="navbar">
           <div id="website-header">Jess Peng</div>
           <nav id="nav-links" className="flex flex-row items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           >
