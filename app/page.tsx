@@ -36,6 +36,27 @@ class Page extends React.Component<any, any>  {
         // });
         return (
             <section id="portfolio-page">
+                <div className="md:grid md:grid-cols-2">
+                    <div>
+                        <h2>Hi, I'm Jess.</h2>
+                        <p>
+                            I'm an SF-based Front-End Engineer at Adobe. I build internal tools
+                            on the Digital Experience Customer Engineering team.<br/><br/>
+                            I'm also an amateur cartoonist. I post regularly on I post regularly on <a target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>.<br/><br/>
+                            <a className="link" target="_blank" href="https://i.ibb.co/WkBrpdF/Jessica-Peng-Resume.jpg"><u>Resume</u></a> / <a
+                            className="link" target="_blank" href="mailto:pengjess2@gmail.com"><u>Email</u></a> / <a
+                            className="link" target="_blank" href="https://www.linkedin.com/in/jess-peng/"><u>LinkedIn</u></a><br/><br/>
+                            <span id="dots">.........</span>
+                        </p>
+                    </div>
+                    <div id="profile-image">
+                        <img id="circular--square"
+                             key='profile-picture'
+                             src='https://i.ibb.co/7pHw7wY/IMG-9588.jpg'
+                             alt='Profile picture'
+                        />
+                    </div>
+                </div><br/>
                 <div id="rowContainer">
                     <div id="review1">
                         <img src={ceojess[0].src} alt="" width="300" height="300" />
@@ -56,28 +77,6 @@ class Page extends React.Component<any, any>  {
                     </div>
                     <div id="review1">
                         <img src={ceojess[5].src} alt="" width="300" height="300" />
-                    </div>
-                </div>
-                <br/>
-                <div className="md:grid md:grid-cols-2">
-                    <div>
-                        <h2>Hi, I'm Jess.</h2>
-                        <p>
-                            I'm an SF-based Front-End Engineer at Adobe. I build internal tools
-                            on the Digital Experience Customer Engineering team.<br/><br/>
-                            I'm also an amateur cartoonist. I post regularly on I post regularly on <a target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>.<br/><br/>
-                            <a className="link" target="_blank" href="https://i.ibb.co/WkBrpdF/Jessica-Peng-Resume.jpg"><u>Resume</u></a> / <a
-                            className="link" target="_blank" href="mailto:pengjess2@gmail.com"><u>Email</u></a> / <a
-                            className="link" target="_blank" href="https://www.linkedin.com/in/jess-peng/"><u>LinkedIn</u></a><br/><br/>
-                            <span id="dots">.........</span>
-                        </p>
-                    </div>
-                    <div id="profile-image">
-                        <img id="circular--square"
-                             key='profile-picture'
-                             src='https://i.ibb.co/7pHw7wY/IMG-9588.jpg'
-                             alt='Profile picture'
-                        />
                     </div>
                 </div>
                 <br/>

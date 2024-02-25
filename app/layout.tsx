@@ -14,7 +14,7 @@ const graphik = localFont({
       style: 'normal',
     },
     {
-      path: '../public/fonts/Lora-Bold.ttf',
+      path: '../public/fonts/Proxima-Nova-Regular.ttf',
       weight: '700',
       style: 'bold',
     },

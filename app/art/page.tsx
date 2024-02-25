@@ -51,7 +51,7 @@ export default async function Art() {
 
     return (
         <section id="portfolio-page">
-            <p>I love drawing and am a big believer in art therapy. My preferred medium is colored
+            <p>Aside from cartooning, I love drawing and painting. My preferred medium is colored
                 pencil and my preferred subjects are pets.</p><br/>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {artimages.map((image) => (
