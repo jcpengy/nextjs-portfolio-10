@@ -113,14 +113,15 @@ export default async function GraphicDesign() {
         <section id="portfolio-page">
             <div className="md:grid md:grid-cols-2">
                 <img
+                    id="graphic-design-project-image"
                     key='kessler 1'
                     className='w-full rounded'
                     src='https://i.ibb.co/f0zG8Xs/kessler1.png'
                     alt='kessler 1'
                 />
-                <div id="graphic-design-project">
-                    <h3>Kessler Project</h3>
+                <div id="graphic-design-project-card">
                     <p>
+                        <h3>Kessler Project</h3>
                         3D models, designs, and slides for a theme park concept and finalist in the 2018 Disney Imaginations contest. I led art direction and development on my four-person team.
                     </p>
                 </div>
