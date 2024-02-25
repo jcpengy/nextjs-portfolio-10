@@ -9,15 +9,29 @@
     --pink: #DD58D6;
 }
 
+#body {
+    margin: 0 auto;
+    width: 44em;
+}
+
 #graphic-design-project-card {
     background-color: #fafafa;
     justify-content: center;
     align-items: center;
     display: flex;
-    margin: 10px;
+    text-align: left;
+    padding: 25px;
+    margin: 5px;
 }
 #graphic-design-project-image {
-    margin: 10px;
+    padding: 5px;
+
+}
+#graphic-design-project-title {
+    font-size: 21px;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 html {
     min-width: 360px;
