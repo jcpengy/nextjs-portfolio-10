@@ -80,6 +80,9 @@ class Page extends React.Component<any, any>  {
                     </div>
                 </div>
                 <br/>
+                <button id="button"><a target="_blank" href="https://instagram.com/officialceojess">More on my
+                    Instagram →
+                </a></button>
                 {/*<SlideshowLightbox className='container grid grid-cols-3 gap-2'>*/}
                 {/*    {ceojess.map((image) => (*/}
                 {/*        <img*/}
@@ -100,11 +103,10 @@ class Page extends React.Component<any, any>  {
                         alt={'3dmodel'}
                     />
                     <i>3D model of my college apartment</i><br/><br/>
-                    As a Front-End Developer at Adobe, I design and build internal tools
-                    that bridge product gaps and ensure seamless workflows within Experience Cloud. While my
-                    current focus is in development, I'm excited to expand my design skills on future projects.<br/><br/>
+                    As a Front-End Developer at Adobe, I design and build internal tools that bridge product gaps. While my
+                    current focus is in development, I'm excited to pursue design-focused projects in the future.<br/><br/>
                     <h2>My Hobbies</h2>
-                    <p>Aside from cartooning, here's what I'm also doing in my free time.</p>
+                    <p>Some other things I'm doing in my free time.</p>
                     {/*<h3 className="font-bold text-2xl mb-8 tracking-tighter">fun facts</h3>*/}
                     <div className="md:grid md:grid-cols-3 md:gap-x-16 lg:gap-x-8">
                         <div className="hobby">
