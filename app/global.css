@@ -9,6 +9,10 @@
     --pink: #DD58D6;
 }
 
+#navbar {
+    font-weight: 700;
+}
+
 html {
     min-width: 360px;
     background-color: white;
