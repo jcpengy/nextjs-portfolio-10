@@ -4,8 +4,8 @@ import React, {useEffect} from "react";
 
 const ceojess = [
     {
-        src: "https://i.ibb.co/crqpn9P/IMG-9561.jpg",
-        alt: "Astrology"
+        src: "https://i.ibb.co/BVHNMwp/IMG-1407.jpg",
+        alt: "Getting set up"
     },
     {
         src: 'https://i.ibb.co/YXwWJ9K/IMG-9214.jpg',
@@ -38,11 +38,11 @@ class Page extends React.Component<any, any>  {
             <section id="portfolio-page">
                 <div className="md:grid md:grid-cols-2">
                     <div>
-                        <h2>Hi, I'm Jess.</h2>
+                        <h2>Hi, I'm Jess.</h2><br/>
                         <p>
-                            I'm an SF-based Front-End Engineer at Adobe. I build internal tools
+                            Welcome to my website! I'm an SF-based Front-End Engineer at Adobe. I build internal tools
                             on the Digital Experience Customer Engineering team.<br/><br/>
-                            I'm also an amateur cartoonist. I post regularly on I post regularly on <a target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>.<br/><br/>
+                            In my free time, I'm an amateur cartoonist (see my daily doodles on <a className="link" target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>) and freelance graphic designer. For collaborations or commissions, please email me.<br/><br/>
                             <a className="link" target="_blank" href="https://i.ibb.co/WkBrpdF/Jessica-Peng-Resume.jpg"><u>Resume</u></a> / <a
                             className="link" target="_blank" href="mailto:pengjess2@gmail.com"><u>Email</u></a> / <a
                             className="link" target="_blank" href="https://www.linkedin.com/in/jess-peng/"><u>LinkedIn</u></a><br/><br/>
@@ -89,7 +89,7 @@ class Page extends React.Component<any, any>  {
                 <br/>
                 <button id="button"><a target="_blank" href="https://instagram.com/officialceojess">More on my
                     Instagram →
-                </a></button>
+                </a></button><br/>
                 {/*<SlideshowLightbox className='container grid grid-cols-3 gap-2'>*/}
                 {/*    {ceojess.map((image) => (*/}
                 {/*        <img*/}
@@ -116,13 +116,16 @@ class Page extends React.Component<any, any>  {
                     <h2>My Hobbies & Interests</h2>
                 <div className="md:grid md:grid-cols-2">
                 <div>
-                    <img
-                         key='hobbies'
-                         src='https://i.ibb.co/8dZGgfj/Cam-Scanner-02-28-2024-17-46-2.jpg'
-                         alt='hobbies'
-                    />
+                <h3>My Pets</h3>
+                <p>I have a Yorkie named Butters (after the South Park character) and a Roborovski hamster named Abrahammy Lincoln (Hammy for short).</p><br/>
+                <img className='w-full rounded'
+                     key='pets'
+                     src='https://i.ibb.co/GCg3Qbt/784bce54-3d78-4161-8d7b-c2c8cc1630f3.jpg'
+                     alt='pets'
+                />
                 </div>
                 <div>
+                    <h3>My Hobbies</h3>
                     <ul>
                         <li>Drawing pet portraits</li>
                         <li>Word-search puzzles</li>
@@ -134,13 +137,7 @@ class Page extends React.Component<any, any>  {
                 </div>
             </div>
                 <br/>
-                <h2>My Pets</h2>
-                <p>I have a Yorkie named Butters (after the South Park character) and a Roborovski hamster named Abrahammy Lincoln (Hammy for short).</p><br/>
-                <img className='w-full rounded'
-                     key='pets'
-                     src='https://i.ibb.co/GCg3Qbt/784bce54-3d78-4161-8d7b-c2c8cc1630f3.jpg'
-                     alt='pets'
-                /><br/><br/>
+                <br/>
                 <p>Thanks for stopping by!</p><br/>
                 .........
                 <br/>

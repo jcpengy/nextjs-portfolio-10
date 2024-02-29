@@ -137,7 +137,7 @@ ul {
 }
 
 .link {
-    color: var(--pink);
+    color: #c611da;
 }
 
 .link:hover {
@@ -590,7 +590,7 @@ h1 span span {
 /*mobile*/
 @media screen and (max-width: 640px) {
     #profile-image {
-        padding: 24px;
+        width: 50vw;
     }
 
     h1 {
@@ -687,15 +687,15 @@ hr {
     font-weight: 700;
     margin: 4px 2px;
     cursor: pointer;
-    background-color: var(--pink);
+    background-color: #c611da;
     color: white;
-    border: 2px solid var(--pink);
+    border: 2px solid #c611da;
+    border-radius: 10px;
 }
 
 #button:hover {
-    color: var(--pink);
+    color: #c611da;
     background-color: white;
-    text-decoration: underline;
 }
 
 #sticky-header {
