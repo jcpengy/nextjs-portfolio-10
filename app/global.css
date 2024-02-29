@@ -18,6 +18,13 @@
     letter-spacing: 2.5px;
 }
 
+#center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 #graphic-design-project-card {
     background-color: #fafafa;
     justify-content: center;
@@ -649,6 +656,7 @@ h1 span span {
     font-size: 20px;
     text-align: center;
     margin: 20px;
+    letter-spacing: 2.5px;
 }
 
 #nav-links {

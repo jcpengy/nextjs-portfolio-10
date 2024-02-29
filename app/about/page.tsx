@@ -83,7 +83,7 @@ export default async function AboutPage() {
                 current focus is in development, I'm excited to expand my design skills on future projects.<br/><br/>
                 <h2>My Hobbies & Interests</h2>
                 <div className="md:grid md:grid-cols-2">
-                <div id="profile-image">
+                <div>
                     <img
                          key='hobbies'
                          src='https://i.ibb.co/8dZGgfj/Cam-Scanner-02-28-2024-17-46-2.jpg'
