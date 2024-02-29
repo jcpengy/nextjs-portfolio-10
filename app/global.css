@@ -5,13 +5,11 @@
 :root {
     --liljesswidth: 20vw;
     --blue: #5c5c5c;
-    /*--purple: #9336B4;*/
-    --pink: #DD58D6;
+    --pink: #5c5c5c;
 }
 
 #body {
     margin: 0 auto;
-    width: 44em;
 }
 
 #all-caps {
@@ -22,6 +20,10 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+#nav-link {
+    margin: 15px;
 }
 
 #graphic-design-project-card {
@@ -658,8 +660,12 @@ h1 span span {
     letter-spacing: 2.5px;
 }
 
-#nav-links {
+#navbar {
     justify-content: center;
+}
+
+#nav-links {
+    letter-spacing: 2.5px;
 }
 
 hr {

@@ -10,13 +10,13 @@ const navItems = {
   //   name: 'Home',
   // },
   '/': {
-    name: 'About',
+    name: 'ABOUT',
   },
   '/design': {
-    name: 'Design',
+    name: 'DESIGN',
   },
   '/art': {
-    name: 'Art',
+    name: 'ART',
   },
 };
 
@@ -35,13 +35,14 @@ export default function Navbar() {
             width="200px"
            />
           <div id="website-header">JESS PENG</div>
-          <nav id="nav-links" className="flex flex-row items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
+          <nav id="navbar" className="flex flex-row items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           >
-            <div className="flex flex-row space-x-0">
+            <div id="nav-links" className="flex flex-row space-x-0">
               {Object.entries(navItems).map(([path, { name }]) => {
                 const isActive = path === pathname;
                 return (
                   <Link
+                    id="nav-link"
                     key={path}
                     href={path}
                     className={clsx(
@@ -70,7 +71,6 @@ export default function Navbar() {
               })}
             </div>
           </nav>
-          <hr />
         </LayoutGroup>
       </div>
     </aside>

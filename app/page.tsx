@@ -125,7 +125,7 @@ class Page extends React.Component<any, any>  {
                     </ul>
                 </div>
             </div>
-                <br/><br/>
+                <br/>
                 <h2>My Pets</h2>
                 <p>I have a Yorkie named Butters (after the South Park character) and a Roborovski hamster named Abrahammy Lincoln (Hammy for short).</p><br/>
                 <img className='rounded'
