@@ -14,6 +14,7 @@
 
 #all-caps {
     letter-spacing: 2.5px;
+    font-size: 20px;
 }
 
 #center {
@@ -58,9 +59,8 @@ section {
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
-    padding: 20px 0 0 0;
 }
 
 h1 {
@@ -86,7 +86,7 @@ h3 {
     -webkit-font-smoothing: antialiased;
     color: var(--pink);
     margin-top: 20px;
-    margin-bottom: -10px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -609,7 +609,7 @@ h1 span span {
     h3 {
         font-size: 18px;
         line-height: 21px;
-        margin-bottom: 0px;
+        margin-bottom: 20px;
         margin-top: 20px;
     }
 

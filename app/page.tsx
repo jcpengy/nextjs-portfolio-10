@@ -49,13 +49,20 @@ class Page extends React.Component<any, any>  {
                             <span id="dots">.........</span>
                         </p>
                     </div>
-                    <div id="profile-image">
+                    <img
+            id='profile-image'
+            key='website-header-pic'
+            src='https://i.ibb.co/HV5xtqt/Cam-Scanner-02-28-2024-17-46-1.jpg'
+            alt='Jess Peng'
+            // width="200px"
+           />
+                    {/* <div id="profile-image">
                         <img id="circular--square"
                              key='profile-picture'
                              src='https://i.ibb.co/7pHw7wY/IMG-9588.jpg'
                              alt='Profile picture'
                         />
-                    </div>
+                    </div> */}
                 </div><br/>
                 <div id="rowContainer">
                     <div id="review1">
@@ -93,6 +100,7 @@ class Page extends React.Component<any, any>  {
                 {/*        />*/}
                 {/*    ))}*/}
                 {/*</SlideshowLightbox>*/}
+                <br/>
                 <p>
                     At the University of Pennsylvania, I majored in <a className="link" target="_blank" href="http://cg.cis.upenn.edu/dmd.html"><u>Digital
                     Media Design</u></a> and minored in Fine Arts with a focus in 3D modeling.<br/><br/>
@@ -128,11 +136,10 @@ class Page extends React.Component<any, any>  {
                 <br/>
                 <h2>My Pets</h2>
                 <p>I have a Yorkie named Butters (after the South Park character) and a Roborovski hamster named Abrahammy Lincoln (Hammy for short).</p><br/>
-                <img className='rounded'
+                <img className='w-full rounded'
                      key='pets'
                      src='https://i.ibb.co/GCg3Qbt/784bce54-3d78-4161-8d7b-c2c8cc1630f3.jpg'
                      alt='pets'
-                     width=''
                 /><br/><br/>
                 <p>Thanks for stopping by!</p><br/>
                 .........
