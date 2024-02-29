@@ -33,7 +33,7 @@ const kessler = [
 
 const kesslerposter = [
     {
-        src: 'https://i.ibb.co/T4NKYdv/kessler-poster-sketch.png',
+        src: 'https://i.ibb.co/XWpQCqr/kessler-tickets.png',
         alt: '1',
     },
     {
@@ -121,7 +121,7 @@ export default async function GraphicDesign() {
                 />
                 <div id="graphic-design-project-card">
                     <p>
-                        <span id="graphic-design-project-title">KESSLER PROJECT</span><br/><br/>
+                        <span id="all-caps">KESSLER PROJECT</span><br/><br/>
                         3D models, designs, and slides for a theme park concept and finalist in the 2018 Disney Imaginations contest. I led art direction and development on my four-person team.
                     </p>
                 </div>
@@ -137,12 +137,6 @@ export default async function GraphicDesign() {
                 ))}
             </SlideshowLightbox><br/>
             <p id="centered-caption"><i>Redesigns, 2023</i></p><br/>
-            <img
-                key='kessler ticket'
-                className='w-full rounded'
-                src='https://i.ibb.co/XWpQCqr/kessler-tickets.png'
-                alt='kessler ticket'
-            /><br/>
             <SlideshowLightbox className='container grid grid-cols-2 gap-1'>
                 {kesslerposter.map((image) => (
                     <img
