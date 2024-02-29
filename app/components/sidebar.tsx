@@ -27,6 +27,13 @@ export default function Navbar() {
     <aside className="-ml-[8px] mb-8 tracking-tight">
       <div className="lg:sticky lg:top-20">
         <LayoutGroup>
+         <img
+            key='website-header-pic'
+            className='w-full rounded'
+            src='https://i.ibb.co/HV5xtqt/Cam-Scanner-02-28-2024-17-46-1.jpg'
+            alt='Jess Peng'
+            width="200px"
+           />
           <div id="website-header">Jess Peng</div>
           <nav id="nav-links" className="flex flex-row items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           >

@@ -81,46 +81,38 @@ export default async function AboutPage() {
                 As a Front-End Developer at Adobe, I design and build internal tools
                 that bridge product gaps and ensure seamless workflows within Experience Cloud. While my
                 current focus is in development, I'm excited to expand my design skills on future projects.<br/><br/>
-                <h2>My Hobbies</h2>
-                <p>Aside from cartooning, here's what I'm also doing in my free time.</p>
-                {/*<h3 className="font-bold text-2xl mb-8 tracking-tighter">fun facts</h3>*/}
-                <div className="md:grid md:grid-cols-3 md:gap-x-16 lg:gap-x-8">
-                    <div className="hobby">
-                        <img className="hobby-pic"
-                             key='drawing'
-                             src='https://i.ibb.co/GPT4B3j/drawing.png'
-                             alt='drawing'
-                        />
-                        <i>Making art</i>
-                    </div>
-                    <div className="hobby">
-                        <img className="hobby-pic"
-                             key='tennis'
-                             src='https://i.ibb.co/GHQqLV3/tennis.png'
-                             alt='tennis'
-                        />
-                        <i>Playing tennis</i>
-                    </div>
-                    <div className="hobby">
-                        <img className="hobby-pic"
-                             key='dog'
-                             src='https://i.ibb.co/HdscHRF/dog.png'
-                             alt='dog'
-                        />
-                        <i>Dog sitting</i>
-                    </div>
-                </div><br/><br/>
+                <h2>My Hobbies & Interests</h2>
+                <div className="md:grid md:grid-cols-2">
+                <div id="profile-image">
+                    <img
+                         key='hobbies'
+                         src='https://i.ibb.co/8dZGgfj/Cam-Scanner-02-28-2024-17-46-2.jpg'
+                         alt='hobbies'
+                    />
+                </div>
+                <div>
+                    <ul>
+                        <li>Drawing pet portraits</li>
+                        <li>Word-search puzzles</li>
+                        <li>Dog grooming</li>
+                        <li>Tennis</li>
+                        <li>Yorkie Reddit threads</li>
+                        <li>Reality TV</li>
+                    </ul>
+                </div>
+            </div>
+                <br/><br/>
                 <h2>My Pets</h2>
-                <p>I have a Yorkie pup named Butters (inspired by the South Park character) and a Roborovski hamster named Abrahammy Lincoln (Hammy for short).</p><br/>
+                <p>I have a Yorkie named Butters (after the South Park character) and a Roborovski hamster named Abrahammy Lincoln (Hammy for short).</p><br/>
                 <img className='w-full rounded'
                      key='pets'
-                     src='https://i.ibb.co/3MKFWsr/Untitled-1.png'
+                     src='https://i.ibb.co/GCg3Qbt/784bce54-3d78-4161-8d7b-c2c8cc1630f3.jpg'
                      alt='pets'
                 /><br/><br/>
-                <p>Thanks for stopping by!</p>
+                <p>Thanks for stopping by!</p><br/>
                 .........
                 <br/>
-                <i>© Jessica Peng 2023</i>
+                <i>© Jessica Peng 2023</i><br/><br/>
             </p>
         </section>
     );
