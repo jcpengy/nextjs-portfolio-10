@@ -40,7 +40,7 @@ class Page extends React.Component<any, any>  {
                     <div>
                         <h2>Hi, I'm Jess.</h2><br/>
                         <p>
-                            Welcome to my website! I'm an SF-based Front-End Engineer at Adobe. I build internal tools
+                            I'm an SF-based Front-End Engineer at Adobe. I build internal tools
                             on the Digital Experience Customer Engineering team.<br/><br/>
                             In my free time, I'm an amateur cartoonist (see my daily doodles on <a className="link" target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>) and freelance graphic designer. For collaborations or commissions, please email me.<br/><br/>
                             <a className="link" target="_blank" href="https://i.ibb.co/WkBrpdF/Jessica-Peng-Resume.jpg"><u>Resume</u></a> / <a
@@ -90,16 +90,6 @@ class Page extends React.Component<any, any>  {
                 <button id="button"><a target="_blank" href="https://instagram.com/officialceojess">More on my
                     Instagram →
                 </a></button><br/>
-                {/*<SlideshowLightbox className='container grid grid-cols-3 gap-2'>*/}
-                {/*    {ceojess.map((image) => (*/}
-                {/*        <img*/}
-                {/*            key={image.src}*/}
-                {/*            className='w-full rounded'*/}
-                {/*            src={image.src}*/}
-                {/*            alt={image.alt}*/}
-                {/*        />*/}
-                {/*    ))}*/}
-                {/*</SlideshowLightbox>*/}
                 <br/>
                 <p>
                     At the University of Pennsylvania, I majored in <a className="link" target="_blank" href="http://cg.cis.upenn.edu/dmd.html"><u>Digital
@@ -111,18 +101,20 @@ class Page extends React.Component<any, any>  {
                         alt={'3dmodel'}
                     />
                     <i>3D model of my college apartment</i><br/><br/>
-                    As a Front-End Developer at Adobe, I design and build internal tools that bridge product gaps. While my
+                    As a Front-End Developer at Adobe, I design and build internal applications that bridge product gaps within Experience Cloud. While my
                     current focus is in development, I'm excited to pursue design-focused projects in the future.<br/><br/>
-                    <h2>My Hobbies & Interests</h2>
-                <div className="md:grid md:grid-cols-2">
-                <div>
-                <h3>My Pets</h3>
-                <p>I have a Yorkie named Butters (after the South Park character) and a Roborovski hamster named Abrahammy Lincoln (Hammy for short).</p><br/>
-                <img className='w-full rounded'
+                    I'm currently living in San Francisco with my baby Yorkie Butters (after the South Park character) and dwarf hamster Abrahammy Lincoln (Hammy for short). My hobbies include drawing pet portraits, dog grooming, 
+                    playing tennis, scrolling through Yorkie Reddit threads, and watching classy reality TV with some chamomile tea.</p><br/><br/>
+                    <img className='w-full rounded'
                      key='pets'
                      src='https://i.ibb.co/GCg3Qbt/784bce54-3d78-4161-8d7b-c2c8cc1630f3.jpg'
                      alt='pets'
                 />
+                {/* <div className="md:grid md:grid-cols-2">
+                <div>
+                <h3>My Pets</h3>
+                <p>I have a Yorkie named Butters (after the South Park character) and a Roborovski hamster named Abrahammy Lincoln (Hammy for short).</p><br/>
+                
                 </div>
                 <div>
                     <h3>My Hobbies</h3>
@@ -135,7 +127,7 @@ class Page extends React.Component<any, any>  {
                         <li>Reality TV</li>
                     </ul>
                 </div>
-            </div>
+            </div> */}
                 <br/>
                 <br/>
                 <p>Thanks for stopping by!</p><br/>
