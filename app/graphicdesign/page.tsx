@@ -121,7 +121,7 @@ export default async function GraphicDesign() {
                 />
                 <div id="graphic-design-project-card">
                     <p>
-                        <span id="graphic-design-project-title">KESSLER PROJECT</span>
+                        <span id="graphic-design-project-title">KESSLER PROJECT</span><br/><br/>
                         3D models, designs, and slides for a theme park concept and finalist in the 2018 Disney Imaginations contest. I led art direction and development on my four-person team.
                     </p>
                 </div>
