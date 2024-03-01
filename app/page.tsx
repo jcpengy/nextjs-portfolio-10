@@ -104,12 +104,11 @@ class Page extends React.Component<any, any>  {
                     As a Front-End Developer at Adobe, I design and build internal applications that bridge product gaps within Experience Cloud. While my
                     current focus is in development, I'm excited to pursue design-focused projects in the future.<br/><br/>
                     I'm currently living in San Francisco with my baby Yorkie Butters (after the South Park character) and dwarf hamster Abrahammy Lincoln (Hammy for short). My hobbies include drawing pet portraits, dog grooming, 
-                    playing tennis, scrolling through Yorkie Reddit threads, and watching classy reality TV with some chamomile tea.</p><br/><br/>
+                    playing tennis, scrolling through Yorkie Reddit threads, and watching classy reality TV with some chamomile tea.<br/><br/>
                     <img className='w-full rounded'
                      key='pets'
                      src='https://i.ibb.co/GCg3Qbt/784bce54-3d78-4161-8d7b-c2c8cc1630f3.jpg'
-                     alt='pets'
-                />
+                     alt='pets'></img>
                 {/* <div className="md:grid md:grid-cols-2">
                 <div>
                 <h3>My Pets</h3>
