@@ -7,6 +7,7 @@ const nextConfig = {
     serverActions: true,
   },
   images: {
+    disableStaticImages: true,
     formats: ['image/avif', 'image/webp'],
     // Twitter Profile Picture
     remotePatterns: [
