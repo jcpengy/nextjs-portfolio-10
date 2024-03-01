@@ -3,6 +3,8 @@ import 'lightbox.js-react/dist/index.css'
 import {SlideshowLightbox, initLightboxJS} from 'lightbox.js-react'
 import React, {useEffect} from "react";
 import Footer from "../components/footer";
+import NYTCover from "../../public/images/nyt-cover.jpg";
+import EtsyCover from "../../public/images/etsy-cover.png";
 
 const kessler = [
     {
@@ -123,6 +125,36 @@ export default async function GraphicDesign() {
                     <p>
                         <span id="all-caps">KESSLER PROJECT</span><br/><br/>
                         3D models, designs, and slides for a theme park concept and finalist in the 2018 Disney Imaginations contest. I led art direction and development on my four-person team.
+                    </p>
+                </div>
+            </div><br/>
+            <div className="md:grid md:grid-cols-2">
+                <img
+                    id="graphic-design-project-image"
+                    key='nyt-cover'
+                    className='w-full rounded'
+                    src={NYTCover}
+                    alt='nyt-cover'
+                />
+                <div id="graphic-design-project-card">
+                    <p>
+                        <span id="all-caps">THE NEW YORK TIMES</span><br/><br/>
+                        Cover art and graphics for two high-profile breaking news pieces.
+                    </p>
+                </div>
+            </div><br/>
+            <div className="md:grid md:grid-cols-2">
+                <img
+                    id="graphic-design-project-image"
+                    key='etsy-cover'
+                    className='w-full rounded'
+                    src={EtsyCover}
+                    alt='etsy-cover'
+                />
+                <div id="graphic-design-project-card">
+                    <p>
+                        <span id="all-caps">ETSY</span><br/><br/>
+                        Commissioned work and freelance design for small businesses. 
                     </p>
                 </div>
             </div><br/>
