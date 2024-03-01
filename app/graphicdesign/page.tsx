@@ -3,8 +3,8 @@ import 'lightbox.js-react/dist/index.css'
 import {SlideshowLightbox, initLightboxJS} from 'lightbox.js-react'
 import React, {useEffect} from "react";
 import Footer from "../components/footer";
-import NYTCover from "../../public/images/nyt-cover.jpg";
-import EtsyCover from "../../public/images/etsy-cover.png";
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 const kessler = [
     {
@@ -106,6 +106,7 @@ const graphicdesignimages = [
 export const revalidate = 60;
 
 export default async function GraphicDesign() {
+    let pathname = usePathname() || '/';
 
     useEffect(() => {
         initLightboxJS("9F1C-4A63-970C-2B0D", "individual");
@@ -125,7 +126,13 @@ export default async function GraphicDesign() {
                     <p>
                         <span id="all-caps">KESSLER PROJECT</span><br/><br/>
                         3D models, designs, and slides for a theme park concept and finalist in the 2018 Disney Imaginations contest. I led art direction and development on my four-person team.
-                    </p>
+                    </p><br/>
+                    <Link
+                    key='/cartoons'
+                    href='/cartoons'
+                  >
+                    View project
+                  </Link>
                 </div>
             </div><br/>
             <div className="md:grid md:grid-cols-2">

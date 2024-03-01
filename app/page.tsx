@@ -2,33 +2,6 @@
 import {initLightboxJS, SlideshowLightbox} from "lightbox.js-react";
 import React, {useEffect} from "react";
 
-const ceojess = [
-    {
-        src: "https://i.ibb.co/BVHNMwp/IMG-1407.jpg",
-        alt: "Getting set up"
-    },
-    {
-        src: 'https://i.ibb.co/YXwWJ9K/IMG-9214.jpg',
-        alt: 'Wine tasting',
-    },
-    {
-        src: 'https://i.ibb.co/5vJtf5K/IMG-8416.png',
-        alt: 'SF Hills',
-    },
-    {
-        src: 'https://i.ibb.co/5kkqYW6/IMG-8949.jpg',
-        alt: 'Congress1',
-    },
-    {
-        src: 'https://i.ibb.co/nsnCwCD/IMG-8950.jpg',
-        alt: 'Congress2',
-    },
-    {
-        src: 'https://i.ibb.co/z7n38WQ/IMG-8951.jpg',
-        alt: 'Lady Clingford',
-    },
-]
-
 class Page extends React.Component<any, any>  {
     render() {
         // useEffect(() => {
@@ -37,24 +10,11 @@ class Page extends React.Component<any, any>  {
         return (
             <section id="portfolio-page">
                 <div className="md:grid md:grid-cols-2">
-                    <div>
-                        <h2>Hi, I'm Jess.</h2><br/>
-                        <p>
-                            I'm an SF-based Front-End Engineer at Adobe. I build internal tools
-                            on the Digital Experience Customer Engineering team.<br/><br/>
-                            In my free time, I'm an amateur cartoonist (see my daily doodles on <a className="link" target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>) and freelance graphic designer. For collaborations or commissions, please email me.<br/><br/>
-                            <a className="link" target="_blank" href="https://i.ibb.co/WkBrpdF/Jessica-Peng-Resume.jpg"><u>Resume</u></a> / <a
-                            className="link" target="_blank" href="mailto:pengjess2@gmail.com"><u>Email</u></a> / <a
-                            className="link" target="_blank" href="https://www.linkedin.com/in/jess-peng/"><u>LinkedIn</u></a><br/><br/>
-                            <span id="dots">.........</span>
-                        </p>
-                    </div>
                     <img
             id='profile-image'
             key='website-header-pic'
             src='https://i.ibb.co/HV5xtqt/Cam-Scanner-02-28-2024-17-46-1.jpg'
             alt='Jess Peng'
-            // width="200px"
            />
                     {/* <div id="profile-image">
                         <img id="circular--square"
@@ -63,34 +23,19 @@ class Page extends React.Component<any, any>  {
                              alt='Profile picture'
                         />
                     </div> */}
-                </div><br/>
-                <div id="rowContainer">
-                    <div id="review1">
-                        <img src={ceojess[0].src} alt="" width="300" height="300" />
+                    <div>
+                        <h2>Hi, I'm Jess.</h2><br/>
+                        <p>
+                            I'm an SF-based Front-End Engineer at Adobe. I'm also an amateur cartoonist (see my daily doodles on <a className="link" target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>) 
+                            and freelance graphic designer.<br/><br/>For collaborations or commissions, please email me at pengjess2@gmail.com.<br/><br/>
+                            <a className="link" target="_blank" href="https://i.ibb.co/WkBrpdF/Jessica-Peng-Resume.jpg"><u>Resume</u></a> / <a
+                            className="link" target="_blank" href="mailto:pengjess2@gmail.com"><u>Email</u></a> / <a
+                            className="link" target="_blank" href="https://www.linkedin.com/in/jess-peng/"><u>LinkedIn</u></a><br/><br/>
+                            <span id="dots">.........</span>
+                        </p>
                     </div>
-                    <div id="review1">
-                        <img src={ceojess[1].src} alt="" width="300" height="300" />
-                    </div>
-                    <div id="review1">
-                        <img src={ceojess[2].src} alt="" width="300" height="300" />
-                    </div>
-                </div>
-                <div id="rowContainer">
-                    <div id="review1">
-                        <img src={ceojess[3].src} alt="" width="300" height="300" />
-                    </div>
-                    <div id="review1">
-                        <img src={ceojess[4].src} alt="" width="300" height="300" />
-                    </div>
-                    <div id="review1">
-                        <img src={ceojess[5].src} alt="" width="300" height="300" />
-                    </div>
-                </div>
-                <br/>
-                <button id="button"><a target="_blank" href="https://instagram.com/officialceojess">More on my
-                    Instagram →
-                </a></button><br/>
-                <br/>
+                </div><br/><br/>
+                <h4>My Background</h4>
                 <p>
                     At the University of Pennsylvania, I majored in <a className="link" target="_blank" href="http://cg.cis.upenn.edu/dmd.html"><u>Digital
                     Media Design</u></a> and minored in Fine Arts with a focus in 3D modeling.<br/><br/>
@@ -103,7 +48,7 @@ class Page extends React.Component<any, any>  {
                     <i>3D model of my college apartment</i><br/><br/>
                     As a Front-End Developer at Adobe, I design and build internal applications that bridge product gaps within Experience Cloud. While my
                     current focus is in development, I'm excited to pursue design-focused projects in the future.<br/><br/>
-                    I'm currently living in San Francisco with my baby Yorkie Butters (after the South Park character) and dwarf hamster Abrahammy Lincoln (Hammy for short). My hobbies include drawing pet portraits, dog grooming, 
+                    Right now, I live in San Francisco with my baby Yorkie Butters (after the South Park character) and dwarf hamster Abrahammy Lincoln (Hammy for short). My hobbies include drawing pet portraits, dog grooming, 
                     playing tennis, scrolling through Yorkie Reddit threads, and watching classy reality TV with some chamomile tea.<br/><br/>
                     <img className='w-full rounded'
                      key='pets'

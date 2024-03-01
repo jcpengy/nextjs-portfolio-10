@@ -18,6 +18,9 @@ const navItems = {
   '/art': {
     name: 'ART',
   },
+  '/cartoons': {
+    name: 'CARTOONS',
+  },
 };
 
 export default function Navbar() {

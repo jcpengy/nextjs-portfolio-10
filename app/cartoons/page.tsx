@@ -4,10 +4,14 @@ import {SlideshowLightbox, initLightboxJS} from 'lightbox.js-react'
 import {useEffect} from "react";
 import Footer from "../components/footer";
 
-const cartoonimages = [
+const ceojess = [
     {
-        src: 'https://i.ibb.co/89HpZ2Q/IMG-8944.jpg',
-        alt: 'Dating in SF',
+        src: "https://i.ibb.co/BVHNMwp/IMG-1407.jpg",
+        alt: "Getting set up"
+    },
+    {
+        src: 'https://i.ibb.co/YXwWJ9K/IMG-9214.jpg',
+        alt: 'Wine tasting',
     },
     {
         src: 'https://i.ibb.co/5vJtf5K/IMG-8416.png',
@@ -20,10 +24,6 @@ const cartoonimages = [
     {
         src: 'https://i.ibb.co/nsnCwCD/IMG-8950.jpg',
         alt: 'Congress2',
-    },
-    {
-        src: 'https://i.ibb.co/bsqm4Rq/IMG-8952.jpg',
-        alt: 'Bugs Life',
     },
     {
         src: 'https://i.ibb.co/z7n38WQ/IMG-8951.jpg',
@@ -47,20 +47,34 @@ export default async function CartoonPage() {
                     alt={'ceojess2'}
                 />
             </div>
-            <p className="cartoons-p">
-                CEO Jess is an anxious yet optimistic potato with a heart of gold. Follow her adventures navigating the
-                daily struggles of work, dating, and beyond on @officialceojess!
-            </p><br/>
-            <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
-                {cartoonimages.map((image) => (
-                    <img
-                        key={image.src}
-                        className='w-full rounded'
-                        src={image.src}
-                        alt={image.alt}
-                    />
-                ))}
-            </SlideshowLightbox>
+            <div id="rowContainer">
+                    <div id="review1">
+                        <img src={ceojess[0].src} alt="" width="300" height="300" />
+                    </div>
+                    <div id="review1">
+                        <img src={ceojess[1].src} alt="" width="300" height="300" />
+                    </div>
+                    <div id="review1">
+                        <img src={ceojess[2].src} alt="" width="300" height="300" />
+                    </div>
+                </div>
+                <div id="rowContainer">
+                    <div id="review1">
+                        <img src={ceojess[3].src} alt="" width="300" height="300" />
+                    </div>
+                    <div id="review1">
+                        <img src={ceojess[4].src} alt="" width="300" height="300" />
+                    </div>
+                    <div id="review1">
+                        <img src={ceojess[5].src} alt="" width="300" height="300" />
+                    </div>
+                </div>
+                <br/>
+                <button id="button"><a target="_blank" href="https://instagram.com/officialceojess">More on my
+                    Instagram →
+                </a></button><br/>
+                <br/>
+            
             <Footer/>
         </section>
     );
