@@ -133,7 +133,7 @@ export default async function GraphicDesign() {
                     id="graphic-design-project-image"
                     key='nyt-cover'
                     className='w-full rounded'
-                    src={NYTCover}
+                    src="https://i.ibb.co/bQPgWRv/douma-cover-desktop4.jpg"
                     alt='nyt-cover'
                 />
                 <div id="graphic-design-project-card">
@@ -148,7 +148,7 @@ export default async function GraphicDesign() {
                     id="graphic-design-project-image"
                     key='etsy-cover'
                     className='w-full rounded'
-                    src={EtsyCover}
+                    src="https://i.ibb.co/MfsjPxW/Screenshot-2024-02-29-at-6-29-00-PM.png"
                     alt='etsy-cover'
                 />
                 <div id="graphic-design-project-card">
