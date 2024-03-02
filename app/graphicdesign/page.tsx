@@ -128,8 +128,8 @@ export default async function GraphicDesign() {
                         3D models, designs, and slides for a theme park concept and finalist in the 2018 Disney Imaginations contest.
                     </p><br/>
                     <Link
-                    key='/kessler'
-                    href='/kessler'>
+                    key='/art'
+                    href='/art'>
                         View project
                     </Link>
                 </div>
