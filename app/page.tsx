@@ -26,30 +26,31 @@ class Page extends React.Component<any, any>  {
                     <div>
                         <h2>Hi, I'm Jess.</h2><br/>
                         <p>
-                            I'm an SF-based Front-End Engineer at Adobe. I'm also an amateur cartoonist (see my daily doodles on <a className="link" target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>) 
-                            and freelance graphic designer.<br/><br/>For collaborations or commissions, please email me at pengjess2@gmail.com.<br/><br/>
+                            I'm a front-end developer and amateur cartoonist. I post my doodles regularly on <a className="link" target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>).
+                            <br/><br/>
+                            For creative collaborations or art commissions, please email pengjess2@gmail.com.<br/><br/>
                             <a className="link" target="_blank" href="https://i.ibb.co/WkBrpdF/Jessica-Peng-Resume.jpg"><u>Resume</u></a> / <a
                             className="link" target="_blank" href="mailto:pengjess2@gmail.com"><u>Email</u></a> / <a
                             className="link" target="_blank" href="https://www.linkedin.com/in/jess-peng/"><u>LinkedIn</u></a><br/><br/>
-                            <span id="dots">.........</span>
                         </p>
                     </div>
-                </div><br/><br/>
-                <h4>My Background</h4>
+                </div><br/><hr/><br/>
+                <h4>A little bit about me...</h4><br/><br/>
                 <p>
-                    At the University of Pennsylvania, I majored in <a className="link" target="_blank" href="http://cg.cis.upenn.edu/dmd.html"><u>Digital
-                    Media Design</u></a> and minored in Fine Arts with a focus in 3D modeling.<br/><br/>
-                    <img
+                    I love art and anything creative. At the University of Pennsylvania, I majored in <a className="link" target="_blank" href="http://cg.cis.upenn.edu/dmd.html"><u>Digital
+                    Media Design</u></a> and minored in Fine Arts. Although my concentrations were computer graphics and 3D modeling, I dabbled in video production, animation, and even costume design (my favorite). Through two on-campus design jobs, I also taught myself 
+                    graphic design basics and small organization branding.<br/><br/>
+                    {/* <img
                         key={'3dmodel'}
                         className='w-full rounded'
                         src={'https://i.ibb.co/nmXmXp3/IMG-2655-Original.jpg'}
                         alt={'3dmodel'}
                     />
-                    <i>3D model of my college apartment</i><br/><br/>
-                    As a Front-End Developer at Adobe, I design and build internal applications that bridge product gaps within Experience Cloud. While my
-                    current focus is in development, I'm excited to pursue design-focused projects in the future.<br/><br/>
-                    Right now, I live in San Francisco with my baby Yorkie Butters (after the South Park character) and dwarf hamster Abrahammy Lincoln (Hammy for short). My hobbies include drawing pet portraits, dog grooming, 
-                    playing tennis, scrolling through Yorkie Reddit threads, and watching classy reality TV with some chamomile tea.<br/><br/>
+                    <i>3D model of my college apartment</i><br/><br/> */}
+                    As a front-end developer at Adobe, I'm able to combine art and engineering to design and build internal tools that bridge product gaps in Experience Cloud products. On the side, I do freelance graphic design work for small businesses through my Etsy shop.
+                    <br/><br/>
+                    Currently, I live in San Francisco with my Yorkie Butters (after the South Park character) and my hamster Abrahammy Lincoln (Hammy for short). When I'm not making art, I'm usually watching my favorite reality TV shows, scrolling through 
+                    puppy Reddit threads and WireCutter recommendations, or listening to music. 
                     <img className='w-full rounded'
                      key='pets'
                      src='https://i.ibb.co/GCg3Qbt/784bce54-3d78-4161-8d7b-c2c8cc1630f3.jpg'

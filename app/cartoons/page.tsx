@@ -38,15 +38,7 @@ export default async function CartoonPage() {
     });
 
     return (
-        <section>
-            <div className="image-cropper">
-                <img
-                    id="profile-pic"
-                    key={'ceojess2'}
-                    src={'https://i.ibb.co/C70VVFn/ceojess.png'}
-                    alt={'ceojess2'}
-                />
-            </div>
+        <section id="portfolio-page">
             <div id="rowContainer">
                     <div id="review1">
                         <img src={ceojess[0].src} alt="" width="300" height="300" />
