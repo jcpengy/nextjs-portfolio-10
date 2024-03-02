@@ -61,7 +61,7 @@ class Page extends React.Component<any, any>  {
                 </div>
                 <p>                    
                 If I'm not tending to my demanding Yorkie named Butters (after the South Park character), I'm usually making art, watching dating reality shows, scrolling through puppy Reddit, or drawing cartoons on <a className="link" target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>. 
-                            For creative collaborations or art commissions, please email pengjess2@gmail.com. Thanks for stopping by!<br/><br/>
+                            For creative collaborations or art commissions, please email <b>pengjess2@gmail.com</b>. Thanks for stopping by!<br/><br/>
                             <a className="link" target="_blank" href="https://i.ibb.co/WkBrpdF/Jessica-Peng-Resume.jpg"><u>Resume</u></a> / <a
                             className="link" target="_blank" href="mailto:pengjess2@gmail.com"><u>Email</u></a> / <a
                             className="link" target="_blank" href="https://www.linkedin.com/in/jess-peng/"><u>LinkedIn</u></a><br/><br/>
