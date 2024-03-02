@@ -58,7 +58,7 @@ class Page extends React.Component<any, any>  {
                             Media Design</u></a> and a minor in Fine Arts.<br/><br/>
                         </p>
                     </div>
-                </div><br/><br/>
+                </div>
                 <p>                    
                 If I'm not tending to my demanding Yorkie named Butters (after the South Park character), I'm usually making art, watching dating reality shows, scrolling through puppy Reddit, or drawing cartoons on <a className="link" target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>. 
                             For creative collaborations or art commissions, please email pengjess2@gmail.com. Thanks for stopping by!<br/><br/>
@@ -100,10 +100,10 @@ class Page extends React.Component<any, any>  {
                 </a></button>
                 <br/>
                 <br/>
-                    <img className='w-full rounded'
+                    {/* <img className='w-full rounded'
                      key='pets'
                      src='https://i.ibb.co/GCg3Qbt/784bce54-3d78-4161-8d7b-c2c8cc1630f3.jpg'
-                     alt='pets'></img>
+                     alt='pets'></img> */}
                 {/* <div className="md:grid md:grid-cols-2">
                 <div>
                 <h3>My Pets</h3>
@@ -121,9 +121,7 @@ class Page extends React.Component<any, any>  {
                         <li>Reality TV</li>
                     </ul>
                 </div>
-            </div> */}
-                <br/>
-                <br/>
+                    </div> */}
                 .........
                 <br/><br/>
                 <i>© Jessica Peng 2023</i><br/><br/>
