@@ -126,13 +126,8 @@ export default async function GraphicDesign() {
                     <p>
                         <span id="all-caps">KESSLER PROJECT</span><br/><br/>
                         3D models, designs, and slides for a theme park concept and finalist in the 2018 Disney Imaginations contest.
-                    </p>
-                    {/* <Link
-                    key='/kessler'
-                    href='/kessler'> */}
+                    </p><br/>
                      <a href="/kessler"><button id="button">View project</button></a>
-                    {/* View project
-                  </Link> */}
                 </div>
             </div><br/>
             <div className="md:grid md:grid-cols-2">
@@ -148,6 +143,8 @@ export default async function GraphicDesign() {
                         <span id="all-caps">THE NEW YORK TIMES</span><br/><br/>
                         Cover art and graphics for two high-profile breaking news pieces.
                     </p>
+                    <br/>
+                    <a href="/kessler"><button id="button">View project</button></a>
                 </div>
             </div><br/>
             <div className="md:grid md:grid-cols-2">
@@ -163,6 +160,8 @@ export default async function GraphicDesign() {
                         <span id="all-caps">ETSY</span><br/><br/>
                         Commissioned work and freelance design for small businesses. 
                     </p>
+                    <br/>
+                    <a href="/kessler"><button id="button">View project</button></a>
                 </div>
             </div><br/>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>

@@ -51,7 +51,7 @@ export default async function Art() {
 
     return (
         <section id="portfolio-page">
-            <p>Visit <a id="link" href="https://instagram.com/jessp.design" target="_blank">@jessp.design</a> to view more of my personal art.</p><br/>
+            <p>View more of my personal art at <a className="link" href="https://instagram.com/jessp.design" target="_blank">@jessp.design</a>.</p><br/>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {artimages.map((image) => (
                     <img

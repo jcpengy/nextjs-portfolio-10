@@ -53,30 +53,25 @@ class Page extends React.Component<any, any>  {
                     <div>
                         <h2>Hi, I'm Jess.</h2><br/>
                         <p>
-                            I'm a front-end developer and amateur cartoonist. I post my doodles regularly on <a className="link" target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>.
-                            <br/><br/>
-                            For creative collaborations or art commissions, please email pengjess2@gmail.com.<br/><br/>
+                            I'm a San Francisco-based freelance graphic designer and front-end developer at Adobe building internal tools on the Digital Experience Customer Engineering team. I graduated from the University of Pennsylvania with a degree  
+                            in <a className="link" target="_blank" href="http://cg.cis.upenn.edu/dmd.html"><u>Digital
+                            Media Design</u></a> and a minor in Fine Arts.<br/><br/>
+                        </p>
+                    </div>
+                </div><br/><br/>
+                <p>                    
+                If I'm not tending to my demanding Yorkie named Butters (after the South Park character), I'm usually making art, watching dating reality shows, scrolling through puppy Reddit, or drawing cartoons on <a className="link" target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>. 
+                            For creative collaborations or art commissions, please email pengjess2@gmail.com. Thanks for stopping by!<br/><br/>
                             <a className="link" target="_blank" href="https://i.ibb.co/WkBrpdF/Jessica-Peng-Resume.jpg"><u>Resume</u></a> / <a
                             className="link" target="_blank" href="mailto:pengjess2@gmail.com"><u>Email</u></a> / <a
                             className="link" target="_blank" href="https://www.linkedin.com/in/jess-peng/"><u>LinkedIn</u></a><br/><br/>
-                        </p>
-                    </div>
-                </div><br/><hr/><br/>
-                <h4>A little bit about me...</h4><br/><br/>
-                <p>
-                    I love art and anything creative. At the University of Pennsylvania, I majored in <a className="link" target="_blank" href="http://cg.cis.upenn.edu/dmd.html"><u>Digital
-                    Media Design</u></a> and minored in Fine Arts. Although I concentrated in computer graphics and 3D modeling, I dabbled in video production, animation, and even costume design (my favorite class). Through two on-campus design jobs, I also taught myself 
-                    graphic design basics and small organization branding.<br/><br/>
                     {/* <img
                         key={'3dmodel'}
                         className='w-full rounded'
                         src={'https://i.ibb.co/nmXmXp3/IMG-2655-Original.jpg'}
                         alt={'3dmodel'}
                     />
-                    <i>3D model of my college apartment</i><br/><br/> */}
-                    As a front-end developer at Adobe, I'm able to combine art and engineering to design and build internal tools that bridge product gaps in Experience Cloud products. On the side, I do freelance graphic design for small businesses through my Etsy shop 
-                    and draw CEO Jess cartoons (when an idea strikes me).
-                    <br/><br/>
+                <i>3D model of my college apartment</i><br/><br/> */}
                     <div id="rowContainer">
                     <div id="review1">
                         <img src={ceojess[0].src} alt="" width="300" height="300" />
@@ -105,8 +100,6 @@ class Page extends React.Component<any, any>  {
                 </a></button>
                 <br/>
                 <br/>
-                    I currently live in San Francisco with my Yorkie Butters (after the South Park character) and my hamster Abrahammy Lincoln (Hammy for short). When I'm not making art, I'm usually watching my favorite reality TV shows, scrolling through 
-                    puppy Reddit threads and Wirecutter recommendations, or listening to music.<br/><br/>
                     <img className='w-full rounded'
                      key='pets'
                      src='https://i.ibb.co/GCg3Qbt/784bce54-3d78-4161-8d7b-c2c8cc1630f3.jpg'
@@ -131,9 +124,8 @@ class Page extends React.Component<any, any>  {
             </div> */}
                 <br/>
                 <br/>
-                <p>Thanks for stopping by!</p><br/>
                 .........
-                <br/>
+                <br/><br/>
                 <i>© Jessica Peng 2023</i><br/><br/>
                 </p>
             </section>
