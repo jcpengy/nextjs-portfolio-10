@@ -24,7 +24,7 @@ export default function Navbar() {
   let pathname = usePathname() || '/';
 
   return (
-    <aside className="-ml-[8px] mb-8 tracking-tight">
+    <aside className="-ml-[8px] tracking-tight">
       <div className="lg:sticky lg:top-20">
         <LayoutGroup>
           <div id="website-header">JESS PENG</div>

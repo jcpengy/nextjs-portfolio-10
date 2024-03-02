@@ -64,45 +64,6 @@ const nytimes = [
     },
 ]
 
-const graphicdesignimages = [
-    {
-        src: 'https://i.ibb.co/x8Jx8GF/mermaid.png',
-        alt: 'Mermaid',
-    },
-    {
-        src: 'https://i.ibb.co/L8z0Cpz/3aec7a118346153-60877e247d35b.jpg',
-        alt: 'Rob and Emily Side 1',
-    },
-    {
-        src: 'https://i.ibb.co/pP2RT94/ea8a9a118346153-60877f2d59bcb.png',
-        alt: 'Rob and Emily Side 2',
-    },
-    {
-        src: 'https://i.ibb.co/3c1ZGq9/b1d5f7139012557-62285390426e3.png',
-        alt: 'Playing Card Design',
-    },
-    {
-        src: 'https://i.ibb.co/z6BystX/bc5e4d126048653-61259d3a03c42.png',
-        alt: 'Happy Tappers',
-    },
-    {
-        src: 'https://i.ibb.co/TkVVSz4/daisy.png',
-        alt: 'Dog',
-    },
-    {
-        src: 'https://i.ibb.co/vwWVnbt/rivers-01.png',
-        alt: 'River',
-    },
-    {
-        src: 'https://i.ibb.co/pzwsxPw/TSHARP.png',
-        alt: 'Eid',
-    },
-    {
-        src: 'https://i.ibb.co/t3Ym6Mp/vintage.png',
-        alt: 'Vintage',
-    },
-]
-
 export const revalidate = 60;
 
 export default async function GraphicDesign() {
@@ -151,8 +112,8 @@ export default async function GraphicDesign() {
                     <br/>
                     <Link
                     id="project-button"
-                    key='/kessler'
-                    href='/kessler'>
+                    key='/new-york-times'
+                    href='/new-york-times'>
                         View project
                     </Link>
                 </div>
@@ -173,65 +134,12 @@ export default async function GraphicDesign() {
                     <br/>
                     <Link
                     id="project-button"
-                    key='/kessler'
-                    href='/kessler'>
+                    key='/etsy'
+                    href='/etsy'>
                         View project
                     </Link>
                 </div>
-            </div><br/>
-            <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
-                {kessler.map((image) => (
-                    <img
-                        key={image.src}
-                        className='w-full rounded'
-                        src={image.src}
-                        alt={image.alt}
-                    />
-                ))}
-            </SlideshowLightbox><br/>
-            <p id="centered-caption"><i>Redesigns, 2023</i></p>
-            <br/>
-            <br/>
-            <h3>The New York Times</h3>
-            <p>Cover art and graphics I created for two high-profile breaking news pieces as a Graphics Intern.<br/><br/>
-            Credits: <a className="link" target="_blank" href="https://www.nytimes.com/interactive/2018/07/21/world/asia/thai-cave-rescue-ar-ul.html"><u>"Step Inside the Thai Cave in Augmented Reality"</u></a><br/>
-                <a className="link" target="_blank" href="https://www.nytimes.com/interactive/2018/06/24/world/middleeast/douma-syria-chemical-attack-augmented-reality-ar-ul.html?mtrref=undefined&gwh=F58C966F1C905F9A7F76DD29F76E6E44&gwt=pay&assetType=PAYWALL"><u>"How We Created a Virtual Crime Scene to Investigate Syria's Chemical Attack"</u></a>
-            </p><br/>
-            <img
-                key={'syria'}
-                className='w-full rounded'
-                src={nytimes[0].src}
-                alt={nytimes[0].alt}
-            /><br/>
-            <img
-                key={'thai'}
-                className='w-full rounded'
-                src='https://i.ibb.co/z4Sc5R5/thai.png'
-                alt='thai cave'
-            /><br/>
-            <h3>Etsy</h3>
-            <p>Freelance work I've done for small businesses, schools, and family
-                events like weddings, vacations, and reunions.</p><br/>
-            {/*<img*/}
-            {/*    key={'mirabelle'}*/}
-            {/*    className='w-full rounded'*/}
-            {/*    src='https://i.ibb.co/PCt66hf/mirabelle.jpg'*/}
-            {/*    alt='mirabelle'*/}
-            {/*/><br/>*/}
-            <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
-                {graphicdesignimages.map((image) => (
-                    <img
-                        key={image.src}
-                        className='w-full rounded'
-                        src={image.src}
-                        alt={image.alt}
-                    />
-                ))}
-            </SlideshowLightbox>
-            <br/>
-            <button id="button"><a target="_blank" href="https://behance.net/jesspdesign">More on my
-                Behance →
-            </a></button>
+            </div>       
         </section>
     );
 }
