@@ -130,7 +130,7 @@ export default async function GraphicDesign() {
                     {/* <Link
                     key='/kessler'
                     href='/kessler'> */}
-                     <button id="button"><a target="_blank" href="/art">View project</a></button>
+                     <a href="/kessler"><button id="button">View project</button></a>
                     {/* View project
                   </Link> */}
                 </div>
