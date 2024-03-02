@@ -1,6 +1,9 @@
 'use client';
 import Footer from "../components/footer";
-import KesslerPoster from "public/images/kessler-poster.jpg";
+import KesslerPoster from "public/images/Kessler/kessler-poster.jpg";
+import KesslerSlide2 from "public/images/Kessler/kessler-slide-2.jpg";
+import KesslerSlide3 from "public/images/Kessler/kessler-slide-3.jpg";
+import KesslerSlide4 from "public/images/Kessler/kessler-slide-4.jpg";
 
 export default async function Kessler() {
     return (
@@ -10,23 +13,23 @@ export default async function Kessler() {
             <br/>
             <img
                     id="centered-caption"
-                    key='kessler-1'
-                    src="https://i.ibb.co/wyPG8Mr/Screen-Shot-2021-04-06-at-2-13-02-PM.png"
-                    alt='kessler-1'
-                />
-                <br/>
-                 <img
-                    id="centered-caption"
                     key='kessler-2'
-                    src="https://i.ibb.co/tpr4fkW/Screen-Shot-2021-04-06-at-2-13-32-PM.png"
+                    src={KesslerSlide2}
                     alt='kessler-2'
                 />
                 <br/>
                  <img
                     id="centered-caption"
                     key='kessler-3'
-                    src="https://i.ibb.co/0QkSkjy/Screen-Shot-2021-04-06-at-2-13-57-PM.png"
+                    src={KesslerSlide3}
                     alt='kessler-3'
+                />
+                <br/>
+                 <img
+                    id="centered-caption"
+                    key='kessler-4'
+                    src={KesslerSlide4}
+                    alt='kessler-4'
                 />
                 <br/>
             <img
