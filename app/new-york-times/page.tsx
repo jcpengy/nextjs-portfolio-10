@@ -15,7 +15,7 @@ export default async function NewYorkTimes() {
             <img
                     id="centered-caption"
                     key='syria'
-                    src={SyriaOriginal}
+                    src={SyriaOriginal.src}
                     alt='syria'
                 />
                 <br/>
