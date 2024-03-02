@@ -6,6 +6,18 @@ import Footer from "../components/footer";
 
 const artimages = [
     {
+        src: 'https://i.ibb.co/3ysxTKv/8-F0-B2-A9-C-669-E-44-A7-BDDB-5-AA89-D32733-E.jpg',
+        alt: 'Surf',
+    },
+    {
+        src: 'https://i.ibb.co/5jZt51Y/E8-BA3324-3641-4-EB2-A1-FC-1-B7-DF4-ABB3-BB-1-201-a.jpg',
+        alt: 'Mountains',
+    },
+    {
+        src: 'https://i.ibb.co/nwGMSRQ/IMG-9650.jpg',
+        alt: 'Central Park',
+    },
+    {
         src: 'https://i.ibb.co/Gt7HXzs/Cam-Scanner-02-21-2024-15-48-4.jpg',
         alt: 'Chappy'
     },
@@ -18,20 +30,8 @@ const artimages = [
         alt: 'Dogs',
     },
     {
-        src: 'https://i.ibb.co/3ysxTKv/8-F0-B2-A9-C-669-E-44-A7-BDDB-5-AA89-D32733-E.jpg',
-        alt: 'Surf',
-    },
-    {
         src: 'https://i.ibb.co/tBYMXNv/IMG-9649.jpg',
         alt: 'Friends',
-    },
-    {
-        src: 'https://i.ibb.co/nwGMSRQ/IMG-9650.jpg',
-        alt: 'Central Park',
-    },
-    {
-        src: 'https://i.ibb.co/5jZt51Y/E8-BA3324-3641-4-EB2-A1-FC-1-B7-DF4-ABB3-BB-1-201-a.jpg',
-        alt: 'Mountains',
     },
     {
         src: 'https://i.ibb.co/mz0GNzd/IMG-9654.jpg',

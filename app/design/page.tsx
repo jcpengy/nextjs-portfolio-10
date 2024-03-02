@@ -18,10 +18,9 @@ export default async function PortfolioPage() {
             <GraphicDesign/>
             <br/>
             <p id="portfolio-page">.........</p>
-            <br/><br/><br/>
+            <br/><br/>
             <a id="ux_design_section"></a>
             <UXDesign/>
-            <Footer/>
         </section>
     );
 }

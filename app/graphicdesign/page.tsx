@@ -86,7 +86,7 @@ export default async function GraphicDesign() {
                 <div id="graphic-design-project-card">
                     <p>
                         <span id="all-caps">KESSLER PROJECT</span><br/><br/>
-                        3D models, designs, and slides for a theme park concept and finalist in the 2018 Disney Imaginations contest.
+                        Finalist in the 2018 Disney Imaginations contest.
                     </p><br/>
                     <Link
                     id="project-button"

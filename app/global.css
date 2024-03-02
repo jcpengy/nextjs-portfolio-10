@@ -267,7 +267,7 @@ table {
 
 #portfolio-page {
     text-align: center;
-    margin-top: 1em;
+    margin-top: 1.5em;
 }
 
 .prose .callout > p {
@@ -721,7 +721,7 @@ hr {
     background-color: white;
     position: sticky;
     top: 0;
-    padding: 0px 0px 10px 0px;
+    padding: 10px;
     text-align: center;
 }
 
