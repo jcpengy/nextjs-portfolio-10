@@ -1,5 +1,6 @@
 'use client';
 import Footer from "../components/footer";
+import SyriaOriginal from "public/images/nyt-cover.jpg";
 
 export default async function NewYorkTimes() {
     return (
@@ -11,6 +12,13 @@ export default async function NewYorkTimes() {
                 <a className="link" target="_blank" href="https://www.nytimes.com/interactive/2018/06/24/world/middleeast/douma-syria-chemical-attack-augmented-reality-ar-ul.html?mtrref=undefined&gwh=F58C966F1C905F9A7F76DD29F76E6E44&gwt=pay&assetType=PAYWALL"><u>"How We Created a Virtual Crime Scene to Investigate Syria's Chemical Attack"</u></a>
             </p>
             <br/>
+            <img
+                    id="centered-caption"
+                    key='syria'
+                    src={SyriaOriginal}
+                    alt='syria'
+                />
+                <br/>
             <img
                     id="centered-caption"
                     key='syria'

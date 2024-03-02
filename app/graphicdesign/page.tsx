@@ -5,33 +5,9 @@ import React, {useEffect} from "react";
 import Footer from "../components/footer";
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-
-const kessler = [
-    {
-        src: 'https://i.ibb.co/W2NN0fh/kessler2.png',
-        alt: '1',
-    },
-    {
-        src: 'https://i.ibb.co/pytkTgR/kessler3.png',
-        alt: '2',
-    },
-    {
-        src: 'https://i.ibb.co/C1QBjZ7/kessler4.png',
-        alt: '3',
-    },
-    {
-        src: 'https://i.ibb.co/jgQ20tR/kessler4.png',
-        alt: '4',
-    },
-    {
-        src: 'https://i.ibb.co/JjCRXrc/Screen-Shot-2024-01-08-at-9-02-29-PM.png',
-        alt: '5',
-    },
-    {
-        src: 'https://i.ibb.co/WW0XVLG/Screen-Shot-2023-08-28-at-2-18-26-PM.png',
-        alt: '6',
-    },
-]
+import NYTCover from 'public/images/nyt-cover.jpg';
+import EtsyCover from 'public/images/etsy-cover.jpg';
+import Etsy from 'app/etsy/page';
 
 const kesslerposter = [
     {
@@ -101,7 +77,7 @@ export default async function GraphicDesign() {
                     id="graphic-design-project-image"
                     key='nyt-cover'
                     className='w-full rounded'
-                    src="https://i.ibb.co/bQPgWRv/douma-cover-desktop4.jpg"
+                    src={NYTCover}
                     alt='nyt-cover'
                 />
                 <div id="graphic-design-project-card">
@@ -123,7 +99,7 @@ export default async function GraphicDesign() {
                     id="graphic-design-project-image"
                     key='etsy-cover'
                     className='w-full rounded'
-                    src="https://i.ibb.co/MfsjPxW/Screenshot-2024-02-29-at-6-29-00-PM.png"
+                    src={EtsyCover}
                     alt='etsy-cover'
                 />
                 <div id="graphic-design-project-card">
