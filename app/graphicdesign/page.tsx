@@ -128,8 +128,9 @@ export default async function GraphicDesign() {
                         3D models, designs, and slides for a theme park concept and finalist in the 2018 Disney Imaginations contest.
                     </p><br/>
                     <Link
-                    key='/art'
-                    href='/art'>
+                    id="project-button"
+                    key='/kessler'
+                    href='/kessler'>
                         View project
                     </Link>
                 </div>
@@ -148,7 +149,12 @@ export default async function GraphicDesign() {
                         Cover art and graphics for two high-profile breaking news pieces.
                     </p>
                     <br/>
-                    <a href="/kessler"><button id="button">View project</button></a>
+                    <Link
+                    id="project-button"
+                    key='/kessler'
+                    href='/kessler'>
+                        View project
+                    </Link>
                 </div>
             </div><br/>
             <div className="md:grid md:grid-cols-2">
@@ -165,7 +171,12 @@ export default async function GraphicDesign() {
                         Commissioned work and freelance design for small businesses. 
                     </p>
                     <br/>
-                    <a href="/kessler"><button id="button">View project</button></a>
+                    <Link
+                    id="project-button"
+                    key='/kessler'
+                    href='/kessler'>
+                        View project
+                    </Link>
                 </div>
             </div><br/>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
