@@ -65,7 +65,7 @@ class Page extends React.Component<any, any>  {
                 <h4>A little bit about me...</h4><br/><br/>
                 <p>
                     I love art and anything creative. At the University of Pennsylvania, I majored in <a className="link" target="_blank" href="http://cg.cis.upenn.edu/dmd.html"><u>Digital
-                    Media Design</u></a> and minored in Fine Arts. Although my concentrations were computer graphics and 3D modeling, I dabbled in video production, animation, and even costume design (my favorite). Through two on-campus design jobs, I also taught myself 
+                    Media Design</u></a> and minored in Fine Arts. Although I concentrated in computer graphics and 3D modeling, I dabbled in video production, animation, and even costume design (my favorite class). Through two on-campus design jobs, I also taught myself 
                     graphic design basics and small organization branding.<br/><br/>
                     {/* <img
                         key={'3dmodel'}
@@ -74,7 +74,7 @@ class Page extends React.Component<any, any>  {
                         alt={'3dmodel'}
                     />
                     <i>3D model of my college apartment</i><br/><br/> */}
-                    As a front-end developer at Adobe, I'm able to combine art and engineering to design and build internal tools that bridge product gaps in Experience Cloud products. On the side, I do freelance graphic design work for small businesses through my Etsy shop 
+                    As a front-end developer at Adobe, I'm able to combine art and engineering to design and build internal tools that bridge product gaps in Experience Cloud products. On the side, I do freelance graphic design for small businesses through my Etsy shop 
                     and draw CEO Jess cartoons (when an idea strikes me).
                     <br/><br/>
                     <div id="rowContainer">
@@ -105,7 +105,7 @@ class Page extends React.Component<any, any>  {
                 </a></button>
                 <br/>
                 <br/>
-                    Currently, I live in San Francisco with my Yorkie Butters (after the South Park character) and my hamster Abrahammy Lincoln (Hammy for short). When I'm not making art, I'm usually watching my favorite reality TV shows, scrolling through 
+                    I currently live in San Francisco with my Yorkie Butters (after the South Park character) and my hamster Abrahammy Lincoln (Hammy for short). When I'm not making art, I'm usually watching my favorite reality TV shows, scrolling through 
                     puppy Reddit threads and Wirecutter recommendations, or listening to music.<br/><br/>
                     <img className='w-full rounded'
                      key='pets'

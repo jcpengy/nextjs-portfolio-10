@@ -127,13 +127,12 @@ export default async function GraphicDesign() {
                         <span id="all-caps">KESSLER PROJECT</span><br/><br/>
                         3D models, designs, and slides for a theme park concept and finalist in the 2018 Disney Imaginations contest.
                     </p>
-                    <Link
+                    {/* <Link
                     key='/kessler'
-                    href='/kessler'
-                  >
-                     <button id="button"></button>
-                    View project
-                  </Link>
+                    href='/kessler'> */}
+                     <button id="button" href="/art">View project</button>
+                    {/* View project
+                  </Link> */}
                 </div>
             </div><br/>
             <div className="md:grid md:grid-cols-2">
