@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import NYTCover from 'public/images/nyt-cover.jpg';
 import EtsyCover from 'public/images/etsy-cover.jpg';
-import Etsy from 'app/etsy/page';
+import KesslerCover from 'public/images/kessler-slide-1.jpg';
 
 const kesslerposter = [
     {
@@ -56,7 +56,7 @@ export default async function GraphicDesign() {
                     id="graphic-design-project-image"
                     key='kessler 1'
                     className='w-full rounded'
-                    src='https://i.ibb.co/f0zG8Xs/kessler1.png'
+                    src={KesslerCover.src}
                     alt='kessler 1'
                 />
                 <div id="graphic-design-project-card">

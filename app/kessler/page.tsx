@@ -1,5 +1,6 @@
 'use client';
 import Footer from "../components/footer";
+import KesslerPoster from "public/images/kessler-poster.jpg";
 
 export default async function Kessler() {
     return (
@@ -31,7 +32,7 @@ export default async function Kessler() {
             <img
                     id="centered-caption"
                     key='kessler-poster'
-                    src="https://i.ibb.co/XSM6SKv/kessler-poster.png"
+                    src={KesslerPoster.src}
                     alt='kessler-poster'
                 />
             <Footer/>
