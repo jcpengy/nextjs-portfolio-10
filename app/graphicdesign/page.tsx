@@ -126,15 +126,14 @@ export default async function GraphicDesign() {
                     <p>
                         <span id="all-caps">KESSLER PROJECT</span><br/><br/>
                         3D models, designs, and slides for a theme park concept and finalist in the 2018 Disney Imaginations contest.
-                    </p><br/><br/>
-                    <button id="button">
+                    </p>
                     <Link
-                    key='/art'
-                    href='/art'
+                    key='/kessler'
+                    href='/kessler'
                   >
+                     <button id="button"></button>
                     View project
                   </Link>
-                    </button>
                 </div>
             </div><br/>
             <div className="md:grid md:grid-cols-2">
@@ -177,17 +176,8 @@ export default async function GraphicDesign() {
                     />
                 ))}
             </SlideshowLightbox><br/>
-            <p id="centered-caption"><i>Redesigns, 2023</i></p><br/>
-            <SlideshowLightbox className='container grid grid-cols-2 gap-1'>
-                {kesslerposter.map((image) => (
-                    <img
-                        key={image.src}
-                        className='w-full rounded'
-                        src={image.src}
-                        alt={image.alt}
-                    />
-                ))}
-            </SlideshowLightbox>
+            <p id="centered-caption"><i>Redesigns, 2023</i></p>
+            <br/>
             <br/>
             <h3>The New York Times</h3>
             <p>Cover art and graphics I created for two high-profile breaking news pieces as a Graphics Intern.<br/><br/>

@@ -2,6 +2,33 @@
 import {initLightboxJS, SlideshowLightbox} from "lightbox.js-react";
 import React, {useEffect} from "react";
 
+const ceojess = [
+    {
+        src: "https://i.ibb.co/BVHNMwp/IMG-1407.jpg",
+        alt: "Getting set up"
+    },
+    {
+        src: 'https://i.ibb.co/YXwWJ9K/IMG-9214.jpg',
+        alt: 'Wine tasting',
+    },
+    {
+        src: 'https://i.ibb.co/5vJtf5K/IMG-8416.png',
+        alt: 'SF Hills',
+    },
+    {
+        src: 'https://i.ibb.co/5kkqYW6/IMG-8949.jpg',
+        alt: 'Congress1',
+    },
+    {
+        src: 'https://i.ibb.co/nsnCwCD/IMG-8950.jpg',
+        alt: 'Congress2',
+    },
+    {
+        src: 'https://i.ibb.co/z7n38WQ/IMG-8951.jpg',
+        alt: 'Lady Clingford',
+    },
+]
+
 class Page extends React.Component<any, any>  {
     render() {
         // useEffect(() => {
@@ -26,7 +53,7 @@ class Page extends React.Component<any, any>  {
                     <div>
                         <h2>Hi, I'm Jess.</h2><br/>
                         <p>
-                            I'm a front-end developer and amateur cartoonist. I post my doodles regularly on <a className="link" target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>).
+                            I'm a front-end developer and amateur cartoonist. I post my doodles regularly on <a className="link" target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>.
                             <br/><br/>
                             For creative collaborations or art commissions, please email pengjess2@gmail.com.<br/><br/>
                             <a className="link" target="_blank" href="https://i.ibb.co/WkBrpdF/Jessica-Peng-Resume.jpg"><u>Resume</u></a> / <a
@@ -47,10 +74,39 @@ class Page extends React.Component<any, any>  {
                         alt={'3dmodel'}
                     />
                     <i>3D model of my college apartment</i><br/><br/> */}
-                    As a front-end developer at Adobe, I'm able to combine art and engineering to design and build internal tools that bridge product gaps in Experience Cloud products. On the side, I do freelance graphic design work for small businesses through my Etsy shop.
+                    As a front-end developer at Adobe, I'm able to combine art and engineering to design and build internal tools that bridge product gaps in Experience Cloud products. On the side, I do freelance graphic design work for small businesses through my Etsy shop 
+                    and draw CEO Jess cartoons (when an idea strikes me).
                     <br/><br/>
+                    <div id="rowContainer">
+                    <div id="review1">
+                        <img src={ceojess[0].src} alt="" width="300" height="300" />
+                    </div>
+                    <div id="review1">
+                        <img src={ceojess[1].src} alt="" width="300" height="300" />
+                    </div>
+                    <div id="review1">
+                        <img src={ceojess[2].src} alt="" width="300" height="300" />
+                    </div>
+                </div>
+                <div id="rowContainer">
+                    <div id="review1">
+                        <img src={ceojess[3].src} alt="" width="300" height="300" />
+                    </div>
+                    <div id="review1">
+                        <img src={ceojess[4].src} alt="" width="300" height="300" />
+                    </div>
+                    <div id="review1">
+                        <img src={ceojess[5].src} alt="" width="300" height="300" />
+                    </div>
+                </div>
+                <br/>
+                <button id="button"><a target="_blank" href="https://instagram.com/officialceojess">More on my
+                    Instagram →
+                </a></button>
+                <br/>
+                <br/>
                     Currently, I live in San Francisco with my Yorkie Butters (after the South Park character) and my hamster Abrahammy Lincoln (Hammy for short). When I'm not making art, I'm usually watching my favorite reality TV shows, scrolling through 
-                    puppy Reddit threads and WireCutter recommendations, or listening to music. 
+                    puppy Reddit threads and Wirecutter recommendations, or listening to music.<br/><br/>
                     <img className='w-full rounded'
                      key='pets'
                      src='https://i.ibb.co/GCg3Qbt/784bce54-3d78-4161-8d7b-c2c8cc1630f3.jpg'
