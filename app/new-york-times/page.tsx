@@ -1,6 +1,8 @@
 'use client';
 import Footer from "../components/footer";
 import SyriaOriginal from "public/images/nyt-cover.jpg";
+import ThaiCaveOpening from "public/images/NYT/thai-cave-opening.jpg";
+import ThaiCaveMountain from "public/images/NYT/thai-cave-mountain.jpg";
 
 export default async function NewYorkTimes() {
     return (
@@ -19,7 +21,7 @@ export default async function NewYorkTimes() {
                     alt='syria'
                 />
                 <br/>
-            <img
+                <img
                     id="centered-caption"
                     key='syria'
                     src="https://i.ibb.co/CMchfKW/Screen-Shot-2023-11-27-at-2-58-22-PM.png"
@@ -27,11 +29,17 @@ export default async function NewYorkTimes() {
                 />
                 <br/>
                 <img
-                key='thai'
-                className='w-full rounded'
-                src='https://i.ibb.co/z4Sc5R5/thai.png'
-                alt='thai cave'
-            />
+                    id="centered-caption"
+                    key='thai-cave-mountain'
+                    src={ThaiCaveMountain.src}
+                    alt='thai-cave-mountain'
+                />
+                <br/><img
+                    id="centered-caption"
+                    key='thai-cave-opening'
+                    src={ThaiCaveOpening.src}
+                    alt='thai-cave-opening'
+                />
             <Footer/>
         </section>
     );

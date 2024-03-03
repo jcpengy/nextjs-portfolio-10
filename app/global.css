@@ -38,7 +38,8 @@
  
 #graphic-design-project-image {
     padding: 5px;
-
+    object-fit: cover;
+    height: 100%
 }
 #graphic-design-project-title {
     font-size: 21px;
