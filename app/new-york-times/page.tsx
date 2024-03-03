@@ -1,6 +1,7 @@
 'use client';
 import Footer from "../components/footer";
 import SyriaOriginal from "public/images/nyt-cover.jpg";
+import SyriaHeader from "public/images/NYT/syria-header.jpg";
 import ThaiCaveOpening from "public/images/NYT/thai-cave-opening.jpg";
 import ThaiCaveMountain from "public/images/NYT/thai-cave-mountain.jpg";
 
@@ -16,16 +17,16 @@ export default async function NewYorkTimes() {
             <br/>
             <img
                     id="centered-caption"
-                    key='syria'
+                    key='syria-original'
                     src={SyriaOriginal.src}
-                    alt='syria'
+                    alt='syria-original'
                 />
                 <br/>
                 <img
                     id="centered-caption"
-                    key='syria'
-                    src="https://i.ibb.co/CMchfKW/Screen-Shot-2023-11-27-at-2-58-22-PM.png"
-                    alt='syria'
+                    key='syria-header'
+                    src={SyriaHeader.src}
+                    alt='syria=header'
                 />
                 <br/>
                 <img
