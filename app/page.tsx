@@ -53,7 +53,7 @@ class Page extends React.Component<any, any>  {
                     <div>
                         <h2>Hi, I'm Jess.</h2><br/>
                         <p>
-                            I'm a San Francisco-based freelance graphic designer and front-end developer at Adobe building internal tools on the Digital Experience Customer Engineering team. I graduated from the University of Pennsylvania with a degree  
+                            I'm a freelance graphic designer and front-end developer at Adobe. I graduated from the University of Pennsylvania with a degree  
                             in <a className="link" target="_blank" href="http://cg.cis.upenn.edu/dmd.html"><u>Digital
                             Media Design</u></a> and a minor in Fine Arts.<br/><br/>
                         </p>

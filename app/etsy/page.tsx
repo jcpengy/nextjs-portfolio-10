@@ -3,6 +3,9 @@ import Footer from "../components/footer";
 import 'lightbox.js-react/dist/index.css'
 import {SlideshowLightbox, initLightboxJS} from 'lightbox.js-react'
 import React, {useEffect} from "react";
+import BabyTop from "public/images/Etsy/IMG_1486.jpg";
+import BabyLeft from "public/images/Etsy/IMG_1487.jpg";
+import BabyRight from "public/images/Etsy/IMG_1488.jpg";
 
 const graphicdesignimages = [
     {
@@ -52,6 +55,27 @@ export default async function Etsy() {
             <h3 id="all-caps">ETSY</h3>
             <p>Freelance work I've done for small businesses, schools, and family
                 events like weddings, vacations, and reunions.</p><br/>
+                <img
+                    id="centered-caption"
+                    key='baby-top'
+                    src={BabyTop.src}
+                    alt='baby-top'
+                />
+                <br/>
+                <div className="md:grid md:grid-cols-2">
+                <img
+                    id="centered-caption"
+                    key='baby-left'
+                    src={BabyLeft.src}
+                    alt='baby-left'
+                />
+                <img
+                    id="centered-caption"
+                    key='baby-right'
+                    src={BabyRight.src}
+                    alt='baby-right'
+                />
+                </div>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {graphicdesignimages.map((image) => (
                     <img
