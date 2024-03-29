@@ -15,6 +15,10 @@
     padding: 100px;
 }
 
+hr {
+    border: 1px solid lightgrey;
+}
+
 #all-caps {
     letter-spacing: 2.5px;
     font-size: 20px;
@@ -274,6 +278,7 @@ table {
 #portfolio-page {
     text-align: center;
     margin-top: 1.5em;
+    padding: 50px 100px 50px 100px;
 }
 
 .prose .callout > p {
