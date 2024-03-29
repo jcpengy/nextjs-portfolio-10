@@ -5,12 +5,11 @@
 :root {
     --liljesswidth: 20vw;
     --blue: #5c5c5c;
-    --pink: #5c5c5c;
+    --pink: grey;
 }
 
 #body {
     margin: 0 auto;
-    width: 80vw;
     border: 1px solid lightgrey;
     background-color: rgba(0, 0, 0, 0.02);
     padding: 100px;
@@ -32,13 +31,13 @@
 }
 
 #website-header-pic {
-    width: 150px;
+    width: 200px;
     height: auto;
     margin: 0 auto;
 }
 
 #graphic-design-project-card {
-    background-color: #fafafa;
+    background-color: white;
     justify-content: center;
     align-items: center;
     text-align: left;
@@ -63,10 +62,6 @@ html {
     /*background-repeat: repeat;*/
     color: var(--blue);
     padding: 100px;
-}
-
-section {
-    background-color: rgba(255, 255, 255, 0.85);
 }
 
 p {
@@ -108,7 +103,7 @@ h4 {
     -webkit-font-smoothing: antialiased;
     color: var(--pink);
     margin-top: 20px;
-    margin-bottom: -10px;
+    margin-bottom: 20px;
 }
 
 .hobby {
@@ -667,7 +662,7 @@ h1 span span {
     color: grey;
     font-size: 20px;
     text-align: center;
-    margin: 20px;
+    margin: 25px;
     letter-spacing: 2.5px;
 }
 
@@ -729,7 +724,6 @@ hr {
 }
 
 #sticky-header {
-    background-color: white;
     position: sticky;
     top: 0;
     padding: 10px;
