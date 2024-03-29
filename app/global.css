@@ -27,6 +27,12 @@
     margin: 15px;
 }
 
+#website-header-pic {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+}
+
 #graphic-design-project-card {
     background-color: #fafafa;
     justify-content: center;

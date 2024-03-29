@@ -4,6 +4,7 @@ import clsx from 'clsx';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { LayoutGroup, motion } from 'framer-motion';
+import WebsiteHeaderPic from 'public/images/butters.png';
 
 const navItems = {
   // '/': {
@@ -27,6 +28,12 @@ export default function Navbar() {
     <aside className="-ml-[8px] tracking-tight">
       <div className="lg:sticky lg:top-20">
         <LayoutGroup>
+        <img
+          id='website-header-pic'
+          key={'website-header-pic'}
+          src={WebsiteHeaderPic.src}
+          alt={'website-header-pic'}
+          />
           <div id="website-header">JESS PENG</div>
           <nav id="navbar" className="flex flex-row items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           >

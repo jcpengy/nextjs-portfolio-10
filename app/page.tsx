@@ -36,31 +36,12 @@ class Page extends React.Component<any, any>  {
         // });
         return (
             <section id="portfolio-page">
-                <div className="md:grid md:grid-cols-2">
-                    <img
-            id='profile-image'
-            key='website-header-pic'
-            src='https://i.ibb.co/HV5xtqt/Cam-Scanner-02-28-2024-17-46-1.jpg'
-            alt='Jess Peng'
-           />
-                    {/* <div id="profile-image">
-                        <img id="circular--square"
-                             key='profile-picture'
-                             src='https://i.ibb.co/7pHw7wY/IMG-9588.jpg'
-                             alt='Profile picture'
-                        />
-                    </div> */}
-                    <div>
+                  <p> 
                         <h2>Hi, I'm Jess.</h2><br/>
-                        <p>
-                            I'm a freelance graphic designer and front-end developer at Adobe. I graduated from the University of Pennsylvania with a degree  
+                            I'm a front-end developer at Adobe and a freelance graphic designer. I graduated from the University of Pennsylvania with a degree  
                             in <a className="link" target="_blank" href="http://cg.cis.upenn.edu/dmd.html"><u>Digital
                             Media Design</u></a> and a minor in Fine Arts.<br/><br/>
-                        </p>
-                    </div>
-                </div>
-                <p>                    
-                If I'm not tending to my demanding Yorkie named Butters (after the South Park character), I'm usually making art, watching dating reality shows, scrolling through puppy Reddit, or drawing cartoons on <a className="link" target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>. 
+                When I'm not tending to my demanding Yorkie Butters, I'm usually making art, watching dating reality shows, scrolling through puppy Reddit, or drawing cartoons on <a className="link" target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>. 
                             For creative collaborations or art commissions, please email <b>pengjess2@gmail.com</b>. Thanks for stopping by!<br/><br/>
                             <a className="link" target="_blank" href="https://i.ibb.co/WkBrpdF/Jessica-Peng-Resume.jpg"><u>Resume</u></a> / <a
                             className="link" target="_blank" href="mailto:pengjess2@gmail.com"><u>Email</u></a> / <a
