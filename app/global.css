@@ -10,6 +10,10 @@
 
 #body {
     margin: 0 auto;
+    width: 80vw;
+    border: 1px solid lightgrey;
+    background-color: rgba(0, 0, 0, 0.02);
+    padding: 100px;
 }
 
 #all-caps {
@@ -28,7 +32,7 @@
 }
 
 #website-header-pic {
-    width: 300px;
+    width: 150px;
     height: auto;
     margin: 0 auto;
 }
@@ -54,11 +58,11 @@
     padding-bottom: 10px;
 }
 html {
-    min-width: 360px;
     background-color: white;
     /*background-image: url("https://i.ibb.co/X7pPY9D/background.png");*/
     /*background-repeat: repeat;*/
     color: var(--blue);
+    padding: 100px;
 }
 
 section {

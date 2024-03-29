@@ -37,7 +37,7 @@ class Page extends React.Component<any, any>  {
         return (
             <section id="portfolio-page">
                   <p> 
-                        <h2>Hi, I'm Jess.</h2><br/>
+                        
                             I'm a front-end developer at Adobe and a freelance graphic designer. I graduated from the University of Pennsylvania with a degree  
                             in <a className="link" target="_blank" href="http://cg.cis.upenn.edu/dmd.html"><u>Digital
                             Media Design</u></a> and a minor in Fine Arts.<br/><br/>

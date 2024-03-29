@@ -71,7 +71,7 @@ export default function RootLayout({
               graphik.variable
           )}
       >
-      <body id="body" className="antialiased max-w-2xl mb-40 flex flex-col md:flex-row mt-8 lg:mx-auto">
+      <body id="body" className="antialiased mb-40 flex flex-col md:flex-row mt-8 lg:mx-auto">
       <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
         <Sidebar/>
         {children}
