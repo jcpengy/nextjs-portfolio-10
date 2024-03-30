@@ -22,11 +22,14 @@ const navItems = {
 };
 
 const toggle = () => {
-  if (document.getElementById("navbar-mobile")?.style.display === "block") {
-    if (document.getElementById("navbar-mobile-links")?.style.display === "block") {
-      document.getElementById("navbar-mobile-links")?.style.display = "none"; 
-    } else {
-      document.getElementById("navbar-mobile-links")?.style.display = "block"; 
+  if (document.getElementById("navbar-mobile")) {
+    let mobileLinks = document.getElementById("navbar-mobile-links");
+    if (mobileLinks) {
+      if (mobileLinks.style.display === "block") {
+        mobileLinks.style.display = "none"; 
+      } else {
+        mobileLinks.style.display = "block"; 
+      }
     }
   }
 }
