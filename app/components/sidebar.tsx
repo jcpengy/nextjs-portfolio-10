@@ -24,9 +24,9 @@ const navItems = {
 export default function Navbar() {
   let pathname = usePathname() || '/';
 
-  return (
-    <div>
-      <nav id="navbar-mobile" className="flex flex-row items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
+  return (      
+    <aside className="-ml-[8px] tracking-tight">
+    <nav id="navbar-mobile" className="flex flex-row items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           >
             <div id="navbar-mobile-menu">MENU</div>
             <div id="nav-links" className="flex flex-row space-x-0">
@@ -52,7 +52,6 @@ export default function Navbar() {
               })}
             </div>
           </nav>
-    <aside className="-ml-[8px] tracking-tight">
       <div className="lg:sticky lg:top-20">
         <LayoutGroup>
         <img
@@ -102,6 +101,5 @@ export default function Navbar() {
         </LayoutGroup>
       </div>
     </aside>
-    </div>
   );
 }
