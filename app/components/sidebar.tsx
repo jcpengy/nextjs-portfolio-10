@@ -28,9 +28,16 @@ export default function Navbar() {
     <aside className="-ml-[8px] tracking-tight">
       <div className="lg:sticky lg:top-20">
         <LayoutGroup>
-        <nav id="navbar-mobile" className="flex flex-col items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
+        <img
+          id='website-header-pic'
+          key={'website-header-pic'}
+          src={WebsiteHeaderPic.src}
+          alt={'website-header-pic'}
+          />
+          <div id="website-header">JESS PENG</div>
+          <nav id="navbar-mobile" className="flex flex-row items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           >
-            <div id="navbar-mobile-menu" className="flex flex-col space-x-0">
+            <div id="navbar-mobile-menu" className="flex flex-row space-x-0">
               <Link
                     id="nav-link"
                     key='menu'
@@ -65,13 +72,6 @@ export default function Navbar() {
               })}
             </div>
           </nav>
-        <img
-          id='website-header-pic'
-          key={'website-header-pic'}
-          src={WebsiteHeaderPic.src}
-          alt={'website-header-pic'}
-          />
-          <div id="website-header">JESS PENG</div>
           <nav id="navbar-desktop" className="flex flex-row items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           >
             <div id="nav-links" className="flex flex-row space-x-0">

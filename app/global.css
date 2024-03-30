@@ -618,6 +618,9 @@ h1 span span {
 
 /*mobile*/
 @media screen and (max-width: 640px) {
+    hr {
+        display: none;
+    }
     #navbar-mobile {
         display: block;
     }
