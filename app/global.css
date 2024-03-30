@@ -629,6 +629,7 @@ h1 span span {
 
     #body {
         padding: 20px;
+        border: none;
     }
 
     #portfolio-page {
