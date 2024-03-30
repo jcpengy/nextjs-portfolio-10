@@ -37,7 +37,7 @@ hr {
     color: lightgrey;
 }
 
-#nav-link:hover {
+#nav-links:hover {
     cursor: pointer;
     color: black;
 }
