@@ -621,12 +621,12 @@ h1 span span {
     hr {
         display: none;
     }
-    #navbar-mobile {
+    /* #navbar-mobile {
         display: block;
     }
     #navbar-desktop {
-        display: none;
-    }
+        display: block;
+    } */
     #website-header-pic {
         height: 150px;
         width: auto;
