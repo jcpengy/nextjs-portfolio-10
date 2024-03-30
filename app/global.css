@@ -42,6 +42,10 @@ hr {
     color: black;
 }
 
+#nav-links:active {
+    color: black;
+}
+
 #website-header-pic {
     width: 200px;
     height: auto;
