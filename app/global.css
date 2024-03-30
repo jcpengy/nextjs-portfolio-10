@@ -612,6 +612,10 @@ h1 span span {
     bottom: 20px;
 }
 
+#art-image {
+    padding: 5px; 
+}
+
 /*mobile*/
 @media screen and (max-width: 640px) {
     html {
@@ -623,7 +627,7 @@ h1 span span {
     }
 
     #portfolio-page {
-        padding: 20px;
+        padding: 10px;
     }
 
     #profile-image {
