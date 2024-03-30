@@ -619,10 +619,12 @@ h1 span span {
 #navbar-mobile-menu {
     letter-spacing: 2.5px;
     border: 1px solid grey;
+    text-align: center;
+    width: 100%;
 }
 
 /*mobile*/
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 960px) {
     hr {
         display: none;
     }
@@ -642,12 +644,13 @@ h1 span span {
     }
 
     #body {
-        padding: 20px;
+        padding: 10px;
         border: none;
     }
 
     #portfolio-page {
         padding: 0px;
+        margin-top: 0px;
     }
 
     #profile-image {

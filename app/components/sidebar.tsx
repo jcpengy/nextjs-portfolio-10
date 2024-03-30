@@ -26,7 +26,7 @@ export default function Navbar() {
 
   return (      
     <aside className="-ml-[8px] tracking-tight">
-    <nav id="navbar-mobile" className="flex flex-row items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
+    <div id="navbar-mobile" className="flex flex-col items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           >
             <div id="navbar-mobile-menu">MENU</div>
             <div id="nav-links" className="flex flex-row space-x-0">
