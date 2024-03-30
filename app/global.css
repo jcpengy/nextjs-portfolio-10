@@ -616,17 +616,22 @@ h1 span span {
     padding: 5px; 
 }
 
+#navbar-mobile-menu {
+    letter-spacing: 2.5px;
+    border: 1px solid grey;
+}
+
 /*mobile*/
 @media screen and (max-width: 640px) {
     hr {
         display: none;
     }
-    /* #navbar-mobile {
+    #navbar-mobile {
         display: block;
     }
     #navbar-desktop {
-        display: block;
-    } */
+        display: none;
+    }
     #website-header-pic {
         height: 150px;
         width: auto;

@@ -35,31 +35,6 @@ export default function Navbar() {
           alt={'website-header-pic'}
           />
           <div id="website-header">JESS PENG</div>
-          <nav id="navbar-mobile" className="flex flex-row items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
-          >
-            <div id="nav-links" className="flex flex-row space-x-0">
-              {Object.entries(navItems).map(([path, { name }]) => {
-                const isActive = path === pathname;
-                return (
-                  <Link
-                    id="nav-link"
-                    key={path}
-                    href={path}
-                    className={clsx(
-                      '',
-                      {
-                        'text-neutral-500': !isActive,
-                      }
-                    )}
-                  >
-                    <span className="relative py-1 px-2">
-                      {name}
-                    </span>
-                  </Link>
-                );
-              })}
-            </div>
-          </nav>
           <nav id="navbar-desktop" className="flex flex-row items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           >
             <div id="nav-links" className="flex flex-row space-x-0">
