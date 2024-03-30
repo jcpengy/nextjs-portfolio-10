@@ -619,12 +619,12 @@ h1 span span {
 /*mobile*/
 @media screen and (max-width: 640px) {
     #website-header-pic {
-        height: 100px;
+        height: 150px;
         width: auto;
     }
-    
+
     html {
-        padding: 15px; 
+        padding: 0px; 
     }
 
     #body {
@@ -632,7 +632,7 @@ h1 span span {
     }
 
     #portfolio-page {
-        padding: 10px;
+        padding: 0px;
     }
 
     #profile-image {
