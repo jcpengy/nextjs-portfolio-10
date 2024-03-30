@@ -21,6 +21,16 @@ const navItems = {
   },
 };
 
+const toggle = () => {
+  if (document.getElementById("navbar-mobile")?.style.display === "block") {
+    if (document.getElementById("navbar-mobile-links")?.style.display === "block") {
+      document.getElementById("navbar-mobile-links")?.style.display = "none"; 
+    } else {
+      document.getElementById("navbar-mobile-links")?.style.display = "block"; 
+    }
+  }
+}
+
 export default function Navbar() {
   let pathname = usePathname() || '/';
 
@@ -28,8 +38,8 @@ export default function Navbar() {
     <aside className="-ml-[8px] tracking-tight">
     <div id="navbar-mobile" className="flex flex-col items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           >
-            <div id="navbar-mobile-menu">MENU</div>
-            <div id="nav-links" className="flex flex-row space-x-0">
+            <div id="navbar-mobile-menu"><button onClick="toggle()">MENU</button></div>
+            <div id="navbar-mobile-links">
               {Object.entries(navItems).map(([path, { name }]) => {
                 const isActive = path === pathname;
                 return (
