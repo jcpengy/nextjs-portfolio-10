@@ -618,6 +618,11 @@ h1 span span {
 
 /*mobile*/
 @media screen and (max-width: 640px) {
+    #website-header-pic {
+        height: 100px;
+        width: auto;
+    }
+    
     html {
         padding: 15px; 
     }
