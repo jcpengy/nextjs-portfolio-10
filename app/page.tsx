@@ -41,7 +41,7 @@ class Page extends React.Component<any, any>  {
                             I'm a front-end developer at Adobe and a freelance graphic designer. I graduated from the University of Pennsylvania with a degree  
                             in <a className="link" target="_blank" href="http://cg.cis.upenn.edu/dmd.html"><u>Digital
                             Media Design</u></a> and a minor in Fine Arts.<br/><br/>
-                When I'm not tending to my demanding Yorkie Butters, I'm usually making art, watching dating reality shows, scrolling through puppy Reddit, or drawing cartoons on <a className="link" target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>. 
+                When I'm not tending to my Yorkie Butters, I like making art, watching reality shows, scrolling through puppy Reddit, or drawing cartoons on <a className="link" target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>. 
                             For creative collaborations or art commissions, please email <b>pengjess2@gmail.com</b>. Thanks for stopping by!<br/><br/>
                             <a className="link" target="_blank" href="https://i.ibb.co/WkBrpdF/Jessica-Peng-Resume.jpg"><u>Resume</u></a> / <a
                             className="link" target="_blank" href="mailto:pengjess2@gmail.com"><u>Email</u></a> / <a

@@ -76,6 +76,7 @@ export default async function Etsy() {
                     alt='baby-right'
                 />
                 </div>
+                <br/><br/>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {graphicdesignimages.map((image) => (
                     <img

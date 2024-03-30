@@ -17,7 +17,7 @@
 
 hr {
     border: 1px solid lightgrey;
-    margin-top: -25px;
+    margin-top: -20px;
 }
 
 #all-caps {
@@ -34,15 +34,15 @@ hr {
 #nav-link {
     margin: 15px;
     font-size: 12px;
-    color: lightgrey;
+    color: grey;
 }
 
-#nav-links:hover {
+#nav-link:hover {
     cursor: pointer;
     color: black;
 }
 
-#nav-links:active {
+#nav-link:active {
     color: black;
 }
 
@@ -614,6 +614,18 @@ h1 span span {
 
 /*mobile*/
 @media screen and (max-width: 640px) {
+    html {
+        padding: 15px; 
+    }
+
+    #body {
+        padding: 20px;
+    }
+
+    #portfolio-page {
+        padding: 20px;
+    }
+
     #profile-image {
         width: 50vw;
     }
@@ -677,7 +689,7 @@ h1 span span {
 }
 
 #website-header {
-    color: lightgrey;
+    color: grey;
     font-size: 20px;
     text-align: center;
     margin: 25px;
@@ -691,11 +703,6 @@ h1 span span {
 #nav-links {
     letter-spacing: 2.5px;
     background-color: #fafafa;
-}
-
-hr {
-    color: lightgrey;
-    margin-top: -30px;
 }
 
 #rowContainer {

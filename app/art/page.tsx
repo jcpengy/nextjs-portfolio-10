@@ -3,6 +3,8 @@ import 'lightbox.js-react/dist/index.css'
 import {SlideshowLightbox, initLightboxJS} from 'lightbox.js-react'
 import {useEffect} from "react";
 import Footer from "../components/footer";
+import Enzo from "../../public/images/Fine Art/enzo.jpg";
+import Card from "../../public/images/Fine Art/happyholidays.jpg";
 
 const artimages = [
     {
@@ -52,6 +54,22 @@ export default async function Art() {
     return (
         <section id="portfolio-page">
             <p>View more of my personal art at <a className="link" href="https://instagram.com/jessp.design" target="_blank">@jessp.design</a>.</p><br/>
+            <div className="md:grid md:grid-cols-2">
+                <img
+                    id="art-image"
+                    key='enzo'
+                    className='w-full rounded'
+                    src={Enzo.src}
+                    alt='enzo'
+                />
+                <img
+                    id="art-image"
+                    key='card'
+                    className='w-full rounded'
+                    src={Card.src}
+                    alt='card'
+                />
+            </div>
             <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {artimages.map((image) => (
                     <img
