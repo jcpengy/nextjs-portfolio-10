@@ -51,7 +51,7 @@ export default function Navbar() {
                 );
               })}
             </div>
-          </nav>
+          </div>
       <div className="lg:sticky lg:top-20">
         <LayoutGroup>
         <img
