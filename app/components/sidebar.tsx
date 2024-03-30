@@ -37,20 +37,8 @@ export default function Navbar() {
           <div id="website-header">JESS PENG</div>
           <nav id="navbar-mobile" className="flex flex-row items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           >
-            <div id="navbar-mobile-menu" className="flex flex-row space-x-0">
-              <Link
-                    id="nav-link"
-                    key='menu'
-                    href=''
-                    className='text-neutral-500'
-                  >
-                    <span className="relative py-1 px-2">
-                      MENU
-                    </span>
-              </Link>
-            </div>
-            <div id="nav-links" className="flex flex-col space-x-0">
-            {Object.entries(navItems).map(([path, { name }]) => {
+            <div id="nav-links" className="flex flex-row space-x-0">
+              {Object.entries(navItems).map(([path, { name }]) => {
                 const isActive = path === pathname;
                 return (
                   <Link
