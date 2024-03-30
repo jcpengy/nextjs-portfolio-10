@@ -618,6 +618,12 @@ h1 span span {
 
 /*mobile*/
 @media screen and (max-width: 640px) {
+    #navbar-mobile {
+        display: block;
+    }
+    #navbar-desktop {
+        display: none;
+    }
     #website-header-pic {
         height: 150px;
         width: auto;
@@ -706,7 +712,12 @@ h1 span span {
     letter-spacing: 2.5px;
 }
 
-#navbar {
+#navbar-mobile {
+    justify-content: center;
+    display: none;
+}
+
+#navbar-desktop{
     justify-content: center;
 }
 

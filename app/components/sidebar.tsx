@@ -28,6 +28,43 @@ export default function Navbar() {
     <aside className="-ml-[8px] tracking-tight">
       <div className="lg:sticky lg:top-20">
         <LayoutGroup>
+        <nav id="navbar-mobile" className="flex flex-col items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
+          >
+            <div id="navbar-mobile-menu" className="flex flex-col space-x-0">
+              <Link
+                    id="nav-link"
+                    key='menu'
+                    href=''
+                    className='text-neutral-500'
+                  >
+                    <span className="relative py-1 px-2">
+                      MENU
+                    </span>
+              </Link>
+            </div>
+            <div id="nav-links" className="flex flex-col space-x-0">
+            {Object.entries(navItems).map(([path, { name }]) => {
+                const isActive = path === pathname;
+                return (
+                  <Link
+                    id="nav-link"
+                    key={path}
+                    href={path}
+                    className={clsx(
+                      '',
+                      {
+                        'text-neutral-500': !isActive,
+                      }
+                    )}
+                  >
+                    <span className="relative py-1 px-2">
+                      {name}
+                    </span>
+                  </Link>
+                );
+              })}
+            </div>
+          </nav>
         <img
           id='website-header-pic'
           key={'website-header-pic'}
@@ -35,7 +72,7 @@ export default function Navbar() {
           alt={'website-header-pic'}
           />
           <div id="website-header">JESS PENG</div>
-          <nav id="navbar" className="flex flex-row items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
+          <nav id="navbar-desktop" className="flex flex-row items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           >
             <div id="nav-links" className="flex flex-row space-x-0">
               {Object.entries(navItems).map(([path, { name }]) => {
@@ -54,7 +91,7 @@ export default function Navbar() {
                   >
                     <span className="relative py-1 px-2">
                       {name}
-                      {/* {path === pathname ? (
+                      {path === pathname ? (
                         <motion.div
                           className="absolute h-[1px] top-7 mx-2 inset-0 bg-neutral-200 dark:bg-neutral-800 z-[-1] dark:bg-gradient-to-r from-transparent to-neutral-900"
                           layoutId="sidebar"
@@ -64,7 +101,7 @@ export default function Navbar() {
                             damping: 30,
                           }}
                         />
-                      ) : null} */}
+                      ) : null}
                     </span>
                   </Link>
                 );
