@@ -13,7 +13,7 @@ import Dog2 from "../../public/images/Fine Art/dog2.jpg";
 import Dog3 from "../../public/images/Fine Art/dog3.jpg";
 import Card from "../../public/images/Fine Art/happyholidays.jpg";
 import Painting from "../../public/images/Fine Art/painting.jpg";
-import DogPortraits from "../../public/images/Fine Art/dog-portraits.jpg.jpg";
+import DogPortraits from "../../public/images/Fine Art/dog-portraits.jpg";
 import Dog4 from "../../public/images/Fine Art/dogs.jpg";
 
 export default async function Art() {

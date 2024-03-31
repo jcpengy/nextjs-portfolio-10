@@ -20,7 +20,6 @@ export default async function PortfolioPage() {
             <a id="ux_design_section"></a>
             <UXDesign/> */}
             <br/>
-            <br/>
             <Footer/>
         </section>
     );

@@ -32,7 +32,7 @@ export default function Navbar() {
   return (      
     <aside className="tracking-tight">
     <div id="navbar-mobile" className="flex flex-col items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative">
-            <button onClick={toggle}><div id="navbar-mobile-menu">MENU</div></button>
+            <button id="navbar-mobile-menu" onClick={toggle}>MENU</button>
             {
                openMobileMenu && 
                (<div id="navbar-mobile-links">
