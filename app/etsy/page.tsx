@@ -78,8 +78,8 @@ export default async function Etsy() {
                 />
                 </div>
                 <br/>
-                <i>Eid Mubarak Gift Wrapping Paper Designs</i>
-                <div className="md:grid md:grid-cols-3">
+                <i>Eid Mubarak Gift Wrapping Paper</i>
+                {/* <div className="md:grid md:grid-cols-3"> */}
                 <img
                     id="art-image"
                     key='em1'
@@ -87,7 +87,7 @@ export default async function Etsy() {
                     src={EM1.src}
                     alt='em1'
                 />
-                <img
+                {/* <img
                     id="art-image"
                     key='em2'
                     className='w-full rounded'
@@ -100,8 +100,8 @@ export default async function Etsy() {
                     className='w-full rounded'
                     src={EM3.src}
                     alt='em3'
-                />
-                </div>
+                /> */}
+                {/* </div> */}
                 {/* <img
                     id="centered-caption"
                     key='baby-top'
