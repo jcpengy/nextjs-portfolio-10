@@ -31,6 +31,10 @@ hr {
     margin-right: auto;
 }
 
+#nav-links {
+    background-color:#fafafa;
+}
+
 #nav-link {
     letter-spacing: 2.5px;
     background-color:#fafafa;
@@ -641,6 +645,7 @@ h1 span span {
     }
     #navbar-mobile {
         display: block;
+        margin-bottom: 25px;
     }
     #navbar-desktop {
         display: none;

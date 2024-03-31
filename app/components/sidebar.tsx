@@ -31,7 +31,7 @@ export default function Navbar() {
     <aside className="-ml-[8px] tracking-tight">
     <div id="navbar-mobile" className="flex flex-col items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           >
-            <div id="navbar-mobile-menu"><button onClick={() => toggle()}>MENU</button></div>
+            <div id="navbar-mobile-menu"><button onClick={toggle()}>MENU</button></div>
             {
               showNavbarMobile ? 
               <div id="navbar-mobile-links">
