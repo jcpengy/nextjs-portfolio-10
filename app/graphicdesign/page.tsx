@@ -105,7 +105,7 @@ export default async function GraphicDesign() {
                 <div id="graphic-design-project-card">
                     <p>
                         <span id="all-caps">ETSY</span><br/><br/>
-                        Commissioned work and freelance design for small businesses. 
+                        Top 5 projects from my best-selling design shop.
                     </p>
                     <br/>
                     <Link
