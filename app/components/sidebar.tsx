@@ -3,6 +3,7 @@
 import clsx from 'clsx';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
+import {useEffect, useState} from "react";
 import { LayoutGroup, motion } from 'framer-motion';
 import WebsiteHeaderPic from 'public/images/butters.png';
 
@@ -21,42 +22,41 @@ const navItems = {
   },
 };
 
-let showNavbarMobile = false;
-function toggle() {
-  return !showNavbarMobile;
-}
 export default function Navbar() {
   let pathname = usePathname() || '/';
+  const [openMobileMenu, setOpenMobileMenu] = useState(false);
+  const toggle = () => {
+    setOpenMobileMenu(!openMobileMenu);
+};
+
   return (      
     <aside className="-ml-[8px] tracking-tight">
-    <div id="navbar-mobile" className="flex flex-col items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
-          >
-            <div id="navbar-mobile-menu"><button onClick={toggle()}>MENU</button></div>
+    <div id="navbar-mobile" className="flex flex-col items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative">
+            <div id="navbar-mobile-menu"><button onClick={toggle}>MENU</button></div>
             {
-              showNavbarMobile ? 
-              <div id="navbar-mobile-links">
-              {Object.entries(navItems).map(([path, { name }]) => {
-                const isActive = path === pathname;
-                return (
-                  <Link
-                    id="nav-link"
-                    key={path}
-                    href={path}
-                    className={clsx(
-                      '',
-                      {
-                        'text-neutral-500': !isActive,
-                      }
-                    )}
-                  >
-                    <span className="relative py-1 px-2">
-                      {name}
-                    </span>
-                  </Link>
-                );
-              })}
-              <br/>
-            </div> : <></>
+               openMobileMenu && 
+               (<div id="navbar-mobile-links">
+               {Object.entries(navItems).map(([path, { name }]) => {
+                 const isActive = path === pathname;
+                 return (
+                   <Link
+                     id="nav-link"
+                     key={path}
+                     href={path}
+                     className={clsx(
+                       '',
+                       {
+                         'text-neutral-500': !isActive,
+                       }
+                     )}
+                   >
+                     <span className="relative py-1 px-2">
+                       {name}
+                     </span>
+                   </Link>
+                 );
+               })}
+             </div>)
             }
           </div>
       <div className="lg:sticky lg:top-20">
