@@ -24,7 +24,7 @@ export default async function Art() {
 
     return (
         <section id="portfolio-page">
-            <p>I love drawing dogs. To request a portrait of your furry friend, please email pengjess2@gmail.com or (for smaller portraits) submit an order through <a className="link" href="https://www.etsy.com/listing/771510565/custom-pet-portrait-mini-pet-portrait?click_key=2a1f63c3f155ec69ad8321fb86f5616b4c7c2cd4%3A771510565&click_sum=0b9786a5&ref=shop_home_active_13&frs=1" target="_blank">here</a>.</p><br/>
+            <p><i>To request a pet portrait, please email pengjess2@gmail.com or (for smaller portraits) submit an order <a className="link" href="https://www.etsy.com/listing/771510565/custom-pet-portrait-mini-pet-portrait?click_key=2a1f63c3f155ec69ad8321fb86f5616b4c7c2cd4%3A771510565&click_sum=0b9786a5&ref=shop_home_active_13&frs=1" target="_blank">here</a>.</i></p><br/>
             <img
                     id="art-image"
                     key='dogportraits'
