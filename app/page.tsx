@@ -46,7 +46,7 @@ class Page extends React.Component<any, any>  {
                             For creative collaborations or art commissions, please email <b>pengjess2@gmail.com</b>. Thanks for stopping by!<br/><br/>
                             <a className="link" target="_blank" href="https://i.ibb.co/WkBrpdF/Jessica-Peng-Resume.jpg"><u>Resume</u></a> / <a
                             className="link" target="_blank" href="mailto:pengjess2@gmail.com"><u>Email</u></a> / <a
-                            className="link" target="_blank" href="https://www.linkedin.com/in/jess-peng/"><u>LinkedIn</u></a><br/><br/>
+                            className="link" target="_blank" href="https://www.linkedin.com/in/jess-peng/"><u>LinkedIn</u></a><br/><br/></p>
                     {/* <img
                         key={'3dmodel'}
                         className='w-full rounded'
