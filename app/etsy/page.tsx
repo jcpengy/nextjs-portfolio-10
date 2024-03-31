@@ -3,8 +3,12 @@ import Footer from "../components/footer";
 import 'lightbox.js-react/dist/index.css'
 import {SlideshowLightbox, initLightboxJS} from 'lightbox.js-react'
 import React, {useEffect} from "react";
-import BabyTop from "public/images/Etsy/IMG_1486.jpg";
-import BabyLeft from "public/images/Etsy/IMG_1487.jpg";
+import Allison1 from "../../public/images/Etsy/allison-01.jpg";
+import Allison2 from "public/images/Etsy/allison-02.jpg";
+import EM1 from "public/images/Etsy/dana-01.jpg";
+import EM2 from "public/images/Etsy/dana-02.jpg";
+import EM3 from "public/images/Etsy/dana-03.jpg";
+
 import BabyRight from "public/images/Etsy/IMG_1488.jpg";
 
 const graphicdesignimages = [
@@ -54,8 +58,50 @@ export default async function Etsy() {
         <section id="portfolio-page">
             <h3 id="all-caps">ETSY</h3>
             <p>Freelance work I've done for small businesses, schools, and family
-                events like weddings, vacations, and reunions.</p><br/>
+                events like weddings, vacations, and reunions.<br/><br/>
+                Visit my Etsy shop <a href="https://www.etsy.com/shop/JessPDesign?ref=seller-platform-mcnav">here</a>.</p><br/>
+                <i>Robbie & Emily Wedding Album</i>
+                <div className="md:grid md:grid-cols-2">
                 <img
+                    id="art-image"
+                    key='robbieemily1'
+                    className='w-full rounded'
+                    src={Allison1.src}
+                    alt='robbieemily1'
+                />
+                <img
+                    id="art-image"
+                    key='robbieemily2'
+                    className='w-full rounded'
+                    src={Allison2.src}
+                    alt='robbieemily2'
+                />
+                </div>
+                <i>Eid Mubarak Gift Wrapping Paper Designs</i>
+                <div className="md:grid md:grid-cols-3">
+                <img
+                    id="art-image"
+                    key='em1'
+                    className='w-full rounded'
+                    src={EM1.src}
+                    alt='em1'
+                />
+                <img
+                    id="art-image"
+                    key='em2'
+                    className='w-full rounded'
+                    src={EM2.src}
+                    alt='em2'
+                />
+                <img
+                    id="art-image"
+                    key='em3'
+                    className='w-full rounded'
+                    src={EM3.src}
+                    alt='em3'
+                />
+                </div>
+                {/* <img
                     id="centered-caption"
                     key='baby-top'
                     src={BabyTop.src}
@@ -76,8 +122,8 @@ export default async function Etsy() {
                     alt='baby-right'
                 />
                 </div>
-                <br/><br/>
-            <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
+                <br/><br/> */}
+            {/* <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
                 {graphicdesignimages.map((image) => (
                     <img
                         key={image.src}
@@ -86,7 +132,7 @@ export default async function Etsy() {
                         alt={image.alt}
                     />
                 ))}
-            </SlideshowLightbox>
+            </SlideshowLightbox> */}
             <br/>
             <button id="button"><a target="_blank" href="https://behance.net/jesspdesign">More on my
                 Behance →

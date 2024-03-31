@@ -1,6 +1,6 @@
 'use client';
 import Footer from "../components/footer";
-import SyriaOriginal from "public/images/nyt-cover.jpg";
+import SyriaOriginal from "public/images/NYT/douma_cover.jpg";
 import SyriaHeader from "public/images/NYT/syria-header.jpg";
 import ThaiCaveOpening from "public/images/NYT/thai-cave-opening.jpg";
 import ThaiCaveMountain from "public/images/NYT/thai-cave-mountain.jpg";
