@@ -62,7 +62,7 @@ export default async function Kessler() {
                     key='kessler-poster'
                     src={KesslerPoster.src}
                     alt='kessler-poster'
-                />
+                /><br/><br/>
             <Footer/>
         </section>
     );

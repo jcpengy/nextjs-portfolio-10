@@ -59,7 +59,7 @@ export default async function Etsy() {
             <h3 id="all-caps">ETSY</h3>
             <p>Freelance work I've done for small businesses, schools, and family
                 events like weddings, vacations, and reunions.<br/><br/>
-                Visit my Etsy shop <a href="https://www.etsy.com/shop/JessPDesign?ref=seller-platform-mcnav">here</a>.</p><br/>
+                Visit my Etsy shop <a className="link" href="https://www.etsy.com/shop/JessPDesign?ref=seller-platform-mcnav">here</a>.</p><br/>
                 <i>Robbie & Emily Wedding Album</i>
                 <div className="md:grid md:grid-cols-2">
                 <img
@@ -77,6 +77,7 @@ export default async function Etsy() {
                     alt='robbieemily2'
                 />
                 </div>
+                <br/>
                 <i>Eid Mubarak Gift Wrapping Paper Designs</i>
                 <div className="md:grid md:grid-cols-3">
                 <img
@@ -134,9 +135,10 @@ export default async function Etsy() {
                 ))}
             </SlideshowLightbox> */}
             <br/>
-            <button id="button"><a target="_blank" href="https://behance.net/jesspdesign">More on my
+            {/* <button id="button"><a target="_blank" href="https://behance.net/jesspdesign">More on my
                 Behance →
-            </a></button>
+            </a></button> */}
+            <br/>
             <Footer/>
         </section>
     );

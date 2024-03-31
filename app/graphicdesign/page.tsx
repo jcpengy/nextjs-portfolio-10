@@ -62,7 +62,7 @@ export default async function GraphicDesign() {
                 <div id="graphic-design-project-card">
                     <p>
                         <span id="all-caps">KESSLER PROJECT</span><br/><br/>
-                        Finalist in the 2018 Disney Imaginations contest.
+                        Amusement park concept and finalist in the 2018 Disney Imaginations contest.
                     </p><br/>
                     <Link
                     id="project-button"
@@ -105,7 +105,7 @@ export default async function GraphicDesign() {
                 <div id="graphic-design-project-card">
                     <p>
                         <span id="all-caps">ETSY</span><br/><br/>
-                        Top 5 projects from my best-selling design shop.
+                        Favorite projects from my best-selling graphic design shop.
                     </p>
                     <br/>
                     <Link

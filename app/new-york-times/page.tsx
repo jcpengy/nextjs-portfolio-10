@@ -41,6 +41,7 @@ export default async function NewYorkTimes() {
                     src={ThaiCaveOpening.src}
                     alt='thai-cave-opening'
                 />
+                <br/><br/>
             <Footer/>
         </section>
     );
