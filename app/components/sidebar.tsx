@@ -21,28 +21,20 @@ const navItems = {
   },
 };
 
+let showNavbarMobile = false;
 function toggle() {
-  if (document.getElementById("navbar-mobile")) {
-    let mobileLinks = document.getElementById("navbar-mobile-links");
-    if (mobileLinks) {
-      if (mobileLinks.style.display === "block") {
-        mobileLinks.style.display = "none"; 
-      } else {
-        mobileLinks.style.display = "block"; 
-      }
-    }
-  }
+  return !showNavbarMobile;
 }
-
 export default function Navbar() {
   let pathname = usePathname() || '/';
-
   return (      
     <aside className="-ml-[8px] tracking-tight">
     <div id="navbar-mobile" className="flex flex-col items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           >
-            <div id="navbar-mobile-menu">MENU</div>
-            <div id="navbar-mobile-links">
+            <div id="navbar-mobile-menu"><button onClick={() => toggle()}>MENU</button></div>
+            {
+              showNavbarMobile ? 
+              <div id="navbar-mobile-links">
               {Object.entries(navItems).map(([path, { name }]) => {
                 const isActive = path === pathname;
                 return (
@@ -63,7 +55,9 @@ export default function Navbar() {
                   </Link>
                 );
               })}
-            </div>
+              <br/>
+            </div> : <></>
+            }
           </div>
       <div className="lg:sticky lg:top-20">
         <LayoutGroup>
