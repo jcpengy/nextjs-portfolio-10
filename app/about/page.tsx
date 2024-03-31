@@ -83,7 +83,7 @@ export default async function AboutPage() {
                 current focus is in development, I'm excited to expand my design skills on future projects.<br/><br/>
                 <h2>My Hobbies & Interests</h2>
                 <div className="md:grid md:grid-cols-2">
-                <div>
+                <div id="profile-image">
                     <img
                          key='hobbies'
                          src='https://i.ibb.co/8dZGgfj/Cam-Scanner-02-28-2024-17-46-2.jpg'
@@ -109,7 +109,7 @@ export default async function AboutPage() {
                      src='https://i.ibb.co/GCg3Qbt/784bce54-3d78-4161-8d7b-c2c8cc1630f3.jpg'
                      alt='pets'
                 /><br/><br/>
-                <p>Thanks for stopping by!</p><br/>
+                <p>Thanks for stopping by!</p>
                 .........
                 <br/>
                 <i>© Jessica Peng 2023</i><br/><br/>

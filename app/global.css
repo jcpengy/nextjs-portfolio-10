@@ -174,7 +174,12 @@ ul {
 }
 
 .footer {
-    font-size: 16px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#footer-text {
+    padding: 23px 0 23px 0;
 }
 
 #element1 {
@@ -627,6 +632,7 @@ h1 span span {
     border: 1px solid grey;
     text-align: center;
     width: 100%;
+    padding: 15px 0 15px 0;
 }
 
 #navbar-mobile-links {
@@ -651,8 +657,12 @@ h1 span span {
         display: none;
     }
     #website-header-pic {
-        height: 150px;
+        height: 200px;
         width: auto;
+    }
+
+    #nav-link {
+        font-size: 16px;
     }
 
     html {
@@ -740,7 +750,7 @@ h1 span span {
 
 #website-header {
     color: grey;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
     margin: 25px;
     letter-spacing: 2.5px;

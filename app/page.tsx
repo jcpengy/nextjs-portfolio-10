@@ -1,6 +1,7 @@
 'use client';
 import {initLightboxJS, SlideshowLightbox} from "lightbox.js-react";
 import React, {useEffect} from "react";
+import Footer from "../app/components/footer";
 
 const ceojess = [
     {
@@ -103,10 +104,7 @@ class Page extends React.Component<any, any>  {
                     </ul>
                 </div>
                     </div> */}
-                .........
-                <br/><br/>
-                <i>© Jessica Peng 2023</i><br/><br/>
-                </p>
+                <Footer/>
             </section>
         )
     }

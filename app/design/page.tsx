@@ -19,6 +19,9 @@ export default async function PortfolioPage() {
             <br/><br/>
             <a id="ux_design_section"></a>
             <UXDesign/> */}
+            <br/>
+            <br/>
+            <Footer/>
         </section>
     );
 }

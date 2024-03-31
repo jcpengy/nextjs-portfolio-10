@@ -30,9 +30,9 @@ export default function Navbar() {
 };
 
   return (      
-    <aside className="-ml-[8px] tracking-tight">
+    <aside className="tracking-tight">
     <div id="navbar-mobile" className="flex flex-col items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative">
-            <div id="navbar-mobile-menu"><button onClick={toggle}>MENU</button></div>
+            <button onClick={toggle}><div id="navbar-mobile-menu">MENU</div></button>
             {
                openMobileMenu && 
                (<div id="navbar-mobile-links">
@@ -61,12 +61,14 @@ export default function Navbar() {
           </div>
       <div className="lg:sticky lg:top-20">
         <LayoutGroup>
+          <br/>
         <img
           id='website-header-pic'
           key={'website-header-pic'}
           src={WebsiteHeaderPic.src}
           alt={'website-header-pic'}
           />
+          <br/>
           <div id="website-header">JESS PENG</div>
           <nav id="navbar-desktop" className="flex flex-row items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           >
