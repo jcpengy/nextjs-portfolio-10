@@ -176,6 +176,7 @@ ul {
 .footer {
     font-size: 14px;
     text-align: center;
+    letter-spacing: 2.5px; 
 }
 
 #footer-text {
