@@ -5,11 +5,8 @@ import {SlideshowLightbox, initLightboxJS} from 'lightbox.js-react'
 import React, {useEffect} from "react";
 import Allison1 from "../../public/images/Etsy/allison-01.jpg";
 import Allison2 from "../../public/images/Etsy/allison-02.jpg";
-import Allison3 from "../../public/images/Etsy/allison-03.jpg";
 import EM1 from "public/images/Etsy/dana-01.jpg";
 import EM2 from "public/images/Etsy/dana-02.jpg";
-import EM3 from "public/images/Etsy/dana-03.jpg";
-
 import BabyRight from "public/images/Etsy/IMG_1488.jpg";
 
 const graphicdesignimages = [
@@ -78,7 +75,7 @@ export default async function Etsy() {
                  />
                 <br/>
                 <i>Eid Mubarak Gift Wrapping Paper</i>
-                {/* <div className="md:grid md:grid-cols-3"> */}
+                <div className="md:grid md:grid-cols-2">
                 <img
                     id="art-image"
                     key='em1'
@@ -86,20 +83,15 @@ export default async function Etsy() {
                     src={EM1.src}
                     alt='em1'
                 />
-                {/* <img
+                 <img
                     id="art-image"
                     key='em2'
                     className='w-full rounded'
                     src={EM2.src}
                     alt='em2'
                 />
-                <img
-                    id="art-image"
-                    key='em3'
-                    className='w-full rounded'
-                    src={EM3.src}
-                    alt='em3'
-                /> */}
+                </div>
+            
                 {/* </div> */}
                 {/* <img
                     id="centered-caption"
