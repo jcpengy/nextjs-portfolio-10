@@ -8,6 +8,7 @@ import Allison2 from "../../public/images/Etsy/allison-02.jpg";
 import EM1 from "public/images/Etsy/dana-01.jpg";
 import EM2 from "public/images/Etsy/dana-02.jpg";
 import BabyRight from "public/images/Etsy/IMG_1488.jpg";
+import Card from "public/images/Etsy/card.jpg";
 
 const graphicdesignimages = [
     {
@@ -91,7 +92,15 @@ export default async function Etsy() {
                     alt='em2'
                 />
                 </div>
-            
+                <br/>
+                <i>Goodbye Card</i>
+                <img
+                    id="art-image"
+                    key='goodbye'
+                    className='w-full rounded'
+                    src={Card.src}
+                    alt='goodbye'
+                /><br/>
                 {/* </div> */}
                 {/* <img
                     id="centered-caption"
