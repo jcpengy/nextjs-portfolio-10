@@ -69,22 +69,13 @@ export default async function Etsy() {
                     src={Allison1.src}
                     alt='robbieemily1'
                 /><br/>
-                 <div className="md:grid md:grid-cols-2">
-                    <img
+                <img
                     id="art-image"
                     key='robbieemily2'
                     className='w-full rounded'
                     src={Allison2.src}
                     alt='robbieemily2'
-                    />
-                    <img
-                    id="art-image"
-                    key='robbieemily3'
-                    className='w-full rounded'
-                    src={Allison3.src}
-                    alt='robbieemily3'
-                    />
-                </div>
+                 />
                 <br/>
                 <i>Eid Mubarak Gift Wrapping Paper</i>
                 {/* <div className="md:grid md:grid-cols-3"> */}
