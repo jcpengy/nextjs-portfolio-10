@@ -95,7 +95,7 @@ export default async function Etsy() {
                 />
                 </div>
                 <br/>
-                <i>Baby wrap</i>
+                {/* <i>Baby wrap</i>
                 <img
                     id="art-image"
                     key='baby-top'
@@ -116,7 +116,7 @@ export default async function Etsy() {
                     src={BabyRight.src}
                     alt='baby-right'
                 />
-                </div><br/>
+                </div><br/> */}
                 <i>Goodbye Card</i>
                 <img
                     id="art-image"
