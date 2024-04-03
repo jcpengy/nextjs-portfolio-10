@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import {useEffect, useState} from "react";
 import { LayoutGroup, motion } from 'framer-motion';
-import WebsiteHeaderPic from 'public/images/butters.png';
+import WebsiteHeaderPic from 'public/images/stamp.jpg';
 
 const navItems = {
   // '/': {
