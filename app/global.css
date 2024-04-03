@@ -53,7 +53,7 @@ hr {
 }
 
 #website-header-pic {
-    width: 300px;
+    width: 250px;
     height: auto;
     margin: 0 auto;
 }
@@ -658,7 +658,7 @@ h1 span span {
         display: none;
     }
     #website-header-pic {
-        height: 200px;
+        height: 150px;
         width: auto;
     }
 
