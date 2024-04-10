@@ -8,6 +8,7 @@ import Link from 'next/link';
 import NYTCover from 'public/images/nyt-cover.jpg';
 import EtsyCover from 'public/images/etsy-cover.jpg';
 import KesslerCover from 'public/images/kessler-slide-1.jpg';
+import Swaddle from 'public/images/Baby/swaddle-kai-1.jpg';
 
 const kesslerposter = [
     {
@@ -54,6 +55,50 @@ export default async function GraphicDesign() {
             <div className="md:grid md:grid-cols-2">
                 <img
                     id="graphic-design-project-image"
+                    key='etsy-cover'
+                    className='w-full rounded'
+                    src={EtsyCover.src}
+                    alt='etsy-cover'
+                />
+                <div id="graphic-design-project-card">
+                    <p>
+                        <span id="all-caps">ETSY</span><br/><br/>
+                        Favorite projects from my best-selling graphic design shop.
+                    </p>
+                    <br/>
+                    <Link
+                    id="button"
+                    key='/etsy'
+                    href='/etsy'>
+                        View project
+                    </Link>
+                </div>
+            </div>   
+            <div className="md:grid md:grid-cols-2">
+                <img
+                    id="graphic-design-project-image"
+                    key='baby-cover'
+                    className='w-full rounded'
+                    src={Swaddle.src}
+                    alt='baby-cover'
+                />
+                <div id="graphic-design-project-card">
+                    <p>
+                        <span id="all-caps">BABY SWADDLES</span><br/><br/>
+                        A set of two pet-themed baby swaddles for my niece and nephew.
+                    </p>
+                    <br/>
+                    <Link
+                    id="button"
+                    key='/baby'
+                    href='/baby'>
+                        View project
+                    </Link>
+                </div>
+            </div>   
+            <div className="md:grid md:grid-cols-2">
+                <img
+                    id="graphic-design-project-image"
                     key='kessler 1'
                     className='w-full rounded'
                     src={KesslerCover.src}
@@ -65,7 +110,7 @@ export default async function GraphicDesign() {
                         Amusement park concept and finalist in the 2018 Disney Imaginations contest.
                     </p><br/>
                     <Link
-                    id="project-button"
+                    id="button"
                     key='/kessler'
                     href='/kessler'>
                         View project
@@ -87,35 +132,13 @@ export default async function GraphicDesign() {
                     </p>
                     <br/>
                     <Link
-                    id="project-button"
+                    id="button"
                     key='/new-york-times'
                     href='/new-york-times'>
                         View project
                     </Link>
                 </div>
-            </div><br/>
-            <div className="md:grid md:grid-cols-2">
-                <img
-                    id="graphic-design-project-image"
-                    key='etsy-cover'
-                    className='w-full rounded'
-                    src={EtsyCover.src}
-                    alt='etsy-cover'
-                />
-                <div id="graphic-design-project-card">
-                    <p>
-                        <span id="all-caps">ETSY</span><br/><br/>
-                        Favorite projects from my best-selling graphic design shop.
-                    </p>
-                    <br/>
-                    <Link
-                    id="project-button"
-                    key='/etsy'
-                    href='/etsy'>
-                        View project
-                    </Link>
-                </div>
-            </div>       
+            </div>
         </section>
     );
 }

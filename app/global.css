@@ -767,42 +767,22 @@ h1 span span {
     justify-content: center;
 }
 
-#project-button {
-    padding: 10px 28px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 700;
-    margin: 4px 2px;
-    cursor: pointer;
-    background-color: var(--pink);
-    color: white;
-    border: 2px solid var(--pink);
-    border-radius: 10px;
-}
-
-#project-button:hover {
-    color: var(--pink);
-    background-color: white;
-}
-
 #button {
-    padding: 10px 28px;
+    padding: 9px 24px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     margin: 4px 2px;
     cursor: pointer;
-    background-color: var(--pink);
+    background-color: #4a4d54;
     color: white;
-    border: 2px solid var(--pink);
+    border: 1px solid #4a4d54;
     border-radius: 10px;
 }
 
 #button:hover {
-    color: var(--pink);
+    color: #4a4d54;
     background-color: white;
 }
 
