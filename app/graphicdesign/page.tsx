@@ -1,55 +1,14 @@
 'use client';
-import 'lightbox.js-react/dist/index.css'
-import {SlideshowLightbox, initLightboxJS} from 'lightbox.js-react'
-import React, {useEffect} from "react";
-import Footer from "../components/footer";
-import { usePathname } from 'next/navigation';
+import React from "react";
 import Link from 'next/link';
 import NYTCover from 'public/images/nyt-cover.jpg';
 import EtsyCover from 'public/images/etsy-cover.jpg';
 import KesslerCover from 'public/images/kessler-slide-1.jpg';
-import Swaddle from 'public/images/Baby/swaddle-kai-1.jpg';
-
-const kesslerposter = [
-    {
-        src: 'https://i.ibb.co/XWpQCqr/kessler-tickets.png',
-        alt: '1',
-    },
-    {
-        src: 'https://i.ibb.co/XSM6SKv/kessler-poster.png',
-        alt: '2',
-    },
-]
-
-
-const nytimes = [
-    {
-        src: 'https://i.ibb.co/CMchfKW/Screen-Shot-2023-11-27-at-2-58-22-PM.png',
-        alt: 'Syria',
-    },
-    {
-        src: 'https://i.ibb.co/MP7ZGSs/Screen-Shot-2023-11-27-at-2-59-17-PM.png',
-        alt: 'Truck',
-    },
-    {
-        src: 'https://i.ibb.co/fdV5v5k/Screen-Shot-2023-11-27-at-3-01-12-PM.png',
-        alt: 'Thai Cave 1',
-    },
-    {
-        src: 'https://i.ibb.co/PwBkWts/Screen-Shot-2023-11-27-at-3-01-38-PM.png',
-        alt: 'Thai Cave 2',
-    },
-]
+import BabyCover from 'public/images/baby-cover.jpg';
 
 export const revalidate = 60;
 
 export default async function GraphicDesign() {
-    let pathname = usePathname() || '/';
-
-    useEffect(() => {
-        initLightboxJS("9F1C-4A63-970C-2B0D", "individual");
-    });
-
     return (
         <section id="portfolio-page">
             <div className="md:grid md:grid-cols-2">
@@ -74,18 +33,19 @@ export default async function GraphicDesign() {
                     </Link>
                 </div>
             </div>   
+            <br/>
             <div className="md:grid md:grid-cols-2">
                 <img
                     id="graphic-design-project-image"
                     key='baby-cover'
                     className='w-full rounded'
-                    src={Swaddle.src}
+                    src={BabyCover.src}
                     alt='baby-cover'
                 />
                 <div id="graphic-design-project-card">
                     <p>
                         <span id="all-caps">BABY SWADDLES</span><br/><br/>
-                        A set of two pet-themed baby swaddles for my niece and nephew.
+                        A set of two baby swaddles for my niece and nephew.
                     </p>
                     <br/>
                     <Link
@@ -95,7 +55,8 @@ export default async function GraphicDesign() {
                         View project
                     </Link>
                 </div>
-            </div>   
+            </div>
+            <br/>
             <div className="md:grid md:grid-cols-2">
                 <img
                     id="graphic-design-project-image"
@@ -107,7 +68,7 @@ export default async function GraphicDesign() {
                 <div id="graphic-design-project-card">
                     <p>
                         <span id="all-caps">KESSLER PROJECT</span><br/><br/>
-                        Amusement park concept and finalist in the 2018 Disney Imaginations contest.
+                        Finalist in the 2018 Disney Imaginations contest.
                     </p><br/>
                     <Link
                     id="button"
@@ -116,7 +77,8 @@ export default async function GraphicDesign() {
                         View project
                     </Link>
                 </div>
-            </div><br/>
+            </div>
+            <br/>
             <div className="md:grid md:grid-cols-2">
                 <img
                     id="graphic-design-project-image"
