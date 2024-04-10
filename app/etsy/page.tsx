@@ -5,6 +5,8 @@ import Allison1 from "../../public/images/Etsy/allison-01.jpg";
 import Allison2 from "../../public/images/Etsy/allison-02.jpg";
 import EM1 from "public/images/Etsy/dana-01.jpg";
 import EM2 from "public/images/Etsy/dana-02.jpg";
+import EM3 from "public/images/Etsy/dana-03.jpg";
+import EM4 from "public/images/Etsy/dana-04.jpg";
 import Card from "public/images/Etsy/card.jpg";
 import DogStickers from "public/images/Etsy/dogstickers.jpg";
 
@@ -47,6 +49,23 @@ export default async function Etsy() {
                     className='w-full rounded'
                     src={EM2.src}
                     alt='em2'
+                />
+                </div>
+                <br/>
+                <div className="md:grid md:grid-cols-2">
+                <img
+                    id="art-image"
+                    key='em3'
+                    className='w-full rounded'
+                    src={EM3.src}
+                    alt='em3'
+                />
+                 <img
+                    id="art-image"
+                    key='em4'
+                    className='w-full rounded'
+                    src={EM4.src}
+                    alt='em4'
                 />
                 </div>
                 <br/>
