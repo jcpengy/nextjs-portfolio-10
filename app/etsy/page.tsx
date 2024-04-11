@@ -14,9 +14,17 @@ export default async function Etsy() {
     return (
         <section id="portfolio-page">
             <h3 id="all-caps">ETSY</h3>
-            <p>Freelance design work I've done for small businesses, schools, and family
-                events like weddings, vacations, and reunions.<br/><br/>
+            <p>Freelance design work I've done for small businesses and individual customers.<br/><br/>
                 Visit my Etsy shop <a className="link" href="https://www.etsy.com/shop/JessPDesign?ref=seller-platform-mcnav">here</a>.</p><br/>
+                <i>Stickers for a homemade dog food business</i>
+                <img
+                    id="art-image"
+                    key='dog stickers'
+                    className='w-full rounded'
+                    src={DogStickers.src}
+                    alt='dog stickers'
+                />
+                <br/>
                 <i>Robbie & Emily's wedding album</i>
                 <img
                     id="art-image"
@@ -76,15 +84,6 @@ export default async function Etsy() {
                     className='w-full rounded'
                     src={Card.src}
                     alt='goodbye'
-                />
-                <br/>
-                <i>Stickers for a homemade dog food business</i>
-                <img
-                    id="art-image"
-                    key='dog stickers'
-                    className='w-full rounded'
-                    src={DogStickers.src}
-                    alt='dog stickers'
                 />
             <br/>
             <br/>
