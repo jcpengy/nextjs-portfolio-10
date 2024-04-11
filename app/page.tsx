@@ -2,6 +2,7 @@
 import {initLightboxJS, SlideshowLightbox} from "lightbox.js-react";
 import React, {useEffect} from "react";
 import Footer from "../app/components/footer";
+import Sketchbook from "public/images/ceojess-1.jpg";
 
 const ceojess = [
     {
@@ -54,6 +55,14 @@ class Page extends React.Component<any, any>  {
                         alt={'3dmodel'}
                     />
                 <i>3D model of my college apartment</i><br/><br/> */}
+                <img
+                    id="art-image"
+                    key='sketchbook'
+                    className='w-full rounded'
+                    src={Sketchbook.src}
+                    alt='sketchbook'
+                />
+                <br/>
                     <div id="rowContainer">
                     <div id="review1">
                         <img src={ceojess[0].src} alt="" width="300" height="300" />
