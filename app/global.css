@@ -20,6 +20,11 @@ hr {
     margin-top: -25px;
 }
 
+#art-image-sketchbook {
+    width: 500px;
+    margin: 0 auto;
+}
+
 #all-caps {
     letter-spacing: 2.5px;
     font-size: 18px;

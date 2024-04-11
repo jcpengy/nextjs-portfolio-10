@@ -1,8 +1,7 @@
 'use client';
-import {initLightboxJS, SlideshowLightbox} from "lightbox.js-react";
-import React, {useEffect} from "react";
+import React from "react";
 import Footer from "../app/components/footer";
-import Sketchbook from "public/images/ceojess-1.jpg";
+import Sketchbook from "public/images/sketch.jpg";
 
 const ceojess = [
     {
@@ -33,9 +32,6 @@ const ceojess = [
 
 class Page extends React.Component<any, any>  {
     render() {
-        // useEffect(() => {
-        //     initLightboxJS("9F1C-4A63-970C-2B0D", "individual");
-        // });
         return (
             <section id="portfolio-page">
                   <p> 
@@ -56,7 +52,7 @@ class Page extends React.Component<any, any>  {
                     />
                 <i>3D model of my college apartment</i><br/><br/> */}
                 <img
-                    id="art-image"
+                    id="art-image-sketchbook"
                     key='sketchbook'
                     className='w-full rounded'
                     src={Sketchbook.src}
