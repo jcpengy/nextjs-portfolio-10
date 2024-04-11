@@ -59,26 +59,15 @@ class Page extends React.Component<any, any>  {
                     alt='sketchbook'
                 />
                 <br/>
-                    <div id="rowContainer">
-                    <div id="review1">
-                        <img src={ceojess[0].src} alt="" width="300" height="300" />
-                    </div>
-                    <div id="review1">
-                        <img src={ceojess[1].src} alt="" width="300" height="300" />
-                    </div>
-                    <div id="review1">
-                        <img src={ceojess[2].src} alt="" width="300" height="300" />
-                    </div>
-                </div>
                 <div id="rowContainer">
                     <div id="review1">
                         <img src={ceojess[3].src} alt="" width="300" height="300" />
                     </div>
                     <div id="review1">
-                        <img src={ceojess[4].src} alt="" width="300" height="300" />
+                        <img src={ceojess[5].src} alt="" width="300" height="300" />
                     </div>
                     <div id="review1">
-                        <img src={ceojess[5].src} alt="" width="300" height="300" />
+                        <img src={ceojess[2].src} alt="" width="300" height="300" />
                     </div>
                 </div>
                 <br/>

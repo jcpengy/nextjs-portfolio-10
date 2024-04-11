@@ -16,15 +16,6 @@ export default async function Etsy() {
             <h3 id="all-caps">ETSY</h3>
             <p>Freelance design work I've done for small businesses and individual customers.<br/><br/>
                 Visit my Etsy shop <a className="link" href="https://www.etsy.com/shop/JessPDesign?ref=seller-platform-mcnav">here</a>.</p><br/>
-                <i>Stickers for a homemade dog food business</i>
-                <img
-                    id="art-image"
-                    key='dog stickers'
-                    className='w-full rounded'
-                    src={DogStickers.src}
-                    alt='dog stickers'
-                />
-                <br/>
                 <i>Robbie & Emily's wedding album</i>
                 <img
                     id="art-image"
@@ -42,8 +33,8 @@ export default async function Etsy() {
                     alt='robbieemily2'
                  />
                 <br/>
-                <i>Eid Mubarak gift wrapping paper for kids and adults</i>
-                <div className="md:grid md:grid-cols-2">
+                <i>Eid Mubarak wrapping paper for kids and adults</i>
+                <div className="md:grid md:grid-cols-3">
                 <img
                     id="art-image"
                     key='em1'
@@ -51,16 +42,6 @@ export default async function Etsy() {
                     src={EM1.src}
                     alt='em1'
                 />
-                 <img
-                    id="art-image"
-                    key='em2'
-                    className='w-full rounded'
-                    src={EM2.src}
-                    alt='em2'
-                />
-                </div>
-                <br/>
-                <div className="md:grid md:grid-cols-2">
                 <img
                     id="art-image"
                     key='em3'
@@ -76,6 +57,15 @@ export default async function Etsy() {
                     alt='em4'
                 />
                 </div>
+                <br/>
+                <i>Stickers for a homemade dog food business</i>
+                <img
+                    id="art-image"
+                    key='dog stickers'
+                    className='w-full rounded'
+                    src={DogStickers.src}
+                    alt='dog stickers'
+                />
                 <br/>
                 <i>Goodbye card</i>
                 <img
