@@ -11,11 +11,11 @@ import DogStickers from "public/images/Etsy/dogstickers.jpg";
 
 export default async function Etsy() {
     return (
-        <>
+        <section>
         <section id="portfolio-page">
             <h3 id="all-caps">ETSY</h3>
             <p>Freelance design work I've done for small businesses and individual customers.<br/><br/>
-                Link to my <a className="link" href="https://www.etsy.com/shop/JessPDesign?ref=seller-platform-mcnav">Etsy shop</a> and <a className="link" href="https://www.behance.net/jesspdesign">Behance</a>.</p><br/>
+                View more projects in my <a className="link" href="https://www.etsy.com/shop/JessPDesign?ref=seller-platform-mcnav">Etsy shop</a> or <a className="link" href="https://www.behance.net/jesspdesign">Behance</a>.</p><br/>
                 <img
                     id="art-image"
                     key='robbieemily1'
@@ -50,23 +50,23 @@ export default async function Etsy() {
                 <br/>
                 <img
                     id="art-image"
+                    key='goodbye'
+                    className='w-full rounded'
+                    src={Card.src}
+                    alt='goodbye'
+                />
+                <br/>
+                <img
+                    id="art-image"
                     key='dog stickers'
                     className='w-full rounded'
                     src={DogStickers.src}
                     alt='dog stickers'
                 />
                 <br/>
-                <img
-                    id="art-image"
-                    key='goodbye'
-                    className='w-full rounded'
-                    src={Card.src}
-                    alt='goodbye'
-                />
-            <br/>
-            <br/>        
+                <br/>        
         </section>
         <Footer/>
-        </>
+        </section>
     );
 }

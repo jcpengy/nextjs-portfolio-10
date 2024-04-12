@@ -7,7 +7,7 @@ import ThaiCaveMountain from "public/images/NYT/thai-cave-mountain.jpg";
 
 export default async function NewYorkTimes() {
     return (
-        <>
+        <section>
         <section id="portfolio-page">
             <h3 id="all-caps">THE NEW YORK TIMES</h3>
             <p>Cover art and graphics I created for two high-profile breaking news pieces as a Graphics Intern.
@@ -45,6 +45,6 @@ export default async function NewYorkTimes() {
                 <br/><br/>         
         </section>
         <Footer/>
-        </>
+        </section>
     );
 }
