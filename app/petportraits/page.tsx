@@ -11,12 +11,17 @@ import Cat from "../../public/images/Fine Art/cat.jpg";
 import Dog1 from "../../public/images/Fine Art/dog1.jpg";
 import Dog2 from "../../public/images/Fine Art/dog2.jpg";
 import Dog3 from "../../public/images/Fine Art/dog3.jpg";
+import Dog4 from "../../public/images/Fine Art/dog4.jpg";
+import Dog5 from "../../public/images/Fine Art/dog5.jpg";
+import DogKid from "../../public/images/Fine Art/dog_and_kid.jpg";
+import Pippy from "../../public/images/Fine Art/pippy.jpg";
 import Card from "../../public/images/Fine Art/happyholidays.jpg";
 import Painting from "../../public/images/Fine Art/painting.jpg";
 import DogPortraits from "../../public/images/Fine Art/dog-portraits.jpg";
-import Dog4 from "../../public/images/Fine Art/dogs.jpg";
+import Dogs from "../../public/images/Fine Art/dogs.jpg";
 
-export default async function Art() {
+
+export default async function PetPortraits() {
 
     useEffect(() => {
         initLightboxJS("9F1C-4A63-970C-2B0D", "individual");
@@ -42,10 +47,10 @@ export default async function Art() {
                 />
                 <img
                     id="art-image"
-                    key='enzo'
+                    key='pippy'
                     className='w-full rounded'
-                    src={Enzo.src}
-                    alt='enzo'
+                    src={Pippy.src}
+                    alt='pippy'
                 />
                  <img
                     id="art-image"
@@ -56,10 +61,10 @@ export default async function Art() {
                 />
                 <img
                     id="art-image"
-                    key='dog4'
+                    key='dogs'
                     className='w-full rounded'
-                    src={Dog4.src}
-                    alt='dog4'
+                    src={Dogs.src}
+                    alt='dogs'
                 />
                
                 <img
@@ -78,44 +83,27 @@ export default async function Art() {
                 />
                 <img
                     id="art-image"
-                    key='painting'
+                    key='dog4'
                     className='w-full rounded'
-                    src={Painting.src}
-                    alt='painting'
+                    src={Dog4.src}
+                    alt='dog4'
                 />
                 <img
                     id="art-image"
-                    key='beach'
+                    key='dog5'
                     className='w-full rounded'
-                    src={Beach.src}
-                    alt='beach'
+                    src={Dog5.src}
+                    alt='dog5'
                 />
                 <img
                     id="art-image"
-                    key='card'
+                    key='dogandkid'
                     className='w-full rounded'
-                    src={Card.src}
-                    alt='card'
-                />
-                <img
-                    id="art-image"
-                    key='centralpark'
-                    className='w-full rounded'
-                    src={CentralPark.src}
-                    alt='centralpark'
+                    src={DogKid.src}
+                    alt='dogandkid'
                 />
             </div>
             <br/>
-            {/* <SlideshowLightbox className='container grid grid-cols-3 gap-2'>
-                {artimages.map((image) => (
-                    <img
-                        key={image.src}
-                        className='w-full rounded'
-                        src={image.src}
-                        alt={image.alt}
-                    />
-                ))}
-            </SlideshowLightbox> */}
             <Footer/>
         </section>
     );

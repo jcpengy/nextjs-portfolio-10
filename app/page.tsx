@@ -2,6 +2,7 @@
 import React from "react";
 import Footer from "../app/components/footer";
 import Sketchbook from "public/images/sketch.jpg";
+import Dogs from "public/images/aboutpic1.jpg";
 
 const ceojess = [
     {
@@ -35,11 +36,19 @@ class Page extends React.Component<any, any>  {
         return (
             <section id="portfolio-page">
                   <p> 
-                        
-                            I'm a front-end developer at Adobe and a freelance graphic designer. I graduated from the University of Pennsylvania with a degree  
-                            in <a className="link" target="_blank" href="http://cg.cis.upenn.edu/dmd.html"><u>Digital
-                            Media Design</u></a> and a minor in Fine Arts.<br/><br/>
-                When I'm not tending to my Yorkie Butters, I like making art, watching reality shows, scrolling through puppy Reddit, or drawing cartoons on <a className="link" target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>. 
+                    I'm a front-end developer at Adobe and a freelance graphic designer. I graduated from the University of Pennsylvania with a degree  
+                    in <a className="link" target="_blank" href="http://cg.cis.upenn.edu/dmd.html"><u>Digital Media Design</u></a> and a minor in Fine Arts.<br/><br/>
+                    <img
+                        id="art-image"
+                        key='dogs'
+                        className='w-full rounded'
+                        src={Dogs.src}
+                        alt='dogs'
+                    />
+                    <i>Butters and his cousin Beignet</i>
+                    <br/>
+                    <br/>
+                    When I'm not tending to my Yorkie Butters, I like making art, watching reality shows, scrolling through puppy Reddit, or drawing cartoons on <a className="link" target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>. 
                             For creative collaborations or art commissions, please email <b>pengjess2@gmail.com</b>. Thanks for stopping by!<br/><br/>
                             <a className="link" target="_blank" href="https://i.ibb.co/WkBrpdF/Jessica-Peng-Resume.jpg"><u>Resume</u></a> / <a
                             className="link" target="_blank" href="mailto:pengjess2@gmail.com"><u>Email</u></a> / <a
@@ -66,8 +75,13 @@ class Page extends React.Component<any, any>  {
                     <div id="review1">
                         <img src={ceojess[5].src} alt="" width="300" height="300" />
                     </div>
+                </div>
+                <div id="rowContainer">
                     <div id="review1">
                         <img src={ceojess[2].src} alt="" width="300" height="300" />
+                    </div>
+                    <div id="review1">
+                        <img src={ceojess[1].src} alt="" width="300" height="300" />
                     </div>
                 </div>
                 <br/>

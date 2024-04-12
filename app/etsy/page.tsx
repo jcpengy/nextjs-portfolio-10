@@ -14,7 +14,7 @@ export default async function Etsy() {
         <section id="portfolio-page">
             <h3 id="all-caps">ETSY</h3>
             <p>Freelance design work I've done for small businesses and individual customers.<br/><br/>
-                Visit my Etsy shop <a className="link" href="https://www.etsy.com/shop/JessPDesign?ref=seller-platform-mcnav">here</a>.</p><br/>
+                Link to my <a className="link" href="https://www.etsy.com/shop/JessPDesign?ref=seller-platform-mcnav">Etsy shop</a> and <a className="link" href="https://www.behance.net/jesspdesign">Behance</a>.</p><br/>
                 <img
                     id="art-image"
                     key='robbieemily1'
@@ -23,7 +23,7 @@ export default async function Etsy() {
                     alt='robbieemily1'
                 />
                 <br/>
-                <div className="md:grid md:grid-cols-3">
+                <div className="md:grid md:grid-cols-2">
                 <img
                     id="art-image"
                     key='em1'
@@ -38,13 +38,13 @@ export default async function Etsy() {
                     src={EM3.src}
                     alt='em3'
                 />
-                 <img
+                 {/* <img
                     id="art-image"
                     key='em4'
                     className='w-full rounded'
                     src={EM4.src}
                     alt='em4'
-                />
+                /> */}
                 </div>
                 <br/>
                 <img

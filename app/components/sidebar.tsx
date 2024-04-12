@@ -17,9 +17,12 @@ const navItems = {
   '/design': {
     name: 'DESIGN',
   },
-  '/art': {
-    name: 'ART',
+  '/petportraits': {
+    name: 'PET PORTRAITS',
   },
+  '/moreart': {
+    name: 'MORE ART'
+  }
 };
 
 export default function Navbar() {
