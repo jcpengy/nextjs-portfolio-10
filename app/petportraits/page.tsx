@@ -1,7 +1,4 @@
 'use client';
-import 'lightbox.js-react/dist/index.css'
-import {SlideshowLightbox, initLightboxJS} from 'lightbox.js-react'
-import {useEffect} from "react";
 import Footer from "../components/footer";
 import Enzo from "../../public/images/Fine Art/enzo.jpg";
 import BB from "../../public/images/Fine Art/beignet_and_butters.jpg";
@@ -22,12 +19,8 @@ import Dogs from "../../public/images/Fine Art/dogs.jpg";
 
 
 export default async function PetPortraits() {
-
-    useEffect(() => {
-        initLightboxJS("9F1C-4A63-970C-2B0D", "individual");
-    });
-
     return (
+        <>
         <section id="portfolio-page">
             <p><i>To request a pet portrait, please email me at pengjess2@gmail.com or (for smaller portraits) submit an order <a className="link" href="https://www.etsy.com/listing/771510565/custom-pet-portrait-mini-pet-portrait?click_key=2a1f63c3f155ec69ad8321fb86f5616b4c7c2cd4%3A771510565&click_sum=0b9786a5&ref=shop_home_active_13&frs=1" target="_blank">here</a>.</i></p><br/>
             <img
@@ -104,7 +97,8 @@ export default async function PetPortraits() {
                 />
             </div>
             <br/>
-            <Footer/>
         </section>
+        <Footer/>
+        </>
     );
 }

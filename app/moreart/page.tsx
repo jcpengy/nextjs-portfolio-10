@@ -9,6 +9,7 @@ import Painting from "../../public/images/Fine Art/painting.jpg";
 
 export default async function MoreArt() {
     return (
+        <>
         <section id="portfolio-page">
             <div className="md:grid md:grid-cols-3">
                 <img
@@ -34,7 +35,8 @@ export default async function MoreArt() {
                 />
             </div>
             <br/>
-            <Footer/>
         </section>
+        <Footer/>
+        </>
     );
 }

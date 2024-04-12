@@ -10,6 +10,7 @@ import Dion3 from "public/images/Baby/swaddle-dion-3.jpg";
 
 export default async function Baby() {
     return (
+        <>
         <section id="portfolio-page">
             <h3 id="all-caps">BABY SWADDLES</h3>
             <p>A set of two baby swaddles I designed for my niece and nephew featuring pets in the family.<br/><br/>
@@ -38,7 +39,8 @@ export default async function Baby() {
                 />
             <br/>
             <br/>
-            <Footer/>
         </section>
+        <Footer/>
+        </>
     );
 }

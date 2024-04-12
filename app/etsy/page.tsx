@@ -11,6 +11,7 @@ import DogStickers from "public/images/Etsy/dogstickers.jpg";
 
 export default async function Etsy() {
     return (
+        <>
         <section id="portfolio-page">
             <h3 id="all-caps">ETSY</h3>
             <p>Freelance design work I've done for small businesses and individual customers.<br/><br/>
@@ -63,8 +64,9 @@ export default async function Etsy() {
                     alt='goodbye'
                 />
             <br/>
-            <br/>
-            <Footer/>
+            <br/>        
         </section>
+        <Footer/>
+        </>
     );
 }
