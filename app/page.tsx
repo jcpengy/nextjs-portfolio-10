@@ -38,7 +38,7 @@ class Page extends React.Component<any, any>  {
                   <p> 
                     Hi, I'm Jess! Welcome to my website.<br/><br/>
                     I'm a front-end developer at Adobe and a freelance graphic designer. I graduated from the University of Pennsylvania with a degree  
-                    in <a className="link" target="_blank" href="http://cg.cis.upenn.edu/dmd.html"><u>Digital Media Design</u></a> and a minor in Fine Arts.<br/><br/>
+                    in <a className="link" target="_blank" href="http://cg.cis.upenn.edu/dmd.html"><u>Digital Media Design</u></a> and a minor in Fine Arts. My passions include art and design, the Puppy101 and CozyPlaces Reddit threads, and drawing cartoons on <a className="link" target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>.<br/><br/>
                     <img
                         id="art-image-sketchbook"
                         key='dogs'
@@ -47,8 +47,8 @@ class Page extends React.Component<any, any>  {
                     />
                     <br/>
                     <br/>
-                    I have a precious 6-month-old Yorkie named Butters. His passions include cream cheese, playing with his toy flamingo, and galloping in grass. As for me, I like making art, watching reality shows, scrolling through puppy Reddit, or drawing cartoons on <a className="link" target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>. 
-                            For creative collaborations or art commissions, please email <b>pengjess2@gmail.com</b>.<br/><br/>Thanks for stopping by!<br/><br/>
+                    I have a precious 6-month-old Yorkie named Butters. His passions include cream cheese, playing with his toy flamingo, and galloping in grass.  
+                    <br/><br/>For creative collaborations or art commissions, please email <b>pengjess2@gmail.com</b>. Thanks for stopping by!<br/><br/>
                             <a className="link" target="_blank" href="https://i.ibb.co/WkBrpdF/Jessica-Peng-Resume.jpg"><u>Resume</u></a> / <a
                             className="link" target="_blank" href="mailto:pengjess2@gmail.com"><u>Email</u></a> / <a
                             className="link" target="_blank" href="https://www.linkedin.com/in/jess-peng/"><u>LinkedIn</u></a><br/><br/></p>
