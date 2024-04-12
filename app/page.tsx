@@ -47,7 +47,7 @@ class Page extends React.Component<any, any>  {
                         alt='dogs'
                     />
                     <br/>
-                    I have a precious 6-month-old Yorkie named Butters. His passions include cream cheese, his toy flamingo, and trips to the beach. My passions include art and design, puppy Reddit threads, reality tv, and cartooning on <a className="link" target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>. For creative collaborations or commissions, please email me at <b>pengjess2@gmail.com</b>.
+                    Pictured here is my beloved 6-month-old Yorkie Butters. His passions include cream cheese, his toy flamingo, and collecting sticks on the beach. My passions include art and design, puppy Reddit threads, reality tv, and cartooning on <a className="link" target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>. For creative collaborations or commissions, please email me at <b>pengjess2@gmail.com</b>.
                     <br/><br/>Thanks for stopping by!<br/><br/>
                             {/* <a className="link" target="_blank" href="https://i.ibb.co/WkBrpdF/Jessica-Peng-Resume.jpg"><u>Resume</u></a> / <a
                             className="link" target="_blank" href="mailto:pengjess2@gmail.com"><u>Email</u></a> / <a
