@@ -29,7 +29,7 @@ export default async function PetPortraits() {
 
     return (
         <section id="portfolio-page">
-            <p><i>To request a pet portrait, please email pengjess2@gmail.com or (for smaller portraits) submit an order <a className="link" href="https://www.etsy.com/listing/771510565/custom-pet-portrait-mini-pet-portrait?click_key=2a1f63c3f155ec69ad8321fb86f5616b4c7c2cd4%3A771510565&click_sum=0b9786a5&ref=shop_home_active_13&frs=1" target="_blank">here</a>.</i></p><br/>
+            <p><i>To request a pet portrait, please email me at pengjess2@gmail.com or (for smaller portraits) submit an order <a className="link" href="https://www.etsy.com/listing/771510565/custom-pet-portrait-mini-pet-portrait?click_key=2a1f63c3f155ec69ad8321fb86f5616b4c7c2cd4%3A771510565&click_sum=0b9786a5&ref=shop_home_active_13&frs=1" target="_blank">here</a>.</i></p><br/>
             <img
                     id="art-image"
                     key='dogportraits'
