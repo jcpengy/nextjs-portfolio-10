@@ -38,7 +38,7 @@ class Page extends React.Component<any, any>  {
             <section id="portfolio-page">
                   <p> 
                     Hi, I'm Jess! Welcome to my website.<br/><br/>
-                    I'm a front-end developer at Adobe and a freelance graphic designer. I graduated from the University of Pennsylvania with a degree  
+                    I'm a front-end developer at Adobe and a freelance graphic designer based in SF. I graduated from the University of Pennsylvania with a degree  
                     in <a className="link" target="_blank" href="http://cg.cis.upenn.edu/dmd.html"><u>Digital Media Design</u></a> and a minor in Fine Arts.<br/><br/>
                     <img
                         id="art-image-sketchbook"
