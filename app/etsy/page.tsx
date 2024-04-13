@@ -4,7 +4,7 @@ import React from "react";
 import Allison1 from "../../public/images/Etsy/allison-04.jpg";
 import EM1 from "public/images/Etsy/dana-06.jpg";
 import EM2 from "public/images/Etsy/dana-05.jpg";
-import EM3 from "public/images/Etsy/dana-03.jpg";
+import EM3 from "public/images/Etsy/dana-05.jpg";
 import EM4 from "public/images/Etsy/dana-04.jpg";
 import Card from "public/images/Etsy/card.jpg";
 import DogStickers from "public/images/Etsy/dogstickers.jpg";
