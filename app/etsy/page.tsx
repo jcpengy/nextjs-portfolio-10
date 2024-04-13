@@ -8,7 +8,7 @@ import EM3 from "public/images/Etsy/dana-03.jpg";
 import EM4 from "public/images/Etsy/dana-04.jpg";
 import Card from "public/images/Etsy/card.jpg";
 import DogStickers from "public/images/Etsy/dogstickers.jpg";
-import Horses from "public/images/Etsy/horses.jpg.jpg";
+import Horses from "public/images/Etsy/horses.jpg";
 
 export default async function Etsy() {
     return (
