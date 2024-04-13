@@ -8,6 +8,7 @@ import EM3 from "public/images/Etsy/dana-03.jpg";
 import EM4 from "public/images/Etsy/dana-04.jpg";
 import Card from "public/images/Etsy/card.jpg";
 import DogStickers from "public/images/Etsy/dogstickers.jpg";
+import Horses from "public/images/Etsy/horses.jpg.jpg";
 
 export default async function Etsy() {
     return (
@@ -39,15 +40,9 @@ export default async function Etsy() {
                     src={EM3.src}
                     alt='em3'
                 />
-                 {/* <img
-                    id="art-image"
-                    key='em4'
-                    className='w-full rounded'
-                    src={EM4.src}
-                    alt='em4'
-                /> */}
                 </div>
                 <br/>
+                <div className="md:grid md:grid-cols-2">
                 <img
                     id="art-image"
                     key='goodbye'
@@ -55,6 +50,14 @@ export default async function Etsy() {
                     src={Card.src}
                     alt='goodbye'
                 />
+                <img
+                    id="art-image"
+                    key='horses'
+                    className='w-full rounded'
+                    src={Horses.src}
+                    alt='horses'
+                />
+                </div>               
                 <br/>
                 <img
                     id="art-image"
