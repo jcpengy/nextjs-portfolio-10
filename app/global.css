@@ -20,6 +20,8 @@ hr {
     margin-top: -25px;
 }
 
+
+
 #art-image-sketchbook {
     width: 500px;
     margin: 0 auto;
@@ -94,6 +96,7 @@ html {
 p {
     font-size: 16px;
     line-height: 22px;
+    font-family: url(/public/fonts/Merriweather-Regular.ttf);
 }
 
 h1 {
