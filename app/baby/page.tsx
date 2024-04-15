@@ -13,7 +13,7 @@ export default async function Baby() {
         <section>
         <section id="portfolio-page">
             <h3 id="all-caps">BABY SWADDLES</h3>
-            <p>A set of two baby swaddles I designed for my niece and nephew featuring pets in the family.<br/><br/>
+            <p>A set of baby swaddles I designed for my niece and nephew featuring pets in the family.<br/><br/>
                 Custom ordered from <a className="link" href="https://www.scafos.com">Scafos</a>.</p><br/>
                 <img
                     id="art-image"

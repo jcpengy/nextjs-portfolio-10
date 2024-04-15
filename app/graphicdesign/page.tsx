@@ -45,7 +45,7 @@ export default async function GraphicDesign() {
                 <div id="graphic-design-project-card">
                     <p>
                         <span id="all-caps">BABY SWADDLES</span><br/><br/>
-                        A set of two baby swaddles for my niece and nephew.
+                        A set of baby swaddles for my niece and nephew.
                     </p>
                     <br/>
                     <Link
