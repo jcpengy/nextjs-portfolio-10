@@ -6,6 +6,8 @@ import Cat from "../../public/images/Fine Art/cat.jpg";
 import Collage1 from "../../public/images/Fine Art/collage1.jpg";
 import Collage2 from "../../public/images/Fine Art/collage2.jpg";
 import Painting from "../../public/images/Fine Art/painting.jpg";
+import Yeye from "../../public/images/Fine Art/yeye.jpg";
+import Nainai from "../../public/images/Fine Art/nainai.jpg";
 
 
 export default async function MoreArt() {
@@ -50,6 +52,22 @@ export default async function MoreArt() {
                     src={Collage2.src}
                     alt='collage2'
                 /> 
+                <img
+                    id="art-image"
+                    key='yeye'
+                    className='w-full rounded'
+                    src={Yeye.src}
+                    alt='yeye'
+                /> 
+            </div>
+            <div className="md:grid md:grid-cols-3">
+                <img
+                    id="art-image"
+                    key='nainai'
+                    className='w-full rounded'
+                    src={Nainai.src}
+                    alt='nainai'
+                />
             </div>
             <br/>
         </section>
