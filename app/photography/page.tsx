@@ -2,9 +2,9 @@
 import Footer from "../components/footer";
 import Pic1 from "../../public/images/Photography/IMG_1906.jpg";
 import Pic2 from "../../public/images/Photography/IMG_1911.jpg";
-import Pic3 from "../../public/images/Photography/IMG_1910.jpg";
-import Pic4 from "../../public/images/Photography/IMG_1919.jpg";
-import Pic5 from "../../public/images/Photography/IMG_1905.jpg";
+import Pic3 from "../../public/images/Photography/austin.jpg";
+import Pic4 from "../../public/images/Photography/water.jpg";
+import Pic5 from "../../public/images/Photography/flowers.jpg";
 
 export default async function Photography() {
     return (

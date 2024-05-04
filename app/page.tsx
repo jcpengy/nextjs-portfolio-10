@@ -2,7 +2,7 @@
 import React from "react";
 import Footer from "../app/components/footer";
 import Sketchbook from "public/images/sketch.jpg";
-import Dogs from "public/images/Photography/IMG_1915.jpg";
+import Dogs from "public/images/Photography/butters.jpg";
 
 const ceojess = [
     {
