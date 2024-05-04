@@ -14,22 +14,6 @@ export default async function Photography() {
             Camera I use: Nikon One Touch Zoom 90</p><br/>
             <img
                     id="art-image"
-                    key='pic2'
-                    className='w-full rounded'
-                    src={Pic2.src}
-                    alt='pic2'
-                />
-            <br/>
-            <img
-                    id="art-image"
-                    key='pic1'
-                    className='w-full rounded'
-                    src={Pic1.src}
-                    alt='pic1'
-                />
-            <br/>
-            <img
-                    id="art-image"
                     key='pic3'
                     className='w-full rounded'
                     src={Pic3.src}
@@ -50,6 +34,22 @@ export default async function Photography() {
                     className='w-full rounded'
                     src={Pic5.src}
                     alt='pic5'
+                />
+            <br/>
+            <img
+                    id="art-image"
+                    key='pic2'
+                    className='w-full rounded'
+                    src={Pic2.src}
+                    alt='pic2'
+                />
+            <br/>
+            <img
+                    id="art-image"
+                    key='pic1'
+                    className='w-full rounded'
+                    src={Pic1.src}
+                    alt='pic1'
                 />
             <br/>
         </section>
