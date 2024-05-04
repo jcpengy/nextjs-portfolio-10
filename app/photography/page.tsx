@@ -6,6 +6,7 @@ import Pic3 from "../../public/images/Photography/IMG_1911.jpg";
 import Pic4 from "../../public/images/Photography/IMG_1919.jpg";
 import Pic5 from "../../public/images/Photography/IMG_1906.jpg";
 
+
 export default async function Photography() {
     return (
         <section>
