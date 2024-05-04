@@ -100,6 +100,19 @@ export default async function GraphicDesign() {
                         View project
                     </Link>
                 </div>
+                <div id="graphic-design-project-card">
+                    <p>
+                        <span id="all-caps">COSTUME DESIGN</span><br/><br/>
+                        A collection of costumes for a college assignment.
+                    </p>
+                    <br/>
+                    <Link
+                    id="button"
+                    key='/costume-design'
+                    href='/costume-design'>
+                        View project
+                    </Link>
+                </div>
             </div>
         </section>
     );

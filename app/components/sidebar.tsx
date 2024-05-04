@@ -20,6 +20,9 @@ const navItems = {
   '/petportraits': {
     name: 'PET PORTRAITS',
   },
+  '/photography': {
+    name: 'PHOTOGRAPHY',
+  },
   '/moreart': {
     name: 'MORE ART'
   }

@@ -90,7 +90,6 @@ class Page extends React.Component<any, any>  {
                     Instagram →
                 </a></button>
                 <br/>
-                <br/>
                     {/* <img className='w-full rounded'
                      key='pets'
                      src='https://i.ibb.co/GCg3Qbt/784bce54-3d78-4161-8d7b-c2c8cc1630f3.jpg'

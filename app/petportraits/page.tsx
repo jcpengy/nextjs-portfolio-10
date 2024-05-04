@@ -1,10 +1,6 @@
 'use client';
 import Footer from "../components/footer";
-import Enzo from "../../public/images/Fine Art/enzo.jpg";
 import BB from "../../public/images/Fine Art/beignet_and_butters.jpg";
-import Beach from "../../public/images/Fine Art/beach.jpg";
-import CentralPark from "../../public/images/Fine Art/centralpark.jpg";
-import Cat from "../../public/images/Fine Art/cat.jpg";
 import Dog1 from "../../public/images/Fine Art/dog1.jpg";
 import Dog2 from "../../public/images/Fine Art/dog2.jpg";
 import Dog3 from "../../public/images/Fine Art/dog3.jpg";
@@ -12,8 +8,8 @@ import Dog4 from "../../public/images/Fine Art/dog4.jpg";
 import Dog5 from "../../public/images/Fine Art/dog5.jpg";
 import DogKid from "../../public/images/Fine Art/dog_and_kid.jpg";
 import Pippy from "../../public/images/Fine Art/pippy.jpg";
-import Card from "../../public/images/Fine Art/happyholidays.jpg";
-import Painting from "../../public/images/Fine Art/painting.jpg";
+import Beignet from "../../public/images/Fine Art/pencil.jpg";
+import Kai from "../../public/images/Fine Art/kaidog.jpg";
 import DogPortraits from "../../public/images/Fine Art/dog-portraits.jpg";
 import Dogs from "../../public/images/Fine Art/dogs.jpg";
 
@@ -30,6 +26,22 @@ export default async function PetPortraits() {
                     src={DogPortraits.src}
                     alt='dogportraits'
                 />
+            <div className="md:grid md:grid-cols-2">
+                <img
+                    id="art-image"
+                    key='kai'
+                    className='w-full rounded'
+                    src={Kai.src}
+                    alt='kai'
+                />
+                <img
+                    id="art-image"
+                    key='beignet'
+                    className='w-full rounded'
+                    src={Beignet.src}
+                    alt='beignet'
+                />
+            </div>
             <div className="md:grid md:grid-cols-3">
                 <img
                     id="art-image"
