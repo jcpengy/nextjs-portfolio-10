@@ -2,13 +2,16 @@
 import Footer from "../components/footer";
 import Pic1 from "../../public/images/Photography/IMG_1906.jpg";
 import Pic2 from "../../public/images/Photography/IMG_1911.jpg";
-
+import Pic3 from "../../public/images/Photography/IMG_1910.jpg";
+import Pic4 from "../../public/images/Photography/IMG_1919.jpg";
+import Pic5 from "../../public/images/Photography/IMG_1905.jpg";
 
 export default async function Photography() {
     return (
         <section>
         <section id="portfolio-page">
-            <p>My new hobby is taking film photos with my Nikon One Touch Zoom 90. Below are some shots I'm proud of:D</p><br/>
+            <p>My new hobby is taking film photos - below are some shots I'm proud of!<br/><br/>
+            Camera I use: Nikon One Touch Zoom 90</p><br/>
             <img
                     id="art-image"
                     key='pic2'
@@ -25,7 +28,7 @@ export default async function Photography() {
                     alt='pic1'
                 />
             <br/>
-            {/* <img
+            <img
                     id="art-image"
                     key='pic3'
                     className='w-full rounded'
@@ -48,7 +51,7 @@ export default async function Photography() {
                     src={Pic5.src}
                     alt='pic5'
                 />
-            <br/> */}
+            <br/>
         </section>
         <Footer/>
         </section>

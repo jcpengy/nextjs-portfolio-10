@@ -2,7 +2,7 @@
 import React from "react";
 import Footer from "../app/components/footer";
 import Sketchbook from "public/images/sketch.jpg";
-import Dogs from "public/images/aboutpic1.jpg";
+import Dogs from "public/images/Photography/IMG_1915.jpg";
 
 const ceojess = [
     {
@@ -41,7 +41,7 @@ class Page extends React.Component<any, any>  {
                     I'm a front-end developer at Adobe and a freelance graphic designer based in SF. I graduated from the University of Pennsylvania with a degree  
                     in <a className="link" target="_blank" href="http://cg.cis.upenn.edu/dmd.html"><u>Digital Media Design</u></a> and a minor in Fine Arts.<br/><br/>
                     <img
-                        id="art-image-sketchbook"
+                        id="art-image"
                         key='dogs'
                         src={Dogs.src}
                         alt='dogs'
