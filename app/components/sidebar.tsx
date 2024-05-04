@@ -3,7 +3,7 @@
 import clsx from 'clsx';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import { LayoutGroup, motion } from 'framer-motion';
 import WebsiteHeaderPic from 'public/images/stamp.jpg';
 
