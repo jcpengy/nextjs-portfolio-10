@@ -10,8 +10,7 @@ export default async function Photography() {
     return (
         <section>
         <section id="portfolio-page">
-            <p>My new hobby is taking film photos - below are some shots I'm proud of!<br/><br/>
-            Camera I use: Nikon One Touch Zoom 90</p><br/>
+            <p>My new hobby is taking film photos. I use a Nikon One Touch Zoom 90 camera.</p><br/>
             <img
                     id="art-image"
                     key='pic3'
