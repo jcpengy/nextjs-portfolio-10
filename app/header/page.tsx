@@ -12,8 +12,8 @@ export default function Header() {
                     let style = { "animation-delay": (index / 20) + "s" }
                     return <span
                         aria-hidden="true"
-                        key={index}
-                        style={style}>
+                        key={index}>
+                        {/* // style={style}> */}
                         {char}
                     </span>;
                 })}
