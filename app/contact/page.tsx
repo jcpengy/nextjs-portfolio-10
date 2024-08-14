@@ -4,6 +4,9 @@ export default function Contact() {
     return (
         <section id="contact">
             <h2>CONTACT ME</h2>
+            <div id="section-description">
+                Please reach out if you have any questions! 
+            </div>
             <form action="action_page.php">
                 <label htmlFor="fname">First Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name.." />

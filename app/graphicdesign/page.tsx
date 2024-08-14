@@ -15,7 +15,10 @@ export default function GraphicDesign() {
     return (
         <section id="graphic-design">
             <h2>GRAPHIC DESIGN</h2>
-            <ImgGalleryWithTextOverlay images={images}/>
+            <div id="section-description">
+                Selected projects in graphic design, small business branding, and visual storytelling.
+            </div>
+            {/* <ImgGalleryWithTextOverlay images={images}/> */}
         </section>
     );
 }

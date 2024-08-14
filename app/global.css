@@ -14,6 +14,25 @@
 
 #body {}
 
+#social-media-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    animation: fadeIn 2s;
+}
+
+.social-media-link {
+    filter: invert(12%) sepia(2%) saturate(4717%) hue-rotate(182deg) brightness(86%) contrast(77%);
+}
+
+.social-media-link:hover {
+    filter: invert(97%) sepia(7%) saturate(1961%) hue-rotate(337deg) brightness(104%) contrast(91%);
+}
+
+section {
+    padding: 24px;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -25,6 +44,7 @@
 }
 
 @keyframes shake {
+
     10%,
     90% {
         transform: translate3d(-1px, 0, 0);
@@ -49,15 +69,17 @@
 
 @keyframes jumpInfinite {
     0% {
-      margin-top: 0;
+        margin-top: 0;
     }
+
     50% {
-      margin-top: 20px;
+        margin-top: 20px;
     }
+
     100% {
-      margin-top: 0;
+        margin-top: 0;
     }
-  }
+}
 
 .down-arrow {
     position: absolute;
@@ -68,9 +90,10 @@
     border: 2px solid;
     border-radius: 2px;
     animation: jumpInfinite 1.5s infinite;
-  }
-  
-  .down-arrow:after {
+    z-index: 2000;
+}
+
+.down-arrow:after {
     content: " ";
     position: absolute;
     top: 12px;
@@ -81,29 +104,30 @@
     border-right: 4px solid;
     border-radius: 4px;
     transform: rotateZ(45deg);
-  }
+}
 
 /* desktop nav bar */
 #desktop-navbar {
     position: sticky;
     top: 0px;
     animation: fadeIn 2s;
-    margin-top: -150px; 
+    margin-top: -150px;
     justify-content: center;
     display: flex;
     /* Make a horizontal flexbox (the default) */
     flex-direction: row;
+    background-color: var(--blue);
 }
 
 #desktop-navbar-button {
     border: 3px solid var(--black);
     padding: 14px;
-    margin: 50px;
+    margin: 24px;
     color: var(--black);
 }
 
 #header {
-    color: var(--black); 
+    color: var(--black);
 }
 
 #desktop-navbar-button:hover {
@@ -174,13 +198,16 @@ input[type=submit]:hover {
 }
 
 #graphic-design {
-    padding: 55px;
     background-color: var(--white);
 }
 
 #footer {
     background-color: var(--blue);
     color: var(--black);
+    text-align: center;
+    display: flex;
+    /* Make a horizontal flexbox (the default) */
+    flex-direction: column;
 }
 
 #about {
@@ -289,14 +316,11 @@ input[type=submit]:hover {
 }
 
 html {
-    background-color: white;
-    /*background-image: url("https://i.ibb.co/X7pPY9D/background.png");*/
-    /*background-repeat: repeat;*/
-    color: var(--blue);
+    color: var(--black);
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 22px;
     font-family: url(/public/fonts/Merriweather-Regular.ttf);
 }
@@ -311,7 +335,7 @@ h1 {
 
 h2 {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 30px;
     line-height: 25px;
     -webkit-font-smoothing: antialiased;
     color: var(--pink);
@@ -869,14 +893,15 @@ h1 span span {
     #header {
         margin-top: -100px;
     }
-    
+
     .down-arrow {
         top: calc(100vh - 100px);
     }
 
     #desktop-navbar {
-        display: none; 
+        display: none;
     }
+
     hr {
         display: none;
     }
