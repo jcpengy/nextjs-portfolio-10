@@ -1,5 +1,6 @@
 'use client';
 import SocialMediaLinks from "app/components/socialMediaLinks";
+import Cloud1 from "../../public/images/cloud1.png";
 
 // site header and background
 export default function Header() {
@@ -24,6 +25,7 @@ export default function Header() {
             <h1 id="Jessica-Peng"><SplitText copy="Jessica Peng" role="heading" /></h1>
             <SocialMediaLinks/>
             <div className="down-arrow"></div>
+            <img src={Cloud1.src} width="300px" height="200px"/>
         </section>
     );
 }
