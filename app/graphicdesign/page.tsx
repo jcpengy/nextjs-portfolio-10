@@ -1,7 +1,7 @@
 'use client';
-import Eid from "public/images/Eid/eid-cover.jpg";
-import River from "public/images/riversedge-cover.jpg";
-import KesslerSlide2 from "public/images/Kessler/kessler-slide-2.jpg";
+import Eid from "public/images/Eid/finalImages/eid-cover.jpg";
+import River from "public/images/RiversEdge/riversedge-cover.jpg";
+import KesslerSlide2 from "public/images/Kessler/kessler-slide-1.jpg";
 const images = [
     { "src": Eid.src, "alt": "San Francisco Grooming", "link": "/eid"},
     { "src": River.src, "alt": "River's Edge Cabin", "link": "/eid"},
