@@ -1,121 +1,24 @@
 'use client';
 import React from "react";
-import Footer from "../app/components/footer";
-import Sketchbook from "public/images/sketch.jpg";
-import Dogs from "public/images/Photography/butters.jpg";
-
-const ceojess = [
-    {
-        src: "https://i.ibb.co/BVHNMwp/IMG-1407.jpg",
-        alt: "Getting set up"
-    },
-    {
-        src: 'https://i.ibb.co/YXwWJ9K/IMG-9214.jpg',
-        alt: 'Wine tasting',
-    },
-    {
-        src: 'https://i.ibb.co/5vJtf5K/IMG-8416.png',
-        alt: 'SF Hills',
-    },
-    {
-        src: 'https://i.ibb.co/5kkqYW6/IMG-8949.jpg',
-        alt: 'Congress1',
-    },
-    {
-        src: 'https://i.ibb.co/nsnCwCD/IMG-8950.jpg',
-        alt: 'Congress2',
-    },
-    {
-        src: 'https://i.ibb.co/z7n38WQ/IMG-8951.jpg',
-        alt: 'Lady Clingford',
-    },
-]
-
+import GraphicDesign from "../app/graphicdesign/page";
+import UXDesign from "./uxdesign/page";
+import Contact from "./contact/page";
+import Footer from "./components/footer";
+import About from "./about/page";
+import DesktopNavbar from "./components/desktopNavbar";
+import Header from "./header/page";
 class Page extends React.Component<any, any>  {
     render() {
         return (
-            <section>
-            <section id="portfolio-page">
-                  <p> 
-                    Hi, I'm Jess! Welcome to my website.<br/><br/>
-                    I'm a front-end developer at Adobe and a freelance graphic designer living in SF. I graduated from the University of Pennsylvania with a degree  
-                    in <a className="link" target="_blank" href="http://cg.cis.upenn.edu/dmd.html"><u>Digital Media Design</u></a> and a minor in Fine Arts.<br/><br/>
-                    <img
-                        id="art-image"
-                        key='dogs'
-                        src={Dogs.src}
-                        alt='dogs'
-                    />
-                    <br/>
-                    I have a 6-month-old Yorkie named Butters. His passions include cream cheese, his toy flamingo, and collecting sticks on the beach. My passions include art and design, puppy Reddit threads, reality tv, and cartooning on <a className="link" target="_blank" href="https://www.instagram.com/officialceojess/">@officialceojess</a>. For creative collaborations or commissions, please email me at <b>pengjess2@gmail.com</b>.
-                    <br/><br/>Thanks for stopping by!<br/><br/>
-                            {/* <a className="link" target="_blank" href="https://i.ibb.co/WkBrpdF/Jessica-Peng-Resume.jpg"><u>Resume</u></a> / <a
-                            className="link" target="_blank" href="mailto:pengjess2@gmail.com"><u>Email</u></a> / <a
-                            className="link" target="_blank" href="https://www.linkedin.com/in/jess-peng/"><u>LinkedIn</u></a> */}
-                            {/* <br/><br/> */}
-                    </p>
-                    {/* <img
-                        key={'3dmodel'}
-                        className='w-full rounded'
-                        src={'https://i.ibb.co/nmXmXp3/IMG-2655-Original.jpg'}
-                        alt={'3dmodel'}
-                    />
-                <i>3D model of my college apartment</i><br/><br/> */}
-                <img
-                    id="art-image-sketchbook"
-                    key='sketchbook'
-                    className='w-full rounded'
-                    src={Sketchbook.src}
-                    alt='sketchbook'
-                />
-                <br/>
-                <div id="rowContainer">
-                    <div id="review1">
-                        <img src={ceojess[3].src} alt="" width="300" height="300" />
-                    </div>
-                    <div id="review1">
-                        <img src={ceojess[5].src} alt="" width="300" height="300" />
-                    </div>
-                </div>
-                <div id="rowContainer">
-                    <div id="review1">
-                        <img src={ceojess[2].src} alt="" width="300" height="300" />
-                    </div>
-                    <div id="review1">
-                        <img src={ceojess[1].src} alt="" width="300" height="300" />
-                    </div>
-                </div>
-                <br/>
-                <button id="button"><a target="_blank" href="https://instagram.com/officialceojess">More on my
-                    Instagram →
-                </a></button>
-                <br/>
-                    {/* <img className='w-full rounded'
-                     key='pets'
-                     src='https://i.ibb.co/GCg3Qbt/784bce54-3d78-4161-8d7b-c2c8cc1630f3.jpg'
-                     alt='pets'></img> */}
-                {/* <div className="md:grid md:grid-cols-2">
-                <div>
-                <h3>My Pets</h3>
-                <p>I have a Yorkie named Butters (after the South Park character) and a Roborovski hamster named Abrahammy Lincoln (Hammy for short).</p><br/>
-                
-                </div>
-                <div>
-                    <h3>My Hobbies</h3>
-                    <ul>
-                        <li>Drawing pet portraits</li>
-                        <li>Word-search puzzles</li>
-                        <li>Dog grooming</li>
-                        <li>Tennis</li>
-                        <li>Yorkie Reddit threads</li>
-                        <li>Reality TV</li>
-                    </ul>
-                </div>
-                    </div> */}
-                
-            </section>
-            <Footer/>
-            </section>
+            <>
+                <Header />
+                <DesktopNavbar />
+                <GraphicDesign />
+                <UXDesign />
+                <About />
+                <Contact />
+                <Footer />
+            </>
         )
     }
 }
