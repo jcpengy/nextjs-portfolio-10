@@ -1,7 +1,6 @@
 'use client';
 import Footer from "../components/footer";
-import KesslerCover from "public/images/kessler-slide-1.jpg";
-import KesslerPoster from "public/images/Kessler/kessler-poster.jpg";
+import KesslerCover from "public/images/Kessler/kessler-slide-1.jpg";
 import KesslerSlide2 from "public/images/Kessler/kessler-slide-2.jpg";
 import KesslerSlide3 from "public/images/Kessler/kessler-slide-3.jpg";
 import KesslerSlide4 from "public/images/Kessler/kessler-slide-4.jpg";
@@ -58,12 +57,7 @@ export default async function Kessler() {
                     alt='kessler-4'
                 />
                 <br/>
-            <img
-                    id="centered-caption"
-                    key='kessler-poster'
-                    src={KesslerPoster.src}
-                    alt='kessler-poster'
-                /><br/><br/>
+            <br/><br/>
         </section>
         <Footer/>
         </section>
