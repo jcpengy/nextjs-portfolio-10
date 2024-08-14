@@ -1,5 +1,4 @@
 'use client';
-import { ImgGalleryWithTextOverlay } from "app/imgGalleryWithTextOverlay/page";
 import KesslerSlide2 from "public/images/Kessler/kessler-slide-2.jpg";
 import KesslerSlide3 from "public/images/Kessler/kessler-slide-3.jpg";
 import KesslerSlide4 from "public/images/Kessler/kessler-slide-4.jpg";
