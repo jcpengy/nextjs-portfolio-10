@@ -1,8 +1,6 @@
 "use client"
 
-import { ReactElement, JSXElementConstructor, ReactNode, PromiseLikeOfReactNode } from "react"
-
-export default function ImgGalleryWithTextOverlay({ images }) {
+export function ImgGalleryWithTextOverlay({ images }) {
     return (
         <section id="image-gallery-with-text-overlay">
             <div className="gallery-container">
