@@ -1,23 +1,13 @@
 'use client';
 import DesktopNavbar from "app/components/desktopNavbar";
 import Footer from "app/components/footer";
-// const finalImages = require.context('../../public/images/Eid/finalImages', true);
-// const finalImagesList = finalImages.keys().map(image => finalImages(image));
+// dynamically import all images from folder 
+const finalImages = require.context('../../public/images/Eid/finalImages', false);
+const finalImageList = finalImages.keys().map(image => finalImages(image));
+const devImages = require.context('../../public/images/Eid/devImages', false);
+const devImageList = devImages.keys().map(image => devImages(image));
+
 import { useState } from "react";
-
-// const finalImages = [
-//     { "src": EidM.src, "alt": "San Francisco Grooming" },
-//     { "src": EidAllAdults.src, "alt": "River's Edge Cabin" },
-//     { "src": EidM.src, "alt": "Black Power Blueprint" },
-//     { "src": EidM.src, "alt": "Eid Mubarak Wrapping Paper" },
-//     { "src": EidM.src, "alt": "Disney Imagineering: Kessler Project" },
-// ]
-
-// const devImages = [
-//     { "src": EidIdea1.src, "alt": "Eid Mubarak Draft Image 1" },
-//     { "src": EidIdea2.src, "alt": "Eid Mubarak Draft Image 2" },
-//     { "src": EidIdea3.src, "alt": "Eid Mubarak Draft Image 3" },
-// ]
 
 export default function Eid() {
     const [openSection, setOpenSection] = useState(false);
@@ -40,39 +30,29 @@ export default function Eid() {
                         <div id="section-description">
                             I played around with visual motifs associated with the holiday, such as lanterns and string lights, mosques, the crescent and star, Mecca, and the words “Eid Mubarak,” the “Merry Christmas” phrase for the holiday. For the color palette, I used green (color of Islam) and a complementary rose as well as purple to signify royalty and spirituality.
                         </div>
-                        {/* <div id="image-gallery-with-text-overlay">
-                            {
-                                devImages.map(image => {
-                                    return (
-                                        <div className="image-1 item">
-                                            <a href="#">
-                                                <img src={image.src} alt={image.alt} />
-                                            </a>
-                                            <p>Image Caption</p>
-                                        </div>
-                                    )
-                                })
-                            }
-                        </div> */}
+                        <div id="image-gallery-with-text-overlay">
+                            {devImageList.map((image, index) => (
+                                <div className="image-1 item">
+                                    <img key={index} src={image.default.src} alt={`image-${index}`} />
+                                    <p>Image Caption</p>
+                                </div>
+
+                            ))}
+                        </div>
                         <div id="section-end">
                             ------ END -------
                         </div>
                     </>
                 }
-                {/* <div id="image-gallery-with-text-overlay">
-                    {
-                        finalImages.map(image => {
-                            return (
-                                <div className="image-1 item">
-                                    <a href="#">
-                                        <img src={image.src} alt={image.alt} />
-                                    </a>
-                                    <p>Image Caption</p>
-                                </div>
-                            )
-                        })
-                    }
-                </div> */}
+                <div id="image-gallery-with-text-overlay">
+                    {finalImageList.map((image, index) => (
+                        <div className="image-1 item">
+                            <img key={index} src={image.default.src} alt={`image-${index}`} />
+                            <p>Image Caption</p>
+                        </div>
+
+                    ))}
+                </div>
             </section>
             <Footer />
         </>

@@ -1,65 +1,36 @@
 'use client';
-import Footer from "../components/footer";
-import KesslerCover from "public/images/Kessler/kessler-slide-1.jpg";
-import KesslerSlide2 from "public/images/Kessler/kessler-slide-2.jpg";
-import KesslerSlide3 from "public/images/Kessler/kessler-slide-3.jpg";
-import KesslerSlide4 from "public/images/Kessler/kessler-slide-4.jpg";
-import WendyFamily from "public/images/Kessler/wendy-family.jpg";
-import WendyStars from "public/images/Kessler/wendy-stars.jpg";
-import WendyCar from "public/images/Kessler/wendy-car.jpg";
+import DesktopNavbar from "app/components/desktopNavbar";
+import Footer from "app/components/footer";
+// dynamically import all images from folder 
+const finalImages = require.context('../../public/images/Kessler', false);
+const finalImageList = finalImages.keys().map(image => finalImages(image));
 
-export default async function Kessler() {
+import { useState } from "react";
+
+export default function Kessler() {
+    const [openSection, setOpenSection] = useState(false);
+    const toggle = () => {
+        setOpenSection(!openSection);
+    };
     return (
-        <section>
-        <section id="portfolio-page">
-            <h3 id="all-caps">KESSLER PROJECT</h3>
-            <p>Designs, 3D assets, and illustrations for a space theme park concept and finalist in the 2018 Disney Imaginations contest. I led art direction and development on my four-person team.</p><br/>
-            <br/>
-                <img
-                    id="centered-caption"
-                    key='wendy-stars'
-                    src={WendyStars.src}
-                    alt='wendy-stars'
-                />
-                <br/> 
-                <img
-                    id="centered-caption"
-                    key='wendy-family'
-                    src={WendyFamily.src}
-                    alt='wendy-family'
-                />
-                <br/>
-                <img
-                    id="centered-caption"
-                    key='wendy-car'
-                    src={WendyCar.src}
-                    alt='wendy-car'
-                />
-                <br/>
-            <img
-                    id="centered-caption"
-                    key='kessler-2'
-                    src={KesslerSlide2.src}
-                    alt='kessler-2'
-                />
-                <br/>
-                 <img
-                    id="centered-caption"
-                    key='kessler-3'
-                    src={KesslerSlide3.src}
-                    alt='kessler-3'
-                />
-                <br/>
-                 <img
-                    id="centered-caption"
-                    key='kessler-4'
-                    src={KesslerSlide4.src}
-                    alt='kessler-4'
-                />
-                <br/>
-            <br/><br/>
-        </section>
-        <Footer/>
-        </section>
+        <>
+            <DesktopNavbar />
+            <section id="graphic-design-project">
+                <h2>DISNEY IMAGINEERING: KESSLER PROJECT</h2>
+                <h4><i>2018</i></h4>
+                <div id="section-description">
+                    Kessler Project is a theme park concept that was a finalist in the 2018 Disney Imaginations competition. As the designer and artist on a four-person team, I led visual direction and creation of our submission slides and presentation slides to the Imagineering executives in Glendale, California.                </div>
+                <div id="image-gallery-with-text-overlay">
+                    {finalImageList.map((image, index) => (
+                        <div className="image-1 item">
+                            <img key={index} src={image.default.src} alt={`image-${index}`} />
+                            <p>Image Caption</p>
+                        </div>
+
+                    ))}
+                </div>
+            </section>
+            <Footer />
+        </>
     );
 }

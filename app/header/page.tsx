@@ -24,7 +24,6 @@ export default function Header() {
         <section id="header">
             <h1 id="Jessica-Peng"><SplitText copy="Jessica Peng" role="heading" /></h1>
             <SocialMediaLinks/>
-            <div className="down-arrow"></div>
             <img src={Cloud1.src} width="300px" height="200px"/>
         </section>
     );

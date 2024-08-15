@@ -125,7 +125,7 @@ section {
 
 .down-arrow {
     position: absolute;
-    top: calc(100vh - 60px);
+    top: calc(100vh - 100px);
     left: calc(50% - 14px);
     width: 0;
     height: 30px;
@@ -148,22 +148,44 @@ section {
     transform: rotateZ(45deg);
 }
 
+.two-column-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .column {
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex; 
+    flex-direction: column;
+  }
+  
+  @media (max-width: 1024px) {
+    .two-column-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  #space {
+    margin: 5px; 
+  }
 /* desktop nav bar */
 #desktop-navbar {
     position: sticky;
     top: 0px;
-    animation: fadeIn 2s;
     justify-content: center;
     display: flex;
     /* Make a horizontal flexbox (the default) */
     flex-direction: row;
     background-color: var(--blue);
+    padding: 5px;
 }
 
 #desktop-navbar-button {
     border: 3px solid var(--black);
-    padding: 14px;
-    margin: 0px 24px 0px 24px;
+    padding: 8px;
+    margin: 0px 72px 0px 72px;
     color: var(--black);
 }
 

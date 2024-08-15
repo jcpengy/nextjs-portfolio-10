@@ -11,8 +11,9 @@ class Page extends React.Component<any, any>  {
     render() {
         return (
             <>
-                <Header />
                 <DesktopNavbar />
+                <Header />
+                <div className="down-arrow"></div>
                 <GraphicDesign />
                 <UXDesign />
                 <About />

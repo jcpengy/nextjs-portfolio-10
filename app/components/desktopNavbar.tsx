@@ -24,7 +24,7 @@ export default function DesktopNavbar() {
         }
     };
     return (
-        <section id="desktop-navbar">
+        <div id="desktop-navbar">
             {Object.entries(navItems).map(([path, { name }], i) => {
                 const isActive = path === pathname;
                 // const style = { "background-color": backgroundColors[i] }
@@ -50,6 +50,6 @@ export default function DesktopNavbar() {
                     // </Link>
                 );
             })}
-        </section>
+        </div>
     );
 }

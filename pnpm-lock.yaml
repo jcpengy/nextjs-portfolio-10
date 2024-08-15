@@ -102,6 +102,9 @@ importers:
       '@types/react-dom':
         specifier: 18.2.6
         version: 18.2.6
+      '@types/webpack-env':
+        specifier: ^1.18.5
+        version: 1.18.5
       autoprefixer:
         specifier: ^10.4.14
         version: 10.4.14(postcss@8.4.24)
@@ -722,6 +725,9 @@ packages:
 
   '@types/unist@2.0.7':
     resolution: {integrity: sha512-cputDpIbFgLUaGQn6Vqg3/YsJwxUwHLO13v3i5ouxT4lat0khip9AEWxtERujXV9wxIB1EyF97BSJFt6vpdI8g==}
+
+  '@types/webpack-env@1.18.5':
+    resolution: {integrity: sha512-wz7kjjRRj8/Lty4B+Kr0LN6Ypc/3SymeCCGSbaXp2leH0ZVg/PriNiOwNj4bD4uphI7A8NXS4b6Gl373sfO5mA==}
 
   '@vercel/analytics@1.0.1':
     resolution: {integrity: sha512-Ux0c9qUfkcPqng3vrR0GTrlQdqNJ2JREn/2ydrVuKwM3RtMfF2mWX31Ijqo1opSjNAq6rK76PwtANw6kl6TAow==}
@@ -3202,6 +3208,8 @@ snapshots:
   '@types/scheduler@0.16.3': {}
 
   '@types/unist@2.0.7': {}
+
+  '@types/webpack-env@1.18.5': {}
 
   '@vercel/analytics@1.0.1': {}
 
