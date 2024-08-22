@@ -21,7 +21,7 @@ export default function Eid() {
                 <h2>EID MUBARAK GIFT WRAPPING PAPER</h2>
                 <h4><i>2024</i></h4>
                 <div id="section-description">
-                    A set of eight Eid Mubarak-themed gift wrapping paper designs for a Palestinian small business, Nine To Five Pali. The client wanted four designs geared towards children and four modern designs for adults. I blended traditional Muslim iconography with a vibrant green and purple color palette to create festive patterns that resonate with both kids and adults.
+                    A set of eight Eid Mubarak-themed gift wrapping paper designs for a Palestinian small business, Nine To Five Pali. The client wanted four designs for children and four modern designs for adults. I blended traditional Muslim iconography with a vibrant green and purple color palette to create festive patterns that resonate with both kids and adults.
                 </div>
                 <button id="section-toggle" onClick={toggle}>{"Research & Concept Development " + (openSection ? "-" : "+")}</button>
                 {

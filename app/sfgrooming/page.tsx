@@ -2,10 +2,11 @@
 import DesktopNavbar from "app/components/desktopNavbar";
 import Footer from "app/components/footer";
 // dynamically import all images from folder 
-// const finalImages = require.context('../../public/images/SFGrooming/finalImages', false);
-// const finalImageList = finalImages.keys().map(image => finalImages(image));
-// const devImages = require.context('../../public/images/SFGrooming/devImages', false);
-// const devImageList = devImages.keys().map(image => devImages(image));
+const finalImages = require.context('../../public/images/SFGrooming/finalImages', false);
+const finalImageList = finalImages.keys().map(image => finalImages(image));
+console.log(finalImageList.length);
+const devImages = require.context('../../public/images/SFGrooming/devImages', false);
+const devImageList = devImages.keys().map(image => devImages(image));
 
 import { useState } from "react";
 
@@ -28,13 +29,13 @@ export default function SFGrooming() {
                     <>
                         <div id="section-description">
                             Local, welcoming, funky to match the San Francisco aesthetic, but calming for dogs and groomers. Inspiration: Duboce Park, existing signage that uses a bright orange and animal silhouettes, Golden Gate Bridge.</div>                        <div id="image-gallery-with-text-overlay">
-                            {/* {devImageList.map((image, index) => (
+                            {devImageList.map((image, index) => (
                                 <div className="image-1 item">
                                     <img key={index} src={image.default.src} alt={`image-${index}`} />
                                     <p>Image Caption</p>
                                 </div>
 
-                            ))} */}
+                            ))}
                         </div>
                         <div id="section-end">
                             ------ END -------
@@ -42,13 +43,13 @@ export default function SFGrooming() {
                     </>
                 }
                 <div id="image-gallery-with-text-overlay">
-                    {/* {finalImageList.map((image, index) => (
+                    {finalImageList.map((image, index) => (
                         <div className="image-1 item">
                             <img key={index} src={image.default.src} alt={`image-${index}`} />
                             <p>Image Caption</p>
                         </div>
 
-                    ))} */}
+                    ))}
                 </div>
             </section>
             <Footer />
