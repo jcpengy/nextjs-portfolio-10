@@ -1,7 +1,7 @@
 'use client';
 import Eid from "public/images/Eid/finalImages/eid-cover.jpg";
 import River from "public/images/RiversEdge/finalImages/riversedge-cover.jpg";
-import KesslerSlide2 from "public/images/Kessler/kessler-slide-1.jpg";
+import KesslerSlide2 from "public/images/Kessler/kessler-cover.jpg";
 import BlackPower from "public/images/BPB/bpb-cover.jpg";
 import SFGrooming from "public/images/SFGrooming/finalImages/1.jpg";
 
