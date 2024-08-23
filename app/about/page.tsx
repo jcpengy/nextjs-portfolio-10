@@ -21,12 +21,11 @@ export default function About() {
                     at Adobe, I incorporate storytelling into the design and implementation of Customer Engineering's internal tools and applications. Although I enjoy building user-friendly, functional, and accessible tools, 
                     I'm ready to pursue design on creative, story-driven projects. 
                     <span id="space" />
-                    Outside of work, graphic design has been a skill and hobby that I've grown through projects for real clients and friends/family. I first started learning it to supplement my 3D modeling and fine art skills in college.
-                    Since then, I've done volunteer graphic design work for a variety of organizations and also
-                    ran an Etsy shop where I designed logos, branding, marketing collateral, and family event signage and merchandise.
+                    Outside of work, I've explored graphic design through projects for real clients and friends/family. I first started learning it to supplement my 3D modeling and fine art skills in college.
+                    Since then, I've done volunteer graphic design work for a variety of organizations and ran an Etsy shop where I designed logos, branding, marketing collateral, and family event signage and merchandise.
                     Overall, I strive to create clean, cohesive, and informed designs that tell a story. My design work has been featured in the New York Times and as a finalist in Disney Imaginations.
                     <span id="space" />
-                    When I'm not working, I love enjoying sunny weather by taking my nine-pound, giant Yorkie to run around Duboce Park, playing tennis, or going to the beaches around SF. I also like to do other creative things --- you can check those out below:) Thanks for visiting!
+                    When I'm not working, I enjoy taking my nine-pound, giant Yorkie Butters to Duboce Park, playing tennis, and going to the beaches around San Francisco. I also have other creative hobbies --- you can check those out below:) Thanks for visiting!
                 </div>
             </div>
             <div id="section-description">
