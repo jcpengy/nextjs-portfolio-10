@@ -50,6 +50,24 @@
     flex-wrap: wrap;
 }
 
+.item2 img {
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+.item2 {
+    flex-grow: 2;
+    flex-basis: 250px;
+}
+
+.item2 p {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 0;
+    display: none;
+}
+
 .item img {
     display: block;
     margin: auto;
@@ -287,7 +305,7 @@ input[type=submit]:hover {
 /* Add a background color and some padding around the form */
 #contact {
     border-radius: 5px;
-    background-color: var(--purple);
+    background-color: var(--green);
     padding: 20px;
     color: var(--black);
 }
@@ -313,6 +331,14 @@ input[type=submit]:hover {
     background-color: var(--white);
 }
 
+#cartoons {
+    background-color: var(--purple);
+}
+
+#fine-art {
+    background-color: var(--yellow);
+}
+
 #footer {
     background-color: var(--blue);
     color: var(--black);
@@ -322,8 +348,12 @@ input[type=submit]:hover {
     flex-direction: column;
 }
 
-#about {
+#more-art {
     background-color: var(--yellow);
+}
+
+#about {
+    background-color: var(--white);
 }
 
 #ux-design {

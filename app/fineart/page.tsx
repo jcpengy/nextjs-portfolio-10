@@ -1,13 +1,13 @@
 'use client';
-const finalImages = require.context('../../public/images/cartoons', false);
+const finalImages = require.context('../../public/images/fineart', false);
 const finalImageList = finalImages.keys().map(image => finalImages(image));
 
-export default function Cartoons() {
+export default function FineArt() {
     return (
-        <section id="cartoons">
-            <h2>COMICS</h2>
+        <section id="fine-art">
+            <h2>FINE ART</h2>
             <div id="section-description">
-                I draw cartoons about my life sometimes featuring CEO Jess, an ambitious but anxious potato (or Dorito chip!). See more of my unhinged drawings at @officialceojess.
+                Personal art featuring landscapes, animals, and people. 
             </div>
             <div id="image-gallery-with-text-overlay">
                 {finalImageList.map((image, index) => (
@@ -18,7 +18,7 @@ export default function Cartoons() {
                 ))}
             </div>
             <button id="desktop-navbar-button" key="ceo-jess-button">
-                <a href="https://www.instagram.com/officialceojess/">See more on my Instagram</a>
+                <a href="/moreart">See more</a>
             </button>
         </section>
     );

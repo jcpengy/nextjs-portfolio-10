@@ -5,8 +5,10 @@ import UXDesign from "./uxdesign/page";
 import Contact from "./contact/page";
 import Footer from "./components/footer";
 import About from "./about/page";
+import Cartoons from "./cartoons/page";
 import DesktopNavbar from "./components/desktopNavbar";
 import Header from "./header/page";
+import FineArt from "./fineart/page";
 class Page extends React.Component<any, any>  {
     render() {
         return (
@@ -16,6 +18,8 @@ class Page extends React.Component<any, any>  {
                 <div className="down-arrow"></div>
                 <GraphicDesign />
                 <UXDesign />
+                <FineArt/>
+                <Cartoons/>
                 <About />
                 <Contact />
                 <Footer />

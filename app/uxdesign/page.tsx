@@ -12,7 +12,7 @@ export default function UXDesign() {
         <section id="ux-design">
             <h2>UI/UX DESIGN</h2>
             <div id="section-description">
-                Tools and applications I'm working on at Adobe. Please contact me for access to view the projects. 
+                Tools and applications I'm working on at Adobe. Contact me to view the projects. 
             </div>
             <div id="image-gallery-with-text-overlay">
                 {
