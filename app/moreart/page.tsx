@@ -15,7 +15,7 @@ export default function MoreArt() {
         <>
             <DesktopNavbar />
             <section id="more-art">
-                <h2>PERSONAL ART</h2>
+                <h2>Personal Art</h2>
                 <div id="section-description">
                     Currently working on a large-scale oil painting of Ocean Beach.
                 </div>

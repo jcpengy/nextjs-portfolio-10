@@ -10,7 +10,7 @@ const images = [
 export default function UXDesign() {
     return (
         <section id="ux-design">
-            <h2>UI/UX DESIGN</h2>
+            <h2>UI/UX Design</h2>
             <div id="section-description">
                 Tools and applications I'm working on at Adobe. Contact me to view the projects. 
             </div>

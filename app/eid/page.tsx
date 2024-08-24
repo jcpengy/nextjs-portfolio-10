@@ -18,7 +18,7 @@ export default function Eid() {
         <>
             <DesktopNavbar />
             <section id="graphic-design-project">
-                <h2>EID MUBARAK GIFT WRAPPING PAPER</h2>
+                <h2>Eid Mubarak Gift Wrapping Paper</h2>
                 <h4><i>2024</i></h4>
                 <div id="section-description">
                     A set of eight Eid Mubarak-themed gift wrapping paper designs for a Palestinian small business, Nine To Five Pali. The client wanted four designs for children and four modern designs for adults. I blended traditional Muslim iconography with a vibrant green and purple color palette to create festive patterns that resonate with both kids and adults.

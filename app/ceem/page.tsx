@@ -22,7 +22,7 @@ export default function CEEM() {
         <>
             <DesktopNavbar />
             <section id="graphic-design-project">
-                <h2>CUSTOMER ENGINEERING ENABLEMENT MANAGER (CEEM)</h2>
+                <h2>Customer Engineering Enablement Manager (CEEM)</h2>
                 <div className="two-column-container">
                     <div className="column">Role: I led design and front-end implementation on a five-person team.</div>
                     <div className="column">

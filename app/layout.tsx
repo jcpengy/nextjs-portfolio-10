@@ -9,14 +9,14 @@ import Footer from "./components/footer";
 const graphik = localFont({
   src: [
     {
-      path: '../public/fonts/Proxima-Nova-Regular.ttf',
-      weight: '300',
+      path: '../public/fonts/AdobeClean-Regular.otf',
+      weight: '100',
       style: 'normal',
     },
     {
-      path: '../public/fonts/Proxima-Nova-Regular.ttf',
-      weight: '700',
-      style: 'bold',
+      path: '../public/fonts/AdobeClean-Regular.otf',
+      weight: '100',
+      style: 'normal',
     },
   ],
   variable: '--font-graphik',
@@ -24,17 +24,17 @@ const graphik = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://leerob.io'),
+  metadataBase: new URL('https://jesspengdesign.com'),
   title: {
-    default: 'Jess Peng',
-    template: '%s | Jess Peng',
+    default: 'Jessica Peng',
+    template: '%s | Jessica Peng',
   },
   description: 'Graphic designer & developer',
   openGraph: {
-    title: 'Jess Peng',
+    title: 'Jessica Peng',
     description: 'Graphic designer & developer',
-    url: 'https://jcpengy.io',
-    siteName: 'Jess Peng',
+    url: 'https://jesspengdesign.com',
+    siteName: 'Jessica Peng',
     locale: 'en-US',
     type: 'website',
   },
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: 'Jess Peng',
+    title: 'Jessica Peng',
     card: 'summary_large_image',
   },
   verification: {

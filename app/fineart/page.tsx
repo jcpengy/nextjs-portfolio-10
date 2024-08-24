@@ -5,7 +5,7 @@ const finalImageList = finalImages.keys().map(image => finalImages(image));
 export default function FineArt() {
     return (
         <section id="fine-art">
-            <h2>FINE ART</h2>
+            <h2>Fine Art</h2>
             <div id="section-description">
                 Personal art featuring landscapes, animals, and people. 
             </div>

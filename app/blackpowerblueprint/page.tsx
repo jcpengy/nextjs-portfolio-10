@@ -18,7 +18,7 @@ export default function BPB() {
         <>
             <DesktopNavbar />
             <section id="graphic-design-project">
-                <h2>BLACK POWER BLUEPRINT</h2>
+                <h2>Black Power Blueprint</h2>
                 <h4><i>2020-2023</i></h4>
                 <div id="section-description">
                     Instagram and Facebook posts for Black Power Blueprint, a joint program of the African People’s Education and Defense Fund (APEDF) and Black Star Industries (BSI) that aims to transform North St. Louis through renovation, economic development, and political power by and for the black community.                </div>

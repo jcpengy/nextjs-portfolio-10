@@ -17,7 +17,7 @@ export default function SandboxCopy() {
         <>
             <DesktopNavbar />
             <section id="graphic-design-project">
-                <h2>SANDBOX ARTIFACT COPY APP</h2>
+                <h2>Sandbox Artifact Copy App</h2>
                 <div className="two-column-container">
                     <div className="column">Role: I led design and front-end implementation on a five-person team.</div>
                     <div className="column">

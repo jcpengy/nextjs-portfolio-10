@@ -14,6 +14,25 @@
 
 #body {}
 
+@font-face {
+    font-family: "Header";
+    src: url("../public/fonts/Fibon_Sans_Regular.otf");
+}
+
+@font-face {
+    font-family: "Paragraph";
+    src: url("../public/fonts/just-sans-regular.otf");
+}
+
+h1, h2, h3, h4 {
+    font-family: "Header";
+}
+
+#section-description {
+    font-family: "Paragraph";
+    padding: 12px 0 12px 0;
+}
+
 #section-toggle {
     background-color: var(--yellow);
     padding: 10px; 

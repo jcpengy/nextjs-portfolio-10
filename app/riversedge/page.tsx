@@ -18,7 +18,7 @@ export default function RiversEdge() {
         <>
             <DesktopNavbar />
             <section id="graphic-design-project">
-                <h2>RIVER'S EDGE CABIN</h2>
+                <h2>River's Edge Cabin</h2>
                 <h4><i>2022</i></h4>
                 <div id="section-description">
                     A logo design, mini pamphlet, and set of stickers for River’s Edge Cabin, a charming Airbnb retreat nestled in Ellijay, Georgia. The client wanted a vintage, retro-style logo with warm colors and a welcome handbook to greet guests and provide helpful info for their stay. I created a cozy, outdoorsy visual identity featuring simple shapes, clean lines, and a bold font to achieve a fun, retro, and inviting aesthetic.                </div>

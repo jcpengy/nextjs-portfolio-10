@@ -7,7 +7,7 @@ const finalImageList = finalImages.keys().map(image => finalImages(image));
 export default function About() {
     return (
         <section id="about">
-            <h2>ABOUT</h2>
+            <h2>About</h2>
             <div className="two-column-container">
                 <div className="column">
                     {/* <img id="about-pics" key="profile-pic-1" src={ProfilePic1.src} alt="profile-pic-1" /> */}

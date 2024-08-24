@@ -5,7 +5,7 @@ const finalImageList = finalImages.keys().map(image => finalImages(image));
 export default function Cartoons() {
     return (
         <section id="cartoons">
-            <h2>COMICS</h2>
+            <h2>Comics</h2>
             <div id="section-description">
                 I draw cartoons about my life sometimes featuring CEO Jess, an ambitious but anxious potato (or Dorito chip!). See more of my unhinged drawings at @officialceojess.
             </div>
