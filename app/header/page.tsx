@@ -10,15 +10,15 @@ export default function Header() {
     useEffect(() => {
         const move = document.getElementById("move");
         const headerDiv = document.getElementById("header");
-        let rect = headerDiv.getBoundingClientRect();
-        console.log(JSON.stringify(rect));
+        // let rect = headerDiv.getBoundingClientRect();
+        // console.log(JSON.stringify(rect));
         document.body.onpointermove = event => {
             const { clientX, clientY } = event;
             // only move if mouse event is in header block
             // if (clientY < rect.bottom) {
-                move.animate({
-                    left: `${clientX -rect.left}px`,
-                    top: `${rect.bottom - clientY}px`
+                move?.animate({
+                    left: `${clientX}px`,
+                    top: `${clientY}px`
 
                 }, { duration: 1000, fill: "forwards" })
             // }
