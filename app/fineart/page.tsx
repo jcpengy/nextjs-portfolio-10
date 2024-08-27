@@ -7,7 +7,7 @@ export default function FineArt() {
         <section id="fine-art">
             <h2>Fine Art</h2>
             <div id="section-description">
-                Personal art featuring landscapes, animals, and people. 
+                Personal art featuring landscapes, animals, and people.
             </div>
             <div id="image-gallery-with-text-overlay">
                 {finalImageList.map((image, index) => (
@@ -17,9 +17,11 @@ export default function FineArt() {
                     </div>
                 ))}
             </div>
-            <button id="desktop-navbar-button" key="ceo-jess-button">
-                <a href="/moreart">See more</a>
-            </button>
+            <div className="see-more-button-container">
+                <button id="see-more-button" key="ceo-jess-button">
+                    <a href="/moreart">View the gallery</a>
+                </button>
+            </div>
         </section>
     );
 }

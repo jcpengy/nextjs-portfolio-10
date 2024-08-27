@@ -18,7 +18,7 @@ export default function GraphicDesign() {
         <section id="graphic-design">
             <h2>Graphic Design</h2>
             <div id="section-description">
-                Selected projects in graphic design, small business branding, and visual storytelling.
+                Selected projects in graphic design including small business branding and visual storytelling.
             </div>
             <div id="image-gallery-with-text-overlay">
                 {

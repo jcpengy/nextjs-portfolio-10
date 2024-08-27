@@ -14,7 +14,7 @@ export default function Contact() {
                 <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
                 <label htmlFor="subject">Subject</label>
                 <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
-                <input type="submit" value="Submit" />
+                <input id="see-more-button" type="submit" value="Submit" />
             </form>
         </section>
     );

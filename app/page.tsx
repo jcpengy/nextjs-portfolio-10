@@ -18,10 +18,9 @@ class Page extends React.Component<any, any>  {
                 <div className="down-arrow"></div>
                 <GraphicDesign />
                 <UXDesign />
+                <About />
                 <FineArt/>
                 <Cartoons/>
-                <About />
-                <Contact />
                 <Footer />
             </>
         )

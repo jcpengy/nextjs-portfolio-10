@@ -44,9 +44,10 @@ export default function Header() {
     }
     return (
         <section id="header">
-            <div id="move"></div>
+            {/* <div id="move"></div> */}
             <div id="header-text">
                 <h1 id="Jessica Peng"><SplitText copy="Jessica Peng" role="heading" /></h1>
+                <h3 id="website-subheader">Software Engineer, Graphic Designer, and Artist</h3>
                 <SocialMediaLinks />
             </div>
             {/* <img className="" src={Cloud1.src} width="300px" height="200px" /> */}

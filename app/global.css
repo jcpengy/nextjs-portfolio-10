@@ -15,16 +15,25 @@
 #body {}
 
 @font-face {
+    font-family: "BoldHeader";
+    src: url("../public/fonts/KarnakPro-Medium.ttf");
+}
+
+@font-face {
     font-family: "Header";
-    src: url("../public/fonts/Fibon_Sans_Regular.otf");
+    src: url("../public/fonts/KarnakPro-Light.ttf");
 }
 
 @font-face {
     font-family: "Paragraph";
-    src: url("../public/fonts/just-sans-regular.otf");
+    src: url("../public/fonts/Graphik-Regular.ttf");
 }
 
-h1, h2, h3, h4 {
+h1, h2 {
+    font-family: "BoldHeader";
+}
+
+h3, h4 {
     font-family: "Header";
 }
 
@@ -121,11 +130,17 @@ h1, h2, h3, h4 {
 }
 
 section {
-    padding: 24px;
+    padding: 48px;
+}
+
+#about-blurb {
+    background-color: var(--white);
+    border: 3px solid var(--black);
 }
 
 #header-text {
     position: absolute; 
+    text-align: center;
 }
 
 @keyframes dropDown {
@@ -269,18 +284,24 @@ section {
     padding: 5px;
 }
 
+#website-subheader {
+    text-align: center;
+}
+
 #desktop-navbar-button {
-    border: 3px solid var(--black);
+    /* border: 3px solid var(--black); */
     padding: 8px;
     margin: 0px 72px 0px 72px;
     color: var(--black);
+    font-family: "BoldHeader";
+    letter-spacing: 1px;
 }
 
 #desktop-navbar-button:hover {
-    background-color: var(--purple);
-    color: var(--white);
+    background-color: var(--yellow);
+    color: var(--blue);
     cursor: pointer;
-    transform: scale(1.5);
+    transform: scale(1.25);
 }
 
 /* contact form */
@@ -324,13 +345,15 @@ input[type=submit]:hover {
 /* Add a background color and some padding around the form */
 #contact {
     border-radius: 5px;
-    background-color: var(--green);
+    background-color: var(--yellow);
     padding: 20px;
     color: var(--black);
 }
 
 #Jessica-Peng {
     color: var(--black);
+    letter-spacing: 10px;
+    font-family: "BoldHeader";
     /* position: absolute; */
     /* z-index: 3000; */
 }
@@ -355,7 +378,7 @@ input[type=submit]:hover {
 }
 
 #fine-art {
-    background-color: var(--yellow);
+    background-color: var(--white);
 }
 
 #footer {
@@ -372,11 +395,11 @@ input[type=submit]:hover {
 }
 
 #about {
-    background-color: var(--white);
+    background-color: var(--blue);
 }
 
 #ux-design {
-    background-color: var(--green);
+    background-color: var(--yellow);
 }
 
 .gallery-container {
@@ -432,11 +455,11 @@ input[type=submit]:hover {
 }
 
 #nav-link {
-    letter-spacing: 2.5px;
+    letter-spacing: 1px;
     background-color: #fafafa;
     margin: 15px;
     font-size: 12px;
-    color: grey;
+    color: var(--black);
 }
 
 #nav-link:hover {
@@ -484,43 +507,6 @@ p {
     font-size: 18px;
     line-height: 22px;
     font-family: url(/public/fonts/Merriweather-Regular.ttf);
-}
-
-h1 {
-    font-weight: 700;
-    font-size: 72px;
-    line-height: 80px;
-    -webkit-font-smoothing: antialiased;
-    color: var(--pink);
-}
-
-h2 {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 25px;
-    -webkit-font-smoothing: antialiased;
-    color: var(--pink);
-}
-
-h3 {
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 36px;
-    -webkit-font-smoothing: antialiased;
-    color: var(--pink);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-h4 {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    -webkit-font-smoothing: antialiased;
-    color: var(--pink);
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .hobby {
@@ -575,7 +561,7 @@ ul {
 }
 
 #footer-text {
-    padding: 23px 0 23px 0;
+    padding: 0px 0 24px 0;
 }
 
 #element1 {
@@ -1032,31 +1018,90 @@ h1 span span {
     padding: 5px;
 }
 
+h1 {
+    font-size: 72px;
+    margin-bottom: -16px;
+}
+
+h2 {
+    font-size: 48px;
+    margin-bottom: -16px;
+}
+
+h3 {
+    font-size: 36px; 
+    margin-bottom: -16px; 
+}
+
+h4 {
+    font-size: 24px; 
+}
+
 #navbar-mobile-menu {
-    letter-spacing: 2.5px;
-    border: 1px solid grey;
+    letter-spacing: 1px;
+    border: 1px solid var(--yellow);
     text-align: center;
     width: 100%;
     padding: 15px 0 15px 0;
+    font-family: "BoldHeader";
 }
 
 #navbar-mobile-links {
-    border: 1px solid grey;
+    border: 1px solid var(--yellow);
     border-top: none;
     text-align: center;
     width: 100%;
     display: flex;
     flex-direction: column;
+    font-family: "BoldHeader";
+}
+
+#see-more-button {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 10px 20px 10px 20px; 
+    border-radius: 5px; 
+    border: 1px solid var(--black);
+    margin: 10px; 
+}
+
+.see-more-button-container {
+    display: flex; 
+    flex-direction: row;
+    justify-content: right;
 }
 
 /*mobile*/
 @media screen and (max-width: 960px) {
+    section {
+        padding: 24px;
+    }
+
+    #see-more-button {
+        width: 100%;
+    }
+    .item2 {
+        flex-basis: 150px;
+    }
+
+    .item img {
+        padding: 5px 0 5px 0; 
+    }
+
+    .item2 img {
+        padding: 5px; 
+    }
+
     #header {
         margin-top: -100px;
     }
 
     .down-arrow {
-        top: calc(100vh - 100px);
+        top: calc(100vh - 150px);
+    }
+
+    #social-media-links {
+        transform: scale(.8);
     }
 
     #desktop-navbar {
@@ -1070,6 +1115,7 @@ h1 span span {
     #navbar-mobile {
         display: block;
         margin-bottom: 25px;
+        background-color: var(--blue);
     }
 
     #navbar-desktop {
@@ -1083,6 +1129,7 @@ h1 span span {
 
     #nav-link {
         font-size: 16px;
+        background-color: var(--blue);
     }
 
     html {
@@ -1104,13 +1151,13 @@ h1 span span {
     }
 
     h1 {
-        font-size: 42px;
+        font-size: 48px;
         line-height: 54px;
         margin-bottom: -10px;
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 36px;
         line-height: 32px;
         margin-bottom: 0px;
     }
@@ -1118,7 +1165,6 @@ h1 span span {
     h3 {
         font-size: 18px;
         line-height: 21px;
-        margin-bottom: 20px;
         margin-top: 20px;
     }
 

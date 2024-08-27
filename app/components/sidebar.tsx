@@ -16,11 +16,8 @@ export default function Navbar() {
     '/': {
         name: 'WORK',
     },
-    '/about': {
-        name: 'ABOUT',
-    },
-    '/contact': {
-        name: 'CONTACT',
+    '#about': {
+        name: 'ABOUT/CONTACT',
     }
 };
 

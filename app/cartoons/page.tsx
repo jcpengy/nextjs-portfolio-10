@@ -7,7 +7,7 @@ export default function Cartoons() {
         <section id="cartoons">
             <h2>Comics</h2>
             <div id="section-description">
-                I draw cartoons about my life sometimes featuring CEO Jess, an ambitious but anxious potato (or Dorito chip!). See more of my unhinged drawings at @officialceojess.
+                CEO Jess is a comic about an ambitious and anxious potato. See more of my unhinged drawings at @officialceojess.
             </div>
             <div id="image-gallery-with-text-overlay">
                 {finalImageList.map((image, index) => (
@@ -17,9 +17,11 @@ export default function Cartoons() {
                     </div>
                 ))}
             </div>
-            <button id="desktop-navbar-button" key="ceo-jess-button">
-                <a href="https://www.instagram.com/officialceojess/">See more on my Instagram</a>
-            </button>
+            <div className="see-more-button-container">
+                <button id="see-more-button" key="ceo-jess-button">
+                    <a href="https://www.instagram.com/officialceojess/">See more on my Instagram</a>
+                </button>
+            </div>
         </section>
     );
 }

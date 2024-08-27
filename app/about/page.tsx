@@ -13,19 +13,20 @@ export default function About() {
                     {/* <img id="about-pics" key="profile-pic-1" src={ProfilePic1.src} alt="profile-pic-1" /> */}
                     {/* <img id="about-pics" key="profile-pic-2" src={ProfilePic2.src} alt="profile-pic-2" /> */}
                 </div>
-                <div className="column">
+                <div className="column" id="about-blurb">
                     I'm a software engineer based in San Francisco with a background in UI/UX design and development,
                     graphic design, and fine art. I graduated from the University of Pennsylvania in 2019 with a B.S.E. in Computer Graphics and a minor in Fine Arts.
                     <span id="space" />
-                    I'm passionate about creative projects and visual storytelling. As a senior front-end engineer
-                    at Adobe, I'm responsible for the design and front-end implementation of Customer Engineering's internal tools and applications. Although I enjoy building user-friendly, functional, and accessible tools,
-                    I'm ready to pursue design on creative, story-driven projects.
+                    As a senior front-end engineer at Adobe, I lead the design and front-end implementation of Customer Engineering's internal tools and applications.
+                    Outside of work, I'm a self-taught graphic designer who's volunteered with social activist organizations and designed for a variety of small businesses through a thriving Etsy shop. My work has been in the New York Times and was a finalist in Disney Imaginations.
                     <span id="space" />
-                    Outside of work, I've explored graphic design through projects for real clients and friends/family. I first started learning it to supplement my 3D modeling and fine art skills in college.
-                    Since then, I've done volunteer graphic design work for a variety of organizations and ran an Etsy shop where I designed logos, branding, marketing collateral, and family event signage and merchandise.
-                    Overall, I strive to create clean, cohesive, and informed designs that tell a story. My design work has been featured in the New York Times and as a finalist in Disney Imaginations.
+                    Overall, I like to create clean, cohesive, and informed designs that tell a story.
+                    My passion for visual storytelling stems from an interest in the world building found in my favorite animated movies. I aspire to do graphic design in the
+                    children's entertainment space where I can take part in creating unique, stylized worlds.
                     <span id="space" />
-                    When I'm not working, I enjoy taking my nine-pound, giant Yorkie Butters to Duboce Park, playing tennis, and going to the beaches around San Francisco. I also love painting and drawing cartoons:) 
+                    When I'm not working, I enjoy taking my nine-pound, giant Yorkie Butters to Duboce Park, playing tennis, and going to the beaches around San Francisco. I also love painting and drawing cartoons.
+                    <span id="space" />
+                    If you have any questions, please reach out!
                 </div>
             </div>
             {/* <div id="section-description">
