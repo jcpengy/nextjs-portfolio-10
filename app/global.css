@@ -219,7 +219,7 @@ section {
 .down-arrow {
     position: absolute;
     top: calc(100vh - 100px);
-    left: calc(50% - 14px);
+    left: calc(50% - 0px);
     width: 0;
     height: 30px;
     border: 2px solid;
@@ -392,6 +392,7 @@ input[type=submit]:hover {
 
 #more-art {
     background-color: var(--yellow);
+    margin-top: -24px;
 }
 
 #about {

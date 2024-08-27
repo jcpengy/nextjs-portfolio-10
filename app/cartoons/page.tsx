@@ -19,7 +19,7 @@ export default function Cartoons() {
             </div>
             <div className="see-more-button-container">
                 <button id="see-more-button" key="ceo-jess-button">
-                    <a href="https://www.instagram.com/officialceojess/">See more on my Instagram</a>
+                    <a href="https://www.instagram.com/officialceojess/">View more on Instagram</a>
                 </button>
             </div>
         </section>

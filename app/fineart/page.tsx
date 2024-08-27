@@ -19,7 +19,7 @@ export default function FineArt() {
             </div>
             <div className="see-more-button-container">
                 <button id="see-more-button" key="ceo-jess-button">
-                    <a href="/moreart">View the gallery</a>
+                    <a href="/moreart">View gallery</a>
                 </button>
             </div>
         </section>

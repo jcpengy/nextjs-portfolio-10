@@ -28,7 +28,7 @@ export default function MoreArt() {
                     ))}
                 </div>
                 <div id="section-description">
-                    Paintings
+                    <h3>Paintings</h3>
                 </div>
                 <div id="image-gallery-with-text-overlay">
                     {paintingImageList.map((image, index) => (
@@ -39,7 +39,7 @@ export default function MoreArt() {
                     ))}
                 </div>
                 <div id="section-description">
-                    Pencil drawings 
+                    <h3>Pencil drawings</h3>
                 </div>
                 <div id="image-gallery-with-text-overlay">
                     {pencilImageList.map((image, index) => (
@@ -50,7 +50,7 @@ export default function MoreArt() {
                     ))}
                 </div>
                 <div id="section-description">
-                    Miscellaneous
+                    <h3>Other</h3>
                 </div>
                 <div id="image-gallery-with-text-overlay">
                     {miscImageList.map((image, index) => (
@@ -59,6 +59,11 @@ export default function MoreArt() {
                             <p>Image Caption</p>
                         </div>
                     ))}
+                </div>
+                <div className="back-button-container">
+                    <button id="see-more-button" key="ceo-jess-button">
+                        <a href="/">Back</a>
+                    </button>
                 </div>
             </section>
             <Footer />
