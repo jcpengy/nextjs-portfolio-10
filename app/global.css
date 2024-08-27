@@ -136,6 +136,7 @@ section {
 #about-blurb {
     background-color: var(--white);
     border: 3px solid var(--black);
+    padding: 24px; 
 }
 
 #header-text {
@@ -252,6 +253,7 @@ section {
     border-radius: 8px;
     display: flex; 
     flex-direction: column;
+    justify-content: center;
   }
   
   @media (max-width: 1024px) {
@@ -270,7 +272,7 @@ section {
   }
   
   #about-pics {
-    width: 350px; 
+    width: 100%; 
   }
 /* desktop nav bar */
 #desktop-navbar {
@@ -282,6 +284,12 @@ section {
     flex-direction: row;
     background-color: var(--blue);
     padding: 5px;
+}
+
+.bio-pic-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #website-subheader {
