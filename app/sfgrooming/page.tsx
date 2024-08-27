@@ -22,7 +22,7 @@ export default function SFGrooming() {
                 <h2>San Francisco Grooming</h2>
                 <h4><i>2024</i></h4>
                 <div id="section-description">
-                    Logo and visual identity for San Francisco Grooming (or San Francisco Pet Grooming), a small pet grooming business in Hayes Valley. The shop is known for its affordable and friendly customer service. I designed them a menu, business cards, and signage to build their branding and reflect the playful, cozy, and charming atmosphere to new and existing customers.              </div>
+                    Logo and visual identity for San Francisco Grooming (or San Francisco Pet Grooming), a small pet grooming business in Hayes Valley. The shop is known for its affordable and friendly customer service. I designed them a menu, business cards, and signage incorporating hand-drawn illustrations, bright colors, and San Francisco motifs to reflect the playful, cozy, and charming atmosphere.              </div>
                 <button id="section-toggle" onClick={toggle}>{"Research & Concept Development " + (openSection ? "-" : "+")}</button>
                 {
                     openSection &&

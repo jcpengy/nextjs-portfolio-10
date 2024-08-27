@@ -14,19 +14,18 @@ export default function About() {
                     {/* <img id="about-pics" key="profile-pic-2" src={ProfilePic2.src} alt="profile-pic-2" /> */}
                 </div>
                 <div className="column" id="about-blurb">
-                    I'm a software engineer based in San Francisco with a background in UI/UX design and development,
+                    I'm a senior front-end engineer at Adobe in San Francisco with a background in UI/UX design and development,
                     graphic design, and fine art. I graduated from the University of Pennsylvania in 2019 with a B.S.E. in Computer Graphics and a minor in Fine Arts.
                     <span id="space" />
-                    As a senior front-end engineer at Adobe, I lead the design and front-end implementation of Customer Engineering's internal tools and applications.
-                    Outside of work, I'm a self-taught graphic designer who's volunteered with social activist organizations and designed for a variety of small businesses through a thriving Etsy shop. My work has been in the New York Times and was a finalist in Disney Imaginations.
+                    Currently, I lead the design and front-end implementation of Customer Engineering's internal tools and applications.
+                    Outside of work, I'm a self-taught graphic designer who's worked with non-profits and a variety of small businesses via a thriving Etsy shop. My work has been in The New York Times and a finalist in Disney Imaginations.
                     <span id="space" />
-                    Overall, I like to create clean, cohesive, and informed designs that tell a story.
-                    My passion for visual storytelling stems from an interest in the world building found in my favorite animated movies. I aspire to do graphic design in the
-                    children's entertainment space where I can take part in creating unique, stylized worlds.
+                    I like to create clean, cohesive, and informed designs rooted in visual storytelling, which stems from my interest in worldbuilding in animation. In the future, I hope to do graphic design in the
+                    children's entertainment space where I can take part in creating unique, stylized worlds like the ones I found so magical as a child.
                     <span id="space" />
-                    When I'm not working, I enjoy taking my nine-pound, giant Yorkie Butters to Duboce Park, playing tennis, and going to the beaches around San Francisco. I also love painting and drawing cartoons.
+                    When I'm not working, I like taking my nine-pound, giant Yorkie Butters to Duboce Park, playing tennis, and going to the beaches around San Francisco. I also love painting and drawing cartoons.
                     <span id="space" />
-                    If you have any questions, please reach out!
+                    If you have any questions, please reach out by emailing me at pengjess2@gmail.com. Thanks for visiting!
                 </div>
             </div>
             {/* <div id="section-description">
