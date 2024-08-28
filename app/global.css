@@ -136,7 +136,7 @@ section {
 #about-blurb {
     background-color: var(--white);
     border: 3px solid var(--black);
-    padding: 24px; 
+    padding: 16px; 
 }
 
 #header-text {
@@ -1090,6 +1090,9 @@ h4 {
 
 /*mobile*/
 @media screen and (max-width: 960px) {
+    .column {
+        padding: 0;
+    }
     section {
         padding: 24px;
     }

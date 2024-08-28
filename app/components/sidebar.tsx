@@ -3,7 +3,7 @@
 import clsx from 'clsx';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
   let pathname = usePathname() || '/';
@@ -14,12 +14,12 @@ export default function Navbar() {
 
   const navItems = {
     '/': {
-        name: 'WORK',
+      name: 'WORK',
     },
     '#about': {
-        name: 'ABOUT/CONTACT',
+      name: 'ABOUT/CONTACT',
     }
-};
+  };
 
   return (
     <div className="">
@@ -32,21 +32,14 @@ export default function Navbar() {
             {Object.entries(navItems).map(([path, { name }]) => {
               const isActive = path === pathname;
               return (
-                <Link
-                  id="nav-link"
-                  key={path}
-                  href={path}
-                  className={clsx(
-                    '',
-                    {
-                      'text-neutral-500': !isActive,
-                    }
-                  )}
-                >
-                  <span className="relative py-1 px-2">
+                <a id="nav-link" key={path} href={path} className={clsx(
+                  '',
+                  {
+                    'text-neutral-500': !isActive,
+                  }
+                )} onClick={(e) => setOpenMobileMenu(false)}><span className="relative py-1 px-2">
                     {name}
-                  </span>
-                </Link>
+                  </span></a>
               );
             })}
           </div>)

@@ -28,7 +28,7 @@ export default function About() {
                     <br/><br/>
                     When I'm not working, I like taking my nine-pound, giant Yorkie Butters to Duboce Park, playing tennis, and going to the beaches around San Francisco. I also love painting and drawing cartoons.
                     <br/><br/>
-                    If you have any questions, please reach out by emailing me at pengjess2@gmail.com. Thanks for visiting!
+                    <i>If you have any questions, please reach out by emailing me at pengjess2@gmail.com. Thanks for visiting!</i>
                     </div>
                 </div>
             </div>
