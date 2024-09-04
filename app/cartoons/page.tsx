@@ -5,9 +5,20 @@ const finalImageList = finalImages.keys().map(image => finalImages(image));
 export default function Cartoons() {
     return (
         <section id="cartoons">
-            <h2>Comics</h2>
-            <div id="section-description">
-                CEO Jess is a comic about an ambitious and anxious potato. See more of my unhinged drawings at @officialceojess.
+            <div className="two-column-container">
+                <div className="column">
+                    <h2>Comics</h2>
+                    <div id="section-description">
+                        CEO Jess is a semi-autobiographical comic through the eyes of an anxious potato. View my world class drawings at @officialceojess.
+                    </div>
+                </div>
+                <div className="column">
+                    <div className="see-more-button-container">
+                        <button id="see-more-button" key="ceo-jess-button">
+                            <a href="https://www.instagram.com/officialceojess/">View more on Instagram</a>
+                        </button>
+                    </div>
+                </div>
             </div>
             <div id="image-gallery-with-text-overlay">
                 {finalImageList.map((image, index) => (
@@ -16,11 +27,6 @@ export default function Cartoons() {
                         <p>Image Caption</p>
                     </div>
                 ))}
-            </div>
-            <div className="see-more-button-container">
-                <button id="see-more-button" key="ceo-jess-button">
-                    <a href="https://www.instagram.com/officialceojess/">View more on Instagram</a>
-                </button>
             </div>
         </section>
     );

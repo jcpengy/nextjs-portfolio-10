@@ -20,7 +20,7 @@ export default function UXDesign() {
                         return (
                             <div className="image-1 item">
                                 <a href={image.link}>
-                                    <img src={image.src} alt={image.alt} />
+                                    <img id="clickable-image" src={image.src} alt={image.alt} />
                                 </a>
                                 <p>Image Caption</p>
                             </div>

@@ -18,15 +18,15 @@ export default function GraphicDesign() {
         <section id="graphic-design">
             <h2>Graphic Design</h2>
             <div id="section-description">
-                Selected projects in graphic design including small business branding and visual storytelling.
+                Selected projects in graphic design including small business branding and visual storytelling. <u>Click an image to view more details on each project.</u>
             </div>
             <div id="image-gallery-with-text-overlay">
                 {
                     images.map(image => {
                         return (
                             <div className="image-1 item">
-                                <a href={image.link}>
-                                    <img src={image.src} alt={image.alt} />
+                                <a id="clickable-image" href={image.link}>
+                                    <img id="clickable-image" src={image.src} alt={image.alt} />
                                 </a>
                                 <p>Image Caption</p>
                             </div>

@@ -17,42 +17,61 @@ export default function SandboxCopy() {
         <>
             <DesktopNavbar />
             <section id="graphic-design-project">
-                <h2>Sandbox Artifact Copy App</h2>
-                <div className="two-column-container">
-                    <div className="column">Role: I led design and front-end implementation on a five-person team.</div>
+            <h2>Sandbox Artifact Copy App</h2><br />
+            <div className="two-column-container">
                     <div className="column">
-                        Technologies: React, React Spectrum (React implementation of Adobe’s design system), Unified Shell (Adobe’s UI framework for internal apps), HTML/CSS.</div>
+                        <div className="cover-img-container">
+                        <img key="ceem-cover" src={Cover.src} alt="ceem-cover" />
+                        </div>
+                    </div>
+                    <div className="column">
+                        <div id="section-description"><h4>Technologies</h4>React, React Spectrum (React implementation of Adobe’s design system), Unified Shell (Adobe’s UI framework for internal apps), HTML/CSS.</div>
+                        <div id="section-description"><h4>My Role</h4>I led design and front-end implementation on a five-person team.</div>
+                    </div>
                 </div>
-                <img key="ceem-cover" src={Cover.src} alt="ceem-cover" />
+
                 <div className="two-column-container">
                     <div className="column">
                         <h4>Glossary</h4>
                         <ul>
-                            <li>artifact: an object holding customer data </li>
-                            <li>sandbox: virtual partition within an instance of AEP that allows customers to manage and monitor artifacts</li>
+                            <li><span id="glossary">AEP</span>: Adobe Experience Platform</li>
+                            <li><span id="glossary">artifact</span>: an object holding customer data </li>
+                            <li><span id="glossary">sandbox</span>: virtual partition within an instance of AEP that allows customers to manage and monitor artifacts</li>
                         </ul>
                     </div>
+                    <div className="column">
+                        <h4>Notes</h4>
+                        <i>N/A</i>
+                    </div>
                 </div>
-                <div id="section-description">
-                    <h4>Problem</h4>
-                    Transferring artifacts between sandboxes in Adobe Experience Platform is time-consuming and error prone.
-                </div>
-                <div id="section-description">
-                    <h4>Objective</h4>
-                    Build a tool that simplifies and streamlines sandbox management.
-                </div>
-                <div id="section-description">
-                    <h4>Features</h4>
-                    The customer should have the ability to:
-                    <ul>
-                        <li>Copy all foundation artifacts (schemas, datasets, segments, sources, destinations) and
+
+                <div className="two-column-container-objective">
+                    <div className="column">
+                        <div id="section-description">
+                            <h4>Problem</h4>
+                            Transferring artifacts between sandboxes in Adobe Experience Platform is time-consuming and error prone.
+                        </div>
+                        <div id="section-description">
+                            <h4>Objective</h4>
+                            Build a tool that simplifies and streamlines sandbox management.
+                        </div>
+                    </div>
+                    <div className="column">
+                        <div id="section-description">
+                            <h4>Features</h4>
+                            The customer should have the ability to:
+                            <ul>
+                            <li>Copy all foundation artifacts (schemas, datasets, segments, sources, destinations) and
                             first level dependencies from one sandbox to another sandbox</li>
                         <li>Review dependencies before copying </li>
                         <li>Sync artifacts between the source and destination sandboxes</li>
                         <li>Revert artifacts (once) after syncing</li>
                         <li>Log actions for documentation and troubleshooting</li>
-                    </ul>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+                
                 <div className="two-column-container">
                     <div className="column">
                         <h4>Research</h4>
@@ -65,15 +84,15 @@ export default function SandboxCopy() {
                         </ul>
                     </div>
                     <div className="column">
-                        A competitive analysis of other sandbox management apps:
+                        A competitive analysis of other sandbox management apps:<br/>
                         <img key="competitve-analysis" src={Comp.src} alt="competitve-analysis" />
-                        Throughout our design and implementation process, I led internal demos and testing sessions to debug the app, improve its usability, and fine-tune requirements.
+                        <br/>Throughout our design and implementation process, I led internal demos and testing sessions to debug the app, improve its usability, and fine-tune requirements.
                     </div>
                 </div>
                 <div id="section-description">
                     <h4>Version 1</h4>
                     Our initial design lacked scalability and helpful reporting. More specifically, it lacked a consolidated view of all dependencies for large copy operations, an organized audit log for troubleshooting, and a modularized/scalable UI to easily incorporate additional features.
-                    <div id="image-gallery-with-text-overlay">
+                    <br/><br/><div id="image-gallery-with-text-overlay">
                         {v1ImageList.map((image, index) => (
                             <div className="image-1 item">
                                 <img key={index} src={image.default.src} alt={`image-${index}`} />
@@ -91,11 +110,11 @@ export default function SandboxCopy() {
                     We faced a lot of challenges with semantics; aside from renaming a couple terms, we also discussed the distinctions between authoring and deployment. This topic is reflected in the Version 2 improvements.
                     <div className="two-column-container">
                         <div className="column">
-                            Problem #1: Users cannot view more than one artifact's dependencies at a time.
+                            <u>Problem #1</u>Users cannot view more than one artifact's dependencies at a time.
                             <span id="space" />
-                            Solution: List all artifacts and their dependencies in a separate window.
+                            <u>Solution</u> List all artifacts and their dependencies in a separate window.
                             <span id="space" />
-                            Thought process: Previously, the user could only view one artifact's dependencies at a time in a tree diagram, which was a useful but buggy feature. During the testing sessions, we agreed that a separate window was necessary to have an organized view of all selected artifacts and their dependencies. I decided to follow the AJO Object Copy UI and display them in a list.
+                            <u>Thought process</u>Previously, the user could only view one artifact's dependencies at a time in a tree diagram, which was a useful but buggy feature. During the testing sessions, we agreed that a separate window was necessary to have an organized view of all selected artifacts and their dependencies. I decided to follow the AJO Object Copy UI and display them in a list.
                         </div>
                         <div className="column">
                             <img key="ceem-problem-1" src={P1.src} alt="ceem-problem-1" />
@@ -106,21 +125,21 @@ export default function SandboxCopy() {
                             <img key="ceem-problem-2-1" src={P21.src} alt="ceem-problem-2-1" />
                         </div>
                         <div className="column">
-                            Problem #2: Lack of modularization makes it hard to incorporate new features.
+                            <u>Problem #2</u>Lack of modularization makes it hard to incorporate new features.
                             <span id="space" />
-                            Solution: Separate the artifacts into their own tabs.
+                            <u>Solution</u>Separate the artifacts into their own tabs.
                             <span id="space" />
-                            Thought process: We received two additional requests to sync and revert artifacts between sandboxes. Incorporating these features (each requiring multiple UI components) would've been time-consuming and unreliable in our single-page UI. Given that our highest priority was to implement these features for schemas and we already faced issues running asynchronous calls across different artifact types, we decided to move each artifact type to its own tab.
+                            <u>Thought process</u>We received two additional requests to sync and revert artifacts between sandboxes. Incorporating these features (each requiring multiple UI components) would've been time-consuming and unreliable in our single-page UI. Given that our highest priority was to implement these features for schemas and we already faced issues running asynchronous calls across different artifact types, we decided to move each artifact type to its own tab.
                         </div>
                     </div>
                 </div>
                 <div className="two-column-container">
                     <div className="column">
-                        Problem #3: The audit log is hard to follow and unhelpful for troubleshooting.
+                        <u>Problem #3</u>The audit log is hard to follow and unhelpful for troubleshooting.
                         <span id="space" />
-                        Solution: Turn the audit log into a table and put it on another tab.
+                        <u>Solution</u>Turn the audit log into a table and put it on another tab.
                         <span id="space" />
-                        Thought process: The audit log outputted asynchronous calls across all copy operations, which made it hard to trace what was actually happening for each copy workflow. Since we already created tabs for each artifact type, we decided to extend this to the audit log and put it on a separate tab. We also narrowed down the information to main actions taken in the app and organized it into a table.
+                        <u>Thought process</u>The audit log outputted asynchronous calls across all copy operations, which made it hard to trace what was actually happening for each copy workflow. Since we already created tabs for each artifact type, we decided to extend this to the audit log and put it on a separate tab. We also narrowed down the information to main actions taken in the app and organized it into a table.
                     </div>
                     <div className="column">
                         <img key="ceem-problem-3-1" src={P31.src} alt="ceem-problem-3-1" />

@@ -1,6 +1,6 @@
 'use client';
 import SocialMediaLinks from "app/components/socialMediaLinks";
-import Cloud1 from "../../public/images/cloud1.png";
+import Ceojess from "../../public/images/ceojess.png";
 import { useState, useEffect } from "react";
 
 // site header and background
@@ -8,22 +8,22 @@ export default function Header() {
 
     // make droid follow mouse movement 
     useEffect(() => {
-        const move = document.getElementById("move");
-        const headerDiv = document.getElementById("header");
-        // let rect = headerDiv.getBoundingClientRect();
-        // console.log(JSON.stringify(rect));
-        document.body.onpointermove = event => {
-            const { clientX, clientY } = event;
-            // only move if mouse event is in header block
-            // if (clientY < rect.bottom) {
-                move?.animate({
-                    left: `${clientX}px`,
-                    top: `${clientY}px`
+        // const move = document.getElementById("move");
+        // const headerDiv = document.getElementById("header");
+        // // let rect = headerDiv.getBoundingClientRect();
+        // // console.log(JSON.stringify(rect));
+        // document.body.onpointermove = event => {
+        //     const { clientX, clientY } = event;
+        //     // only move if mouse event is in header block
+        //     // if (clientY < rect.bottom) {
+        //     move?.animate({
+        //         left: `${clientX}px`,
+        //         top: `${clientY}px`
 
-                }, { duration: 1000, fill: "forwards" })
-            // }
+        //     }, { duration: 1000, fill: "forwards" })
+        //     // }
 
-        }
+        // }
     }, []);
 
     const SplitText = ({ copy, role }) => {
@@ -44,12 +44,24 @@ export default function Header() {
     }
     return (
         <section id="header">
-            {/* <div id="move"></div> */}
-            <div id="header-text">
-                <h1 id="Jessica Peng"><SplitText copy="Jessica Peng" role="heading" /></h1>
-                <h3 id="website-subheader">Software Engineer, Graphic Designer, and Artist</h3>
-                <SocialMediaLinks />
+            <div id="ceo-jess-background">
+            <img id="ceo-jess" key="ceo-jess" src={Ceojess.src} alt="ceo-jess" />
+            <img id="ceo-jess" key="ceo-jess" src={Ceojess.src} alt="ceo-jess" />
+            <img id="ceo-jess" key="ceo-jess" src={Ceojess.src} alt="ceo-jess" />
+            <img id="ceo-jess" key="ceo-jess" src={Ceojess.src} alt="ceo-jess" />
+            <img id="ceo-jess" key="ceo-jess" src={Ceojess.src} alt="ceo-jess" />
+            <img id="ceo-jess" key="ceo-jess" src={Ceojess.src} alt="ceo-jess" />
+
             </div>
+            <div id="Jessica-Peng-div">
+                <h1>Jessica Peng</h1>
+                <h3>Front-End Engineer, Visual Designer, and Artist</h3>
+            </div>
+            {/* <div id="header-text">
+                <h1 id="Jessica Peng"><SplitText copy="Jessica Peng" role="heading" /></h1>
+                <h3 id="website-subheader">Front-End Engineer, Visual Designer, and Artist</h3>
+                <SocialMediaLinks />
+            </div> */}
             {/* <img className="" src={Cloud1.src} width="300px" height="200px" /> */}
         </section>
     );
