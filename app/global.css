@@ -468,11 +468,11 @@ input[type=submit]:hover {
 
 #more-art {
     background-color: var(--white);
-    margin-top: 0px;
 }
 
 #about {
     background-color: var(--white);
+    
 }
 
 #ux-design {
@@ -1177,7 +1177,9 @@ h4 {
 
 /*mobile*/
 @media screen and (max-width: 960px) {
-
+    #more-art, #about {
+        margin-top: -24px; 
+    }
     .two-column-container-objective {
         display: grid;
         grid-template-columns: 1fr;

@@ -4,8 +4,13 @@ import ProfilePic1 from "../../public/images/bio.png";
 // import ProfilePic2 from "../../public/images/butters.jpg";
 const finalImages = require.context('../../public/images/fineart', false);
 const finalImageList = finalImages.keys().map(image => finalImages(image));
+import DesktopNavbar from "app/components/desktopNavbar";
+import Footer from "app/components/footer";
+
 export default function About() {
     return (
+        <>
+        <DesktopNavbar />
         <section id="about">
             <div className="two-column-container">
                 <div className="column">
@@ -48,5 +53,7 @@ export default function About() {
                 ))}
             </div> */}
         </section>
+        <Footer/>
+        </>
     );
 }

@@ -18,7 +18,7 @@ export default function DesktopNavbar() {
         '/': {
             name: 'WORK',
         },
-        '#about': {
+        '/about': {
             name: 'ABOUT/CONTACT',
         }
     };
