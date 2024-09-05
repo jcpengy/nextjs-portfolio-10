@@ -1,7 +1,6 @@
 'use client';
-const finalImages = require.context('../../public/images/fineart', false);
+const finalImages = require.context('../../public/images/moreart/paintings', false);
 const finalImageList = finalImages.keys().map(image => finalImages(image));
-
 export default function FineArt() {
     return (
         <section id="fine-art">
@@ -16,7 +15,7 @@ export default function FineArt() {
                     </div> */}
             <div id="image-gallery-with-text-overlay">
                 {finalImageList.map((image, index) => (
-                    <div className="image-1 item2">
+                    <div className="image-1 item">
                         <img key={index} src={image.default.src} alt={`image-${index}`} />
                         <p>Image Caption</p>
                     </div>

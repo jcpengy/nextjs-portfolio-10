@@ -35,6 +35,8 @@ body {
     padding: 24px; 
     position: relative;
     margin-top: -5px;
+    animation: fadeIn 2s;
+
 }
 @font-face {
     font-family: "Header";
@@ -1166,6 +1168,7 @@ h4 {
 #ceo-jess {
     width: 350px; 
     margin-top: -48px;
+    animation: fadeIn 2s;
 }
 
 #ceo-jess:hover {
