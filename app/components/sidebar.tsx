@@ -32,7 +32,7 @@ export default function Navbar() {
             {Object.entries(navItems).map(([path, { name }]) => {
               const isActive = path === pathname;
               return (
-                <a id="nav-link" key={path} href={path} className={clsx(
+                <a id={path} key={path} href={path} className={clsx(
                   '',
                   {
                     'text-neutral-500': !isActive,

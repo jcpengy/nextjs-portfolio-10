@@ -31,7 +31,7 @@ export default function DesktopNavbar() {
                 // const style = { "background-color": backgroundColors[i] }
                 return (
                     <button id="desktop-navbar-button" key={path}>
-                        <a href={path}>{name}</a>
+                        <a id={path} href={path}>{name}</a>
                     </button>
                     // <Link
                     //     id="desktop-navbar-button"

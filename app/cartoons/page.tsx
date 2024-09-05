@@ -5,9 +5,9 @@ const finalImageList = finalImages.keys().map(image => finalImages(image));
 export default function Cartoons() {
     return (
         <section id="cartoons">
-            <h2>Comics</h2>
+            <h2>Cartoons</h2>
             <div id="section-description">
-                CEO Jess is a semi-autobiographical comic starring an anxious potato. <u><a href="https://instagram.com/officialceojess/">View my world class drawings at @officialceojess.</a></u>
+                CEO Jess is a semi-autobiographical cartoon featuring an anxious potato. <u><a href="https://instagram.com/officialceojess/">View my world class drawings at @officialceojess.</a></u>
             </div>
             {/* <div className="two-column-container">
                 <div className="column">
