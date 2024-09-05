@@ -14,7 +14,7 @@ export default function About() {
         <section id="about">
             <div className="two-column-container">
                 <div className="column">
-                    <h2>About Me</h2>
+                    <h2>Hello, I'm Jess.</h2>
                     <div className="bio-pic-container">
                         <img id="about-pics" key="profile-pic-1" src={ProfilePic1.src} alt="profile-pic-1" />
                     </div>
@@ -31,7 +31,7 @@ export default function About() {
                         My design style is clean, informed, and rooted in storytelling. I'm inspired by the worldbuilding in my favorite animated movies, and hope to become a graphic designer in the
                         children's entertainment and/or storytelling space.
                         <br /><br />
-                        When I'm not working, I like taking my nine-pound, giant Yorkie Butters to Duboce Park, playing tennis, and going to the beaches around San Francisco. I also love painting and drawing cartoons.
+                        When I'm not working, I like taking my nine-pound, giant Yorkie Butters to Duboce Park, playing tennis, and going to the beaches and coffee shops around San Francisco. I also love painting and drawing cartoons.
                         <br /><br />
                         <i>If you have any questions, please reach out by emailing me at pengjess2@gmail.com. Thanks for visiting!</i>
                     </div>

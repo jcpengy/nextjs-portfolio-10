@@ -22,10 +22,10 @@ export default function Navbar() {
   };
 
   return (
-    <div className="">
+    <div id="navbar-mobile-container">
       {/* mobile navigation */}
       <div id="navbar-mobile" className="flex flex-col items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative">
-        <button id="navbar-mobile-menu" onClick={toggle}>MENU</button>
+        <button id="navbar-mobile-menu" onClick={toggle}>Jessica Peng ≡</button>
         {
           openMobileMenu &&
           (<div id="navbar-mobile-links">

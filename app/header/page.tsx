@@ -43,14 +43,13 @@ export default function Header() {
     }
     return (
         <section id="header">
-            {/* <div id="move">
-            <img key="ceo-jess" src={Ceojess.src} alt="ceo-jess" />
-            </div> */}
+
             <img id="ceo-jess" key="ceo-jess" src={Ceojess.src} alt="ceo-jess" />
             <div id="Jessica-Peng-div">
                 <h1>Jessica Peng</h1>
                 <h3>Front-End Engineer, Visual Designer, and Artist</h3>
             </div>
+           
             {/* <div id="header-text">
                 <h1 id="Jessica Peng"><SplitText copy="Jessica Peng" role="heading" /></h1>
                 <h3 id="website-subheader">Front-End Engineer, Visual Designer, and Artist</h3>

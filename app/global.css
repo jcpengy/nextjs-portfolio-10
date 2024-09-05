@@ -5,7 +5,7 @@
 /* GLOBAL VARIABLES */
 :root {
     --blue: #75bfc9;
-    --white: #f0f1ec;
+    --white: white;
     --black: #2f3238;
     --yellow: #f3eaab;
     --green: #b8d9c0;
@@ -35,9 +35,9 @@ body {
     padding: 24px; 
     position: relative;
     margin-top: -5px;
-    animation: fadeIn 2s;
-
+    animation: dropDown 1s ease;
 }
+
 @font-face {
     font-family: "Header";
     src: url("../public/fonts/KarnakPro-Light.ttf");
@@ -158,6 +158,8 @@ button {
 }
 
 .social-media-link {
+    transform: scale(0.8);
+    margin: -3px 3px -3px 3px;
     filter: invert(12%) sepia(2%) saturate(4717%) hue-rotate(182deg) brightness(86%) contrast(77%);
 }
 
@@ -184,16 +186,17 @@ section {
 
 @keyframes dropDown {
     0% {
-        bottom: 3em;
+        transform: translateY(-10%);
         opacity: 1;
     }
 
     50% {
-        bottom: -2em;
+        transform: translateY(10%);
+
     }
 
     100% {
-        bottom: -5em;
+        transform: translateY(0%);
         opacity: 1;
     }
 }
@@ -205,6 +208,20 @@ section {
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes scaleOut {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }
 
@@ -369,12 +386,15 @@ section {
 
 #desktop-navbar-button {
     /* border: 3px solid var(--black); */
-    padding: 8px;
+    padding: 8px 24px 8px 24px;
     /* margin: 0px 72px 0px 72px; */
     color: var(--black);
     font-family: "BoldHeader";
     letter-spacing: 1px;
     margin-right: 48px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .cover-img-container {
@@ -439,6 +459,7 @@ input[type=submit]:hover {
     color: var(--black);
     letter-spacing: 10px;
     font-family: "BoldHeader";
+    animation: dropDown 2s;
     /* position: absolute; */
     /* z-index: 3000; */
 }
@@ -452,6 +473,7 @@ input[type=submit]:hover {
     height: 75vh;
     justify-content: center;
     overflow: hidden;
+    
 }
 
 #graphic-design {
@@ -474,14 +496,22 @@ input[type=submit]:hover {
     /* Make a horizontal flexbox (the default) */
     flex-direction: column;
 }
-
+@keyframes slide-up {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
 #more-art {
-    background-color: var(--white);
+    background-color: var(--yellow);
 }
 
 #about {
     background-color: var(--white);
-    
+    animation: slide-up 750ms ease-out;
+    transition-timing-function: ease;
 }
 
 #ux-design {
@@ -1124,10 +1154,10 @@ h4 {
 }
 
 #navbar-mobile-menu {
-    letter-spacing: 1px;
     border: 1px solid var(--yellow);
     text-align: center;
     width: 100%;
+    font-size: 24px;
     padding: 15px 0 15px 0;
     font-family: "BoldHeader";
 }
@@ -1168,7 +1198,8 @@ h4 {
 #ceo-jess {
     width: 350px; 
     margin-top: -48px;
-    animation: fadeIn 2s;
+    animation: dropDown 1s ease;
+
 }
 
 #ceo-jess:hover {
@@ -1204,7 +1235,7 @@ h4 {
     }
 
     #Jessica-Peng-div {
-        width: 100%;
+        /* width: 100%; */
         padding: 18px; 
     }
     .column {
@@ -1392,6 +1423,12 @@ h4 {
 #desktop-header {
     height: 100vh;
     overflow: scroll;
+}
+
+#navbar-mobile-container {
+    position: sticky;
+    top: 0;
+    z-index: 4000;
 }
 
 #button:hover {

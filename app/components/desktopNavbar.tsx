@@ -26,32 +26,16 @@ export default function DesktopNavbar() {
         <div id="desktop-navbar">
             <h4 id="desktop-navbar-left">Jessica Peng</h4>
             <div id="desktop-navbar-right">
-            {Object.entries(navItems).map(([path, { name }], i) => {
-                const isActive = path === pathname;
-                // const style = { "background-color": backgroundColors[i] }
-                return (
-                    <button id="desktop-navbar-button" key={path}>
-                        <a id={path} href={path}>{name}</a>
-                    </button>
-                    // <Link
-                    //     id="desktop-navbar-button"
-                    //     style={style}
-                    //     key={path}
-                    //     href={path}
-                    //     className={clsx(
-                    //         '',
-                    //         {
-                    //             'text-neutral-500': !isActive,
-                    //         }
-                    //     )}
-                    // >
-                    //     <span className="relative py-1 px-2">
-                    //         {name}
-                    //     </span>
-                    // </Link>
-                );
-            })}
-            <SocialMediaLinks/>
+                {Object.entries(navItems).map(([path, { name }], i) => {
+                    const isActive = path === pathname;
+                    // const style = { "background-color": backgroundColors[i] }
+                    return (
+                        <a id="desktop-navbar-button" href={path}>
+                            {name}
+                        </a>
+                    );
+                })}
+                <SocialMediaLinks />
             </div>
         </div>
     );
