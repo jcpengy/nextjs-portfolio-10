@@ -8,22 +8,21 @@ export default function Header() {
 
     // make droid follow mouse movement 
     useEffect(() => {
-        // const move = document.getElementById("move");
-        // const headerDiv = document.getElementById("header");
-        // // let rect = headerDiv.getBoundingClientRect();
-        // // console.log(JSON.stringify(rect));
-        // document.body.onpointermove = event => {
-        //     const { clientX, clientY } = event;
-        //     // only move if mouse event is in header block
-        //     // if (clientY < rect.bottom) {
-        //     move?.animate({
-        //         left: `${clientX}px`,
-        //         top: `${clientY}px`
+        const move = document.getElementById("move");
+        const headerDiv = document.getElementById("header");
+        // let rect = headerDiv.getBoundingClientRect();
+        // console.log(JSON.stringify(rect));
+        document.body.onpointermove = event => {
+            const { clientX } = event;
+            // only move if mouse event is in header block
+            // if (clientY < rect.bottom) {
+            move?.animate({
+                left: `${clientX}px`,
 
-        //     }, { duration: 1000, fill: "forwards" })
-        //     // }
+            }, { duration: 1000, fill: "forwards" })
+            // }
 
-        // }
+        }
     }, []);
 
     const SplitText = ({ copy, role }) => {
@@ -44,15 +43,10 @@ export default function Header() {
     }
     return (
         <section id="header">
-            <div id="ceo-jess-background">
+            {/* <div id="move">
+            <img key="ceo-jess" src={Ceojess.src} alt="ceo-jess" />
+            </div> */}
             <img id="ceo-jess" key="ceo-jess" src={Ceojess.src} alt="ceo-jess" />
-            <img id="ceo-jess" key="ceo-jess" src={Ceojess.src} alt="ceo-jess" />
-            <img id="ceo-jess" key="ceo-jess" src={Ceojess.src} alt="ceo-jess" />
-            <img id="ceo-jess" key="ceo-jess" src={Ceojess.src} alt="ceo-jess" />
-            <img id="ceo-jess" key="ceo-jess" src={Ceojess.src} alt="ceo-jess" />
-            <img id="ceo-jess" key="ceo-jess" src={Ceojess.src} alt="ceo-jess" />
-
-            </div>
             <div id="Jessica-Peng-div">
                 <h1>Jessica Peng</h1>
                 <h3>Front-End Engineer, Visual Designer, and Artist</h3>

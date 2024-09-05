@@ -25,7 +25,7 @@ export default function GraphicDesign() {
                     images.map(image => {
                         return (
                             <div className="image-1 item">
-                                <a id="clickable-image" href={image.link}>
+                                <a href={image.link}>
                                     <img id="clickable-image" src={image.src} alt={image.alt} />
                                 </a>
                                 <p>Image Caption</p>

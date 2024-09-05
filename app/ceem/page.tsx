@@ -91,7 +91,7 @@ export default function CEEM() {
                 <div id="section-description">
                     <h4>Version 1</h4>
                     Defining the requirements was a long, iterative process that relied on several stakeholders and their immediate customer needs. My initial design was basic and experimental, but it helped us understand, visualize, and clarify the user flow. This is my draft for package creation.
-                    <div id="image-gallery-with-text-overlay">
+                    <br/><br/><div id="image-gallery-with-text-overlay">
                         {v1ImageList.map((image, index) => (
                             <div className="image-1 item">
                                 <img key={index} src={image.default.src} alt={`image-${index}`} />

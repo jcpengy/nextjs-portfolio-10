@@ -6,7 +6,7 @@ export default function SocialMediaLinks() {
         <section id="social-media-links">
             <img className="social-media-link" src={InstagramIcon.src} alt="LinkedIn"/>
             <img className="social-media-link" src={LinkedInIcon.src} alt="Instagram"/>
-            <img className="social-media-link" src={BehanceIcon.src} alt="Behance"/>
+            {/* <img className="social-media-link" src={BehanceIcon.src} alt="Behance"/> */}
         </section>
     )
 }

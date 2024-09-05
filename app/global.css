@@ -27,8 +27,9 @@ body {
     background: var(--yellow);
     border: 3px solid var(--black);
     text-align: center;
-    padding: 36px; 
-    position: absolute;
+    padding: 24px; 
+    position: relative;
+    margin-top: -5px;
 }
 @font-face {
     font-family: "Header";
@@ -77,9 +78,9 @@ li {
         #ff8e8e,
         #ff006a
     ) ; */
-    height: 300px;
+    height: 100px;
     aspect-ratio: 1;
-    position: relative;
+    position: absolute;
     animation: dropDown 2s; 
 }
 
@@ -147,7 +148,6 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    animation: fadeIn 2s;
 }
 
 .social-media-link {
@@ -169,8 +169,8 @@ section {
 }
 
 #header-text {
-    position: absolute; 
-    text-align: center;
+    /* position: absolute; 
+    text-align: center; */
 }
 
 @keyframes dropDown {
@@ -275,6 +275,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    margin: 24px 0 24px 0;
   }
 
   .two-column-container-objective {
@@ -284,6 +285,8 @@ section {
     border: 3px solid var(--black);
     border-radius: 10px; 
     padding: 12px; 
+    flex-wrap: wrap;
+    margin: 24px 0 24px 0;
   }
   
   .column {
@@ -316,12 +319,31 @@ section {
 #desktop-navbar {
     position: sticky;
     top: 0px;
-    justify-content: center;
+    /* justify-content: left; */
     display: flex;
     /* Make a horizontal flexbox (the default) */
     flex-direction: row;
     background-color: var(--purple);
-    padding: 5px;
+    padding: -5px;
+    padding:0 24px 0 24px;
+    z-index: 3000;
+}
+
+#desktop-navbar-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "BoldHeader";
+    font-size: 36px; 
+    margin-right: 36px; 
+    animation: fadeIn 2s;
+}
+
+#desktop-navbar-right {
+    justify-content: right;
+    display: flex; 
+    flex-direction: row;
+    animation: fadeIn 2s;
 }
 
 .bio-pic-container {
@@ -339,10 +361,11 @@ section {
 #desktop-navbar-button {
     /* border: 3px solid var(--black); */
     padding: 8px;
-    margin: 0px 72px 0px 72px;
+    /* margin: 0px 72px 0px 72px; */
     color: var(--black);
     font-family: "BoldHeader";
     letter-spacing: 1px;
+    margin-right: 48px; 
 }
 
 .cover-img-container {
@@ -354,7 +377,7 @@ section {
 #desktop-navbar-button:hover {
     background-color: var(--yellow);
     cursor: pointer;
-    transform: scale(1.25);
+    transform: scale(1);
 }
 
 /* contact form */
@@ -417,7 +440,7 @@ input[type=submit]:hover {
     flex-direction: column;
     align-items: center;
     background-color: var(--purple);
-    height: 93vh;
+    height: 75vh;
     justify-content: center;
     overflow: hidden;
 }
@@ -445,7 +468,7 @@ input[type=submit]:hover {
 
 #more-art {
     background-color: var(--white);
-    margin-top: -26px;
+    margin-top: 0px;
 }
 
 #about {
@@ -1126,21 +1149,26 @@ h4 {
 }
 
 #ceo-jess-background {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
 }
 #ceo-jess-background>* {
-    flex: 1 1 160px;
+    /* flex: 1 1 160px; */
  }
 #ceo-jess {
     width: 350px; 
+    /* margin-top: -48px; */
 }
 
 #ceo-jess:hover {
     /* animation: fadeIn 2s;  */
 }
 
+#ceojess-navbar {
+    width: 30px;
+    height: auto;
+}
 .back-button-container {
     justify-content: center;
     display: flex;
@@ -1149,12 +1177,22 @@ h4 {
 
 /*mobile*/
 @media screen and (max-width: 960px) {
-    #ceo-jess-background {
-        flex-direction: column;
+
+    .two-column-container-objective {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+    #header {
+        height: 90vh;
+    }
+    #ceo-jess {
+        margin-top: 48px; 
     }
 
     #Jessica-Peng-div {
-        width: 80%;
+        width: 100%;
+        padding: 18px; 
     }
     .column {
         padding: 0;
@@ -1244,7 +1282,7 @@ h4 {
 
     h2 {
         font-size: 36px;
-        line-height: 32px;
+        line-height: 36px;
         margin-bottom: 0px;
     }
 
