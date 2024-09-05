@@ -19,8 +19,8 @@ class Page extends React.Component<any, any>  {
                 <GraphicDesign />
                 <UXDesign />
                 <About />
-                <FineArt/>
                 <Cartoons/>
+                <FineArt/>
                 <Footer />
             </>
         )
