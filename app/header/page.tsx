@@ -1,6 +1,9 @@
 'use client';
 import SocialMediaLinks from "app/components/socialMediaLinks";
 import Ceojess from "../../public/images/ceojess.png";
+import Wave1 from "../../public/images/wave1.png";
+import Wave2 from "../../public/images/wave-2.png";
+
 import { useState, useEffect } from "react";
 
 // site header and background
@@ -43,12 +46,18 @@ export default function Header() {
     }
     return (
         <section id="header">
-
+            <div id="waves">
+            <img id="top-wave" src={Wave2.src}/>
+            <img id="bottom-wave" src={Wave1.src}/>
+            </div>
+            <div id="header-front-content">
             <img id="ceo-jess" key="ceo-jess" src={Ceojess.src} alt="ceo-jess" />
             <div id="Jessica-Peng-div">
                 <h1>Jessica Peng</h1>
-                <h3>Front-End Engineer, Visual Designer, and Artist</h3>
+                <h3>Front-End Engineer, Designer, and Artist</h3>
             </div>
+            </div>
+           
            
             {/* <div id="header-text">
                 <h1 id="Jessica Peng"><SplitText copy="Jessica Peng" role="heading" /></h1>

@@ -21,6 +21,35 @@ body {
     font-size: 18px; 
 }
 
+@keyframes light-bounce {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(2%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+#bottom-wave {
+    animation: light-bounce 2s infinite;
+}
+
+#top-wave {
+    animation: light-bounce 2s infinite;
+    margin-bottom: -100px;
+}
+
+#waves {
+    width: 120%;
+    height:120%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: -24px; 
+}
 #body {}
 
 @font-face {
@@ -35,7 +64,15 @@ body {
     padding: 24px; 
     position: relative;
     margin-top: -5px;
-    animation: dropDown 1s ease;
+}
+
+#header-front-content {
+    animation: scaleOut 1s ease;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -48px; 
 }
 
 @font-face {
@@ -284,6 +321,19 @@ section {
     z-index: 2000;
 }
 
+@supports (animation-timeline: view()) {
+    @keyframes fade-out {
+      from { opacity: 1 }
+      to   { opacity: 0 }
+    }
+    
+    .down-arrow-container {
+      animation: fade-out auto linear both;
+      animation-timeline: scroll();
+      animation-range: 0% 100px;
+    }
+  }
+
 .down-arrow:after {
     content: " ";
     position: absolute;
@@ -504,14 +554,22 @@ input[type=submit]:hover {
       transform: translateY(0%);
     }
   }
+
+  @keyframes slide-down {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
 #more-art {
     background-color: var(--yellow);
 }
 
 #about {
     background-color: var(--white);
-    animation: slide-up 750ms ease-out;
-    transition-timing-function: ease;
+    animation: slide-up 1s ease;
 }
 
 #ux-design {
@@ -1160,6 +1218,7 @@ h4 {
     font-size: 24px;
     padding: 15px 0 15px 0;
     font-family: "BoldHeader";
+    animation: fadeIn 2s; 
 }
 
 #navbar-mobile-links {
@@ -1197,8 +1256,7 @@ h4 {
  }
 #ceo-jess {
     width: 350px; 
-    margin-top: -48px;
-    animation: dropDown 1s ease;
+    /* position: absolute; */
 
 }
 
@@ -1215,6 +1273,19 @@ h4 {
     display: flex;
     flex-direction: row;
 }
+
+@keyframes drop-in {
+    from {
+      transform:
+        rotate(-30deg) translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform:
+        rotate(0deg) translateY(0%);
+      opacity: 1;
+    }
+  }
 
 /*mobile*/
 @media screen and (max-width: 960px) {
@@ -1235,7 +1306,7 @@ h4 {
     }
 
     #Jessica-Peng-div {
-        /* width: 100%; */
+        width: 90%;
         padding: 18px; 
     }
     .column {
@@ -1319,7 +1390,7 @@ h4 {
     }
 
     h1 {
-        font-size: 48px;
+        font-size: 40px;
         line-height: 54px;
         margin-bottom: -10px;
     }
@@ -1333,7 +1404,7 @@ h4 {
     h3 {
         font-size: 24px;
         line-height: 30px;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .hobby-pic {

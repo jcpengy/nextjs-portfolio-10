@@ -15,7 +15,10 @@ class Page extends React.Component<any, any>  {
             <>
                 <DesktopNavbar />
                 <Header />
+                <div className="down-arrow-container">
                 <div className="down-arrow"></div>
+
+                </div>
                 <GraphicDesign />
                 <UXDesign />
                 <Cartoons/>
