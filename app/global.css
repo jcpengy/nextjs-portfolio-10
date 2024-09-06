@@ -44,11 +44,12 @@ body {
 
 #bottom-wave {
     animation: light-bounce 2s infinite;
+    position: absolute;
 }
 
 #austin {
-    position: absolute;
     animation: surf 10s infinite ease;
+    margin-bottom: 5%; 
 
 }
 
@@ -59,7 +60,7 @@ body {
     flex-direction: column;
     justify-content: end;
     margin-bottom: -24px; 
-    
+    align-items: center;
 }
 #body {}
 
@@ -1300,6 +1301,9 @@ h4 {
 
 /*mobile*/
 @media screen and (max-width: 960px) {
+    #waves {
+        width: 150%; 
+    }
     #more-art, #about {
         margin-top: -24px; 
     }

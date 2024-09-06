@@ -2,7 +2,7 @@
 import SocialMediaLinks from "app/components/socialMediaLinks";
 import Ceojess from "../../public/images/ceojess.png";
 import Wave1 from "../../public/images/wave1.png";
-import Austin from "../../public/images/austin.png";
+import Austin from "../../public/images/austin.gif";
 
 import { useState, useEffect } from "react";
 
@@ -47,8 +47,8 @@ export default function Header() {
     return (
         <section id="header">
             <div id="waves">
-            <img id="bottom-wave" src={Wave1.src}/>
             <img id="austin" src={Austin.src}/>
+            <img id="bottom-wave" src={Wave1.src}/>
             </div>
             <div id="header-front-content">
             <img id="ceo-jess" key="ceo-jess" src={Ceojess.src} alt="ceo-jess" />
