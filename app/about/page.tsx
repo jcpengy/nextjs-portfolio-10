@@ -1,7 +1,6 @@
 'use client';
 import ProfilePic1 from "../../public/images/bio.png";
 // import ProfilePic1 from "../../public/images/me_butters.jpg";
-// import ProfilePic2 from "../../public/images/butters.jpg";
 const finalImages = require.context('../../public/images/fineart', false);
 const finalImageList = finalImages.keys().map(image => finalImages(image));
 import DesktopNavbar from "app/components/desktopNavbar";
