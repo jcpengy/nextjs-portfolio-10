@@ -1267,7 +1267,8 @@ h4 {
     /* flex: 1 1 160px; */
  }
 #ceo-jess {
-    width: 350px; 
+    width: 75%;
+    margin-bottom: -1px;
     /* position: absolute; */
 
 }
@@ -1317,7 +1318,7 @@ h4 {
     }
     #ceo-jess {
         margin-top: 48px; 
-        width: 250px; 
+        width: 80%; 
     }
 
     #Jessica-Peng-div {

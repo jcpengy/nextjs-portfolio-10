@@ -1,6 +1,6 @@
 'use client';
 import SocialMediaLinks from "app/components/socialMediaLinks";
-import Ceojess from "../../public/images/ceojess.png";
+import Ceojess from "../../public/images/ceojess.svg";
 import Wave1 from "../../public/images/wave1.png";
 import Austin from "../../public/images/austin.gif";
 
