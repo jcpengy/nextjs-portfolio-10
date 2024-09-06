@@ -33,13 +33,23 @@ body {
     }
 }
 
+@keyframes surf {
+    0% {
+        transform: translateX(-100%) translateY(-5%);
+    }
+    100% {
+        transform: translateX(100%) translateY(0%);
+    }
+}
+
 #bottom-wave {
     animation: light-bounce 2s infinite;
 }
 
-#top-wave {
-    animation: light-bounce 2s infinite;
-    margin-bottom: -100px;
+#austin {
+    position: absolute;
+    animation: surf 10s infinite ease;
+
 }
 
 #waves {
@@ -49,6 +59,7 @@ body {
     flex-direction: column;
     justify-content: end;
     margin-bottom: -24px; 
+    
 }
 #body {}
 
@@ -539,7 +550,7 @@ input[type=submit]:hover {
 }
 
 #footer {
-    background-color: var(--purple);
+    background-color: var(--blue);
     color: var(--black);
     text-align: center;
     display: flex;
