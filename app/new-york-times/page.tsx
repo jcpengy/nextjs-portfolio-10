@@ -25,7 +25,7 @@ export default function NYT() {
                 <h2>Graphics Internship: The New York Times</h2>
                 <h4><i>2018</i></h4>
                 <div id="section-description">
-                As a Graphics Intern on the Immersive Storytelling team, I designed 2D/3D cover images, infographics, and motion graphics for augmented reality articles. Credits: “Step Inside the Thai Cave in Augmented Reality”, “How We Created a Virtual Crime Scene to Investigate Syria’s Chemical Attack.”
+                As a Graphics Intern on the Immersive Storytelling team, I designed 2D/3D cover images, infographics, and motion graphics for augmented reality articles. I received credits in “Step Inside the Thai Cave in Augmented Reality” and “How We Created a Virtual Crime Scene to Investigate Syria’s Chemical Attack,” which won an Emmy in the New Approaches category. 
                 <br/><br/>I also led design and UI development on our intern project, a crossword puzzle re-imagined in 3D.</div>
                 <div id="image-gallery-with-text-overlay">
                     {doumaImageList.map((image, index) => (
