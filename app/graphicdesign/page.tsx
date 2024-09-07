@@ -4,7 +4,7 @@ import River from "public/images/RiversEdge/riversedge-cover.jpg";
 import KesslerSlide2 from "public/images/Kessler/kessler-cover.jpg";
 import BlackPower from "public/images/BPB/bpb-cover.jpg";
 import SFGrooming from "public/images/SFGrooming/finalImages/1.jpg";
-import NYT from "public/images/NYT/1.jpg";
+import NYT from "public/images/NYT/douma/1.jpg";
 
 const images = [
     { "src": Eid.src, "alt": "Eid Mubarak", "link": "/eid"},
