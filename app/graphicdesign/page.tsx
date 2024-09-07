@@ -4,7 +4,7 @@ import River from "public/images/RiversEdge/riversedge-cover.jpg";
 import KesslerSlide2 from "public/images/Kessler/kessler-cover.jpg";
 import BlackPower from "public/images/BPB/bpb-cover.jpg";
 import SFGrooming from "public/images/SFGrooming/finalImages/1.jpg";
-import NYT from "public/images/NYT/syria-header.jpg";
+import NYT from "public/images/NYT/1.jpg";
 
 const images = [
     { "src": Eid.src, "alt": "Eid Mubarak", "link": "/eid"},
@@ -12,7 +12,7 @@ const images = [
     { "src": KesslerSlide2.src, "alt": "Kessler Project", "link": "/kessler"},
     { "src": BlackPower.src, "alt": "Black Power Blueprint", "link": "/blackpowerblueprint" },
     { "src": SFGrooming.src, "alt": "San Francisco Grooming", "link": "/sfgrooming" },
-    { "src": NYT.src, "alt": "The New York Times", "link": "/" },
+    { "src": NYT.src, "alt": "The New York Times", "link": "/new-york-times" },
 
 ]
 

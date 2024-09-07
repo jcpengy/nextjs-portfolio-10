@@ -1,50 +1,70 @@
 'use client';
-import Footer from "../components/footer";
-import SyriaOriginal from "public/images/NYT/douma_cover.jpg";
-import SyriaHeader from "public/images/NYT/syria-header.jpg";
-import ThaiCaveOpening from "public/images/NYT/thai-cave-opening.jpg";
-import ThaiCaveMountain from "public/images/NYT/thai-cave-mountain.jpg";
+import DesktopNavbar from "app/components/desktopNavbar";
+import Footer from "app/components/footer";
+// dynamically import all images from folder 
+const doumaImages = require.context('../../public/images/NYT/douma1', false);
+const doumaImageList = doumaImages.keys().map(image => doumaImages(image));
+const thaiImages = require.context('../../public/images/NYT/thai', false);
+const thaiImageList = thaiImages.keys().map(image => thaiImages(image));
+const finalImages = require.context('../../public/images/NYT', false);
+const finalImageList = finalImages.keys().map(image => finalImages(image));
+const xImages = require.context('../../public/images/NYT/crossword', false);
+const xImageList = xImages.keys().map(image => xImages(image));
 
-export default async function NewYorkTimes() {
+import { useState } from "react";
+
+export default function NYT() {
+    const [openSection, setOpenSection] = useState(false);
+    const toggle = () => {
+        setOpenSection(!openSection);
+    };
     return (
-        <section>
-        <section id="portfolio-page">
-            <h3 id="all-caps">THE NEW YORK TIMES</h3>
-            <p>Cover art and graphics I created for two high-profile breaking news pieces as a Graphics Intern.
-                <br/><br/>
-                Credits: <a className="link" target="_blank" href="https://www.nytimes.com/interactive/2018/07/21/world/asia/thai-cave-rescue-ar-ul.html"><u>"Step Inside the Thai Cave in Augmented Reality"</u></a><br/>
-                <a className="link" target="_blank" href="https://www.nytimes.com/interactive/2018/06/24/world/middleeast/douma-syria-chemical-attack-augmented-reality-ar-ul.html?mtrref=undefined&gwh=F58C966F1C905F9A7F76DD29F76E6E44&gwt=pay&assetType=PAYWALL"><u>"How We Created a Virtual Crime Scene to Investigate Syria's Chemical Attack"</u></a>
-            </p>
-            <br/>
-            <img
-                    id="centered-caption"
-                    key='syria-original'
-                    src={SyriaOriginal.src}
-                    alt='syria-original'
-                />
-                <br/>
-                <img
-                    id="centered-caption"
-                    key='syria-header'
-                    src={SyriaHeader.src}
-                    alt='syria=header'
-                />
-                <br/>
-                <img
-                    id="centered-caption"
-                    key='thai-cave-mountain'
-                    src={ThaiCaveMountain.src}
-                    alt='thai-cave-mountain'
-                />
-                <br/><img
-                    id="centered-caption"
-                    key='thai-cave-opening'
-                    src={ThaiCaveOpening.src}
-                    alt='thai-cave-opening'
-                />
-                <br/><br/>         
-        </section>
-        <Footer/>
-        </section>
+        <>
+            <DesktopNavbar />
+            <section id="graphic-design-project">
+                <h2>Graphics Internship: The New York Times</h2>
+                <h4><i>2018</i></h4>
+                <div id="section-description">
+                As a Graphics Intern on the Immersive Storytelling team, I designed 2D/3D cover images, infographics, and motion graphics for augmented reality articles. Credits: “Step Inside the Thai Cave in Augmented Reality”, “How We Created a Virtual Crime Scene to Investigate Syria’s Chemical Attack.”
+                <br/><br/>I also led design and UI development on our intern project, a crossword puzzle re-imagined in 3D.</div>
+                <div id="image-gallery-with-text-overlay">
+                    {doumaImageList.map((image, index) => (
+                        <div className="image-1 item">
+                            <img key={index} src={image.default.src} alt={`image-${index}`} />
+                            <p>Image Caption</p>
+                        </div>
+
+                    ))}
+                </div>
+                <div id="image-gallery-with-text-overlay">
+                    {finalImageList.map((image, index) => (
+                        <div className="image-1 item">
+                            <img key={index} src={image.default.src} alt={`image-${index}`} />
+                            <p>Image Caption</p>
+                        </div>
+
+                    ))}
+                </div>
+                <div id="image-gallery-with-text-overlay">
+                    {thaiImageList.map((image, index) => (
+                        <div className="image-1 item">
+                            <img key={index} src={image.default.src} alt={`image-${index}`} />
+                            <p>Image Caption</p>
+                        </div>
+
+                    ))}
+                </div>
+                <div id="image-gallery-with-text-overlay">
+                    {xImageList.map((image, index) => (
+                        <div className="image-1 item">
+                            <img key={index} src={image.default.src} alt={`image-${index}`} />
+                            <p>Image Caption</p>
+                        </div>
+
+                    ))}
+                </div>
+            </section>
+            <Footer />
+        </>
     );
 }

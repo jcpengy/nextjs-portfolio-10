@@ -222,9 +222,15 @@ section {
   transition: transform 0.45s cubic-bezier(0, 0, 0.21, 1);
 }
 
+#desktop-navbar-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #about-blurb {
-    background-color: var(--yellow);
-    border: 3px solid var(--black);
+    background-color: var(--white);
+    /* border: 3px solid var(--black); */
     padding: 16px; 
 }
 
@@ -535,6 +541,7 @@ input[type=submit]:hover {
     height: 75vh;
     justify-content: center;
     overflow: hidden;
+    width: 100%;
     
 }
 
@@ -1223,14 +1230,17 @@ h4 {
     font-size: 24px; 
 }
 
+#hamburger {
+    float: right;
+}
 #navbar-mobile-menu {
     border: 1px solid var(--yellow);
-    text-align: center;
     width: 100%;
     font-size: 24px;
-    padding: 15px 0 15px 0;
+    padding: 15px 10px 15px 10px;
     font-family: "BoldHeader";
     animation: fadeIn 2s; 
+    text-align: center;
 }
 
 #navbar-mobile-links {
@@ -1298,6 +1308,10 @@ h4 {
         rotate(0deg) translateY(0%);
       opacity: 1;
     }
+  }
+
+  #bio-bottom {
+    width: 100%;
   }
 
 /*mobile*/

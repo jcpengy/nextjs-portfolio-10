@@ -24,7 +24,7 @@ export default function DesktopNavbar() {
     };
     return (
         <div id="desktop-navbar">
-            <h4 id="desktop-navbar-left">Jessica Peng</h4>
+            <a id="desktop-navbar-title" href="/"><h4 id="desktop-navbar-left">Jessica Peng</h4></a>
             <div id="desktop-navbar-right">
                 {Object.entries(navItems).map(([path, { name }], i) => {
                     const isActive = path === pathname;
