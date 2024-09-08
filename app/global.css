@@ -48,7 +48,7 @@ body {
 }
 
 #austin {
-    animation: surf 10s infinite ease;
+    animation: surf 10s infinite;
     margin-bottom: 5%; 
 
 }
@@ -235,8 +235,8 @@ section {
 
 #about-section {
     background: var(--blue);
+    text-align: center;
 }
-
 #about-blurb {
     background-color: var(--white);
     /* border: 3px solid var(--black); */
@@ -246,6 +246,14 @@ section {
 #header-text {
     /* position: absolute; 
     text-align: center; */
+}
+
+a {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
 }
 
 @keyframes dropDown {
@@ -577,6 +585,15 @@ input[type=submit]:hover {
 @keyframes slide-up {
     from {
       transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+
+  @keyframes slide-left {
+    from {
+      transform: translateX(100%);
     }
     to {
       transform: translateY(0%);
@@ -1240,38 +1257,52 @@ h4 {
 }
 
 #hamburger-container {
-    float: right;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     background: var(--yellow);
-    width: 10%;
-    padding: 5px;
-    /* padding: 8px 16px 8px 16px;  */
+    width: 15%;
+    height: 100%;
+}
+
+#navbar-mobile-menu-jessica-peng {
+    width: 100%;
+    position: absolute;
 }
 #navbar-mobile-menu {
     border: 1px solid var(--yellow);
     width: 100%;
     font-size: 24px;
-    padding: 10px;
     font-family: "BoldHeader";
     animation: fadeIn 2s; 
     text-align: center;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    background-color: var(--purple);
 }
 
 #navbar-mobile-links {
-    border: 1px solid var(--yellow);
+    /* border: 1px solid var(--yellow); */
+    background-color: var(--purple);
     border-top: none;
-    text-align: center;
+    text-align: right;
     width: 100%;
     display: flex;
     flex-direction: column;
     font-family: "BoldHeader";
+    animation: slide-left 500ms ease;
+    position: absolute;
 }
 
 #navbar-mobile-links a {
     border-bottom: 1px solid var(--yellow);
-    padding: 10px; 
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #see-more-button {
@@ -1337,6 +1368,12 @@ h4 {
 
 /*mobile*/
 @media screen and (max-width: 960px) {
+    section {
+        padding: 24px 12px 0 12px;
+    }
+    #about {
+        padding: 5px;
+    }
     #waves {
         width: 150%; 
     }
@@ -1360,9 +1397,6 @@ h4 {
     }
     .column {
         padding: 0;
-    }
-    section {
-        padding: 24px;
     }
 
     #see-more-button {
@@ -1398,7 +1432,6 @@ h4 {
 
     #navbar-mobile {
         display: block;
-        background-color: var(--purple);
     }
 
     #navbar-desktop {

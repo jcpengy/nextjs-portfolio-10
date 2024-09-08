@@ -7,7 +7,7 @@ export default function Cartoons() {
         <section id="cartoons">
             <h2>CEO Jess</h2>
             <div id="section-description">
-                My semi-autobiographical cartoon featuring a potato. <u><a href="https://instagram.com/officialceojess/">View more of my drawings at @officialceojess.</a></u>
+                Personal, semi-autobiographical cartoons I post on <u><a href="https://instagram.com/officialceojess/">@officialceojess</a></u>.
             </div>
             {/* <div className="two-column-container">
                 <div className="column">

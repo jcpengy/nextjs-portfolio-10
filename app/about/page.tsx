@@ -38,7 +38,7 @@ export default function About() {
                             <br/>
                             <i>If you have any questions, please reach out by emailing me at pengjess2@gmail.com. Thanks for visiting!</i>
                             <br/><br/>
-                            <u><a href="https://acrobat.adobe.com/id/urn:aaid:sc:US:d95711aa-c25b-4d6f-a5e3-7a633f4ea593" target="_blank">View my resume here.</a></u>
+                            <u><a href="https://acrobat.adobe.com/id/urn:aaid:sc:US:d95711aa-c25b-4d6f-a5e3-7a633f4ea593" target="_blank">View my resume.</a></u>
                         </div>
                     </div>
                 </div>

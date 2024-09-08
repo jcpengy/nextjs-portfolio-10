@@ -6,7 +6,7 @@ export default function FineArt() {
         <section id="fine-art">
             <h2>Fine Art</h2>
             <div id="section-description">
-                Personal art featuring landscapes, animals, and people. <u><a href="/moreart">View the full gallery.</a></u>
+                Personal art featuring landscapes, animals, and people. <u><a href="/moreart">Full gallery</a></u>.
             </div>
             {/* <div className="see-more-button-container">
                         <button id="see-more-button" key="ceo-jess-button">
