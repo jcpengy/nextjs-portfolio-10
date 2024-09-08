@@ -248,14 +248,6 @@ section {
     text-align: center; */
 }
 
-a {
-    color: blue;
-}
-
-a:visited {
-    color: purple;
-}
-
 @keyframes dropDown {
     0% {
         transform: translateY(-10%);
