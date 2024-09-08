@@ -9,10 +9,10 @@ import NYT from "public/images/NYT/douma1/1.jpg";
 const images = [
     { "src": Eid.src, "alt": "Eid Mubarak", "link": "/eid"},
     { "src": River.src, "alt": "River's Edge Cabin", "link": "/riversedge"},
-    { "src": KesslerSlide2.src, "alt": "Kessler Project", "link": "/kessler"},
+    { "src": NYT.src, "alt": "The New York Times", "link": "/new-york-times" },
     { "src": BlackPower.src, "alt": "Black Power Blueprint", "link": "/blackpowerblueprint" },
     { "src": SFGrooming.src, "alt": "San Francisco Grooming", "link": "/sfgrooming" },
-    { "src": NYT.src, "alt": "The New York Times", "link": "/new-york-times" },
+    { "src": KesslerSlide2.src, "alt": "Kessler Project", "link": "/kessler"},
 
 ]
 
@@ -21,7 +21,7 @@ export default function GraphicDesign() {
         <section id="graphic-design">
             <h2>Graphic Design</h2>
             <div id="section-description">
-                Selected projects in graphic design including small business branding and visual storytelling. <u>Click an image to view more details on each project.</u>
+                Example design projects that showcase visual storytelling through branding, worldbuilding, and infographics. <u>Click on an image to view more details about a project.</u>
             </div>
             <div id="image-gallery-with-text-overlay">
                 {

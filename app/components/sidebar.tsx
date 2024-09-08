@@ -4,6 +4,7 @@ import clsx from 'clsx';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { useState, useEffect } from "react";
+import burger from "../../public/images/burger.svg";
 
 export default function Navbar() {
   let pathname = usePathname() || '/';
@@ -27,8 +28,11 @@ export default function Navbar() {
       <div id="navbar-mobile" className="flex flex-col items-center relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative">
         <div id="navbar-mobile-menu">
           <a href="/">Jessica Peng</a>
-          <button id="hamburger" onClick={toggle}>≡
-          </button>
+          <div id="hamburger-container">
+            <button id="hamburger" onClick={toggle}>
+              <img className="burger-link" src={burger.src} alt="burger" />
+            </button>
+          </div>
         </div>
         {
           openMobileMenu &&

@@ -212,6 +212,11 @@ button {
     filter: invert(12%) sepia(2%) saturate(4717%) hue-rotate(182deg) brightness(86%) contrast(77%);
 }
 
+.burger-link {
+    transform: scale(0.8);
+    filter: invert(12%) sepia(2%) saturate(4717%) hue-rotate(182deg) brightness(86%) contrast(77%);
+}
+
 .social-media-link:hover {
     filter: invert(97%) sepia(7%) saturate(1961%) hue-rotate(337deg) brightness(104%) contrast(91%);
 }
@@ -226,6 +231,15 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+#about-section {
+    background: var(--blue);
+    color: white;
+}
+
+a {
+    color: var(--black);
 }
 
 #about-blurb {
@@ -1230,14 +1244,21 @@ h4 {
     font-size: 24px; 
 }
 
-#hamburger {
+#hamburger-container {
     float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--yellow);
+    width: 10%;
+    padding: 5px;
+    /* padding: 8px 16px 8px 16px;  */
 }
 #navbar-mobile-menu {
     border: 1px solid var(--yellow);
     width: 100%;
     font-size: 24px;
-    padding: 15px 10px 15px 10px;
+    padding: 10px;
     font-family: "BoldHeader";
     animation: fadeIn 2s; 
     text-align: center;
@@ -1251,6 +1272,11 @@ h4 {
     display: flex;
     flex-direction: column;
     font-family: "BoldHeader";
+}
+
+#navbar-mobile-links a {
+    border-bottom: 1px solid var(--yellow);
+    padding: 10px; 
 }
 
 #see-more-button {
@@ -1319,9 +1345,7 @@ h4 {
     #waves {
         width: 150%; 
     }
-    #more-art, #about {
-        margin-top: -24px; 
-    }
+
     .two-column-container-objective {
         display: grid;
         grid-template-columns: 1fr;
@@ -1377,13 +1401,8 @@ h4 {
         display: none;
     }
 
-    hr {
-        display: none;
-    }
-
     #navbar-mobile {
         display: block;
-        margin-bottom: 25px;
         background-color: var(--purple);
     }
 
