@@ -235,11 +235,6 @@ section {
 
 #about-section {
     background: var(--blue);
-    color: white;
-}
-
-a {
-    color: var(--black);
 }
 
 #about-blurb {
