@@ -47,18 +47,24 @@ export default function Header() {
     return (
         <section id="header">
             <div id="waves">
-            <img id="austin" src={Austin.src}/>
-            <img id="bottom-wave" src={Wave1.src}/>
+                <img id="austin" src={Austin.src} />
+                <img id="bottom-wave" src={Wave1.src} />
             </div>
             <div id="header-front-content">
-            <img id="ceo-jess" key="ceo-jess" src={Ceojess.src} alt="ceo-jess" />
-            <div id="Jessica-Peng-div">
-                <h1>Jessica Peng</h1>
-                <h3>Front-End Engineer, Designer, and Artist</h3>
+                 <div id="section-description">
+                <h2>Hello, I'm Jess.</h2>
+                <div id="section-description">
+                I'm a senior front-end engineer at Adobe and a design generalist with a background in UI/UX design and development, graphic design, and fine art. <br/><u><a href="/about">Full bio</a></u> / <u><a href="https://acrobat.adobe.com/id/urn:aaid:sc:US:d95711aa-c25b-4d6f-a5e3-7a633f4ea593" target="_blank">Resume</a></u>
+                </div>
             </div>
+                {/* <img id="ceo-jess" key="ceo-jess" src={Ceojess.src} alt="ceo-jess" />
+                <div id="Jessica-Peng-div">
+                    <h1>Jessica Peng</h1>
+                    <h3>Front-End Engineer, Designer, and Artist</h3>
+                </div> */}
             </div>
-           
-           
+
+
             {/* <div id="header-text">
                 <h1 id="Jessica Peng"><SplitText copy="Jessica Peng" role="heading" /></h1>
                 <h3 id="website-subheader">Front-End Engineer, Visual Designer, and Artist</h3>
