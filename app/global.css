@@ -6,11 +6,13 @@
 :root {
     --blue: #75bfc9;
     --white: white;
-    --black: #2f3238;
+    --black: black;
     --yellow: #f3eaab;
     --green: #b8d9c0;
     --purple: #d6b4e3;
+    --liljesswidth: 20vw;
 }
+
 html {
     overflow-y: scroll;
     scrollbar-color: var(--black) var(--yellow);
@@ -84,7 +86,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -48px; 
+    margin-top: -72px; 
     padding: 24px;
 }
 
@@ -210,12 +212,12 @@ button {
 .social-media-link {
     transform: scale(0.8);
     margin: -3px 3px -3px 3px;
-    filter: invert(12%) sepia(2%) saturate(4717%) hue-rotate(182deg) brightness(86%) contrast(77%);
+    filter: invert(0%) sepia(96%) saturate(0%) hue-rotate(235deg) brightness(96%) contrast(103%);
 }
 
 .burger-link {
     transform: scale(0.8);
-    filter: invert(12%) sepia(2%) saturate(4717%) hue-rotate(182deg) brightness(86%) contrast(77%);
+    filter: invert(0%) sepia(96%) saturate(0%) hue-rotate(235deg) brightness(96%) contrast(103%);
 }
 
 .social-media-link:hover {
@@ -1036,7 +1038,7 @@ h1 span span {
     position: absolute;
     margin-left: -70px;
     width: var(--liljesswidth);
-    bottom: 4vh;
+    top: 90%;
     left: 0;
 }
 
@@ -1361,6 +1363,11 @@ h4 {
 
 /*mobile*/
 @media screen and (max-width: 960px) {
+
+    :root {
+        --liljesswidth: 30vw;
+    }
+
     section {
         padding: 24px 12px 0 12px;
     }
@@ -1494,9 +1501,6 @@ h4 {
 }
 
 @media only screen and (max-width: 912px) {
-    :root {
-        --liljesswidth: 40vw;
-    }
 
     .instructions p {
         display: block;
