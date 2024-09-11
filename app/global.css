@@ -1187,7 +1187,6 @@ h1 span span {
     display: block;
     position: absolute;
     background: white;
-    border: 2px solid var(--black);
     height: calc(0.13 * var(--liljesswidth));
     width: calc(0.13 * var(--liljesswidth));
 }
@@ -1212,7 +1211,6 @@ h1 span span {
 }
 
 .ball-left {
-    border: 2px solid #0078BE;
     background-color: var(--blue);
     border-radius: 50%;
     height: calc(0.2 * var(--liljesswidth));
@@ -1224,7 +1222,6 @@ h1 span span {
 }
 
 .ball-right {
-    border: 2px solid #0078BE;
     background-color: var(--blue);
     border-radius: 50%;
     height: calc(0.2 * var(--liljesswidth));
