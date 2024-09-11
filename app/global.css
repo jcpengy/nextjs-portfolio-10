@@ -1154,9 +1154,9 @@ h1 span span {
     border-radius: 50%;
     content: "";
     display: block;
-    height: calc(0.016 * var(--liljesswidth));
+    height: calc(0.02 * var(--liljesswidth));
     position: absolute;
-    width: calc(0.016 * var(--liljesswidth));
+    width: calc(0.02 * var(--liljesswidth));
     top: calc(0.12 * var(--liljesswidth));
 }
 
@@ -1187,8 +1187,9 @@ h1 span span {
     display: block;
     position: absolute;
     background: white;
-    height: calc(0.125 * var(--liljesswidth));
-    width: calc(0.125 * var(--liljesswidth));
+    border: 2px solid var(--black);
+    height: calc(0.13 * var(--liljesswidth));
+    width: calc(0.13 * var(--liljesswidth));
 }
 
 .body .eye.one {
@@ -1211,6 +1212,7 @@ h1 span span {
 }
 
 .ball-left {
+    border: 2px solid #0078BE;
     background-color: var(--blue);
     border-radius: 50%;
     height: calc(0.2 * var(--liljesswidth));
@@ -1222,6 +1224,7 @@ h1 span span {
 }
 
 .ball-right {
+    border: 2px solid #0078BE;
     background-color: var(--blue);
     border-radius: 50%;
     height: calc(0.2 * var(--liljesswidth));
