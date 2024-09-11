@@ -1,9 +1,9 @@
 'use client';
 import Eid from "public/images/Eid/finalImages/1.jpg";
 import River from "public/images/RiversEdge/riversedge-cover.jpg";
-import KesslerSlide2 from "public/images/Kessler/1.jpg";
+import KesslerSlide2 from "public/images/kessler-cover.jpg";
 import BlackPower from "public/images/BPB/bpb-cover.jpg";
-import SFGrooming from "public/images/SFGrooming/finalImages/1.jpg";
+import SFGrooming from "public/images/sfgrooming-cover.jpg";
 import NYT from "public/images/NYT/nyt-cover.jpg";
 
 const images = [
