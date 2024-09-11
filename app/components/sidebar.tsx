@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { useState, useEffect } from "react";
 import burger from "../../public/images/burger.svg";
+import close from "../../public/images/close.svg";
 
 export default function Navbar() {
   let pathname = usePathname() || '/';
@@ -29,9 +30,16 @@ export default function Navbar() {
         <div id="navbar-mobile-menu">
           <a id="navbar-mobile-menu-jessica-peng" href="/">Jessica Peng</a>
           <div id="hamburger-container">
-            <button id="hamburger" onClick={toggle}>
-              <img className="burger-link" src={burger.src} alt="burger" />
+            {
+              openMobileMenu ?
+              <button id="hamburger" onClick={toggle}>
+              <img className="burger-link" src={close.src} alt="burger" />
             </button>
+            : <button id="hamburger" onClick={toggle}>
+            <img className="burger-link" src={burger.src} alt="burger" />
+          </button>
+            }
+            
           </div>
         </div>
         {
