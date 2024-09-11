@@ -7,6 +7,7 @@ import Austin from "../../public/images/austin.gif";
 import mouth from "../../app/assets/mouth.png";
 import body from "../../app/assets/body.png";
 import scooter from "../../app/assets/scooter.png";
+import ceojess from "../../public/images/ceojess-scooter.svg";
 
 import { useState, useEffect } from "react";
 
@@ -51,6 +52,7 @@ class Header extends React.Component<any, any>  {
 
     movement() {
         let { droidX, mouseX, speed, accelMod } = this.state;
+        const rightBound = document.getElementById("header")?.getBoundingClientRect().right;
 
         if (Math.abs(Math.round(droidX) - mouseX) !== 1) {
 
@@ -101,7 +103,20 @@ class Header extends React.Component<any, any>  {
                 {/* <div id="waves">
             <img id="austin" src={Austin.src} />
             <img id="bottom-wave" src={Wave1.src} />
-        </div> */}
+        </div> */}  
+        <div id="instructions-container">
+        <div id="instructions">
+            <div id="instructions-desktop">
+                Move mouse anywhere to move
+                <img id="ceojess-scooter" src={ceojess.src}/> 
+            </div>
+            <div id="instructions-mobile">
+                Press anywhere to move
+                <img id="ceojess-scooter" src={ceojess.src}/> 
+            </div>
+        </div>
+
+        </div>
                 <div id="header-front-content">
                     <div id="section-description">
                         <h2>Hello, I'm Jess.</h2>
@@ -109,9 +124,8 @@ class Header extends React.Component<any, any>  {
                             I'm a senior front-end engineer at Adobe and a design generalist with a background in UI/UX design and development, graphic design, and fine art. <br /><u><a href="/about">Full bio</a></u> / <u><a href="https://acrobat.adobe.com/id/urn:aaid:sc:US:d95711aa-c25b-4d6f-a5e3-7a633f4ea593" target="_blank">Resume</a></u>
                         </div>
                     </div>
-
-
-
+                    </div>
+                    <div id="ceojess-container">
                     <div className="liljess" style={{ WebkitTransform: `translateX(${droidX}px)` }}>
                         <div className="body"
                             style={{ WebkitTransform: `translateX(${(mouseX - droidX) / 35}px) rotateZ(${(mouseX - droidX) / 75}deg)` }}>
@@ -142,7 +156,8 @@ class Header extends React.Component<any, any>  {
                             <div className="ring one"></div>
                         </div>
                     </div>
-                </div>
+                        </div>
+                    
             </section>
         );
     }

@@ -27,7 +27,7 @@ export default function Navbar() {
       {/* mobile navigation */}
       <div id="navbar-mobile" className="flex flex-col items-center relati md:relative">
         <div id="navbar-mobile-menu">
-          <a id="navbar-mobile-menu-jessica-peng" href="/">Jessica Peng</a>
+          <a id="navbar-mobile-menu-jessica-peng" href="/"><h2>Jessica Peng</h2></a>
           <div id="hamburger-container">
             <button id="hamburger" onClick={toggle}>
               <img className="burger-link" src={burger.src} alt="burger" />

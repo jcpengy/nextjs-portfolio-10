@@ -20,7 +20,7 @@ html {
 }
 
 body {   
-    font-size: 18px; 
+    font-size: 1.3em; 
 }
 
 @keyframes light-bounce {
@@ -55,6 +55,16 @@ body {
 
 }
 
+#ceojess-container {
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 84px; 
+}
+
 #waves {
     width: 120%;
     height:120%;
@@ -82,11 +92,10 @@ body {
 
 #header-front-content {
     animation: scaleOut 1s ease;
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -72px; 
     padding: 24px;
 }
 
@@ -550,11 +559,10 @@ input[type=submit]:hover {
     flex-direction: column;
     align-items: center;
     background-color: var(--purple);
-    height: 75vh;
-    justify-content: center;
+    height: 100vh;
+    justify-content: start;
     overflow: hidden;
     width: 100%;
-    
 }
 
 #graphic-design {
@@ -586,14 +594,44 @@ input[type=submit]:hover {
     }
   }
 
-  @keyframes slide-left {
+  @keyframes slide-right {
     from {
-      transform: translateX(100%);
+      transform: translateX(-110%);
     }
     to {
       transform: translateY(0%);
     }
   }
+
+  @keyframes slide {
+    0% {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+
+    25% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    75% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+  }
+
+  @keyframes slide-left {
+    from {
+      transform: translateX(110%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
 
   @keyframes slide-down {
     from {
@@ -1038,7 +1076,6 @@ h1 span span {
     position: absolute;
     margin-left: -70px;
     width: var(--liljesswidth);
-    top: 90%;
     left: 0;
 }
 
@@ -1222,10 +1259,27 @@ h1 span span {
     left: 100%;
 }
 
-.instructions p {
+#instructions {
+    color: var(--black);
+    /* border: 1px dashed var(--white);
+    border-radius: 50%; */
+    padding: 24px; 
+    animation: glow 2s infinte;
+    background-color: var(--white);
+    animation: slide 7.5s ease;
+    animation-delay: 2s;
+    transform: translateX(-150%);
+    opacity: 0;
+}
+
+#instructions-mobile {
     display: none;
-    position: fixed;
-    bottom: 20px;
+}
+
+#instructions-container {
+    bottom: 5vh;
+    position: absolute;
+    z-index: 6000;
 }
 
 #art-image {
@@ -1233,22 +1287,22 @@ h1 span span {
 }
 
 h1 {
-    font-size: 72px;
+    font-size: 3em;
     margin-bottom: -16px;
 }
 
 h2 {
-    font-size: 48px;
+    font-size: 2.5em;
     margin-bottom: -16px;
 }
 
 h3 {
-    font-size: 36px; 
+    font-size: 2.25em; 
     margin-bottom: 0px; 
 }
 
 h4 {
-    font-size: 24px; 
+    font-size: 1.5em; 
 }
 
 #hamburger-container {
@@ -1281,15 +1335,17 @@ h4 {
 
 #navbar-mobile-links {
     /* border: 1px solid var(--yellow); */
-    background-color: var(--purple);
+    background-color: var(--yellow);
     border-top: none;
     text-align: right;
     width: 100%;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     font-family: "BoldHeader";
     animation: slide-left 500ms ease;
     position: absolute;
+    z-index: 8000;
 }
 
 #navbar-mobile-links a {
@@ -1361,11 +1417,20 @@ h4 {
     width: 100%;
   }
 
+  #ceojess-scooter {
+    width: 50px;
+  }
+
 /*mobile*/
 @media screen and (max-width: 960px) {
-
+    #instructions-mobile {
+        display: block;
+    }
+    #instructions-desktop {
+        display: none;
+    }
     :root {
-        --liljesswidth: 30vw;
+        --liljesswidth: 40vw;
     }
 
     section {
@@ -1415,11 +1480,11 @@ h4 {
     }
 
     #header {
-        margin-top: -100px;
+        /* margin-top: -100px; */
     }
 
     .down-arrow {
-        top: calc(100vh - 150px);
+        top: calc(100vh - 100px);
     }
 
     #social-media-links {
