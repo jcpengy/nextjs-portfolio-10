@@ -10,11 +10,10 @@ const images = [
 export default function UXDesign() {
     return (
         <section id="ux-design">
-            <h2>UI/UX Design</h2>
-            <div id="section-description">
-                Tools and applications I'm designing and developing on the Customer Engineering team at Adobe.
-            </div>
-            <div id="image-gallery-with-text-overlay">
+          <div id="section-description">
+            <h2>Projects</h2>
+          </div>
+          <div id="image-gallery-with-text-overlay">
                 {
                     images.map(image => {
                         return (

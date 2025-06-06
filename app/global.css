@@ -10,7 +10,7 @@
     --yellow: #f3eaab;
     --green: #b8d9c0;
     --purple: #E5B8FF;
-    --liljesswidth: 20vw;
+    --liljesswidth: 8vw;
 }
 
 html {
@@ -19,8 +19,10 @@ html {
     scrollbar-width: thin;
 }
 
-body {   
-    font-size: 1.1em; 
+body {
+    font-size: 1em;
+    margin-left: 10em;
+    margin-right: 10em;
 }
 
 @keyframes light-bounce {
@@ -51,41 +53,41 @@ body {
 
 #austin {
     animation: surf 10s infinite;
-    margin-bottom: 5%; 
+    margin-bottom: 5%;
 
 }
 
 #ceojess-container {
     position: relative;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: end;
     width: 100%;
     height: 100%;
-    margin-bottom: 84px; 
+    margin-bottom: -50px;
 }
 
 #waves {
     width: 120%;
     height:120%;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: end;
-    margin-bottom: -24px; 
+    margin-bottom: -24px;
     align-items: center;
 }
 #body {}
 
 @font-face {
     font-family: "BoldHeader";
-    src: url("../public/fonts/KarnakPro-Medium.ttf");
+    src: url("../public/fonts/AdobeClean-Bold.otf");
 }
 
 #Jessica-Peng-div {
     background: var(--yellow);
     border: 3px solid var(--black);
     text-align: center;
-    padding: 24px; 
+    padding: 24px;
     position: relative;
     margin-top: -5px;
 }
@@ -101,12 +103,12 @@ body {
 
 @font-face {
     font-family: "Header";
-    src: url("../public/fonts/KarnakPro-Light.ttf");
+    src: url("../public/fonts/AdobeClean-Bold.otf");
 }
 
 @font-face {
     font-family: "Paragraph";
-    src: url("../public/fonts/Proxima-Nova-Regular.ttf");
+    src: url("../public/fonts/AdobeClean-Regular.otf");
 }
 
 h1, h2 {
@@ -122,22 +124,23 @@ h3, h4 {
 }
 
 ul {
-    list-style: inside; 
-    margin: 12px; 
+    list-style: inside;
+    margin: 12px;
 }
 li {
-    margin-left: 24px; 
+    margin-left: 24px;
 }
 #section-description {
     font-family: "Paragraph";
     padding: 12px 0 12px 0;
+    text-align: center;
 }
 
 #section-toggle {
     background-color: var(--yellow);
-    padding: 10px; 
+    padding: 10px;
     width: 100%;
-    margin: 24px 0 24px 0; 
+    margin: 24px 0 24px 0;
 }
 
 #move{
@@ -149,7 +152,7 @@ li {
     height: 100px;
     aspect-ratio: 1;
     position: absolute;
-    animation: dropDown 2s; 
+    animation: dropDown 2s;
 }
 
 #section-toggle:hover {
@@ -257,11 +260,11 @@ section {
 #about-blurb {
     background-color: var(--white);
     /* border: 3px solid var(--black); */
-    padding: 16px; 
+    padding: 16px;
 }
 
 #header-text {
-    /* position: absolute; 
+    /* position: absolute;
     text-align: center; */
 }
 
@@ -346,10 +349,10 @@ section {
 
 @keyframes backAndForth{
     0% {
-        margin-left: -300px; 
+        margin-left: -300px;
     }
     100% {
-        margin-left: 100vw; 
+        margin-left: 100vw;
     }
 }
 
@@ -370,7 +373,7 @@ section {
       from { opacity: 1 }
       to   { opacity: 0 }
     }
-    
+
     .down-arrow-container {
       animation: fade-out auto linear both;
       animation-timeline: scroll();
@@ -403,20 +406,20 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     border: 3px solid var(--black);
-    border-radius: 10px; 
-    padding: 12px; 
+    border-radius: 10px;
+    padding: 12px;
     flex-wrap: wrap;
     margin: 24px 0 24px 0;
   }
-  
+
   .column {
     padding: 1rem;
     border-radius: 8px;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  
+
   @media (max-width: 1024px) {
     .two-column-container {
       grid-template-columns: 1fr;
@@ -424,16 +427,16 @@ section {
   }
 
   .cloud {
-    animation: backAndForth 30s;   
+    animation: backAndForth 30s;
     animation-iteration-count: infinite;
   }
 
   #space {
-    margin: 5px; 
+    margin: 5px;
   }
-  
+
   #about-pics {
-    width: 100%; 
+    width: 100%;
   }
 /* desktop nav bar */
 #desktop-navbar {
@@ -443,7 +446,6 @@ section {
     display: flex;
     /* Make a horizontal flexbox (the default) */
     flex-direction: row;
-    background-color: var(--purple);
     padding: -5px;
     padding:0 24px 0 24px;
     z-index: 3000;
@@ -454,14 +456,14 @@ section {
     flex-direction: column;
     justify-content: center;
     font-family: "BoldHeader";
-    font-size: 36px; 
-    margin-right: 36px; 
+    font-size: 36px;
+    margin-right: 36px;
     animation: fadeIn 2s;
 }
 
 #desktop-navbar-right {
     justify-content: right;
-    display: flex; 
+    display: flex;
     flex-direction: row;
     animation: fadeIn 2s;
 }
@@ -485,14 +487,14 @@ section {
     color: var(--black);
     font-family: "BoldHeader";
     letter-spacing: 1px;
-    margin-right: 48px; 
+    margin-right: 48px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .cover-img-container {
-    display: flex; 
+    display: flex;
     flex-direction: row;
     justify-content: center;
 }
@@ -560,14 +562,12 @@ input[type=submit]:hover {
 
 #header {
     color: var(--black);
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--purple);
-    height: 100vh;
+    height: 35vh;
     justify-content: start;
     overflow: hidden;
-    width: 100%;
 }
 
 #graphic-design {
@@ -583,7 +583,6 @@ input[type=submit]:hover {
 }
 
 #footer {
-    background-color: var(--purple);
     color: var(--black);
     text-align: center;
     display: flex;
@@ -1268,7 +1267,7 @@ h1 span span {
     color: var(--black);
     /* border: 1px dashed var(--white);
     border-radius: 50%; */
-    padding: 24px; 
+    padding: 24px;
     /* animation: glow 2s infinte; */
     background-color: var(--white);
     animation: slide 7.5s ease;
@@ -1302,12 +1301,12 @@ h2 {
 }
 
 h3 {
-    font-size: 2.25em; 
-    margin-bottom: 0px; 
+    font-size: 2.25em;
+    margin-bottom: 0px;
 }
 
 h4 {
-    font-size: 1.5em; 
+    font-size: 1.5em;
 }
 
 #close {
@@ -1340,7 +1339,7 @@ h4 {
     width: 100%;
     font-size: 24px;
     font-family: "BoldHeader";
-    animation: fadeIn 2s; 
+    animation: fadeIn 2s;
     text-align: center;
     height: 10vh;
     display: flex;
@@ -1379,14 +1378,14 @@ h4 {
 #see-more-button {
     background-color: var(--black);
     color: var(--white);
-    padding: 10px 20px 10px 20px; 
-    border-radius: 5px; 
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
     border: 1px solid var(--black);
-    margin: 10px; 
+    margin: 10px;
 }
 
 .see-more-button-container {
-    display: flex; 
+    display: flex;
     flex-direction: row;
     justify-content: right;
 }
@@ -1460,7 +1459,7 @@ h4 {
         padding: 5px;
     }
     #waves {
-        width: 150%; 
+        width: 150%;
     }
 
     .two-column-container-objective {
@@ -1472,13 +1471,13 @@ h4 {
         height: 90vh;
     }
     #ceo-jess {
-        margin-top: 48px; 
-        width: 80%; 
+        margin-top: 48px;
+        width: 80%;
     }
 
     #Jessica-Peng-div {
         width: 90%;
-        padding: 18px; 
+        padding: 18px;
     }
     .column {
         padding: 0;
@@ -1492,11 +1491,11 @@ h4 {
     }
 
     .item img {
-        padding: 5px 0 5px 0; 
+        padding: 5px 0 5px 0;
     }
 
     .item2 img {
-        padding: 5px; 
+        padding: 5px;
     }
 
     #header {

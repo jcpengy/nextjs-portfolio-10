@@ -15,7 +15,7 @@ export default function About() {
                 <div className="two-column-container">
                     <div className="column">
                         <div className="bio-pic-container">
-                            <img id="about-pics" key="profile-pic-1" src={ProfilePic1.src} alt="profile-pic-1" />
+                            {/*<img id="about-pics" key="profile-pic-1" src={ProfilePic1.src} alt="profile-pic-1" />*/}
                         </div>
                         {/* <img id="about-pics" key="profile-pic-2" src={ProfilePic2.src} alt="profile-pic-2" /> */}
                     </div>
@@ -23,16 +23,16 @@ export default function About() {
                         <div id="about-blurb">
                             <h2>Hello, I'm Jess.</h2>
                             <br />
-                            I'm a senior front-end engineer at Adobe in San Francisco with a background in UI/UX design and development,
+                            I'm an SF-based senior front-end engineer at Adobe with a background in UI/UX design and development,
                             graphic design, and fine art. I graduated from the University of Pennsylvania in 2019 with a B.S.E. in <u><a href="http://cg.cis.upenn.edu/dmd.html" target="_blank">Computer Graphics</a></u> and a minor in Fine Arts.
                             <br /><br />
-                            Currently, I lead the design and front-end implementation of Customer Engineering's internal tools and applications.
-                            Outside of work, I'm a self-taught graphic designer who's worked with non-profits and a variety of small businesses via a thriving Etsy design shop. My work has been featured in The New York Times and was a finalist in Disney Imaginations.
+                            Currently, I lead the design and front-end implementation of Customer Engineering's internal tools and initiatives.
+                            I'm passionate about designing applications that are simple, accessible, and practical for all roles/stakeholders. Outside of work, I'm a self-taught graphic designer who's worked with a variety of small businesses via a thriving Etsy design shop. My work has been featured in The New York Times and was a finalist in Disney Imaginations.
                             <br /><br />
                             My design style is clean, informed, and rooted in storytelling. I'm inspired by the worldbuilding in my favorite animated movies, and hope to grow my design skills in the
                             storytelling and/or children's entertainment space.
                             <br /><br />
-                            When I'm not working, I like taking my nine-pound, giant Yorkie Butters to Duboce Park (sometimes with his Cavapoo cousin Beignet), playing tennis, and going to the beaches and coffee shops around San Francisco. I also love painting and drawing cartoons.
+                            When I'm not working, I'm usually tending to my nine-pound, giant Yorkie named Butters, playing tennis, or going to the beaches and coffee shops around San Francisco. I also love painting and taking on creative projects.
                             <br/><br/>
                             <hr/>
                             <br/>
@@ -42,21 +42,6 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-                {/* <div id="section-description">
-                <h4>CEO JESS Comics</h4>
-            </div>
-            <div id="section-description">
-                <h2>Personal Art</h2>
-            </div>
-            <div id="image-gallery-with-text-overlay">
-                {finalImageList.map((image, index) => (
-                    <div className="image-1 item">
-                        <img key={index} src={image.default.src} alt={`image-${index}`} />
-                        <p>Image Caption</p>
-                    </div>
-
-                ))}
-            </div> */}
             </section>
             <Footer />
         </>

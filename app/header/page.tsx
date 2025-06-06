@@ -14,23 +14,6 @@ import { useState, useEffect } from "react";
 import { SetOperationNode } from "kysely";
 import { flightRouterStateSchema } from "next/dist/server/app-render/types";
 
-// const SplitText = ({ copy, role }) => {
-//     return (
-//         // add animation to each character of text
-//         <span aria-label={copy} role={role}>
-//             {copy.split("").map(function (char, index) {
-//                 let style = { "animation-delay": (index / 20) + "s" }
-//                 return <span
-//                     aria-hidden="true"
-//                     key={index}>
-//                     {/* // style={style}> */}
-//                     {char}
-//                 </span>;
-//             })}
-//         </span>
-//     )
-// }
-
 class Header extends React.Component<any, any>  {
 
     constructor(props) {
@@ -128,7 +111,7 @@ class Header extends React.Component<any, any>  {
                     <div id="section-description">
                         <h2>Hello, I'm Jess.</h2>
                         <div id="section-description">
-                            I'm a senior front-end engineer at Adobe and a design generalist with a background in UI/UX design and development, graphic design, and fine art. <br /><u><a href="/about">Full bio</a></u> / <u><a href="https://acrobat.adobe.com/id/urn:aaid:sc:US:d95711aa-c25b-4d6f-a5e3-7a633f4ea593" target="_blank">Resume</a></u>
+                            I'm a senior front-end engineer at Adobe focused on crafting simple and accessible user experiences for Adobe Experience Platform. <br /><u><a href="/about">Full bio</a></u> / <u><a href="https://acrobat.adobe.com/id/urn:aaid:sc:US:d95711aa-c25b-4d6f-a5e3-7a633f4ea593" target="_blank">Resume</a></u>
                         </div>
                     </div>
                 </div>
@@ -164,7 +147,6 @@ class Header extends React.Component<any, any>  {
                         </div>
                     </div>
                 </div>
-
             </section>
         );
     }
