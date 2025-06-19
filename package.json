@@ -12,6 +12,8 @@
     "@vercel/analytics": "^1.0.1",
     "@vercel/edge-config": "^0.2.1",
     "@vercel/og": "^0.5.8",
+    "bootstrap": "^5.3.7",
+    "bs5-lightbox": "^1.8.5",
     "clsx": "^1.2.1",
     "contentlayer": "^0.3.3",
     "date-fns": "^2.30.0",
