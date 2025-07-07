@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    font-size: 1em;
+    font-size: 0.9em;
     margin-left: 15em;
     margin-right: 15em;
 }
@@ -125,10 +125,20 @@ h3, h4 {
 
 ul {
     list-style: inside;
-    margin: 12px;
+    /*margin: 12px;*/
 }
 li {
     margin-left: 24px;
+}
+
+ul ul {
+    margin-left: 36px;
+}
+
+#section-image {
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
 }
 #section-description {
     font-family: "Paragraph";
@@ -262,6 +272,12 @@ li {
     transition: 0.3s;
 }
 
+.hero-image {
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 2px 2px 15px lightgrey;
+}
+
 .close:hover,
 .close:focus {
     color: #bbb;
@@ -303,6 +319,7 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    transform: scale(.8);
 }
 
 .social-media-link {
@@ -326,10 +343,15 @@ li {
 }
 
 section {
-    padding: 24px;
+    padding: 12px;
     -webkit-transition: transform 0.45s cubic-bezier(0, 0, 0.21, 1);
     transition: transform 0.45s cubic-bezier(0, 0, 0.21, 1);
 }
+
+.section {
+    text-align: left;
+}
+
 
 #desktop-navbar-title {
     display: flex;
@@ -485,6 +507,38 @@ section {
     margin: 24px 0 24px 0;
 }
 
+.three-column-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 24px 0 24px 0;
+}
+
+th, td {
+    border: 1px solid #cfcfcf;
+}
+
+#after-column {
+    background-color: #edffe6;
+}
+
+#improvement-column {
+    background-color: #ededed;
+}
+
+#before-column {
+    background-color: #ffe6e6;
+}
+
+th {
+    padding: 15px;
+}
+
+td {
+    padding: 15px;
+    justify-content: start;
+}
+
 .two-column-container-objective {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -501,7 +555,7 @@ section {
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
 }
 
 @media (max-width: 1024px) {
@@ -530,9 +584,8 @@ section {
     display: flex;
     /* Make a horizontal flexbox (the default) */
     flex-direction: row;
-    padding: -5px;
-    padding:0 24px 0 24px;
     z-index: 3000;
+    background-color: white;
 }
 
 #desktop-navbar-left {
@@ -566,7 +619,7 @@ section {
 
 #desktop-navbar-button {
     /* border: 3px solid var(--black); */
-    padding: 8px 24px 8px 24px;
+    padding: 8px 8px 8px 8px;
     /* margin: 0px 72px 0px 72px; */
     color: var(--black);
     font-family: "BoldHeader";
@@ -1380,8 +1433,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2.5em;
-    margin-bottom: -16px;
+    font-size: 2.25em;
 }
 
 h3 {
@@ -1390,7 +1442,12 @@ h3 {
 }
 
 h4 {
-    font-size: 1.5em;
+    font-size: 1.25em;
+}
+
+h6 {
+    color: grey;
+    margin: 16px 0 16px 0;
 }
 
 #close {

@@ -1,25 +1,21 @@
 'use client';
 import DesktopNavbar from "app/components/desktopNavbar";
 import Footer from "app/components/footer";
-import Cover from "../../public/images/CEEM/ceem.gif";
+import Hero from "../../public/images/ODL/hero-image.png";
+import p11 from "../../public/images/ODL/ordered_modules2.png";
+import p12 from "../../public/images/ODL/ordered_modules.png";
+import p22 from "../../public/images/ODL/p21.png";
+import p21 from "../../public/images/ODL/p22.png";
+import p31 from "../../public/images/ODL/p31.png";
+import p32 from "../../public/images/ODL/p32.png";
+import SoftwareDependencies from "../../public/images/ODL/SoftwareDependencies.png";
 import UserFlow from "../../public/images/ODL/UserFlow.png";
-import P1 from "../../public/images/CEEM/p1.png";
-import P21 from "../../public/images/CEEM/p2-1.png";
-import P22 from "../../public/images/CEEM/p2-2.jpg";
-import P23 from "../../public/images/CEEM/p2-3.png";
-import 'bs5-lightbox';
-import P31 from "../../public/images/CEEM/p3-1.png";
-import P32 from "../../public/images/CEEM/p3-2.png";
-import P33 from "../../public/images/CEEM/CurrentDesign/p3-3.jpg";
-// dynamically import all images from folder
-const finalImages = require.context('../../public/images/CEEM/CurrentDesign', false);
+const finalImages = require.context('../../public/images/ODL/current', false);
 const finalImageList = finalImages.keys().map(image => finalImages(image));
 const v1Images = require.context('../../public/images/ODL/v1', false);
 const v1ImageList = v1Images.keys().map(image => v1Images(image));
-
 const v2Images = require.context('../../public/images/ODL/v2', false);
 const v2ImageList = v2Images.keys().map(image => v2Images(image));
-
 const sketches = require.context('../../public/images/ODL/Sketches', false);
 const sketchesList = sketches.keys().map(image => sketches(image));
 
@@ -27,50 +23,96 @@ export default function OnDemandLearning() {
   return (
     <>
       <DesktopNavbar />
-      <section id="graphic-design-project">
+      <section>
+        {/*Hero section*/}
         <div id="section-description">
           <h2>On-Demand Learning</h2>
+          <h4>A hands-on learning application for Adobe Experience Platform.</h4>
+          <br />
+          <img className="hero-image" key="hero" src={Hero.src} alt="hero"/>
         </div>
-        <div className="two-column-container-objective">
-          <div className="column">
-            <div id="section-description">
-              <h4>Problem</h4>
-              Adobe Experience Platform customers and partners are trained through a program called the
-              "Developer Enablement Program," which involves deploying content across multiple sandboxes
+        {/*Project overview*/}
+        <div className="section">
+          <div className="two-column-container">
+            <div className="column">
+              <h6>Overview</h6>
+              Adobe Experience Platform customers and partners are trained through the
+              Developer Enablement Program, which involves deploying learning content across multiple sandboxes
               and conducting in-person sessions to facilitate the training.
-            </div>
-            <div id="section-description">
-              <h4>Objective</h4>
-              Provide training in a virtual and scalable manner by building an on-demand learning service where
-              customers can access lectures alongside lab environments. The lab exercises will be based on content from
-              the
-              Developer Enablement Program.
-            </div>
-          </div>
-          <div className="column">
-            <div id="section-description">
-              <h4>Features</h4>
-              The customer should have the ability to:
+              <br />
+              <br/>
+              On-Demand Learning provides this training in a virtual and scalable manner. Equipped with their own
+              learning environment (an Experience Platform sandbox), customers can go through hands-on exercises and lectures
+              at their own pace.
+              <h6>Goals</h6>
               <ul>
-                <li>Browse a list of on-demand courses.</li>
-                <li>Preview an on-demand course.</li>
-                <li>Enroll and un-enroll in an on-demand course.</li>
-                <li>Request a lab environment within a course to do a hands-on exercise.</li>
+                <li>
+                  Provide Experience Platform training from the Developer Enablement Program in a virtual and scalable manner to
+                  reduce cost and time to value
+                </li>
+                <li>
+                  Deliver a user-friendly, interactive learning experience that improves customers' understanding of
+                  Experience Platform features and functionality
+                </li>
               </ul>
             </div>
+            <div className="column">
+              <h6>Role</h6>
+              UX Designer and Developer | Wireframes, Prototyping, UI/UX Research, Front-End Development and API Optimization
+              <h6>Scope</h6>
+              August 2024 - Current
+              <h6>Tools</h6>
+              React, TypeScript, React Spectrum (React implementation of Adobe’s design system), Unified Shell (Adobe’s UI framework for internal apps),
+              HTML/CSS
+            </div>
           </div>
         </div>
-        <div id="section-description">
-          <h4>Research & Development</h4>
-          We researched the ins and outs of Adobe Learning Manager (ALM), Adobe's product for delivering personalized
-          trainings
-          for employees and customers, to understand elements of the learning experience, how we could integrate lab
-          environments, and API calls
-          we would need for On-Demand Learning. I started out by drafting the user flow and sketching ideas based on our
-          research.
-          <h5>User Flow</h5>
-          <img key="user-flow" src={UserFlow.src} alt="user-flow"/>
-          <h5>Initial Sketches</h5>
+        {/*Exploration/Discovery*/}
+        <div className="section">
+          <h4>Exploration</h4>
+          <div className="two-column-container">
+            <div className="column">
+              <h6>Personas</h6>
+              <ul>
+                <li>Author (Course) - creates lecture content</li>
+                <li>Author (Lab pack) - creates assets that will be deployed to the learning environment</li>
+                <li>Learner - consumes on-demand course</li>
+                <ul>
+                  <li>Data Architect</li>
+                  <li>Data Engineer</li>
+                  <li>Business Practitioner</li>
+                  <li>Administrator</li>
+                  <li>Web/Mobile Developer</li>
+                </ul>
+              </ul>
+              <br />
+              <i>* The Learner experience will be the focus since it's farther along in development and customer adoption.</i>
+            </div>
+            <div className="column">
+              <h6>Software Dependencies</h6>
+              <img key="software-dependencies" src={SoftwareDependencies.src} alt="software-dependencies"/>
+            </div>
+          </div>
+          <h6>Competitive Analysis</h6>
+          We explored similar learning experiences within Adobe such as Adobe Learning Manager, Experience League, and Adobe
+          Digital University. On-Demand Learning is differentiated from these other offerings as it provides hands-on
+          learning environments that are unique to each individual developer/architect.
+          <br />
+          <br />
+          However, Adobe Digital University is built using Adobe Learning Manager APIs, so we decided to use Adobe Learning Manager
+          as the basis for both our back-end and front-end design, integrating learning environments as the add-on.
+        </div>
+        {/*Design process*/}
+        <br />
+        <br />
+        <div className="section">
+          <h4>Design Process</h4>
+          <div id="section-image">
+            <img key="user-flow" src={UserFlow.src} alt="user-flow"/>
+            <i>User's experience from logging into the learning application to requesting/terminating a lab
+              environment</i>
+          </div>
+          <br />
           <div id="image-gallery-with-text-overlay">
             {sketchesList.map((image, index) => (
               <div className="image-1 item">
@@ -79,26 +121,26 @@ export default function OnDemandLearning() {
               </div>
             ))}
           </div>
+        </div>
+        <br />
+        <br />
+        <div className="section">
+          <h4>Version 1</h4>
+          <br />
+          <div id="image-gallery-with-text-overlay">
+            {v1ImageList.map((image, index) => (
+              <div className="image-1 item">
+                <img key={index} src={image.default.src} alt={`image-${index}`}/>
+                <p>Image Caption</p>
+              </div>
+            ))}
           </div>
-          <div id="section-description">
-            <h4>Version 1</h4>
-            Once we aligned on the user flow, I mocked an initial version in Figma based on my sketches and presented it
-            during our team on-site. The purpose of this was to provide a general overview of the application.
-            <br/><br/>
-            <div id="image-gallery-with-text-overlay">
-              {v1ImageList.map((image, index) => (
-                <div className="image-1 item">
-                  <img key={index} src={image.default.src} alt={`image-${index}`}/>
-                  <p>Image Caption</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        <div id="section-description">
+        </div>
+        <br />
+        <br />
+        <div className="section">
           <h4>Version 2</h4>
-          Version 2 was re-designed to align more with the UI of Experience Platform since it would be an in-product
-          offering.
-          <br/><br/>
+          <br/>
           <div id="image-gallery-with-text-overlay">
             {v2ImageList.map((image, index) => (
               <div className="image-1 item">
@@ -107,13 +149,80 @@ export default function OnDemandLearning() {
               </div>
             ))}
           </div>
+          <br/>
+          <br/>
+          <table className="improvements-table">
+            <thead>
+            <tr>
+              <th id="improvement-column">Improvement</th>
+              <th id="before-column">Before</th>
+              <th id="after-column">After</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+                <h6>Problem</h6>
+                <h6>Solution</h6>
+                <h6>Thought Process</h6>
+              </td>
+              <td>
+                <img src={p11.src} alt="Before"/>
+              </td>
+              <td>
+                <img src={p12.src} alt="Before"/>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h6>Problem</h6>
+                <h6>Solution</h6>
+                <h6>Thought Process</h6>
+              </td>
+              <td>
+                <img src={p21.src} alt="Before"/>
+              </td>
+              <td>
+                <img src={p22.src} alt="Before"/>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h6>Problem</h6>
+                <h6>Solution</h6>
+                <h6>Thought Process</h6>
+              </td>
+              <td>
+                <img src={p31.src} alt="Before"/>
+              </td>
+              <td>
+                <img src={p32.src} alt="Before"/>
+              </td>
+            </tr>
+            </tbody>
+          </table>
         </div>
-        <div id="section-description">
+        <br/>
+        <br/>
+        <div className="section">
           <h4>Current Design</h4>
+          <br/>
+          <div id="image-gallery-with-text-overlay">
+            {finalImageList.map((image, index) => (
+              <div className="image-1 item">
+                <img key={index} src={image.default.src} alt={`image-${index}`}/>
+                <p>Image Caption</p>
+              </div>
+            ))}
+          </div>
         </div>
-        <div id="section-description">
-          <h4>Future enhancements</h4>
-          Changing My Learning to Bookmarked
+        <br/>
+        <br/>
+        <div className="section">
+          <h4>Future Improvements</h4>
+          <ul>
+            <li>Change My Learning to Bookmarked</li>
+          </ul>
         </div>
       </section>
       <Footer/>
