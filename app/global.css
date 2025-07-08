@@ -140,10 +140,13 @@ ul ul {
     width: 75%;
     text-align: center;
 }
-#section-description {
-    font-family: "Paragraph";
-    padding: 12px 0 12px 0;
+#center-text {
     text-align: center;
+}
+
+#image-caption {
+    text-align: center;
+    margin-top: -16px;
 }
 
 #section-toggle {
@@ -320,6 +323,31 @@ ul ul {
     flex-direction: row;
     justify-content: center;
     transform: scale(.8);
+}
+
+.mySwiper {
+    width: 75%;
+    height: auto;
+    margin: 36px;
+    border: 1px solid #cfcfcf;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .social-media-link {
@@ -504,7 +532,6 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    margin: 24px 0 24px 0;
 }
 
 .three-column-container {

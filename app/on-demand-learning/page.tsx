@@ -2,6 +2,10 @@
 import DesktopNavbar from "app/components/desktopNavbar";
 import Footer from "app/components/footer";
 import Hero from "../../public/images/ODL/hero-image.png";
+import p00 from "../../public/images/ODL/p00.png";
+import p01 from "../../public/images/ODL/p01.png";
+import p02 from "../../public/images/ODL/p02.png";
+import p03 from "../../public/images/ODL/p03.png";
 import p11 from "../../public/images/ODL/ordered_modules2.png";
 import p12 from "../../public/images/ODL/ordered_modules.png";
 import p22 from "../../public/images/ODL/p21.png";
@@ -18,6 +22,20 @@ const v2Images = require.context('../../public/images/ODL/v2', false);
 const v2ImageList = v2Images.keys().map(image => v2Images(image));
 const sketches = require.context('../../public/images/ODL/Sketches', false);
 const sketchesList = sketches.keys().map(image => sketches(image));
+const alm = require.context('../../public/images/ODL/ALM', false);
+const almList = alm.keys().map(image => alm(image));
+const adu = require.context('../../public/images/ODL/ADU', false);
+const aduList = adu.keys().map(image => adu(image));
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+// core version + navigation, pagination modules:
+import { Pagination, Navigation } from 'swiper/modules';
 
 export default function OnDemandLearning() {
   return (
@@ -25,7 +43,7 @@ export default function OnDemandLearning() {
       <DesktopNavbar />
       <section>
         {/*Hero section*/}
-        <div id="section-description">
+        <div id="center-text">
           <h2>On-Demand Learning</h2>
           <h4>A hands-on learning application for Adobe Experience Platform.</h4>
           <br />
@@ -67,6 +85,8 @@ export default function OnDemandLearning() {
             </div>
           </div>
         </div>
+        <br />
+        <br />
         {/*Exploration/Discovery*/}
         <div className="section">
           <h4>Exploration</h4>
@@ -85,8 +105,9 @@ export default function OnDemandLearning() {
                   <li>Web/Mobile Developer</li>
                 </ul>
               </ul>
-              <br />
-              <i>* The Learner experience will be the focus since it's farther along in development and customer adoption.</i>
+              <br/>
+              <i>* The Learner experience will be the focus since it's farther along in development and customer
+                adoption.</i>
             </div>
             <div className="column">
               <h6>Software Dependencies</h6>
@@ -94,63 +115,153 @@ export default function OnDemandLearning() {
             </div>
           </div>
           <h6>Competitive Analysis</h6>
-          We explored similar learning experiences within Adobe such as Adobe Learning Manager, Experience League, and Adobe
+          We explored similar learning experiences within Adobe such as Adobe Learning Manager, Experience League, and
+          Adobe
           Digital University. On-Demand Learning is differentiated from these other offerings as it provides hands-on
           learning environments that are unique to each individual developer/architect.
-          <br />
-          <br />
-          However, Adobe Digital University is built using Adobe Learning Manager APIs, so we decided to use Adobe Learning Manager
+          <br/>
+          <br/>
+          Since Adobe Digital University is built on Adobe Learning Manager APIs, we decided to use Adobe
+          Learning Manager
           as the basis for both our back-end and front-end design, integrating learning environments as the add-on.
+          <Swiper
+            pagination={{
+              type: 'progressbar',
+            }}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className="mySwiper"
+          >
+            {almList.map((image, index) => (
+              <SwiperSlide>
+                <img key={index} src={image.default.src} alt={`Image ${index}`}/>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          <div id="image-caption">
+            <i>Adobe Learning Manager experience</i>
+          </div>
+          <Swiper
+            pagination={{
+              type: 'progressbar',
+            }}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className="mySwiper"
+          >
+            {aduList.map((image, index) => (
+              <SwiperSlide>
+                <img key={index} src={image.default.src} alt={`Image ${index}`}/>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          <div id="image-caption">
+            <i>Adobe Digital University experience</i>
+          </div>
         </div>
         {/*Design process*/}
-        <br />
-        <br />
+        <br/>
+        <br/>
         <div className="section">
           <h4>Design Process</h4>
           <div id="section-image">
             <img key="user-flow" src={UserFlow.src} alt="user-flow"/>
-            <i>User's experience from logging into the learning application to requesting/terminating a lab
+            <br />
+            <i>User flow from logging into the application to requesting/terminating a lab
               environment</i>
           </div>
-          <br />
-          <div id="image-gallery-with-text-overlay">
+          <Swiper
+            pagination={{
+              type: 'progressbar',
+            }}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className="mySwiper"
+          >
             {sketchesList.map((image, index) => (
-              <div className="image-1 item">
-                <img key={index} src={image.default.src} alt={`image-${index}`}/>
-                <p>Image Caption</p>
-              </div>
+              <SwiperSlide>
+                <img key={index} src={image.default.src} alt={`Image ${index}`}/>
+              </SwiperSlide>
             ))}
+          </Swiper>
+          <div id="center-text">
+            <i></i>
           </div>
         </div>
         <br />
         <br />
         <div className="section">
           <h4>Version 1</h4>
-          <br />
-          <div id="image-gallery-with-text-overlay">
+          <Swiper
+            pagination={{
+              type: 'progressbar',
+            }}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className="mySwiper"
+          >
             {v1ImageList.map((image, index) => (
-              <div className="image-1 item">
-                <img key={index} src={image.default.src} alt={`image-${index}`}/>
-                <p>Image Caption</p>
-              </div>
+              <SwiperSlide>
+                <img key={index} src={image.default.src} alt={`Image ${index}`}/>
+              </SwiperSlide>
             ))}
-          </div>
+          </Swiper>
+          <table className="improvements-table">
+            <thead>
+            <tr>
+              <th id="improvement-column">Improvement</th>
+              <th id="before-column">Before</th>
+              <th id="after-column">After</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+                <h6>Problem</h6>
+                <h6>Solution</h6>
+                <h6>Thought Process</h6>
+              </td>
+              <td>
+                <img src={p00.src} alt="Before"/>
+              </td>
+              <td>
+                <img src={p01.src} alt="After"/>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h6>Problem</h6>
+                <h6>Solution</h6>
+                <h6>Thought Process</h6>
+              </td>
+              <td>
+                <img src={p02.src} alt="Before"/>
+              </td>
+              <td>
+                <img src={p03.src} alt="After"/>
+              </td>
+            </tr>
+            </tbody>
+          </table>
         </div>
-        <br />
-        <br />
+        <br/>
+        <br/>
         <div className="section">
           <h4>Version 2</h4>
-          <br/>
-          <div id="image-gallery-with-text-overlay">
+          <Swiper
+            pagination={{
+              type: 'progressbar',
+            }}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className="mySwiper"
+          >
             {v2ImageList.map((image, index) => (
-              <div className="image-1 item">
-                <img key={index} src={image.default.src} alt={`image-${index}`}/>
-                <p>Image Caption</p>
-              </div>
+              <SwiperSlide>
+                <img key={index} src={image.default.src} alt={`Image ${index}`}/>
+              </SwiperSlide>
             ))}
-          </div>
-          <br/>
-          <br/>
+          </Swiper>
           <table className="improvements-table">
             <thead>
             <tr>
@@ -170,7 +281,7 @@ export default function OnDemandLearning() {
                 <img src={p11.src} alt="Before"/>
               </td>
               <td>
-                <img src={p12.src} alt="Before"/>
+                <img src={p12.src} alt="After"/>
               </td>
             </tr>
             <tr>
@@ -183,7 +294,7 @@ export default function OnDemandLearning() {
                 <img src={p21.src} alt="Before"/>
               </td>
               <td>
-                <img src={p22.src} alt="Before"/>
+                <img src={p22.src} alt="After"/>
               </td>
             </tr>
             <tr>
@@ -196,7 +307,7 @@ export default function OnDemandLearning() {
                 <img src={p31.src} alt="Before"/>
               </td>
               <td>
-                <img src={p32.src} alt="Before"/>
+                <img src={p32.src} alt="After"/>
               </td>
             </tr>
             </tbody>
@@ -206,15 +317,20 @@ export default function OnDemandLearning() {
         <br/>
         <div className="section">
           <h4>Current Design</h4>
-          <br/>
-          <div id="image-gallery-with-text-overlay">
+          <Swiper
+            pagination={{
+              type: 'progressbar',
+            }}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className="mySwiper"
+          >
             {finalImageList.map((image, index) => (
-              <div className="image-1 item">
-                <img key={index} src={image.default.src} alt={`image-${index}`}/>
-                <p>Image Caption</p>
-              </div>
+              <SwiperSlide>
+                <img key={index} src={image.default.src} alt={`Image ${index}`}/>
+              </SwiperSlide>
             ))}
-          </div>
+          </Swiper>
         </div>
         <br/>
         <br/>

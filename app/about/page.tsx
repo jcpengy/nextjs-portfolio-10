@@ -29,10 +29,7 @@ export default function About() {
                             Currently, I lead the design and front-end implementation of Customer Engineering's internal tools and initiatives.
                             I'm passionate about designing applications that are simple, accessible, and functional. Outside of work, I'm a self-taught graphic designer who's helped a variety of small businesses with branding and marketing via a thriving Etsy design shop. My work has been featured in The New York Times and was a finalist in Disney Imaginations.
                             <br /><br />
-                            My design style is clean, informed, and rooted in storytelling. I'm inspired by the worldbuilding in my favorite animated movies, and hope to grow my design skills in the
-                            storytelling and/or entertainment space.
-                            <br /><br />
-                            When I'm not working, I'm usually tending to my twelve-pound, giant Yorkie named Butters, playing tennis, or going to the beaches and coffee shops around San Francisco. I also love painting and piling on new creative skills.
+                            When I'm not working, I'm tending to my twelve-pound, giant Yorkie named Butters, playing tennis, or going to the beaches and coffee shops around San Francisco. I also love painting and piling on new creative skills.
                             <br/><br/>
                             <hr/>
                             <br/>
