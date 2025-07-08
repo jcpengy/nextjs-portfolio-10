@@ -111,7 +111,7 @@ class Header extends React.Component<any, any>  {
                     <div id="section-description">
                         <h2>Hi, I'm Jess.</h2>
                         <div id="section-description">
-                            I'm a front-end engineer and designer at Adobe based in San Francisco. I like tackling creative problems and building accessible experiences with a user-centered approach. <br /><u><a href="/about">Full bio</a></u> / <u><a href="https://acrobat.adobe.com/id/urn:aaid:sc:US:d95711aa-c25b-4d6f-a5e3-7a633f4ea593" target="_blank">Resume</a></u>
+                            I'm a front-end engineer and designer at Adobe based in San Francisco. I like tackling creative problems and building accessible experiences with a user-centered approach.
                         </div>
                     </div>
                 </div>
