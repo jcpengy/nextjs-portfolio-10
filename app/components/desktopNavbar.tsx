@@ -19,7 +19,7 @@ export default function DesktopNavbar() {
             name: 'Projects',
         },
         '/about': {
-            name: 'Me',
+            name: 'About',
         }
     };
     return (

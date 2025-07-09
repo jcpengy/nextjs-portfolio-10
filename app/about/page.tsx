@@ -1,9 +1,5 @@
 'use client';
-import ProfilePic1 from "../../public/images/bio.png";
-import ProfilePic2 from "../../public/images/bio-bottom.png";
-// import ProfilePic1 from "../../public/images/me_butters.jpg";
-const finalImages = require.context('../../public/images/fineart', false);
-const finalImageList = finalImages.keys().map(image => finalImages(image));
+import ProfilePic1 from "../../public/images/collage.jpg";
 import DesktopNavbar from "app/components/desktopNavbar";
 import Footer from "app/components/footer";
 
@@ -15,9 +11,8 @@ export default function About() {
                 <div className="two-column-container">
                     <div className="column">
                         <div className="bio-pic-container">
-                            {/*<img id="about-pics" key="profile-pic-1" src={ProfilePic1.src} alt="profile-pic-1" />*/}
+                            <img id="about-pics" key="profile-pic-1" src={ProfilePic1.src} alt="profile-pic-1" />
                         </div>
-                        {/* <img id="about-pics" key="profile-pic-2" src={ProfilePic2.src} alt="profile-pic-2" /> */}
                     </div>
                     <div className="column">
                         <div id="about-blurb">
@@ -29,11 +24,11 @@ export default function About() {
                             Currently, I lead the design and front-end implementation of Customer Engineering's internal tools and initiatives.
                             I'm passionate about designing applications that are simple, accessible, and functional. Outside of work, I'm a self-taught graphic designer who's helped a variety of small businesses with branding and marketing via a thriving Etsy design shop. My work has been featured in The New York Times and was a finalist in Disney Imaginations.
                             <br /><br />
-                            When I'm not working, I'm tending to my twelve-pound, giant Yorkie named Butters, playing tennis, or going to the beaches and coffee shops around San Francisco. I also love painting and piling on new creative skills.
+                            When I'm not working, I enjoy playing tennis, painting or taking on a new creative project, and playing with my giant Yorkie Butters.
                             <br/><br/>
                             <hr/>
                             <br/>
-                            <i>If you have any questions, please reach out by emailing me at pengjess2@gmail.com. Thanks for visiting!</i>
+                            <i>If you have any questions, please reach out by emailing me at pengjess2@gmail.com. Thanks for stopping by!</i>
                             <br/><br/>
                             {/*<u><a href="https://acrobat.adobe.com/id/urn:aaid:sc:US:d95711aa-c25b-4d6f-a5e3-7a633f4ea593" target="_blank">View my resume.</a></u>*/}
                         </div>

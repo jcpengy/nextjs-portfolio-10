@@ -22,74 +22,64 @@ export default function UXDesign() {
               <img id="clickable-image" src={OnDemandLearning.src} alt="ODL"/>
             </a>
           </div>
-          <div className="column">
+          <div className="project-description-column">
             <h4>On-Demand Learning</h4>
-            <h6>UI/UX Design & Development</h6>
+            <div className="subtitle">UI/UX Design & Development</div>
             A hands-on learning application to get customers and partners ramped up on Adobe Experience Platform.
           </div>
         </div>
+        <br />
         <div className="two-column-container">
           <div className="column">
             <a href={images[0].link}>
               <img id="clickable-image" src={CEEM.src} alt="CEEM"/>
             </a>
           </div>
-          <div className="column">
+          <div className="project-description-column">
             <h4>Customer Engineering Enablement Manager</h4>
-            <h6>UI/UX Design & Development</h6>
+            <div className="subtitle">UI/UX Design & Development</div>
             A hands-on learning application to get customers and partners ramped up on Adobe Experience Platform.
           </div>
         </div>
+        <br />
         <div className="two-column-container">
           <div className="column">
             <a href={images[1].link}>
               <img id="clickable-image" src={Sandbox.src} alt="Sandbox copy"/>
             </a>
           </div>
-          <div className="column">
+          <div className="project-description-column">
           <h4>Sandbox Artifact Copy</h4>
-            <h6>UI/UX Design & Development</h6>
+            <div className="subtitle">UI/UX Design & Development</div>
             A hands-on learning application to get customers and partners ramped up on Adobe Experience Platform.
           </div>
         </div>
+        <br />
         <div className="two-column-container">
           <div className="column">
             <a href={images[3].link}>
               <img id="clickable-image" src={NYT.src} alt="NYT"/>
             </a>
           </div>
-          <div className="column">
+          <div className="project-description-column">
           <h4>The New York Times</h4>
-            <h6>3D Modeling, Graphics Development, UI/UX Design & Development</h6>
+            <div className="subtitle">3D Modeling, Graphics Development, UI/UX Design & Development</div>
             A hands-on learning application to get customers and partners ramped up on Adobe Experience Platform.
           </div>
         </div>
+        <br />
         <div className="two-column-container">
           <div className="column">
             <a href={images[4].link}>
               <img id="clickable-image" src={Disney.src} alt="Disney"/>
             </a>
           </div>
-          <div className="column">
+          <div className="project-description-column">
           <h4>Disney Imagineering</h4>
-            <h6>Graphic Design & Illustration</h6>
-            A hands-on learning application to get customers and partners ramped up on Adobe Experience Platform.
+            <div className="subtitle">Graphic Design & Illustration</div>
+            A theme park concept that was a finalist in the 2018 Disney Imaginations competition.
           </div>
         </div>
-        {/*<div id="image-gallery-with-text-overlay">*/}
-        {/*  {*/}
-        {/*    images.map(image => {*/}
-        {/*      return (*/}
-        {/*        <div className="image-1 item">*/}
-        {/*          <a href={image.link}>*/}
-        {/*            <img id="clickable-image" src={image.src} alt={image.alt}/>*/}
-        {/*          </a>*/}
-        {/*          <p>Image Caption</p>*/}
-        {/*        </div>*/}
-        {/*      )*/}
-        {/*    })*/}
-        {/*  }*/}
-        {/*</div>*/}
       </section>
     );
 }

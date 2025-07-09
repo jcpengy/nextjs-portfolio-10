@@ -87,26 +87,26 @@ class Header extends React.Component<any, any>  {
 
         return (
             <section id="header">
-                {
-                    this.state.openInstructions &&
-                    <div id="instructions-container">
-                        <div id="instructions">
-                            <div id="close-container">
-                                <button id="close" onClick={() => this.setState({ openInstructions: false })}>
-                                    <img className="close-link" src={close.src} alt="close" />
-                                </button>
-                            </div>
-                            <div id="instructions-desktop">
-                                Move mouse anywhere to move
-                                <img id="ceojess-scooter" src={ceojess.src} />
-                            </div>
-                            <div id="instructions-mobile">
-                                Press anywhere to move
-                                <img id="ceojess-scooter" src={ceojess.src} />
-                            </div>
-                        </div>
-                    </div>
-                }
+                {/*{*/}
+                {/*    this.state.openInstructions &&*/}
+                {/*    <div id="instructions-container">*/}
+                {/*        <div id="instructions">*/}
+                {/*            <div id="close-container">*/}
+                {/*                <button id="close" onClick={() => this.setState({ openInstructions: false })}>*/}
+                {/*                    <img className="close-link" src={close.src} alt="close" />*/}
+                {/*                </button>*/}
+                {/*            </div>*/}
+                {/*            <div id="instructions-desktop">*/}
+                {/*                Move mouse anywhere to move*/}
+                {/*                <img id="ceojess-scooter" src={ceojess.src} />*/}
+                {/*            </div>*/}
+                {/*            <div id="instructions-mobile">*/}
+                {/*                Press anywhere to move*/}
+                {/*                <img id="ceojess-scooter" src={ceojess.src} />*/}
+                {/*            </div>*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*}*/}
                 <div id="header-front-content">
                     <div id="section-description">
                         <h2>Hi, I'm Jess.</h2>

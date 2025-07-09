@@ -2,8 +2,7 @@
 
 import clsx from 'clsx';
 import { usePathname } from 'next/navigation';
-import Link from 'next/link';
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import burger from "../../public/images/burger.svg";
 import close from "../../public/images/close.svg";
 
@@ -16,10 +15,10 @@ export default function Navbar() {
 
   const navItems = {
     '/': {
-      name: 'WORK',
+      name: 'Projects',
     },
     '/about': {
-      name: 'ABOUT/CONTACT',
+      name: 'About',
     }
   };
 
@@ -39,7 +38,7 @@ export default function Navbar() {
             <img className="burger-link" src={burger.src} alt="burger" />
           </button>
             }
-            
+
           </div>
         </div>
         {
