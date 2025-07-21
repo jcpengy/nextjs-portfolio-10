@@ -1,25 +1,19 @@
 "use client";
-import clsx from 'clsx';
 import { usePathname } from 'next/navigation';
-import Ceojess from "../../public/images/ceojess-head.png";
-import Link from 'next/link';
-import { motion } from 'framer-motion';
 import SocialMediaLinks from './socialMediaLinks';
 
 export default function DesktopNavbar() {
     let pathname = usePathname() || '/';
 
-    // colors to assign nav buttons
-    const backgroundColors = [
-        "#f3eaab", "#b8d9c0", "#d6b4e3"
-    ]
-
     const navItems = {
         '/': {
-            name: 'Projects',
+            name: 'Design'
+        },
+        '/art': {
+            name: 'Art'
         },
         '/about': {
-            name: 'About',
+            name: 'About/Contact'
         }
     };
     return (

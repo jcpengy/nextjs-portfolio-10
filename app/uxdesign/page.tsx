@@ -24,8 +24,8 @@ export default function UXDesign() {
           </div>
           <div className="project-description-column">
             <h4>On-Demand Learning</h4>
-            <div className="subtitle">UI/UX Design & Development</div>
-            A hands-on learning application to get customers and partners ramped up on Adobe Experience Platform.
+            <div className="subtitle">UX Design & Development</div>
+            A hands-on learning solution for Adobe Experience Platform.
           </div>
         </div>
         <br />
@@ -37,8 +37,8 @@ export default function UXDesign() {
           </div>
           <div className="project-description-column">
             <h4>Customer Engineering Enablement Manager</h4>
-            <div className="subtitle">UI/UX Design & Development</div>
-            A hands-on learning application to get customers and partners ramped up on Adobe Experience Platform.
+            <div className="subtitle">UX Design & Development</div>
+            A comprehensive sandbox package manager for enablement programs.
           </div>
         </div>
         <br />
@@ -50,8 +50,8 @@ export default function UXDesign() {
           </div>
           <div className="project-description-column">
           <h4>Sandbox Artifact Copy</h4>
-            <div className="subtitle">UI/UX Design & Development</div>
-            A hands-on learning application to get customers and partners ramped up on Adobe Experience Platform.
+            <div className="subtitle">UX Design & Development</div>
+            A streamlined solution for transferring sandbox artifacts.
           </div>
         </div>
         <br />

@@ -42,13 +42,15 @@ export default function OnDemandLearning() {
     <>
       <DesktopNavbar />
       <section>
+        <br />
         {/*Hero section*/}
         <div id="center-text">
           <h2>On-Demand Learning</h2>
-          <h4>A hands-on learning application for Adobe Experience Platform.</h4>
+          <h4>A hands-on learning solution for Adobe Experience Platform.</h4>
           <br />
           <img className="hero-image" key="hero" src={Hero.src} alt="hero"/>
         </div>
+        <br />
         {/*Project overview*/}
         <div className="section">
           <div className="two-column-container">

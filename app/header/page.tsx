@@ -86,68 +86,48 @@ class Header extends React.Component<any, any>  {
         let { speed, accelMod, droidX, mouseX, toTheRight } = this.state;
 
         return (
-            <section id="header">
-                {/*{*/}
-                {/*    this.state.openInstructions &&*/}
-                {/*    <div id="instructions-container">*/}
-                {/*        <div id="instructions">*/}
-                {/*            <div id="close-container">*/}
-                {/*                <button id="close" onClick={() => this.setState({ openInstructions: false })}>*/}
-                {/*                    <img className="close-link" src={close.src} alt="close" />*/}
-                {/*                </button>*/}
-                {/*            </div>*/}
-                {/*            <div id="instructions-desktop">*/}
-                {/*                Move mouse anywhere to move*/}
-                {/*                <img id="ceojess-scooter" src={ceojess.src} />*/}
-                {/*            </div>*/}
-                {/*            <div id="instructions-mobile">*/}
-                {/*                Press anywhere to move*/}
-                {/*                <img id="ceojess-scooter" src={ceojess.src} />*/}
-                {/*            </div>*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-                {/*}*/}
-                <div id="header-front-content">
-                    <div id="section-description">
-                        <h2>Hi, I'm Jess.</h2>
-                        <div id="section-description">
-                            I'm a front-end engineer and designer at Adobe based in San Francisco. I like tackling creative problems and building accessible experiences with a user-centered approach.
-                        </div>
-                    </div>
-                </div>
-                <div id="ceojess-container">
-                    <div className="liljess" style={{ WebkitTransform: `translateX(${droidX}px)` }}>
-                        <div className="body"
-                            style={{ WebkitTransform: `translateX(${(mouseX - droidX) / 35}px) rotateZ(${(mouseX - droidX) / 75}deg)` }}>
-                            <div className={'eyes ' + (toTheRight ? 'right' : '')}>
-                                <div className="eye one"></div>
-                                <div className="eye two"></div>
-                                <div className="mouth">
-                                    <img className="img-mouth" src={mouth.src} alt="mouth" />
-                                </div>
-                            </div>
-                            <div className={'pupils ' + (toTheRight ? 'right' : '')}>
-                                <div className="pupil one"></div>
-                                <div className="pupil two"></div>
-                            </div>
+          <section id="header">
+              <div id="header-front-content">
+                  <h2>Hi, I'm Jess.</h2>
+                  <div id="header-subtitle"><i>Leading design and front-end dev @Adobe</i></div>
+                  <br />
+                  <div id="header-bio">
+                      I’m a multidisciplinary UX designer and developer based in San Francisco. I enjoy building simple but impactful user experiences and applying my creative background to solve challenges.
+                  </div>
+              </div>
+              <div id="ceojess-container">
+                  <div className="liljess" style={{ WebkitTransform: `translateX(${droidX}px)` }}>
+                      <div className="body"
+                           style={{ WebkitTransform: `translateX(${(mouseX - droidX) / 35}px) rotateZ(${(mouseX - droidX) / 75}deg)` }}>
+                          <div className={'eyes ' + (toTheRight ? 'right' : '')}>
+                              <div className="eye one"></div>
+                              <div className="eye two"></div>
+                              <div className="mouth">
+                                  <img className="img-mouth" src={mouth.src} alt="mouth" />
+                              </div>
+                          </div>
+                          <div className={'pupils ' + (toTheRight ? 'right' : '')}>
+                              <div className="pupil one"></div>
+                              <div className="pupil two"></div>
+                          </div>
 
-                            <div className={'eyebrows ' + (toTheRight ? 'right' : '')}>
-                                <div className="eyebrow one"></div>
-                                <div className="eyebrow two"></div>
-                            </div>
-                        </div>
-                        <div className="scooter">
-                            <img className="img-scooter" src={scooter.src} alt="scooter" />
-                        </div>
-                        <div className="ball-left" style={{ WebkitTransform: `rotateZ(${droidX}deg)` }}>
-                            <div className="ring one"></div>
-                        </div>
-                        <div className="ball-right" style={{ WebkitTransform: `rotateZ(${droidX}deg)` }}>
-                            <div className="ring one"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                          <div className={'eyebrows ' + (toTheRight ? 'right' : '')}>
+                              <div className="eyebrow one"></div>
+                              <div className="eyebrow two"></div>
+                          </div>
+                      </div>
+                      <div className="scooter">
+                          <img className="img-scooter" src={scooter.src} alt="scooter" />
+                      </div>
+                      <div className="ball-left" style={{ WebkitTransform: `rotateZ(${droidX}deg)` }}>
+                          <div className="ring one"></div>
+                      </div>
+                      <div className="ball-right" style={{ WebkitTransform: `rotateZ(${droidX}deg)` }}>
+                          <div className="ring one"></div>
+                      </div>
+                  </div>
+              </div>
+          </section>
         );
     }
 }

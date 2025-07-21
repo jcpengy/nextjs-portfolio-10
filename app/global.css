@@ -87,7 +87,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     padding: 24px;
+}
+
+#header-subtitle {
+    color: cornflowerblue;
 }
 
 @font-face {
@@ -542,6 +547,15 @@ th, td {
     background-color: #ededed;
 }
 
+table {
+    width: 100%;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    white-space: normal;
+}
+
 #before-column {
     background-color: #ffe6e6;
 }
@@ -604,12 +618,16 @@ td {
 #desktop-navbar {
     position: sticky;
     top: 0px;
-    /* justify-content: left; */
+     justify-content: space-between;
     display: flex;
     /* Make a horizontal flexbox (the default) */
     flex-direction: row;
     z-index: 3000;
     background-color: white;
+}
+
+#header-bio {
+    width: 75%;
 }
 
 #desktop-navbar-left {
