@@ -1,18 +1,7 @@
 'use client';
 import React from "react";
-import SocialMediaLinks from "app/components/socialMediaLinks";
-import Ceojess from "../../public/images/ceojess.svg";
-import Wave1 from "../../public/images/wave1.png";
-import Austin from "../../public/images/austin.gif";
 import mouth from "../../app/assets/mouth.png";
-import body from "../../app/assets/body.png";
 import scooter from "../../app/assets/scooter.png";
-import ceojess from "../../public/images/ceojess-scooter.svg";
-import close from "../../public/images/close.svg";
-
-import { useState, useEffect } from "react";
-import { SetOperationNode } from "kysely";
-import { flightRouterStateSchema } from "next/dist/server/app-render/types";
 
 class Header extends React.Component<any, any>  {
 
@@ -92,7 +81,7 @@ class Header extends React.Component<any, any>  {
                   <div id="header-subtitle"><i>Leading design and front-end dev @Adobe</i></div>
                   <br />
                   <div id="header-bio">
-                      I’m a multidisciplinary UX designer and developer based in San Francisco. I enjoy building simple but impactful user experiences and applying my creative background to solve challenges.
+                      I’m a designer and developer based in San Francisco. I enjoy creative problem-solving and building simple, user-centric experiences.
                   </div>
               </div>
               <div id="ceojess-container">

@@ -4,11 +4,13 @@ import Footer from "app/components/footer";
 import Hero from "../../public/images/SandboxCopy/sandbox.gif";
 import Comp from "../../public/images/SandboxCopy/comparison.png";
 import UserFlow from "../../public/images/SandboxCopy/user-flow.png";
-import Sketch1 from "../../public/images/SandboxCopy/1.jpg";
-import Sketch2 from "../../public/images/SandboxCopy/2.jpg";
-import P1 from "../../public/images/SandboxCopy/p1.png";
-import P21 from "../../public/images/SandboxCopy/p2-1.png";
-import P31 from "../../public/images/SandboxCopy/p3-1.png";
+import Sketches from "../../public/images/SandboxCopy/sketches.png";
+import P12 from "../../public/images/SandboxCopy/p1.png";
+import P11 from "../../public/images/SandboxCopy/v1/2.png";
+import P22 from "../../public/images/SandboxCopy/p2-1.png";
+import P21 from "../../public/images/SandboxCopy/v1/1.png";
+import P32 from "../../public/images/SandboxCopy/p3-1.png";
+import P31 from "../../public/images/SandboxCopy/auditlog.png";
 // dynamically import all images from folder
 const finalImages = require.context('../../public/images/SandboxCopy/currentDesign', false);
 const finalImageList = finalImages.keys().map(image => finalImages(image));
@@ -53,7 +55,7 @@ export default function SandboxCopy() {
                           <ul>
                               <li>Allow users to seamlessly transfer artifacts and their dependencies between sandboxes.
                               </li>
-                              <li>Allow users to sync artifacts whose source has been edited.
+                              <li>Allow users to sync artifacts whose sources have been edited.
                               </li>
                           </ul>
                       </div>
@@ -62,7 +64,7 @@ export default function SandboxCopy() {
                           UX Designer and Developer | Wireframes, Prototyping, UI/UX Research, Front-End Development and
                           API Optimization
                           <h6>Scope</h6>
-                          August 2024 - Current
+                          August 2022 - January 2023
                           <h6>Tools</h6>
                           React, TypeScript, React Spectrum (React implementation of Adobe’s design system), Unified
                           Shell (Adobe’s UI framework for internal apps),
@@ -123,15 +125,10 @@ export default function SandboxCopy() {
                       <br/>
                       <i>User flow for copying artifacts</i>
                   </div>
-                  <br />
-                  <br />
-                  <div className="two-column-container">
-                      <div className="column">
-                          <img key="sketch-1" src={Sketch1.src} alt="sketch-1"/>
-                      </div>
-                      <div className="column">
-                          <img key="sketch-2" src={Sketch2.src} alt="sketch-2"/>
-                      </div>
+                  <br/>
+                  <br/>
+                  <div id="section-image">
+                      <img key="sketches" src={Sketches.src} alt="sketches"/>
                   </div>
                   <div id="center-text">
                       <i>Initial sketches</i>
@@ -167,20 +164,20 @@ export default function SandboxCopy() {
                       <tr>
                           <td>
                               <h6>Problem</h6>
-                              Users cannot view more than one artifact's dependencies at a time.
+                              Users can only view one artifact's dependencies at a time.
                               <h6>Solution</h6>
                               List all artifacts and their dependencies in a separate window.
                               <h6>Thought Process</h6>
-                              Previously, the user could only view one artifact's dependencies at a time in a tree
-                              diagram, which was a useful but buggy feature. During the testing sessions, we agreed that
-                              a separate window was necessary to have an organized view of all selected artifacts and
-                              their dependencies. I decided to follow the AJO Object Copy UI and display them in a list.
+                              Previously, we used a dependency tree (plugin) to view all dependencies for a given artifact.
+                              During testing sessions, we learned that this tool ran slow for artifact's with multiple
+                              dependencies and users wanted a more holistic view of all artifacts they selected. I
+                              decided to create a separate window to display all artifacts and their dependencies in an organized list.
                           </td>
                           <td>
-                              {/*<img src={p00.src} alt="Before"/>*/}
+                              <img src={P11.src} alt="Before"/>
                           </td>
                           <td>
-                              {/*<img src={p01.src} alt="After"/>*/}
+                              <img src={P12.src} alt="After"/>
                           </td>
                       </tr>
                       <tr>
@@ -198,16 +195,16 @@ export default function SandboxCopy() {
                               tab.
                           </td>
                           <td>
-                              {/*<img src={p02.src} alt="Before"/>*/}
+                              <img src={P21.src} alt="Before"/>
                           </td>
                           <td>
-                              {/*<img src={p03.src} alt="After"/>*/}
+                              <img src={P22.src} alt="After"/>
                           </td>
                       </tr>
                       <tr>
                           <td>
                               <h6>Problem</h6>
-                              The audit log is hard to follow and unhelpful for troubleshooting.
+                              The audit log is too dense and hard to follow for troubleshooting.
                               <h6>Solution</h6>
                               Turn the audit log into a table and put it on another tab.
                               <h6>Thought Process</h6>
@@ -218,10 +215,10 @@ export default function SandboxCopy() {
                               organized it into a table.
                           </td>
                           <td>
-                              {/*<img src={p02.src} alt="Before"/>*/}
+                              <img src={P31.src} alt="Before"/>
                           </td>
                           <td>
-                              {/*<img src={p03.src} alt="After"/>*/}
+                              <img src={P32.src} alt="After"/>
                           </td>
                       </tr>
                       </tbody>
@@ -245,14 +242,6 @@ export default function SandboxCopy() {
                         </SwiperSlide>
                       ))}
                   </Swiper>
-              </div>
-              <br/>
-              <br/>
-              <div className="section">
-                  <h4>Future Improvements</h4>
-                  <ul>
-                      <li></li>
-                  </ul>
               </div>
               <br />
               <br />

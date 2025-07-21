@@ -7,10 +7,10 @@ export default function DesktopNavbar() {
 
     const navItems = {
         '/': {
-            name: 'Design'
+            name: 'Work'
         },
         '/art': {
-            name: 'Art'
+            name: 'Personal'
         },
         '/about': {
             name: 'About/Contact'

@@ -4,8 +4,9 @@ import Footer from "app/components/footer";
 import Hero from "../../public/images/ODL/hero-image.png";
 import p00 from "../../public/images/ODL/p00.png";
 import p01 from "../../public/images/ODL/p01.png";
-import p02 from "../../public/images/ODL/p02.png";
-import p03 from "../../public/images/ODL/p03.png";
+import learninggaps from "../../public/images/ODL/learninggaps.png";
+import learninggaps2 from "../../public/images/ODL/learninggaps2.png";
+import platform from "../../public/images/ODL/platform.png";
 import p11 from "../../public/images/ODL/ordered_modules2.png";
 import p12 from "../../public/images/ODL/ordered_modules.png";
 import p22 from "../../public/images/ODL/p21.png";
@@ -123,9 +124,13 @@ export default function OnDemandLearning() {
           learning environments that are unique to each individual developer/architect.
           <br/>
           <br/>
-          Since Adobe Digital University is built on Adobe Learning Manager APIs, we decided to use Adobe
-          Learning Manager
-          as the basis for both our back-end and front-end design, integrating learning environments as the add-on.
+          However, we drew inspiration from these learnings tools for our experience. Ultimately, we decided to take a mixed approach of
+          using ALM APIs to manage both learner and author functionalities and building a headless UI to support learning environments.
+          <br />
+          <br />
+          <div id="section-image">
+            <img key="platform-comp" src={platform.src} alt="platform-comp"/>
+          </div>
           <Swiper
             pagination={{
               type: 'progressbar',
@@ -160,6 +165,14 @@ export default function OnDemandLearning() {
           <div id="image-caption">
             <i>Adobe Digital University experience</i>
           </div>
+          <div id="section-image">
+            <img key="learning-gaps" src={learninggaps.src} alt="learning-gaps"/>
+            <br/>
+          </div>
+          <div id="section-image">
+            <img key="learning-gaps-2" src={learninggaps2.src} alt="learning-gaps"/>
+            <br/>
+          </div>
         </div>
         {/*Design process*/}
         <br/>
@@ -168,7 +181,7 @@ export default function OnDemandLearning() {
           <h4>Design Process</h4>
           <div id="section-image">
             <img key="user-flow" src={UserFlow.src} alt="user-flow"/>
-            <br />
+            <br/>
             <i>User flow from logging into the application to requesting/terminating a lab
               environment</i>
           </div>
@@ -220,27 +233,20 @@ export default function OnDemandLearning() {
             <tr>
               <td>
                 <h6>Problem</h6>
+                Not enough course material to divide across course categories.
                 <h6>Solution</h6>
+                Remove course categories, add tags to courses instead.
                 <h6>Thought Process</h6>
+                Our initial idea was to divide courses into categories, modeled after learning paths in Adobe Learning Manager.
+                In a learning path, learners do not have to complete all courses to achieve a skill. However, to achieve this
+                on the ALM backend, we needed to create a catalog for each category and we lacked sufficient course material/authors
+                to create the content. We ultimately decided to get rid of categories and just add relevant skills and tags to each course.
               </td>
               <td>
                 <img src={p00.src} alt="Before"/>
               </td>
               <td>
                 <img src={p01.src} alt="After"/>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <h6>Problem</h6>
-                <h6>Solution</h6>
-                <h6>Thought Process</h6>
-              </td>
-              <td>
-                <img src={p02.src} alt="Before"/>
-              </td>
-              <td>
-                <img src={p03.src} alt="After"/>
               </td>
             </tr>
             </tbody>
@@ -276,8 +282,11 @@ export default function OnDemandLearning() {
             <tr>
               <td>
                 <h6>Problem</h6>
+                User has no indication that modules must be taken in order for some courses.
                 <h6>Solution</h6>
+                Disable user from selecting a module until they have completed the previous one.
                 <h6>Thought Process</h6>
+                In some courses, module order is enforced. Previously, users would encounter a warning dialog if they attempted to select a module without completing the prior ones. To create a clearer and more proactive experience, I decided to enable and disable module selection accordingly. Instead, users are now informed upfront that modules must be completed in sequence, based on what modules are available to select.
               </td>
               <td>
                 <img src={p11.src} alt="Before"/>
@@ -289,8 +298,11 @@ export default function OnDemandLearning() {
             <tr>
               <td>
                 <h6>Problem</h6>
+                The Home page is redundant and uninformative.
                 <h6>Solution</h6>
+                Condense information across the Home and My Learning page.
                 <h6>Thought Process</h6>
+                Since learners are limited to one assigned learning environment at a time, I felt it would be helpful to display its activity and key details directly on the Home page. To support first-time learners, I also added a discovery module to introduce the concept of a learning environment. Additionally, a calendar provides learners with a clear overview of their environment timeline at a glance.
               </td>
               <td>
                 <img src={p21.src} alt="Before"/>
@@ -302,8 +314,11 @@ export default function OnDemandLearning() {
             <tr>
               <td>
                 <h6>Problem</h6>
+                Concept of a learning environment's duration is confusing.
                 <h6>Solution</h6>
+                Change the duration field to estimated wait time.
                 <h6>Thought Process</h6>
+                The concept of a learning environment’s duration was unclear—did it refer to the time needed to complete the lab exercise or how long the environment would be available? To avoid confusion, I revised it to represent the estimated wait time after requesting a new learning environment, which provides clearer and more relevant information for learners.
               </td>
               <td>
                 <img src={p31.src} alt="Before"/>
@@ -340,6 +355,7 @@ export default function OnDemandLearning() {
           <h4>Future Improvements</h4>
           <ul>
             <li>Change My Learning to Bookmarked</li>
+            <li>Rate courses/Offer users the ability to provide feedback</li>
           </ul>
         </div>
       </section>

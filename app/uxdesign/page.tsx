@@ -4,6 +4,7 @@ import Sandbox from "../../public/images/SandboxCopy/sandbox.gif";
 import OnDemandLearning from "../../public/images/ODL/hero-image.png";
 import NYT from "../../public/images/NYT/douma1/1.jpg";
 import Disney from "../../public/images/Kessler/wendy-stars.jpg";
+import PLE from "../../public/images/PLE/cover.jpg";
 
 const images = [
     { "src": CEEM.src, "alt": "CEEM", "link": "/ceem" },
@@ -18,6 +19,17 @@ export default function UXDesign() {
       <section>
         <div className="two-column-container">
           <div className="column">
+            <img id="clickable-image" src={PLE.src} alt="PLE"/>
+          </div>
+          <div className="project-description-column">
+          <h4>Personal Lab Environments</h4>
+            <div className="subtitle">UX Design & Development</div>
+            A centralized solution for managing personal learning environments and packages.
+          </div>
+        </div>
+        <br/>
+        <div className="two-column-container">
+          <div className="column">
             <a href={images[2].link}>
               <img id="clickable-image" src={OnDemandLearning.src} alt="ODL"/>
             </a>
@@ -28,7 +40,7 @@ export default function UXDesign() {
             A hands-on learning solution for Adobe Experience Platform.
           </div>
         </div>
-        <br />
+        <br/>
         <div className="two-column-container">
           <div className="column">
             <a href={images[0].link}>
@@ -41,7 +53,7 @@ export default function UXDesign() {
             A comprehensive sandbox package manager for enablement programs.
           </div>
         </div>
-        <br />
+        <br/>
         <div className="two-column-container">
           <div className="column">
             <a href={images[1].link}>
@@ -49,12 +61,12 @@ export default function UXDesign() {
             </a>
           </div>
           <div className="project-description-column">
-          <h4>Sandbox Artifact Copy</h4>
+            <h4>Sandbox Artifact Copy</h4>
             <div className="subtitle">UX Design & Development</div>
-            A streamlined solution for transferring sandbox artifacts.
+            A streamlined solution for transferring and syncing sandbox artifacts.
           </div>
         </div>
-        <br />
+        <br/>
         <div className="two-column-container">
           <div className="column">
             <a href={images[3].link}>
@@ -62,12 +74,12 @@ export default function UXDesign() {
             </a>
           </div>
           <div className="project-description-column">
-          <h4>The New York Times</h4>
+            <h4>The New York Times</h4>
             <div className="subtitle">3D Modeling, Graphics Development, UI/UX Design & Development</div>
-            A hands-on learning application to get customers and partners ramped up on Adobe Experience Platform.
+            Graphics I designed during my summer internship on the Immersive Storytelling team.
           </div>
         </div>
-        <br />
+        <br/>
         <div className="two-column-container">
           <div className="column">
             <a href={images[4].link}>
@@ -75,7 +87,7 @@ export default function UXDesign() {
             </a>
           </div>
           <div className="project-description-column">
-          <h4>Disney Imagineering</h4>
+            <h4>Disney Imagineering</h4>
             <div className="subtitle">Graphic Design & Illustration</div>
             A theme park concept that was a finalist in the 2018 Disney Imaginations competition.
           </div>

@@ -15,7 +15,7 @@ const finalImages = require.context('../../public/images/CEEM/CurrentDesign', fa
 const finalImageList = finalImages.keys().map(image => finalImages(image));
 const v1Images = require.context('../../public/images/CEEM/v1', false);
 const v1ImageList = v1Images.keys().map(image => v1Images(image));
-const v2Images = require.context('../../public/images/CEEM/CurrentDesign', false);
+const v2Images = require.context('../../public/images/CEEM/v2', false);
 const v2ImageList = v2Images.keys().map(image => v2Images(image));
 const sketches = require.context('../../public/images/ODL/Sketches', false);
 const sketchesList = sketches.keys().map(image => sketches(image));
