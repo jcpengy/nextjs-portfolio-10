@@ -4,8 +4,8 @@ import DesktopNavbar from "app/components/desktopNavbar";
 import Footer from "app/components/footer";
 // const currentImages = require.context('../../public/images/moreart/current', false);
 // const currentImageList = currentImages.keys().map(image => currentImages(image));
-const miscImages = require.context('../../public/images/moreart/misc', false);
-const miscImageList = miscImages.keys().map(image => miscImages(image));
+// const miscImages = require.context('../../public/images/moreart/misc', false);
+// const miscImageList = miscImages.keys().map(image => miscImages(image));
 const paintingImages = require.context('../../public/images/moreart/paintings', false);
 const paintingImageList = paintingImages.keys().map(image => paintingImages(image));
 const pencilImages = require.context('../../public/images/moreart/pencil', false);
@@ -52,14 +52,14 @@ export default function MoreArt() {
                 <div id="section-description">
                     <h3>Other</h3>
                 </div>
-                <div id="image-gallery-with-text-overlay">
-                    {miscImageList.map((image, index) => (
-                        <div className="image-1 item2">
-                            <img key={index} src={image.default.src} alt={`image-${index}`} />
-                            <p>Image Caption</p>
-                        </div>
-                    ))}
-                </div>
+                {/*<div id="image-gallery-with-text-overlay">*/}
+                {/*    {miscImageList.map((image, index) => (*/}
+                {/*        <div className="image-1 item2">*/}
+                {/*            <img key={index} src={image.default.src} alt={`image-${index}`} />*/}
+                {/*            <p>Image Caption</p>*/}
+                {/*        </div>*/}
+                {/*    ))}*/}
+                {/*</div>*/}
                 <div className="back-button-container">
                     <button id="see-more-button" key="ceo-jess-button">
                         <a href="/">Back</a>
