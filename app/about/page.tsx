@@ -29,7 +29,7 @@ export default function About() {
                             <br/>
                             <i>If you have any questions, please reach out by emailing me at pengjess2@gmail.com. Thanks for stopping by!</i>
                             <br/><br/>
-                            <u><a href="https://acrobat.adobe.com/id/urn:aaid:sc:US:23df2f35-027c-4ba4-b90f-fd3f8c6521b2" target="_blank">View my resume.</a></u>
+                            <u><a href="https://acrobat.adobe.com/id/urn:aaid:sc:US:2c008436-8d21-41c3-b6da-b38c733fa498" target="_blank">View my resume.</a></u>
                         </div>
                     </div>
                 </div>
