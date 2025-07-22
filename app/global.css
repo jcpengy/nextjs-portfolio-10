@@ -1348,9 +1348,9 @@ h1 span span {
     border-radius: 50%;
     content: "";
     display: block;
-    height: calc(0.025 * var(--liljesswidth));
+    height: calc(0.022 * var(--liljesswidth));
     position: absolute;
-    width: calc(0.025 * var(--liljesswidth));
+    width: calc(0.022 * var(--liljesswidth));
     top: calc(0.12 * var(--liljesswidth));
 }
 
@@ -1650,6 +1650,10 @@ h6 {
     body {
         margin-left: 0em;
         margin-right: 0em;
+    }
+
+    #header {
+        height: 50vh;
     }
 
     #header-bio {
