@@ -109,10 +109,10 @@ class Header extends React.Component<any, any>  {
                           <img className="img-scooter" src={scooter.src} alt="scooter" />
                       </div>
                       <div className="ball-left" style={{ WebkitTransform: `rotateZ(${droidX}deg)` }}>
-                          <div className="ring one"></div>
+                          {/*<div className="ring one"></div>*/}
                       </div>
                       <div className="ball-right" style={{ WebkitTransform: `rotateZ(${droidX}deg)` }}>
-                          <div className="ring one"></div>
+                          {/*<div className="ring one"></div>*/}
                       </div>
                   </div>
               </div>
