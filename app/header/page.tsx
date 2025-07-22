@@ -81,11 +81,14 @@ class Header extends React.Component<any, any>  {
                   <div id="header-subtitle"><i>Leading design and front-end dev @Adobe</i></div>
                   <br />
                   <div id="header-bio">
-                      I’m a designer and developer based in San Francisco. I'm passionate about effective storytelling through design and building elegant solutions that are simple, user-focused, and intuitive.
+                      I’m a designer and developer based in San Francisco. I'm passionate about effective storytelling
+                      through design and building elegant solutions that are simple, user-focused, and intuitive. Learn
+                      more in my <u><a href="https://acrobat.adobe.com/id/urn:aaid:sc:US:2c008436-8d21-41c3-b6da-b38c733fa498"
+                                 target="_blank">resume.</a></u>
                   </div>
               </div>
               <div id="ceojess-container">
-                  <div className="liljess" style={{ WebkitTransform: `translateX(${droidX}px)` }}>
+                  <div className="liljess" style={{WebkitTransform: `translateX(${droidX}px)`}}>
                       <div className="body"
                            style={{ WebkitTransform: `translateX(${(mouseX - droidX) / 35}px) rotateZ(${(mouseX - droidX) / 75}deg)` }}>
                           <div className={'eyes ' + (toTheRight ? 'right' : '')}>
