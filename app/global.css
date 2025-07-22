@@ -1656,6 +1656,10 @@ h6 {
         height: 50vh;
     }
 
+    #header-front-content {
+        padding: 12px;
+    }
+
     #header-bio {
         width: 100%;
     }
