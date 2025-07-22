@@ -1,5 +1,5 @@
 'use client';
-import ProfilePic1 from "../../public/images/collage.jpg";
+import ProfilePic1 from "../../public/images/collage.png";
 import DesktopNavbar from "app/components/desktopNavbar";
 import Footer from "app/components/footer";
 
@@ -29,7 +29,7 @@ export default function About() {
                             <br/>
                             <i>If you have any questions, please reach out by emailing me at pengjess2@gmail.com. Thanks for stopping by!</i>
                             <br/><br/>
-                            {/*<u><a href="https://acrobat.adobe.com/id/urn:aaid:sc:US:d95711aa-c25b-4d6f-a5e3-7a633f4ea593" target="_blank">View my resume.</a></u>*/}
+                            <u><a href="https://acrobat.adobe.com/id/urn:aaid:sc:US:a512b3f4-1242-4bbd-a82b-35e9b378fc8f" target="_blank">View my resume.</a></u>
                         </div>
                     </div>
                 </div>

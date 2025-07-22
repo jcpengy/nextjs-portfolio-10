@@ -1,26 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://use.typekit.net/rbk4msf.css");
 
 /* GLOBAL VARIABLES */
 :root {
     --blue: #75bfc9;
-    --white: white;
+    --white: #FEFAF7;
     --black: black;
-    --yellow: #f3eaab;
+    --yellow: #FEFAF7;
     --green: #b8d9c0;
-    --purple: #E5B8FF;
+    --purple: #3E172A;
     --liljesswidth: 8vw;
+    --orange: #D8452E;
 }
 
 html {
     overflow-y: scroll;
     scrollbar-color: var(--black) var(--yellow);
     scrollbar-width: thin;
+    background-color: var(--white);
 }
 
 body {
-    font-size: 0.9em;
+    font-size: .9em;
     margin-left: 15em;
     margin-right: 15em;
 }
@@ -69,7 +72,7 @@ body {
 
 @font-face {
     font-family: "BoldHeader";
-    src: url("../public/fonts/AdobeClean-Bold.otf");
+    src: url("../public/fonts/JosefinSans-Medium.ttf");
 }
 
 #Jessica-Peng-div {
@@ -92,12 +95,12 @@ body {
 }
 
 #header-subtitle {
-    color: cornflowerblue;
+    color: var(--purple);
 }
 
 @font-face {
     font-family: "Header";
-    src: url("../public/fonts/AdobeClean-Bold.otf");
+    src: url("../public/fonts/JosefinSans-Regular.ttf");
 }
 
 @font-face {
@@ -105,12 +108,16 @@ body {
     src: url("../public/fonts/AdobeClean-Regular.otf");
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: var(--purple);
+}
+
 h1, h2 {
     font-family: "BoldHeader";
 }
 
 h3, h4 {
-    font-family: "Header";
+    font-family: "BoldHeader";
 }
 
 #glossary {
@@ -623,7 +630,7 @@ td {
     /* Make a horizontal flexbox (the default) */
     flex-direction: row;
     z-index: 3000;
-    background-color: white;
+    background-color: var(--white);
 }
 
 #header-bio {
@@ -634,7 +641,6 @@ td {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: "BoldHeader";
     font-size: 18px;
     margin-right: 36px;
     animation: fadeIn 2s;
@@ -1513,7 +1519,7 @@ h6 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: white;
+    background: var(--white);
     width: 15%;
     height: 100%;
     overflow: hidden;
@@ -1534,13 +1540,13 @@ h6 {
     flex-direction: row;
     align-items: center;
     justify-content: start;
-    background-color: white;
+    background-color: var(--white);
     z-index: 10000;
 }
 
 #navbar-mobile-links {
     /* border: 1px solid var(--yellow); */
-    background-color: white;
+    background-color: var(--white);
     border-top: none;
     text-align: left;
     width: 100%;

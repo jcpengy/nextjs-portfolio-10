@@ -4,7 +4,6 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import Sidebar from './components/sidebar';
 import { Analytics } from '@vercel/analytics/react';
-import Footer from "./components/footer";
 
 const graphik = localFont({
   src: [

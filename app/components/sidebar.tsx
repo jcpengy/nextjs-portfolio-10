@@ -15,10 +15,13 @@ export default function Navbar() {
 
   const navItems = {
     '/': {
-      name: 'Projects',
+      name: 'work',
+    },
+    '/art': {
+      name: 'personal',
     },
     '/about': {
-      name: 'About',
+      name: 'about/contact',
     }
   };
 
