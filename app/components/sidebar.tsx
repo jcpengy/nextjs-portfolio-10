@@ -30,7 +30,7 @@ export default function Navbar() {
       {/* mobile navigation */}
       <div id="navbar-mobile" className="flex flex-col items-center relati md:relative">
         <div id="navbar-mobile-menu">
-          <a id="navbar-mobile-menu-jessica-peng" href="/">Jessica Peng</a>
+          <a id="navbar-mobile-menu-jessica-peng" href="/">jessica peng</a>
           <div id="hamburger-container">
             {
               openMobileMenu ?

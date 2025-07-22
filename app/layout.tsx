@@ -69,9 +69,12 @@ export default function RootLayout({
               graphik.variable
           )}
       >
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/rbk4msf.css"/>
+      </head>
       <body id="" className="">
       <main className="">
-        <Sidebar/>
+      <Sidebar/>
         {children}
         <Analytics />
       </main>

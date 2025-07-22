@@ -12,7 +12,7 @@
     --green: #b8d9c0;
     --purple: #3E172A;
     --liljesswidth: 8vw;
-    --orange: #D8452E;
+    --orange: #DE5235;
 }
 
 html {
@@ -323,7 +323,7 @@ ul ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    transform: scale(.8);
+    transform: scale(.75);
 }
 
 .mySwiper {
@@ -354,21 +354,22 @@ ul ul {
 .social-media-link {
     transform: scale(0.8);
     margin: -3px 3px -3px 3px;
-    filter: invert(0%) sepia(96%) saturate(0%) hue-rotate(235deg) brightness(96%) contrast(103%);
+    filter: brightness(0) saturate(100%) invert(13%) sepia(28%) saturate(1126%) hue-rotate(279deg) brightness(91%) contrast(101%);
 }
 
 .close-link {
     height: 100%;
-    filter: invert(0%) sepia(96%) saturate(0%) hue-rotate(235deg) brightness(96%) contrast(103%);
+    filter: brightness(0) saturate(100%) invert(13%) sepia(28%) saturate(1126%) hue-rotate(279deg) brightness(91%) contrast(101%);
 }
 
 .burger-link {
     height: 80%;
-    filter: invert(0%) sepia(96%) saturate(0%) hue-rotate(235deg) brightness(96%) contrast(103%);
+    filter: brightness(0) saturate(100%) invert(13%) sepia(28%) saturate(1126%) hue-rotate(279deg) brightness(91%) contrast(101%);
 }
 
 .social-media-link:hover {
-    filter: invert(97%) sepia(7%) saturate(1961%) hue-rotate(337deg) brightness(104%) contrast(91%);
+
+    filter: brightness(0) saturate(100%) invert(39%) sepia(16%) saturate(6142%) hue-rotate(343deg) brightness(94%) contrast(85%);
 }
 
 section {
@@ -644,6 +645,9 @@ td {
     font-size: 18px;
     margin-right: 36px;
     animation: fadeIn 2s;
+    font-family: "ivypresto-display", serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 #desktop-navbar-right {
@@ -670,7 +674,7 @@ td {
     /* border: 3px solid var(--black); */
     padding: 8px 8px 8px 8px;
     /* margin: 0px 72px 0px 72px; */
-    color: var(--black);
+    color: var(--purple);
     font-family: "BoldHeader";
     letter-spacing: 1px;
     margin-right: 48px;
@@ -686,9 +690,8 @@ td {
 }
 
 #desktop-navbar-button:hover {
-    background-color: var(--yellow);
     cursor: pointer;
-    transform: scale(1);
+    color: var(--orange);
 }
 
 /* contact form */
@@ -751,7 +754,7 @@ input[type=submit]:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 35vh;
+    height: 45vh;
     justify-content: start;
     overflow: hidden;
 }
@@ -1004,6 +1007,7 @@ ul {
 
 #footer-text {
     padding: 0px 0 24px 0;
+    color: var(--purple);
 }
 
 #element1 {
@@ -1225,7 +1229,7 @@ h1 span span {
 
 .subtitle {
     color: grey;
-    margin: 8px 0 16px 0;
+    margin: 0px 0 16px 0;
 }
 
 @keyframes show-text {
@@ -1528,6 +1532,10 @@ h6 {
 #navbar-mobile-menu-jessica-peng {
     width: 100%;
     position: absolute;
+    color: var(--purple);
+    font-family: "ivypresto-display", serif;
+    font-weight: 600;
+    font-style: normal;
 }
 #navbar-mobile-menu {
     width: 100%;
@@ -1542,6 +1550,7 @@ h6 {
     justify-content: start;
     background-color: var(--white);
     z-index: 10000;
+    color: var(--purple);
 }
 
 #navbar-mobile-links {
@@ -1558,6 +1567,7 @@ h6 {
     position: absolute;
     z-index: 8000;
     padding: 12px;
+    color: var(--purple);
 }
 
 #navbar-mobile-links a {
