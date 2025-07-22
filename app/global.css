@@ -1652,6 +1652,10 @@ h6 {
         margin-right: 0em;
     }
 
+    #ceojess-container {
+        margin-bottom: -30px;
+    }
+
     #header {
         height: 60vh;
     }
