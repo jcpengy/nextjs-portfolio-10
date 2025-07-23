@@ -17,17 +17,17 @@ const images = [
 export default function UXDesign() {
     return (
       <section>
-        <div className="two-column-container">
-          <div className="column">
-            <img id="clickable-image" src={PLE.src} alt="PLE"/>
-          </div>
-          <div className="project-description-column">
-          <h4>Personal Lab Environments</h4>
-            <div className="subtitle">UX Design & Development</div>
-            A centralized solution for managing personal learning environments and packages.
-          </div>
-        </div>
-        <br/>
+        {/*<div className="two-column-container">*/}
+        {/*  <div className="column">*/}
+        {/*    <img id="clickable-image" src={PLE.src} alt="PLE"/>*/}
+        {/*  </div>*/}
+        {/*  <div className="project-description-column">*/}
+        {/*  <h4>Personal Lab Environments</h4>*/}
+        {/*    <div className="subtitle">UX Design & Development</div>*/}
+        {/*    A centralized solution for managing personal learning environments and packages.*/}
+        {/*  </div>*/}
+        {/*</div>*/}
+        {/*<br/>*/}
         <div className="two-column-container">
           <div className="column">
             <a href={images[2].link}>
