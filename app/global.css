@@ -1651,7 +1651,7 @@ h6 {
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     /* CSS rules here */
     .burger-link {
-        height: 20%;
+        height: 10%;
     }
 
     #header {
@@ -1679,7 +1679,7 @@ h6 {
     }
 
     .burger-link {
-        height: 20%;
+        height: 10%;
     }
 
     #header-front-content {
