@@ -52,7 +52,7 @@ export default function Navbar() {
                 work
               </span>
             </a>
-            personal
+            <div id="submenu-text">personal</div>
             <a className="navbar-mobile-submenu" href='/art' onClick={(e) => setOpenMobileMenu(false)}>
               <span className="relative py-1 px-2">
                 art

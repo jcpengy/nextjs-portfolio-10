@@ -1620,6 +1620,10 @@ h6 {
     font-size: 18px;
 }
 
+#submenu-text {
+    color: grey;
+}
+
 #navbar-mobile-links a {
     border-bottom: 1px solid var(--yellow);
     height: 10vh;
