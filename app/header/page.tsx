@@ -81,8 +81,8 @@ class Header extends React.Component<any, any>  {
                   <div id="header-subtitle"><i>Leading design and front-end dev @Adobe</i></div>
                   <br />
                   <div id="header-bio">
-                      I’m a designer and developer based in San Francisco. I'm passionate about effective storytelling
-                      through design and building elegant solutions that are simple, user-focused, and intuitive. View
+                      I’m a designer and developer based in San Francisco. I'm passionate about visual storytelling
+                      and creating user-focused designs that are both functional and beautiful. View
                       my <u><a href="https://acrobat.adobe.com/id/urn:aaid:sc:US:2c008436-8d21-41c3-b6da-b38c733fa498"
                                  target="_blank">resume</a></u> to learn more.
                   </div>

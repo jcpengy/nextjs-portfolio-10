@@ -75,7 +75,7 @@ export default function UXDesign() {
           </div>
           <div className="project-description-column">
             <h4>The New York Times</h4>
-            <div className="subtitle">3D Modeling, Graphics Development, UI/UX Design & Development</div>
+            <div className="subtitle">3D Modeling, Motion Graphics, Infographics, UI/UX Design & Development</div>
             Graphics I designed during my summer internship on the Immersive Storytelling team.
           </div>
         </div>
@@ -88,7 +88,7 @@ export default function UXDesign() {
           </div>
           <div className="project-description-column">
             <h4>Disney Imagineering</h4>
-            <div className="subtitle">Graphic Design & Illustration</div>
+            <div className="subtitle">3D Modeling, Graphic Design, Illustration, & Branding</div>
             A theme park concept that was a finalist in the 2018 Disney Imaginations competition.
           </div>
         </div>
