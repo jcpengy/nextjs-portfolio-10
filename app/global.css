@@ -642,7 +642,7 @@ td {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 18px;
+    font-size: 24px;
     margin-right: 36px;
     animation: fadeIn 2s;
     font-family: "ivypresto-display", serif;
@@ -674,6 +674,7 @@ td {
     /* border: 3px solid var(--black); */
     padding: 8px 8px 8px 8px;
     /* margin: 0px 72px 0px 72px; */
+    font-size: 16px;
     color: var(--purple);
     font-family: "BoldHeader";
     letter-spacing: 1px;
@@ -1537,6 +1538,7 @@ h6 {
     font-family: "ivypresto-display", serif;
     font-weight: 600;
     font-style: normal;
+    font-size: 24px;
 }
 #navbar-mobile-menu {
     width: 100%;
@@ -1645,6 +1647,22 @@ h6 {
     width: 50px;
 }
 
+/* Any IPad portrait or landscape layout */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /* CSS rules here */
+    .burger-link {
+        height: 20%;
+    }
+
+    #header {
+        height: 40vh;
+    }
+
+    #header-front-content {
+        padding: 18px;
+    }
+}
+
 /*mobile*/
 @media screen and (max-width: 960px) {
     body {
@@ -1660,16 +1678,16 @@ h6 {
         height: 60vh;
     }
 
+    .burger-link {
+        height: 20%;
+    }
+
     #header-front-content {
         padding: 12px;
     }
 
     #header-bio {
         width: 100%;
-    }
-
-    .burger-link {
-        height: 30%;
     }
 
     :root {
