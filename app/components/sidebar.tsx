@@ -47,19 +47,45 @@ export default function Navbar() {
         {
           openMobileMenu &&
           (<div id="navbar-mobile-links">
-            {Object.entries(navItems).map(([path, { name }]) => {
-              const isActive = path === pathname;
-              return (
-                <a id={path} key={path} href={path} className={clsx(
-                  '',
-                  {
-                    'text-neutral-500': !isActive,
-                  }
-                )} onClick={(e) => setOpenMobileMenu(false)}><span className="relative py-1 px-2">
-                    {name}
-                  </span></a>
-              );
-            })}
+            <a href='/' onClick={(e) => setOpenMobileMenu(false)}>
+              <span className="relative py-1 px-2">
+                work
+              </span>
+            </a>
+            personal
+            <a className="navbar-mobile-submenu" href='/art' onClick={(e) => setOpenMobileMenu(false)}>
+              <span className="relative py-1 px-2">
+                art
+              </span>
+            </a>
+            <a className="navbar-mobile-submenu" href='/graphicdesign' onClick={(e) => setOpenMobileMenu(false)}>
+              <span className="relative py-1 px-2">
+                graphic design
+              </span>
+            </a>
+            <a className="navbar-mobile-submenu" href='/photography' onClick={(e) => setOpenMobileMenu(false)}>
+              <span className="relative py-1 px-2">
+                photography
+              </span>
+            </a>
+            <a href='/about' onClick={(e) => setOpenMobileMenu(false)}>
+              <span className="relative py-1 px-2">
+                about/contact
+              </span>
+            </a>
+            {/*{Object.entries(navItems).map(([path, {name}]) => {*/}
+            {/*  const isActive = path === pathname;*/}
+            {/*  return (*/}
+            {/*    <a id={path} key={path} href={path} className={clsx(*/}
+            {/*      '',*/}
+            {/*      {*/}
+            {/*        'text-neutral-500': !isActive,*/}
+            {/*      }*/}
+            {/*    )} onClick={(e) => setOpenMobileMenu(false)}><span className="relative py-1 px-2">*/}
+            {/*        {name}*/}
+            {/*      </span></a>*/}
+            {/*  );*/}
+            {/*})}*/}
           </div>)
         }
       </div>

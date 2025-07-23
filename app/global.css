@@ -368,6 +368,10 @@ ul ul {
     align-items: center;
 }
 
+.navbar-mobile-submenu {
+    height: 5vh !important;
+}
+
 .mySwiper {
     width: 75%;
     height: auto;
@@ -1613,6 +1617,7 @@ h6 {
     z-index: 8000;
     padding: 12px;
     color: var(--purple);
+    font-size: 18px;
 }
 
 #navbar-mobile-links a {
