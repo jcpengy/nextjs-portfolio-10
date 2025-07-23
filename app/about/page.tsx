@@ -23,7 +23,7 @@ export default function About() {
                             <br /><br />
                             Currently, I lead the design and front-end development of solutions for Adobe Experience Platform's Customer Engineering team. I'm passionate about telling stories through design and creating applications that are simple, accessible, and user-friendly. Outside of work, I'm a self-taught graphic designer, supporting small businesses with branding and visual marketing. My design work has been featured in The New York Times and recognized as a finalist in the Disney Imaginations competition.
                             <br /><br />
-                            When I'm not working, I enjoy playing tennis, painting or taking on a new creative project, and playing with my giant Yorkie Butters.
+                            When I'm not working, I enjoy playing tennis, painting or taking on a new creative project, and playing with my giant Yorkie, Butters.
                             <br/><br/>
                             <hr/>
                             <br/>
