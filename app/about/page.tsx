@@ -18,10 +18,10 @@ export default function About() {
                         <div id="about-blurb">
                             <h2>Hi, I'm Jess.</h2>
                             <br />
-                            I'm an SF-based senior front-end engineer at Adobe with a background in UI/UX design and development,
+                            I'm an SF-based front-end engineer and experience design lead at Adobe with deep knowledge in UI/UX design and development,
                             graphic design, and fine art. I graduated from the University of Pennsylvania in 2019 with a B.S.E. in <u><a href="http://cg.cis.upenn.edu/dmd.html" target="_blank">Computer Graphics</a></u> and a minor in Fine Arts.
                             <br /><br />
-                            Currently, I lead the design and front-end development of solutions for Adobe Experience Platform's Customer Engineering team. I'm passionate about telling stories through design and creating applications that are simple, accessible, and user-friendly. Outside of work, I'm a self-taught graphic designer, supporting small businesses with branding and visual marketing. My design work has been featured in The New York Times and recognized as a finalist in the Disney Imaginations competition.
+                            Currently, I lead the design and front-end development of solutions for Adobe Experience Platform's Customer Engineering team. I'm passionate about telling stories through good design and creating applications that are simple, accessible, and user-friendly. Outside of work, I'm a self-taught graphic designer, supporting small businesses with branding and visual marketing. My design work has been featured in The New York Times and recognized as a finalist in the Disney Imaginations competition.
                             <br /><br />
                             When I'm not working, I enjoy playing tennis, painting or taking on a new creative project, and playing with my giant Yorkie, Butters.
                             <br/><br/>
