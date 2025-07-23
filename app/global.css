@@ -169,6 +169,47 @@ ul ul {
     animation: dropDown 2s;
 }
 
+.dropdown {
+    float: left;
+    overflow: hidden;
+    /*!* margin: 0px 72px 0px 72px; *!*/
+    font-size: 16px;
+    color: var(--purple);
+    font-family: "BoldHeader";
+    letter-spacing: 1px;
+    margin-right: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    color: var(--purple);
+    top: 40px;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 #section-toggle:hover {
     background-color: var(--purple);
     color: var(--yellow);
@@ -323,7 +364,8 @@ ul ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    transform: scale(.75);
+    transform: scale(0.75);
+    align-items: center;
 }
 
 .mySwiper {

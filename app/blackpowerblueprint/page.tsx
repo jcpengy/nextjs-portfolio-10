@@ -1,7 +1,7 @@
 'use client';
 import DesktopNavbar from "app/components/desktopNavbar";
 import Footer from "app/components/footer";
-// dynamically import all images from folder 
+// dynamically import all images from folder
 const finalImages = require.context('../../public/images/BPB/finalImages', false);
 const finalImageList = finalImages.keys().map(image => finalImages(image));
 const devImages = require.context('../../public/images/BPB/devImages', false);
@@ -21,13 +21,13 @@ export default function BPB() {
                 <h2>Black Power Blueprint</h2>
                 <h4><i>2020-2023</i></h4>
                 <div id="section-description">
-                    Instagram and Facebook posts for Black Power Blueprint, a joint program of the African People’s Education and Defense Fund (APEDF) and Black Star Industries (BSI) that aims to transform North St. Louis through renovation, economic development, and political power by and for the black community.                </div>
+                    Instagram and Facebook posts I designed as a volunteer for Black Power Blueprint, a joint program of the African People’s Education and Defense Fund (APEDF) and Black Star Industries (BSI) that aims to transform North St. Louis through renovation, economic development, and political power by and for the black community.                </div>
                 <button id="section-toggle" onClick={toggle}>{"Research & Concept Development " + (openSection ? "-" : "+")}</button>
                 {
                     openSection &&
                     <>
                         <div id="section-description">
-                            The red, black and green flag that flies across the street from the Uhuru House is an inspiring symbol that represents a future of justice, prosperity and liberation for African people in St. Louis and around the world.                        </div>
+                            The red, black and green flag located next to the organization's Uhuru House is an inspiring symbol that represents a future of justice, prosperity and liberation for African people in St. Louis and around the world. I wanted to incorporate these colors, pairing a more saturated color palette with striking visuals that communicate the powerful messages in these posts.                      </div>
                         <div id="image-gallery-with-text-overlay">
                             {devImageList.map((image, index) => (
                                 <div className="image-1 item">

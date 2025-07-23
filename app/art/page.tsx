@@ -15,6 +15,13 @@ export default function Art() {
     <>
       <DesktopNavbar/>
       <section>
+        <br/>
+        {/*Hero section*/}
+        <div id="center-text">
+          <h2>art</h2>
+          <h4>A collection of paintings, drawings, and sketches spanning a variety of styles and subjects.</h4>
+        </div>
+        <br/>
         <FsLightbox
           toggler={toggler}
           sources={[artImageList[imageIndex].default.src]}
@@ -37,7 +44,7 @@ export default function Art() {
           ))}
         </Masonry>
       </section>
-      <Footer />
+      <Footer/>
     </>
   );
 }

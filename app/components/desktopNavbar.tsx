@@ -20,16 +20,23 @@ export default function DesktopNavbar() {
         <div id="desktop-navbar">
             <a id="desktop-navbar-title" href="/"><h4 id="desktop-navbar-left">jessica peng</h4></a>
             <div id="desktop-navbar-right">
-                {Object.entries(navItems).map(([path, { name }], i) => {
-                    const isActive = path === pathname;
-                    // const style = { "background-color": backgroundColors[i] }
-                    return (
-                        <a id="desktop-navbar-button" href={path}>
-                            {name}
-                        </a>
-                    );
-                })}
-                <SocialMediaLinks />
+                <a id="desktop-navbar-button" href='/'>
+                    work
+                </a>
+                <div className="dropdown">
+                    <button>
+                        personal
+                    </button>
+                    <div className="dropdown-content">
+                        <a href="/art">art</a>
+                        <a href="/graphicdesign">graphic design</a>
+                        <a href="/photography">photography</a>
+                    </div>
+                </div>
+                <a id="desktop-navbar-button" href='/about'>
+                    about/contact
+                </a>
+                <SocialMediaLinks/>
             </div>
         </div>
     );
