@@ -1,10 +1,10 @@
 'use client';
-import Eid from "public/images/Eid/finalImages/1.jpg";
-import River from "public/images/RiversEdge/riversedge-cover.jpg";
+import Eid from "public/images/Eid/eid-paper-2.jpg";
+import River from "public/images/RiversEdge/6.jpg";
 import KesslerSlide2 from "public/images/kessler-cover.jpg";
 import BlackPower from "public/images/BPB/bpb-cover.jpg";
-import SFGrooming from "public/images/sfgrooming-cover.jpg";
-import NYT from "public/images/NYT/nyt-cover.jpg";
+import Molex from "public/images/Molex/cover.png";
+import NYT from "public/images/NYT/1.png";
 import DesktopNavbar from "../components/desktopNavbar";
 import Footer from "../components/footer";
 import Hero from "../../public/images/CEEM/ceem.gif";
@@ -14,9 +14,8 @@ const images = [
   { "src": NYT.src, "alt": "The New York Times", "link": "/new-york-times" },
   { "src": River.src, "alt": "River's Edge Cabin", "link": "/riversedge"},
   { "src": BlackPower.src, "alt": "Black Power Blueprint", "link": "/blackpowerblueprint" },
-  // { "src": SFGrooming.src, "alt": "San Francisco Grooming", "link": "/sfgrooming" },
   { "src": KesslerSlide2.src, "alt": "Kessler Project", "link": "/kessler"},
-
+  { "src": Molex.src, "alt": "Molex", "link": "/molex"}
 ]
 
 export default function GraphicDesign() {

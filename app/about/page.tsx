@@ -18,10 +18,10 @@ export default function About() {
                         <div id="about-blurb">
                             <h2>Hi, I'm Jess.</h2>
                             <br />
-                            I'm an SF-based front-end engineer and experience design lead at Adobe with deep knowledge in UI/UX design and development,
-                            graphic design, and fine art. I graduated from the University of Pennsylvania in 2019 with a B.S.E. in <u><a href="http://cg.cis.upenn.edu/dmd.html" target="_blank">Computer Graphics</a></u> and a minor in Fine Arts.
+                            I'm an SF-based front-end engineer and UX designer with diverse experience in UI/UX design and development,
+                            graphic design, motion design, and fine art. I graduated from the University of Pennsylvania in 2019 with a B.S.E. in <u><a href="http://cg.cis.upenn.edu/dmd.html" target="_blank">Computer Graphics</a></u> and a minor in Fine Arts.
                             <br /><br />
-                            Currently, I lead the design and front-end development of solutions for Adobe Experience Platform's Customer Engineering team. I'm passionate about telling stories through good design and creating applications that are simple, accessible, and user-friendly. Outside of work, I'm a self-taught graphic designer, supporting small businesses with branding and visual marketing. My design work has been featured in The New York Times and recognized as a finalist in the Disney Imaginations competition.
+                            At Adobe, I own the end-to-end design and experience of Customer Engineering’s workflow-optimizing products—from early concepts and high-fidelity mockups to interactive web prototypes—focusing on clarity, impact, and adherence to design systems. Beyond Adobe, I’ve developed graphics and immersive content in the journalism and manufacturing space, in addition to branding, signage, and merchandise for hundreds of small businesses. My design work has been featured in The New York Times and recognized as a finalist in the Disney Imaginations competition.
                             <br /><br />
                             When I'm not working, I enjoy playing tennis, painting or taking on a new creative project, and playing with my giant Yorkie, Butters.
                             <br/><br/>
