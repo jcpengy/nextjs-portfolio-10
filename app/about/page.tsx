@@ -38,6 +38,7 @@ export default function About() {
                             <u><a
                               href="https://acrobat.adobe.com/id/urn:aaid:sc:US:2c008436-8d21-41c3-b6da-b38c733fa498"
                               target="_blank">View my resume.</a></u>
+                            <br/>
                             <hr/>
                             <br/>
                             <i>If you have any questions, please reach out by emailing me at pengjess2@gmail.com. Thanks
