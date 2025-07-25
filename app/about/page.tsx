@@ -25,7 +25,7 @@ export default function About() {
                             Graphics</a></u> and a minor in Fine Arts.
                             <br/><br/>
                             At Adobe, I own the end-to-end design and experience of Customer Engineering’s
-                            workflow-optimizing products—from early concepts and high-fidelity mockups to interactive
+                            learning and workflow-optimizing products—from early concepts and high-fidelity mockups to interactive
                             web prototypes—focusing on clarity, impact, and adherence to design systems. Beyond Adobe,
                             I’ve developed graphics and immersive content in the journalism and manufacturing spaces, in
                             addition to branding, signage, and merchandise for hundreds of small businesses. My design
