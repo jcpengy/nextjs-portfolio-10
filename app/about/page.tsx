@@ -24,7 +24,7 @@ export default function About() {
                             in 2019 with a B.S.E. in <u><a href="http://cg.cis.upenn.edu/dmd.html" target="_blank">Computer
                             Graphics</a></u> and a minor in Fine Arts.
                             <br/><br/>
-                            At Adobe, I own the end-to-end design and experience of Customer Engineering’s
+                            At Adobe, I own the end-to-end design and experience of Adobe Experience Platform’s
                             learning and workflow-optimizing products—from early concepts and high-fidelity mockups to
                             functioning prototypes—focusing on clarity, impact, and adherence to design systems. Beyond Adobe,
                             I’ve developed graphics and immersive content in the journalism and manufacturing spaces, in
