@@ -82,7 +82,7 @@ class Header extends React.Component<any, any>  {
                   <br />
                   <div id="header-bio">
                       I’m a designer and developer based in San Francisco. I'm passionate about visual storytelling
-                      and creating user-focused designs that are both functional and beautiful. View
+                      and creating impactful, user-centered solutions that bridge design and engineering. View
                       my <u><a href="https://acrobat.adobe.com/id/urn:aaid:sc:US:2c008436-8d21-41c3-b6da-b38c733fa498"
                                  target="_blank">resume</a></u> to learn more.
                   </div>
