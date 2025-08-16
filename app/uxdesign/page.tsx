@@ -17,6 +17,10 @@ const images = [
 export default function UXDesign() {
     return (
       <section>
+        <div id="center-text">
+          Featured projects
+        </div>
+        <br />
         {/*<div className="two-column-container">*/}
         {/*  <div className="column">*/}
         {/*    <img id="clickable-image" src={PLE.src} alt="PLE"/>*/}
