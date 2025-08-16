@@ -36,7 +36,7 @@ export default function About() {
                             and playing with my giant Yorkie, Butters.
                             <br/><br/>
                             <u><a
-                              href="https://acrobat.adobe.com/id/urn:aaid:sc:US:2c008436-8d21-41c3-b6da-b38c733fa498"
+                              href="https://acrobat.adobe.com/id/urn:aaid:sc:US:2af92903-92c3-4b0b-9ed5-e434d3af0dae"
                               target="_blank">View my resume.</a></u>
                             <br/>
                             <hr/>
