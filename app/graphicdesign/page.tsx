@@ -7,7 +7,11 @@ import Molex from "public/images/Molex/cover.png";
 import NYT from "public/images/NYT/1.png";
 import DesktopNavbar from "../components/desktopNavbar";
 import Footer from "../components/footer";
-import Hero from "../../public/images/CEEM/ceem.gif";
+const otherImages = require.context('../../public/images/design', false);
+const otherImageList = otherImages.keys().map(image => otherImages(image));
+import FsLightbox from "fslightbox-react";
+import React, { useState } from "react";
+import Masonry from "react-responsive-masonry";
 
 const images = [
   { "src": Eid.src, "alt": "Eid Mubarak", "link": "/eid"},
@@ -19,6 +23,8 @@ const images = [
 ]
 
 export default function GraphicDesign() {
+  const [toggler, setToggler] = useState(false);
+  const [imageIndex, setImageIndex] = useState(0);
   return (
     <>
       <DesktopNavbar />
@@ -44,6 +50,28 @@ export default function GraphicDesign() {
             })
           }
         </div>
+        <br />
+        <FsLightbox
+          toggler={toggler}
+          sources={[otherImageList[imageIndex].default.src]}
+          key={imageIndex}
+          thumbs={[otherImageList[imageIndex].default.src]}
+        />
+        <Masonry columnsCount={3} gutter="10px">
+          {otherImageList.map((image, i) => (
+            <button onClick={() => {
+              setToggler(!toggler);
+              setImageIndex(i);
+            }}>
+              <img
+                alt="design"
+                key={i}
+                src={image.default.src}
+                style={{width: "100%", display: "block"}}
+              />
+            </button>
+          ))}
+        </Masonry>
       </section>
       <Footer/>
     </>
