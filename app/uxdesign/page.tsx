@@ -18,8 +18,9 @@ export default function UXDesign() {
     return (
       <section>
         <div id="center-text">
-          Featured projects
+          <h4>Featured projects</h4>
         </div>
+        <br />
         <br />
         {/*<div className="two-column-container">*/}
         {/*  <div className="column">*/}
