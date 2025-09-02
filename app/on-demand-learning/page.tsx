@@ -374,8 +374,10 @@ export default function OnDemandLearning() {
         <br/>
         <div className="section">
           <h4>Development Process</h4>
+          <br />
           Once we finalized the general design, I started mapping out React components and API calls needed for the UI.
           Our approach was to develop a custom headless experience and use Adobe Learning Manager as our content management system to house and serve the course and learner info.
+          <br />
           <div id="section-image">
             <img key="row-example" src={row.src} alt="row-example"/>
             <br/>
@@ -386,8 +388,11 @@ export default function OnDemandLearning() {
         <br/>
         <div className="section">
           <h4>Impact & Next Steps</h4>
+          <br />
           On-Demand Learning has been successfully adopted by three pilot customers, all of whom shared positive feedback on its ability to deliver learning content in a condensed, self-served, and organized format. Beyond its immediate value, the application has become a critical building block for the team's current initiative: an in-product experience where environments are managed externally. Looking ahead, On-Demand Learning will still serve as the delivery hub for courses and lab guides that enable hands-on exercises in these environments, with ongoing UI refinements to align with this evolving model.
         </div>
+        <br />
+        <br />
       </section>
       <Footer/>
     </>
