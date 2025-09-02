@@ -13,6 +13,7 @@ import p22 from "../../public/images/ODL/p21.png";
 import p21 from "../../public/images/ODL/p22.png";
 import p31 from "../../public/images/ODL/p31.png";
 import p32 from "../../public/images/ODL/p32.png";
+import row from "../../public/images/ODL/row.png";
 import SoftwareDependencies from "../../public/images/ODL/SoftwareDependencies.png";
 import UserFlow from "../../public/images/ODL/UserFlow.png";
 const finalImages = require.context('../../public/images/ODL/current', false);
@@ -43,15 +44,15 @@ export default function OnDemandLearning() {
     <>
       <DesktopNavbar />
       <section>
-        <br />
+        <br/>
         {/*Hero section*/}
         <div id="center-text">
           <h2>On-Demand Learning</h2>
           <h4>A hands-on learning solution for Adobe Experience Platform.</h4>
-          <br />
+          <br/>
           <img className="hero-image" key="hero" src={Hero.src} alt="hero"/>
         </div>
-        <br />
+        <br/>
         {/*Project overview*/}
         <div className="section">
           <div className="two-column-container">
@@ -60,15 +61,17 @@ export default function OnDemandLearning() {
               Adobe Experience Platform customers and partners are trained through the
               Developer Enablement Program, which involves deploying learning content across multiple sandboxes
               and conducting in-person sessions to facilitate the training.
-              <br />
+              <br/>
               <br/>
               On-Demand Learning provides this training in a virtual and scalable manner. Equipped with their own
-              learning environment (an Experience Platform sandbox), customers can go through hands-on exercises and lectures
+              learning environment (an Experience Platform sandbox), customers can go through hands-on exercises and
+              lectures
               at their own pace.
               <h6>Goals</h6>
               <ul>
                 <li>
-                  Provide Experience Platform training from the Developer Enablement Program in a virtual and scalable manner to
+                  Provide Experience Platform training from the Developer Enablement Program in a virtual and scalable
+                  manner to
                   reduce cost and time to value
                 </li>
                 <li>
@@ -79,17 +82,19 @@ export default function OnDemandLearning() {
             </div>
             <div className="column">
               <h6>Role</h6>
-              UX Designer and Developer | Wireframes, Prototyping, UI/UX Research, Front-End Development and API Optimization
+              UX Designer and Developer | Wireframes, Prototyping, UI/UX Research, Front-End Development and API
+              Optimization
               <h6>Scope</h6>
               August 2024 - Current
               <h6>Tools</h6>
-              React, TypeScript, React Spectrum (React implementation of Adobe’s design system), Unified Shell (Adobe’s UI framework for internal apps),
+              React, TypeScript, React Spectrum (React implementation of Adobe’s design system), Unified Shell (Adobe’s
+              UI framework for internal apps),
               HTML/CSS
             </div>
           </div>
         </div>
-        <br />
-        <br />
+        <br/>
+        <br/>
         {/*Exploration/Discovery*/}
         <div className="section">
           <h4>Exploration</h4>
@@ -124,10 +129,12 @@ export default function OnDemandLearning() {
           learning environments that are unique to each individual developer/architect.
           <br/>
           <br/>
-          However, we drew inspiration from these learnings tools for our experience. Ultimately, we decided to take a mixed approach of
-          using ALM APIs to manage both learner and author functionalities and building a headless UI to support learning environments.
-          <br />
-          <br />
+          However, we drew inspiration from these learnings tools for our experience. Ultimately, we decided to take a
+          mixed approach of
+          using ALM APIs to manage both learner and author functionalities and building a headless UI to support
+          learning environments.
+          <br/>
+          <br/>
           <div id="section-image">
             <img key="platform-comp" src={platform.src} alt="platform-comp"/>
           </div>
@@ -203,8 +210,8 @@ export default function OnDemandLearning() {
             <i></i>
           </div>
         </div>
-        <br />
-        <br />
+        <br/>
+        <br/>
         <div className="section">
           <h4>Version 1</h4>
           <Swiper
@@ -237,10 +244,14 @@ export default function OnDemandLearning() {
                 <h6>Solution</h6>
                 Remove course categories, add tags to courses instead.
                 <h6>Thought Process</h6>
-                Our initial idea was to divide courses into categories, modeled after learning paths in Adobe Learning Manager.
-                In a learning path, learners do not have to complete all courses to achieve a skill. However, to achieve this
-                on the ALM backend, we needed to create a catalog for each category and we lacked sufficient course material/authors
-                to create the content. We ultimately decided to get rid of categories and just add relevant skills and tags to each course.
+                Our initial idea was to divide courses into categories, modeled after learning paths in Adobe Learning
+                Manager.
+                In a learning path, learners do not have to complete all courses to achieve a skill. However, to achieve
+                this
+                on the ALM backend, we needed to create a catalog for each category and we lacked sufficient course
+                material/authors
+                to create the content. We ultimately decided to get rid of categories and just add relevant skills and
+                tags to each course.
               </td>
               <td>
                 <img src={p00.src} alt="Before"/>
@@ -286,7 +297,11 @@ export default function OnDemandLearning() {
                 <h6>Solution</h6>
                 Disable user from selecting a module until they have completed the previous one.
                 <h6>Thought Process</h6>
-                In some courses, module order is enforced. Previously, users would encounter a warning dialog if they attempted to select a module without completing the prior ones. To create a clearer and more proactive experience, I decided to enable and disable module selection accordingly. Instead, users are now informed upfront that modules must be completed in sequence, based on what modules are available to select.
+                In some courses, module order is enforced. Previously, users would encounter a warning dialog if they
+                attempted to select a module without completing the prior ones. To create a clearer and more proactive
+                experience, I decided to enable and disable module selection accordingly. Instead, users are now
+                informed upfront that modules must be completed in sequence, based on what modules are available to
+                select.
               </td>
               <td>
                 <img src={p11.src} alt="Before"/>
@@ -302,7 +317,10 @@ export default function OnDemandLearning() {
                 <h6>Solution</h6>
                 Condense information across the Home and My Learning page.
                 <h6>Thought Process</h6>
-                Since learners are limited to one assigned learning environment at a time, I felt it would be helpful to display its activity and key details directly on the Home page. To support first-time learners, I also added a discovery module to introduce the concept of a learning environment. Additionally, a calendar provides learners with a clear overview of their environment timeline at a glance.
+                Since learners are limited to one assigned learning environment at a time, I felt it would be helpful to
+                display its activity and key details directly on the Home page. To support first-time learners, I also
+                added a discovery module to introduce the concept of a learning environment. Additionally, a calendar
+                provides learners with a clear overview of their environment timeline at a glance.
               </td>
               <td>
                 <img src={p21.src} alt="Before"/>
@@ -318,7 +336,10 @@ export default function OnDemandLearning() {
                 <h6>Solution</h6>
                 Change the duration field to estimated wait time.
                 <h6>Thought Process</h6>
-                The concept of a learning environment’s duration was unclear—did it refer to the time needed to complete the lab exercise or how long the environment would be available? To avoid confusion, I revised it to represent the estimated wait time after requesting a new learning environment, which provides clearer and more relevant information for learners.
+                The concept of a learning environment’s duration was unclear—did it refer to the time needed to complete
+                the lab exercise or how long the environment would be available? To avoid confusion, I revised it to
+                represent the estimated wait time after requesting a new learning environment, which provides clearer
+                and more relevant information for learners.
               </td>
               <td>
                 <img src={p31.src} alt="Before"/>
@@ -352,11 +373,20 @@ export default function OnDemandLearning() {
         <br/>
         <br/>
         <div className="section">
-          <h4>Future Improvements</h4>
-          <ul>
-            <li>Change My Learning to Bookmarked</li>
-            <li>Rate courses/Offer users the ability to provide feedback</li>
-          </ul>
+          <h4>Development Process</h4>
+          Once we finalized the general design, I started mapping out React components and API calls needed for the UI.
+          Our approach was to develop a custom headless experience and use Adobe Learning Manager as our content management system to house and serve the course and learner info.
+          <div id="section-image">
+            <img key="row-example" src={row.src} alt="row-example"/>
+            <br/>
+          </div>
+          A major challenge we faced was integrating Unified Shell with Adobe Learning Manager (ALM), which had never been done before. Early obstacles included retrieving the access token required for ALM APIs, embedding the Fluidic Player for video and PDF content, and making sense of the APIs themselves. Initially, our API usage was inefficient, but through trial and error we discovered that certain calls could return more information by leveraging multiple parameters, significantly reducing the number of requests needed. As for the other challenges, we overcame them by collaborating closely with the Unified Shell team, consulting our ALM resource, and sifting through public documentation, which ultimately allowed us to establish a clear development process and successfully complete the integration.
+        </div>
+        <br/>
+        <br/>
+        <div className="section">
+          <h4>Impact & Next Steps</h4>
+          On-Demand Learning has been successfully adopted by three pilot customers, all of whom shared positive feedback on its ability to deliver learning content in a condensed, self-served, and organized format. Beyond its immediate value, the application has become a critical building block for the team's current initiative: an in-product experience where environments are managed externally. Looking ahead, On-Demand Learning will still serve as the delivery hub for courses and lab guides that enable hands-on exercises in these environments, with ongoing UI refinements to align with this evolving model.
         </div>
       </section>
       <Footer/>
