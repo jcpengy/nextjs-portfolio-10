@@ -378,18 +378,19 @@ export default function OnDemandLearning() {
           Once we finalized the general design, I started mapping out React components and API calls needed for the UI.
           Our approach was to develop a custom headless experience and use Adobe Learning Manager as our content management system to house and serve the course and learner info.
           <br />
+          <br />
           <div id="section-image">
             <img key="row-example" src={row.src} alt="row-example"/>
             <br/>
           </div>
-          A major challenge we faced was integrating Unified Shell with Adobe Learning Manager (ALM), which had never been done before. Early obstacles included retrieving the access token required for ALM APIs, embedding the Fluidic Player for video and PDF content, and making sense of the APIs themselves. Initially, our API usage was inefficient, but through trial and error we discovered that certain calls could return more information by leveraging multiple parameters, significantly reducing the number of requests needed. As for the other challenges, we overcame them by collaborating closely with the Unified Shell team, consulting our ALM resource, and sifting through public documentation, which ultimately allowed us to establish a clear development process and successfully complete the integration.
+          A major challenge we faced was integrating Unified Shell with Adobe Learning Manager (ALM), which had never been done before. Early obstacles included retrieving the access token required for ALM APIs, embedding the Fluidic Player for video and PDF content, and making sense of the APIs themselves. Initially, our API usage was inefficient, but through experimentation and working with our ALM resource, we discovered that certain calls could return more information by leveraging multiple parameters, significantly reducing the number of requests needed. Overall, we were able to solve a lot of issues by consulting our ALM resource, clarifying best practices with the Unified Shell team, and sifting through public documentation.
         </div>
         <br/>
         <br/>
         <div className="section">
           <h4>Impact & Next Steps</h4>
           <br />
-          On-Demand Learning has been successfully adopted by three pilot customers, all of whom shared positive feedback on its ability to deliver learning content in a condensed, self-served, and organized format. Beyond its immediate value, the application has become a critical building block for the team's current initiative: an in-product experience where environments are managed externally. Looking ahead, On-Demand Learning will still serve as the delivery hub for courses and lab guides that enable hands-on exercises in these environments, with ongoing UI refinements to align with this evolving model.
+          On-Demand Learning has been successfully adopted by three pilot customers, all of whom shared positive feedback on its ability to deliver learning content in a self-served, and organized format, with one user asking how we can further condense the content to provide "bite-sized" courses. Beyond its immediate value, the application has become a critical building block for the team's current initiative: an in-product experience where environments are managed externally. Looking ahead, On-Demand Learning will serve as the delivery hub for courses and lab guides that enable hands-on exercises in these environments, with ongoing UI refinements to align with new business requirements.
         </div>
         <br />
         <br />
