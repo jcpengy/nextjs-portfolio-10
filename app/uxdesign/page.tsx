@@ -4,12 +4,13 @@ import Sandbox from "../../public/images/SandboxCopy/sandbox.gif";
 import OnDemandLearning from "../../public/images/ODL/hero-image.png";
 import NYT from "../../public/images/NYT/douma1/1.jpg";
 import Disney from "../../public/images/Kessler/wendy-stars.jpg";
-import PLE from "../../public/images/PLE/cover.jpg";
+import PLE from "../../public/images/ProjectLasso/cover.jpg";
 
 const images = [
     { "src": CEEM.src, "alt": "CEEM", "link": "/ceem" },
     { "src": Sandbox.src, "alt": "Sandbox Copy", "link": "/sandboxcopy" },
     { "src": OnDemandLearning.src, "alt": "On-Demand Learning", "link": '/on-demand-learning' },
+    { "src": PLE.src, "alt": "Project Lasso", "link": '/projectlasso' },
     { "src": NYT.src, "alt": "The New York Times", "link": '/new-york-times' },
     { "src": Disney.src, "alt": "Disney Imagineering", "link": 'kessler' }
 ]
@@ -22,17 +23,19 @@ export default function UXDesign() {
         </div>
         <br />
         <br />
-        {/*<div className="two-column-container">*/}
-        {/*  <div className="column">*/}
-        {/*    <img id="clickable-image" src={PLE.src} alt="PLE"/>*/}
-        {/*  </div>*/}
-        {/*  <div className="project-description-column">*/}
-        {/*  <h4>Personal Lab Environments</h4>*/}
-        {/*    <div className="subtitle">UX Design & Development</div>*/}
-        {/*    A centralized solution for managing personal learning environments and packages.*/}
-        {/*  </div>*/}
-        {/*</div>*/}
-        {/*<br/>*/}
+        <div className="two-column-container">
+          <div className="column">
+            <a href={images[3].link}>
+              <img id="clickable-image" src={PLE.src} alt="Project Lasso"/>
+            </a>
+          </div>
+          <div className="project-description-column">
+            <h4>Project Lasso (Ongoing)</h4>
+            <div className="subtitle">UX Design & Development</div>
+            A productized, self-paced implementation of the Developer Enablement Program.
+          </div>
+        </div>
+        <br/>
         <div className="two-column-container">
           <div className="column">
             <a href={images[2].link}>

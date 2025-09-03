@@ -85,7 +85,7 @@ export default function OnDemandLearning() {
               UX Designer and Developer | Wireframes, Prototyping, UI/UX Research, Front-End Development and API
               Optimization
               <h6>Scope</h6>
-              August 2024 - Current
+              August 2024 - June 2025
               <h6>Tools</h6>
               React, TypeScript, React Spectrum (React implementation of Adobe’s design system), Unified Shell (Adobe’s
               UI framework for internal apps),
