@@ -185,70 +185,79 @@ export default function OnDemandLearning() {
           {/*  <br/>*/}
           {/*  <i>General user flow from Product</i>*/}
           {/*</div>*/}
-          <br />
-          <br />
+          <br/>
+          <br/>
           <div id="section-image">
             <img key="user-flow" src={userflow2.src} alt="user-flow"/>
             <br/>
             <i>Detailed user flow from user registration to environment de-activation</i>
           </div>
-          <br />
-          <br />
-          <div id="center-text">
-            Requirements for M1:
-            <ul>
-              <li>2 IMS orgs that contain user sandboxes</li>
-              <li>All emails are manually generated and sent</li>
-              <li>Lab guides and videos will be hosted on dep-labs.com</li>
-              <li>PLE requests made through Admin Dashboard</li>
-            </ul>
-            For milestone 1, the focus was on designing and building a simple admin dashboard for the Product team. This dashboard would allow the team to easily request and set up a new sandbox for a user, while also handling the deployment of the AEP Foundations Bootcamp lab pack to the user’s environment.
+          <br/>
+          <br/>
+          <div className="two-column-container">
+            <div className="column">
+              Requirements for M1:
+              <ul>
+                <li>2 IMS orgs that contain user sandboxes</li>
+                <li>All emails are manually generated and sent</li>
+                <li>Lab guides and videos will be hosted on dep-labs.com</li>
+                <li>PLE requests made through Admin Dashboard</li>
+              </ul>
+            </div>
+            <div className="column">
+              For milestone 1, the focus was on designing and building a simple admin dashboard for the Product team.
+              This dashboard would allow the team to easily request and set up a new sandbox for a user, while also
+              handling the deployment of the AEP Foundations Bootcamp lab pack to the user’s environment.
+            </div>
           </div>
-          <br />
-          <br />
-          <div id="section-image">
-            <img key="adminRequirements" src={adminRequirements.src} alt="adminRequirements"/>
             <br/>
-            <i>Admin UI requirements for M1</i>
+            <br/>
+            <div id="section-image">
+              <img key="adminRequirements" src={adminRequirements.src} alt="adminRequirements"/>
+              <br/>
+              <i>Admin UI requirements for M1</i>
+            </div>
+            <br/>
+            <div id="image-gallery-with-text-overlay">
+              {m1mocksList.map((image, index) => (
+                <div className="image-1 item">
+                  <img key={index} src={image.default.src} alt={`image-${index}`}/>
+                  <p>Image Caption</p>
+                </div>
+              ))}
+            </div>
+            <div id="center-text">
+              <i>Based on the Admin UI requirements for the first milestone, I drew out a rough wireframe using
+                AI.</i>
+            </div>
           </div>
           <br/>
-          <div id="image-gallery-with-text-overlay">
-            {m1mocksList.map((image, index) => (
-              <div className="image-1 item">
-                <img key={index} src={image.default.src} alt={`image-${index}`}/>
-                <p>Image Caption</p>
+          <br/>
+          <div className="section">
+              <h4>Implementation: Version 1</h4>
+              <br/>
+              I re-purposed an existing application we had already deployed in Unified Shell, which helped save time
+              given
+              the tight timeline and uncertainty around future requirements. With only two weeks for planning and
+              development, I jumped straight into building the UI skeleton for the Admin dashboard using React Spectrum
+              components. Throughout the process, I collaborated closely with the backend team to define the API
+              contracts
+              and data models needed to support the environment fields.
+              <br/>
+              <br/>
+              <div id="image-gallery-with-text-overlay">
+                {m1uiList.map((image, index) => (
+                  <div className="image-1 item">
+                    <img key={index} src={image.default.src} alt={`image-${index}`}/>
+                    <p>Image Caption</p>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-          <div id="center-text">
-            <i>Based on the Admin UI requirements for the first milestone, I drew out a rough wireframe using AI.</i>
-          </div>
-        </div>
-        <br/>
-        <br/>
-        <div className="section">
-          <h4>Implementation: Version 1</h4>
-          <br />
-          I re-purposed an existing application we had already deployed in Unified Shell, which helped save time given
-          the tight timeline and uncertainty around future requirements. With only two weeks for planning and
-          development, I jumped straight into building the UI skeleton for the Admin dashboard using React Spectrum
-          components. Throughout the process, I collaborated closely with the backend team to define the API contracts
-          and data models needed to support the environment fields.
-          <br />
-          <br />
-          <div id="image-gallery-with-text-overlay">
-            {m1uiList.map((image, index) => (
-              <div className="image-1 item">
-                <img key={index} src={image.default.src} alt={`image-${index}`}/>
-                <p>Image Caption</p>
-              </div>
-            ))}
-          </div>
-        </div>
-        <br />
-        <br />
+            </div>
+            <br/>
+            <br/>
       </section>
       <Footer/>
     </>
-  );
+);
 }
