@@ -71,6 +71,8 @@ export default function OnDemandLearning() {
                   Percentage of lab environments requested and not used is less than 20%
                 </li>
               </ul>
+            </div>
+            <div className="column">
               <h6>Scope</h6>
               June 2025 - Current
               <h6>Tools</h6>
@@ -78,22 +80,20 @@ export default function OnDemandLearning() {
               UI framework for internal apps),
               HTML/CSS
             </div>
-            <div className="column">
-              <h6>Role</h6>
-              UX Designer and Developer | Wireframes, Prototyping, UI/UX Research, Front-End Development and API
-              Optimization
-              <br/>
-              <br/>
-              I served as the sole UX designer and developer on a 13-person team that included Product Management,
-              Engineering, Technical Marketing, Customer Onboarding, and other Sponsors. The Customer Engineering team
-              primarily managed the ‘Environment & Data’ section, which involved developing the environment
-              creation/deployment and learner experience.
-              <br />
-              <br />
-              <div id="section-image">
-                <img key="workstreams" src={workstreams.src} alt="workstreams"/>
-              </div>
-            </div>
+          </div>
+          <h6>Role</h6>
+          UX Designer and Developer | Wireframes, Prototyping, UI/UX Research, Front-End Development and API
+          Optimization
+          <br/>
+          <br/>
+          I served as the sole UX designer and developer on a 13-person team that included Product Management,
+          Engineering, Technical Marketing, Customer Onboarding, and other Sponsors. The Customer Engineering team
+          primarily managed the ‘Environment & Data’ section, which involved developing the environment
+          creation/deployment and learner experience.
+          <br/>
+          <br/>
+          <div id="section-image">
+            <img key="workstreams" src={workstreams.src} alt="workstreams"/>
           </div>
         </div>
         <br/>
@@ -116,24 +116,19 @@ export default function OnDemandLearning() {
               </ul>
               <h6>Past Bootcamps</h6>
               I watched recordings of past bootcamps to better understand how attendees learned content, asked for help, and got feedback.
+            </div>
+            <div className="column">
               <h6>Learning Gaps/Questions</h6>
               <ul>
                 <li>How do we track if a learner has completed the lab guide?</li>
                 <li>How do we know if a learner completed the steps of the lab guide correctly?</li>
               </ul>
-            </div>
-            <div className="column">
-              <h6>Feedback</h6>
-              Feedback will be collected via a Beta feedback button, Slack, and weekly meetings.
               <h6>Technology Stack</h6>
               <ul>
-                <li>AEP - User-specific sandbox in a Learner IMS org (2 IMS orgs provisioned for the first milestone)
-                </li>
-                <li>Adobe Learning Manager (ALM) - house and serve course content and learner progress</li>
-                <li>Media Publishing (video media)</li>
+                <li>AEP - User-specific sandbox in a Learner IMS org</li>
+                <li>Adobe Learning Manager (ALM) - used to house and serve course content/learner progress</li>
+                <li>Unified Shell - Experience Platform's UI framework</li>
               </ul>
-              <h6>Course Content</h6>
-              AEP Foundations Bootcamp
             </div>
           </div>
           <h6>Competitive Analysis</h6>
@@ -213,8 +208,10 @@ export default function OnDemandLearning() {
               </div>
             ))}
           </div>
-          Based on the Admin UI requirements for the first milestone, I drew out a rough wireframe using AI.
-        </div>
+          <div id="center-text">
+            <i>Based on the Admin UI requirements for the first milestone, I drew out a rough wireframe using AI.</i>
+          </div>
+          </div>
         <br/>
         <br/>
         <div className="section">
