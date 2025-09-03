@@ -9,7 +9,7 @@ const m1mocksList = m1mocks.keys().map(image => m1mocks(image));
 import adminRequirements from "../../public/images/ProjectLasso/m1/requirements/1.png";
 const m1ui = require.context('../../public/images/ProjectLasso/m1/UI', false);
 const m1uiList = m1ui.keys().map(image => m1ui(image));
-import Hero from "../../public/images/ODL/hero-image.png";
+import Hero from "../../public/images/ProjectLasso/m1/UI/1.png";
 const alm = require.context('../../public/images/ODL/ALM', false);
 const almList = alm.keys().map(image => alm(image));
 const adu = require.context('../../public/images/ODL/ADU', false);
@@ -71,6 +71,12 @@ export default function OnDemandLearning() {
                   Percentage of lab environments requested and not used is less than 20%
                 </li>
               </ul>
+              <h6>Scope</h6>
+              June 2025 - Current
+              <h6>Tools</h6>
+              React, TypeScript, React Spectrum (React implementation of Adobe’s design system), Unified Shell (Adobe’s
+              UI framework for internal apps),
+              HTML/CSS
             </div>
             <div className="column">
               <h6>Role</h6>
@@ -87,12 +93,6 @@ export default function OnDemandLearning() {
               <div id="section-image">
                 <img key="workstreams" src={workstreams.src} alt="workstreams"/>
               </div>
-              <h6>Scope</h6>
-              June 2025 - Current
-              <h6>Tools</h6>
-              React, TypeScript, React Spectrum (React implementation of Adobe’s design system), Unified Shell (Adobe’s
-              UI framework for internal apps),
-              HTML/CSS
             </div>
           </div>
         </div>
@@ -107,27 +107,28 @@ export default function OnDemandLearning() {
               <ul>
                 <li>Admin - manages sandbox for a learner</li>
                 <li>Learner - AEP customers with a technical background (developers, architects, etc.)</li>
-                <li>Author (Lab pack) - creates assets that will be deployed to the learning environment</li>
+                <li>Author</li>
                 <ul>
                   <li>Course content - creates lecture materials</li>
                   <li>Lab guide - creates hands-on exercise that will be completed in the learner's environment</li>
                   <li>Lab pack - creates assets that will be deployed to the learning environment</li>
                 </ul>
               </ul>
-            </div>
-            <div className="column">
               <h6>Past Bootcamps</h6>
-              To understand the structure of bootcamps and get past feedback, I watched some recorded lectures and training content.
+              I watched recordings of past bootcamps to better understand how attendees learned content, asked for help, and got feedback.
               <h6>Learning Gaps/Questions</h6>
               <ul>
                 <li>How do we track if a learner has completed the lab guide?</li>
                 <li>How do we know if a learner completed the steps of the lab guide correctly?</li>
               </ul>
+            </div>
+            <div className="column">
               <h6>Feedback</h6>
               Feedback will be collected via a Beta feedback button, Slack, and weekly meetings.
               <h6>Technology Stack</h6>
               <ul>
-                <li>AEP - User-specific sandbox in a Learner IMS org (2 IMS orgs provisioned for the first milestone)</li>
+                <li>AEP - User-specific sandbox in a Learner IMS org (2 IMS orgs provisioned for the first milestone)
+                </li>
                 <li>Adobe Learning Manager (ALM) - house and serve course content and learner progress</li>
                 <li>Media Publishing (video media)</li>
               </ul>
@@ -140,12 +141,6 @@ export default function OnDemandLearning() {
           Adobe
           Digital University. Project Lasso is differentiated from these other offerings as it provides hands-on
           learning environments that are unique to each individual developer/architect.
-          <br/>
-          <br/>
-          However, we drew inspiration from these learnings tools for our experience. Ultimately, we decided to take a
-          mixed approach of
-          using ALM APIs to manage both learner and author functionalities and building a headless UI to support
-          learning environments.
           <br/>
           <br/>
           <Swiper
@@ -188,20 +183,31 @@ export default function OnDemandLearning() {
         <br/>
         <div className="section">
           <h4>Design Process: Version 1</h4>
+          <br />
+          <br />
           <div id="section-image">
             <img key="user-flow" src={userflow1.src} alt="user-flow"/>
             <br/>
             <i>General user flow from Product</i>
           </div>
+          <br />
+          <br />
           <div id="section-image">
             <img key="user-flow" src={userflow2.src} alt="user-flow"/>
             <br/>
             <i>Detailed user flow from user registration to environment de-activation</i>
           </div>
+          <br />
+          <br />
           Based on the Admin UI requirements for the first milestone, I drew out a rough wireframe using AI.
+          <br />
+          <br />
           <div id="section-image">
             <img key="adminRequirements" src={adminRequirements.src} alt="adminRequirements"/>
+            <br/>
+            <i>Admin UI requirements for M1</i>
           </div>
+          <br/>
           <div id="image-gallery-with-text-overlay">
             {m1mocksList.map((image, index) => (
               <div className="image-1 item">
@@ -215,11 +221,13 @@ export default function OnDemandLearning() {
         <br/>
         <div className="section">
           <h4>Implementation: Version 1</h4>
+          <br />
           I re-purposed an existing application we had already deployed in Unified Shell, which helped save time given
           the tight timeline and uncertainty around future requirements. With only two weeks for planning and
           development, I jumped straight into building the UI skeleton for the Admin dashboard using React Spectrum
           components. Throughout the process, I collaborated closely with the backend team to define the API contracts
           and data models needed to support the environment fields.
+          <br />
           <div id="image-gallery-with-text-overlay">
             {m1uiList.map((image, index) => (
               <div className="image-1 item">

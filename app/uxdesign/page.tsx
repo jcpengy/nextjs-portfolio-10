@@ -4,13 +4,13 @@ import Sandbox from "../../public/images/SandboxCopy/sandbox.gif";
 import OnDemandLearning from "../../public/images/ODL/hero-image.png";
 import NYT from "../../public/images/NYT/douma1/1.jpg";
 import Disney from "../../public/images/Kessler/wendy-stars.jpg";
-import PLE from "../../public/images/ProjectLasso/cover.jpg";
+import ProjectLasso from "../../public/images/ProjectLasso/m1/UI/1.png";
 
 const images = [
     { "src": CEEM.src, "alt": "CEEM", "link": "/ceem" },
     { "src": Sandbox.src, "alt": "Sandbox Copy", "link": "/sandboxcopy" },
     { "src": OnDemandLearning.src, "alt": "On-Demand Learning", "link": '/on-demand-learning' },
-    { "src": PLE.src, "alt": "Project Lasso", "link": '/projectlasso' },
+    { "src": ProjectLasso.src, "alt": "Project Lasso", "link": '/projectlasso' },
     { "src": NYT.src, "alt": "The New York Times", "link": '/new-york-times' },
     { "src": Disney.src, "alt": "Disney Imagineering", "link": 'kessler' }
 ]
@@ -26,7 +26,7 @@ export default function UXDesign() {
         <div className="two-column-container">
           <div className="column">
             <a href={images[3].link}>
-              <img id="clickable-image" src={PLE.src} alt="Project Lasso"/>
+              <img id="clickable-image" src={ProjectLasso.src} alt="Project Lasso"/>
             </a>
           </div>
           <div className="project-description-column">
