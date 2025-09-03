@@ -41,17 +41,17 @@ export default function OnDemandLearning() {
         <br/>
         {/*Project overview*/}
         <div className="section">
+          <h6>Overview</h6>
+          Adobe Experience Platform customers and partners are trained through the Developer Enablement Program,
+          which involves deploying learning content across multiple sandboxes and conducting in-person training.
+          <br/>
+          <br/>
+          Project Lasso aims to provide this training in a virtual and scalable manner. Equipped with their own
+          learning environment (an Experience Platform sandbox), customers are encouraged to explore the product and
+          complete self-paced enablement in a no-risk environment with step-by-step guidance, templates, and
+          practice files to accelerate action and learning.
           <div className="two-column-container">
             <div className="column">
-              <h6>Overview</h6>
-              Adobe Experience Platform customers and partners are trained through the Developer Enablement Program,
-              which involves deploying learning content across multiple sandboxes and conducting in-person training.
-              <br/>
-              <br/>
-              Project Lasso aims to provide this training in a virtual and scalable manner. Equipped with their own
-              learning environment (an Experience Platform sandbox), customers are encouraged to explore the product and
-              complete self-paced enablement in a no-risk environment with step-by-step guidance, templates, and
-              practice files to accelerate action and learning.
               <h6>Goals</h6>
               <ul>
                 <li>
@@ -199,9 +199,6 @@ export default function OnDemandLearning() {
           </div>
           <br />
           <br />
-          Based on the Admin UI requirements for the first milestone, I drew out a rough wireframe using AI.
-          <br />
-          <br />
           <div id="section-image">
             <img key="adminRequirements" src={adminRequirements.src} alt="adminRequirements"/>
             <br/>
@@ -216,6 +213,7 @@ export default function OnDemandLearning() {
               </div>
             ))}
           </div>
+          Based on the Admin UI requirements for the first milestone, I drew out a rough wireframe using AI.
         </div>
         <br/>
         <br/>
@@ -227,6 +225,7 @@ export default function OnDemandLearning() {
           development, I jumped straight into building the UI skeleton for the Admin dashboard using React Spectrum
           components. Throughout the process, I collaborated closely with the backend team to define the API contracts
           and data models needed to support the environment fields.
+          <br />
           <br />
           <div id="image-gallery-with-text-overlay">
             {m1uiList.map((image, index) => (
