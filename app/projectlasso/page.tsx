@@ -195,6 +195,13 @@ export default function OnDemandLearning() {
           <br />
           <br />
           <div id="center-text">
+            Requirements for M1:
+            <ul>
+              <li>2 IMS orgs that contain user sandboxes</li>
+              <li>All emails are manually generated and sent</li>
+              <li>Lab guides and videos will be hosted on dep-labs.com</li>
+              <li>PLE requests made through Admin Dashboard</li>
+            </ul>
             For milestone 1, the focus was on designing and building a simple admin dashboard for the Product team. This dashboard would allow the team to easily request and set up a new sandbox for a user, while also handling the deployment of the AEP Foundations Bootcamp lab pack to the user’s environment.
           </div>
           <br />
