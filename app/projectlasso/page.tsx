@@ -195,8 +195,10 @@ export default function OnDemandLearning() {
           <br />
           <br />
           <div id="center-text">
-            For milestone 1, the focus was on designing and building a simple admin dashboard for the Product team. This dashboard allowed them to easily request and set up a new sandbox for a user, while also handling the deployment of the AEP Foundations Bootcamp lab pack to the user’s environment.
+            For milestone 1, the focus was on designing and building a simple admin dashboard for the Product team. This dashboard would allow the team to easily request and set up a new sandbox for a user, while also handling the deployment of the AEP Foundations Bootcamp lab pack to the user’s environment.
           </div>
+          <br />
+          <br />
           <div id="section-image">
             <img key="adminRequirements" src={adminRequirements.src} alt="adminRequirements"/>
             <br/>
@@ -214,7 +216,7 @@ export default function OnDemandLearning() {
           <div id="center-text">
             <i>Based on the Admin UI requirements for the first milestone, I drew out a rough wireframe using AI.</i>
           </div>
-          </div>
+        </div>
         <br/>
         <br/>
         <div className="section">
