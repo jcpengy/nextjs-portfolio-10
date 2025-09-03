@@ -178,13 +178,13 @@ export default function OnDemandLearning() {
         <br/>
         <div className="section">
           <h4>Design Process: Version 1</h4>
-          <br />
-          <br />
-          <div id="section-image">
-            <img key="user-flow" src={userflow1.src} alt="user-flow"/>
-            <br/>
-            <i>General user flow from Product</i>
-          </div>
+          {/*<br />*/}
+          {/*<br />*/}
+          {/*<div id="section-image">*/}
+          {/*  <img key="user-flow" src={userflow1.src} alt="user-flow"/>*/}
+          {/*  <br/>*/}
+          {/*  <i>General user flow from Product</i>*/}
+          {/*</div>*/}
           <br />
           <br />
           <div id="section-image">
