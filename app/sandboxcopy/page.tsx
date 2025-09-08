@@ -1,7 +1,11 @@
 'use client';
 import DesktopNavbar from "app/components/desktopNavbar";
 import Footer from "app/components/footer";
-import Hero from "../../public/images/SandboxCopy/sandbox.gif";
+import Hero from "../../public/images/SandboxCopy/cover.png";
+import ReactPlayer from 'react-player';
+import jobstatus from "../../public/images/SandboxCopy/jobstatus.png";
+import issues from "../../public/images/SandboxCopy/issues.png";
+import demo from "../../public/images/SandboxCopy/cover.png";
 import Comp from "../../public/images/SandboxCopy/comparison.png";
 import UserFlow from "../../public/images/SandboxCopy/user-flow.png";
 import Sketches from "../../public/images/SandboxCopy/sketches.png";
@@ -11,6 +15,7 @@ import P22 from "../../public/images/SandboxCopy/p2-1.png";
 import P21 from "../../public/images/SandboxCopy/v1/1.png";
 import P32 from "../../public/images/SandboxCopy/p3-1.png";
 import P31 from "../../public/images/SandboxCopy/auditlog.png";
+import Tree from "../../public/images/SandboxCopy/objecttree.jpg";
 // dynamically import all images from folder
 const finalImages = require.context('../../public/images/SandboxCopy/currentDesign', false);
 const finalImageList = finalImages.keys().map(image => finalImages(image));
@@ -26,17 +31,18 @@ import 'swiper/css/navigation';
 
 // core version + navigation, pagination modules:
 import { Pagination, Navigation } from 'swiper/modules';
+import row from "../../public/images/ODL/row.png";
 
 export default function SandboxCopy() {
     return (
       <>
-          <DesktopNavbar />
+          <DesktopNavbar/>
           <section>
               <br/>
               {/*Hero section*/}
               <div id="center-text">
                   <h2>Sandbox Artifact Copy</h2>
-                  <h4>A streamlined solution for transferring sandbox artifacts.</h4>
+                  <h4>A streamlined solution for transferring sandbox objects.</h4>
                   <br/>
                   <img className="hero-image" key="hero" src={Hero.src} alt="hero"/>
               </div>
@@ -46,16 +52,16 @@ export default function SandboxCopy() {
                   <div className="two-column-container">
                       <div className="column">
                           <h6>Overview</h6>
-                          Transferring artifacts between sandboxes in Adobe Experience Platform is time-consuming and
-                          error prone.
-                          <br/>
+                          Transferring objects between sandboxes in Adobe Experience Platform requires manually running API
+                          calls. The process lacks batch transfer capabilities, centralized tracking, and visibility into
+                          dependencies before transfer. <br/>
                           <br/>
                           Sandbox Artifact Copy aims to simplify and streamline sandbox management.
                           <h6>Goals</h6>
                           <ul>
-                              <li>Allow users to seamlessly transfer artifacts and their dependencies between sandboxes.
+                              <li>Allow users to seamlessly transfer objects and their dependencies between sandboxes.
                               </li>
-                              <li>Allow users to sync artifacts whose sources have been edited.
+                              <li>Allow users to sync objects whose sources have been edited.
                               </li>
                           </ul>
                       </div>
@@ -81,13 +87,16 @@ export default function SandboxCopy() {
                       <div className="column">
                           <h6>Personas</h6>
                           <ul>
-                              <li>Solution architect</li>
-                              <li>Consultant</li>
-                              <li>Data engineer</li>
+                              <li>AEP customers with a technical background</li>
+                              <ul>
+                                  <li>Solution architect</li>
+                                  <li>Consultant</li>
+                                  <li>Data engineer</li>
+                              </ul>
                           </ul>
                           <h6>Identified pain points</h6>
                           <ul>
-                              <li>Painful and time-consuming to copy complex artifacts between sandboxes</li>
+                              <li>Painful and time-consuming to copy complex objects between sandboxes</li>
                               <li>Need to easily kickstart new business implementations between environments</li>
                               <li>Need to deploy sandboxes with a baseline configuration, support customers that wish to
                                   benefit from faster sandbox deployments that include tested AEP configurations
@@ -100,12 +109,12 @@ export default function SandboxCopy() {
                       <div className="column">
                           <h6>Functional use cases</h6>
                           <ul>
-                              <li>Copy all foundation artifacts (schemas, datasets, segments, sources, destinations) and
+                              <li>Copy all foundation objects (schemas, datasets, segments, sources, destinations) and
                                   first level dependencies from one sandbox to another sandbox
                               </li>
                               <li>Review dependencies before copying</li>
-                              <li>Sync artifacts between the source and destination sandboxes</li>
-                              <li>Revert artifacts (once) after syncing</li>
+                              <li>Sync objects between the source and destination sandboxes</li>
+                              <li>Revert objects (once) after syncing</li>
                               <li>Log actions for documentation and troubleshooting</li>
                           </ul>
                       </div>
@@ -123,7 +132,7 @@ export default function SandboxCopy() {
                   <div id="section-image">
                       <img key="user-flow" src={UserFlow.src} alt="user-flow"/>
                       <br/>
-                      <i>User flow for copying artifacts</i>
+                      <i>User flow for copying objects</i>
                   </div>
                   <br/>
                   <br/>
@@ -166,12 +175,13 @@ export default function SandboxCopy() {
                               <h6>Problem</h6>
                               Users can only view one artifact's dependencies at a time.
                               <h6>Solution</h6>
-                              List all artifacts and their dependencies in a separate window.
+                              List all objects and their dependencies in a separate window.
                               <h6>Thought Process</h6>
-                              Previously, we used a dependency tree (plugin) to view all dependencies for a given artifact.
-                              During testing sessions, we learned that this tool ran slow for artifact's with multiple
-                              dependencies and users wanted a more holistic view of all artifacts they selected. I
-                              decided to create a separate window to display all artifacts and their dependencies in an organized list.
+                              Previously, we used a dependency tree (plugin) to view all dependencies for a given object.
+                              During testing sessions, we realized the tool was lagging for object's with multiple
+                              dependencies and users wanted a more holistic view of all objects they selected. I
+                              decided to create a separate window to display all objects and their dependencies in an
+                              organized list.
                           </td>
                           <td>
                               <img src={P11.src} alt="Before"/>
@@ -185,13 +195,13 @@ export default function SandboxCopy() {
                               <h6>Problem</h6>
                               Lack of modularization makes it hard to incorporate new features.
                               <h6>Solution</h6>
-                              Separate the artifacts into their own tabs.
+                              Separate the objects into their own tabs.
                               <h6>Thought Process</h6>
-                              We received two additional requests to sync and revert artifacts between sandboxes.
+                              We received two additional requests to sync and revert objects between sandboxes.
                               Incorporating these features (each requiring multiple UI components) would've been
                               time-consuming and unreliable in our single-page UI. Given that our highest priority was
                               to implement these features for schemas and we already faced issues running asynchronous
-                              calls across different artifact types, we decided to move each artifact type to its own
+                              calls across different artifact types, we decided to move each object type to its own
                               tab.
                           </td>
                           <td>
@@ -210,7 +220,7 @@ export default function SandboxCopy() {
                               <h6>Thought Process</h6>
                               The audit log outputted asynchronous calls across all copy operations, which made it hard
                               to trace what was actually happening for each copy workflow. Since we already created tabs
-                              for each artifact type, we decided to extend this to the audit log and put it on a
+                              for each object type, we decided to extend this to the audit log and put it on a
                               separate tab. We also narrowed down the information to main actions taken in the app and
                               organized it into a table.
                           </td>
@@ -243,16 +253,66 @@ export default function SandboxCopy() {
                       ))}
                   </Swiper>
               </div>
-              <br />
-              <br />
+              <br/>
+              <br/>
               <div className="section">
-                  <h4>Conclusion</h4>
-                  <br />
-                  From the audit log, we've tracked over 100 internal consultants and solution architects using our app. We've also added an additional capability to copy artifacts across IMS orgs. Overall, we've received positive feedback on the usefulness of this tool to facilitate and streamline sandbox management in AEP.
+                  <h4>Development Process</h4>
+                  <br/>
+                  We went back and forth between design and development throughout this process, gaining feedback
+                  through demo and testing
+                  sessions with the wider team. Our main challenges included identifying what object dependencies were
+                  required to be copied for a given root object (example tree shown below), and expectations when
+                  dependencies were not copied correctly (a list of job statuses shows what we decided on for various
+                  scenarios).
+                  <br/>
+                  <br/>
+                  <div id="section-image">
+                      <img key="tree" src={Tree.src} alt="tree"/>
+                      <br/>
+                  </div>
+                  <br/>
+                  <div id="section-image">
+                      <img key="jobstatus" src={jobstatus.src} alt="jobstatus"/>
+                      <br/>
+                  </div>
+                  We asked users to log issues and feedback in a wiki document and logged JIRA tickets accordingly.
+                  <br/>
+                  <br/>
+                  <div id="section-image">
+                      <img key="issues" src={issues.src} alt="issues"/>
+                      <br/>
+                  </div>
+                  <br/>
+                  <div id="center-text">Demo of our application</div>
+                  <video width="100%" height="auto" controls>
+                      <source src={demo.src} type="video/mp4"/>
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
+              <br/>
+              <br/>
+              <div className="section">
+                  <h4>Impact & Next Steps</h4>
+                  <br/>
+                  Our audit logs indicate that over 100 internal consultants and solution architects have used our app.
+                  With the addition of a feature to copy objects across IMS orgs, feedback has been very positive,
+                  highlighting its impact on simplifying sandbox management in AEP.
+                  <br/>
+                  <br/>
+                  <ReactPlayer src="../../public/images/SandboxCopy/demo-draft-1.mp4" />
+                  For example, manually recreating a single object takes ~4 hours at $250/hour ($1,000 per object).
+                  <br/>
+                  <ul>
+                      <li>Syncs (60) → ~$20,000 saved</li>
+                      <li>Copies (4,000) → ~$1,000,000+ saved</li>
+                  </ul>
+                  <br/>
+                  In total, this represents over $1 million in savings, along with improved customer satisfaction.
               </div>
           </section>
           <Footer/>
       </>
-    );
+    )
+      ;
 }
 
