@@ -44,7 +44,7 @@ export default function SandboxCopy() {
               <br/>
               {/*Hero section*/}
               <div id="center-text">
-                  <h2>Sandbox Artifact Copy</h2>
+                  <h2>Sandbox Management App</h2>
                   <h4>A streamlined solution for transferring sandbox objects.</h4>
                   <br/>
                   <img className="hero-image" key="hero" src={Hero.src} alt="hero"/>
@@ -184,17 +184,18 @@ export default function SandboxCopy() {
                               During testing sessions, we realized the tool was lagging for object's with multiple
                               dependencies and users wanted a more holistic view of all objects they selected. I
                               decided to create a separate window to display all objects and their dependencies in an
-                              organized list.
+                              organized list. This also required defining the necessary dependencies for each root object (example tree shown here).
                           </td>
                           <td>
                               <img src={P11.src} alt="Before"/>
                           </td>
                           <td>
                               <img src={P12.src} alt="After"/>
+                              <img src={Tree.src} alt="After"/>
                           </td>
                       </tr>
                       <tr>
-                          <td>
+                      <td>
                               <h6>Problem</h6>
                               Lack of modularization makes it hard to incorporate new features.
                               <h6>Solution</h6>
@@ -263,33 +264,23 @@ export default function SandboxCopy() {
               <div className="section">
                   <h4>Development Process</h4>
                   <br/>
-                  We went back and forth between design and development throughout this process, gaining feedback
-                  through demo and testing
-                  sessions with the wider team. Our main challenges included identifying what object dependencies were
-                  required to be copied for a given root object (example tree shown below), and expectations when
-                  dependencies were not copied correctly (a list of job statuses shows what we decided on for various
-                  scenarios).
-                  <br/>
-                  <br/>
-                  <div id="section-image">
-                      <img key="tree" src={Tree.src} alt="tree"/>
-                      <br/>
-                  </div>
-                  <br/>
-                  <div id="section-image">
-                      <img key="jobstatus" src={jobstatus.src} alt="jobstatus"/>
-                      <br/>
-                  </div>
-                  We asked users to log issues and feedback in a wiki document and logged JIRA tickets accordingly.
+                  We cycled between design and development, where I worked closely with the backend team to accurately display object dependencies and refine the copy, sync, and revert processes. Through demos and testing sessions, we gathered user feedback and tracked all issues in JIRA.
                   <br/>
                   <br/>
                   <div id="section-image">
                       <img key="issues" src={issues.src} alt="issues"/>
                       <br/>
                   </div>
+                  Our main challenges were successfully identifying and copying object dependencies, such as a relationship schema for an identity namespace, and defining error messages (we came up with a list of job statuses for various scenarios).
+                  <br/>
+                  <br/>
+                  <div id="section-image">
+                      <img key="jobstatus" src={jobstatus.src} alt="jobstatus"/>
+                      <br/>
+                  </div>
                   <br/>
                   <div id="center-text">Demo of our application</div>
-                  <ReactPlayer src="../../public/images/SandboxCopy/demo-draft-1.mp4" />
+                  <ReactPlayer src="../../public/images/SandboxCopy/demo-draft-1.mp4"/>
               </div>
               <br/>
               <br/>

@@ -69,7 +69,7 @@ export default function UXDesign() {
             </a>
           </div>
           <div className="project-description-column">
-            <h4>Sandbox Artifact Copy</h4>
+            <h4>Sandbox Management App</h4>
             <div className="subtitle">UX Design & Development</div>
             A streamlined solution for transferring and syncing sandbox objects.
           </div>
