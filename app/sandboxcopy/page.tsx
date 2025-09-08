@@ -15,6 +15,9 @@ import P22 from "../../public/images/SandboxCopy/p2-1.png";
 import P21 from "../../public/images/SandboxCopy/v1/1.png";
 import P32 from "../../public/images/SandboxCopy/p3-1.png";
 import P31 from "../../public/images/SandboxCopy/auditlog.png";
+import eventtypes from "../../public/images/SandboxCopy/eventtypes.png";
+import sampleaduit from "../../public/images/SandboxCopy/sampleaudit.png";
+
 import Tree from "../../public/images/SandboxCopy/objecttree.jpg";
 // dynamically import all images from folder
 const finalImages = require.context('../../public/images/SandboxCopy/currentDesign', false);
@@ -228,6 +231,8 @@ export default function SandboxCopy() {
                               <img src={P31.src} alt="Before"/>
                           </td>
                           <td>
+                              <img src={eventtypes.src} alt="After"/>
+                              <img src={sampleaduit.src} alt="After"/>
                               <img src={P32.src} alt="After"/>
                           </td>
                       </tr>
@@ -263,7 +268,7 @@ export default function SandboxCopy() {
                   sessions with the wider team. Our main challenges included identifying what object dependencies were
                   required to be copied for a given root object (example tree shown below), and expectations when
                   dependencies were not copied correctly (a list of job statuses shows what we decided on for various
-                  scenarios).
+                  scenarios). 
                   <br/>
                   <br/>
                   <div id="section-image">
