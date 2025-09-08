@@ -3,9 +3,9 @@ import DesktopNavbar from "app/components/desktopNavbar";
 import Footer from "app/components/footer";
 import Hero from "../../public/images/SandboxCopy/cover.png";
 import ReactPlayer from 'react-player';
+import crossims from "../../public/images/SandboxCopy/crossims.png";
 import jobstatus from "../../public/images/SandboxCopy/jobstatus.png";
 import issues from "../../public/images/SandboxCopy/issues.png";
-import demo from "../../public/images/SandboxCopy/cover.png";
 import Comp from "../../public/images/SandboxCopy/comparison.png";
 import UserFlow from "../../public/images/SandboxCopy/user-flow.png";
 import Sketches from "../../public/images/SandboxCopy/sketches.png";
@@ -268,7 +268,7 @@ export default function SandboxCopy() {
                   sessions with the wider team. Our main challenges included identifying what object dependencies were
                   required to be copied for a given root object (example tree shown below), and expectations when
                   dependencies were not copied correctly (a list of job statuses shows what we decided on for various
-                  scenarios). 
+                  scenarios).
                   <br/>
                   <br/>
                   <div id="section-image">
@@ -289,10 +289,7 @@ export default function SandboxCopy() {
                   </div>
                   <br/>
                   <div id="center-text">Demo of our application</div>
-                  <video width="100%" height="auto" controls>
-                      <source src={demo.src} type="video/mp4"/>
-                      Your browser does not support the video tag.
-                  </video>
+                  <ReactPlayer src="../../public/images/SandboxCopy/demo-draft-1.mp4" />
               </div>
               <br/>
               <br/>
@@ -304,7 +301,10 @@ export default function SandboxCopy() {
                   highlighting its impact on simplifying sandbox management in AEP.
                   <br/>
                   <br/>
-                  <ReactPlayer src="../../public/images/SandboxCopy/demo-draft-1.mp4" />
+                  <div id="section-image">
+                      <img key="crossims" src={crossims.src} alt="crossims"/>
+                      <br/>
+                  </div>
                   For example, manually recreating a single object takes ~4 hours at $250/hour ($1,000 per object).
                   <br/>
                   <ul>
