@@ -21,11 +21,11 @@ export default function DesktopNavbar() {
             <a id="desktop-navbar-title" href="/"><h4 id="desktop-navbar-left">jessica peng</h4></a>
             <div id="desktop-navbar-right">
                 <a id="desktop-navbar-button" href='/'>
-                    work
+                    featured
                 </a>
                 <div className="dropdown">
                     <button>
-                        personal
+                        work
                     </button>
                     <div className="dropdown-content">
                         <a href="/art">art</a>
