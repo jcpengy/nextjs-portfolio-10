@@ -4,7 +4,7 @@ import River from "public/images/RiversEdge/6.jpg";
 import KesslerSlide2 from "public/images/kessler-cover.jpg";
 import BlackPower from "public/images/BPB/bpb-cover.jpg";
 import Molex from "public/images/Molex/cover.png";
-import NYT from "public/images/NYT/1.png";
+import NYT from "../../public/images/NYT/cover/1.png";
 import DesktopNavbar from "../components/desktopNavbar";
 import Footer from "../components/footer";
 const otherImages = require.context('../../public/images/design', false);
