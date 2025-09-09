@@ -1,7 +1,7 @@
 'use client';
-import Lasso from "public/images/Eid/eid-paper-2.jpg";
-import ODL from "public/images/RiversEdge/6.jpg";
-import SandboxCopy from "public/images/kessler-cover.jpg";
+import Lasso from "public/images/ProjectLasso/m1/odl/a.png";
+import ODL from "public/images/ODL/current/3.png";
+import SandboxCopy from "public/images/SandboxCopy/cover.png";
 import DesktopNavbar from "../components/desktopNavbar";
 import Footer from "../components/footer";
 import React from "react";
