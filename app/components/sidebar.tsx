@@ -53,14 +53,19 @@ export default function Navbar() {
               </span>
             </a>
             <div id="submenu-text"><i>work</i></div>
-            <a className="navbar-mobile-submenu" href='/art' onClick={(e) => setOpenMobileMenu(false)}>
+            <a className="navbar-mobile-submenu" href='/ui-ux' onClick={(e) => setOpenMobileMenu(false)}>
               <span className="relative py-1 px-2">
-                art
+                ui/ux
               </span>
             </a>
             <a className="navbar-mobile-submenu" href='/graphicdesign' onClick={(e) => setOpenMobileMenu(false)}>
               <span className="relative py-1 px-2">
                 graphic design
+              </span>
+            </a>
+            <a className="navbar-mobile-submenu" href='/art' onClick={(e) => setOpenMobileMenu(false)}>
+              <span className="relative py-1 px-2">
+                art
               </span>
             </a>
             <a className="navbar-mobile-submenu" href='/photography' onClick={(e) => setOpenMobileMenu(false)}>

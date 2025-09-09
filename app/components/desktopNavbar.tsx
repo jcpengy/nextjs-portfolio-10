@@ -28,8 +28,9 @@ export default function DesktopNavbar() {
                         work
                     </button>
                     <div className="dropdown-content">
-                        <a href="/art">art</a>
+                        <a href="/ui-ux">ui/ux</a>
                         <a href="/graphicdesign">graphic design</a>
+                        <a href="/art">art</a>
                         <a href="/photography">photography</a>
                     </div>
                 </div>

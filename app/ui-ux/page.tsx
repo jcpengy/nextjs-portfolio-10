@@ -32,7 +32,7 @@ export default function UIUX() {
         <br/>
         {/*Hero section*/}
         <div id="center-text">
-          <h2>UI/UX</h2>
+          <h2>ui/ux</h2>
           <h4>Selected projects that showcase visual storytelling through branding, world-building, and information design.</h4>
         </div>
         <br/>
