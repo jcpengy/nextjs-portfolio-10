@@ -265,7 +265,6 @@ export default function OnDemandLearning() {
             <i>Admin Dashboard implementation</i>
           </div>
           <br/>
-          <br/>
           <Swiper
             pagination={{
               type: 'progressbar',
