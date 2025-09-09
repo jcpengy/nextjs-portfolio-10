@@ -6,6 +6,8 @@ import userflow1 from "../../public/images/ProjectLasso/userflow/flow.jpg";
 import userflow2 from "../../public/images/ProjectLasso/userflow/lucid.png";
 const m1mocks = require.context('../../public/images/ProjectLasso/m1/mocks', false);
 const m1mocksList = m1mocks.keys().map(image => m1mocks(image));
+const odlmocks = require.context('../../public/images/ProjectLasso/m1/odlmocks', false);
+const odlmocksList = odlmocks.keys().map(image => odlmocks(image));
 import adminRequirements from "../../public/images/ProjectLasso/m1/requirements/1.png";
 const m1ui = require.context('../../public/images/ProjectLasso/m1/UI', false);
 const m1uiList = m1ui.keys().map(image => m1ui(image));
@@ -33,7 +35,7 @@ export default function OnDemandLearning() {
         <br/>
         {/*Hero section*/}
         <div id="center-text">
-          <h2>Project Lasso</h2>
+          <h2>Project Lasso (Personal Lab Environments)</h2>
           <h4>A productized, self-paced implementation of the Developer Enablement Program.</h4>
           <br/>
           <img className="hero-image" key="hero" src={Hero.src} alt="hero"/>
@@ -122,6 +124,7 @@ export default function OnDemandLearning() {
               <ul>
                 <li>How do we track if a learner has completed the lab guide?</li>
                 <li>How do we know if a learner completed the steps of the lab guide correctly?</li>
+                <li>How do we structure the learning content for the bootcamp?</li>
               </ul>
               <h6>Technology Stack</h6>
               <ul>
@@ -211,35 +214,46 @@ export default function OnDemandLearning() {
               Bootcamp lab pack to the user’s environment.
             </div>
           </div>
+          <br/>
+          <br/>
+          <div id="section-image">
+            <img key="adminRequirements" src={adminRequirements.src} alt="adminRequirements"/>
             <br/>
-            <br/>
-            <div id="section-image">
-              <img key="adminRequirements" src={adminRequirements.src} alt="adminRequirements"/>
-              <br/>
-              <i>Admin UI requirements for M1</i>
-            </div>
-            <br/>
-            <div id="image-gallery-with-text-overlay">
-              {m1mocksList.map((image, index) => (
-                <div className="image-1 item">
-                  <img key={index} src={image.default.src} alt={`image-${index}`}/>
-                  <p>Image Caption</p>
-                </div>
-              ))}
-            </div>
-            <div id="center-text">
-              <i>Based on the Admin UI requirements for the first milestone, I drew out a rough wireframe using
-                AI.</i>
-            </div>
+            <i>Admin UI requirements for M1</i>
           </div>
           <br/>
+          <div id="image-gallery-with-text-overlay">
+            {m1mocksList.map((image, index) => (
+              <div className="image-1 item">
+                <img key={index} src={image.default.src} alt={`image-${index}`}/>
+                <p>Image Caption</p>
+              </div>
+            ))}
+          </div>
+          <div id="center-text">
+            <i>Wireframe for the Admin UI</i>
+          </div>
           <br/>
-          <div className="section">
-              <h4>Implementation: Version 1</h4>
-              <br/>
-              I re-purposed an existing application we had already deployed in Unified Shell, which helped save time
-              given
-              the tight timeline and uncertainty around future requirements. With only two weeks for planning and
+          <div id="image-gallery-with-text-overlay">
+            {odlmocksList.map((image, index) => (
+              <div className="image-1 item">
+                <img key={index} src={image.default.src} alt={`image-${index}`}/>
+                <p>Image Caption</p>
+              </div>
+            ))}
+          </div>
+          <div id="center-text">
+            <i>Mocks for the revised On-Demand Learning experience</i>
+          </div>
+        </div>
+        <br/>
+        <br/>
+        <div className="section">
+          <h4>Implementation: Version 1</h4>
+          <br/>
+          I re-purposed an existing application we had already deployed in Unified Shell, which helped save time
+          given
+          the tight timeline and uncertainty around future requirements. With only two weeks for planning and
               development, I jumped straight into building the UI skeleton for the Admin dashboard using React Spectrum
               components. Throughout the process, I collaborated closely with the backend team to define the API
               contracts
