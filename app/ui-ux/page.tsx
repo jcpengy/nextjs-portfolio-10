@@ -1,30 +1,18 @@
 'use client';
-import Eid from "public/images/Eid/eid-paper-2.jpg";
-import River from "public/images/RiversEdge/6.jpg";
-import KesslerSlide2 from "public/images/kessler-cover.jpg";
-import BlackPower from "public/images/BPB/bpb-cover.jpg";
-import Molex from "public/images/Molex/cover.png";
-import NYT from "../../public/images/NYT/cover/1.png";
+import Lasso from "public/images/Eid/eid-paper-2.jpg";
+import ODL from "public/images/RiversEdge/6.jpg";
+import SandboxCopy from "public/images/kessler-cover.jpg";
 import DesktopNavbar from "../components/desktopNavbar";
 import Footer from "../components/footer";
-const otherImages = require.context('../../public/images/design', false);
-const otherImageList = otherImages.keys().map(image => otherImages(image));
-import FsLightbox from "fslightbox-react";
-import React, { useState } from "react";
-import Masonry from "react-responsive-masonry";
+import React from "react";
 
 const images = [
-  { "src": Eid.src, "alt": "Eid Mubarak", "link": "/eid"},
-  { "src": NYT.src, "alt": "The New York Times", "link": "/new-york-times" },
-  { "src": River.src, "alt": "River's Edge Cabin", "link": "/riversedge"},
-  { "src": BlackPower.src, "alt": "Black Power Blueprint", "link": "/blackpowerblueprint" },
-  { "src": KesslerSlide2.src, "alt": "Kessler Project", "link": "/kessler"},
-  { "src": Molex.src, "alt": "Molex", "link": "/molex"}
+  { "src": Lasso.src, "alt": "Project Lasso", "link": "/projectlasso"},
+  { "src": ODL.src, "alt": "On-Demand Learning", "link": "/on-demand-learning" },
+  { "src": SandboxCopy.src, "alt": "Sandbox Management App", "link": "/sandboxcopy"}
 ]
 
 export default function UIUX() {
-  const [toggler, setToggler] = useState(false);
-  const [imageIndex, setImageIndex] = useState(0);
   return (
     <>
       <DesktopNavbar />
@@ -33,7 +21,7 @@ export default function UIUX() {
         {/*Hero section*/}
         <div id="center-text">
           <h2>ui/ux</h2>
-          <h4>Selected projects that showcase visual storytelling through branding, world-building, and information design.</h4>
+          <h4>Select projects in UI/UX design and development.</h4>
         </div>
         <br/>
         <div id="image-gallery-with-text-overlay">
@@ -50,28 +38,6 @@ export default function UIUX() {
             })
           }
         </div>
-        <br />
-        <FsLightbox
-          toggler={toggler}
-          sources={[otherImageList[imageIndex].default.src]}
-          key={imageIndex}
-          thumbs={[otherImageList[imageIndex].default.src]}
-        />
-        <Masonry columnsCount={3} gutter="10px">
-          {otherImageList.map((image, i) => (
-            <button onClick={() => {
-              setToggler(!toggler);
-              setImageIndex(i);
-            }}>
-              <img
-                alt="design"
-                key={i}
-                src={image.default.src}
-                style={{width: "100%", display: "block"}}
-              />
-            </button>
-          ))}
-        </Masonry>
       </section>
       <Footer/>
     </>
