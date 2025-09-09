@@ -6,8 +6,8 @@ const doumaImages = require.context('../../public/images/NYT/douma1', false);
 const doumaImageList = doumaImages.keys().map(image => doumaImages(image));
 const thaiImages = require.context('../../public/images/NYT/thai', false);
 const thaiImageList = thaiImages.keys().map(image => thaiImages(image));
-const finalImages = require.context('../../public/images/NYT', false);
-const finalImageList = finalImages.keys().map(image => finalImages(image));
+// const finalImages = require.context('../../public/images/NYT', false);
+// const finalImageList = finalImages.keys().map(image => finalImages(image));
 const xImages = require.context('../../public/images/NYT/crossword', false);
 const xImageList = xImages.keys().map(image => xImages(image));
 
@@ -37,15 +37,15 @@ export default function NYT() {
 
                     ))}
                 </div>
-                <div id="image-gallery-with-text-overlay">
-                    {finalImageList.map((image, index) => (
-                        <div className="image-1 item">
-                            <img key={index} src={image.default.src} alt={`image-${index}`} />
-                            <p>Image Caption</p>
-                        </div>
+                {/*<div id="image-gallery-with-text-overlay">*/}
+                {/*    {finalImageList.map((image, index) => (*/}
+                {/*        <div className="image-1 item">*/}
+                {/*            <img key={index} src={image.default.src} alt={`image-${index}`} />*/}
+                {/*            <p>Image Caption</p>*/}
+                {/*        </div>*/}
 
-                    ))}
-                </div>
+                {/*    ))}*/}
+                {/*</div>*/}
                 <div id="image-gallery-with-text-overlay">
                     {thaiImageList.map((image, index) => (
                         <div className="image-1 item">

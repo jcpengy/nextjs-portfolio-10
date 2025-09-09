@@ -2,7 +2,6 @@
 import DesktopNavbar from "app/components/desktopNavbar";
 import Footer from "app/components/footer";
 import workstreams from "../../public/images/ProjectLasso/workstreams.jpg";
-import userflow1 from "../../public/images/ProjectLasso/userflow/flow.jpg";
 import userflow2 from "../../public/images/ProjectLasso/userflow/lucid.png";
 const m1mocks = require.context('../../public/images/ProjectLasso/m1/mocks', false);
 const m1mocksList = m1mocks.keys().map(image => m1mocks(image));
@@ -11,6 +10,8 @@ const odlmocksList = odlmocks.keys().map(image => odlmocks(image));
 import adminRequirements from "../../public/images/ProjectLasso/m1/requirements/1.png";
 const m1ui = require.context('../../public/images/ProjectLasso/m1/UI', false);
 const m1uiList = m1ui.keys().map(image => m1ui(image));
+const odlui = require.context('../../public/images/ProjectLasso/m1/odl', false);
+const odluiList = odlui.keys().map(image => odlui(image));
 import Hero from "../../public/images/ProjectLasso/m1/UI/1.png";
 const alm = require.context('../../public/images/ODL/ALM', false);
 const almList = alm.keys().map(image => alm(image));
@@ -253,13 +254,25 @@ export default function OnDemandLearning() {
           <br/>
           I re-purposed an existing application in Unified Shell, which helped save time
           given
-          the tight timeline and uncertainty around future requirements. For the Admin Dashboard, I built the UI skeleton using React Spectrum
-          components. The biggest challenge was implementing bulk sandbox requests. Throughout the process, I collaborated closely with the backend team to define the API
+          the tight timeline and uncertainty around future requirements. For the Admin Dashboard, I built the UI
+          skeleton using React Spectrum
+          components. The biggest challenge was implementing bulk sandbox requests. Throughout the process, I
+          collaborated closely with the backend team to define the API
           contracts and data models needed to support the environments.
           <br/>
           <br/>
           <div id="image-gallery-with-text-overlay">
             {m1uiList.map((image, index) => (
+              <div className="image-1 item">
+                <img key={index} src={image.default.src} alt={`image-${index}`}/>
+                <p>Image Caption</p>
+              </div>
+            ))}
+          </div>
+          <br/>
+          <br/>
+          <div id="image-gallery-with-text-overlay">
+            {odluiList.map((image, index) => (
               <div className="image-1 item">
                 <img key={index} src={image.default.src} alt={`image-${index}`}/>
                 <p>Image Caption</p>
@@ -272,7 +285,8 @@ export default function OnDemandLearning() {
         <div className="section">
           <h4>Impact & Next Steps</h4>
           <br/>
-          We’ve seen strong early adoption of our Personal Lab Environments experience, with 150 users already testing it and sharing positive feedback, specifically on the value of having a dedicated sandbox to experiment and practice in. However, users expressed a clear preference for a more seamless experience, noting that switching to an external URL (On-Demand Learning) to access learning content disrupts their workflow.
+          We’ve seen strong early adoption of our Personal Lab Environments experience, with 150 users already testing
+          it and sharing positive feedback, specifically on the value of having a dedicated sandbox to experiment and practice in. However, users expressed a clear preference for a more seamless experience, noting that switching to an external URL (On-Demand Learning) to access learning content disrupts their workflow.
           <br />
           <br />
           Our next step is to integrate the On-Demand Learning experience directly into Adobe Experience Platform. Our hope is to convert the current lab guide module into a side rail component that lives alongside the platform interface. By embedding the guide within the product itself, users will be able to actively reference instructions while navigating through and completing hands-on exercises in their sandbox. This integration will make the overall product more seamless, useful, and engaging.
