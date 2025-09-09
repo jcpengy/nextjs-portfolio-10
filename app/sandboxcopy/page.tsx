@@ -59,10 +59,13 @@ export default function SandboxCopy() {
                   <div className="two-column-container">
                       <div className="column">
                           <h6>Overview</h6>
-                          Transferring objects between sandboxes in Adobe Experience Platform (AEP) is a manual process that relies on individual API calls. Currently, users cannot perform bulk transfers, monitor progress in a centralized view, or identify dependencies before initiating a transfer.
+                          Transferring objects between sandboxes in Adobe Experience Platform (AEP) is a manual process
+                          that relies on individual API calls. Currently, users cannot perform bulk transfers, monitor
+                          progress in a centralized view, or identify dependencies before initiating a transfer.
                           <br/>
                           <br/>
-                          The Sandbox Management App provides one UI for users to easily move successful configurations of AEP metadata (schemas, segments, datasets) from one sandbox to another.
+                          The Sandbox Management App provides one UI for users to easily move successful configurations
+                          of AEP metadata (schemas, segments, datasets) from one sandbox to another.
                           <h6>Goals</h6>
                           <ul>
                               <li>Allow users to seamlessly transfer objects and their dependencies between sandboxes.
@@ -195,7 +198,8 @@ export default function SandboxCopy() {
                               <h6>Solution</h6>
                               List all objects and their dependencies in a separate window.
                               <h6>Thought Process</h6>
-                              Previously, we used a dependency tree (plugin) to view all dependencies for a given object.
+                              Previously, we used a dependency tree (plugin) to view all dependencies for a given
+                              object.
                               During testing sessions, we realized the tool was lagging for object's with multiple
                               dependencies and users wanted a more holistic view of all objects they selected. I
                               decided to create a separate window to display all objects and their dependencies in an
@@ -292,8 +296,8 @@ export default function SandboxCopy() {
                       <img key="issues" src={issues.src} alt="issues"/>
                       <br/>
                   </div>
-                  Our main challenges were successfully identifying and copying object dependencies, such as a
-                  relationship schema for an identity namespace, and defining error messages (we came up with a list of
+                  Our main challenges were successfully identifying and copying object dependencies and defining error
+                  messages (we came up with a list of
                   job statuses for various scenarios).
                   <br/>
                   <br/>
@@ -302,8 +306,8 @@ export default function SandboxCopy() {
                       <br/>
                       <i>Flow diagram for copying and syncing a schema</i>
                   </div>
-                  <br />
-                  <br />
+                  <br/>
+                  <br/>
                   <div id="section-image">
                       <img key="jobstatus" src={jobstatus.src} alt="jobstatus"/>
                       <br/>
@@ -311,14 +315,32 @@ export default function SandboxCopy() {
                   </div>
                   <br/>
                   <div id="center-text">Demo of our application</div>
-                  <ReactPlayer src="../../public/images/SandboxCopy/demo-draft-1.mp4"/>
+                  <div>
+                      <iframe
+                        src="https://player.vimeo.com/video/1116960200?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"></iframe>
+                  </div>
+                  <script src="https://player.vimeo.com/api/player.js"></script>
               </div>
               <br/>
               <br/>
               <div className="section">
+                  <h4>Limitations</h4>
+                  <br/>
+                  Currently, users cannot copy more than 10 objects at a time. If a schema has a custom Identity
+                  Namespace
+                  as a dependency, users must first copy that object separately before copying the schema. In addition,
+                  only the
+                  top-level of dependent objects can be copied or synced to a destination.
+              </div>
+              <br />
+              <br />
+              <div className="section">
                   <h4>Impact & Next Steps</h4>
                   <br/>
-                  Our audit logs indicate that over 100 internal consultants and solution architects have used our app.
+                  Our audit logs indicate that over 100 internal consultants and solution architects have used our
+                  app.
                   With the addition of a feature to copy objects across IMS orgs, feedback has been very positive,
                   highlighting its impact on simplifying sandbox management in AEP.
                   <br/>
