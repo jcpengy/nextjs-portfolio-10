@@ -65,9 +65,9 @@ export default function Kessler() {
         <br />
         <div id="section-description">
           We presented our park experience through the eyes of our example guest named Wendy, an 11-year old girl from the Midwest
-          who dreamt of becoming an astronaut. I illustrated her entire Kessler Project experience, from gazing at the
+          who dreams of becoming an astronaut. I illustrated her entire Kessler Project experience, from gazing at the
           stars and touring the Tracker Center to using our Mission Command Wristband and riding home with her Astronaut
-          Keepsake made of recycled space debris. Combined with elements of our submission slides, the result was an
+          Keepsake made of recycled space debris. Combined with elements from our submission slides, the result was an
           engaging, informative, and inspiring experience that encourages guests to imagine the future of space
           exploration.
         </div>
