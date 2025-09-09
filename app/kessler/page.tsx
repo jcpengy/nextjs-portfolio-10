@@ -5,33 +5,53 @@ import Footer from "app/components/footer";
 const finalImages = require.context('../../public/images/Kessler', false);
 const finalImageList = finalImages.keys().map(image => finalImages(image));
 
-import { useState } from "react";
+import React, { useState } from "react";
+import FsLightbox from "fslightbox-react";
+import Masonry from "react-responsive-masonry";
 
 export default function Kessler() {
-    const [openSection, setOpenSection] = useState(false);
-    const toggle = () => {
-        setOpenSection(!openSection);
-    };
-    return (
-        <>
-            <DesktopNavbar />
-            <section id="graphic-design-project">
-                <h2>Disney Imaginations Finalist: Kessler Project</h2>
-                <h4><i>2018</i></h4>
-                <div id="section-description">
-                    Kessler Project is a theme park concept that was a finalist in the 2018 Disney Imaginations competition. As the lead designer and artist on a four-person team, I led visual direction and creation of both our submission and presentation to the Disney Imagineering executives in Glendale, California.                </div>
-               <br />
-                <div id="image-gallery-with-text-overlay">
-                    {finalImageList.map((image, index) => (
-                        <div className="image-1 item">
-                            <img key={index} src={image.default.src} alt={`image-${index}`} />
-                            <p>Image Caption</p>
-                        </div>
+  const [toggler, setToggler] = useState(false);
+  const [imageIndex, setImageIndex] = useState(0);
 
-                    ))}
-                </div>
-            </section>
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <DesktopNavbar />
+      <section id="graphic-design-project">
+        <h2>Disney Imaginations Finalist: Kessler Project</h2>
+        <h4><i>2018</i></h4>
+        <div id="section-description">
+          Kessler Project is a theme park concept that was a finalist in the 2018 Disney Imaginations competition. On a four-person team, I led art direction and design of our submission and presentation to the Disney Imagineering executives in Glendale, California.
+          <br />
+          <br />
+          That year’s Disney Imaginations prompt invited teams to reimagine an abandoned place on Earth and transform it into a unique park experience. Our team took the challenge beyond Earth’s boundaries, envisioning a space-themed destination centered around Kessler Syndrome—a phenomenon in which space debris collides in low Earth orbit, creating a dangerous chain reaction of even more debris that threatens satellites, space travel, and the future of exploration.
+          <br />
+          <br />
+          Our concept invites guests to embark on an immersive journey through space, experiencing both the awe and the challenges of life in orbit. We designed a series of space-inspired attractions and amenities, along with engaging characters and interactive storytelling moments that teach visitors—both kids and adults—about the importance of space sustainability. The result is an experience that combines thrilling entertainment with meaningful education, sparking curiosity while inspiring guests to think about how we can keep space safe and accessible for generations to come.
+        </div>
+        <br />
+        <FsLightbox
+          toggler={toggler}
+          sources={[finalImageList[imageIndex].default.src]}
+          key={imageIndex}
+          thumbs={[finalImageList[imageIndex].default.src]}
+        />
+        <Masonry columnsCount={3} gutter="10px">
+          {finalImageList.map((image, i) => (
+            <button onClick={() => {
+              setToggler(!toggler);
+              setImageIndex(i);
+            }}>
+              <img
+                alt="art"
+                key={i}
+                src={image.default.src}
+                style={{width: "100%", display: "block"}}
+              />
+            </button>
+          ))}
+        </Masonry>
+      </section>
+      <Footer />
+    </>
+  );
 }
