@@ -18,22 +18,25 @@ export default function About() {
                         <div id="about-blurb">
                             <h2>Hi, I'm Jess.</h2>
                             <br/>
-                            I'm an SF-based front-end engineer and UX designer with diverse experience in UI/UX design
-                            and development,
+                            I'm an SF-based front-end engineer and UX designer with a passion for creating thoughtful,
+                            human-centered experiences.
+                            My background spans UI/UX design and development,
                             graphic design, motion design, and fine art. I graduated from the University of Pennsylvania
                             in 2019 with a B.S.E. in <u><a href="http://cg.cis.upenn.edu/dmd.html" target="_blank">Computer
                             Graphics</a></u> and a minor in Fine Arts.
                             <br/><br/>
                             At Adobe, I own the end-to-end design and experience of Adobe Experience Platform’s
                             learning and workflow-optimizing products—from early concepts and high-fidelity mockups to
-                            functioning prototypes—focusing on clarity, impact, and adherence to design systems. Beyond Adobe,
+                            functioning prototypes—focusing on clarity, impact, and seamless integration of design systems. Beyond Adobe,
                             I’ve developed graphics and immersive content in the journalism and manufacturing spaces, in
                             addition to branding, signage, and merchandise for hundreds of small businesses. My design
                             work has been featured in The New York Times and recognized as a finalist in the
                             annual <u><a href="https://disneyimaginations.com/" target="_blank">Disney Imaginations</a></u> competition.
                             <br/><br/>
-                            When I'm not working, I enjoy playing tennis, painting or taking on a new creative project,
-                            and playing with my giant Yorkie, Butters.
+                            Guided by a belief that design should be innovative and socially responsible,
+                            I hope to build a career at the intersection of design and education to foster creativity
+                            and collaboration in children. When I'm not working, I enjoy playing tennis, painting or taking
+                            on a new creative project, or playing with my giant Yorkie, Butters.
                             <br/><br/>
                             <u><a
                               href="https://acrobat.adobe.com/id/urn:aaid:sc:US:2af92903-92c3-4b0b-9ed5-e434d3af0dae"
