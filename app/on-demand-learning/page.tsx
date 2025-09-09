@@ -1,7 +1,7 @@
 'use client';
 import DesktopNavbar from "app/components/desktopNavbar";
 import Footer from "app/components/footer";
-import Hero from "../../public/images/ODL/hero-image.png";
+import Hero from "../../public/images/ODL/current/3.png";
 import p00 from "../../public/images/ODL/p00.png";
 import p01 from "../../public/images/ODL/p01.png";
 import learninggaps from "../../public/images/ODL/learninggaps.png";
