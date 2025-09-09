@@ -18,11 +18,13 @@ const images = [
 export default function UXDesign() {
   return (
     <section>
-      <div id="center-text">
-        <h4>Featured projects</h4>
+      <div className="scalloped-border">
+        <div id="center-text">
+          <h4>Featured projects</h4>
+        </div>
       </div>
-      <br />
-      <br />
+      <br/>
+      <br/>
       <div className="two-column-container">
         <div className="column">
           <a href={images[3].link}>

@@ -33,7 +33,7 @@ export default function GraphicDesign() {
         {/*Hero section*/}
         <div id="center-text">
           <h2>graphic design</h2>
-          <h4>Selected projects that showcase visual storytelling through branding, world-building, and information design.</h4>
+          <h4>Select projects that showcase visual storytelling through branding, world-building, and information design.</h4>
         </div>
         <br/>
         <div id="image-gallery-with-text-overlay">

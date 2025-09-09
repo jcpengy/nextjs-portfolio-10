@@ -647,6 +647,23 @@ td {
     margin-bottom: 25px;
 }
 
+.scalloped-border {
+    padding: 20px; /* Space between text and border */
+    background-image:
+            radial-gradient(circle at 10px 10px, transparent 10px, #f0f0f0 10px),
+            radial-gradient(circle at calc(100% - 10px) 10px, transparent 10px, #f0f0f0 10px),
+            radial-gradient(circle at 10px calc(100% - 10px), transparent 10px, #f0f0f0 10px),
+            radial-gradient(circle at calc(100% - 10px) calc(100% - 10px), transparent 10px, #f0f0f0 10px),
+            linear-gradient(#f0f0f0, #f0f0f0); /* Background color for the "border" */
+    background-size:
+            20px 20px, 20px 20px, 20px 20px, 20px 20px, 100% 100%;
+    background-repeat: no-repeat;
+    background-position:
+            top left, top right, bottom left, bottom right, center center;
+    border: 1px solid #ccc; /* Optional: a subtle actual border */
+    border-radius: 10px; /* Optional: for slightly rounded corners */
+}
+
 @media (max-width: 1024px) {
     .two-column-container {
         grid-template-columns: 1fr;
