@@ -30,11 +30,9 @@ export default function DesktopNavbar() {
                     <div className="dropdown-content">
                         <a href="/ui-ux">ui/ux</a>
                         <a href="/graphicdesign">graphic design</a>
-                        <br/>
-                        <br/>
-                        <i>personal</i>
-                        <br/>
-                        <br/>
+                        <div id="submenu-text">
+                            personal
+                        </div>
                         <a href="/art">art</a>
                         <a href="/photography">photography</a>
                     </div>
