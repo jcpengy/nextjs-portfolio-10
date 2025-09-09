@@ -26,7 +26,7 @@ export default function Kessler() {
           That year’s Disney Imaginations prompt invited teams to reimagine an abandoned place on Earth and transform it into a unique park experience. Our team took the challenge to the stratosphere, envisioning a space-themed destination centered around Kessler Syndrome—a phenomenon in which space debris collides in low Earth orbit, creating a dangerous chain reaction of even more debris that threatens satellites, space travel, and the future of exploration.
           <br />
           <br />
-          Our concept invites guests to embark on an immersive journey through space, experiencing both the awe and the challenges of life in orbit. We designed a series of space-inspired attractions and amenities, along with engaging characters and interactive storytelling moments that teach visitors—both kids and adults—about the importance of space sustainability. The result is an experience that combines thrilling entertainment with meaningful education, sparking curiosity while inspiring guests to think about how we can keep space safe and accessible for generations to come.
+          Our concept invites guests to embark on an immersive journey through space, experiencing both the awe and the challenges of life in orbit. We designed a series of space-inspired attractions and amenities, along with engaging characters and interactive storytelling moments that teach visitors—both kids and adults—about the importance of space sustainability. The result is an engaging and inspiring experience that encourages guests to imagine the future of space exploration.
         </div>
         <br />
         <FsLightbox
