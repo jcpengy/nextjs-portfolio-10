@@ -191,6 +191,7 @@ ul ul {
     top: 40px;
     min-width: 160px;
     z-index: 1;
+    border: 1px solid var(--purple);
 }
 
 .dropdown-content a {
