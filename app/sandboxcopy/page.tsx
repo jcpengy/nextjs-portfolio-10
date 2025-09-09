@@ -2,7 +2,6 @@
 import DesktopNavbar from "app/components/desktopNavbar";
 import Footer from "app/components/footer";
 import Hero from "../../public/images/SandboxCopy/cover.png";
-import ReactPlayer from 'react-player';
 import crossims from "../../public/images/SandboxCopy/crossims.png";
 import syncflow from "../../public/images/SandboxCopy/syncflow.png";
 import v2flow from "../../public/images/SandboxCopy/v2flow.png";
@@ -19,7 +18,6 @@ import P22 from "../../public/images/SandboxCopy/p2-1.png";
 import P21 from "../../public/images/SandboxCopy/v1/1.png";
 import P32 from "../../public/images/SandboxCopy/p3-1.png";
 import P31 from "../../public/images/SandboxCopy/auditlog.png";
-import eventtypes from "../../public/images/SandboxCopy/eventtypes.png";
 import sampleaduit from "../../public/images/SandboxCopy/sampleaudit.png";
 
 import Tree from "../../public/images/SandboxCopy/objecttree.jpg";
@@ -250,7 +248,6 @@ export default function SandboxCopy() {
                               <img src={P31.src} alt="Before"/>
                           </td>
                           <td>
-                              <img src={eventtypes.src} alt="After"/>
                               <img src={sampleaduit.src} alt="After"/>
                               <img src={P32.src} alt="After"/>
                           </td>
