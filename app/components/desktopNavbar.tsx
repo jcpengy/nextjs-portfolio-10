@@ -31,7 +31,7 @@ export default function DesktopNavbar() {
                         <a href="/ui-ux">ui/ux</a>
                         <a href="/graphicdesign">graphic design</a>
                         <div id="submenu-text">
-                            personal
+                            <u>personal</u>
                         </div>
                         <a href="/art">art</a>
                         <a href="/photography">photography</a>

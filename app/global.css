@@ -1636,6 +1636,7 @@ h6 {
 
 #submenu-text {
     color: grey;
+    padding-left: 16px;
 }
 
 #navbar-mobile-links a {
