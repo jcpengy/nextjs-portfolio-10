@@ -12,7 +12,7 @@ const images = [
     { "src": OnDemandLearning.src, "alt": "On-Demand Learning", "link": '/on-demand-learning' },
     { "src": ProjectLasso.src, "alt": "Project Lasso", "link": '/projectlasso' },
     { "src": NYT.src, "alt": "The New York Times", "link": '/new-york-times' },
-    { "src": Disney.src, "alt": "Disney Imagineering", "link": 'kessler' }
+    { "src": Disney.src, "alt": "Disney Imagineering", "link": '/kessler' }
 ]
 
 export default function UXDesign() {
@@ -77,7 +77,7 @@ export default function UXDesign() {
         <br/>
         <div className="two-column-container">
           <div className="column">
-            <a href={images[3].link}>
+            <a href={images[4].link}>
               <img id="clickable-image" src={NYT.src} alt="NYT"/>
             </a>
           </div>
@@ -90,7 +90,7 @@ export default function UXDesign() {
         <br/>
         <div className="two-column-container">
           <div className="column">
-            <a href={images[4].link}>
+            <a href={images[5].link}>
               <img id="clickable-image" src={Disney.src} alt="Disney"/>
             </a>
           </div>

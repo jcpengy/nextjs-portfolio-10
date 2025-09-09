@@ -209,7 +209,7 @@ export default function OnDemandLearning() {
             </div>
             <div className="column">
               For milestone 1, the focus was on designing and building a simple admin dashboard for the Product team and
-              revising On-Demand Learning per business requirements. The admin dashboard would allow the team to easily
+              revising On-Demand Learning to exclude personal environment requests. The admin dashboard would allow the team to easily
               request and set up a new sandbox for a user, while also handling the deployment of the AEP Foundations
               Bootcamp lab pack to the user’s environment.
             </div>
@@ -251,28 +251,34 @@ export default function OnDemandLearning() {
         <div className="section">
           <h4>Implementation: Version 1</h4>
           <br/>
-          I re-purposed an existing application we had already deployed in Unified Shell, which helped save time
+          I re-purposed an existing application in Unified Shell, which helped save time
           given
-          the tight timeline and uncertainty around future requirements. With only two weeks for planning and
-              development, I jumped straight into building the UI skeleton for the Admin dashboard using React Spectrum
-              components. Throughout the process, I collaborated closely with the backend team to define the API
-              contracts
-              and data models needed to support the environment fields.
-              <br/>
-              <br/>
-              <div id="image-gallery-with-text-overlay">
-                {m1uiList.map((image, index) => (
-                  <div className="image-1 item">
-                    <img key={index} src={image.default.src} alt={`image-${index}`}/>
-                    <p>Image Caption</p>
-                  </div>
-                ))}
+          the tight timeline and uncertainty around future requirements. For the Admin Dashboard, I built the UI skeleton using React Spectrum
+          components. The biggest challenge was implementing bulk sandbox requests. Throughout the process, I collaborated closely with the backend team to define the API
+          contracts and data models needed to support the environments.
+          <br/>
+          <br/>
+          <div id="image-gallery-with-text-overlay">
+            {m1uiList.map((image, index) => (
+              <div className="image-1 item">
+                <img key={index} src={image.default.src} alt={`image-${index}`}/>
+                <p>Image Caption</p>
               </div>
-            </div>
-            <br/>
-            <br/>
+            ))}
+          </div>
+        </div>
+        <br/>
+        <br/>
+        <div className="section">
+          <h4>Impact & Next Steps</h4>
+          <br/>
+          We’ve seen strong early adoption of our Personal Lab Environments experience, with 150 users already testing it and sharing positive feedback, specifically on the value of having a dedicated sandbox to experiment and practice in. However, users expressed a clear preference for a more seamless experience, noting that switching to an external URL (On-Demand Learning) to access learning content disrupts their workflow.
+          <br />
+          <br />
+          Our next step is to integrate the On-Demand Learning experience directly into Adobe Experience Platform. Our hope is to convert the current lab guide module into a side rail component that lives alongside the platform interface. By embedding the guide within the product itself, users will be able to actively reference instructions while navigating through and completing hands-on exercises in their sandbox. This integration will make the overall product more seamless, useful, and engaging.
+        </div>
       </section>
       <Footer/>
     </>
-);
+  );
 }
