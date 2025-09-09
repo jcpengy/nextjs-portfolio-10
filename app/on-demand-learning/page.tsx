@@ -172,6 +172,8 @@ export default function OnDemandLearning() {
           <div id="image-caption">
             <i>Adobe Digital University experience</i>
           </div>
+          <br />
+          <br />
           <div id="section-image">
             <img key="learning-gaps" src={learninggaps.src} alt="learning-gaps"/>
             <br/>

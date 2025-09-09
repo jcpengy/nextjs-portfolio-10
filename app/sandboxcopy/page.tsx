@@ -4,6 +4,9 @@ import Footer from "app/components/footer";
 import Hero from "../../public/images/SandboxCopy/cover.png";
 import ReactPlayer from 'react-player';
 import crossims from "../../public/images/SandboxCopy/crossims.png";
+import v2flow from "../../public/images/SandboxCopy/v2flow.png";
+import dependencies from "../../public/images/SandboxCopy/dependencies.png";
+import dependencies2 from "../../public/images/SandboxCopy/dependencies2.png";
 import jobstatus from "../../public/images/SandboxCopy/jobstatus.png";
 import issues from "../../public/images/SandboxCopy/issues.png";
 import Comp from "../../public/images/SandboxCopy/comparison.png";
@@ -45,7 +48,7 @@ export default function SandboxCopy() {
               {/*Hero section*/}
               <div id="center-text">
                   <h2>Sandbox Management App</h2>
-                  <h4>A streamlined solution for transferring sandbox objects.</h4>
+                  <h4>A streamlined solution for transferring and updating sandbox objects.</h4>
                   <br/>
                   <img className="hero-image" key="hero" src={Hero.src} alt="hero"/>
               </div>
@@ -55,16 +58,15 @@ export default function SandboxCopy() {
                   <div className="two-column-container">
                       <div className="column">
                           <h6>Overview</h6>
-                          Transferring objects between sandboxes in Adobe Experience Platform requires manually running API
-                          calls. The process lacks batch transfer capabilities, centralized tracking, and visibility into
-                          dependencies before transfer. <br/>
+                          Transferring objects between sandboxes in Adobe Experience Platform (AEP) is a manual process that relies on individual API calls. Currently, users cannot perform bulk transfers, monitor progress in a centralized view, or identify dependencies before initiating a transfer.
                           <br/>
-                          Sandbox Artifact Copy aims to simplify and streamline sandbox management.
+                          <br/>
+                          The Sandbox Management App provides one UI for users to easily move successful configurations of AEP metadata (schemas, segments, datasets) from one sandbox to another.
                           <h6>Goals</h6>
                           <ul>
                               <li>Allow users to seamlessly transfer objects and their dependencies between sandboxes.
                               </li>
-                              <li>Allow users to sync objects whose sources have been edited.
+                              <li>Allow users to sync objects whose sources have been modified.
                               </li>
                           </ul>
                       </div>
@@ -110,7 +112,7 @@ export default function SandboxCopy() {
                           </ul>
                       </div>
                       <div className="column">
-                          <h6>Functional use cases</h6>
+                          <h6>Functional requirements</h6>
                           <ul>
                               <li>Copy all foundation objects (schemas, datasets, segments, sources, destinations) and
                                   first level dependencies from one sandbox to another sandbox
@@ -126,10 +128,22 @@ export default function SandboxCopy() {
                   <div id="section-image">
                       <img key="competitive-analysis" src={Comp.src} alt="competitive analysis"/>
                   </div>
+                  <h6>Technical Requirements</h6>
+                  <div className="two-column-container">
+                      <div className="column">
+                          <img key="dependencies" src={dependencies.src} alt="dependencies"/>
+                      </div>
+                      <div className="column">
+                          <img key="dependencies" src={dependencies2.src} alt="dependencies"/>
+                      </div>
+                  </div>
+                  <div id="center-text">
+                      We created a graph and table to map root objects and their dependencies.
+                  </div>
+                  {/*Design process*/}
+                  <br/>
+                  <br/>
               </div>
-              {/*Design process*/}
-              <br/>
-              <br/>
               <div className="section">
                   <h4>Design Process</h4>
                   <div id="section-image">
@@ -184,18 +198,17 @@ export default function SandboxCopy() {
                               During testing sessions, we realized the tool was lagging for object's with multiple
                               dependencies and users wanted a more holistic view of all objects they selected. I
                               decided to create a separate window to display all objects and their dependencies in an
-                              organized list. This also required defining the necessary dependencies for each root object (example tree shown here).
+                              organized list.
                           </td>
                           <td>
                               <img src={P11.src} alt="Before"/>
                           </td>
                           <td>
                               <img src={P12.src} alt="After"/>
-                              <img src={Tree.src} alt="After"/>
                           </td>
                       </tr>
                       <tr>
-                      <td>
+                          <td>
                               <h6>Problem</h6>
                               Lack of modularization makes it hard to incorporate new features.
                               <h6>Solution</h6>
@@ -243,7 +256,12 @@ export default function SandboxCopy() {
               <br/>
               <br/>
               <div className="section">
-                  <h4>Current Design</h4>
+                  <h4>Version 2</h4>
+                  <div id="section-image">
+                      <img key="user-flow" src={UserFlow.src} alt="user-flow"/>
+                      <br/>
+                      <i>Revised user flow for copying objects</i>
+                  </div>
                   <Swiper
                     pagination={{
                         type: 'progressbar',
