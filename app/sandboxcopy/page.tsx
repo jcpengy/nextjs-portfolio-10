@@ -4,6 +4,7 @@ import Footer from "app/components/footer";
 import Hero from "../../public/images/SandboxCopy/cover.png";
 import ReactPlayer from 'react-player';
 import crossims from "../../public/images/SandboxCopy/crossims.png";
+import syncflow from "../../public/images/SandboxCopy/syncflow.png";
 import v2flow from "../../public/images/SandboxCopy/v2flow.png";
 import dependencies from "../../public/images/SandboxCopy/dependencies.png";
 import dependencies2 from "../../public/images/SandboxCopy/dependencies2.png";
@@ -258,7 +259,7 @@ export default function SandboxCopy() {
               <div className="section">
                   <h4>Version 2</h4>
                   <div id="section-image">
-                      <img key="user-flow" src={UserFlow.src} alt="user-flow"/>
+                      <img key="user-flow" src={v2flow.src} alt="user-flow"/>
                       <br/>
                       <i>Revised user flow for copying objects</i>
                   </div>
@@ -282,19 +283,31 @@ export default function SandboxCopy() {
               <div className="section">
                   <h4>Development Process</h4>
                   <br/>
-                  We cycled between design and development, where I worked closely with the backend team to accurately display object dependencies and refine the copy, sync, and revert processes. Through demos and testing sessions, we gathered user feedback and tracked all issues in JIRA.
+                  We cycled between design and development, where I worked closely with the backend team to accurately
+                  display object dependencies and refine the copy, sync, and revert processes. Through demos and testing
+                  sessions, we gathered user feedback and tracked all issues in JIRA.
                   <br/>
                   <br/>
                   <div id="section-image">
                       <img key="issues" src={issues.src} alt="issues"/>
                       <br/>
                   </div>
-                  Our main challenges were successfully identifying and copying object dependencies, such as a relationship schema for an identity namespace, and defining error messages (we came up with a list of job statuses for various scenarios).
+                  Our main challenges were successfully identifying and copying object dependencies, such as a
+                  relationship schema for an identity namespace, and defining error messages (we came up with a list of
+                  job statuses for various scenarios).
                   <br/>
                   <br/>
                   <div id="section-image">
+                      <img key="syncflow" src={syncflow.src} alt="syncflow"/>
+                      <br/>
+                      <i>Flow diagram for copying and syncing a schema</i>
+                  </div>
+                  <br />
+                  <br />
+                  <div id="section-image">
                       <img key="jobstatus" src={jobstatus.src} alt="jobstatus"/>
                       <br/>
+                      <i>All transfer job statuses displayed in the UI</i>
                   </div>
                   <br/>
                   <div id="center-text">Demo of our application</div>
