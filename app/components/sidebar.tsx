@@ -63,6 +63,11 @@ export default function Navbar() {
                 graphic design
               </span>
             </a>
+            <br />
+            <br />
+            <i>personal</i>
+            <br />
+            <br />
             <a className="navbar-mobile-submenu" href='/art' onClick={(e) => setOpenMobileMenu(false)}>
               <span className="relative py-1 px-2">
                 art
