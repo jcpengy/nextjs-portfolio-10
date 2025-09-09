@@ -21,7 +21,7 @@ export default function UIUX() {
         {/*Hero section*/}
         <div id="center-text">
           <h2>ui/ux</h2>
-          <h4>Select projects in UI/UX design and development.</h4>
+          <h4>Select projects that highlight my end-to-end process in designing and developing user experiences.</h4>
         </div>
         <br/>
         <div id="image-gallery-with-text-overlay">
