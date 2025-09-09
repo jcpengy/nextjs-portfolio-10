@@ -30,7 +30,7 @@ export default function UXDesign() {
             </a>
           </div>
           <div className="project-description-column">
-            <h4>Project Lasso (Ongoing)</h4>
+            <h4>Project Lasso (Personal Lab Environments)</h4>
             <div className="subtitle">UX Design & Development</div>
             A productized, self-paced implementation of the Developer Enablement Program.
           </div>
@@ -48,19 +48,19 @@ export default function UXDesign() {
             A hands-on learning solution for Adobe Experience Platform.
           </div>
         </div>
-        <br/>
-        <div className="two-column-container">
-          <div className="column">
-            <a href={images[0].link}>
-              <img id="clickable-image" src={CEEM.src} alt="CEEM"/>
-            </a>
-          </div>
-          <div className="project-description-column">
-            <h4>Customer Engineering Enablement Manager</h4>
-            <div className="subtitle">UX Design & Development</div>
-            A comprehensive sandbox package manager for enablement programs.
-          </div>
-        </div>
+        {/*<br/>*/}
+        {/*<div className="two-column-container">*/}
+        {/*  <div className="column">*/}
+        {/*    <a href={images[0].link}>*/}
+        {/*      <img id="clickable-image" src={CEEM.src} alt="CEEM"/>*/}
+        {/*    </a>*/}
+        {/*  </div>*/}
+        {/*  <div className="project-description-column">*/}
+        {/*    <h4>Customer Engineering Enablement Manager</h4>*/}
+        {/*    <div className="subtitle">UX Design & Development</div>*/}
+        {/*    A comprehensive sandbox package manager for enablement programs.*/}
+        {/*  </div>*/}
+        {/*</div>*/}
         <br/>
         <div className="two-column-container">
           <div className="column">

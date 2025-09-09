@@ -200,14 +200,15 @@ export default function OnDemandLearning() {
               <ul>
                 <li>2 IMS orgs that contain user sandboxes</li>
                 <li>All emails are manually generated and sent</li>
-                <li>Lab guides and videos will be hosted on dep-labs.com</li>
-                <li>PLE requests made through Admin Dashboard</li>
+                <li>Lab guides and videos will be hosted on On-Demand Learning</li>
+                <li>Personal lab environment requests made through Admin Dashboard</li>
               </ul>
             </div>
             <div className="column">
-              For milestone 1, the focus was on designing and building a simple admin dashboard for the Product team.
-              This dashboard would allow the team to easily request and set up a new sandbox for a user, while also
-              handling the deployment of the AEP Foundations Bootcamp lab pack to the user’s environment.
+              For milestone 1, the focus was on designing and building a simple admin dashboard for the Product team and
+              revising On-Demand Learning per business requirements. The admin dashboard would allow the team to easily
+              request and set up a new sandbox for a user, while also handling the deployment of the AEP Foundations
+              Bootcamp lab pack to the user’s environment.
             </div>
           </div>
             <br/>
