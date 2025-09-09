@@ -4,7 +4,7 @@ import Sandbox from "../../public/images/SandboxCopy/sandbox.gif";
 import OnDemandLearning from "../../public/images/ODL/hero-image.png";
 import NYT from "../../public/images/NYT/douma1/1.jpg";
 import Disney from "../../public/images/Kessler/wendy-stars.jpg";
-import ProjectLasso from "../../public/images/ProjectLasso/m1/UI/1.png";
+import ProjectLasso from "../../public/images/ProjectLasso/m1/odl/a.png";
 
 const images = [
     { "src": CEEM.src, "alt": "CEEM", "link": "/ceem" },

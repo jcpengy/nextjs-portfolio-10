@@ -12,7 +12,7 @@ const m1ui = require.context('../../public/images/ProjectLasso/m1/UI', false);
 const m1uiList = m1ui.keys().map(image => m1ui(image));
 const odlui = require.context('../../public/images/ProjectLasso/m1/odl', false);
 const odluiList = odlui.keys().map(image => odlui(image));
-import Hero from "../../public/images/ProjectLasso/m1/UI/1.png";
+import Hero from "../../public/images/ProjectLasso/m1/odl/a.png";
 const alm = require.context('../../public/images/ODL/ALM', false);
 const almList = alm.keys().map(image => alm(image));
 const adu = require.context('../../public/images/ODL/ADU', false);
@@ -118,7 +118,8 @@ export default function OnDemandLearning() {
                 </ul>
               </ul>
               <h6>Past Bootcamps</h6>
-              I watched recordings of past bootcamps to better understand how attendees learned content, asked for help, and got feedback.
+              I watched recordings of past bootcamps to better understand how attendees learned content, asked for help,
+              and got feedback.
             </div>
             <div className="column">
               <h6>Learning Gaps/Questions</h6>
@@ -209,10 +210,10 @@ export default function OnDemandLearning() {
               </ul>
             </div>
             <div className="column">
-              For milestone 1, the focus was on designing and building a simple admin dashboard for the Product team and
-              revising On-Demand Learning to exclude personal environment requests. The admin dashboard would allow the team to easily
-              request and set up a new sandbox for a user, while also handling the deployment of the AEP Foundations
-              Bootcamp lab pack to the user’s environment.
+              For milestone 1, the focus was to design and build an Admin Dashboard for the Product team to create and
+              extend sandboxes (packaged with AEP Foundations objects) across
+              two Learner IMS orgs. Lab guides and lecture videos would be hosted on a previous app we built called
+              On-Demand Learning, which will be modified to exclude self-service environment requests.
             </div>
           </div>
           <br/>
@@ -252,13 +253,14 @@ export default function OnDemandLearning() {
         <div className="section">
           <h4>Implementation: Version 1</h4>
           <br/>
-          I re-purposed an existing application in Unified Shell, which helped save time
+          I re-purposed an existing application in Unified Shell for the Admin Dashboard experience, which helped save
+          time
           given
-          the tight timeline and uncertainty around future requirements. For the Admin Dashboard, I built the UI
-          skeleton using React Spectrum
-          components. The biggest challenge was implementing bulk sandbox requests. Throughout the process, I
-          collaborated closely with the backend team to define the API
-          contracts and data models needed to support the environments.
+          the tight timeline and shifting requirements. I built the UI
+          framework using React Spectrum
+          components and collaborated with the backend team to refine API contracts/data models to support the
+          environments.
+          The biggest challenge was implementing bulk sandbox requests.
           <br/>
           <br/>
           <div id="image-gallery-with-text-overlay">
@@ -270,26 +272,63 @@ export default function OnDemandLearning() {
             ))}
           </div>
           <br/>
+          <div id="center-text">
+            <i>Admin Dashboard implementation</i>
+          </div>
           <br/>
-          <div id="image-gallery-with-text-overlay">
+          <br/>
+          <Swiper
+            pagination={{
+              type: 'progressbar',
+            }}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className="mySwiper"
+          >
             {odluiList.map((image, index) => (
-              <div className="image-1 item">
-                <img key={index} src={image.default.src} alt={`image-${index}`}/>
-                <p>Image Caption</p>
-              </div>
+              <SwiperSlide>
+                <img key={index} src={image.default.src} alt={`Image ${index}`}/>
+              </SwiperSlide>
             ))}
+          </Swiper>
+          <div id="center-text">
+            <i>On-Demand Learning revised implementation</i>
           </div>
         </div>
         <br/>
         <br/>
+        <div className="two-column-container">
+          <div className="column">
+            <h6>Problem</h6>
+            The AEP Foundations Bootcamp covers multiple complex concepts, which may overwhelm learners if presented in a single course.
+            <h6>Improvement</h6>
+            Introduce Learning Paths, where related courses are grouped together to help learners master a skill.
+          </div>
+          <div className="column">
+            <h6>Thought process</h6>
+            <ul>
+              <li>Determine whether each course within a Learning Path needs its own lab guide or if certain resources can be shared across courses.</li>
+              <li>Identify opportunities to streamline content and avoid duplication.</li>
+              <li>Explore ways to track learner progress across the entire Learning Path.</li>
+            </ul>
+          </div>
+        </div>
+        <br />
+        <br />
         <div className="section">
           <h4>Impact & Next Steps</h4>
           <br/>
           We’ve seen strong early adoption of our Personal Lab Environments experience, with 150 users already testing
-          it and sharing positive feedback, specifically on the value of having a dedicated sandbox to experiment and practice in. However, users expressed a clear preference for a more seamless experience, noting that switching to an external URL (On-Demand Learning) to access learning content disrupts their workflow.
-          <br />
-          <br />
-          Our next step is to integrate the On-Demand Learning experience directly into Adobe Experience Platform. Our hope is to convert the current lab guide module into a side rail component that lives alongside the platform interface. By embedding the guide within the product itself, users will be able to actively reference instructions while navigating through and completing hands-on exercises in their sandbox. This integration will make the overall product more seamless, useful, and engaging.
+          it and sharing positive feedback, specifically on the value of having a dedicated sandbox to experiment and
+          practice in. However, users expressed a clear preference for a more seamless experience, noting that switching
+          to an external URL (On-Demand Learning) to access learning content disrupts their workflow.
+          <br/>
+          <br/>
+          Our next step is to integrate the On-Demand Learning experience directly into Adobe Experience Platform. Our
+          hope is to convert the current lab guide module into a side rail component that lives alongside the platform
+          interface. By embedding the guide within the product itself, users will be able to actively reference
+          instructions while navigating through and completing hands-on exercises in their sandbox. This integration
+          will make the overall product more seamless, useful, and engaging.
         </div>
       </section>
       <Footer/>
