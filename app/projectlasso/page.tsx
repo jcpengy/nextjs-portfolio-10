@@ -199,22 +199,11 @@ export default function OnDemandLearning() {
           </div>
           <br/>
           <br/>
-          <div className="two-column-container">
-            <div className="column">
-              Requirements for M1:
-              <ul>
-                <li>2 IMS orgs that contain user sandboxes</li>
-                <li>All emails are manually generated and sent</li>
-                <li>Lab guides and videos will be hosted on On-Demand Learning</li>
-                <li>Personal lab environment requests made through Admin Dashboard</li>
-              </ul>
-            </div>
-            <div className="column">
-              For milestone 1, the focus was to design and build an Admin Dashboard for the Product team to create and
-              extend sandboxes (packaged with AEP Foundations objects) across
-              two Learner IMS orgs. Lab guides and lecture videos would be hosted on a previous app we built called
-              On-Demand Learning, which will be modified to exclude self-service environment requests.
-            </div>
+          <div id="center-text">
+            <u>For milestone 1, the focus was to design and build an Admin Dashboard for the Product team to create and
+            extend sandboxes (packaged with AEP Foundations objects) across
+            two Learner IMS orgs. Lab guides and lecture videos would be hosted on a previous app we built called
+              On-Demand Learning, which will be modified to exclude self-service environment requests.</u>
           </div>
           <br/>
           <br/>
