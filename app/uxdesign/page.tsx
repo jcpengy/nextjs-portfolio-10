@@ -3,7 +3,7 @@ import CEEM from "../../public/images/CEEM/ceem.gif";
 import Sandbox from "../../public/images/SandboxCopy/cover.png";
 import OnDemandLearning from "../../public/images/ODL/current/3.png";
 import NYT from "../../public/images/NYT/cover/1.png";
-import Disney from "../../public/images/Kessler/wendy-stars.jpg";
+import Disney from "../../public/images/Kessler/wendy-stars.png";
 import ProjectLasso from "../../public/images/ProjectLasso/m1/odl/a.png";
 
 const images = [
