@@ -131,6 +131,9 @@ export default function SandboxCopy() {
                       <img key="competitive-analysis" src={Comp.src} alt="competitive analysis"/>
                   </div>
                   <h6>Technical Requirements</h6>
+                  <div id="center-text">
+                      <i>Graph and table representation of root objects and their dependencies</i>
+                  </div>
                   <div className="two-column-container">
                       <div className="column">
                           <img key="dependencies" src={dependencies.src} alt="dependencies"/>
@@ -138,9 +141,6 @@ export default function SandboxCopy() {
                       <div className="column">
                           <img key="dependencies" src={dependencies2.src} alt="dependencies"/>
                       </div>
-                  </div>
-                  <div id="center-text">
-                      We created a graph and table to map root objects and their dependencies.
                   </div>
                   {/*Design process*/}
                   <br/>
@@ -158,6 +158,7 @@ export default function SandboxCopy() {
                   <div id="section-image">
                       <img key="sketches" src={Sketches.src} alt="sketches"/>
                   </div>
+                  <br />
                   <div id="center-text">
                       <i>Initial sketches</i>
                   </div>
@@ -310,15 +311,6 @@ export default function SandboxCopy() {
                       <br/>
                       <i>All transfer job statuses displayed in the UI</i>
                   </div>
-                  <br/>
-                  <div id="center-text">Demo of our application</div>
-                  <div>
-                      <iframe
-                        src="https://player.vimeo.com/video/1116960200?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                        referrerPolicy="strict-origin-when-cross-origin"></iframe>
-                  </div>
-                  <script src="https://player.vimeo.com/api/player.js"></script>
               </div>
               <br/>
               <br/>
@@ -354,6 +346,25 @@ export default function SandboxCopy() {
                   </ul>
                   <br/>
                   In total, this represents over $1 million in savings, along with improved customer satisfaction.
+                  <br/>
+                  <br/>
+                  <div style={{
+                      padding: '49.02% 0 0 0',
+                      position: 'relative'}}>
+                      <iframe
+                        src="https://player.vimeo.com/video/1116960200?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        style={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            width: '100%',
+                            height: '100%'
+                        }}
+                        title="demo-draft-1"></iframe>
+                  </div>
+                  <script src="https://player.vimeo.com/api/player.js"></script>
               </div>
           </section>
           <Footer/>
