@@ -2,7 +2,7 @@
 import DesktopNavbar from "app/components/desktopNavbar";
 import Footer from "app/components/footer";
 // dynamically import all images from folder
-const finalImages = require.context('../../public/images/Kessler', false);
+const finalImages = require.context('../../public/images/Kessler/slides', false);
 const finalImageList = finalImages.keys().map(image => finalImages(image));
 const wendy = require.context('../../public/images/Kessler/wendy', false);
 const wendyList = wendy.keys().map(image => wendy(image));
@@ -12,8 +12,9 @@ import Masonry from "react-responsive-masonry";
 
 export default function Kessler() {
   const [toggler, setToggler] = useState(false);
+  const [togglerWendy, setTogglerWendy] = useState(false);
   const [imageIndex, setImageIndex] = useState(0);
-
+  const [imageIndexWendy, setImageIndexWendy] = useState(0);
   return (
     <>
       <DesktopNavbar />
@@ -52,7 +53,7 @@ export default function Kessler() {
               setImageIndex(i);
             }}>
               <img
-                alt="art"
+                alt="slides"
                 key={i}
                 src={image.default.src}
                 style={{width: "100%", display: "block"}}
@@ -72,19 +73,19 @@ export default function Kessler() {
         </div>
         <br />
         <FsLightbox
-          toggler={toggler}
-          sources={[wendyList[imageIndex].default.src]}
-          key={imageIndex}
-          thumbs={[wendyList[imageIndex].default.src]}
+          toggler={togglerWendy}
+          sources={[wendyList[imageIndexWendy].default.src]}
+          key={imageIndexWendy}
+          thumbs={[wendyList[imageIndexWendy].default.src]}
         />
         <Masonry columnsCount={3} gutter="10px">
           {wendyList.map((image, i) => (
             <button onClick={() => {
-              setToggler(!toggler);
-              setImageIndex(i);
+              setTogglerWendy(!togglerWendy);
+              setImageIndexWendy(i);
             }}>
               <img
-                alt="art"
+                alt="wendy"
                 key={i}
                 src={image.default.src}
                 style={{width: "100%", display: "block"}}
