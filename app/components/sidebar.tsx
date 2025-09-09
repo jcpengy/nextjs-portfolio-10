@@ -15,10 +15,10 @@ export default function Navbar() {
 
   const navItems = {
     '/': {
-      name: 'work',
+      name: 'featured',
     },
     '/art': {
-      name: 'personal',
+      name: 'work',
     },
     '/about': {
       name: 'about/contact',
@@ -49,10 +49,10 @@ export default function Navbar() {
           (<div id="navbar-mobile-links">
             <a href='/' onClick={(e) => setOpenMobileMenu(false)}>
               <span className="relative py-1 px-2">
-                work
+                featured
               </span>
             </a>
-            <div id="submenu-text"><i>personal</i></div>
+            <div id="submenu-text"><i>work</i></div>
             <a className="navbar-mobile-submenu" href='/art' onClick={(e) => setOpenMobileMenu(false)}>
               <span className="relative py-1 px-2">
                 art
