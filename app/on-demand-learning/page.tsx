@@ -197,28 +197,32 @@ export default function OnDemandLearning() {
         <br/>
         <div className="section">
           <h4>Design Process</h4>
-          <div id="section-image">
-            <img key="user-flow" src={UserFlow.src} alt="user-flow"/>
-            <br/>
-            <i>User flow from logging into the application to requesting/terminating a lab
-              environment</i>
-          </div>
-          <Swiper
-            pagination={{
-              type: 'progressbar',
-            }}
-            navigation={true}
-            modules={[Pagination, Navigation]}
-            className="mySwiper"
-          >
-            {sketchesList.map((image, index) => (
-              <SwiperSlide>
-                <img key={index} src={image.default.src} alt={`Image ${index}`}/>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-          <div id="center-text">
-            <i>Initial sketches of the Home, Catalog, My Learning, and individual Course pages</i>
+          <div className="two-column-container">
+            <div className="column">
+              <img key="user-flow" src={UserFlow.src} alt="user-flow"/>
+              <br/>
+              <i>User flow from logging into the application to requesting/terminating a lab
+                environment</i>
+            </div>
+            <div className="column">
+              <Swiper
+                pagination={{
+                  type: 'progressbar',
+                }}
+                navigation={true}
+                modules={[Pagination, Navigation]}
+                className="mySwiper"
+              >
+                {sketchesList.map((image, index) => (
+                  <SwiperSlide>
+                    <img key={index} src={image.default.src} alt={`Image ${index}`}/>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+              <div id="center-text">
+                <i>Initial sketches of the Home, Catalog, My Learning, and individual Course pages</i>
+              </div>
+            </div>
           </div>
         </div>
         <br/>
