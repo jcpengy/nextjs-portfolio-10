@@ -118,7 +118,16 @@ export default function OnDemandLearning() {
                 adoption.</i>
             </div>
             <div className="column">
+              <h6>Pain Points</h6>
+              <ul>
+                <li>Customers must attend in-person trainings, which are costly and time-consuming</li>
+                <li>Instructors must manually configure and deploy lab packs to multiple sandboxes for hands-on exercises</li>
+              </ul>
               <h6>Software Dependencies</h6>
+              Previously, instructors used Managed Platform as a Service for sandbox lifecycle management. Our application
+              explores the addition of Adobe Learning Manager (ALM) to serve lecture content.
+              <br />
+              <br />
               <img key="software-dependencies" src={SoftwareDependencies.src} alt="software-dependencies"/>
             </div>
           </div>
