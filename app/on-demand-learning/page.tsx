@@ -218,7 +218,7 @@ export default function OnDemandLearning() {
             ))}
           </Swiper>
           <div id="center-text">
-            <i></i>
+            <i>Initial sketches of the Home, Catalog, My Learning, and individual Course pages</i>
           </div>
         </div>
         <br/>
@@ -239,6 +239,11 @@ export default function OnDemandLearning() {
               </SwiperSlide>
             ))}
           </Swiper>
+          <div id="center-text">
+            <i>Low fidelity design presented during our team on-site</i>
+          </div>
+          <br />
+          <br />
           <table className="improvements-table">
             <thead>
             <tr>
