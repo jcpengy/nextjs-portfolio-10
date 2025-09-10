@@ -391,16 +391,15 @@ export default function OnDemandLearning() {
         <div className="section">
           <h4>Development Process</h4>
           <br />
-          Once we finalized the general design, I started mapping out React components and API calls needed for the UI.
-          Our approach was to develop a custom headless experience and use Adobe Learning Manager as our content management system to house and serve the course and learner info.
+          Once we finalized the general design, I started mapping relationships between React components and API calls.
+          Our approach was to develop a custom headless experience with Adobe Learning Manager as our content management system to house and serve the course and learner info.
           <br />
           <br />
           <div id="section-image">
             <img key="row-example" src={row.src} alt="row-example"/>
             <br/>
           </div>
-          A major challenge we faced was integrating Unified Shell with Adobe Learning Manager (ALM), which had never been done before. Early obstacles included retrieving the access token required for ALM APIs, embedding the Fluidic Player for video and PDF content, and making sense of the APIs themselves. Initially, our API usage was inefficient, but through experimentation and working with our ALM resource, we discovered that certain calls could return more information by leveraging multiple parameters, significantly reducing the number of requests needed. Overall, we were able to solve a lot of issues by consulting our ALM resource, clarifying best practices with the Unified Shell team, and sifting through public documentation.
-        </div>
+          Our major challenge was integrating Adobe Learning Manager capabilities within our Unified Shell application. Specifically, this included retrieving the access token to use the APIs, embedding the Fluidic Player to serve video and PDF lecture content, and understanding the APIs (we realized the number of calls could be significantly reduced by leveraging multiple parameters). We collaborated closely with our technical ALM resource and asked users to log issues and feedback in a shared document.</div>
         <br/>
         <br/>
         <div className="section">
