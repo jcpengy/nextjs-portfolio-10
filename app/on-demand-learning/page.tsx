@@ -63,8 +63,8 @@ export default function OnDemandLearning() {
               and conducting in-person sessions to facilitate the training.
               <br/>
               <br/>
-              On-Demand Learning provides this training in a virtual and scalable manner. Equipped with their own
-              learning environment (an Experience Platform sandbox), customers can go through hands-on exercises and
+              On-Demand Learning aims to provide this training in a virtual and scalable manner. Equipped with a
+              learning environment (Experience Platform sandbox), customers can go through hands-on exercises and
               lectures
               at their own pace.
               <h6>Goals</h6>
