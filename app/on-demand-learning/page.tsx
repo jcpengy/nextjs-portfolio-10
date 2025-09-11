@@ -241,6 +241,10 @@ export default function OnDemandLearning() {
         <br/>
         <div className="section">
           <h4>Version 1</h4>
+          <br />
+          I built a low fidelity mockup to convey the overall experience to the larger team, focusing on the process for requesting a learning environment and triggering emails.
+          <br />
+          <br />
           <Swiper
             pagination={{
               type: 'progressbar',
@@ -255,9 +259,6 @@ export default function OnDemandLearning() {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div id="center-text">
-            <i>Low fidelity design presented during our team on-site</i>
-          </div>
           <br />
           <br />
           <table className="improvements-table">
@@ -299,6 +300,10 @@ export default function OnDemandLearning() {
         <br/>
         <div className="section">
           <h4>Version 2</h4>
+          <br />
+          Once this workflow was approved, I moved on to creating a high fidelity mockup, focusing on alignment with the Adobe Experience Platform user interface and displaying module content using Adobe Learning Manager.
+          <br />
+          <br />
           <Swiper
             pagination={{
               type: 'progressbar',
