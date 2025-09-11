@@ -133,20 +133,19 @@ export default function OnDemandLearning() {
               For sandbox lifecycle management, we used Managed Platform as a Service.
             </div>
           </div>
+          <br/>
           <div id="section-image">
             <img key="platform-comp" src={SoftwareDependencies.src} alt="platform-comp"/>
           </div>
+          <div id="image-caption">
+            <i>Platform comparisons</i>
+          </div>
+          <br/>
           <h6>Competitor Analysis</h6>
-          We explored similar learning experiences within Adobe such as Adobe Learning Manager, Experience League, and
-          Adobe
-          Digital University. On-Demand Learning is differentiated from these other offerings as it provides hands-on
-          learning environments that are unique to each individual developer/architect.
-          <br/>
-          <br/>
-          However, we drew inspiration from these learnings tools for our experience. Ultimately, we decided to take a
-          mixed approach of
-          using ALM APIs to manage both learner and author functionalities and building a headless UI to support
-          learning environments.
+          I explored learning experiences within Adobe such as Adobe Learning Manager, Experience League, and Adobe
+          Digital University to understand how they structure content and deliver useful learning tools. <u>In contrast
+          to these offerings, On-Demand Learning aims to provide personalized, hands-on environments tailored to each
+          individual user.</u>
           <br/>
           <br/>
           <Swiper
@@ -199,32 +198,34 @@ export default function OnDemandLearning() {
         <br/>
         <div className="section">
           <h4>Design Process</h4>
-          <div className="two-column-container">
-            <div className="column">
-              <img key="user-flow" src={UserFlow.src} alt="user-flow"/>
-              <br/>
-              <i>User flow from logging into the application to requesting/terminating a lab
-                environment</i>
-            </div>
-            <div className="column">
-              <Swiper
-                pagination={{
-                  type: 'progressbar',
-                }}
-                navigation={true}
-                modules={[Pagination, Navigation]}
-                className="mySwiper"
-              >
-                {sketchesList.map((image, index) => (
-                  <SwiperSlide>
-                    <img key={index} src={image.default.src} alt={`Image ${index}`}/>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-              <div id="center-text">
-                <i>Initial sketches of the Home, Catalog, My Learning, and individual Course pages</i>
-              </div>
-            </div>
+          After finalizing the requirements, I created a user flow diagram to align the Product and Engineering teams on
+          the overall experience, while also helping us identify any gaps in the process. I then began sketching the pages of
+          our application, which included Home, Catalog, My Learning, and Course Details. This helped me flesh out important
+          metadata and establish a quick layout.
+          <br />
+          <br />
+          <img key="user-flow" src={UserFlow.src} alt="user-flow"/>
+          <br/>
+          <i>User flow from logging into the application to requesting/terminating a lab
+            environment</i>
+          <br />
+          <br />
+          <Swiper
+            pagination={{
+              type: 'progressbar',
+            }}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className="mySwiper"
+          >
+            {sketchesList.map((image, index) => (
+              <SwiperSlide>
+                <img key={index} src={image.default.src} alt={`Image ${index}`}/>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          <div id="center-text">
+            <i>Initial sketches of the Home, Catalog, My Learning, and individual Course pages</i>
           </div>
         </div>
         <br/>
