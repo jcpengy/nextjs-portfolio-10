@@ -126,7 +126,7 @@ export default function OnDemandLearning() {
                 </li>
               </ul>
               <h6>Software Dependencies</h6>
-              Based on our Platform Comparisons, we decided to build a headless UI to support learning environments and
+              Based on our Platform Comparisons (below chart), we decided to build a headless UI to support learning environments and
               serve the course content using Adobe Learning Manager APIs.
               <br/>
               <br/>
@@ -137,6 +137,8 @@ export default function OnDemandLearning() {
           <div id="section-image">
             <img key="platform-comp" src={SoftwareDependencies.src} alt="platform-comp"/>
           </div>
+          <br />
+          <br />
           <div id="image-caption">
             <i>Platform comparisons</i>
           </div>
@@ -198,18 +200,26 @@ export default function OnDemandLearning() {
         <br/>
         <div className="section">
           <h4>Design Process</h4>
-          After finalizing the requirements, I created a user flow diagram to align the Product and Engineering teams on
-          the overall experience, while also helping us identify any gaps in the process. I then began sketching the pages of
-          our application, which included Home, Catalog, My Learning, and Course Details. This helped me flesh out important
-          metadata and establish a quick layout.
-          <br />
-          <br />
-          <img key="user-flow" src={UserFlow.src} alt="user-flow"/>
           <br/>
-          <i>User flow from logging into the application to requesting/terminating a lab
-            environment</i>
-          <br />
-          <br />
+          <br/>
+          After finalizing the requirements, I created a user flow diagram to align the Product and Engineering teams on
+          the overall experience, while also helping us identify any gaps in the process. I then began sketching the
+          pages of
+          our application, which included Home, Catalog, My Learning, and Course Details. This helped me flesh out
+          important
+          metadata and establish a quick layout.
+          <br/>
+          <br/>
+          <div id="section-image">
+            <img key="user-flow" src={UserFlow.src} alt="user-flow"/>
+          </div>
+          <br/>
+          <br/>
+          <div id="image-caption">
+            <i>User flow from logging into the application to requesting/terminating a lab environment</i>
+          </div>
+          <br/>
+          <br/>
           <Swiper
             pagination={{
               type: 'progressbar',
