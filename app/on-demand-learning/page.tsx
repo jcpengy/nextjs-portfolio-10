@@ -398,21 +398,21 @@ export default function OnDemandLearning() {
         <div className="section">
           <h4>Development Process</h4>
           <br />
-          Once we finalized the general design, I started mapping relationships between React components and API calls.
-          Our approach was to develop a custom headless experience with Adobe Learning Manager as our content management system to house and serve the course and learner info.
+          I developed the final, fully-responsive headless experience on Unified Shell using React/React Spectrum, reusable Quarry components, and Adobe Learning Manager as the content management system. Below is an example of how I mapped API calls to React components to help organize my development workflow.
           <br />
           <br />
           <div id="section-image">
             <img key="row-example" src={row.src} alt="row-example"/>
             <br/>
           </div>
-          Our major challenge was integrating Adobe Learning Manager capabilities within our Unified Shell application. Specifically, this included retrieving the access token to use the APIs, embedding the Fluidic Player to serve video and PDF lecture content, and understanding the APIs (we realized the number of calls could be significantly reduced by leveraging multiple parameters). We collaborated closely with our technical ALM resource and asked users to log issues and feedback in a shared document.</div>
+          Our major challenge was integrating Adobe Learning Manager capabilities within our Unified Shell application. Specifically, we had to seamlessly retrieve the access token, embed the Fluidic Player to serve video and PDF lecture content, and understand the APIs to reduce our API call volume. We worked closely with our technical ALM resource and asked users to log feedback in a shared document.
+        </div>
         <br/>
         <br/>
         <div className="section">
           <h4>Impact & Next Steps</h4>
           <br />
-          On-Demand Learning has been successfully adopted by three pilot customers, all of whom shared positive feedback on its ability to deliver learning content in a self-served, and organized format, with one user asking how we can further condense the content to provide "bite-sized" courses. Beyond its immediate value, the application has become a critical building block for the team's current initiative: an in-product experience where environments are managed externally. Looking ahead, On-Demand Learning will serve as the delivery hub for courses and lab guides that enable hands-on exercises in these environments, with ongoing UI refinements to align with new business requirements.
+          On-Demand Learning has been successfully adopted by three pilot customers, all of whom shared positive feedback on its ability to deliver learning content in a self-served and organized format, with one user asking how we can provide "bite-sized" courses. The next step is to integrate this application into Adobe Experience Platform where it can serve courses and interactive lab guides in personal environments.
         </div>
         <br />
         <br />
