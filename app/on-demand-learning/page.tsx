@@ -201,7 +201,6 @@ export default function OnDemandLearning() {
         <div className="section">
           <h4>Design Process</h4>
           <br/>
-          <br/>
           After finalizing the requirements, I created a user flow diagram to align the Product and Engineering teams on
           the overall experience, while also helping us identify any gaps in the process. I then began sketching the
           pages of
