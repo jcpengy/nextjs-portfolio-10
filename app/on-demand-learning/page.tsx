@@ -131,7 +131,7 @@ export default function OnDemandLearning() {
               <img key="software-dependencies" src={SoftwareDependencies.src} alt="software-dependencies"/>
             </div>
           </div>
-          <h6>Competitive Analysis</h6>
+          <h6>Competitor Analysis</h6>
           We explored similar learning experiences within Adobe such as Adobe Learning Manager, Experience League, and
           Adobe
           Digital University. On-Demand Learning is differentiated from these other offerings as it provides hands-on
