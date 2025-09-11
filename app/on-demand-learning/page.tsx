@@ -14,7 +14,7 @@ import p21 from "../../public/images/ODL/p22.png";
 import p31 from "../../public/images/ODL/p31.png";
 import p32 from "../../public/images/ODL/p32.png";
 import row from "../../public/images/ODL/row.png";
-import SoftwareDependencies from "../../public/images/ODL/SoftwareDependencies.png";
+import SoftwareDependencies from "../../public/images/ODL/dependencies.png";
 import UserFlow from "../../public/images/ODL/UserFlow.png";
 const finalImages = require.context('../../public/images/ODL/current', false);
 const finalImageList = finalImages.keys().map(image => finalImages(image));
@@ -121,15 +121,20 @@ export default function OnDemandLearning() {
               <h6>Pain Points</h6>
               <ul>
                 <li>Customers must attend in-person trainings, which are costly and time-consuming</li>
-                <li>Instructors must manually configure and deploy lab packs to multiple sandboxes for hands-on exercises</li>
+                <li>Instructors must manually configure and deploy lab packs to multiple sandboxes for hands-on
+                  exercises
+                </li>
               </ul>
               <h6>Software Dependencies</h6>
-              Previously, instructors used Managed Platform as a Service for sandbox lifecycle management. Our application
-              explores the addition of Adobe Learning Manager (ALM) to serve lecture content.
-              <br />
-              <br />
-              <img key="software-dependencies" src={SoftwareDependencies.src} alt="software-dependencies"/>
+              Based on our Platform Comparisons, we decided to build a headless UI to support learning environments and
+              serve the course content using Adobe Learning Manager APIs.
+              <br/>
+              <br/>
+              For sandbox lifecycle management, we used Managed Platform as a Service.
             </div>
+          </div>
+          <div id="section-image">
+            <img key="platform-comp" src={SoftwareDependencies.src} alt="platform-comp"/>
           </div>
           <h6>Competitor Analysis</h6>
           We explored similar learning experiences within Adobe such as Adobe Learning Manager, Experience League, and
@@ -144,9 +149,6 @@ export default function OnDemandLearning() {
           learning environments.
           <br/>
           <br/>
-          <div id="section-image">
-            <img key="platform-comp" src={platform.src} alt="platform-comp"/>
-          </div>
           <Swiper
             pagination={{
               type: 'progressbar',
@@ -181,8 +183,8 @@ export default function OnDemandLearning() {
           <div id="image-caption">
             <i>Adobe Digital University experience</i>
           </div>
-          <br />
-          <br />
+          <br/>
+          <br/>
           <div id="section-image">
             <img key="learning-gaps" src={learninggaps.src} alt="learning-gaps"/>
             <br/>
