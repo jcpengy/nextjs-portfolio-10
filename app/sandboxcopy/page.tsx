@@ -146,6 +146,7 @@ export default function SandboxCopy() {
                           <img key="dependencies" src={dependencies2.src} alt="dependencies"/>
                       </div>
                   </div>
+                  <br />
                   <div id="center-text">
                       <i>Graph and table representation of root objects and their dependencies</i>
                   </div>
