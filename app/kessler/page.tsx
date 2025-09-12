@@ -27,24 +27,38 @@ export default function Kessler() {
         <h2>Disney Imaginations Finalist: Kessler Project</h2>
         <h4><i>2018</i></h4>
         <div id="section-description">
-          Kessler Project is a theme park concept that was a finalist in the 2018 Disney Imaginations competition. On a
-          four-person team, I led art direction and design of our submission and presentation to the Disney Imagineering
-          executives in Glendale, California.
+          <h6>Prompt</h6>
+          That year, teams were tasked with selecting an abandoned “ghost town” anywhere in the world and revitalizing
+          it. Concepts could range from a functioning town to a historical site, living museum, or immersive themed
+          experience. Submissions needed to honor the location’s history and respect the traditions and communities
+          connected to it and its surrounding areas.
           <br/>
           <br/>
-          That year’s Disney Imaginations prompt invited teams to reimagine an abandoned place on Earth and transform it
-          into a unique park experience. Our team took the challenge to the stratosphere, envisioning a space-themed
-          destination centered around Kessler Syndrome—a phenomenon in which space debris collides in low Earth orbit,
-          creating a dangerous chain reaction of even more debris that threatens satellites, space travel, and the
-          future of exploration.
+          <h6>Our Idea</h6>
+          We decided to take our idea to the stratosphere, envisioning a space-themed destination called Kessler
+          Project, where guests explore historic landmarks like the ISS, Hubble Telescope, and Tiangong-1 while learning
+          about <a href="">Kessler Syndrome</a>. The experience blends education and adventure, immersing visitors in a
+          mission to clean up space debris while inspiring solutions for sustainable space exploration.
           <br/>
           <br/>
-          Our concept invites guests to embark on an immersive journey through space, experiencing both the awe and the
-          challenges of life in orbit. We designed a series of space-inspired attractions and amenities, along with
-          engaging characters and interactive storytelling moments that teach visitors—both kids and adults—about the
-          importance of space sustainability.
+          <h6>Role</h6>
+          Creative Lead on a four-person team | Slide Design and Layout, 3D Modeling, Graphic Design, Information
+          Design, Illustrations
         </div>
         <br/>
+        <h4>Design Approach</h4>
+        Limited to six submission slides, I first outlined key guest experiences and then assigned each slide a focus.
+        To match our project’s space theme, I used futuristic fonts and 3D graphics to bring the story to life.
+        <br/>
+        <br/>
+        <h4>Experience Design</h4>
+        Designing an experience set in space required balancing technical details with playful elements that capture the
+        excitement of space exploration.
+        <br/>
+        <br/>
+        I collaborated with technical team members to design and model Kessler Station, incorporating the spiral shape
+        of the station into the logo, slide design, and features like the Spiral Seat. I also helped brainstorm the
+        characters in the Kessler Crew.
         <FsLightbox
           toggler={toggler}
           sources={[finalImageList[imageIndex].default.src]}
@@ -66,17 +80,17 @@ export default function Kessler() {
             </button>
           ))}
         </Masonry>
-        <br />
-        <br />
+        <br/>
+        <br/>
         <div id="section-description">
-          We presented our park experience through the eyes of our example guest named Wendy, an 11-year old girl from the Midwest
-          who dreams of becoming an astronaut. I illustrated her entire Kessler Project experience, from gazing at the
-          stars and touring the Tracker Center to using our Mission Command Wristband and riding home with her Astronaut
-          Keepsake made of recycled space debris. Combined with elements from our submission slides, the result was an
-          engaging, informative, and inspiring experience that encourages guests to imagine the future of space
-          exploration.
+          <h4>Presentation & What I Learned</h4>
+          As finalists, we were invited to the Disney Imagineering headquarters in Glendale, California to present our
+          project to Imagineering executives. This presentation taught me how to incorporate storytelling into an
+          experience, specifically adding the story of an example guest.
+          I illustrated the story of Wendy, an 11-year old girl from the Midwest who dreams of becoming an astronaut.
+          She embarks on this adventure to experience the wonders of space.
         </div>
-        <br />
+        <br/>
         <FsLightbox
           toggler={togglerWendy}
           sources={[wendyList[imageIndexWendy].default.src]}
@@ -98,7 +112,11 @@ export default function Kessler() {
             </button>
           ))}
         </Masonry>
-        <br />
+        <br/>
+        <div id="section-description">
+          <h4>Rethinking Kessler Project</h4>
+          As a creative exercise this year, I reimagined the branding for Kessler Project, designing an advertising poster and space flight tickets. For this iteration, I used a neon color palette and updated typography to give the branding a more modern feel.
+        </div>
         <FsLightbox
           toggler={togglerNew}
           sources={[newdesignsList[imageIndexNew].default.src]}
@@ -123,5 +141,5 @@ export default function Kessler() {
       </section>
       <Footer/>
     </>
-);
+  );
 }
