@@ -68,7 +68,7 @@ export default function SandboxCopy() {
                           <ul>
                               <li>Allow users to seamlessly transfer objects and their dependencies between sandboxes.
                               </li>
-                              <li>Allow users to sync objects whose sources have been modified.
+                              <li>Reduce overall time and cost to manage sandboxes
                               </li>
                           </ul>
                       </div>
@@ -127,13 +127,17 @@ export default function SandboxCopy() {
                       </div>
                   </div>
                   <h6>Competitive Analysis</h6>
+                  We explored features and gaps of existing object copy tools within Adobe. Gaps included not having a UI, only supporting certain objects, and not supporting bulk copy. <u>In contrast to these offerings, Sandbox Management aims to provide a centralized experience where users can copy, sync, and revert multiple AEP objects.</u>
+                  <br />
+                  <br/>
                   <div id="section-image">
                       <img key="competitive-analysis" src={Comp.src} alt="competitive analysis"/>
                   </div>
-                  <h6>Technical Requirements</h6>
                   <div id="center-text">
                       <i>Graph and table representation of root objects and their dependencies</i>
                   </div>
+                  <br />
+                  <br />
                   <div className="two-column-container">
                       <div className="column">
                           <img key="dependencies" src={dependencies.src} alt="dependencies"/>
@@ -148,6 +152,10 @@ export default function SandboxCopy() {
               </div>
               <div className="section">
                   <h4>Design Process</h4>
+                  <br />
+                  Based on requirements, I created a user flow diagram and sketches to illustrate the overall experience. From there, I drafted a mockup and gathered team feedback, which highlighted issues with scalability when copying multiple objects and challenges with debugging.
+                  <br />
+                  <br />
                   <div id="section-image">
                       <img key="user-flow" src={UserFlow.src} alt="user-flow"/>
                       <br/>
@@ -181,6 +189,16 @@ export default function SandboxCopy() {
                         </SwiperSlide>
                       ))}
                   </Swiper>
+              </div>
+              <br/>
+              <br/>
+              <div className="section">
+                  <h4>Version 2</h4>
+                  <br/>
+                  Given the feedback on Version 1, I decided to restructure the experience, focusing on scalability and
+                  organization.
+                  <br/>
+                  <br/>
                   <table className="improvements-table">
                       <thead>
                       <tr>
@@ -255,11 +273,6 @@ export default function SandboxCopy() {
                       </tr>
                       </tbody>
                   </table>
-              </div>
-              <br/>
-              <br/>
-              <div className="section">
-                  <h4>Version 2</h4>
                   <div id="section-image">
                       <img key="user-flow" src={v2flow.src} alt="user-flow"/>
                       <br/>
@@ -279,15 +292,16 @@ export default function SandboxCopy() {
                         </SwiperSlide>
                       ))}
                   </Swiper>
+                  <div id="center-text">
+                      <i>Final design</i>
+                  </div>
               </div>
               <br/>
               <br/>
               <div className="section">
                   <h4>Development Process</h4>
                   <br/>
-                  We cycled between design and development, where I worked closely with the backend team to accurately
-                  display object dependencies and refine the copy, sync, and revert processes. Through demos and testing
-                  sessions, we gathered user feedback and tracked all issues in JIRA.
+                  I developed the final experience on Unified Shell using React/React Spectrum and worked closely with the backend team to accurately copy dependencies in the correct order and test the experience. Through testing and demos, we gathered user feedback and tracked all issues in JIRA.
                   <br/>
                   <br/>
                   <div id="section-image">
@@ -323,8 +337,8 @@ export default function SandboxCopy() {
                   only the
                   top-level of dependent objects can be copied or synced to a destination.
               </div>
-              <br />
-              <br />
+              <br/>
+              <br/>
               <div className="section">
                   <h4>Impact & Next Steps</h4>
                   <br/>
@@ -350,7 +364,8 @@ export default function SandboxCopy() {
                   <br/>
                   <div style={{
                       padding: '49.02% 0 0 0',
-                      position: 'relative'}}>
+                      position: 'relative'
+                  }}>
                       <iframe
                         src="https://player.vimeo.com/video/1116960200?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                         allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
