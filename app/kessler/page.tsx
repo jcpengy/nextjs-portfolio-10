@@ -11,6 +11,7 @@ const newdesignsList = newdesigns.keys().map(image => newdesigns(image));
 import React, { useState } from "react";
 import FsLightbox from "fslightbox-react";
 import Masonry from "react-responsive-masonry";
+import Hero from "../../public/images/Kessler/1.jpg";
 
 export default function Kessler() {
   const [toggler, setToggler] = useState(false);
@@ -24,8 +25,14 @@ export default function Kessler() {
     <>
       <DesktopNavbar />
       <section id="graphic-design-project">
-        <h2>Disney Imaginations Finalist: Kessler Project</h2>
-        <h4><i>2018</i></h4>
+        <br />
+        <div id="center-text">
+          <h2>Kessler Project</h2>
+          <h4>A theme park concept that was a finalist in the 2018 Disney Imaginations competition.</h4>
+          <br/>
+          <img className="hero-image" key="hero" src={Hero.src} alt="hero"/>
+        </div>
+        <br/>
         <div id="section-description">
           <h6>Prompt</h6>
           That year, teams were tasked with selecting an abandoned “ghost town” anywhere in the world and revitalizing
@@ -47,11 +54,13 @@ export default function Kessler() {
         </div>
         <br/>
         <h4>Design Approach</h4>
+        <br />
         Limited to six submission slides, I first outlined key guest experiences and then assigned each slide a focus.
         To match our project’s space theme, I used futuristic fonts and 3D graphics to bring the story to life.
         <br/>
         <br/>
         <h4>Experience Design</h4>
+        <br />
         Designing an experience set in space required balancing technical details with playful elements that capture the
         excitement of space exploration.
         <br/>
@@ -59,6 +68,8 @@ export default function Kessler() {
         I collaborated with technical team members to design and model Kessler Station, incorporating the spiral shape
         of the station into the logo, slide design, and features like the Spiral Seat. I also helped brainstorm the
         characters in the Kessler Crew.
+        <br />
+        <br />
         <FsLightbox
           toggler={toggler}
           sources={[finalImageList[imageIndex].default.src]}
@@ -84,6 +95,7 @@ export default function Kessler() {
         <br/>
         <div id="section-description">
           <h4>Presentation & What I Learned</h4>
+          <br />
           As finalists, we were invited to the Disney Imagineering headquarters in Glendale, California to present our
           project to Imagineering executives. This presentation taught me how to incorporate storytelling into an
           experience, specifically adding the story of an example guest.
@@ -115,8 +127,10 @@ export default function Kessler() {
         <br/>
         <div id="section-description">
           <h4>Rethinking Kessler Project</h4>
+          <br />
           As a creative exercise this year, I reimagined the branding for Kessler Project, designing an advertising poster and space flight tickets. For this iteration, I used a neon color palette and updated typography to give the branding a more modern feel.
         </div>
+        <br />
         <FsLightbox
           toggler={togglerNew}
           sources={[newdesignsList[imageIndexNew].default.src]}
