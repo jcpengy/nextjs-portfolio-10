@@ -37,7 +37,7 @@ export default function Kessler() {
           <h6>Our Idea</h6>
           We decided to take our idea to the stratosphere, envisioning a space-themed destination called Kessler
           Project, where guests explore historic landmarks like the ISS, Hubble Telescope, and Tiangong-1 while learning
-          about <a href="">Kessler Syndrome</a>. The experience blends education and adventure, immersing visitors in a
+          about <a href="https://www.space.com/kessler-syndrome-space-debris" target="_blank">Kessler Syndrome</a>. The experience blends education and adventure, immersing visitors in a
           mission to clean up space debris while inspiring solutions for sustainable space exploration.
           <br/>
           <br/>
