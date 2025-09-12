@@ -11,7 +11,7 @@ const newdesignsList = newdesigns.keys().map(image => newdesigns(image));
 import React, { useState } from "react";
 import FsLightbox from "fslightbox-react";
 import Masonry from "react-responsive-masonry";
-import Hero from "../../public/images/Kessler/1.jpg";
+import Hero from "../../public/images/Kessler/hero.png";
 
 export default function Kessler() {
   const [toggler, setToggler] = useState(false);
@@ -34,23 +34,27 @@ export default function Kessler() {
         </div>
         <br/>
         <div id="section-description">
-          <h6>Prompt</h6>
-          That year, teams were tasked with selecting an abandoned “ghost town” anywhere in the world and revitalizing
-          it. Concepts could range from a functioning town to a historical site, living museum, or immersive themed
-          experience. Submissions needed to honor the location’s history and respect the traditions and communities
-          connected to it and its surrounding areas.
-          <br/>
-          <br/>
-          <h6>Our Idea</h6>
-          We decided to take our idea to the stratosphere, envisioning a space-themed destination called Kessler
-          Project, where guests explore historic landmarks like the ISS, Hubble Telescope, and Tiangong-1 while learning
-          about <a href="https://www.space.com/kessler-syndrome-space-debris" target="_blank">Kessler Syndrome</a>. The experience blends education and adventure, immersing visitors in a
-          mission to clean up space debris while inspiring solutions for sustainable space exploration.
-          <br/>
-          <br/>
-          <h6>Role</h6>
-          Creative Lead on a four-person team | Slide Design and Layout, 3D Modeling, Graphic Design, Information
-          Design, Illustrations
+          <div className="two-column-container">
+            <div className="column">
+              <h6>Prompt</h6>
+              That year, teams were tasked with selecting an abandoned “ghost town” anywhere in the world and revitalizing
+              it. Concepts could range from a functioning town to a historical site, living museum, or immersive themed
+              experience. Submissions needed to honor the location’s history and respect the traditions and communities
+              connected to it and its surrounding areas.
+              <h6>Our Idea</h6>
+              We decided to take our idea to the stratosphere, envisioning a space-themed destination called Kessler
+              Project, where guests explore historic landmarks like the ISS, Hubble Telescope, and Tiangong-1 while learning
+              about <a href="https://www.space.com/kessler-syndrome-space-debris" target="_blank">Kessler Syndrome</a>. The experience blends education and adventure, immersing visitors in a
+              mission to clean up space debris while inspiring solutions for sustainable space exploration.
+            </div>
+            <div className="column">
+              <h6>Role</h6>
+              Creative Lead on a four-person team | Slide Design and Layout, 3D Modeling, Graphic Design, Information
+              Design, Illustrations
+              <h6>Scope</h6>
+              October 2017 - January 2018
+            </div>
+          </div>
         </div>
         <br/>
         <h4>Design Approach</h4>
