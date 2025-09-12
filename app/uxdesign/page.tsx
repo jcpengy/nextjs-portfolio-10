@@ -51,7 +51,7 @@ export default function UXDesign() {
           <div className="project-description">
             <h4>Sandbox Management App</h4>
             <div className="subtitle">UX Design & Development</div>
-            A streamlined solution for transferring and syncing sandbox objects.
+            A streamlined solution for transferring sandbox objects.
           </div>
           <a href={images[5].link}>
             <img id="clickable-image" src={Disney.src} alt="Disney"/>

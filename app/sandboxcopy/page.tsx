@@ -47,7 +47,7 @@ export default function SandboxCopy() {
               {/*Hero section*/}
               <div id="center-text">
                   <h2>Sandbox Management App</h2>
-                  <h4>A streamlined solution for transferring and updating sandbox objects.</h4>
+                  <h4>A streamlined solution for transferring sandbox objects.</h4>
                   <br/>
                   <img className="hero-image" key="hero" src={Hero.src} alt="hero"/>
               </div>
