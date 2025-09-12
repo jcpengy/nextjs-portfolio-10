@@ -18,10 +18,8 @@ const images = [
 export default function UXDesign() {
   return (
     <section>
-      <div className="scalloped-border">
-        <div id="center-text">
-          <h4>Featured projects</h4>
-        </div>
+      <div id="center-text">
+        <h4>Featured projects</h4>
       </div>
       <br/>
       <br/>

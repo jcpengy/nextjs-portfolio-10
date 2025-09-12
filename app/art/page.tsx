@@ -19,7 +19,7 @@ export default function Art() {
         {/*Hero section*/}
         <div id="center-text">
           <h2>art</h2>
-          <h4>A collection of paintings, drawings, and sketches spanning a variety of styles and subjects. Currently learning color theory.</h4>
+          <h4>A collection of paintings, drawings, and sketches spanning a variety of styles and subjects.</h4>
         </div>
         <br/>
         <FsLightbox
