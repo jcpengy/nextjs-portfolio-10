@@ -127,17 +127,17 @@ export default function SandboxCopy() {
                       </div>
                   </div>
                   <h6>Competitive Analysis</h6>
-                  We explored features and gaps of existing object copy tools within Adobe. Gaps included not having a UI, only supporting certain objects, and not supporting bulk copy. <u>In contrast to these offerings, Sandbox Management aims to provide a centralized experience where users can copy, sync, and revert multiple AEP objects.</u>
-                  <br />
+                  We explored features and gaps of existing object copy tools within Adobe. Gaps included not having a
+                  UI, only supporting certain objects, and not supporting bulk copy. <u>In contrast to these offerings,
+                  Sandbox Management aims to provide a centralized experience where users can copy, sync, and revert
+                  multiple AEP objects.</u>
+                  <br/>
                   <br/>
                   <div id="section-image">
                       <img key="competitive-analysis" src={Comp.src} alt="competitive analysis"/>
                   </div>
-                  <div id="center-text">
-                      <i>Graph and table representation of root objects and their dependencies</i>
-                  </div>
-                  <br />
-                  <br />
+                  <br/>
+                  <br/>
                   <div className="two-column-container">
                       <div className="column">
                           <img key="dependencies" src={dependencies.src} alt="dependencies"/>
@@ -146,13 +146,16 @@ export default function SandboxCopy() {
                           <img key="dependencies" src={dependencies2.src} alt="dependencies"/>
                       </div>
                   </div>
+                  <div id="center-text">
+                      <i>Graph and table representation of root objects and their dependencies</i>
+                  </div>
                   {/*Design process*/}
                   <br/>
                   <br/>
               </div>
               <div className="section">
                   <h4>Design Process</h4>
-                  <br />
+                  <br/>
                   Based on requirements, I created a user flow diagram and sketches to illustrate the overall experience. From there, I drafted a mockup and gathered team feedback, which highlighted issues with scalability when copying multiple objects and challenges with debugging.
                   <br />
                   <br />
@@ -273,6 +276,8 @@ export default function SandboxCopy() {
                       </tr>
                       </tbody>
                   </table>
+                  <br />
+                  <br />
                   <div id="section-image">
                       <img key="user-flow" src={v2flow.src} alt="user-flow"/>
                       <br/>
