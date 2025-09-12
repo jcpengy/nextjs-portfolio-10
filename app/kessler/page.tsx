@@ -6,6 +6,8 @@ const finalImages = require.context('../../public/images/Kessler/slides', false)
 const finalImageList = finalImages.keys().map(image => finalImages(image));
 const wendy = require.context('../../public/images/Kessler/wendy', false);
 const wendyList = wendy.keys().map(image => wendy(image));
+const newdesigns = require.context('../../public/images/Kessler/newdesigns', false);
+const newdesignsList = newdesigns.keys().map(image => newdesigns(image));
 import React, { useState } from "react";
 import FsLightbox from "fslightbox-react";
 import Masonry from "react-responsive-masonry";
@@ -13,8 +15,11 @@ import Masonry from "react-responsive-masonry";
 export default function Kessler() {
   const [toggler, setToggler] = useState(false);
   const [togglerWendy, setTogglerWendy] = useState(false);
+  const [togglerNew, setTogglerNew] = useState(false);
+
   const [imageIndex, setImageIndex] = useState(0);
   const [imageIndexWendy, setImageIndexWendy] = useState(0);
+  const [imageIndexNew, setImageIndexNew] = useState(0);
   return (
     <>
       <DesktopNavbar />
@@ -86,6 +91,28 @@ export default function Kessler() {
             }}>
               <img
                 alt="wendy"
+                key={i}
+                src={image.default.src}
+                style={{width: "100%", display: "block"}}
+              />
+            </button>
+          ))}
+        </Masonry>
+        <br />
+        <FsLightbox
+          toggler={togglerNew}
+          sources={[newdesignsList[imageIndexNew].default.src]}
+          key={imageIndexNew}
+          thumbs={[newdesignsList[imageIndexNew].default.src]}
+        />
+        <Masonry columnsCount={3} gutter="10px">
+          {newdesignsList.map((image, i) => (
+            <button onClick={() => {
+              setTogglerNew(!togglerNew);
+              setImageIndexNew(i);
+            }}>
+              <img
+                alt="slides"
                 key={i}
                 src={image.default.src}
                 style={{width: "100%", display: "block"}}
