@@ -30,7 +30,7 @@ export default function Kessler() {
       <section id="graphic-design-project">
         <br/>
         <div id="center-text">
-          <h2>Kessler Project</h2>
+          <h2>Kessler Project for Space Preservation and Restoration</h2>
           <h4>A theme park concept that was a finalist in the 2018 Disney Imaginations competition.</h4>
           <br/>
           <img className="hero-image" key="hero" src={Hero.src} alt="hero"/>
@@ -56,9 +56,9 @@ export default function Kessler() {
           </div>
           <br/>
           <h6>Our Idea</h6>
-          We decided to take our idea to the stratosphere, envisioning a space-themed destination called Kessler
+          We decided to take our idea to the stratosphere, envisioning a space-themed destination called <u>Kessler
           Project, where guests explore historic landmarks like the ISS, Hubble Telescope, and Tiangong-1 while learning
-          about <a href="https://www.space.com/kessler-syndrome-space-debris" target="_blank">Kessler Syndrome</a>. The
+          about <a href="https://www.space.com/kessler-syndrome-space-debris" target="_blank">Kessler Syndrome</a>.</u> The
           experience blends education and adventure, immersing visitors in a
           mission to clean up space debris while inspiring solutions for sustainable space exploration.
         </div>
