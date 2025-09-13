@@ -101,15 +101,11 @@ export default function SandboxCopy() {
                                   <li>Data engineer</li>
                               </ul>
                           </ul>
-                          <h6>Identified pain points</h6>
+                          <h6>Customer pain points</h6>
                           <ul>
-                              <li>Painful and time-consuming to copy complex objects between sandboxes</li>
-                              <li>Need to easily kickstart new business implementations between environments</li>
-                              <li>Need to deploy sandboxes with a baseline configuration, support customers that wish to
-                                  benefit from faster sandbox deployments that include tested AEP configurations
-                              </li>
-                              <li>Need a separate set of APIs for AEP versus AJO for migrating development work to
-                                  higher sandboxes
+                              <li>Tedious and time-consuming to copy complex objects</li>
+                              <li>Slow set-up for new business implementations (need to deploy sandboxes with a baseline configuration)</li>
+                              <li>Need a separate set of APIs for AJO and migrating development work to higher sandboxes
                               </li>
                           </ul>
                       </div>
@@ -122,15 +118,15 @@ export default function SandboxCopy() {
                               <li>Review dependencies before copying</li>
                               <li>Sync objects between the source and destination sandboxes</li>
                               <li>Revert objects (once) after syncing</li>
-                              <li>Log actions for documentation and troubleshooting</li>
+                              <li>Monitor actions for troubleshooting</li>
                           </ul>
                       </div>
                   </div>
                   <h6>Competitive Analysis</h6>
                   We explored features and gaps of existing object copy tools within Adobe. Gaps included not having a
                   UI, only supporting certain objects, and not supporting bulk copy. <u>In contrast to these offerings,
-                  Sandbox Management aims to provide a centralized experience where users can copy, sync, and revert
-                  multiple AEP objects.</u>
+                  Sandbox Management aims to provide a centralized experience for users to copy, sync, and revert
+                  one or more AEP objects.</u>
                   <br/>
                   <br/>
                   <div id="section-image">
