@@ -63,7 +63,7 @@ export default function Kessler() {
         To match our project’s space theme, I used futuristic fonts and 3D graphics to bring the story to life.
         <br/>
         <br/>
-        <h4>Experience Design</h4>
+        <h4>The Experience</h4>
         <br />
         Designing an experience set in space required balancing technical details with playful elements that capture the
         excitement of space exploration.
