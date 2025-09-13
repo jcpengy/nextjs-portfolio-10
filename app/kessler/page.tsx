@@ -41,11 +41,6 @@ export default function Kessler() {
               it. Concepts could range from a functioning town to a historical site, living museum, or immersive themed
               experience. Submissions needed to honor the location’s history and respect the traditions and communities
               connected to it and its surrounding areas.
-              <h6>Our Idea</h6>
-              We decided to take our idea to the stratosphere, envisioning a space-themed destination called Kessler
-              Project, where guests explore historic landmarks like the ISS, Hubble Telescope, and Tiangong-1 while learning
-              about <a href="https://www.space.com/kessler-syndrome-space-debris" target="_blank">Kessler Syndrome</a>. The experience blends education and adventure, immersing visitors in a
-              mission to clean up space debris while inspiring solutions for sustainable space exploration.
             </div>
             <div className="column">
               <h6>Role</h6>
@@ -55,6 +50,12 @@ export default function Kessler() {
               October 2017 - January 2018
             </div>
           </div>
+          <br />
+          <h6>Our Idea</h6>
+          We decided to take our idea to the stratosphere, envisioning a space-themed destination called Kessler
+          Project, where guests explore historic landmarks like the ISS, Hubble Telescope, and Tiangong-1 while learning
+          about <a href="https://www.space.com/kessler-syndrome-space-debris" target="_blank">Kessler Syndrome</a>. The experience blends education and adventure, immersing visitors in a
+          mission to clean up space debris while inspiring solutions for sustainable space exploration.
         </div>
         <br/>
         <h4>Design Approach</h4>
