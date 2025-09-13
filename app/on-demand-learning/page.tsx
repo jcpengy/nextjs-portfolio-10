@@ -58,15 +58,10 @@ export default function OnDemandLearning() {
           <div className="two-column-container">
             <div className="column">
               <h6>Overview</h6>
-              Adobe Experience Platform customers and partners are trained through the
-              Developer Enablement Program, which involves deploying learning content across multiple sandboxes
-              and conducting in-person sessions to facilitate the training.
-              <br/>
-              <br/>
-              On-Demand Learning aims to provide this training in a virtual and scalable manner. Equipped with a
-              learning environment (Experience Platform sandbox), customers can go through hands-on exercises and
-              lectures
-              at their own pace.
+              Adobe Experience Platform (AEP) customers are trained through the Developer Enablement Program, a three-day in-person bootcamp that involves lectures and hands-on labs in personal AEP sandboxes.
+              <br />
+              <br />
+              On-Demand Learning aims to virtualize this training. Equipped with a sandbox, customers can go through lectures and hands-on labs at their own pace.
               <h6>Goals</h6>
               <ul>
                 <li>
