@@ -12,6 +12,9 @@ import React, { useState } from "react";
 import FsLightbox from "fslightbox-react";
 import Masonry from "react-responsive-masonry";
 import Hero from "../../public/images/Kessler/hero.png";
+import design from "../../public/images/Kessler/kesslerdesign.png";
+
+import SoftwareDependencies from "../../public/images/ODL/dependencies.png";
 
 export default function Kessler() {
   const [toggler, setToggler] = useState(false);
@@ -25,7 +28,7 @@ export default function Kessler() {
     <>
       <DesktopNavbar />
       <section id="graphic-design-project">
-        <br />
+        <br/>
         <div id="center-text">
           <h2>Kessler Project</h2>
           <h4>A theme park concept that was a finalist in the 2018 Disney Imaginations competition.</h4>
@@ -37,7 +40,8 @@ export default function Kessler() {
           <div className="two-column-container">
             <div className="column">
               <h6>Prompt</h6>
-              That year, teams were tasked with selecting an abandoned “ghost town” anywhere in the world and revitalizing
+              That year, teams were tasked with selecting an abandoned “ghost town” anywhere in the world and
+              revitalizing
               it. Concepts could range from a functioning town to a historical site, living museum, or immersive themed
               experience. Submissions needed to honor the location’s history and respect the traditions and communities
               connected to it and its surrounding areas.
@@ -50,22 +54,23 @@ export default function Kessler() {
               October 2017 - January 2018
             </div>
           </div>
-          <br />
+          <br/>
           <h6>Our Idea</h6>
           We decided to take our idea to the stratosphere, envisioning a space-themed destination called Kessler
           Project, where guests explore historic landmarks like the ISS, Hubble Telescope, and Tiangong-1 while learning
-          about <a href="https://www.space.com/kessler-syndrome-space-debris" target="_blank">Kessler Syndrome</a>. The experience blends education and adventure, immersing visitors in a
+          about <a href="https://www.space.com/kessler-syndrome-space-debris" target="_blank">Kessler Syndrome</a>. The
+          experience blends education and adventure, immersing visitors in a
           mission to clean up space debris while inspiring solutions for sustainable space exploration.
         </div>
         <br/>
         <h4>Design Approach</h4>
-        <br />
+        <br/>
         Limited to six submission slides, I first outlined key guest experiences and then assigned each slide a focus.
         To match our project’s space theme, I used futuristic fonts and 3D graphics to bring the story to life.
         <br/>
         <br/>
         <h4>The Experience</h4>
-        <br />
+        <br/>
         Designing an experience set in space required balancing technical details with playful elements that capture the
         excitement of space exploration.
         <br/>
@@ -73,6 +78,11 @@ export default function Kessler() {
         I collaborated with technical team members to design and model Kessler Station, incorporating the spiral shape
         of the station into the logo, slide design, and features like the Spiral Seat. I also helped brainstorm the
         characters in the Kessler Crew.
+        <br/>
+        <br/>
+        <div id="section-image">
+          <img key="design" src={design.src} alt="design"/>
+        </div>
         <br />
         <br />
         <FsLightbox
@@ -97,10 +107,14 @@ export default function Kessler() {
           ))}
         </Masonry>
         <br/>
+        <div id="center-text">
+          Final submission slides
+        </div>
+        <br/>
         <br/>
         <div id="section-description">
           <h4>Presentation & What I Learned</h4>
-          <br />
+          <br/>
           As finalists, we were invited to the Disney Imagineering headquarters in Glendale, California to present our
           project to Imagineering executives. This presentation taught me how to incorporate storytelling into an
           experience, specifically adding the story of an example guest.
@@ -132,10 +146,12 @@ export default function Kessler() {
         <br/>
         <div id="section-description">
           <h4>Rethinking Kessler Project</h4>
-          <br />
-          As a creative exercise this year, I reimagined the branding for Kessler Project, designing an advertising poster and space flight tickets. For this iteration, I used a neon color palette and updated typography to give the branding a more modern feel.
+          <br/>
+          As a creative exercise this year, I reimagined the branding for Kessler Project, designing an advertising
+          poster and space flight tickets. For this iteration, I used a neon color palette and updated typography to
+          give the branding a more modern feel.
         </div>
-        <br />
+        <br/>
         <FsLightbox
           toggler={togglerNew}
           sources={[newdesignsList[imageIndexNew].default.src]}
