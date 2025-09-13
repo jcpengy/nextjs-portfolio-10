@@ -55,7 +55,7 @@ export default function UXDesign() {
             <img id="clickable-image" src={Disney.src} alt="Disney"/>
           </a>
           <div className="project-description">
-            <h4>Kessler Project for Space Preservation and Restoration</h4>
+            <h4>Kessler Project: Space Preservation and Restoration</h4>
             <div className="subtitle">3D Modeling, Graphic Design, Illustration, & Branding</div>
             A theme park concept that was a finalist in the 2018 Disney Imaginations competition.
           </div>

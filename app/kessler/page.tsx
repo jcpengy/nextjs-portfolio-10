@@ -30,7 +30,7 @@ export default function Kessler() {
       <section id="graphic-design-project">
         <br/>
         <div id="center-text">
-          <h2>Kessler Project for Space Preservation and Restoration</h2>
+          <h2>Kessler Project: Space Preservation and Restoration</h2>
           <h4>A theme park concept that was a finalist in the 2018 Disney Imaginations competition.</h4>
           <br/>
           <img className="hero-image" key="hero" src={Hero.src} alt="hero"/>
