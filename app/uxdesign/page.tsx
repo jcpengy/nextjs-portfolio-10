@@ -22,7 +22,6 @@ export default function UXDesign() {
         <h4>Featured projects</h4>
       </div>
       <br/>
-      <br/>
       <div className="two-column-container">
         <div className="column">
           <a href={images[3].link}>
