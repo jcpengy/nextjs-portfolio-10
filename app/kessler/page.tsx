@@ -109,7 +109,10 @@ export default function Kessler() {
         </Masonry>
         <br/>
         <div id="center-text">
-          Final submission slides
+          What I did from top left to bottom right: 1)  Slide design and layout, visual direction,
+          2) Slide design and layout, visual direction, all 3D models and graphics, 3) Slide design and layout, visual direction, 3D models of Kessler Station, the Spiral Seat, and the Spiral Seat graphic,
+          4) Slide design and layout, visual direction, character designs and 3D models of the Kessler Crew, 5) Slide design and layout, visual direction, space station floor graphic,
+          6) Slide design and layout, visual direction, Kessler Project poster, SuperNova graphic, hologram graphic
         </div>
         <br/>
         <br/>
