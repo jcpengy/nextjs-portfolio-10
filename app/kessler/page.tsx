@@ -48,8 +48,10 @@ export default function Kessler() {
             </div>
             <div className="column">
               <h6>Role</h6>
-              Creative Lead on a four-person team | Slide Design and Layout, 3D Modeling, Graphic Design, Information
-              Design, Illustrations
+              I served as the Creative Lead on a four-person team of Penn students, including two mechanical engineering majors and a computer science major.
+              <br />
+              <i>Slide Design and Layout, 3D Modeling, Graphic Design, Information
+                Design, Illustrations</i>
               <h6>Scope</h6>
               October 2017 - January 2018
             </div>
