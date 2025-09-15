@@ -119,11 +119,7 @@ export default function Kessler() {
         <div id="section-description">
           <h4>Presentation & What I Learned</h4>
           <br/>
-          As finalists, we were invited to the Disney Imagineering headquarters in Glendale, California to present our
-          project to Imagineering executives. This presentation taught me how to incorporate storytelling into an
-          experience, specifically adding the story of an example guest.
-          I illustrated the story of Wendy, an 11-year old girl from the Midwest who dreams of becoming an astronaut.
-          She embarks on this adventure to experience the wonders of space.
+          As finalists, we presented our project to Disney Imagineering executives in Glendale, California. For the presentation slides, I added illustrations of our example guest, Wendy, an 11-year old girl who dreams of becoming an astronaut. This presentation taught me how to use storytelling to bring an experience to life.
         </div>
         <br/>
         <FsLightbox
