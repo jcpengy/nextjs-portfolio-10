@@ -67,6 +67,7 @@ export default function Kessler() {
         <br/>
         Limited to only six submission slides, we  first organized our ideas into six categories. I then planned the visuals needed, ensuring each one served a purpose. To reflect the project’s space theme, I incorporated futuristic fonts, 3D graphics, and a signature blue to create a cohesive brand identity.
         <br/>
+        <br />
         <h4>The Experience</h4>
         <br/>
         Designing an experience set in space required balancing technical details with playful elements that capture the
