@@ -65,9 +65,7 @@ export default function Kessler() {
         <br/>
         <h4>Design Approach</h4>
         <br/>
-        Limited to six submission slides, I first outlined key guest experiences and then assigned each slide a focus.
-        To match our project’s space theme, I used futuristic fonts and 3D graphics to bring the story to life.
-        <br/>
+        Limited to only six submission slides, we  first organized our ideas into six categories. I then planned the visuals needed, ensuring each one served a purpose. To reflect the project’s space theme, I incorporated futuristic fonts, 3D graphics, and a signature blue to create a cohesive brand identity.
         <br/>
         <h4>The Experience</h4>
         <br/>
