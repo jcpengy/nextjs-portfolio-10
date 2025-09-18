@@ -201,8 +201,8 @@ export default function OnDemandLearning() {
           <br/>
           <div id="center-text">
             <u>For milestone 1, the focus was to design and build an Admin Dashboard for the Product team to create and
-            extend sandboxes (packaged with AEP Foundations objects) across
-            two Learner IMS orgs. Lab guides and lecture videos would be hosted on a previous app we built called
+              extend sandboxes (packaged with AEP Foundations objects) across
+              two Learner IMS orgs. Lab guides and lecture videos would be hosted on a previous app we built called
               On-Demand Learning, which will be modified to exclude self-service environment requests.</u>
           </div>
           <br/>
@@ -288,27 +288,63 @@ export default function OnDemandLearning() {
         <div className="two-column-container">
           <div className="column">
             <h6>Problem</h6>
-            The AEP Foundations Bootcamp covers multiple complex concepts, which may overwhelm learners if presented in a single course.
+            The AEP Foundations Bootcamp covers multiple complex concepts, which cannot be taught in a single course.
             <h6>Improvement</h6>
             Introduce Learning Paths, where related courses are grouped together to help learners master a skill.
           </div>
           <div className="column">
             <h6>Thought process</h6>
             <ul>
-              <li>Determine whether each course within a Learning Path needs its own lab guide or if certain resources can be shared across courses.</li>
+              <li>Determine whether each course within a Learning Path needs its own lab guide or if certain resources
+                can be shared across courses.
+              </li>
               <li>Identify opportunities to streamline content and avoid duplication.</li>
               <li>Explore ways to track learner progress across the entire Learning Path.</li>
             </ul>
           </div>
         </div>
-        <br />
-        <br />
+        <div className="two-column-container">
+          <div className="column">
+            <h6>Problem</h6>
+            Currently, there is no way for a learner to check if they've completed the lab guide correctly.
+            <h6>Improvement</h6>
+            Implement a lab guide validation check.
+          </div>
+          <div className="column">
+            <h6>Thought process</h6>
+            <ul>
+              <li>Make the lab guide an expandable side rail component that learners can reference as they go through
+                the hands-on
+                exercise.
+              </li>
+              <li>Learners can click a button to verify if they've completed the steps correctly. If not, they get a
+                hint.
+              </li>
+              <li>Gives learners instant feedback and admin the metrics to identity learning trends and frequently
+                missed steps.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <br/>
+        <br/>
+        <div className="section">
+          <h4>Additional Questions</h4>
+          <br/>
+          <ul>
+            <li>What marks a course as completed? Can learners test out of courses?</li>
+            <li>Do we give badges or certifications? Should we add gamification to the experience?</li>
+            <li>If courses and course modules are unordered, will learners go through all modules and activities? What will their
+            self-directed learning journey look like?</li>
+          </ul>
+        </div>
         <div className="section">
           <h4>Impact & Next Steps</h4>
           <br/>
-          We’ve seen strong early adoption of our Personal Lab Environments experience, with 150 users already testing
-          it and sharing positive feedback, specifically on the value of having a dedicated sandbox to experiment and
-          practice in. However, users expressed a clear preference for a more seamless experience, noting that switching
+          We’ve seen strong early adoption of our On-Demand Learning 2.0 experience, with 150 users already testing
+          it and sharing feedback, specifically on the value of having a dedicated sandbox to experiment and
+          practice in. However, users expressed a clear preference for a more seamless experience, noting that
+          switching
           to an external URL (On-Demand Learning) to access learning content disrupts their workflow.
           <br/>
           <br/>
