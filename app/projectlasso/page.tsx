@@ -36,7 +36,7 @@ export default function OnDemandLearning() {
         <br/>
         {/*Hero section*/}
         <div id="center-text">
-          <h2>Project Lasso (Personal Lab Environments)</h2>
+          <h2>Project Lasso (On-Demand Learning 2.0)</h2>
           <h4>A productized, self-paced implementation of the Developer Enablement Program.</h4>
           <br/>
           <img className="hero-image" key="hero" src={Hero.src} alt="hero"/>

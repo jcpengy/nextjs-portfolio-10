@@ -27,7 +27,7 @@ export default function About() {
                             <br/><br/>
                             At Adobe, I own the end-to-end design and experience of Adobe Experience Platform’s
                             learning and workflow-optimizing products—from early concepts and high-fidelity mockups to
-                            functioning prototypes—focusing on clarity, impact, and seamless integration of design systems. Beyond Adobe,
+                            functioning prototypes—focusing on impact and accessibility. Beyond Adobe,
                             I’ve developed graphics and immersive content in the journalism and manufacturing spaces, in
                             addition to branding, signage, and merchandise for hundreds of small businesses. My design
                             work has been featured in The New York Times and recognized as a finalist in the

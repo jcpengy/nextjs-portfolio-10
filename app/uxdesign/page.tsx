@@ -28,7 +28,7 @@ export default function UXDesign() {
             <img id="clickable-image" src={ProjectLasso.src} alt="Project Lasso"/>
           </a>
           <div className="project-description">
-            <h4>Project Lasso (Personal Lab Environments)</h4>
+            <h4>Project Lasso (On-Demand Learning 2.0)</h4>
             <div className="subtitle">UX Design & Development</div>
             A productized, self-paced implementation of the Developer Enablement Program.
           </div>
