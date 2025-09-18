@@ -5,6 +5,8 @@ import workstreams from "../../public/images/ProjectLasso/workstreams.jpg";
 import userflow2 from "../../public/images/ProjectLasso/userflow/lucid.png";
 const m1mocks = require.context('../../public/images/ProjectLasso/m1/mocks', false);
 const m1mocksList = m1mocks.keys().map(image => m1mocks(image));
+const m2mocks1 = require.context('../../public/images/ProjectLasso/m2/mocks1', false);
+const m2mocks1List = m2mocks1.keys().map(image => m2mocks1(image));
 const odlmocks = require.context('../../public/images/ProjectLasso/m1/odlmocks', false);
 const odlmocksList = odlmocks.keys().map(image => odlmocks(image));
 import adminRequirements from "../../public/images/ProjectLasso/m1/requirements/1.png";
@@ -303,6 +305,7 @@ export default function OnDemandLearning() {
             </ul>
           </div>
         </div>
+        <br />
         <div className="two-column-container">
           <div className="column">
             <h6>Problem</h6>
@@ -334,10 +337,14 @@ export default function OnDemandLearning() {
           <ul>
             <li>What marks a course as completed? Can learners test out of courses?</li>
             <li>Do we give badges or certifications? Should we add gamification to the experience?</li>
-            <li>If courses and course modules are unordered, will learners go through all modules and activities? What will their
-            self-directed learning journey look like?</li>
+            <li>If courses and course modules are unordered, will learners go through all modules and activities? What
+              will their
+              self-directed learning journey look like?
+            </li>
           </ul>
         </div>
+        <br />
+        <br />
         <div className="section">
           <h4>Impact & Next Steps</h4>
           <br/>
@@ -353,6 +360,26 @@ export default function OnDemandLearning() {
           interface. By embedding the guide within the product itself, users will be able to actively reference
           instructions while navigating through and completing hands-on exercises in their sandbox. This integration
           will make the overall product more seamless, useful, and engaging.
+        </div>
+        <br/>
+        <br/>
+        <div className="section">
+          <h4>Design Process: Version 2</h4>
+          <br/>
+          Currently, we are working on brainstorming a comprehensive Learner and Author experience without the use of
+          ALM as our
+          learning management system. This experience would support a Lab Guide side rail component with validation
+          checks, and the
+          creation of lab guides and lab packs in the Author UI.
+          <br />
+          <div id="image-gallery-with-text-overlay">
+            {m2mocks1List.map((image, index) => (
+              <div className="image-1 item">
+                <img key={index} src={image.default.src} alt={`image-${index}`}/>
+                <p>Image Caption</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
       <Footer/>
