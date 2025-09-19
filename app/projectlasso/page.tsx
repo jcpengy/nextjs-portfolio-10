@@ -372,6 +372,7 @@ export default function OnDemandLearning() {
           checks, and the
           creation of lab guides and lab packs in the Author UI.
           <br />
+          <br />
           <div id="image-gallery-with-text-overlay">
             {m2mocks1List.map((image, index) => (
               <div className="image-1 item">
@@ -381,6 +382,8 @@ export default function OnDemandLearning() {
             ))}
           </div>
         </div>
+        <br />
+        <br />
       </section>
       <Footer/>
     </>
