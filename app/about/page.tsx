@@ -1,5 +1,5 @@
 'use client';
-import ProfilePic1 from "../../public/images/collage.png";
+import ProfilePic1 from "../../public/images/Brown Minimalist Travel Scrapbooks Cover.png";
 import DesktopNavbar from "app/components/desktopNavbar";
 import Footer from "app/components/footer";
 
@@ -33,9 +33,8 @@ export default function About() {
                             work has been featured in The New York Times and recognized as a finalist in the
                             annual <u><a href="https://disneyimaginations.com/" target="_blank">Disney Imaginations</a></u> competition.
                             <br/><br/>
-                            Guided by a belief that design should be innovative, socially responsible, and fun,
-                            I hope to build a career at the intersection of design and education to foster creativity
-                            and collaboration in children. When I'm not working, I enjoy playing tennis, painting or taking
+                            Guided by a belief that design should be socially impactful and playful,
+                            I hope to build a career at the intersection of design and children's education. When I'm not working, I enjoy playing tennis, painting or taking
                             on a new creative project, or playing with my giant Yorkie, Butters.
                             <br/><br/>
                             <u><a
