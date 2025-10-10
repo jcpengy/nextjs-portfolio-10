@@ -12,6 +12,8 @@ const odlmocksList = odlmocks.keys().map(image => odlmocks(image));
 import adminRequirements from "../../public/images/ProjectLasso/m1/requirements/1.png";
 const m1ui = require.context('../../public/images/ProjectLasso/m1/UI', false);
 const m1uiList = m1ui.keys().map(image => m1ui(image));
+const m1admin2 = require.context('../../public/images/ProjectLasso/m1/admindashboard-2', false);
+const m1admin2List = m1admin2.keys().map(image => m1admin2(image));
 const odlui = require.context('../../public/images/ProjectLasso/m1/odl', false);
 const odluiList = odlui.keys().map(image => odlui(image));
 import Hero from "../../public/images/ProjectLasso/m1/odl/a.png";
@@ -251,7 +253,8 @@ export default function OnDemandLearning() {
           framework using React Spectrum
           components and collaborated with the backend team to refine API contracts/data models to support the
           environments.
-          The biggest challenge was implementing bulk sandbox requests.
+          The biggest change between Version 1 and Version 2 of the Admin Dashboard implementation was allowing bulk sandbox
+          requests via an uploaded csv file. This enables Product to upload responses from their request form instead of requesting users individually.
           <br/>
           <br/>
           <div id="image-gallery-with-text-overlay">
@@ -264,7 +267,21 @@ export default function OnDemandLearning() {
           </div>
           <br/>
           <div id="center-text">
-            <i>Admin Dashboard implementation</i>
+            <i>Admin Dashboard Version 1 implementation</i>
+          </div>
+          <br/>
+          <br/>
+          <div id="image-gallery-with-text-overlay">
+            {m1admin2List.map((image, index) => (
+              <div className="image-1 item">
+                <img key={index} src={image.default.src} alt={`image-${index}`}/>
+                <p>Image Caption</p>
+              </div>
+            ))}
+          </div>
+          <br/>
+          <div id="center-text">
+            <i>Admin Dashboard Version 2 implementation</i>
           </div>
           <br/>
           <Swiper
