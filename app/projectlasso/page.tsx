@@ -363,41 +363,49 @@ export default function OnDemandLearning() {
         <br />
         <br />
         <div className="section">
-          <h4>Impact & Next Steps</h4>
+          <h4>Impact</h4>
           <br/>
-          We’ve seen strong early adoption of our On-Demand Learning 2.0 experience, with 150 users already testing
-          it and sharing feedback, specifically on the value of having a dedicated sandbox to experiment and
-          practice in. However, users expressed a clear preference for a more seamless experience, noting that
-          switching
-          to an external URL (On-Demand Learning) to access learning content disrupts their workflow.
-          <br/>
-          <br/>
-          Our next step is to integrate the On-Demand Learning experience directly into Adobe Experience Platform. Our
-          hope is to convert the current lab guide module into a side rail component that lives alongside the platform
-          interface. By embedding the guide within the product itself, users will be able to actively reference
-          instructions while navigating through and completing hands-on exercises in their sandbox. This integration
-          will make the overall product more seamless, useful, and engaging.
+          We’ve seen strong early adoption of our On-Demand Learning 2.0 experience, with 160+ users signed up via an ad on Adobe Experience Platform. From a group of ten
+          internal testers, we've
+          received positive feedback on the seamless creation of a personal sandbox, an intuitive learning platform, clear steps of the lab guide, and a general need for shorter
+          course content.
         </div>
         <br/>
         <br/>
         <div className="section">
-          <h4>Design Process: Version 2</h4>
+          <h4>Improvements</h4>
           <br/>
-          Currently, we are working on brainstorming a comprehensive Learner and Author experience without the use of
-          ALM as our
-          learning management system. This experience would support a Lab Guide side rail component with validation
-          checks, and the
-          creation of lab guides and lab packs in the Author UI.
+          Over the course of the second milestone, we plan to track user feedback via JIRA tickets weekly, automate manual steps involved in
+          sandbox provisioning and emailing, and address any outstanding engineering tasks. Below is a summary of long-term problems we'd like to solve:
           <br />
           <br />
-          <div id="image-gallery-with-text-overlay">
-            {m2mocks1List.map((image, index) => (
-              <div className="image-1 item">
-                <img key={index} src={image.default.src} alt={`image-${index}`}/>
-                <p>Image Caption</p>
-              </div>
-            ))}
-          </div>
+          <ul>
+            Authoring workflow
+            <li>Authors are currently using an external document editing software to write the lab guides. Each time an
+              edit is made, the document
+              must be re-exported and imported as a PDF into the course in ALM.
+            </li>
+            <li>Authors are required to purchase a license to use the software.</li>
+          </ul>
+          <ul>
+            Learner workflow
+            <li>Learners must switch between the On-Demand Learning UI and their sandbox in Adobe Experience Platform as
+              they're going through the lab guide.
+            </li>
+          </ul>
+          <ul>
+            Admin
+            <li>Admin cannot track the progress of a learner going through the lab guide.
+            </li>
+          </ul>
+          {/*<div id="image-gallery-with-text-overlay">*/}
+          {/*  {m2mocks1List.map((image, index) => (*/}
+          {/*    <div className="image-1 item">*/}
+          {/*      <img key={index} src={image.default.src} alt={`image-${index}`}/>*/}
+          {/*      <p>Image Caption</p>*/}
+          {/*    </div>*/}
+          {/*  ))}*/}
+          {/*</div>*/}
         </div>
         <br />
         <br />
