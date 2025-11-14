@@ -244,17 +244,14 @@ export default function OnDemandLearning() {
         <br/>
         <br/>
         <div className="section">
-          <h4>Implementation: Version 1</h4>
+          <h4>Implementation</h4>
           <br/>
-          I re-purposed an existing application in Unified Shell for the Admin Dashboard experience, which helped save
-          time
-          given
-          the tight timeline and shifting requirements. I built the UI
-          framework using React Spectrum
-          components and collaborated with the backend team to refine API contracts/data models to support the
-          environments.
-          The biggest change between Version 1 and Version 2 of the Admin Dashboard implementation was allowing bulk sandbox
-          requests via an uploaded csv file. This enables Product to upload responses from their request form instead of requesting users individually.
+          <h4>Version 1: Admin Dashboard</h4>
+          <br/>
+          I saved time and re-purposed an existing application in Unified Shell, which is built using React Spectrum and
+          Quarry components. <b>The biggest change between Version 1 and Version 2 was the creation of new sandboxes via
+          a csv file
+          instead of an individual request form. This would allow bulk sandbox requests.</b>
           <br/>
           <br/>
           <div id="image-gallery-with-text-overlay">
@@ -284,6 +281,8 @@ export default function OnDemandLearning() {
             <i>Admin Dashboard Version 2 implementation</i>
           </div>
           <br/>
+          <h4>Version 1: On-Demand Learning 2.0</h4>
+          <br/>
           <Swiper
             pagination={{
               type: 'progressbar',
@@ -302,81 +301,23 @@ export default function OnDemandLearning() {
             <i>On-Demand Learning revised implementation</i>
           </div>
         </div>
-        <br/>
-        <br/>
-        <div className="two-column-container">
-          <div className="column">
-            <h6>Problem</h6>
-            The AEP Foundations Bootcamp covers multiple complex concepts, which cannot be taught in a single course.
-            <h6>Improvement</h6>
-            Introduce Learning Paths, where related courses are grouped together to help learners master a skill.
-          </div>
-          <div className="column">
-            <h6>Thought process</h6>
-            <ul>
-              <li>Determine whether each course within a Learning Path needs its own lab guide or if certain resources
-                can be shared across courses.
-              </li>
-              <li>Identify opportunities to streamline content and avoid duplication.</li>
-              <li>Explore ways to track learner progress across the entire Learning Path.</li>
-            </ul>
-          </div>
-        </div>
-        <br />
-        <div className="two-column-container">
-          <div className="column">
-            <h6>Problem</h6>
-            Currently, there is no way for a learner to check if they've completed the lab guide correctly.
-            <h6>Improvement</h6>
-            Implement a lab guide validation check.
-          </div>
-          <div className="column">
-            <h6>Thought process</h6>
-            <ul>
-              <li>Make the lab guide an expandable side rail component that learners can reference as they go through
-                the hands-on
-                exercise.
-              </li>
-              <li>Learners can click a button to verify if they've completed the steps correctly. If not, they get a
-                hint.
-              </li>
-              <li>Gives learners instant feedback and admin the metrics to identity learning trends and frequently
-                missed steps.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <br/>
-        <br/>
-        <div className="section">
-          <h4>Additional Questions</h4>
-          <br/>
-          <ul>
-            <li>What marks a course as completed? Can learners test out of courses?</li>
-            <li>Do we give badges or certifications? Should we add gamification to the experience?</li>
-            <li>If courses and course modules are unordered, will learners go through all modules and activities? What
-              will their
-              self-directed learning journey look like?
-            </li>
-          </ul>
-        </div>
         <br />
         <br />
         <div className="section">
           <h4>Impact</h4>
           <br/>
-          We’ve seen strong early adoption of our On-Demand Learning 2.0 experience, with 160+ users signed up via an ad on Adobe Experience Platform. From a group of ten
-          internal testers, we've
-          received positive feedback on the seamless creation of a personal sandbox, an intuitive learning platform, clear steps of the lab guide, and a general need for shorter
-          course content.
+          We’ve seen strong early adoption of our On-Demand Learning 2.0 experience, with 160+ users signed up via our AEP registration form.
+          Feedback and team discussions have focused on technical issues and the need to design a stronger support workflow for handling incoming JIRA tickets.
+          From a group of ten internal testers, we've received positive feedback on the seamless creation of a personal sandbox and the intuitive learning platform.
+          They also noted a general desire for shorter course content.
         </div>
         <br/>
         <br/>
         <div className="section">
           <h4>Improvements</h4>
           <br/>
-          Over the course of the second milestone, we plan to track user feedback via JIRA tickets weekly, automate manual steps involved in
-          sandbox provisioning and emailing, and address any outstanding engineering tasks. Below is a summary of long-term problems we'd like to solve:
+          Over the course of the second milestone, we plan to improve our support pipeline, automate manual steps involved in
+          sandbox provisioning and emailing, and address any outstanding engineering tasks. Below is a summary of problems we'd like to solve:
           <br />
           <br />
           <ul>
@@ -392,23 +333,21 @@ export default function OnDemandLearning() {
             <li>Learners must switch between the On-Demand Learning UI and their sandbox in Adobe Experience Platform as
               they're going through the lab guide.
             </li>
+            <li>Learners cannot check if they've completed a lab guide correctly.
+            </li>
           </ul>
           <ul>
             Admin
             <li>Admin cannot track the progress of a learner going through the lab guide.
             </li>
+            <li>Currently, there is no workflow for addressing and notifying users of submitted feedback/issues.
+            </li>
+            <li>How do we ensure users set up Postman correctly for any lab guide that requires making API calls?
+            </li>
           </ul>
-          {/*<div id="image-gallery-with-text-overlay">*/}
-          {/*  {m2mocks1List.map((image, index) => (*/}
-          {/*    <div className="image-1 item">*/}
-          {/*      <img key={index} src={image.default.src} alt={`image-${index}`}/>*/}
-          {/*      <p>Image Caption</p>*/}
-          {/*    </div>*/}
-          {/*  ))}*/}
-          {/*</div>*/}
         </div>
-        <br />
-        <br />
+        <br/>
+        <br/>
       </section>
       <Footer/>
     </>
