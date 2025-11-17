@@ -40,8 +40,8 @@ export default function OnDemandLearning() {
         <br/>
         {/*Hero section*/}
         <div id="center-text">
-          <h2>Project Lasso (On-Demand Learning 2.0)</h2>
-          <h4>A productized, self-paced implementation of the Developer Enablement Program.</h4>
+          <h2>On-Demand Learning 2.0</h2>
+          <h4>Productized, self-paced learning for Adobe Experience Platform.</h4>
           <br/>
           <img className="hero-image" key="hero" src={Hero.src} alt="hero"/>
         </div>
@@ -53,26 +53,27 @@ export default function OnDemandLearning() {
           which involves deploying learning content across multiple sandboxes and conducting in-person training.
           <br/>
           <br/>
-          Project Lasso aims to provide this training in a virtual and scalable manner. Equipped with their own
-          learning environment (an Experience Platform sandbox), customers are encouraged to explore the product and
-          complete self-paced enablement in a no-risk environment with step-by-step guidance, templates, and
-          practice files to accelerate action and learning.
+          On-Demand Learning (2.0) provides users a centralized learning hub powered by Adobe Learning Manager (ALM).
+          Through this hub, users can access structured coursework alongside a pre-configured Personal Learning Environment (PLE), allowing them to safely experiment and learn core AEP concepts.
           <div className="two-column-container">
             <div className="column">
               <h6>Goals</h6>
               <ul>
                 <li>
-                  Provide a scalable, digitized DEP offering with consistent customer experience (impact/feedback,
-                  rating, NPS) in lieu of in-person sessions
+                  Deliver a scalable experience that matches (and eventually exceeds) the impact of the expert-led
+                  bootcamps
                 </li>
                 <li>
-                  Provide training to technical roles (developer, architect)
+                  Onboard users faster and more confidently
+                </li>
+                <li>
+                  Reduce dependency on high-touch, resource-intensive learning formats
                 </li>
               </ul>
               <i>Success metrics</i>
               <ul>
                 <li>
-                  150 users granted access to learning environments per quarter
+                150 users granted access to learning environments per quarter
                 </li>
                 <li>
                   Percentage of lab environments requested and not used is less than 20%
@@ -283,6 +284,10 @@ export default function OnDemandLearning() {
           <br/>
           <h4>Version 1: On-Demand Learning 2.0</h4>
           <br/>
+          The beta features the Adobe Experience Platform Foundations curriculum used in the DEP bootcamps—developed &
+          delivered by Customer Engineering and Enterprise Architecture—in an on-demand format. It includes 25+ lectures and 12+ lab guides.
+          <br/>
+          <br/>
           <Swiper
             pagination={{
               type: 'progressbar',
@@ -306,8 +311,8 @@ export default function OnDemandLearning() {
         <div className="section">
           <h4>Impact</h4>
           <br/>
-          We’ve seen strong early adoption of our On-Demand Learning 2.0 experience, with 160+ users signed up via our AEP registration form.
-          Feedback and team discussions have focused on technical issues and the need to design a stronger support workflow for handling incoming JIRA tickets.
+          We’ve already seen strong demand: 200+ current AEP users have applied to participate in the beta.
+          Feedback and team discussions have focused on the need to define a stronger support workflow for handling incoming JIRA tickets.
           From a group of ten internal testers, we've received positive feedback on the seamless creation of a personal sandbox and the intuitive learning platform.
           They also noted a general desire for shorter course content.
         </div>
@@ -316,8 +321,7 @@ export default function OnDemandLearning() {
         <div className="section">
           <h4>Improvements</h4>
           <br/>
-          Over the course of the second milestone, we plan to improve our support pipeline, automate manual steps involved in
-          sandbox provisioning and emailing, and address any outstanding engineering tasks. Below is a summary of problems we'd like to solve:
+          The team is working to automate the operational aspects of the program and define long-term resourcing requirements to support broad, enterprise-scale rollout. In addition, we plan to expand ODL content beyond data foundations to include marketer-focused learning paths. Below is a summary of problems we'd like to solve:
           <br />
           <br />
           <ul>

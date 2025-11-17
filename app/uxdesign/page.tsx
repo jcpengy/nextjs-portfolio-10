@@ -28,9 +28,9 @@ export default function UXDesign() {
             <img id="clickable-image" src={ProjectLasso.src} alt="Project Lasso"/>
           </a>
           <div className="project-description">
-            <h4>Project Lasso (On-Demand Learning 2.0)</h4>
+            <h4>On-Demand Learning 2.0</h4>
             <div className="subtitle">UX Design & Development</div>
-            A productized, self-paced implementation of the Developer Enablement Program.
+            Productized, self-paced learning for Adobe Experience Platform.
           </div>
           <a href={images[2].link}>
             <img id="clickable-image" src={OnDemandLearning.src} alt="ODL"/>
